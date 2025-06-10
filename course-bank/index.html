@@ -198,7 +198,7 @@
             .split('/')                                              // split into segments
             .map(seg => encodeURIComponent(seg))                     // encode each
             .join('/');                                              // re-join with slashes
-            const url = `/coursebank/${encodedPath}`;                // your proxy script
+            const url = `https://geunion.dk/coursebank/${encodedPath}`;                // your proxy script
 
           const a = document.createElement('a');
           a.href = url;
