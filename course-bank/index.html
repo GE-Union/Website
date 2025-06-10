@@ -198,7 +198,7 @@
             .split('/')                                              // split into segments
             .map(seg => encodeURIComponent(seg))                     // encode each
             .join('/');                                              // re-join with slashes
-          const url = `/github-file-proxy.php?path=${encodedPath}`;  // your proxy script
+            const url = `/.netlify/functions/file-proxy?path=${encodedPath}`;  // your proxy script
 
           const a = document.createElement('a');
           a.href = url;
