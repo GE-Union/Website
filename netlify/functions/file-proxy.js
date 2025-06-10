@@ -1,5 +1,5 @@
 exports.handler = async (event) => {
-  const path = event.queryStringParameters?.path;
+  const path = event.path;
   if (!path) {
     return {
       statusCode: 400,
