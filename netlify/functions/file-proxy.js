@@ -1,7 +1,15 @@
 exports.handler = async (event) => {
   const path = event.queryStringParameters?.path;
   if (!path) {
-    return { statusCode: 400, body: 'Missing file path     ' + event.toString() };
+    return {
+      statusCode: 400,
+      body: [
+        `Missing file path`,
+        `— event.path:       ${event.path}`,
+        `— rawQueryString:   ${event.rawQueryString}`,
+        `— queryStringParams: ${JSON.stringify(event.queryStringParameters)}`,
+      ].join('\n')
+    };
   }
 
   const cleanPath = path.replace(/\\/g, '').replace(/^\//, '');
