@@ -1,13 +1,9 @@
-// netlify/functions/file-proxy.js
-const fetch = require('node-fetch');
-
 exports.handler = async (event) => {
   const path = event.queryStringParameters?.path;
   if (!path) {
     return { statusCode: 400, body: 'Missing file path' };
   }
 
-  // sanitize path a little
   const cleanPath = path.replace(/\\/g, '').replace(/^\//, '');
   const githubUrl = `https://raw.githubusercontent.com/GE-Union/CourseBank/main/${cleanPath}`;
 
