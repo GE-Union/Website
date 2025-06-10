@@ -190,44 +190,25 @@
             : "Unknown";
 
           const ext = file.split(".").pop().toUpperCase();
-          const url = `https://raw.githubusercontent.com/GE-Union/CourseBank/main/${folder}/${encodeURIComponent(file)}`;
 
-          const a = document.createElement("a");
+          // 2) Build the proxy URL instead of the GitHub raw URL:
+          //    github-file-proxy.php?path=<url-encoded repo path>
+          const fullPath = `${folder}/${file}`;                      // e.g. "polytechnical-foundations/maths1a/Lecture1-a-Author.pdf"
+          const encodedPath = fullPath
+            .split('/')                                              // split into segments
+            .map(seg => encodeURIComponent(seg))                     // encode each
+            .join('/');                                              // re-join with slashes
+          const url = `/github-file-proxy.php?path=${encodedPath}`;  // your proxy script
+
+          const a = document.createElement('a');
           a.href = url;
-          a.target = "_blank";
-          a.style.display = "flex";
-          a.style.alignItems = "center";
-          a.style.width = "100%";
-
-          // If it’s one of the “open inline” types, hijack the click
-          if (ext === "PDF" || ext === "TXT") {
-            a.addEventListener("click", async (evt) => {
-              evt.preventDefault();
-              try {
-                const res = await fetch(url, { cache: "no-store" });
-                if (!res.ok) throw new Error(res.statusText);
-                const blob = await res.blob();
-                // give the blob the correct MIME type
-                const mime =
-                  {
-                    PDF: "application/pdf",
-                    TXT: "text/plain",
-                  }[ext] || "application/octet-stream";
-                const objectUrl = URL.createObjectURL(
-                  new Blob([blob], { type: mime }),
-                );
-                window.open(objectUrl, "_blank");
-                // revoke after a few seconds so the tab can load
-                setTimeout(() => URL.revokeObjectURL(objectUrl), 30_000);
-              } catch (err) {
-                console.error("File fetch failed", err);
-                window.open(url, "_blank"); // fallback
-              }
-            });
-          } else {
-            // for downloads/other types, let the browser handle them
-            a.setAttribute("download", "");
+          a.target = '_blank';
+          if (['IPYNB', 'ZIP', 'DOCX'].includes(ext)) {
+            a.setAttribute('download', '');
           }
+          a.style.display = 'flex';
+          a.style.alignItems = 'center';
+          a.style.width = '100%';
 
           // icon
           const icon = document.createElement("div");
