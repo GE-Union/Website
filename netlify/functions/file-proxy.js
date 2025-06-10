@@ -1,5 +1,5 @@
 exports.handler = async (event) => {
-  const path = event.path;
+  const path = event.path.substring(11);
   if (!path) {
     return {
       statusCode: 400,
