@@ -1,0 +1,4 @@
+[[redirects]]
+  from   = "/coursebank/:splat*"
+  to     = "/.netlify/functions/file-proxy?path=:splat*"
+  status = 200
