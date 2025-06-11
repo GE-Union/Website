@@ -1,11 +1,15 @@
-import { defineConfig } from 'vite'
-import ssr from 'vite-plugin-ssr/plugin'
+import { reactRouter } from "@react-router/dev/vite";
+import { defineConfig } from "vite";
+import netlifyPlugin from "@netlify/vite-plugin-react-router";
 
 export default defineConfig({
-  plugins: [
-    ssr({
-      // Pre-render every page at `vite build`
-      prerender: true
-    })
-  ]
-})
+  plugins: [reactRouter(), netlifyPlugin()],
+  resolve: {
+    conditions: ["browser", "development|production"],
+  },
+  ssr: {
+    resolve: {
+      conditions: ["node", "development|production"],
+    },
+  },
+});
