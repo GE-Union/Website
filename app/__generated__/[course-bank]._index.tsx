@@ -1,5 +1,5 @@
 /* eslint-disable */
-      /* This is a auto generated file for building the project */ 
+      /* This is a auto generated file for building the project */
 
 
       import { Fragment, useState } from "react";
@@ -27,7 +27,7 @@ import { Dialog as Dialog, DialogTrigger as DialogTrigger, DialogOverlay as Dial
       export const pageBackgroundImageAssets: string[] =
         []
 
-      
+
 
       const Page = (_props: { system: any; }) => {
 return <Body
@@ -181,7 +181,7 @@ className={`w-element ci03eyw cu8ogtt c1v4vkm5 c1993r1 c1w5mydw cn76a88 c1eeo1qt
 <div
 className={`w-element cd3toq c17nm8vt c1xymrvd c8yo8yx cngdgqi c1in3n8u c3q79or cqlg791 csphimz c102ag1h c1jfe7vy ce1jmtw`}>
 <HtmlEmbed
-code={"<div class=\"file-list\"\n     data-folder=\"polytechnical-foundations/maths1b\">\n  Loading…\n</div>"}
+code={"<div class=\"file-list\"\n     data-folder=\"polytechnical-foundations/maths1b\"></div>"}
 executeScriptOnCanvas={true}
 className={`w-html-embed`} />
 </div>
@@ -198,4 +198,3 @@ className={`w-html-embed`} />
 
 
       export { Page }
-    
