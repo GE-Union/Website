@@ -11,7 +11,7 @@ import { Dialog as Dialog, DialogTrigger as DialogTrigger, DialogOverlay as Dial
 
       export const projectId = "94456f8c-a847-426a-aec8-16de390bd3eb";
 
-      export const lastPublished = "2025-06-14T14:52:17.575Z";
+      export const lastPublished = "2025-06-14T15:28:43.275Z";
 
       export const siteName = "GE Union";
 
