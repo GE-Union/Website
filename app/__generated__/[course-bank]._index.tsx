@@ -5,13 +5,13 @@
       import { Fragment, useState } from "react";
       import { useResource, useVariableState } from "@webstudio-is/react-sdk/runtime";
       import { Body as Body, Link as Link } from "@webstudio-is/sdk-components-react-router";
-import { HtmlEmbed as HtmlEmbed, Box as Box, Image as Image, Text as Text, Button as Button } from "@webstudio-is/sdk-components-react";
-import { Dialog as Dialog, DialogTrigger as DialogTrigger, DialogOverlay as DialogOverlay, DialogContent as DialogContent, DialogDescription as DialogDescription, DialogClose as DialogClose } from "@webstudio-is/sdk-components-react-radix";
+import { HtmlEmbed as HtmlEmbed, Box as Box, Image as Image, Text as Text, Button as Button, Span as Span } from "@webstudio-is/sdk-components-react";
+import { Dialog as Dialog, DialogTrigger as DialogTrigger, DialogOverlay as DialogOverlay, DialogContent as DialogContent, DialogDescription as DialogDescription, DialogClose as DialogClose, Tabs as Tabs, TabsList as TabsList, TabsTrigger as TabsTrigger, TabsContent as TabsContent, Accordion as Accordion, AccordionItem as AccordionItem, AccordionHeader as AccordionHeader, AccordionTrigger as AccordionTrigger, AccordionContent as AccordionContent } from "@webstudio-is/sdk-components-react-radix";
 
 
       export const projectId = "94456f8c-a847-426a-aec8-16de390bd3eb";
 
-      export const lastPublished = "2025-06-14T15:28:43.275Z";
+      export const lastPublished = "2025-06-15T00:33:54.326Z";
 
       export const siteName = "GE Union";
 
@@ -37,11 +37,11 @@ code={"<style>\n  h1{\n    font-family: Tanker;\n    font-weight: 500;\n    font
 executeScriptOnCanvas={true}
 className={`w-html-embed`} />
 <HtmlEmbed
-code={"<script>\n  // 1) Configuration\n  if (typeof window.JSON_URL === 'undefined') {\n    window.JSON_URL = \"https://raw.githubusercontent.com/GE-Union/CourseBank/main/structure.json\";\n  }\n  if (typeof window.CACHE_KEY === 'undefined') {\n    window.CACHE_KEY = \"coursebank_structure_cache\";\n  }\n  if (typeof window.CACHE_TTL === 'undefined') {\n    window.CACHE_TTL = 90 * 60 * 1000; // 90 min\n  }\n  if (typeof window.EXT_COLORS === 'undefined') {\n    window.EXT_COLORS = {\n      PDF: \"#D32F2F\",\n      IPYNB: \"#F37C2F\",\n      ZIP: \"#595959\",\n      DOCX: \"#2A5699\",\n      XLSX: \"#1D6F42\",\n      PPTX: \"#D24726\",\n      TXT: \"#616161\",\n    };\n  }\n\n  \n  // 3) Helpers\n  async function fetchStructure() {\n    // try cache\n    const raw = localStorage.getItem(CACHE_KEY);\n    if (false) {\n      const { ts, data } = JSON.parse(raw);\n      if (Date.now() - ts < CACHE_TTL) {\n        return data;\n      }\n    }\n    // otherwise re-fetch\n    const res = await fetch(JSON_URL, { cache: \"no-store\" });\n    if (!res.ok) throw new Error(\"Failed to load structure.json\");\n    const data = await res.json();\n    localStorage.setItem(\n      CACHE_KEY,\n      JSON.stringify({ ts: Date.now(), data }),\n    );\n    return data;\n  }\n  \n  function getFolderData(structure, folderPath) {\n    const parts = folderPath.split(\"/\");\n    let cur = structure;\n    for (const p of parts) {\n      if (!(p in cur)) return null;\n      cur = cur[p];\n    }\n    return Array.isArray(cur) ? cur : null;\n  }\n  \n  function makeFileLink(folder, file) {\n    const container = document.createElement(\"div\");\n    container.className = \"custom-file-link\";\n  \n    // split name & author\n    const [rawName, rawAuth] = file.split(\"-a-\");\n    const filename = (rawName || file).replace(/_/g, \" \");\n    const author = rawAuth\n      ? rawAuth.replace(/_/g, \" \").replace(/\\.[^/.]+$/, \"\")\n      : \"Unknown\";\n  \n    const ext = file.split(\".\").pop().toUpperCase();\n  \n    const fullPath = `${folder}/${file}`;\n    const encodedPath = fullPath\n      .split('/')\n      .map(seg => encodeURIComponent(seg))\n      .join('/');\n  \n    const a = document.createElement('a');\n    if (['PDF'].includes(ext)) {\n      a.target = '_blank';\n      a.href = `https://geunion.dk/coursebank/${encodedPath}`;  // proxy script\n    } else {\n      a.setAttribute('download', \"\");\n      a.href = `https://geunion.dk/coursebank/${encodedPath}`;  // proxy script\n    }\n    a.style.display = 'flex';\n    a.style.alignItems = 'center';\n    a.style.width = '100%';\n  \n    // icon\n    const icon = document.createElement(\"div\");\n    icon.className = \"file-icon\";\n    const img = document.createElement(\"img\");\n    img.src =\n      \"https://raw.githubusercontent.com/GE-Union/CourseBank/main/res/file-icon.svg\";\n    img.alt = \"File Icon\";\n    icon.appendChild(img);\n  \n    const badge = document.createElement(\"div\");\n    badge.className = \"extension-badge\";\n    badge.textContent = ext;\n    badge.style.backgroundColor =\n      EXT_COLORS[ext] || \"var(--global-palette2,#1e73be)\";\n    icon.appendChild(badge);\n  \n    // details\n    const details = document.createElement(\"div\");\n    details.className = \"file-details\";\n    details.innerHTML = `<strong>${filename}</strong><span>${author}</span>`;\n  \n    // assemble\n    a.appendChild(icon);\n    a.appendChild(details);\n    container.appendChild(a);\n    return container;\n  }\n  \n  async function initFileLists() {\n    const holders = document.querySelectorAll(\".file-list\");\n    console.log(holders);\n    if (!holders.length) return;\n  \n    try {\n      const structure = await fetchStructure();\n      holders.forEach((holder) => {\n        const folder = holder.dataset.folder;\n        holder.innerHTML = \"\"; // clear “Loading…”\n        const files = getFolderData(structure, folder);\n        if (!files) {\n          holder.textContent = `Folder not found: ${folder}`;\n          return;\n        }\n        files.forEach((f) => holder.appendChild(makeFileLink(folder, f)));\n        console.log(`Populated ${folder}`);\n      });\n    } catch (err) {\n      console.error(err);\n      holders.forEach((holder) => {\n        holder.textContent = \"Unable to load course structure.\";\n      });\n    }\n  }\n  \n  document.addEventListener('DOMContentLoaded', () => {\n    requestAnimationFrame(() => {\n      setTimeout(function() {initFileLists();}, 500)\n    });\n  });\n</script>"}
+code={"<script>\n  // 1) Configuration\n  if (typeof window.JSON_URL === 'undefined') {\n    window.JSON_URL = \"https://raw.githubusercontent.com/GE-Union/CourseBank/main/structure.json\";\n  }\n  if (typeof window.CACHE_KEY === 'undefined') {\n    window.CACHE_KEY = \"coursebank_structure_cache\";\n  }\n  if (typeof window.CACHE_TTL === 'undefined') {\n    window.CACHE_TTL = 90 * 60 * 1000; // 90 min\n  }\n  if (typeof window.EXT_COLORS === 'undefined') {\n    window.EXT_COLORS = {\n      PDF: \"#D32F2F\",\n      IPYNB: \"#F37C2F\",\n      ZIP: \"#595959\",\n      DOCX: \"#2A5699\",\n      XLSX: \"#1D6F42\",\n      PPTX: \"#D24726\",\n      TXT: \"#616161\",\n    };\n  }\n\n  \n  // 3) Helpers\n  async function fetchStructure() {\n    // try cache\n    const raw = localStorage.getItem(CACHE_KEY);\n    if (false) {\n      const { ts, data } = JSON.parse(raw);\n      if (Date.now() - ts < CACHE_TTL) {\n        return data;\n      }\n    }\n    // otherwise re-fetch\n    const res = await fetch(JSON_URL, { cache: \"no-store\" });\n    if (!res.ok) throw new Error(\"Failed to load structure.json\");\n    const data = await res.json();\n    localStorage.setItem(\n      CACHE_KEY,\n      JSON.stringify({ ts: Date.now(), data }),\n    );\n    return data;\n  }\n  \n  function getFolderData(structure, folderPath) {\n    const parts = folderPath.split(\"/\");\n    let cur = structure;\n    for (const p of parts) {\n      if (!(p in cur)) return null;\n      cur = cur[p];\n    }\n    return Array.isArray(cur) ? cur : null;\n  }\n  \n  function makeFileLink(folder, file) {\n    const container = document.createElement(\"div\");\n    container.className = \"custom-file-link\";\n  \n    // split name & author\n    const [rawName, rawAuth] = file.split(\"-a-\");\n    const filename = (rawName || file).replace(/_/g, \" \");\n    const author = rawAuth\n      ? rawAuth.replace(/_/g, \" \").replace(/\\.[^/.]+$/, \"\")\n      : \"Unknown\";\n  \n    const ext = file.split(\".\").pop().toUpperCase();\n  \n    const fullPath = `${folder}/${file}`;\n    const encodedPath = fullPath\n      .split('/')\n      .map(seg => encodeURIComponent(seg))\n      .join('/');\n  \n    const a = document.createElement('a');\n    if (['PDF'].includes(ext)) {\n      a.target = '_blank';\n      a.href = `https://geunion.dk/coursebank/${encodedPath}`;  // proxy script\n    } else {\n      a.setAttribute('download', \"\");\n      a.href = `https://geunion.dk/coursebank/${encodedPath}`;  // proxy script\n    }\n    a.style.display = 'flex';\n    a.style.alignItems = 'center';\n    a.style.width = '100%';\n    a.style.lineHeight = \"1.2\";\n  \n    // icon\n    const icon = document.createElement(\"div\");\n    icon.className = \"file-icon\";\n    const img = document.createElement(\"img\");\n    img.src =\n      \"https://raw.githubusercontent.com/GE-Union/CourseBank/main/res/file-icon.svg\";\n    img.alt = \"File Icon\";\n    icon.appendChild(img);\n  \n    const badge = document.createElement(\"div\");\n    badge.className = \"extension-badge\";\n    badge.textContent = ext;\n    badge.style.backgroundColor =\n      EXT_COLORS[ext] || \"var(--global-palette2,#1e73be)\";\n    icon.appendChild(badge);\n  \n    // details\n    const details = document.createElement(\"div\");\n    details.className = \"file-details\";\n    details.innerHTML = `<strong>${filename}</strong><span>${author}</span>`;\n  \n    // assemble\n    a.appendChild(icon);\n    a.appendChild(details);\n    container.appendChild(a);\n    return container;\n  }\n  \n  async function initFileLists() {\n    const holders = document.querySelectorAll(\".file-list\");\n    console.log(holders);\n    if (!holders.length) return;\n  \n    try {\n      const structure = await fetchStructure();\n      holders.forEach((holder) => {\n        const folder = holder.dataset.folder;\n        holder.innerHTML = \"\"; // clear “Loading…”\n        const files = getFolderData(structure, folder);\n        if (!files) {\n          holder.textContent = \"No notes found\";\n          return;\n        }\n        files.forEach((f) => holder.appendChild(makeFileLink(folder, f)));\n        console.log(`Populated ${folder}`);\n      });\n    } catch (err) {\n      console.error(err);\n      holders.forEach((holder) => {\n        holder.textContent = \"Unable to load course structure.\";\n      });\n    }\n  }\n  \n  document.addEventListener('DOMContentLoaded', () => {\n    requestAnimationFrame(() => {\n      setTimeout(function() {initFileLists();}, 500)\n    });\n  });\n</script>"}
 executeScriptOnCanvas={true}
 className={`w-html-embed`} />
 <HtmlEmbed
-code={"<style>\n.custom-file-link {\n  margin: 1em 0;\n  display: flex;\n  align-items: center;\n  max-width: 500px;\n  transition: transform 0.1s;\n  height: 40px;\n  width: 100%;\n}\n.custom-file-link > a {\n  text-decoration: none;\n}\n\n.custom-file-link:hover {\n  transform: translateX(5px);\n  cursor: pointer;\n}.custom-file-link:hover .file-details strong {\n  color: var(--front-red-1) !important;\n}\n\n.file-icon {\n  margin-right: 10px;\n  width: 36px;\n  height: 36px;\n  position: relative;\n}\n\n.file-icon img {\n  width: 100%;\n  height: 100%;\n  object-fit: contain;\n}\n\n.extension-badge {\n  position: absolute;\n  top: 0;\n  left: 0;\n  color: white;\n  font-size: 10px;\n  font-weight: 500;\n  padding: 1px 2px;\n  border-radius: 2px;\n  margin-top: 13.5px;\n  margin-left: 1px;\n  pointer-events: none;\n}\n\n.file-details {\n  display: flex;\n  flex-direction: column;\n  width: calc(100% - 42px)\n}\n\n.file-details strong {\n  font-size: 1em;\n  font-weight: 500;\n  color: var(--front-1);\n  white-space: nowrap;\n  text-overflow: ellipsis;\n  overflow: hidden;\n}\n\n.file-details span {\n  font-size: 0.8em;\n  color: var(--front-3);\n  white-space: nowrap;\n  text-overflow: ellipsis;\n  overflow: hidden;\n}\n\n</style>"}
+code={"<style>\n.file-list{\n  display: flex;\n  flex-wrap: wrap;\n  max-width: 850px\n}\n  \n.custom-file-link {\n  margin: 1em 0;\n  display: flex;\n  align-items: center;\n  max-width: 500px;\n  min-width: 300px;\n  transition: transform 0.1s;\n  height: 40px;\n  width: 50%;\n  flex-shrink: 0; flex-grow: 1;\n}\n.custom-file-link > a {\n  text-decoration: none;\n}\n\n.custom-file-link:hover {\n  transform: translateX(5px);\n  cursor: pointer;\n}.custom-file-link:hover .file-details strong {\n  color: var(--front-red-1) !important;\n}\n\n.file-icon {\n  margin-right: 10px;\n  width: 36px;\n  height: 36px;\n  position: relative;\n}\n\n.file-icon img {\n  width: 100%;\n  height: 100%;\n  object-fit: contain;\n  flex-shrink: 0;\n}\n\n.extension-badge {\n  position: absolute;\n  top: 0;\n  left: 0;\n  color: white;\n  font-size: 10px;\n  font-weight: 500;\n  padding: 1px 2px;\n  border-radius: 2px;\n  margin-top: 13.5px;\n  margin-left: 1px;\n  pointer-events: none;\n}\n\n.file-details {\n  display: flex;\n  flex-direction: column;\n  width: calc(100% - 58px);\n}\n\n.file-details strong {\n  font-size: 1em;\n  font-weight: 500;\n  color: var(--front-1);\n  white-space: nowrap;\n  text-overflow: ellipsis;\n  overflow: hidden;\n}\n\n.file-details span {\n  font-size: 0.8em;\n  color: var(--front-3);\n  white-space: nowrap;\n  text-overflow: ellipsis;\n  overflow: hidden;\n}\n\n</style>"}
 className={`w-html-embed`} />
 <Box
 className={`w-box cck00sw cd3toq c17nm8vt c1xymrvd c8yo8yx ci03eyw cu8ogtt cm1ds2c c1fxgukz c3q79or c1fhonxu cqlg791 cji7xkv c40iywk codsd31 c16er72m c1qt5xo2 c1uz2t7q c4psa79 c1ldi832 ${"icon-background home-top"}`}>
@@ -176,23 +176,962 @@ className={`w-text cg3nt0s c74dsfz czgmbqe cyoo8jj c1wwlxnr cje5w08 c1bck0pu c16
 </Text>
 </Box>
 </Box>
-<div
-className={`w-element ci03eyw cu8ogtt c1v4vkm5 c1993r1 c1w5mydw cn76a88 c1eeo1qt`}>
-<div
-className={`w-element cd3toq c17nm8vt c1xymrvd c8yo8yx cngdgqi c1in3n8u c3q79or cqlg791 csphimz c102ag1h c1jfe7vy ce1jmtw`}>
+<Tabs
+value={"0"}
+className={`w-tabs cu8ogtt c1v4vkm5 c3q79or cqlg791 c1tdh0eb ci03eyw`}>
+<TabsList
+className={`w-tabs-list cfyrpk4 c1qpyqes c1bti4b5 cd3toq c17nm8vt c8yo8yx c1xymrvd c1n9f9m4 c1jbi97f c1lgzutd csp87lc c1jrl8gb c1cshlcb cde37yz ca1ntyv cwsyfmt`}>
+<TabsTrigger
+data-ws-index="0"
+className={`w-tab-trigger cfyrpk4 c1v4vkm5 c1bti4b5 c1ysnkib c1mxgw9p c1k6l3pz ceehkft c1lp7lun c3ryv7d c1t11c95 c1kz25wt cr2ujrk c1tmykg6 ctdzf0s c1efnbdc c14hahek c1qt5xo2 ck08swj cuz3b7n c5atcat c13yk87r c12m3onu cxbwblh co1yi26 c1vk95sq c4m1pwg c1al8gxi cws4pam`}>
+<Span
+className={`w-text-1 c426or5 cycv0tm ckiq6wr`}>
+{"Polytachnical "}
+</Span>
+{"Foundations"}
+</TabsTrigger>
+<TabsTrigger
+data-ws-index="1"
+className={`w-tab-trigger cfyrpk4 c1v4vkm5 c1bti4b5 c4bgnbx cj82r57 cm4j335 c14a5ioc c1lp7lun c3ryv7d c1t11c95 c1kz25wt cr2ujrk c1tmykg6 ctdzf0s c1efnbdc c14hahek c1qt5xo2 ck08swj cuz3b7n c5atcat c13yk87r c12m3onu cxbwblh co1yi26 c1vk95sq c4m1pwg c1al8gxi cws4pam`}>
+{"Advanced"}
+<Span
+className={`w-text-1 cwti2ho cvuh4zx ckiq6wr`}>
+{"Systems"}
+</Span>
+</TabsTrigger>
+<TabsTrigger
+data-ws-index="2"
+className={`w-tab-trigger cfyrpk4 c1v4vkm5 c1bti4b5 c4bgnbx cj82r57 cm4j335 c14a5ioc c1lp7lun c3ryv7d c1t11c95 c1kz25wt c1tmykg6 ctdzf0s c1efnbdc c14hahek c1qt5xo2 ck08swj cr2ujrk cuz3b7n c5atcat c13yk87r c12m3onu cxbwblh co1yi26 c1vk95sq c4m1pwg c1al8gxi cws4pam`}>
+{"Cyber"}
+<Span
+className={`w-text-1 cwti2ho cvuh4zx ckiq6wr`}>
+{"Systems"}
+</Span>
+</TabsTrigger>
+<TabsTrigger
+data-ws-index="3"
+className={`w-tab-trigger cfyrpk4 c1v4vkm5 c1bti4b5 c4bgnbx cj82r57 cm4j335 c14a5ioc c1lp7lun c3ryv7d c1t11c95 c1kz25wt cr2ujrk c1tmykg6 ctdzf0s c1efnbdc c14hahek c1qt5xo2 ck08swj cuz3b7n c5atcat c13yk87r c12m3onu cxbwblh co1yi26 c1vk95sq c4m1pwg c1al8gxi cws4pam`}>
+{"Living"}
+<Span
+className={`w-text-1 cwti2ho cvuh4zx ckiq6wr`}>
+{"Systems"}
+</Span>
+</TabsTrigger>
+<TabsTrigger
+data-ws-index="4"
+className={`w-tab-trigger cfyrpk4 c1v4vkm5 c1bti4b5 c4bgnbx cj82r57 cm4j335 c14a5ioc c1lp7lun c3ryv7d c1t11c95 c1kz25wt cr2ujrk c1tmykg6 ctdzf0s c1efnbdc c14hahek c1qt5xo2 ck08swj cuz3b7n c5atcat c13yk87r c12m3onu cxbwblh co1yi26 c1vk95sq c4m1pwg c1al8gxi cws4pam`}>
+{"Future"}
+<Span
+className={`w-text-1 cwti2ho cvuh4zx ckiq6wr`}>
+{"Energy"}
+</Span>
+</TabsTrigger>
+</TabsList>
+<TabsContent
+data-ws-index="0"
+className={`w-tab-content ci03eyw cu8ogtt c1qpyqes c7wcowi ch5gnkm c1ive82f`}>
+<p
+className={`w-element cyoo8jj czga5yl c3brmnq cc02v1c`}>
+{"The "}
+<b
+className={`w-element`}>
+{"Polytechnical Foundations"}
+</b>
+{" are a set of courses all at DTU are required to take. They cover a wide variety of stuffs and suck sometimes. They are still cool in general tho."}
+</p>
+<Accordion
+collapsible={true}
+className={`w-accordion`}>
+<AccordionItem
+data-ws-index="0"
+className={`w-item`}>
+<AccordionHeader
+className={`w-item-header ci03eyw`}>
+<AccordionTrigger
+className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny c8qj03j c8l261o c13u1sx6 c1yyg526 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js`}>
+<Text
+className={`w-text c1kzhrg`}>
+{"Mathematics 1a"}
+<Span
+className={`w-text-1 chpvhw5 c1br4k3t c1vn0xiq c17g3f7v cgjpuuk`}>
+{"01003"}
+</Span>
+</Text>
+<Box
+className={`w-box coxlzp3 c178lpvj cbg292c c767uka c1tmykg6 c40iywk c1efnbdc c14hahek c1qt5xo2`}>
 <HtmlEmbed
-code={"<div class=\"file-list\"\n     data-folder=\"polytechnical-foundations/maths1b\">\n  Loading…\n</div>"}
+code={"<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 16 16\" width=\"100%\" height=\"100%\" style=\"display: block;\"><path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"m4 6 4 4 4-4\"/></svg>"}
+className={`w-html-embed`} />
+</Box>
+</AccordionTrigger>
+</AccordionHeader>
+<AccordionContent
+className={`w-item-content cm1ds2c c1fxgukz c1jbi97f crebcbz c1tmykg6 ctdzf0s c1efnbdc c14hahek c1qt5xo2 c984udg c15qt4h4 c11ua5hp`}>
+<span
+className={`w-element`}>
+{"The course content provides a part of the mathematical basis for a broad range of technical fields and also provides a starting point for further studies in mathematics and applied mathematics."}
+</span>
+<h3
+className={`w-element cc02v1c`}>
+{"Notes"}
+</h3>
+<HtmlEmbed
+code={"<div class=\"file-list\"\n     data-folder=\"polytechnical-foundations/maths1a\">\n  Loading…\n</div>\n<script>\n  initFileLists();\n</script>"}
 executeScriptOnCanvas={true}
 className={`w-html-embed`} />
-</div>
-<div
-className={`w-element cd3toq c17nm8vt c1xymrvd c8yo8yx cngdgqi c1in3n8u c3q79or cqlg791 csphimz c102ag1h c1jfe7vy ce1jmtw`}>
+</AccordionContent>
+</AccordionItem>
+<AccordionItem
+data-ws-index="1"
+className={`w-item`}>
+<AccordionHeader
+className={`w-item-header ci03eyw`}>
+<AccordionTrigger
+className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny c8qj03j c8l261o c13u1sx6 c1yyg526 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js`}>
+<Text
+className={`w-text`}>
+{"Mathematics 1b"}
+<Span
+className={`w-text-1 chpvhw5 c1br4k3t c1vn0xiq c17g3f7v cgjpuuk`}>
+{"01004"}
+</Span>
+</Text>
+<Box
+className={`w-box coxlzp3 c178lpvj cbg292c c767uka c1tmykg6 c40iywk c1efnbdc c14hahek c1qt5xo2`}>
 <HtmlEmbed
-code={"<div class=\"file-list\"\n     data-folder=\"polytechnical-foundations/statistics\">\n  Loading…\n</div>"}
+code={"<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 16 16\" width=\"100%\" height=\"100%\" style=\"display: block;\"><path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"m4 6 4 4 4-4\"/></svg>"}
+className={`w-html-embed`} />
+</Box>
+</AccordionTrigger>
+</AccordionHeader>
+<AccordionContent
+className={`w-item-content cm1ds2c c1fxgukz c1jbi97f crebcbz c1tmykg6 ctdzf0s c1efnbdc c14hahek c1qt5xo2 c984udg c15qt4h4 c11ua5hp`}>
+<span
+className={`w-element`}>
+{"The goal is to strengthen the students' ability to, on the one hand, use a mathematical way of thinking and, on the other hand, an algorithmic and computational approach to understanding and working with basic concepts from multivariate calculus."}
+</span>
+<h3
+className={`w-element cc02v1c`}>
+{"Notes"}
+</h3>
+<HtmlEmbed
+code={"<div class=\"file-list\"\n     data-folder=\"polytechnical-foundations/maths1b\">\n  Loading…\n</div>\n<script>\n  initFileLists();\n</script>"}
 executeScriptOnCanvas={true}
 className={`w-html-embed`} />
-</div>
-</div>
+</AccordionContent>
+</AccordionItem>
+<AccordionItem
+data-ws-index="2"
+className={`w-item`}>
+<AccordionHeader
+className={`w-item-header ci03eyw`}>
+<AccordionTrigger
+className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny c8qj03j c8l261o c13u1sx6 c1yyg526 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js`}>
+<Text
+className={`w-text`}>
+{"Chemistry"}
+<Span
+className={`w-text-1 chpvhw5 c1br4k3t c1vn0xiq c17g3f7v cgjpuuk`}>
+{"26020"}
+</Span>
+</Text>
+<Box
+className={`w-box coxlzp3 c178lpvj cbg292c c767uka c1tmykg6 c40iywk c1efnbdc c14hahek c1qt5xo2`}>
+<HtmlEmbed
+code={"<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 16 16\" width=\"100%\" height=\"100%\" style=\"display: block;\"><path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"m4 6 4 4 4-4\"/></svg>"}
+className={`w-html-embed`} />
+</Box>
+</AccordionTrigger>
+</AccordionHeader>
+<AccordionContent
+className={`w-item-content cm1ds2c c1fxgukz c1jbi97f crebcbz c1tmykg6 ctdzf0s c1efnbdc c14hahek c1qt5xo2 c984udg c15qt4h4 c11ua5hp`}>
+<span
+className={`w-element`}>
+{"To achieve knowledge of the fundamental chemical principles, which are part of the common polytechnic basis of the civil bachelor's degrees."}
+</span>
+<h3
+className={`w-element cc02v1c`}>
+{"Notes"}
+</h3>
+<HtmlEmbed
+code={"<div class=\"file-list\"\n     data-folder=\"polytechnical-foundations/chemistry\">\n  Loading…\n</div>\n<script>\n  initFileLists();\n</script>"}
+executeScriptOnCanvas={true}
+className={`w-html-embed`} />
+</AccordionContent>
+</AccordionItem>
+<AccordionItem
+data-ws-index="3"
+className={`w-item`}>
+<AccordionHeader
+className={`w-item-header ci03eyw`}>
+<AccordionTrigger
+className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny c8qj03j c8l261o c13u1sx6 c1yyg526 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js`}>
+<Text
+className={`w-text`}>
+{"Computer Programming"}
+<Span
+className={`w-text-1 chpvhw5 c1br4k3t c1vn0xiq c17g3f7v cgjpuuk`}>
+{"02003"}
+</Span>
+</Text>
+<Box
+className={`w-box coxlzp3 c178lpvj cbg292c c767uka c1tmykg6 c40iywk c1efnbdc c14hahek c1qt5xo2`}>
+<HtmlEmbed
+code={"<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 16 16\" width=\"100%\" height=\"100%\" style=\"display: block;\"><path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"m4 6 4 4 4-4\"/></svg>"}
+className={`w-html-embed`} />
+</Box>
+</AccordionTrigger>
+</AccordionHeader>
+<AccordionContent
+className={`w-item-content cm1ds2c c1fxgukz c1jbi97f crebcbz c1tmykg6 ctdzf0s c1efnbdc c14hahek c1qt5xo2 c984udg c15qt4h4 c11ua5hp`}>
+<span
+className={`w-element`}>
+{"To achieve knowledge of the fundamental chemical principles, which are part of the common polytechnic basis of the civil bachelor's degrees."}
+</span>
+<h3
+className={`w-element cc02v1c`}>
+{"Notes"}
+</h3>
+<HtmlEmbed
+code={"<div class=\"file-list\"\n     data-folder=\"polytechnical-foundations/computer-programming\">\n  Loading…\n</div>\n<script>\n  initFileLists();\n</script>"}
+executeScriptOnCanvas={true}
+className={`w-html-embed`} />
+</AccordionContent>
+</AccordionItem>
+<AccordionItem
+data-ws-index="4"
+className={`w-item`}>
+<AccordionHeader
+className={`w-item-header ci03eyw`}>
+<AccordionTrigger
+className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny c8qj03j c8l261o c13u1sx6 c1yyg526 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js`}>
+<Text
+className={`w-text`}>
+{"Physics"}
+<Span
+className={`w-text-1 chpvhw5 c1br4k3t c1vn0xiq c17g3f7v cgjpuuk`}>
+{"10063"}
+</Span>
+</Text>
+<Box
+className={`w-box coxlzp3 c178lpvj cbg292c c767uka c1tmykg6 c40iywk c1efnbdc c14hahek c1qt5xo2`}>
+<HtmlEmbed
+code={"<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 16 16\" width=\"100%\" height=\"100%\" style=\"display: block;\"><path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"m4 6 4 4 4-4\"/></svg>"}
+className={`w-html-embed`} />
+</Box>
+</AccordionTrigger>
+</AccordionHeader>
+<AccordionContent
+className={`w-item-content cm1ds2c c1fxgukz c1jbi97f crebcbz c1tmykg6 ctdzf0s c1efnbdc c14hahek c1qt5xo2 c984udg c15qt4h4 c11ua5hp`}>
+<span
+className={`w-element`}>
+{"To achieve knowledge of the fundamental chemical principles, which are part of the common polytechnic basis of the civil bachelor's degrees."}
+</span>
+<h3
+className={`w-element cc02v1c`}>
+{"Notes"}
+</h3>
+<HtmlEmbed
+code={"<div class=\"file-list\"\n     data-folder=\"polytechnical-foundations/physics1\">\n  Loading…\n</div>\n<script>\n  initFileLists();\n</script>"}
+executeScriptOnCanvas={true}
+className={`w-html-embed`} />
+</AccordionContent>
+</AccordionItem>
+<AccordionItem
+data-ws-index="5"
+className={`w-item`}>
+<AccordionHeader
+className={`w-item-header ci03eyw`}>
+<AccordionTrigger
+className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny c8qj03j c8l261o c13u1sx6 c1yyg526 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js`}>
+<Text
+className={`w-text`}>
+{"Statistics"}
+<Span
+className={`w-text-1 chpvhw5 c1br4k3t c1vn0xiq c17g3f7v cgjpuuk`}>
+{"02402"}
+</Span>
+</Text>
+<Box
+className={`w-box coxlzp3 c178lpvj cbg292c c767uka c1tmykg6 c40iywk c1efnbdc c14hahek c1qt5xo2`}>
+<HtmlEmbed
+code={"<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 16 16\" width=\"100%\" height=\"100%\" style=\"display: block;\"><path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"m4 6 4 4 4-4\"/></svg>"}
+className={`w-html-embed`} />
+</Box>
+</AccordionTrigger>
+</AccordionHeader>
+<AccordionContent
+className={`w-item-content cm1ds2c c1fxgukz c1jbi97f crebcbz c1tmykg6 ctdzf0s c1efnbdc c14hahek c1qt5xo2 c984udg c15qt4h4 c11ua5hp`}>
+<span
+className={`w-element`}>
+{"To achieve knowledge of the fundamental chemical principles, which are part of the common polytechnic basis of the civil bachelor's degrees."}
+</span>
+<h3
+className={`w-element cc02v1c`}>
+{"Notes"}
+</h3>
+<HtmlEmbed
+code={"<div class=\"file-list\"\n     data-folder=\"polytechnical-foundations/statistics\">\n  Loading…\n</div>\n<script>\n  initFileLists();\n</script>"}
+executeScriptOnCanvas={true}
+className={`w-html-embed`} />
+</AccordionContent>
+</AccordionItem>
+<AccordionItem
+data-ws-index="6"
+className={`w-item`}>
+<AccordionHeader
+className={`w-item-header ci03eyw`}>
+<AccordionTrigger
+className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny c8qj03j c8l261o c13u1sx6 c1yyg526 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js`}>
+<Text
+className={`w-text`}>
+{"Interdisciplinary Bioengineering"}
+<Span
+className={`w-text-1 chpvhw5 c1br4k3t c1vn0xiq c17g3f7v cgjpuuk`}>
+{"27020"}
+</Span>
+</Text>
+<Box
+className={`w-box coxlzp3 c178lpvj cbg292c c767uka c1tmykg6 c40iywk c1efnbdc c14hahek c1qt5xo2`}>
+<HtmlEmbed
+code={"<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 16 16\" width=\"100%\" height=\"100%\" style=\"display: block;\"><path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"m4 6 4 4 4-4\"/></svg>"}
+className={`w-html-embed`} />
+</Box>
+</AccordionTrigger>
+</AccordionHeader>
+<AccordionContent
+className={`w-item-content cm1ds2c c1fxgukz c1jbi97f crebcbz c1tmykg6 ctdzf0s c1efnbdc c14hahek c1qt5xo2 c984udg c15qt4h4 c11ua5hp`}>
+<span
+className={`w-element`}>
+{"To achieve knowledge of the fundamental chemical principles, which are part of the common polytechnic basis of the civil bachelor's degrees."}
+</span>
+<h3
+className={`w-element cc02v1c`}>
+{"Notes"}
+</h3>
+<HtmlEmbed
+code={"<div class=\"file-list\"\n     data-folder=\"polytechnical-foundations/interdisciplinary-bioengineering\">\n  Loading…\n</div>\n<script>\n  initFileLists();\n</script>"}
+executeScriptOnCanvas={true}
+className={`w-html-embed`} />
+</AccordionContent>
+</AccordionItem>
+<AccordionItem
+data-ws-index="7"
+className={`w-item`}>
+<AccordionHeader
+className={`w-item-header ci03eyw`}>
+<AccordionTrigger
+className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny c8qj03j c8l261o c13u1sx6 c1yyg526 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js`}>
+<Text
+className={`w-text`}>
+{"Science, Technology and Society"}
+<Span
+className={`w-text-1 chpvhw5 c1br4k3t c1vn0xiq c17g3f7v cgjpuuk`}>
+{"42620"}
+</Span>
+</Text>
+<Box
+className={`w-box coxlzp3 c178lpvj cbg292c c767uka c1tmykg6 c40iywk c1efnbdc c14hahek c1qt5xo2`}>
+<HtmlEmbed
+code={"<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 16 16\" width=\"100%\" height=\"100%\" style=\"display: block;\"><path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"m4 6 4 4 4-4\"/></svg>"}
+className={`w-html-embed`} />
+</Box>
+</AccordionTrigger>
+</AccordionHeader>
+<AccordionContent
+className={`w-item-content cm1ds2c c1fxgukz c1jbi97f crebcbz c1tmykg6 ctdzf0s c1efnbdc c14hahek c1qt5xo2 c984udg c15qt4h4 c11ua5hp`}>
+<span
+className={`w-element`}>
+{"To achieve knowledge of the fundamental chemical principles, which are part of the common polytechnic basis of the civil bachelor's degrees."}
+</span>
+<h3
+className={`w-element cc02v1c`}>
+{"Notes"}
+</h3>
+<HtmlEmbed
+code={"<div class=\"file-list\"\n     data-folder=\"polytechnical-foundations/science-technology-and-society\">\n  Loading…\n</div>\n<script>\n  initFileLists();\n</script>"}
+executeScriptOnCanvas={true}
+className={`w-html-embed`} />
+</AccordionContent>
+</AccordionItem>
+<AccordionItem
+data-ws-index="8"
+className={`w-item c1risi17`}>
+<AccordionHeader
+className={`w-item-header ci03eyw`}>
+<AccordionTrigger
+className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny c8qj03j c8l261o c13u1sx6 c1yyg526 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js`}>
+<Text
+className={`w-text`}>
+{"Mathematics 2"}
+<Span
+className={`w-text-1 chpvhw5 c1br4k3t c1vn0xiq c17g3f7v cgjpuuk`}>
+{"01034"}
+</Span>
+</Text>
+<Box
+className={`w-box coxlzp3 c178lpvj cbg292c c767uka c1tmykg6 c40iywk c1efnbdc c14hahek c1qt5xo2`}>
+<HtmlEmbed
+code={"<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 16 16\" width=\"100%\" height=\"100%\" style=\"display: block;\"><path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"m4 6 4 4 4-4\"/></svg>"}
+className={`w-html-embed`} />
+</Box>
+</AccordionTrigger>
+</AccordionHeader>
+<AccordionContent
+className={`w-item-content cm1ds2c c1fxgukz c1jbi97f crebcbz c1tmykg6 ctdzf0s c1efnbdc c14hahek c1qt5xo2 c984udg c15qt4h4 c11ua5hp`}>
+<span
+className={`w-element`}>
+{"To achieve knowledge of the fundamental chemical principles, which are part of the common polytechnic basis of the civil bachelor's degrees."}
+</span>
+<h3
+className={`w-element cc02v1c`}>
+{"Notes"}
+</h3>
+<HtmlEmbed
+code={"<div class=\"file-list\"\n     data-folder=\"polytechnical-foundations/maths2\">\n  Loading…\n</div>\n<script>\n  initFileLists();\n</script>"}
+executeScriptOnCanvas={true}
+className={`w-html-embed`} />
+</AccordionContent>
+</AccordionItem>
+</Accordion>
+</TabsContent>
+<TabsContent
+data-ws-index="1"
+className={`w-tab-content ci03eyw cu8ogtt c1qpyqes c7wcowi ch5gnkm c1ive82f`}>
+<p
+className={`w-element cyoo8jj czga5yl c3brmnq cc02v1c`}>
+{"The "}
+<b
+className={`w-element`}>
+{"Advanced Materials"}
+</b>
+{" specialisation focuses on a particular kind of material, the advanced kind. This means it deals with advanced stuff."}
+</p>
+<Accordion
+collapsible={true}
+className={`w-accordion cyoabi7`}>
+<AccordionItem
+data-ws-index="0"
+className={`w-item`}>
+<AccordionHeader
+className={`w-item-header ci03eyw`}>
+<AccordionTrigger
+className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny c8qj03j c8l261o c13u1sx6 c1yyg526 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js`}>
+<Text
+className={`w-text c1kzhrg`}>
+{"Introduction to Advanced Materials"}
+<Span
+className={`w-text-1 chpvhw5 c1br4k3t c1vn0xiq c17g3f7v cgjpuuk`}>
+{"01003"}
+</Span>
+</Text>
+<Box
+className={`w-box coxlzp3 c178lpvj cbg292c c767uka c1tmykg6 c40iywk c1efnbdc c14hahek c1qt5xo2`}>
+<HtmlEmbed
+code={"<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 16 16\" width=\"100%\" height=\"100%\" style=\"display: block;\"><path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"m4 6 4 4 4-4\"/></svg>"}
+className={`w-html-embed`} />
+</Box>
+</AccordionTrigger>
+</AccordionHeader>
+<AccordionContent
+className={`w-item-content cm1ds2c c1fxgukz c1jbi97f crebcbz c1tmykg6 ctdzf0s c1efnbdc c14hahek c1qt5xo2 c984udg c15qt4h4 c11ua5hp`}>
+<span
+className={`w-element`}>
+{"The course content provides a part of the mathematical basis for a broad range of technical fields and also provides a starting point for further studies in mathematics and applied mathematics."}
+</span>
+<h3
+className={`w-element cc02v1c`}>
+{"Notes"}
+</h3>
+<HtmlEmbed
+code={"<div class=\"file-list\"\n     data-folder=\"advanced-materials/introduction-to-advanced-materials\">\n  Loading…\n</div>\n<script>\n  initFileLists();\n</script>"}
+executeScriptOnCanvas={true}
+className={`w-html-embed`} />
+</AccordionContent>
+</AccordionItem>
+<AccordionItem
+data-ws-index="1"
+className={`w-item`}>
+<AccordionHeader
+className={`w-item-header ci03eyw`}>
+<AccordionTrigger
+className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny c8qj03j c8l261o c13u1sx6 c1yyg526 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js`}>
+<Text
+className={`w-text`}>
+{"Introduction to Numerical Algorithms"}
+<Span
+className={`w-text-1 chpvhw5 c1br4k3t c1vn0xiq c17g3f7v cgjpuuk`}>
+{"01004"}
+</Span>
+</Text>
+<Box
+className={`w-box coxlzp3 c178lpvj cbg292c c767uka c1tmykg6 c40iywk c1efnbdc c14hahek c1qt5xo2`}>
+<HtmlEmbed
+code={"<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 16 16\" width=\"100%\" height=\"100%\" style=\"display: block;\"><path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"m4 6 4 4 4-4\"/></svg>"}
+className={`w-html-embed`} />
+</Box>
+</AccordionTrigger>
+</AccordionHeader>
+<AccordionContent
+className={`w-item-content cm1ds2c c1fxgukz c1jbi97f crebcbz c1tmykg6 ctdzf0s c1efnbdc c14hahek c1qt5xo2 c984udg c15qt4h4 c11ua5hp`}>
+<span
+className={`w-element`}>
+{"The goal is to strengthen the students' ability to, on the one hand, use a mathematical way of thinking and, on the other hand, an algorithmic and computational approach to understanding and working with basic concepts from multivariate calculus."}
+</span>
+<h3
+className={`w-element cc02v1c`}>
+{"Notes"}
+</h3>
+<HtmlEmbed
+code={"<div class=\"file-list\"\n     data-folder=\"advanced-materials/introduction-to-numerical-algorithms\">\n  Loading…\n</div>\n<script>\n  initFileLists();\n</script>"}
+executeScriptOnCanvas={true}
+className={`w-html-embed`} />
+</AccordionContent>
+</AccordionItem>
+<AccordionItem
+data-ws-index="2"
+className={`w-item`}>
+<AccordionHeader
+className={`w-item-header ci03eyw`}>
+<AccordionTrigger
+className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny c8qj03j c8l261o c13u1sx6 c1yyg526 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js`}>
+<Text
+className={`w-text`}>
+{"Physics for materials and energy"}
+<Span
+className={`w-text-1 chpvhw5 c1br4k3t c1vn0xiq c17g3f7v cgjpuuk`}>
+{"26020"}
+</Span>
+</Text>
+<Box
+className={`w-box coxlzp3 c178lpvj cbg292c c767uka c1tmykg6 c40iywk c1efnbdc c14hahek c1qt5xo2`}>
+<HtmlEmbed
+code={"<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 16 16\" width=\"100%\" height=\"100%\" style=\"display: block;\"><path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"m4 6 4 4 4-4\"/></svg>"}
+className={`w-html-embed`} />
+</Box>
+</AccordionTrigger>
+</AccordionHeader>
+<AccordionContent
+className={`w-item-content cm1ds2c c1fxgukz c1jbi97f crebcbz c1tmykg6 ctdzf0s c1efnbdc c14hahek c1qt5xo2 c984udg c15qt4h4 c11ua5hp`}>
+<span
+className={`w-element`}>
+{"To achieve knowledge of the fundamental chemical principles, which are part of the common polytechnic basis of the civil bachelor's degrees."}
+</span>
+<h3
+className={`w-element cc02v1c`}>
+{"Notes"}
+</h3>
+<HtmlEmbed
+code={"<div class=\"file-list\"\n     data-folder=\"advanced-materials/physics-for-materials-and-energy\">\n  Loading…\n</div>\n<script>\n  initFileLists();\n</script>"}
+executeScriptOnCanvas={true}
+className={`w-html-embed`} />
+</AccordionContent>
+</AccordionItem>
+</Accordion>
+</TabsContent>
+<TabsContent
+data-ws-index="2"
+className={`w-tab-content ci03eyw cu8ogtt c1qpyqes c7wcowi ch5gnkm c1ive82f`}>
+<p
+className={`w-element cyoo8jj czga5yl c3brmnq cc02v1c`}>
+{"The "}
+<b
+className={`w-element`}>
+{"Cyber Systems"}
+</b>
+{" specialisation is about computers and integrated systems. It is objectively the best specialisation for the best people."}
+</p>
+<Accordion
+collapsible={true}
+className={`w-accordion`}>
+<AccordionItem
+data-ws-index="0"
+className={`w-item`}>
+<AccordionHeader
+className={`w-item-header ci03eyw`}>
+<AccordionTrigger
+className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny c8qj03j c8l261o c13u1sx6 c1yyg526 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js`}>
+<Text
+className={`w-text c1kzhrg`}>
+{"Introduction to Cyber Systems"}
+<Span
+className={`w-text-1 chpvhw5 c1br4k3t c1vn0xiq c17g3f7v cgjpuuk`}>
+{"01003"}
+</Span>
+</Text>
+<Box
+className={`w-box coxlzp3 c178lpvj cbg292c c767uka c1tmykg6 c40iywk c1efnbdc c14hahek c1qt5xo2`}>
+<HtmlEmbed
+code={"<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 16 16\" width=\"100%\" height=\"100%\" style=\"display: block;\"><path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"m4 6 4 4 4-4\"/></svg>"}
+className={`w-html-embed`} />
+</Box>
+</AccordionTrigger>
+</AccordionHeader>
+<AccordionContent
+className={`w-item-content cm1ds2c c1fxgukz c1jbi97f crebcbz c1tmykg6 ctdzf0s c1efnbdc c14hahek c1qt5xo2 c984udg c15qt4h4 c11ua5hp`}>
+<span
+className={`w-element`}>
+{"The course content provides a part of the mathematical basis for a broad range of technical fields and also provides a starting point for further studies in mathematics and applied mathematics."}
+</span>
+<h3
+className={`w-element cc02v1c`}>
+{"Notes"}
+</h3>
+<HtmlEmbed
+code={"<div class=\"file-list\"\n     data-folder=\"polytechnical-foundations/maths1a\">\n  Loading…\n</div>\n<script>\n  initFileLists();\n</script>"}
+executeScriptOnCanvas={true}
+className={`w-html-embed`} />
+</AccordionContent>
+</AccordionItem>
+<AccordionItem
+data-ws-index="1"
+className={`w-item`}>
+<AccordionHeader
+className={`w-item-header ci03eyw`}>
+<AccordionTrigger
+className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny c8qj03j c8l261o c13u1sx6 c1yyg526 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js`}>
+<Text
+className={`w-text`}>
+{"Discrete Mathematics"}
+<Span
+className={`w-text-1 chpvhw5 c1br4k3t c1vn0xiq c17g3f7v cgjpuuk`}>
+{"01004"}
+</Span>
+</Text>
+<Box
+className={`w-box coxlzp3 c178lpvj cbg292c c767uka c1tmykg6 c40iywk c1efnbdc c14hahek c1qt5xo2`}>
+<HtmlEmbed
+code={"<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 16 16\" width=\"100%\" height=\"100%\" style=\"display: block;\"><path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"m4 6 4 4 4-4\"/></svg>"}
+className={`w-html-embed`} />
+</Box>
+</AccordionTrigger>
+</AccordionHeader>
+<AccordionContent
+className={`w-item-content cm1ds2c c1fxgukz c1jbi97f crebcbz c1tmykg6 ctdzf0s c1efnbdc c14hahek c1qt5xo2 c984udg c15qt4h4 c11ua5hp`}>
+<span
+className={`w-element`}>
+{"The goal is to strengthen the students' ability to, on the one hand, use a mathematical way of thinking and, on the other hand, an algorithmic and computational approach to understanding and working with basic concepts from multivariate calculus."}
+</span>
+<h3
+className={`w-element cc02v1c`}>
+{"Notes"}
+</h3>
+<HtmlEmbed
+code={"<div class=\"file-list\"\n     data-folder=\"polytechnical-foundations/maths1b\">\n  Loading…\n</div>\n<script>\n  initFileLists();\n</script>"}
+executeScriptOnCanvas={true}
+className={`w-html-embed`} />
+</AccordionContent>
+</AccordionItem>
+<AccordionItem
+data-ws-index="2"
+className={`w-item`}>
+<AccordionHeader
+className={`w-item-header ci03eyw`}>
+<AccordionTrigger
+className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny c8qj03j c8l261o c13u1sx6 c1yyg526 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js`}>
+<Text
+className={`w-text`}>
+{"Algorithms and Data Structures 1"}
+<Span
+className={`w-text-1 chpvhw5 c1br4k3t c1vn0xiq c17g3f7v cgjpuuk`}>
+{"26020"}
+</Span>
+</Text>
+<Box
+className={`w-box coxlzp3 c178lpvj cbg292c c767uka c1tmykg6 c40iywk c1efnbdc c14hahek c1qt5xo2`}>
+<HtmlEmbed
+code={"<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 16 16\" width=\"100%\" height=\"100%\" style=\"display: block;\"><path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"m4 6 4 4 4-4\"/></svg>"}
+className={`w-html-embed`} />
+</Box>
+</AccordionTrigger>
+</AccordionHeader>
+<AccordionContent
+className={`w-item-content cm1ds2c c1fxgukz c1jbi97f crebcbz c1tmykg6 ctdzf0s c1efnbdc c14hahek c1qt5xo2 c984udg c15qt4h4 c11ua5hp`}>
+<span
+className={`w-element`}>
+{"To achieve knowledge of the fundamental chemical principles, which are part of the common polytechnic basis of the civil bachelor's degrees."}
+</span>
+<h3
+className={`w-element cc02v1c`}>
+{"Notes"}
+</h3>
+<HtmlEmbed
+code={"<div class=\"file-list\"\n     data-folder=\"polytechnical-foundations/chemistry\">\n  Loading…\n</div>\n<script>\n  initFileLists();\n</script>"}
+executeScriptOnCanvas={true}
+className={`w-html-embed`} />
+</AccordionContent>
+</AccordionItem>
+</Accordion>
+</TabsContent>
+<TabsContent
+data-ws-index="3"
+className={`w-tab-content ci03eyw cu8ogtt c1qpyqes c7wcowi ch5gnkm c1ive82f`}>
+<p
+className={`w-element cyoo8jj czga5yl c3brmnq cc02v1c`}>
+{"The "}
+<b
+className={`w-element`}>
+{"Living Systems"}
+</b>
+{" specialisation sucks."}
+</p>
+<Accordion
+collapsible={true}
+className={`w-accordion`}>
+<AccordionItem
+data-ws-index="0"
+className={`w-item`}>
+<AccordionHeader
+className={`w-item-header ci03eyw`}>
+<AccordionTrigger
+className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny c8qj03j c8l261o c13u1sx6 c1yyg526 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js`}>
+<Text
+className={`w-text c1kzhrg`}>
+{"Introduction to Living Systems"}
+<Span
+className={`w-text-1 chpvhw5 c1br4k3t c1vn0xiq c17g3f7v cgjpuuk`}>
+{"01003"}
+</Span>
+</Text>
+<Box
+className={`w-box coxlzp3 c178lpvj cbg292c c767uka c1tmykg6 c40iywk c1efnbdc c14hahek c1qt5xo2`}>
+<HtmlEmbed
+code={"<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 16 16\" width=\"100%\" height=\"100%\" style=\"display: block;\"><path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"m4 6 4 4 4-4\"/></svg>"}
+className={`w-html-embed`} />
+</Box>
+</AccordionTrigger>
+</AccordionHeader>
+<AccordionContent
+className={`w-item-content cm1ds2c c1fxgukz c1jbi97f crebcbz c1tmykg6 ctdzf0s c1efnbdc c14hahek c1qt5xo2 c984udg c15qt4h4 c11ua5hp`}>
+<span
+className={`w-element`}>
+{"The course content provides a part of the mathematical basis for a broad range of technical fields and also provides a starting point for further studies in mathematics and applied mathematics."}
+</span>
+<h3
+className={`w-element cc02v1c`}>
+{"Notes"}
+</h3>
+<HtmlEmbed
+code={"<div class=\"file-list\"\n     data-folder=\"polytechnical-foundations/maths1a\">\n  Loading…\n</div>\n<script>\n  initFileLists();\n</script>"}
+executeScriptOnCanvas={true}
+className={`w-html-embed`} />
+</AccordionContent>
+</AccordionItem>
+<AccordionItem
+data-ws-index="1"
+className={`w-item`}>
+<AccordionHeader
+className={`w-item-header ci03eyw`}>
+<AccordionTrigger
+className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny c8qj03j c8l261o c13u1sx6 c1yyg526 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js`}>
+<Text
+className={`w-text`}>
+{"Introduction to genetic methods in engineering"}
+<Span
+className={`w-text-1 chpvhw5 c1br4k3t c1vn0xiq c17g3f7v cgjpuuk`}>
+{"01004"}
+</Span>
+</Text>
+<Box
+className={`w-box coxlzp3 c178lpvj cbg292c c767uka c1tmykg6 c40iywk c1efnbdc c14hahek c1qt5xo2`}>
+<HtmlEmbed
+code={"<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 16 16\" width=\"100%\" height=\"100%\" style=\"display: block;\"><path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"m4 6 4 4 4-4\"/></svg>"}
+className={`w-html-embed`} />
+</Box>
+</AccordionTrigger>
+</AccordionHeader>
+<AccordionContent
+className={`w-item-content cm1ds2c c1fxgukz c1jbi97f crebcbz c1tmykg6 ctdzf0s c1efnbdc c14hahek c1qt5xo2 c984udg c15qt4h4 c11ua5hp`}>
+<span
+className={`w-element`}>
+{"The goal is to strengthen the students' ability to, on the one hand, use a mathematical way of thinking and, on the other hand, an algorithmic and computational approach to understanding and working with basic concepts from multivariate calculus."}
+</span>
+<h3
+className={`w-element cc02v1c`}>
+{"Notes"}
+</h3>
+<HtmlEmbed
+code={"<div class=\"file-list\"\n     data-folder=\"polytechnical-foundations/maths1b\">\n  Loading…\n</div>\n<script>\n  initFileLists();\n</script>"}
+executeScriptOnCanvas={true}
+className={`w-html-embed`} />
+</AccordionContent>
+</AccordionItem>
+<AccordionItem
+data-ws-index="2"
+className={`w-item`}>
+<AccordionHeader
+className={`w-item-header ci03eyw`}>
+<AccordionTrigger
+className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny c8qj03j c8l261o c13u1sx6 c1yyg526 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js`}>
+<Text
+className={`w-text`}>
+{"Biochemistry"}
+<Span
+className={`w-text-1 chpvhw5 c1br4k3t c1vn0xiq c17g3f7v cgjpuuk`}>
+{"26020"}
+</Span>
+</Text>
+<Box
+className={`w-box coxlzp3 c178lpvj cbg292c c767uka c1tmykg6 c40iywk c1efnbdc c14hahek c1qt5xo2`}>
+<HtmlEmbed
+code={"<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 16 16\" width=\"100%\" height=\"100%\" style=\"display: block;\"><path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"m4 6 4 4 4-4\"/></svg>"}
+className={`w-html-embed`} />
+</Box>
+</AccordionTrigger>
+</AccordionHeader>
+<AccordionContent
+className={`w-item-content cm1ds2c c1fxgukz c1jbi97f crebcbz c1tmykg6 ctdzf0s c1efnbdc c14hahek c1qt5xo2 c984udg c15qt4h4 c11ua5hp`}>
+<span
+className={`w-element`}>
+{"To achieve knowledge of the fundamental chemical principles, which are part of the common polytechnic basis of the civil bachelor's degrees."}
+</span>
+<h3
+className={`w-element cc02v1c`}>
+{"Notes"}
+</h3>
+<HtmlEmbed
+code={"<div class=\"file-list\"\n     data-folder=\"polytechnical-foundations/chemistry\">\n  Loading…\n</div>\n<script>\n  initFileLists();\n</script>"}
+executeScriptOnCanvas={true}
+className={`w-html-embed`} />
+</AccordionContent>
+</AccordionItem>
+</Accordion>
+</TabsContent>
+<TabsContent
+data-ws-index="4"
+className={`w-tab-content ci03eyw cu8ogtt c1qpyqes c7wcowi ch5gnkm c1ive82f`}>
+<p
+className={`w-element cyoo8jj czga5yl c3brmnq cc02v1c`}>
+{"The "}
+<b
+className={`w-element`}>
+{"Future Energy"}
+</b>
+{" specialisation is about the green energy transition. It is not recommended that you take this, but the intro course looks good on the CV."}
+</p>
+<Accordion
+collapsible={true}
+className={`w-accordion`}>
+<AccordionItem
+data-ws-index="0"
+className={`w-item`}>
+<AccordionHeader
+className={`w-item-header ci03eyw`}>
+<AccordionTrigger
+className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny c8qj03j c8l261o c13u1sx6 c1yyg526 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js`}>
+<Text
+className={`w-text c1kzhrg`}>
+{"Introduction to Future Energy"}
+<Span
+className={`w-text-1 chpvhw5 c1br4k3t c1vn0xiq c17g3f7v cgjpuuk`}>
+{"01003"}
+</Span>
+</Text>
+<Box
+className={`w-box coxlzp3 c178lpvj cbg292c c767uka c1tmykg6 c40iywk c1efnbdc c14hahek c1qt5xo2`}>
+<HtmlEmbed
+code={"<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 16 16\" width=\"100%\" height=\"100%\" style=\"display: block;\"><path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"m4 6 4 4 4-4\"/></svg>"}
+className={`w-html-embed`} />
+</Box>
+</AccordionTrigger>
+</AccordionHeader>
+<AccordionContent
+className={`w-item-content cm1ds2c c1fxgukz c1jbi97f crebcbz c1tmykg6 ctdzf0s c1efnbdc c14hahek c1qt5xo2 c984udg c15qt4h4 c11ua5hp`}>
+<span
+className={`w-element`}>
+{"The course content provides a part of the mathematical basis for a broad range of technical fields and also provides a starting point for further studies in mathematics and applied mathematics."}
+</span>
+<h3
+className={`w-element cc02v1c`}>
+{"Notes"}
+</h3>
+<HtmlEmbed
+code={"<div class=\"file-list\"\n     data-folder=\"polytechnical-foundations/maths1a\">\n  Loading…\n</div>\n<script>\n  initFileLists();\n</script>"}
+executeScriptOnCanvas={true}
+className={`w-html-embed`} />
+</AccordionContent>
+</AccordionItem>
+<AccordionItem
+data-ws-index="1"
+className={`w-item`}>
+<AccordionHeader
+className={`w-item-header ci03eyw`}>
+<AccordionTrigger
+className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny c8qj03j c8l261o c13u1sx6 c1yyg526 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js`}>
+<Text
+className={`w-text`}>
+{"Introduction to Numerical Algorithms"}
+<Span
+className={`w-text-1 chpvhw5 c1br4k3t c1vn0xiq c17g3f7v cgjpuuk`}>
+{"01004"}
+</Span>
+</Text>
+<Box
+className={`w-box coxlzp3 c178lpvj cbg292c c767uka c1tmykg6 c40iywk c1efnbdc c14hahek c1qt5xo2`}>
+<HtmlEmbed
+code={"<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 16 16\" width=\"100%\" height=\"100%\" style=\"display: block;\"><path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"m4 6 4 4 4-4\"/></svg>"}
+className={`w-html-embed`} />
+</Box>
+</AccordionTrigger>
+</AccordionHeader>
+<AccordionContent
+className={`w-item-content cm1ds2c c1fxgukz c1jbi97f crebcbz c1tmykg6 ctdzf0s c1efnbdc c14hahek c1qt5xo2 c984udg c15qt4h4 c11ua5hp`}>
+<span
+className={`w-element`}>
+{"The goal is to strengthen the students' ability to, on the one hand, use a mathematical way of thinking and, on the other hand, an algorithmic and computational approach to understanding and working with basic concepts from multivariate calculus."}
+</span>
+<h3
+className={`w-element cc02v1c`}>
+{"Notes"}
+</h3>
+<HtmlEmbed
+code={"<div class=\"file-list\"\n     data-folder=\"polytechnical-foundations/maths1b\">\n  Loading…\n</div>\n<script>\n  initFileLists();\n</script>"}
+executeScriptOnCanvas={true}
+className={`w-html-embed`} />
+</AccordionContent>
+</AccordionItem>
+<AccordionItem
+data-ws-index="2"
+className={`w-item`}>
+<AccordionHeader
+className={`w-item-header ci03eyw`}>
+<AccordionTrigger
+className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny c8qj03j c8l261o c13u1sx6 c1yyg526 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js`}>
+<Text
+className={`w-text`}>
+{"Physics for materials and energy"}
+<Span
+className={`w-text-1 chpvhw5 c1br4k3t c1vn0xiq c17g3f7v cgjpuuk`}>
+{"26020"}
+</Span>
+</Text>
+<Box
+className={`w-box coxlzp3 c178lpvj cbg292c c767uka c1tmykg6 c40iywk c1efnbdc c14hahek c1qt5xo2`}>
+<HtmlEmbed
+code={"<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 16 16\" width=\"100%\" height=\"100%\" style=\"display: block;\"><path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"m4 6 4 4 4-4\"/></svg>"}
+className={`w-html-embed`} />
+</Box>
+</AccordionTrigger>
+</AccordionHeader>
+<AccordionContent
+className={`w-item-content cm1ds2c c1fxgukz c1jbi97f crebcbz c1tmykg6 ctdzf0s c1efnbdc c14hahek c1qt5xo2 c984udg c15qt4h4 c11ua5hp`}>
+<span
+className={`w-element`}>
+{"To achieve knowledge of the fundamental chemical principles, which are part of the common polytechnic basis of the civil bachelor's degrees."}
+</span>
+<h3
+className={`w-element cc02v1c`}>
+{"Notes"}
+</h3>
+<HtmlEmbed
+code={"<div class=\"file-list\"\n     data-folder=\"polytechnical-foundations/chemistry\">\n  Loading…\n</div>\n<script>\n  initFileLists();\n</script>"}
+executeScriptOnCanvas={true}
+className={`w-html-embed`} />
+</AccordionContent>
+</AccordionItem>
+</Accordion>
+</TabsContent>
+</Tabs>
 </Body>
 }
 
