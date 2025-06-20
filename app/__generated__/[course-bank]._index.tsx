@@ -5,13 +5,13 @@
       import { Fragment, useState } from "react";
       import { useResource, useVariableState } from "@webstudio-is/react-sdk/runtime";
       import { Body as Body, Link as Link } from "@webstudio-is/sdk-components-react-router";
-import { HtmlEmbed as HtmlEmbed, Box as Box, Image as Image, Text as Text, Button as Button, Span as Span } from "@webstudio-is/sdk-components-react";
-import { Dialog as Dialog, DialogTrigger as DialogTrigger, DialogOverlay as DialogOverlay, DialogContent as DialogContent, DialogDescription as DialogDescription, DialogClose as DialogClose, Tabs as Tabs, TabsList as TabsList, TabsTrigger as TabsTrigger, TabsContent as TabsContent, Accordion as Accordion, AccordionItem as AccordionItem, AccordionHeader as AccordionHeader, AccordionTrigger as AccordionTrigger, AccordionContent as AccordionContent } from "@webstudio-is/sdk-components-react-radix";
+import { HtmlEmbed as HtmlEmbed, Box as Box, Text as Text, Span as Span, Image as Image, Button as Button } from "@webstudio-is/sdk-components-react";
+import { Tabs as Tabs, TabsList as TabsList, TabsTrigger as TabsTrigger, TabsContent as TabsContent, Accordion as Accordion, AccordionItem as AccordionItem, AccordionHeader as AccordionHeader, AccordionTrigger as AccordionTrigger, AccordionContent as AccordionContent, Tooltip as Tooltip, TooltipTrigger as TooltipTrigger, TooltipContent as TooltipContent, Dialog as Dialog, DialogTrigger as DialogTrigger, DialogOverlay as DialogOverlay, DialogContent as DialogContent, DialogDescription as DialogDescription, DialogClose as DialogClose } from "@webstudio-is/sdk-components-react-radix";
 
 
       export const projectId = "94456f8c-a847-426a-aec8-16de390bd3eb";
 
-      export const lastPublished = "2025-06-15T00:33:54.326Z";
+      export const lastPublished = "2025-06-20T20:28:15.306Z";
 
       export const siteName = "GE Union";
 
@@ -31,7 +31,7 @@ import { Dialog as Dialog, DialogTrigger as DialogTrigger, DialogOverlay as Dial
 
       const Page = (_props: { system: any; }) => {
 return <Body
-className={`w-element c1lzvaoj`}>
+className={`w-element c1lzvaoj c1qux398`}>
 <HtmlEmbed
 code={"<style>\n  h1{\n    font-family: Tanker;\n    font-weight: 500;\n    font-size: 5em;\n    color: var(--background);\n    line-height: 1;\n    margin: 0;\n  }\n  h2{\n    font-weight: 600;\n    font-size: 36px;\n    line-height: 1;\n    margin: 0;\n  }\n  p{\n    margin: 0;\n  }\n  \n  .icon-background{\n    background-color: var(--back-red-1);\n    z-index: 1;\n    overflow: hidden;\n    position: relative;\n  }\n  .icon-background::before{\n    content: \"\";\n    position: absolute;\n    width: 200%; height: 200%;\n    top: -50%; left: -50%;\n    background-image: url('/assets/icon-background_RyiWP8CNKOfskpwMp_P8Y.svg?width=1080&quality=80&format=auto');\n    background-size: 200px 115.4734411085px;\n    background-repeat: repeat;\n    animation: scrollBg 30s linear infinite;\n    z-index: -1;\n    opacity: var(--icon-background-opacity, 3%); mix-blend-mode: luminosity;\n    filter: blur(2px)\n  }\n  \n  .home-top::after{\n    position: absolute;\n    content: \"\";\n    width: 100%;\n    height: 250px;\n    background: linear-gradient(180deg, hsl(from var(--back-red-1) h s l / 0.65) 15%, hsl(from var(--back-red-1) h s l / 0) 100%);\n    z-index: -1;\n  }\n\n  @keyframes scrollBg {\n      0% {\n        background-position: 0 0;\n      }\n      100% {\n        background-position: -200px 115.4734411085px;\n      }\n    }\n\n  .home-top-card:hover .home-top-card-title-icon{\n    width: 38px;\n    padding-left: 3px;\n  }\n\n  @media only screen and (max-width: 767px) {\n    h1{\n      font-size: 3.7em;\n    }\n    h2{\n      font-size: 32px;\n    }\n  }\n</style>"}
 executeScriptOnCanvas={true}
@@ -41,7 +41,7 @@ code={"<script>\n  // 1) Configuration\n  if (typeof window.JSON_URL === 'undefi
 executeScriptOnCanvas={true}
 className={`w-html-embed`} />
 <HtmlEmbed
-code={"<style>\n.file-list{\n  display: flex;\n  flex-wrap: wrap;\n  max-width: 850px\n}\n  \n.custom-file-link {\n  margin: 1em 0;\n  display: flex;\n  align-items: center;\n  max-width: 500px;\n  min-width: 300px;\n  transition: transform 0.1s;\n  height: 40px;\n  width: 50%;\n  flex-shrink: 0; flex-grow: 1;\n}\n.custom-file-link > a {\n  text-decoration: none;\n}\n\n.custom-file-link:hover {\n  transform: translateX(5px);\n  cursor: pointer;\n}.custom-file-link:hover .file-details strong {\n  color: var(--front-red-1) !important;\n}\n\n.file-icon {\n  margin-right: 10px;\n  width: 36px;\n  height: 36px;\n  position: relative;\n}\n\n.file-icon img {\n  width: 100%;\n  height: 100%;\n  object-fit: contain;\n  flex-shrink: 0;\n}\n\n.extension-badge {\n  position: absolute;\n  top: 0;\n  left: 0;\n  color: white;\n  font-size: 10px;\n  font-weight: 500;\n  padding: 1px 2px;\n  border-radius: 2px;\n  margin-top: 13.5px;\n  margin-left: 1px;\n  pointer-events: none;\n}\n\n.file-details {\n  display: flex;\n  flex-direction: column;\n  width: calc(100% - 58px);\n}\n\n.file-details strong {\n  font-size: 1em;\n  font-weight: 500;\n  color: var(--front-1);\n  white-space: nowrap;\n  text-overflow: ellipsis;\n  overflow: hidden;\n}\n\n.file-details span {\n  font-size: 0.8em;\n  color: var(--front-3);\n  white-space: nowrap;\n  text-overflow: ellipsis;\n  overflow: hidden;\n}\n\n</style>"}
+code={"<style>\n.file-list{\n  display: flex;\n  flex-wrap: wrap;\n  max-width: 850px\n}\n  \n.custom-file-link {\n  margin: 1em 0;\n  display: flex;\n  align-items: center;\n  max-width: 500px;\n  min-width: 300px;\n  transition: transform 0.1s;\n  height: 40px;\n  width: 50%;\n  flex-shrink: 0; flex-grow: 1;\n}\n.custom-file-link > a {\n  text-decoration: none;\n}\n\n.custom-file-link:hover {\n  transform: translateX(5px);\n  cursor: pointer;\n}.custom-file-link:hover .file-details strong {\n  color: var(--front-red-1) !important;\n}\n\n.file-icon {\n  margin-right: 10px;\n  width: 36px;\n  height: 36px;\n  position: relative;\n}\n\n.file-icon img {\n  width: 100%;\n  height: 100%;\n  object-fit: contain;\n  flex-shrink: 0;\n}\n\n.extension-badge {\n  position: absolute;\n  top: 0;\n  left: 0;\n  color: white;\n  font-size: 10px;\n  font-weight: 500;\n  padding: 1px 2px;\n  border-radius: 2px;\n  margin-top: 13.5px;\n  margin-left: 1px;\n  pointer-events: none;\n}\n\n.file-details {\n  display: flex;\n  flex-direction: column;\n  width: calc(100% - 58px);\n}\n\n.file-details strong {\n  font-size: 1em;\n  font-weight: 500;\n  color: var(--front-1);\n  white-space: nowrap;\n  text-overflow: ellipsis;\n  overflow: hidden;\n}\n\n.file-details span {\n  font-size: 0.8em;\n  color: var(--front-3);\n  white-space: nowrap;\n  text-overflow: ellipsis;\n  overflow: hidden;\n}\n</style>"}
 className={`w-html-embed`} />
 <Box
 className={`w-box cck00sw cd3toq c17nm8vt c1xymrvd c8yo8yx ci03eyw cu8ogtt cm1ds2c c1fxgukz c3q79or c1fhonxu cqlg791 cji7xkv c40iywk codsd31 c16er72m c1qt5xo2 c1uz2t7q c4psa79 c1ldi832 ${"icon-background home-top"}`}>
@@ -60,36 +60,41 @@ className={`w-image c1g1752z c1l3m6tn c1wjaqd0`} />
 className={`w-box ci03eyw cavbteo c17p08f7 cy2vnym cgykfac c8chaf1 crymv6m ch588tu cd1c1x2 cgjpuuk co3wgvm cjdg5q7`}>
 <Link
 href={"/"}
-className={`w-link c4qqqhz cr2ujrk c8l261o c1ozmz5d c1ho4waj c1122adb c10pf28n c1w0lkxn ch9rsc5 c1et34yr c1tj415q`}>
-<Text
-className={`w-text`}>
+className={`w-link c4qqqhz cr2ujrk c8l261o c1ozmz5d c1ho4waj c1k74xht c1122adb c10pf28n c1w0lkxn ch9rsc5 c1et34yr c1tj415q`}>
 {"Home"}
-</Text>
 </Link>
 <Link
 href={"/course-bank"}
-className={`w-link c4qqqhz cr2ujrk c8l261o czgmbqe c1ho4waj c1122adb c10pf28n c1w0lkxn ch9rsc5 c1et34yr c1tj415q`}>
-<Text
-className={`w-text`}>
+className={`w-link c4qqqhz cr2ujrk c8l261o c1wmsojl c1ho4waj c1k74xht c1122adb c10pf28n c1w0lkxn ch9rsc5 c1et34yr c1tj415q`}>
 {"Course Bank"}
-</Text>
 </Link>
 <Link
 href={"/calendar"}
-className={`w-link c4qqqhz cr2ujrk c8l261o c1ozmz5d c1ho4waj c1122adb c10pf28n c1w0lkxn ch9rsc5 c1et34yr c1tj415q`}>
-<Text
-className={`w-text`}>
+className={`w-link c4qqqhz cr2ujrk c8l261o c1ozmz5d c1ho4waj c1k74xht c1122adb c10pf28n c1w0lkxn ch9rsc5 c1et34yr c1tj415q`}>
 {"Calendar"}
-</Text>
+</Link>
+<Tooltip
+delayDuration={0}>
+<TooltipTrigger>
+<div
+className={`w-element c4qqqhz cr2ujrk c8l261o c1ozmz5d c1ho4waj c1k74xht ch9rsc5 c1w0lkxn c1122adb c10pf28n cbahl6h c1tj415q`}>
+{"About"}
+</div>
+</TooltipTrigger>
+<TooltipContent
+className={`w-tooltip-content c5mlbae cm1ds2c c1fxgukz cdzo1k7 c1lp7lun c3ryv7d c1t11c95 c1kz25wt c1jbi97f crebcbz cfjpsss ci03eyw cu8ogtt c4bgnbx cj82r57 c14a5ioc cm4j335`}>
+<Link
+href={"/about-ge"}
+className={`w-link c4qqqhz cr2ujrk c8l261o c1ozmz5d c1ho4waj c1k74xht c1122adb c10pf28n c1w0lkxn ch9rsc5 cz5lin5 c1tj415q`}>
+{"General Engineering"}
 </Link>
 <Link
 href={"/about-geu"}
-className={`w-link c4qqqhz cr2ujrk c8l261o c1ozmz5d c1ho4waj c1122adb c10pf28n c1w0lkxn ch9rsc5 c1et34yr c1tj415q`}>
-<Text
-className={`w-text`}>
-{"About"}
-</Text>
+className={`w-link c4qqqhz cr2ujrk c8l261o c1ozmz5d c1ho4waj c1k74xht c1122adb c10pf28n c1w0lkxn ch9rsc5 cz5lin5 c1tj415q`}>
+{"GE Union"}
 </Link>
+</TooltipContent>
+</Tooltip>
 </Box>
 <Dialog>
 <DialogTrigger>
@@ -123,34 +128,27 @@ className={`w-box ci03eyw c1rb689p c1hbxsx0 cy2vnym cgykfac cu8ogtt cfx1lak c12z
 <Link
 href={"/"}
 className={`w-link c1sy2opm cr2ujrk c8l261o cy7nrqp c1ho4waj c1122adb c10pf28n c1w0lkxn ch9rsc5 cz5lin5`}>
-<Text
-className={`w-text`}>
 {"Home"}
-</Text>
 </Link>
 <Link
 href={"/course-bank"}
 className={`w-link c1sy2opm cr2ujrk c8l261o cy7nrqp c1ho4waj c1122adb c10pf28n c1w0lkxn ch9rsc5 cz5lin5`}>
-<Text
-className={`w-text`}>
 {"Course Bank"}
-</Text>
 </Link>
 <Link
 href={"/calendar"}
 className={`w-link c1sy2opm cr2ujrk c8l261o cy7nrqp c1ho4waj c1122adb c10pf28n c1w0lkxn ch9rsc5 cz5lin5`}>
-<Text
-className={`w-text`}>
 {"Calendar"}
-</Text>
 </Link>
 <Link
 href={"/about-geu"}
 className={`w-link c1sy2opm cr2ujrk c8l261o cy7nrqp c1ho4waj c1122adb c10pf28n c1w0lkxn ch9rsc5 cz5lin5`}>
-<Text
-className={`w-text`}>
-{"About"}
-</Text>
+{"About GE"}
+</Link>
+<Link
+href={"/about-geu"}
+className={`w-link c1sy2opm cr2ujrk c8l261o cy7nrqp c1ho4waj c1122adb c10pf28n c1w0lkxn ch9rsc5 cz5lin5`}>
+{"About GE Union"}
 </Link>
 </Box>
 </Box>
@@ -178,12 +176,12 @@ className={`w-text cg3nt0s c74dsfz czgmbqe cyoo8jj c1wwlxnr cje5w08 c1bck0pu c16
 </Box>
 <Tabs
 value={"0"}
-className={`w-tabs cu8ogtt c1v4vkm5 c3q79or cqlg791 c1tdh0eb ci03eyw`}>
+className={`w-tabs cu8ogtt c1v4vkm5 c3q79or cqlg791 c6yvppa ci03eyw`}>
 <TabsList
-className={`w-tabs-list cfyrpk4 c1qpyqes c1bti4b5 cd3toq c17nm8vt c8yo8yx c1xymrvd c1n9f9m4 c1jbi97f c1lgzutd csp87lc c1jrl8gb c1cshlcb cde37yz ca1ntyv cwsyfmt`}>
+className={`w-tabs-list cfyrpk4 c1qpyqes c1bti4b5 cd3toq c17nm8vt c8yo8yx c1xymrvd c1n9f9m4 c1jbi97f c1lgzutd csp87lc c1jsmjku c1cshlcb cde37yz ca1ntyv cwsyfmt`}>
 <TabsTrigger
 data-ws-index="0"
-className={`w-tab-trigger cfyrpk4 c1v4vkm5 c1bti4b5 c1ysnkib c1mxgw9p c1k6l3pz ceehkft c1lp7lun c3ryv7d c1t11c95 c1kz25wt cr2ujrk c1tmykg6 ctdzf0s c1efnbdc c14hahek c1qt5xo2 ck08swj cuz3b7n c5atcat c13yk87r c12m3onu cxbwblh co1yi26 c1vk95sq c4m1pwg c1al8gxi cws4pam`}>
+className={`w-tab-trigger cfyrpk4 c1v4vkm5 c1bti4b5 c1sm0mvf cbfwnla c3fz80x c6pfjtb c1lp7lun c3ryv7d c1t11c95 c1kz25wt cr2ujrk c1tmykg6 ctdzf0s c1efnbdc c14hahek c1qt5xo2 ck08swj cuz3b7n c5atcat c13yk87r c12m3onu cxbwblh co1yi26 c1vk95sq c4m1pwg c1al8gxi cws4pam`}>
 <Span
 className={`w-text-1 c426or5 cycv0tm ckiq6wr`}>
 {"Polytachnical "}
@@ -192,7 +190,7 @@ className={`w-text-1 c426or5 cycv0tm ckiq6wr`}>
 </TabsTrigger>
 <TabsTrigger
 data-ws-index="1"
-className={`w-tab-trigger cfyrpk4 c1v4vkm5 c1bti4b5 c4bgnbx cj82r57 cm4j335 c14a5ioc c1lp7lun c3ryv7d c1t11c95 c1kz25wt cr2ujrk c1tmykg6 ctdzf0s c1efnbdc c14hahek c1qt5xo2 ck08swj cuz3b7n c5atcat c13yk87r c12m3onu cxbwblh co1yi26 c1vk95sq c4m1pwg c1al8gxi cws4pam`}>
+className={`w-tab-trigger cfyrpk4 c1v4vkm5 c1bti4b5 c1sm0mvf cbfwnla c3fz80x c6pfjtb c1lp7lun c3ryv7d c1t11c95 c1kz25wt cr2ujrk c1tmykg6 ctdzf0s c1efnbdc c14hahek c1qt5xo2 ck08swj cuz3b7n c5atcat c13yk87r c12m3onu cxbwblh co1yi26 c1vk95sq c4m1pwg c1al8gxi cws4pam`}>
 {"Advanced"}
 <Span
 className={`w-text-1 cwti2ho cvuh4zx ckiq6wr`}>
@@ -201,7 +199,7 @@ className={`w-text-1 cwti2ho cvuh4zx ckiq6wr`}>
 </TabsTrigger>
 <TabsTrigger
 data-ws-index="2"
-className={`w-tab-trigger cfyrpk4 c1v4vkm5 c1bti4b5 c4bgnbx cj82r57 cm4j335 c14a5ioc c1lp7lun c3ryv7d c1t11c95 c1kz25wt c1tmykg6 ctdzf0s c1efnbdc c14hahek c1qt5xo2 ck08swj cr2ujrk cuz3b7n c5atcat c13yk87r c12m3onu cxbwblh co1yi26 c1vk95sq c4m1pwg c1al8gxi cws4pam`}>
+className={`w-tab-trigger cfyrpk4 c1v4vkm5 c1bti4b5 c1sm0mvf cbfwnla c3fz80x c6pfjtb c1lp7lun c3ryv7d c1t11c95 c1kz25wt c1tmykg6 ctdzf0s c1efnbdc c14hahek c1qt5xo2 ck08swj cr2ujrk cuz3b7n c5atcat c13yk87r c12m3onu cxbwblh co1yi26 c1vk95sq c4m1pwg c1al8gxi cws4pam`}>
 {"Cyber"}
 <Span
 className={`w-text-1 cwti2ho cvuh4zx ckiq6wr`}>
@@ -210,7 +208,7 @@ className={`w-text-1 cwti2ho cvuh4zx ckiq6wr`}>
 </TabsTrigger>
 <TabsTrigger
 data-ws-index="3"
-className={`w-tab-trigger cfyrpk4 c1v4vkm5 c1bti4b5 c4bgnbx cj82r57 cm4j335 c14a5ioc c1lp7lun c3ryv7d c1t11c95 c1kz25wt cr2ujrk c1tmykg6 ctdzf0s c1efnbdc c14hahek c1qt5xo2 ck08swj cuz3b7n c5atcat c13yk87r c12m3onu cxbwblh co1yi26 c1vk95sq c4m1pwg c1al8gxi cws4pam`}>
+className={`w-tab-trigger cfyrpk4 c1v4vkm5 c1bti4b5 c1sm0mvf cbfwnla c3fz80x c6pfjtb c1lp7lun c3ryv7d c1t11c95 c1kz25wt cr2ujrk c1tmykg6 ctdzf0s c1efnbdc c14hahek c1qt5xo2 ck08swj cuz3b7n c5atcat c13yk87r c12m3onu cxbwblh co1yi26 c1vk95sq c4m1pwg c1al8gxi cws4pam`}>
 {"Living"}
 <Span
 className={`w-text-1 cwti2ho cvuh4zx ckiq6wr`}>
@@ -219,7 +217,7 @@ className={`w-text-1 cwti2ho cvuh4zx ckiq6wr`}>
 </TabsTrigger>
 <TabsTrigger
 data-ws-index="4"
-className={`w-tab-trigger cfyrpk4 c1v4vkm5 c1bti4b5 c4bgnbx cj82r57 cm4j335 c14a5ioc c1lp7lun c3ryv7d c1t11c95 c1kz25wt cr2ujrk c1tmykg6 ctdzf0s c1efnbdc c14hahek c1qt5xo2 ck08swj cuz3b7n c5atcat c13yk87r c12m3onu cxbwblh co1yi26 c1vk95sq c4m1pwg c1al8gxi cws4pam`}>
+className={`w-tab-trigger cfyrpk4 c1v4vkm5 c1bti4b5 c1sm0mvf cbfwnla c3fz80x c6pfjtb c1lp7lun c3ryv7d c1t11c95 c1kz25wt cr2ujrk c1tmykg6 ctdzf0s c1efnbdc c14hahek c1qt5xo2 ck08swj cuz3b7n c5atcat c13yk87r c12m3onu cxbwblh co1yi26 c1vk95sq c4m1pwg c1al8gxi cws4pam`}>
 {"Future"}
 <Span
 className={`w-text-1 cwti2ho cvuh4zx ckiq6wr`}>
@@ -231,7 +229,7 @@ className={`w-text-1 cwti2ho cvuh4zx ckiq6wr`}>
 data-ws-index="0"
 className={`w-tab-content ci03eyw cu8ogtt c1qpyqes c7wcowi ch5gnkm c1ive82f`}>
 <p
-className={`w-element cyoo8jj czga5yl c3brmnq cc02v1c`}>
+className={`w-element cyoo8jj czga5yl c197srfe cc02v1c c19b7rd2`}>
 {"The "}
 <b
 className={`w-element`}>
@@ -248,7 +246,7 @@ className={`w-item`}>
 <AccordionHeader
 className={`w-item-header ci03eyw`}>
 <AccordionTrigger
-className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny c8qj03j c8l261o c13u1sx6 c1yyg526 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js`}>
+className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny c8qj03j c8l261o c13u1sx6 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c1yyg526 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js`}>
 <Text
 className={`w-text c1kzhrg`}>
 {"Mathematics 1a"}
@@ -287,7 +285,7 @@ className={`w-item`}>
 <AccordionHeader
 className={`w-item-header ci03eyw`}>
 <AccordionTrigger
-className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny c8qj03j c8l261o c13u1sx6 c1yyg526 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js`}>
+className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny c8qj03j c8l261o c13u1sx6 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c1yyg526 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js`}>
 <Text
 className={`w-text`}>
 {"Mathematics 1b"}
@@ -326,7 +324,7 @@ className={`w-item`}>
 <AccordionHeader
 className={`w-item-header ci03eyw`}>
 <AccordionTrigger
-className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny c8qj03j c8l261o c13u1sx6 c1yyg526 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js`}>
+className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny c8qj03j c8l261o c13u1sx6 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c1yyg526 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js`}>
 <Text
 className={`w-text`}>
 {"Chemistry"}
@@ -365,7 +363,7 @@ className={`w-item`}>
 <AccordionHeader
 className={`w-item-header ci03eyw`}>
 <AccordionTrigger
-className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny c8qj03j c8l261o c13u1sx6 c1yyg526 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js`}>
+className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny c8qj03j c8l261o c13u1sx6 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c1yyg526 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js`}>
 <Text
 className={`w-text`}>
 {"Computer Programming"}
@@ -404,7 +402,7 @@ className={`w-item`}>
 <AccordionHeader
 className={`w-item-header ci03eyw`}>
 <AccordionTrigger
-className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny c8qj03j c8l261o c13u1sx6 c1yyg526 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js`}>
+className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny c8qj03j c8l261o c13u1sx6 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c1yyg526 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js`}>
 <Text
 className={`w-text`}>
 {"Physics"}
@@ -443,7 +441,7 @@ className={`w-item`}>
 <AccordionHeader
 className={`w-item-header ci03eyw`}>
 <AccordionTrigger
-className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny c8qj03j c8l261o c13u1sx6 c1yyg526 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js`}>
+className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny c8qj03j c8l261o c13u1sx6 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c1yyg526 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js`}>
 <Text
 className={`w-text`}>
 {"Statistics"}
@@ -482,7 +480,7 @@ className={`w-item`}>
 <AccordionHeader
 className={`w-item-header ci03eyw`}>
 <AccordionTrigger
-className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny c8qj03j c8l261o c13u1sx6 c1yyg526 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js`}>
+className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny c8qj03j c8l261o c13u1sx6 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c1yyg526 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js`}>
 <Text
 className={`w-text`}>
 {"Interdisciplinary Bioengineering"}
@@ -521,7 +519,7 @@ className={`w-item`}>
 <AccordionHeader
 className={`w-item-header ci03eyw`}>
 <AccordionTrigger
-className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny c8qj03j c8l261o c13u1sx6 c1yyg526 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js`}>
+className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny c8qj03j c8l261o c13u1sx6 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c1yyg526 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js`}>
 <Text
 className={`w-text`}>
 {"Science, Technology and Society"}
@@ -560,7 +558,7 @@ className={`w-item c1risi17`}>
 <AccordionHeader
 className={`w-item-header ci03eyw`}>
 <AccordionTrigger
-className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny c8qj03j c8l261o c13u1sx6 c1yyg526 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js`}>
+className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny c8qj03j c8l261o c13u1sx6 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c1yyg526 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js`}>
 <Text
 className={`w-text`}>
 {"Mathematics 2"}
@@ -599,7 +597,7 @@ className={`w-html-embed`} />
 data-ws-index="1"
 className={`w-tab-content ci03eyw cu8ogtt c1qpyqes c7wcowi ch5gnkm c1ive82f`}>
 <p
-className={`w-element cyoo8jj czga5yl c3brmnq cc02v1c`}>
+className={`w-element cyoo8jj czga5yl c197srfe cc02v1c c19b7rd2`}>
 {"The "}
 <b
 className={`w-element`}>
@@ -616,7 +614,7 @@ className={`w-item`}>
 <AccordionHeader
 className={`w-item-header ci03eyw`}>
 <AccordionTrigger
-className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny c8qj03j c8l261o c13u1sx6 c1yyg526 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js`}>
+className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny c8qj03j c8l261o c13u1sx6 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c1yyg526 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js`}>
 <Text
 className={`w-text c1kzhrg`}>
 {"Introduction to Advanced Materials"}
@@ -655,7 +653,7 @@ className={`w-item`}>
 <AccordionHeader
 className={`w-item-header ci03eyw`}>
 <AccordionTrigger
-className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny c8qj03j c8l261o c13u1sx6 c1yyg526 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js`}>
+className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny c8qj03j c8l261o c13u1sx6 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c1yyg526 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js`}>
 <Text
 className={`w-text`}>
 {"Introduction to Numerical Algorithms"}
@@ -694,7 +692,7 @@ className={`w-item`}>
 <AccordionHeader
 className={`w-item-header ci03eyw`}>
 <AccordionTrigger
-className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny c8qj03j c8l261o c13u1sx6 c1yyg526 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js`}>
+className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny c8qj03j c8l261o c13u1sx6 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c1yyg526 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js`}>
 <Text
 className={`w-text`}>
 {"Physics for materials and energy"}
@@ -733,7 +731,7 @@ className={`w-html-embed`} />
 data-ws-index="2"
 className={`w-tab-content ci03eyw cu8ogtt c1qpyqes c7wcowi ch5gnkm c1ive82f`}>
 <p
-className={`w-element cyoo8jj czga5yl c3brmnq cc02v1c`}>
+className={`w-element cyoo8jj czga5yl c197srfe cc02v1c c19b7rd2`}>
 {"The "}
 <b
 className={`w-element`}>
@@ -750,7 +748,7 @@ className={`w-item`}>
 <AccordionHeader
 className={`w-item-header ci03eyw`}>
 <AccordionTrigger
-className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny c8qj03j c8l261o c13u1sx6 c1yyg526 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js`}>
+className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny c8qj03j c8l261o c13u1sx6 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c1yyg526 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js`}>
 <Text
 className={`w-text c1kzhrg`}>
 {"Introduction to Cyber Systems"}
@@ -789,7 +787,7 @@ className={`w-item`}>
 <AccordionHeader
 className={`w-item-header ci03eyw`}>
 <AccordionTrigger
-className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny c8qj03j c8l261o c13u1sx6 c1yyg526 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js`}>
+className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny c8qj03j c8l261o c13u1sx6 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c1yyg526 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js`}>
 <Text
 className={`w-text`}>
 {"Discrete Mathematics"}
@@ -828,7 +826,7 @@ className={`w-item`}>
 <AccordionHeader
 className={`w-item-header ci03eyw`}>
 <AccordionTrigger
-className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny c8qj03j c8l261o c13u1sx6 c1yyg526 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js`}>
+className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny c8qj03j c8l261o c13u1sx6 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c1yyg526 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js`}>
 <Text
 className={`w-text`}>
 {"Algorithms and Data Structures 1"}
@@ -867,13 +865,17 @@ className={`w-html-embed`} />
 data-ws-index="3"
 className={`w-tab-content ci03eyw cu8ogtt c1qpyqes c7wcowi ch5gnkm c1ive82f`}>
 <p
-className={`w-element cyoo8jj czga5yl c3brmnq cc02v1c`}>
+className={`w-element cyoo8jj czga5yl c197srfe cc02v1c c19b7rd2`}>
 {"The "}
 <b
 className={`w-element`}>
 {"Living Systems"}
 </b>
 {" specialisation sucks."}
+{""}
+<br />
+{""}
+{" "}
 </p>
 <Accordion
 collapsible={true}
@@ -884,7 +886,7 @@ className={`w-item`}>
 <AccordionHeader
 className={`w-item-header ci03eyw`}>
 <AccordionTrigger
-className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny c8qj03j c8l261o c13u1sx6 c1yyg526 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js`}>
+className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny c8qj03j c8l261o c13u1sx6 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c1yyg526 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js`}>
 <Text
 className={`w-text c1kzhrg`}>
 {"Introduction to Living Systems"}
@@ -923,7 +925,7 @@ className={`w-item`}>
 <AccordionHeader
 className={`w-item-header ci03eyw`}>
 <AccordionTrigger
-className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny c8qj03j c8l261o c13u1sx6 c1yyg526 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js`}>
+className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny c8qj03j c8l261o c13u1sx6 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c1yyg526 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js`}>
 <Text
 className={`w-text`}>
 {"Introduction to genetic methods in engineering"}
@@ -962,7 +964,7 @@ className={`w-item`}>
 <AccordionHeader
 className={`w-item-header ci03eyw`}>
 <AccordionTrigger
-className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny c8qj03j c8l261o c13u1sx6 c1yyg526 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js`}>
+className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny c8qj03j c8l261o c13u1sx6 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c1yyg526 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js`}>
 <Text
 className={`w-text`}>
 {"Biochemistry"}
@@ -1001,7 +1003,7 @@ className={`w-html-embed`} />
 data-ws-index="4"
 className={`w-tab-content ci03eyw cu8ogtt c1qpyqes c7wcowi ch5gnkm c1ive82f`}>
 <p
-className={`w-element cyoo8jj czga5yl c3brmnq cc02v1c`}>
+className={`w-element cyoo8jj czga5yl c197srfe cc02v1c c19b7rd2`}>
 {"The "}
 <b
 className={`w-element`}>
@@ -1018,7 +1020,7 @@ className={`w-item`}>
 <AccordionHeader
 className={`w-item-header ci03eyw`}>
 <AccordionTrigger
-className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny c8qj03j c8l261o c13u1sx6 c1yyg526 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js`}>
+className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny c8qj03j c8l261o c13u1sx6 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c1yyg526 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js`}>
 <Text
 className={`w-text c1kzhrg`}>
 {"Introduction to Future Energy"}
@@ -1057,7 +1059,7 @@ className={`w-item`}>
 <AccordionHeader
 className={`w-item-header ci03eyw`}>
 <AccordionTrigger
-className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny c8qj03j c8l261o c13u1sx6 c1yyg526 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js`}>
+className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny c8qj03j c8l261o c13u1sx6 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c1yyg526 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js`}>
 <Text
 className={`w-text`}>
 {"Introduction to Numerical Algorithms"}
@@ -1096,7 +1098,7 @@ className={`w-item`}>
 <AccordionHeader
 className={`w-item-header ci03eyw`}>
 <AccordionTrigger
-className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny c8qj03j c8l261o c13u1sx6 c1yyg526 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js`}>
+className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny c8qj03j c8l261o c13u1sx6 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c1yyg526 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js`}>
 <Text
 className={`w-text`}>
 {"Physics for materials and energy"}
@@ -1131,6 +1133,49 @@ className={`w-html-embed`} />
 </AccordionItem>
 </Accordion>
 </TabsContent>
+<div
+className={`w-element cbeiaob ci03eyw c16e72yc cqaj6f4 c16lfnyl c1fri8go c1jj1apw`}>
+<div
+className={`w-element ci03eyw c1v4vkm5 c1svdh6y cft5z6j c156d1ag c1uw2bda cnd6e42 col1yiq corpumv c1q3q0jq c1rdt54o c6775s7 c5v0tdv c5wuwv0 c8nmv6p cwqnf9o cgam0gy c1lvim05`}>
+<h4
+className={`w-element ca2fle4 cc02v1c c5fuofq cuz3b7n`}>
+{"See more on"}
+</h4>
+<Link
+href={"https://www.studocu.com/da/institution/danmarks-tekniske-universitet/2833"}
+className={`w-link c10pf28n c6775s7 ct2w13i c1kmtbg4 c341g64 c11h9c5s c17hd63g cnrv5xy c1ho4waj czgmbqe c8l261o cr2ujrk ci03eyw c1pd7k79 c2gl1gx cda4yqq c767uka c1x65yvk cv1qn8j c1jon836 co5x0w6 c5sx8jk c1122adb c1bti4b5 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c143l1dc cbazxvp c1ydztro cpyan2s c15o04ri`}>
+<Text
+className={`w-text`}>
+{"Studocu"}
+</Text>
+<Image
+src={"/assets/Arrow_H1ljlBGfuft_TMCdE7Zb5.svg"}
+width={25}
+height={24}
+className={`w-image c1nfcmlw`} />
+</Link>
+</div>
+<div
+className={`w-element ci03eyw c1v4vkm5 cui8ecu c1qvvqb3 c156d1ag c1uw2bda cnd6e42 col1yiq corpumv c1q3q0jq c1rdt54o c6775s7 c5v0tdv c5wuwv0 c8nmv6p cwqnf9o cgam0gy c1lvim05`}>
+<h4
+className={`w-element ca2fle4 cc02v1c c5fuofq cuz3b7n`}>
+{"Upload notes"}
+</h4>
+<Link
+href={"https://docs.google.com/forms/d/e/1FAIpQLSfsAo2xfW8tSNVPVtKocAg1h23JNxV34xfJyf_n_9SxwNugzw/viewform"}
+className={`w-link c10pf28n c6775s7 ct2w13i c1kmtbg4 c341g64 c11h9c5s c17hd63g cnrv5xy c1ho4waj czgmbqe c8l261o cr2ujrk ci03eyw c1pd7k79 c2gl1gx cda4yqq c767uka c1x65yvk cv1qn8j c1jon836 co5x0w6 c5sx8jk c1122adb c1bti4b5 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c1bf26ov cbazxvp c1ydztro cpyan2s c15o04ri`}>
+<Text
+className={`w-text`}>
+{"Here"}
+</Text>
+<Image
+src={"/assets/Arrow_H1ljlBGfuft_TMCdE7Zb5.svg"}
+width={25}
+height={24}
+className={`w-image c1nfcmlw`} />
+</Link>
+</div>
+</div>
 </Tabs>
 </Body>
 }

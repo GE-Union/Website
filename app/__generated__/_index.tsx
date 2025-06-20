@@ -5,13 +5,13 @@
       import { Fragment, useState } from "react";
       import { useResource, useVariableState } from "@webstudio-is/react-sdk/runtime";
       import { Body as Body, Link as Link, Link as Link_1 } from "@webstudio-is/sdk-components-react-router";
-import { Box as Box, Text as Text, Image as Image, Bold as Bold, HtmlEmbed as HtmlEmbed, Span as Span, Button as Button } from "@webstudio-is/sdk-components-react";
-import { Dialog as Dialog, DialogTrigger as DialogTrigger, DialogOverlay as DialogOverlay, DialogContent as DialogContent, DialogDescription as DialogDescription, DialogClose as DialogClose } from "@webstudio-is/sdk-components-react-radix";
+import { Box as Box, Text as Text, Bold as Bold, Image as Image, HtmlEmbed as HtmlEmbed, Span as Span, Button as Button } from "@webstudio-is/sdk-components-react";
+import { Tooltip as Tooltip, TooltipTrigger as TooltipTrigger, TooltipContent as TooltipContent, Dialog as Dialog, DialogTrigger as DialogTrigger, DialogOverlay as DialogOverlay, DialogContent as DialogContent, DialogDescription as DialogDescription, DialogClose as DialogClose } from "@webstudio-is/sdk-components-react-radix";
 
 
       export const projectId = "94456f8c-a847-426a-aec8-16de390bd3eb";
 
-      export const lastPublished = "2025-06-15T00:33:54.326Z";
+      export const lastPublished = "2025-06-20T20:28:15.306Z";
 
       export const siteName = "GE Union";
 
@@ -37,7 +37,7 @@ import { Dialog as Dialog, DialogTrigger as DialogTrigger, DialogOverlay as Dial
 
       const Page = (_props: { system: any; }) => {
 return <Body
-className={`w-body cdzo1k7 c1lzvaoj cm1ds2c`}>
+className={`w-body cdzo1k7 c1lzvaoj cm1ds2c c1qux398`}>
 <HtmlEmbed
 code={"<style>\n  h1{\n    font-family: Tanker;\n    font-weight: 500;\n    font-size: 5em;\n    color: var(--background);\n    line-height: 1;\n    margin: 0;\n  }\n  h2{\n    font-weight: 600;\n    font-size: 36px;\n    line-height: 1;\n    margin: 0;\n  }\n  p{\n    margin: 0;\n  }\n  \n  .icon-background{\n    background-color: var(--back-red-1);\n    z-index: 1;\n    overflow: hidden;\n    position: relative;\n  }\n  .icon-background::before{\n    content: \"\";\n    position: absolute;\n    width: 200%; height: 200%;\n    top: -50%; left: -50%;\n    background-image: url('/assets/icon-background_RyiWP8CNKOfskpwMp_P8Y.svg?width=1080&quality=80&format=auto');\n    background-size: 200px 115.4734411085px;\n    background-repeat: repeat;\n    animation: scrollBg 30s linear infinite;\n    z-index: -1;\n    opacity: var(--icon-background-opacity, 3%); mix-blend-mode: luminosity;\n    filter: blur(2px)\n  }\n  \n  .home-top::after{\n    position: absolute;\n    content: \"\";\n    width: 100%;\n    height: 250px;\n    background: linear-gradient(180deg, hsl(from var(--back-red-1) h s l / 0.65) 15%, hsl(from var(--back-red-1) h s l / 0) 100%);\n    z-index: -1;\n  }\n\n  @keyframes scrollBg {\n      0% {\n        background-position: 0 0;\n      }\n      100% {\n        background-position: -200px 115.4734411085px;\n      }\n    }\n\n  .home-top-card:hover .home-top-card-title-icon{\n    width: 38px;\n    padding-left: 3px;\n  }\n\n  @media only screen and (max-width: 767px) {\n    h1{\n      font-size: 4em;\n    }\n    h2{\n      font-size: 32px;\n    }\n  }\n</style>"}
 executeScriptOnCanvas={true}
@@ -61,36 +61,41 @@ className={`w-image c1g1752z c1l3m6tn c1wjaqd0`} />
 className={`w-box ci03eyw cavbteo c17p08f7 cy2vnym cgykfac c8chaf1 crymv6m ch588tu cd1c1x2 cgjpuuk co3wgvm cjdg5q7`}>
 <Link
 href={"/"}
-className={`w-link c4qqqhz cr2ujrk c8l261o czgmbqe c1ho4waj c1122adb c10pf28n c1w0lkxn ch9rsc5 c1et34yr c1tj415q`}>
-<Text
-className={`w-text`}>
+className={`w-link c4qqqhz cr2ujrk c8l261o c1wmsojl c1ho4waj c1k74xht c1122adb c10pf28n c1w0lkxn ch9rsc5 c1et34yr c1tj415q`}>
 {"Home"}
-</Text>
 </Link>
 <Link
 href={"/course-bank"}
-className={`w-link c4qqqhz cr2ujrk c8l261o c1ozmz5d c1ho4waj c1122adb c10pf28n c1w0lkxn ch9rsc5 c1et34yr c1tj415q`}>
-<Text
-className={`w-text`}>
+className={`w-link c4qqqhz cr2ujrk c8l261o c1ozmz5d c1ho4waj c1k74xht c1122adb c10pf28n c1w0lkxn ch9rsc5 c1et34yr c1tj415q`}>
 {"Course Bank"}
-</Text>
 </Link>
 <Link
 href={"/calendar"}
-className={`w-link c4qqqhz cr2ujrk c8l261o c1ozmz5d c1ho4waj c1122adb c10pf28n c1w0lkxn ch9rsc5 c1et34yr c1tj415q`}>
-<Text
-className={`w-text`}>
+className={`w-link c4qqqhz cr2ujrk c8l261o c1ozmz5d c1ho4waj c1k74xht c1122adb c10pf28n c1w0lkxn ch9rsc5 c1et34yr c1tj415q`}>
 {"Calendar"}
-</Text>
+</Link>
+<Tooltip
+delayDuration={0}>
+<TooltipTrigger>
+<div
+className={`w-element c4qqqhz cr2ujrk c8l261o c1ozmz5d c1ho4waj c1k74xht ch9rsc5 c1w0lkxn c1122adb c10pf28n cbahl6h c1tj415q`}>
+{"About"}
+</div>
+</TooltipTrigger>
+<TooltipContent
+className={`w-tooltip-content c5mlbae cm1ds2c c1fxgukz cdzo1k7 c1lp7lun c3ryv7d c1t11c95 c1kz25wt c1jbi97f crebcbz cfjpsss ci03eyw cu8ogtt c4bgnbx cj82r57 c14a5ioc cm4j335`}>
+<Link
+href={"/about-ge"}
+className={`w-link c4qqqhz cr2ujrk c8l261o c1ozmz5d c1ho4waj c1k74xht c1122adb c10pf28n c1w0lkxn ch9rsc5 cz5lin5 c1tj415q`}>
+{"General Engineering"}
 </Link>
 <Link
 href={"/about-geu"}
-className={`w-link c4qqqhz cr2ujrk c8l261o c1ozmz5d c1ho4waj c1122adb c10pf28n c1w0lkxn ch9rsc5 c1et34yr c1tj415q`}>
-<Text
-className={`w-text`}>
-{"About"}
-</Text>
+className={`w-link c4qqqhz cr2ujrk c8l261o c1ozmz5d c1ho4waj c1k74xht c1122adb c10pf28n c1w0lkxn ch9rsc5 cz5lin5 c1tj415q`}>
+{"GE Union"}
 </Link>
+</TooltipContent>
+</Tooltip>
 </Box>
 <Dialog>
 <DialogTrigger>
@@ -124,34 +129,27 @@ className={`w-box ci03eyw c1rb689p c1hbxsx0 cy2vnym cgykfac cu8ogtt cfx1lak c12z
 <Link
 href={"/"}
 className={`w-link c1sy2opm cr2ujrk c8l261o cy7nrqp c1ho4waj c1122adb c10pf28n c1w0lkxn ch9rsc5 cz5lin5`}>
-<Text
-className={`w-text`}>
 {"Home"}
-</Text>
 </Link>
 <Link
 href={"/course-bank"}
 className={`w-link c1sy2opm cr2ujrk c8l261o cy7nrqp c1ho4waj c1122adb c10pf28n c1w0lkxn ch9rsc5 cz5lin5`}>
-<Text
-className={`w-text`}>
 {"Course Bank"}
-</Text>
 </Link>
 <Link
 href={"/calendar"}
 className={`w-link c1sy2opm cr2ujrk c8l261o cy7nrqp c1ho4waj c1122adb c10pf28n c1w0lkxn ch9rsc5 cz5lin5`}>
-<Text
-className={`w-text`}>
 {"Calendar"}
-</Text>
 </Link>
 <Link
 href={"/about-geu"}
 className={`w-link c1sy2opm cr2ujrk c8l261o cy7nrqp c1ho4waj c1122adb c10pf28n c1w0lkxn ch9rsc5 cz5lin5`}>
-<Text
-className={`w-text`}>
-{"About"}
-</Text>
+{"About GE"}
+</Link>
+<Link
+href={"/about-geu"}
+className={`w-link c1sy2opm cr2ujrk c8l261o cy7nrqp c1ho4waj c1122adb c10pf28n c1w0lkxn ch9rsc5 cz5lin5`}>
+{"About GE Union"}
 </Link>
 </Box>
 </Box>
@@ -191,7 +189,7 @@ className={`w-bold-text`}>
 className={`w-box c9uhbgw ctrhycw cda4yqq c767uka cdzo1k7 c1w0yra6 cpq2gwm cd3toq c17nm8vt c1xymrvd c8yo8yx ci03eyw chfxkqq cvm9uv1 c1bg833b c1j0nlio c1e4l0yv c1h2mtua c1o388ql c1cyyop6 c16za6ul ceiem4c cnkevhm c1ehrzp cbcspme codk3bn c1y28bfl c3knbg7 c13m9ff cb9skoy c1g2lc43 c4iwcdt ${"home-cards"}`}>
 <Link
 href={"/calendar"}
-className={`w-link c8nmv6p cwqnf9o c1vn0xiq c1n9f9m4 c4bgnbx cj82r57 c14a5ioc cm4j335 c1xz83ly c12s4iry c1ixcxvm cct8mvq c1ho4waj ci03eyw cu8ogtt c1v4vkm5 ck11ylk c767uka c1ntwtne cqietgu cdmn2c9 cm5zmxq cvr3dv5 ctdgi7y c1ive82f c17vhk5v cagydry ${"home-top-card"}`}>
+className={`w-link c8nmv6p cwqnf9o c1vn0xiq c1n9f9m4 c4bgnbx cj82r57 c14a5ioc cm4j335 c1xz83ly c12s4iry c1ixcxvm cct8mvq c1ho4waj cu8ogtt c1v4vkm5 ck11ylk c767uka c1ntwtne ci03eyw cqietgu cdmn2c9 cm5zmxq cvr3dv5 ctdgi7y c1ive82f c17vhk5v cagydry ${"home-top-card"}`}>
 <div
 className={`w-element ci03eyw c197jlyy c1tmykg6 c121nwe4 codsd31 c16er72m c1qt5xo2 c1v4vkm5`}>
 <Text
@@ -206,9 +204,9 @@ loading={"eager"}
 className={`w-image c1mngz4m c1rwubzf c1tmykg6 c40iywk codsd31 c16er72m c1qt5xo2 cpt3wp3 cgykxgu crl8cro ${"home-top-card-title-icon"}`} />
 </div>
 <Box
-className={`w-box ck11ylk c767uka c1dohq8s ci03eyw c1nj86ny c1v4vkm5 c11gzzxy c3zdq1t`}>
+className={`w-box ck11ylk c767uka c1dohq8s ci03eyw c1nj86ny c1v4vkm5 c11gzzxy cc356ws`}>
 <Text
-className={`w-text cy7nrqp c8l261o cdhy4s8 c1k1kr9l cpp7o71 c5sx8jk c1ajim6p c1swt08u cpyan2s c12tkve4 c5k3a4h crsc1f9 c1c7zter c1lot409 ccjnvj1 c1mkam2s`}>
+className={`w-text cy7nrqp c8l261o cdhy4s8 c5sx8jk cvxkwqs c1w0yra6 cpq2gwm c93vxni c1k1kr9l cpp7o71 c1ajim6p cpyan2s c12tkve4 c5k3a4h crsc1f9 c1c7zter c1lot409 ccjnvj1 c1mkam2s crc7qf5`}>
 {"See all upcoming events, periods, and deadlines all in one place."}
 {""}
 <br />
@@ -221,10 +219,23 @@ className={`w-text-1 cgjpuuk`}>
 {"Everything relevant for GE Students."}
 </Span>
 </Text>
+<div
+className={`w-element c1t205vl c1mngz4m cvuh4zx c14e6dcj c638992 ccyo9a2 c6piima`}>
+<Image
+src={"/assets/Calendar_Icon_JBq83QCbGJiotNNmNumnQ.svg"}
+width={650}
+height={570}
+className={`w-image cnkevhm c1oqdnpz cpc2g7h c1o8iolx c1w0yra6 c1sb186u c1730thw co345il c1lzvaoj ck7n286 c1rv4359 c5frzz4 c11l77i1 c13qonci`} />
+</div>
 <Box
-className={`w-box ck11ylk c767uka c1dohq8s c1p5610w crsc1f9 c1c7zter c5xw8br`}>
+className={`w-box ck11ylk c767uka c1dohq8s c102e7b2 c1p5610w crsc1f9 c1c7zter c5xw8br cbg59jt`}>
 <Box
-className={`w-box cwthfpg c1x7uwo4 c12zhvo cxa4mkp ccoo3t2 cd3toq c17nm8vt c1xymrvd c8yo8yx cu8nwxp`} />
+className={`w-box cwthfpg c1x7uwo4 c12zhvo cxa4mkp ccoo3t2 cd3toq c17nm8vt c1xymrvd c8yo8yx cu8nwxp`}>
+<h1
+className={`w-element c1vn0xiq c14233kc c76nei5 cnkevhm c1som3p5 c1kz2gr c1wt45pu c1awmcrg cyoo8jj`}>
+{"Coming Soon"}
+</h1>
+</Box>
 </Box>
 </Box>
 </Link>
@@ -232,9 +243,9 @@ className={`w-box cwthfpg c1x7uwo4 c12zhvo cxa4mkp ccoo3t2 cd3toq c17nm8vt c1xym
 className={`w-box ck11ylk ci03eyw cu8ogtt chfxkqq cvm9uv1 c1nj86ny c19haj7v cirsbpr c1dohq8s`}>
 <Link
 href={"/course-bank"}
-className={`w-link c8nmv6p cwqnf9o c1vn0xiq c1n9f9m4 c4bgnbx cj82r57 c14a5ioc cm4j335 c1xz83ly c12s4iry c1ixcxvm cct8mvq c1ho4waj ci03eyw cu8ogtt c1v4vkm5 ck11ylk c19haj7v c102e7b2 c1dohq8s cdmn2c9 cm5zmxq cvr3dv5 ${"home-top-card"}`}>
+className={`w-link c8nmv6p cwqnf9o c1vn0xiq c1n9f9m4 c4bgnbx cj82r57 c14a5ioc cm4j335 c1xz83ly c12s4iry c1ixcxvm cct8mvq c1ho4waj cu8ogtt c1v4vkm5 ck11ylk c19haj7v c102e7b2 ci03eyw c1dohq8s cdmn2c9 cm5zmxq cvr3dv5 ${"home-top-card"}`}>
 <div
-className={`w-element ci03eyw c197jlyy c1tmykg6 c121nwe4 codsd31 c16er72m c1qt5xo2 c1v4vkm5`}>
+className={`w-element ci03eyw c197jlyy c1tmykg6 c121nwe4 codsd31 c16er72m c1qt5xo2 c1v4vkm5 ceiem4c`}>
 <Text
 className={`w-text c1lt64h c12zdnex c7amdgj c1nx261z c7tuxro`}>
 {"Course Bank"}
@@ -246,10 +257,25 @@ height={24}
 loading={"eager"}
 className={`w-image c1mngz4m c1rwubzf c1tmykg6 c40iywk codsd31 c16er72m c1qt5xo2 cpt3wp3 cgykxgu crl8cro ${"home-top-card-title-icon"}`} />
 </div>
+<div
+className={`w-element ck11ylk c767uka c1dohq8s`}>
+<div
+className={`w-element c1t205vl`}>
+<Image
+src={"/assets/Vault_Icon_b47VgS0N6eONtPMryR-cd.svg"}
+width={650}
+height={570}
+className={`w-image cnkevhm c1oqdnpz cpc2g7h c1o8iolx c1w0yra6 c1sb186u c1730thw co345il ck7n286`} />
+</div>
+<p
+className={`w-element cy7nrqp c8l261o cdhy4s8 c5sx8jk c1wauoq4 c1w0yra6 cpq2gwm cyoo8jj cpyan2s c12tkve4 c5k3a4h crsc1f9 c1c7zter c1lot409 ccjnvj1 c1mkam2s crc7qf5`}>
+{"Here's some demo text for a good demonstration of what I'm trying to do."}
+</p>
+</div>
 </Link>
 <Link
 href={"/about-ge"}
-className={`w-link c8nmv6p cwqnf9o c1vn0xiq c1n9f9m4 c4bgnbx cj82r57 c14a5ioc cm4j335 c1xz83ly c12s4iry c1ixcxvm cct8mvq c1ho4waj ci03eyw cu8ogtt c1v4vkm5 ck11ylk c767uka c102e7b2 cdmn2c9 cm5zmxq cvr3dv5 ${"home-top-card"}`}>
+className={`w-link c8nmv6p cwqnf9o c1vn0xiq c1n9f9m4 c4bgnbx cj82r57 c14a5ioc cm4j335 c1xz83ly c12s4iry c1ixcxvm cct8mvq c1ho4waj cu8ogtt c1v4vkm5 ck11ylk c767uka c102e7b2 ci03eyw cdmn2c9 cm5zmxq cvr3dv5 ${"home-top-card"}`}>
 <div
 className={`w-element ci03eyw c197jlyy c1tmykg6 c121nwe4 codsd31 c16er72m c1qt5xo2 c1v4vkm5`}>
 <Text
@@ -262,6 +288,21 @@ width={25}
 height={24}
 loading={"eager"}
 className={`w-image c1mngz4m c1rwubzf c1tmykg6 c40iywk codsd31 c16er72m c1qt5xo2 cpt3wp3 cgykxgu crl8cro ${"home-top-card-title-icon"}`} />
+</div>
+<div
+className={`w-element ck11ylk c767uka c1dohq8s`}>
+<div
+className={`w-element c1t205vl`}>
+<Image
+src={"/assets/About_GE_Icon_nX97REgvEFTexDZ2ZYnYa.svg"}
+width={650}
+height={570}
+className={`w-image cnkevhm c1oqdnpz cpc2g7h c1o8iolx c1w0yra6 c1sb186u c1730thw co345il ck7n286`} />
+</div>
+<p
+className={`w-element cy7nrqp c8l261o cdhy4s8 c5sx8jk c1wauoq4 c1w0yra6 cpq2gwm cyoo8jj cpyan2s c12tkve4 c5k3a4h crsc1f9 c1c7zter c1lot409 ccjnvj1 c1mkam2s crc7qf5`}>
+{"Here's some demo text for a good demonstration of what I'm trying to do."}
+</p>
 </div>
 </Link>
 </Box>
@@ -296,7 +337,7 @@ className={`w-element c1km7ytz cwfxmkq cyoo8jj c1f0lefa c1q98tuy c19a8u9t`}>
 </p>
 <Link
 href={"/about-geu"}
-className={`w-link c1122adb c10pf28n c6775s7 ct2w13i c1kmtbg4 c341g64 c11h9c5s c17hd63g cnrv5xy c1ho4waj czgmbqe c8l261o cr2ujrk ci03eyw c1pd7k79 c2gl1gx c1tmykg6 c40iywk codsd31 c16er72m c1qt5xo2 cda4yqq c767uka c1x65yvk cv1qn8j c1jon836 co5x0w6 c1582rzp cpyan2s`}>
+className={`w-link c10pf28n c6775s7 ct2w13i c1kmtbg4 c341g64 c11h9c5s c17hd63g cnrv5xy c1ho4waj czgmbqe c8l261o cr2ujrk ci03eyw c1pd7k79 c2gl1gx cda4yqq c767uka c1x65yvk cv1qn8j c1jon836 co5x0w6 c5sx8jk c1122adb c1bti4b5 cz7iu34 c40iywk codsd31 c16er72m c1qt5xo2 c1582rzp cpyan2s`}>
 <Text
 className={`w-text`}>
 {"Learn more"}
@@ -375,7 +416,7 @@ className={`w-element c7wcowi c2z8j1e cmndei7 c3q79or c8qj03j`}>
 <Link
 href={"https://www.instagram.com/ge.union/"}
 target={"_blank"}
-className={`w-link c1122adb c10pf28n c6775s7 ct2w13i c1kmtbg4 c341g64 c11h9c5s c17hd63g cnrv5xy c1ho4waj czgmbqe c8l261o cr2ujrk ci03eyw c1pd7k79 c2gl1gx c1tmykg6 c40iywk codsd31 c16er72m c1qt5xo2 cda4yqq c767uka c1x65yvk cv1qn8j c1jon836 co5x0w6 c1984dmv c1582rzp cpyan2s`}>
+className={`w-link c10pf28n c6775s7 ct2w13i c1kmtbg4 c341g64 c11h9c5s c17hd63g cnrv5xy c1ho4waj czgmbqe c8l261o cr2ujrk ci03eyw c1pd7k79 c2gl1gx cda4yqq c767uka c1x65yvk cv1qn8j c1jon836 co5x0w6 c5sx8jk c1122adb c1bti4b5 cz7iu34 c40iywk codsd31 c16er72m c1qt5xo2 c1984dmv c1582rzp cpyan2s`}>
 <Text
 className={`w-text`}>
 {"See on Instagram"}
@@ -403,7 +444,7 @@ className={`w-element c7wcowi c2z8j1e cmndei7 c3q79or c8qj03j`}>
 <Link
 href={"https://www.linkedin.com/groups/10061020/"}
 target={"_blank"}
-className={`w-link c1122adb c10pf28n c6775s7 ct2w13i c1kmtbg4 c341g64 c11h9c5s c17hd63g cnrv5xy c1ho4waj czgmbqe c8l261o cr2ujrk ci03eyw c1pd7k79 c2gl1gx c1tmykg6 c40iywk codsd31 c16er72m c1qt5xo2 cda4yqq c767uka c1x65yvk cv1qn8j c1jon836 co5x0w6 c1984dmv c1582rzp cpyan2s`}>
+className={`w-link c10pf28n c6775s7 ct2w13i c1kmtbg4 c341g64 c11h9c5s c17hd63g cnrv5xy c1ho4waj czgmbqe c8l261o cr2ujrk ci03eyw c1pd7k79 c2gl1gx cda4yqq c767uka c1x65yvk cv1qn8j c1jon836 co5x0w6 c5sx8jk c1122adb c1bti4b5 cz7iu34 c40iywk codsd31 c16er72m c1qt5xo2 c1984dmv c1582rzp cpyan2s`}>
 <Text
 className={`w-text`}>
 {"LinkedIn Network"}
@@ -431,7 +472,7 @@ className={`w-element c7wcowi c2z8j1e cmndei7 c3q79or c8qj03j`}>
 <Link
 href={"https://www.reddit.com/r/DTU/"}
 target={"_blank"}
-className={`w-link c1122adb c10pf28n c6775s7 ct2w13i c1kmtbg4 c341g64 c11h9c5s c17hd63g cnrv5xy c1ho4waj czgmbqe c8l261o cr2ujrk ci03eyw c1pd7k79 c2gl1gx c1tmykg6 c40iywk codsd31 c16er72m c1qt5xo2 cda4yqq c767uka c1x65yvk cv1qn8j c1jon836 co5x0w6 c1984dmv c1582rzp cpyan2s`}>
+className={`w-link c10pf28n c6775s7 ct2w13i c1kmtbg4 c341g64 c11h9c5s c17hd63g cnrv5xy c1ho4waj czgmbqe c8l261o cr2ujrk ci03eyw c1pd7k79 c2gl1gx cda4yqq c767uka c1x65yvk cv1qn8j c1jon836 co5x0w6 c5sx8jk c1122adb c1bti4b5 cz7iu34 c40iywk codsd31 c16er72m c1qt5xo2 c1984dmv c1582rzp cpyan2s`}>
 <Text
 className={`w-text`}>
 {"See on Reddit"}
@@ -459,7 +500,7 @@ className={`w-element c7wcowi c2z8j1e cmndei7 c3q79or c8qj03j`}>
 <Link
 href={"https://www.facebook.com/people/GE-Union/61573069635006/?_rdr"}
 target={"_blank"}
-className={`w-link c1122adb c10pf28n c6775s7 ct2w13i c1kmtbg4 c341g64 c11h9c5s c17hd63g cnrv5xy c1ho4waj czgmbqe c8l261o cr2ujrk ci03eyw c1pd7k79 c2gl1gx c1tmykg6 c40iywk codsd31 c16er72m c1qt5xo2 cda4yqq c767uka c1x65yvk cv1qn8j c1jon836 co5x0w6 c7xu66z c1582rzp cpyan2s`}>
+className={`w-link c10pf28n c6775s7 ct2w13i c1kmtbg4 c341g64 c11h9c5s c17hd63g cnrv5xy c1ho4waj czgmbqe c8l261o cr2ujrk ci03eyw c1pd7k79 c2gl1gx cda4yqq c767uka c1x65yvk cv1qn8j c1jon836 co5x0w6 c5sx8jk c1122adb c1bti4b5 cz7iu34 c40iywk codsd31 c16er72m c1qt5xo2 c7xu66z c1582rzp cpyan2s`}>
 <Text
 className={`w-text`}>
 {"See on Facebook"}
@@ -482,10 +523,14 @@ className={`w-element`}>
 <p
 className={`w-element c7wcowi c2z8j1e cmndei7 c3q79or c8qj03j`}>
 {"You can reach us at "}
+<Link_1
+href={"mailto:geunion.dtu@gmail.com"}
+className={`w-element c5pdwyd c1ho4waj`}>
 <b
 className={`w-element`}>
 {"geunion.dtu@gmail.com"}
 </b>
+</Link_1>
 {" for any questions you have!"}
 </p>
 </Box>
@@ -494,7 +539,7 @@ className={`w-element`}>
 <Link_1
 href={"https://webstudio.is/?via=badge"}
 target={"_blank"}
-className={`w-element cfyrpk4 c2gl1gx c1pd7k79 c1v4vkm5 c1bti4b5 c15392bw cmyjs62 czstdzv c13f4d8e c1ut9lo7 c1mz59p0 c1g0r0c1 c1h9k0at c11qj1rn c1aq6eep c18zghtn cr2ujrk c7amdgj cqw36j6 c68ooh8 clgapjo c1q3df6t c1ho4waj c1ea0099 cuz3b7n`}>
+className={`w-element cfyrpk4 c2gl1gx c1pd7k79 c1v4vkm5 c1bti4b5 c15392bw cmyjs62 czstdzv c13f4d8e c1ut9lo7 c1mz59p0 c1g0r0c1 cuhk95i c11qj1rn c1aq6eep c18zghtn cr2ujrk c7amdgj cqw36j6 c68ooh8 clgapjo c1q3df6t c1ho4waj c1ea0099 cuz3b7n`}>
 <HtmlEmbed
 code={"<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"currentColor\" viewBox=\"0 0 16 16\" width=\"100%\" height=\"100%\" style=\"display: block;\"><path fill-rule=\"evenodd\" d=\"m12.32 12.416 2.62-8.085a1.205 1.205 0 1 0-2.292-.746l-2.62 8.084a1.205 1.205 0 1 0 2.292.747Z\" clip-rule=\"evenodd\"/><path fill-rule=\"evenodd\" d=\"M8 7.624c.297 0 .517.175.704.394.207.243.373.545.514.866.634 1.44.753 3.241.753 3.241a1.206 1.206 0 0 0 1.285 1.122 1.207 1.207 0 0 0 1.12-1.287s-.16-2.25-.952-4.05C10.744 6.364 9.594 5.208 8 5.208c-1.594 0-2.744 1.156-3.424 2.7-.792 1.8-.951 4.05-.951 4.05a1.207 1.207 0 0 0 1.12 1.288 1.206 1.206 0 0 0 1.284-1.122s.119-1.8.753-3.24a3.52 3.52 0 0 1 .514-.867c.187-.22.406-.394.704-.394Z\" clip-rule=\"evenodd\"/><path fill-rule=\"evenodd\" d=\"M5.973 11.669 3.352 3.585a1.205 1.205 0 1 0-2.293.746l2.622 8.084a1.205 1.205 0 1 0 2.292-.746Z\" clip-rule=\"evenodd\"/></svg>"}
 className={`w-html-embed c6f08mx c58jkk8 c4bwhth c767uka`} />
