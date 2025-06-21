@@ -1,10 +1,10 @@
 {
   "build": {
-    "id": "e5dd99e5-bbb0-49f1-8858-0ace8d47b3ea",
+    "id": "46602c1f-46e8-4365-aa45-6c3fb99012ec",
     "projectId": "94456f8c-a847-426a-aec8-16de390bd3eb",
-    "version": 4794,
-    "createdAt": "2025-06-20T20:28:15.306+00:00",
-    "updatedAt": "2025-06-20T20:28:15.306+00:00",
+    "version": 4835,
+    "createdAt": "2025-06-21T00:50:26.148+00:00",
+    "updatedAt": "2025-06-21T00:50:26.148+00:00",
     "pages": {
       "meta": {
         "siteName": "GE Union",
@@ -25413,8 +25413,8 @@
           "property": "right",
           "value": {
             "type": "unit",
-            "unit": "px",
-            "value": -30
+            "value": -39,
+            "unit": "px"
           }
         }
       ],
@@ -25439,7 +25439,7 @@
           "value": {
             "type": "unit",
             "unit": "px",
-            "value": 200
+            "value": 260
           }
         }
       ],
@@ -25452,7 +25452,7 @@
           "value": {
             "type": "unit",
             "unit": "number",
-            "value": 0.1
+            "value": 0.07
           },
           "listed": true
         }
@@ -25743,7 +25743,7 @@
           "property": "right",
           "value": {
             "type": "unit",
-            "value": 172,
+            "value": 220,
             "unit": "px"
           }
         }
@@ -25795,7 +25795,7 @@
           "property": "right",
           "value": {
             "type": "unit",
-            "value": 9,
+            "value": 64,
             "unit": "px"
           }
         }
@@ -26012,7 +26012,7 @@
           "value": {
             "type": "unit",
             "unit": "number",
-            "value": 0.4
+            "value": 0.1
           },
           "listed": true
         }
@@ -26064,7 +26064,7 @@
           "property": "top",
           "value": {
             "type": "unit",
-            "value": 99,
+            "value": 83,
             "unit": "px"
           }
         }
@@ -26078,7 +26078,7 @@
           "value": {
             "type": "unit",
             "unit": "em",
-            "value": 5.07
+            "value": 6.72
           }
         }
       ],
@@ -26134,19 +26134,6 @@
                 }
               }
             ]
-          }
-        }
-      ],
-      [
-        "R7eeb6HjGdxB0dcJVj33h:2EiFMEG40PBm9_fkelqpo:left:",
-        {
-          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
-          "styleSourceId": "R7eeb6HjGdxB0dcJVj33h",
-          "property": "left",
-          "value": {
-            "type": "unit",
-            "value": 6,
-            "unit": "px"
           }
         }
       ],
@@ -41290,6 +41277,32 @@
           },
           "listed": true
         }
+      ],
+      [
+        "R7eeb6HjGdxB0dcJVj33h:2EiFMEG40PBm9_fkelqpo:marginLeft:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "R7eeb6HjGdxB0dcJVj33h",
+          "property": "marginLeft",
+          "value": {
+            "type": "unit",
+            "value": 8,
+            "unit": "px"
+          }
+        }
+      ],
+      [
+        "R7eeb6HjGdxB0dcJVj33h:2EiFMEG40PBm9_fkelqpo:left:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "R7eeb6HjGdxB0dcJVj33h",
+          "property": "left",
+          "value": {
+            "type": "unit",
+            "value": 7,
+            "unit": "px"
+          }
+        }
       ]
     ],
     "styleSources": [
@@ -41878,38 +41891,10 @@
         }
       ],
       [
-        "VRIUkgQJ9dRnmZF2MLw-B",
-        {
-          "type": "local",
-          "id": "VRIUkgQJ9dRnmZF2MLw-B"
-        }
-      ],
-      [
         "Xkw_3hfp7nuRJg91tsF_x",
         {
           "type": "local",
           "id": "Xkw_3hfp7nuRJg91tsF_x"
-        }
-      ],
-      [
-        "NxOqMBetG7N2hAlu33SjK",
-        {
-          "type": "local",
-          "id": "NxOqMBetG7N2hAlu33SjK"
-        }
-      ],
-      [
-        "M_uG7IraZvGMEtmjPipmF",
-        {
-          "type": "local",
-          "id": "M_uG7IraZvGMEtmjPipmF"
-        }
-      ],
-      [
-        "3aigIL9Y5VwowWvFLliTW",
-        {
-          "type": "local",
-          "id": "3aigIL9Y5VwowWvFLliTW"
         }
       ],
       [
@@ -43158,13 +43143,6 @@
         }
       ],
       [
-        "-XA_ofihzoP8-81U0EjhJ",
-        {
-          "type": "local",
-          "id": "-XA_ofihzoP8-81U0EjhJ"
-        }
-      ],
-      [
         "KNk_xRmkXWNXJNak2Sr38",
         {
           "type": "local",
@@ -44187,6 +44165,41 @@
           "type": "local",
           "id": "9xGbK_NxL1VQt60I1_Q8v"
         }
+      ],
+      [
+        "jS_uavH2s5dMOWTIl3fjx",
+        {
+          "type": "local",
+          "id": "jS_uavH2s5dMOWTIl3fjx"
+        }
+      ],
+      [
+        "Ma0HIsJkP3gV7lKkAEza9",
+        {
+          "type": "local",
+          "id": "Ma0HIsJkP3gV7lKkAEza9"
+        }
+      ],
+      [
+        "S1VU70W_9j89Wkmsw-4Sg",
+        {
+          "type": "local",
+          "id": "S1VU70W_9j89Wkmsw-4Sg"
+        }
+      ],
+      [
+        "1ZytVIn7Nqx9DErN1sqy0",
+        {
+          "type": "local",
+          "id": "1ZytVIn7Nqx9DErN1sqy0"
+        }
+      ],
+      [
+        "OHY45RzZomPZun8v3Mp_D",
+        {
+          "type": "local",
+          "id": "OHY45RzZomPZun8v3Mp_D"
+        }
       ]
     ],
     "styleSourceSelections": [
@@ -44904,47 +44917,11 @@
         }
       ],
       [
-        "iiMaCpZ-xULcxU2NgNo4O",
-        {
-          "instanceId": "iiMaCpZ-xULcxU2NgNo4O",
-          "values": [
-            "VRIUkgQJ9dRnmZF2MLw-B"
-          ]
-        }
-      ],
-      [
         "7WfON-vgagF1Hv2g8wUIj",
         {
           "instanceId": "7WfON-vgagF1Hv2g8wUIj",
           "values": [
             "Xkw_3hfp7nuRJg91tsF_x"
-          ]
-        }
-      ],
-      [
-        "5L-QKZJVYOrunOu0zOICG",
-        {
-          "instanceId": "5L-QKZJVYOrunOu0zOICG",
-          "values": [
-            "NxOqMBetG7N2hAlu33SjK"
-          ]
-        }
-      ],
-      [
-        "XnFlNfic1lU8kqa5qW3Ki",
-        {
-          "instanceId": "XnFlNfic1lU8kqa5qW3Ki",
-          "values": [
-            "M_uG7IraZvGMEtmjPipmF"
-          ]
-        }
-      ],
-      [
-        "Qd7Ay96Wv1I7rdp2-Vz69",
-        {
-          "instanceId": "Qd7Ay96Wv1I7rdp2-Vz69",
-          "values": [
-            "3aigIL9Y5VwowWvFLliTW"
           ]
         }
       ],
@@ -47085,15 +47062,6 @@
         }
       ],
       [
-        "BXqSnJAuSQqhjG4BUbo3k",
-        {
-          "instanceId": "BXqSnJAuSQqhjG4BUbo3k",
-          "values": [
-            "-XA_ofihzoP8-81U0EjhJ"
-          ]
-        }
-      ],
-      [
         "WoTLfrwQIVSXJ1T2-VwQD",
         {
           "instanceId": "WoTLfrwQIVSXJ1T2-VwQD",
@@ -48508,6 +48476,51 @@
             "9xGbK_NxL1VQt60I1_Q8v"
           ]
         }
+      ],
+      [
+        "liMGLuvNCKOpq_THxFWd1",
+        {
+          "instanceId": "liMGLuvNCKOpq_THxFWd1",
+          "values": [
+            "jS_uavH2s5dMOWTIl3fjx"
+          ]
+        }
+      ],
+      [
+        "RGZ4B6C6KZJ0Qra99oVEA",
+        {
+          "instanceId": "RGZ4B6C6KZJ0Qra99oVEA",
+          "values": [
+            "Ma0HIsJkP3gV7lKkAEza9"
+          ]
+        }
+      ],
+      [
+        "XIW0sJNnV5hXdbdNUwdRF",
+        {
+          "instanceId": "XIW0sJNnV5hXdbdNUwdRF",
+          "values": [
+            "S1VU70W_9j89Wkmsw-4Sg"
+          ]
+        }
+      ],
+      [
+        "5zXU79_3je-UCdtmF8ptD",
+        {
+          "instanceId": "5zXU79_3je-UCdtmF8ptD",
+          "values": [
+            "1ZytVIn7Nqx9DErN1sqy0"
+          ]
+        }
+      ],
+      [
+        "QpTG7bM7FN_ru5ZAkrwCo",
+        {
+          "instanceId": "QpTG7bM7FN_ru5ZAkrwCo",
+          "values": [
+            "OHY45RzZomPZun8v3Mp_D"
+          ]
+        }
       ]
     ],
     "props": [
@@ -48708,7 +48721,7 @@
           "instanceId": "HzoGz1cO4F_sgAQlowXRW",
           "name": "code",
           "type": "string",
-          "value": "<style>\n  h1{\n    font-family: Tanker;\n    font-weight: 500;\n    font-size: 5em;\n    color: var(--background);\n    line-height: 1;\n    margin: 0;\n  }\n  h2{\n    font-weight: 600;\n    font-size: 36px;\n    line-height: 1;\n    margin: 0;\n  }\n  p{\n    margin: 0;\n  }\n  \n  .icon-background{\n    background-color: var(--back-red-1);\n    z-index: 1;\n    overflow: hidden;\n    position: relative;\n  }\n  .icon-background::before{\n    content: \"\";\n    position: absolute;\n    width: 200%; height: 200%;\n    top: -50%; left: -50%;\n    background-image: url('/assets/icon-background_RyiWP8CNKOfskpwMp_P8Y.svg?width=1080&quality=80&format=auto');\n    background-size: 200px 115.4734411085px;\n    background-repeat: repeat;\n    animation: scrollBg 30s linear infinite;\n    z-index: -1;\n    opacity: var(--icon-background-opacity, 3%); mix-blend-mode: luminosity;\n    filter: blur(2px)\n  }\n  \n  .home-top::after{\n    position: absolute;\n    content: \"\";\n    width: 100%;\n    height: 250px;\n    background: linear-gradient(180deg, hsl(from var(--back-red-1) h s l / 0.65) 15%, hsl(from var(--back-red-1) h s l / 0) 100%);\n    z-index: -1;\n  }\n\n  @keyframes scrollBg {\n      0% {\n        background-position: 0 0;\n      }\n      100% {\n        background-position: -200px 115.4734411085px;\n      }\n    }\n\n  .home-top-card:hover .home-top-card-title-icon{\n    width: 38px;\n    padding-left: 3px;\n  }\n\n  @media only screen and (max-width: 767px) {\n    h1{\n      font-size: 4em;\n    }\n    h2{\n      font-size: 32px;\n    }\n  }\n</style>"
+          "value": "<style>\n  h1{\n    font-family: Tanker;\n    font-weight: 500;\n    font-size: 5em;\n    color: var(--background);\n    line-height: 1;\n    margin: 0;\n  }\n  h2{\n    font-weight: 600;\n    font-size: 36px;\n    line-height: 1;\n    margin: 0;\n  }\n  p{\n    margin: 0;\n  }\n  \n  .icon-background{\n    background-color: var(--back-red-1);\n    z-index: 1;\n    overflow: hidden;\n    position: relative;\n  }\n  .icon-background::before{\n    content: \"\";\n    position: absolute;\n    width: 200%; height: 200%;\n    top: -50%; left: -50%;\n    background-image: url('/assets/icon-background_RyiWP8CNKOfskpwMp_P8Y.svg?width=1080&quality=80&format=auto');\n    background-size: 200px 115.4734411085px;\n    background-repeat: repeat;\n    animation: scrollBg 20s linear infinite;\n    z-index: -1;\n    opacity: var(--icon-background-opacity, 3%); mix-blend-mode: luminosity;\n    filter: blur(2px)\n  }\n  \n  .home-top::after{\n    position: absolute;\n    content: \"\";\n    width: 100%;\n    height: 250px;\n    background: linear-gradient(180deg, hsl(from var(--back-red-1) h s l / 0.65) 15%, hsl(from var(--back-red-1) h s l / 0) 100%);\n    z-index: -1;\n  }\n\n  @keyframes scrollBg {\n      0% {\n        background-position: 0 0;\n      }\n      100% {\n        background-position: -200px 115.4734411085px;\n      }\n    }\n\n  .home-top-card:hover .home-top-card-title-icon{\n    width: 38px;\n    padding-left: 3px;\n  }\n\n  @media only screen and (max-width: 767px) {\n    h1{\n      font-size: 4em;\n    }\n    h2{\n      font-size: 32px;\n    }\n  }\n</style>"
         }
       ],
       [
@@ -49239,126 +49252,6 @@
           "name": "code",
           "type": "string",
           "value": "<style>\n.file-list{\n  display: flex;\n  flex-wrap: wrap;\n  max-width: 850px\n}\n  \n.custom-file-link {\n  margin: 1em 0;\n  display: flex;\n  align-items: center;\n  max-width: 500px;\n  min-width: 300px;\n  transition: transform 0.1s;\n  height: 40px;\n  width: 50%;\n  flex-shrink: 0; flex-grow: 1;\n}\n.custom-file-link > a {\n  text-decoration: none;\n}\n\n.custom-file-link:hover {\n  transform: translateX(5px);\n  cursor: pointer;\n}.custom-file-link:hover .file-details strong {\n  color: var(--front-red-1) !important;\n}\n\n.file-icon {\n  margin-right: 10px;\n  width: 36px;\n  height: 36px;\n  position: relative;\n}\n\n.file-icon img {\n  width: 100%;\n  height: 100%;\n  object-fit: contain;\n  flex-shrink: 0;\n}\n\n.extension-badge {\n  position: absolute;\n  top: 0;\n  left: 0;\n  color: white;\n  font-size: 10px;\n  font-weight: 500;\n  padding: 1px 2px;\n  border-radius: 2px;\n  margin-top: 13.5px;\n  margin-left: 1px;\n  pointer-events: none;\n}\n\n.file-details {\n  display: flex;\n  flex-direction: column;\n  width: calc(100% - 58px);\n}\n\n.file-details strong {\n  font-size: 1em;\n  font-weight: 500;\n  color: var(--front-1);\n  white-space: nowrap;\n  text-overflow: ellipsis;\n  overflow: hidden;\n}\n\n.file-details span {\n  font-size: 0.8em;\n  color: var(--front-3);\n  white-space: nowrap;\n  text-overflow: ellipsis;\n  overflow: hidden;\n}\n</style>"
-        }
-      ],
-      [
-        "zxv3eL3z9a9BPFtwMeNRw",
-        {
-          "id": "zxv3eL3z9a9BPFtwMeNRw",
-          "instanceId": "iiMaCpZ-xULcxU2NgNo4O",
-          "name": "code",
-          "type": "string",
-          "value": "<style>\n  h1{\n    font-family: Tanker;\n    font-weight: 500;\n    font-size: 5em;\n    color: var(--background);\n    line-height: 1;\n    margin: 0;\n  }\n  h2{\n    font-weight: 600;\n    font-size: 36px;\n    line-height: 1;\n    margin: 0;\n  }\n  p{\n    margin: 0;\n  }\n  \n  .icon-background{\n    background-color: var(--back-red-1);\n    z-index: 1;\n    overflow: hidden;\n    position: relative;\n  }\n  .icon-background::before{\n    content: \"\";\n    position: absolute;\n    width: 200%; height: 200%;\n    top: -50%; left: -50%;\n    background-image: url('/assets/icon-background_RyiWP8CNKOfskpwMp_P8Y.svg?width=1080&quality=80&format=auto');\n    background-size: 200px 115.4734411085px;\n    background-repeat: repeat;\n    animation: scrollBg 30s linear infinite;\n    z-index: -1;\n    opacity: var(--icon-background-opacity, 3%); mix-blend-mode: luminosity;\n    filter: blur(2px)\n  }\n  \n  .home-top::after{\n    position: absolute;\n    content: \"\";\n    width: 100%;\n    height: 250px;\n    background: linear-gradient(180deg, hsl(from var(--back-red-1) h s l / 0.65) 15%, hsl(from var(--back-red-1) h s l / 0) 100%);\n    z-index: -1;\n  }\n\n  @keyframes scrollBg {\n      0% {\n        background-position: 0 0;\n      }\n      100% {\n        background-position: -200px 115.4734411085px;\n      }\n    }\n\n  .home-top-card:hover .home-top-card-title-icon{\n    width: 38px;\n    padding-left: 3px;\n  }\n\n  @media only screen and (max-width: 767px) {\n    h1{\n      font-size: 3.7em;\n    }\n    h2{\n      font-size: 32px;\n    }\n  }\n</style>"
-        }
-      ],
-      [
-        "6MqZ0yIpoy3sNrHB0KcAF",
-        {
-          "id": "6MqZ0yIpoy3sNrHB0KcAF",
-          "instanceId": "iiMaCpZ-xULcxU2NgNo4O",
-          "name": "executeScriptOnCanvas",
-          "type": "boolean",
-          "value": true
-        }
-      ],
-      [
-        "fRL4IffRVpgnYM1ie-SCP",
-        {
-          "id": "fRL4IffRVpgnYM1ie-SCP",
-          "instanceId": "iiMaCpZ-xULcxU2NgNo4O",
-          "name": "data-ws-show",
-          "type": "boolean",
-          "value": true
-        }
-      ],
-      [
-        "x7Og_MmRTFfECPPemh92Q",
-        {
-          "id": "x7Og_MmRTFfECPPemh92Q",
-          "instanceId": "5L-QKZJVYOrunOu0zOICG",
-          "name": "code",
-          "type": "string",
-          "value": "<style>\n  h1{\n    font-family: Tanker;\n    font-weight: 500;\n    font-size: 5em;\n    color: var(--background);\n    line-height: 1;\n    margin: 0;\n  }\n  h2{\n    font-weight: 600;\n    font-size: 36px;\n    line-height: 1;\n    margin: 0;\n  }\n  p{\n    margin: 0;\n  }\n  \n  .icon-background{\n    background-color: var(--back-red-1);\n    z-index: 1;\n    overflow: hidden;\n    position: relative;\n  }\n  .icon-background::before{\n    content: \"\";\n    position: absolute;\n    width: 200%; height: 200%;\n    top: -50%; left: -50%;\n    background-image: url('/assets/icon-background_RyiWP8CNKOfskpwMp_P8Y.svg?width=1080&quality=80&format=auto');\n    background-size: 200px 115.4734411085px;\n    background-repeat: repeat;\n    animation: scrollBg 30s linear infinite;\n    z-index: -1;\n    opacity: var(--icon-background-opacity, 3%); mix-blend-mode: luminosity;\n    filter: blur(2px)\n  }\n  \n  .home-top::after{\n    position: absolute;\n    content: \"\";\n    width: 100%;\n    height: 250px;\n    background: linear-gradient(180deg, hsl(from var(--back-red-1) h s l / 0.65) 15%, hsl(from var(--back-red-1) h s l / 0) 100%);\n    z-index: -1;\n  }\n\n  @keyframes scrollBg {\n      0% {\n        background-position: 0 0;\n      }\n      100% {\n        background-position: -200px 115.4734411085px;\n      }\n    }\n\n  .home-top-card:hover .home-top-card-title-icon{\n    width: 38px;\n    padding-left: 3px;\n  }\n\n  @media only screen and (max-width: 767px) {\n    h1{\n      font-size: 3.7em;\n    }\n    h2{\n      font-size: 32px;\n    }\n  }\n</style>"
-        }
-      ],
-      [
-        "yOtqkH5xM8NcNxaW0bwkZ",
-        {
-          "id": "yOtqkH5xM8NcNxaW0bwkZ",
-          "instanceId": "5L-QKZJVYOrunOu0zOICG",
-          "name": "executeScriptOnCanvas",
-          "type": "boolean",
-          "value": true
-        }
-      ],
-      [
-        "7-b-K69XSRDps1Lu7vFgX",
-        {
-          "id": "7-b-K69XSRDps1Lu7vFgX",
-          "instanceId": "5L-QKZJVYOrunOu0zOICG",
-          "name": "data-ws-show",
-          "type": "boolean",
-          "value": true
-        }
-      ],
-      [
-        "f8dcwdG1TVmtPMtEOgmwC",
-        {
-          "id": "f8dcwdG1TVmtPMtEOgmwC",
-          "instanceId": "XnFlNfic1lU8kqa5qW3Ki",
-          "name": "code",
-          "type": "string",
-          "value": "<style>\n  h1{\n    font-family: Tanker;\n    font-weight: 500;\n    font-size: 5em;\n    color: var(--background);\n    line-height: 1;\n    margin: 0;\n  }\n  h2{\n    font-weight: 600;\n    font-size: 36px;\n    line-height: 1;\n    margin: 0;\n  }\n  p{\n    margin: 0;\n  }\n  \n  .icon-background{\n    background-color: var(--back-red-1);\n    z-index: 1;\n    overflow: hidden;\n    position: relative;\n  }\n  .icon-background::before{\n    content: \"\";\n    position: absolute;\n    width: 200%; height: 200%;\n    top: -50%; left: -50%;\n    background-image: url('/assets/icon-background_RyiWP8CNKOfskpwMp_P8Y.svg?width=1080&quality=80&format=auto');\n    background-size: 200px 115.4734411085px;\n    background-repeat: repeat;\n    animation: scrollBg 30s linear infinite;\n    z-index: -1;\n    opacity: var(--icon-background-opacity, 3%); mix-blend-mode: luminosity;\n    filter: blur(2px)\n  }\n  \n  .home-top::after{\n    position: absolute;\n    content: \"\";\n    width: 100%;\n    height: 250px;\n    background: linear-gradient(180deg, hsl(from var(--back-red-1) h s l / 0.65) 15%, hsl(from var(--back-red-1) h s l / 0) 100%);\n    z-index: -1;\n  }\n\n  @keyframes scrollBg {\n      0% {\n        background-position: 0 0;\n      }\n      100% {\n        background-position: -200px 115.4734411085px;\n      }\n    }\n\n  .home-top-card:hover .home-top-card-title-icon{\n    width: 38px;\n    padding-left: 3px;\n  }\n\n  @media only screen and (max-width: 767px) {\n    h1{\n      font-size: 3.7em;\n    }\n    h2{\n      font-size: 32px;\n    }\n  }\n</style>"
-        }
-      ],
-      [
-        "p4XtZF9emL8CL1YU7IdS5",
-        {
-          "id": "p4XtZF9emL8CL1YU7IdS5",
-          "instanceId": "XnFlNfic1lU8kqa5qW3Ki",
-          "name": "executeScriptOnCanvas",
-          "type": "boolean",
-          "value": true
-        }
-      ],
-      [
-        "JKzxItD_EZMDPpv0P-yIX",
-        {
-          "id": "JKzxItD_EZMDPpv0P-yIX",
-          "instanceId": "XnFlNfic1lU8kqa5qW3Ki",
-          "name": "data-ws-show",
-          "type": "boolean",
-          "value": true
-        }
-      ],
-      [
-        "sbGgs-kKNI3gk_GmATaTj",
-        {
-          "id": "sbGgs-kKNI3gk_GmATaTj",
-          "instanceId": "Qd7Ay96Wv1I7rdp2-Vz69",
-          "name": "code",
-          "type": "string",
-          "value": "<style>\n  h1{\n    font-family: Tanker;\n    font-weight: 500;\n    font-size: 5em;\n    color: var(--background);\n    line-height: 1;\n    margin: 0;\n  }\n  h2{\n    font-weight: 600;\n    font-size: 36px;\n    line-height: 1;\n    margin: 0;\n  }\n  p{\n    margin: 0;\n  }\n  \n  .icon-background{\n    background-color: var(--back-red-1);\n    z-index: 1;\n    overflow: hidden;\n    position: relative;\n  }\n  .icon-background::before{\n    content: \"\";\n    position: absolute;\n    width: 200%; height: 200%;\n    top: -50%; left: -50%;\n    background-image: url('/assets/icon-background_RyiWP8CNKOfskpwMp_P8Y.svg?width=1080&quality=80&format=auto');\n    background-size: 200px 115.4734411085px;\n    background-repeat: repeat;\n    animation: scrollBg 30s linear infinite;\n    z-index: -1;\n    opacity: var(--icon-background-opacity, 3%); mix-blend-mode: luminosity;\n    filter: blur(2px)\n  }\n  \n  .home-top::after{\n    position: absolute;\n    content: \"\";\n    width: 100%;\n    height: 250px;\n    background: linear-gradient(180deg, hsl(from var(--back-red-1) h s l / 0.65) 15%, hsl(from var(--back-red-1) h s l / 0) 100%);\n    z-index: -1;\n  }\n\n  @keyframes scrollBg {\n      0% {\n        background-position: 0 0;\n      }\n      100% {\n        background-position: -200px 115.4734411085px;\n      }\n    }\n\n  .home-top-card:hover .home-top-card-title-icon{\n    width: 38px;\n    padding-left: 3px;\n  }\n\n  @media only screen and (max-width: 767px) {\n    h1{\n      font-size: 3.7em;\n    }\n    h2{\n      font-size: 32px;\n    }\n  }\n</style>"
-        }
-      ],
-      [
-        "cHm9r6Tej81F_ic_OW_z6",
-        {
-          "id": "cHm9r6Tej81F_ic_OW_z6",
-          "instanceId": "Qd7Ay96Wv1I7rdp2-Vz69",
-          "name": "executeScriptOnCanvas",
-          "type": "boolean",
-          "value": true
-        }
-      ],
-      [
-        "Iq6YE2owjh6fJq1yNn7JO",
-        {
-          "id": "Iq6YE2owjh6fJq1yNn7JO",
-          "instanceId": "Qd7Ay96Wv1I7rdp2-Vz69",
-          "name": "data-ws-show",
-          "type": "boolean",
-          "value": true
         }
       ],
       [
@@ -50299,36 +50192,6 @@
           "name": "class",
           "type": "string",
           "value": "icon-background home-top"
-        }
-      ],
-      [
-        "yr0r0y42XgfJa0qy32BXk",
-        {
-          "id": "yr0r0y42XgfJa0qy32BXk",
-          "instanceId": "BXqSnJAuSQqhjG4BUbo3k",
-          "name": "code",
-          "type": "string",
-          "value": "<style>\n  h1{\n    font-family: Tanker;\n    font-weight: 500;\n    font-size: 5em;\n    color: var(--background);\n    line-height: 1;\n    margin: 0;\n  }\n  h2{\n    font-weight: 600;\n    font-size: 36px;\n    line-height: 1;\n    margin: 0;\n  }\n  p{\n    margin: 0;\n  }\n  \n  .icon-background{\n    background-color: var(--back-red-1);\n    z-index: 1;\n    overflow: hidden;\n    position: relative;\n  }\n  .icon-background::before{\n    content: \"\";\n    position: absolute;\n    width: 200%; height: 200%;\n    top: -50%; left: -50%;\n    background-image: url('/assets/icon-background_RyiWP8CNKOfskpwMp_P8Y.svg?width=1080&quality=80&format=auto');\n    background-size: 200px 115.4734411085px;\n    background-repeat: repeat;\n    animation: scrollBg 30s linear infinite;\n    z-index: -1;\n    opacity: var(--icon-background-opacity, 3%); mix-blend-mode: luminosity;\n    filter: blur(2px)\n  }\n  \n  .home-top::after{\n    position: absolute;\n    content: \"\";\n    width: 100%;\n    height: 250px;\n    background: linear-gradient(180deg, hsl(from var(--back-red-1) h s l / 0.65) 15%, hsl(from var(--back-red-1) h s l / 0) 100%);\n    z-index: -1;\n  }\n\n  @keyframes scrollBg {\n      0% {\n        background-position: 0 0;\n      }\n      100% {\n        background-position: -200px 115.4734411085px;\n      }\n    }\n\n  .home-top-card:hover .home-top-card-title-icon{\n    width: 38px;\n    padding-left: 3px;\n  }\n\n  @media only screen and (max-width: 767px) {\n    h1{\n      font-size: 3.7em;\n    }\n    h2{\n      font-size: 32px;\n    }\n  }\n</style>"
-        }
-      ],
-      [
-        "JukECh2nkjmaRopKOp8BQ",
-        {
-          "id": "JukECh2nkjmaRopKOp8BQ",
-          "instanceId": "BXqSnJAuSQqhjG4BUbo3k",
-          "name": "executeScriptOnCanvas",
-          "type": "boolean",
-          "value": true
-        }
-      ],
-      [
-        "Lc9kiS1wL9lVVGmy42er3",
-        {
-          "id": "Lc9kiS1wL9lVVGmy42er3",
-          "instanceId": "BXqSnJAuSQqhjG4BUbo3k",
-          "name": "data-ws-show",
-          "type": "boolean",
-          "value": true
         }
       ],
       [
@@ -51400,6 +51263,156 @@
           "type": "page",
           "value": "hSbT_IoAs8J4sfCGce19J"
         }
+      ],
+      [
+        "_Fsnj1D55zH0OP-_NqCuu",
+        {
+          "id": "_Fsnj1D55zH0OP-_NqCuu",
+          "instanceId": "liMGLuvNCKOpq_THxFWd1",
+          "name": "code",
+          "type": "string",
+          "value": "<style>\n  h1{\n    font-family: Tanker;\n    font-weight: 500;\n    font-size: 5em;\n    color: var(--background);\n    line-height: 1;\n    margin: 0;\n  }\n  h2{\n    font-weight: 600;\n    font-size: 36px;\n    line-height: 1;\n    margin: 0;\n  }\n  p{\n    margin: 0;\n  }\n  \n  .icon-background{\n    background-color: var(--back-red-1);\n    z-index: 1;\n    overflow: hidden;\n    position: relative;\n  }\n  .icon-background::before{\n    content: \"\";\n    position: absolute;\n    width: 200%; height: 200%;\n    top: -50%; left: -50%;\n    background-image: url('/assets/icon-background_RyiWP8CNKOfskpwMp_P8Y.svg?width=1080&quality=80&format=auto');\n    background-size: 200px 115.4734411085px;\n    background-repeat: repeat;\n    animation: scrollBg 20s linear infinite;\n    z-index: -1;\n    opacity: var(--icon-background-opacity, 3%); mix-blend-mode: luminosity;\n    filter: blur(2px)\n  }\n  \n  .home-top::after{\n    position: absolute;\n    content: \"\";\n    width: 100%;\n    height: 250px;\n    background: linear-gradient(180deg, hsl(from var(--back-red-1) h s l / 0.65) 15%, hsl(from var(--back-red-1) h s l / 0) 100%);\n    z-index: -1;\n  }\n\n  @keyframes scrollBg {\n      0% {\n        background-position: 0 0;\n      }\n      100% {\n        background-position: -200px 115.4734411085px;\n      }\n    }\n\n  .home-top-card:hover .home-top-card-title-icon{\n    width: 38px;\n    padding-left: 3px;\n  }\n\n  @media only screen and (max-width: 767px) {\n    h1{\n      font-size: 4em;\n    }\n    h2{\n      font-size: 32px;\n    }\n  }\n</style>"
+        }
+      ],
+      [
+        "F0iho4TAMoDi81P7nOVJm",
+        {
+          "id": "F0iho4TAMoDi81P7nOVJm",
+          "instanceId": "liMGLuvNCKOpq_THxFWd1",
+          "name": "executeScriptOnCanvas",
+          "type": "boolean",
+          "value": true
+        }
+      ],
+      [
+        "ooSi3wtVdv-NU-YhxFREh",
+        {
+          "id": "ooSi3wtVdv-NU-YhxFREh",
+          "instanceId": "liMGLuvNCKOpq_THxFWd1",
+          "name": "data-ws-show",
+          "type": "boolean",
+          "value": true
+        }
+      ],
+      [
+        "9JAQzDnA8sUsI2fTViQvo",
+        {
+          "id": "9JAQzDnA8sUsI2fTViQvo",
+          "instanceId": "RGZ4B6C6KZJ0Qra99oVEA",
+          "name": "code",
+          "type": "string",
+          "value": "<style>\n  h1{\n    font-family: Tanker;\n    font-weight: 500;\n    font-size: 5em;\n    color: var(--background);\n    line-height: 1;\n    margin: 0;\n  }\n  h2{\n    font-weight: 600;\n    font-size: 36px;\n    line-height: 1;\n    margin: 0;\n  }\n  p{\n    margin: 0;\n  }\n  \n  .icon-background{\n    background-color: var(--back-red-1);\n    z-index: 1;\n    overflow: hidden;\n    position: relative;\n  }\n  .icon-background::before{\n    content: \"\";\n    position: absolute;\n    width: 200%; height: 200%;\n    top: -50%; left: -50%;\n    background-image: url('/assets/icon-background_RyiWP8CNKOfskpwMp_P8Y.svg?width=1080&quality=80&format=auto');\n    background-size: 200px 115.4734411085px;\n    background-repeat: repeat;\n    animation: scrollBg 20s linear infinite;\n    z-index: -1;\n    opacity: var(--icon-background-opacity, 3%); mix-blend-mode: luminosity;\n    filter: blur(2px)\n  }\n  \n  .home-top::after{\n    position: absolute;\n    content: \"\";\n    width: 100%;\n    height: 250px;\n    background: linear-gradient(180deg, hsl(from var(--back-red-1) h s l / 0.65) 15%, hsl(from var(--back-red-1) h s l / 0) 100%);\n    z-index: -1;\n  }\n\n  @keyframes scrollBg {\n      0% {\n        background-position: 0 0;\n      }\n      100% {\n        background-position: -200px 115.4734411085px;\n      }\n    }\n\n  .home-top-card:hover .home-top-card-title-icon{\n    width: 38px;\n    padding-left: 3px;\n  }\n\n  @media only screen and (max-width: 767px) {\n    h1{\n      font-size: 4em;\n    }\n    h2{\n      font-size: 32px;\n    }\n  }\n</style>"
+        }
+      ],
+      [
+        "mQkngKLxkRhDD4N6cbfKb",
+        {
+          "id": "mQkngKLxkRhDD4N6cbfKb",
+          "instanceId": "RGZ4B6C6KZJ0Qra99oVEA",
+          "name": "executeScriptOnCanvas",
+          "type": "boolean",
+          "value": true
+        }
+      ],
+      [
+        "yX_om-14RQZTWxGmE7Nwt",
+        {
+          "id": "yX_om-14RQZTWxGmE7Nwt",
+          "instanceId": "RGZ4B6C6KZJ0Qra99oVEA",
+          "name": "data-ws-show",
+          "type": "boolean",
+          "value": true
+        }
+      ],
+      [
+        "As4tgg7hmu1PYrF_Nuusc",
+        {
+          "id": "As4tgg7hmu1PYrF_Nuusc",
+          "instanceId": "XIW0sJNnV5hXdbdNUwdRF",
+          "name": "code",
+          "type": "string",
+          "value": "<style>\n  h1{\n    font-family: Tanker;\n    font-weight: 500;\n    font-size: 5em;\n    color: var(--background);\n    line-height: 1;\n    margin: 0;\n  }\n  h2{\n    font-weight: 600;\n    font-size: 36px;\n    line-height: 1;\n    margin: 0;\n  }\n  p{\n    margin: 0;\n  }\n  \n  .icon-background{\n    background-color: var(--back-red-1);\n    z-index: 1;\n    overflow: hidden;\n    position: relative;\n  }\n  .icon-background::before{\n    content: \"\";\n    position: absolute;\n    width: 200%; height: 200%;\n    top: -50%; left: -50%;\n    background-image: url('/assets/icon-background_RyiWP8CNKOfskpwMp_P8Y.svg?width=1080&quality=80&format=auto');\n    background-size: 200px 115.4734411085px;\n    background-repeat: repeat;\n    animation: scrollBg 20s linear infinite;\n    z-index: -1;\n    opacity: var(--icon-background-opacity, 3%); mix-blend-mode: luminosity;\n    filter: blur(2px)\n  }\n  \n  .home-top::after{\n    position: absolute;\n    content: \"\";\n    width: 100%;\n    height: 250px;\n    background: linear-gradient(180deg, hsl(from var(--back-red-1) h s l / 0.65) 15%, hsl(from var(--back-red-1) h s l / 0) 100%);\n    z-index: -1;\n  }\n\n  @keyframes scrollBg {\n      0% {\n        background-position: 0 0;\n      }\n      100% {\n        background-position: -200px 115.4734411085px;\n      }\n    }\n\n  .home-top-card:hover .home-top-card-title-icon{\n    width: 38px;\n    padding-left: 3px;\n  }\n\n  @media only screen and (max-width: 767px) {\n    h1{\n      font-size: 4em;\n    }\n    h2{\n      font-size: 32px;\n    }\n  }\n</style>"
+        }
+      ],
+      [
+        "_GWAONKUViSay6-l5X5pU",
+        {
+          "id": "_GWAONKUViSay6-l5X5pU",
+          "instanceId": "XIW0sJNnV5hXdbdNUwdRF",
+          "name": "executeScriptOnCanvas",
+          "type": "boolean",
+          "value": true
+        }
+      ],
+      [
+        "j6c8KoZrJj8YYZFgycATO",
+        {
+          "id": "j6c8KoZrJj8YYZFgycATO",
+          "instanceId": "XIW0sJNnV5hXdbdNUwdRF",
+          "name": "data-ws-show",
+          "type": "boolean",
+          "value": true
+        }
+      ],
+      [
+        "w0BF-ogtsw4xcr-FSYCBv",
+        {
+          "id": "w0BF-ogtsw4xcr-FSYCBv",
+          "instanceId": "5zXU79_3je-UCdtmF8ptD",
+          "name": "code",
+          "type": "string",
+          "value": "<style>\n  h1{\n    font-family: Tanker;\n    font-weight: 500;\n    font-size: 5em;\n    color: var(--background);\n    line-height: 1;\n    margin: 0;\n  }\n  h2{\n    font-weight: 600;\n    font-size: 36px;\n    line-height: 1;\n    margin: 0;\n  }\n  p{\n    margin: 0;\n  }\n  \n  .icon-background{\n    background-color: var(--back-red-1);\n    z-index: 1;\n    overflow: hidden;\n    position: relative;\n  }\n  .icon-background::before{\n    content: \"\";\n    position: absolute;\n    width: 200%; height: 200%;\n    top: -50%; left: -50%;\n    background-image: url('/assets/icon-background_RyiWP8CNKOfskpwMp_P8Y.svg?width=1080&quality=80&format=auto');\n    background-size: 200px 115.4734411085px;\n    background-repeat: repeat;\n    animation: scrollBg 20s linear infinite;\n    z-index: -1;\n    opacity: var(--icon-background-opacity, 3%); mix-blend-mode: luminosity;\n    filter: blur(2px)\n  }\n  \n  .home-top::after{\n    position: absolute;\n    content: \"\";\n    width: 100%;\n    height: 250px;\n    background: linear-gradient(180deg, hsl(from var(--back-red-1) h s l / 0.65) 15%, hsl(from var(--back-red-1) h s l / 0) 100%);\n    z-index: -1;\n  }\n\n  @keyframes scrollBg {\n      0% {\n        background-position: 0 0;\n      }\n      100% {\n        background-position: -200px 115.4734411085px;\n      }\n    }\n\n  .home-top-card:hover .home-top-card-title-icon{\n    width: 38px;\n    padding-left: 3px;\n  }\n\n  @media only screen and (max-width: 767px) {\n    h1{\n      font-size: 4em;\n    }\n    h2{\n      font-size: 32px;\n    }\n  }\n</style>"
+        }
+      ],
+      [
+        "Eyhc3YK7tpxZH6ZVSs3bw",
+        {
+          "id": "Eyhc3YK7tpxZH6ZVSs3bw",
+          "instanceId": "5zXU79_3je-UCdtmF8ptD",
+          "name": "executeScriptOnCanvas",
+          "type": "boolean",
+          "value": true
+        }
+      ],
+      [
+        "40R7XpCyx-8ie_V4zFmTB",
+        {
+          "id": "40R7XpCyx-8ie_V4zFmTB",
+          "instanceId": "5zXU79_3je-UCdtmF8ptD",
+          "name": "data-ws-show",
+          "type": "boolean",
+          "value": true
+        }
+      ],
+      [
+        "hpGqgC34CMDsD8IpVqNd5",
+        {
+          "id": "hpGqgC34CMDsD8IpVqNd5",
+          "instanceId": "QpTG7bM7FN_ru5ZAkrwCo",
+          "name": "code",
+          "type": "string",
+          "value": "<style>\n  h1{\n    font-family: Tanker;\n    font-weight: 500;\n    font-size: 5em;\n    color: var(--background);\n    line-height: 1;\n    margin: 0;\n  }\n  h2{\n    font-weight: 600;\n    font-size: 36px;\n    line-height: 1;\n    margin: 0;\n  }\n  p{\n    margin: 0;\n  }\n  \n  .icon-background{\n    background-color: var(--back-red-1);\n    z-index: 1;\n    overflow: hidden;\n    position: relative;\n  }\n  .icon-background::before{\n    content: \"\";\n    position: absolute;\n    width: 200%; height: 200%;\n    top: -50%; left: -50%;\n    background-image: url('/assets/icon-background_RyiWP8CNKOfskpwMp_P8Y.svg?width=1080&quality=80&format=auto');\n    background-size: 200px 115.4734411085px;\n    background-repeat: repeat;\n    animation: scrollBg 20s linear infinite;\n    z-index: -1;\n    opacity: var(--icon-background-opacity, 3%); mix-blend-mode: luminosity;\n    filter: blur(2px)\n  }\n  \n  .home-top::after{\n    position: absolute;\n    content: \"\";\n    width: 100%;\n    height: 250px;\n    background: linear-gradient(180deg, hsl(from var(--back-red-1) h s l / 0.65) 15%, hsl(from var(--back-red-1) h s l / 0) 100%);\n    z-index: -1;\n  }\n\n  @keyframes scrollBg {\n      0% {\n        background-position: 0 0;\n      }\n      100% {\n        background-position: -200px 115.4734411085px;\n      }\n    }\n\n  .home-top-card:hover .home-top-card-title-icon{\n    width: 38px;\n    padding-left: 3px;\n  }\n\n  @media only screen and (max-width: 767px) {\n    h1{\n      font-size: 4em;\n    }\n    h2{\n      font-size: 32px;\n    }\n  }\n</style>"
+        }
+      ],
+      [
+        "ozcCyCSL0YP6ydMPYwhRP",
+        {
+          "id": "ozcCyCSL0YP6ydMPYwhRP",
+          "instanceId": "QpTG7bM7FN_ru5ZAkrwCo",
+          "name": "executeScriptOnCanvas",
+          "type": "boolean",
+          "value": true
+        }
+      ],
+      [
+        "5jHKAo_6w0QzKHOrgRGTn",
+        {
+          "id": "5jHKAo_6w0QzKHOrgRGTn",
+          "instanceId": "QpTG7bM7FN_ru5ZAkrwCo",
+          "name": "data-ws-show",
+          "type": "boolean",
+          "value": true
+        }
       ]
     ],
     "dataSources": [],
@@ -52150,6 +52163,7 @@
           "type": "instance",
           "id": "HzoGz1cO4F_sgAQlowXRW",
           "component": "HtmlEmbed",
+          "label": "Root Style",
           "children": []
         }
       ],
@@ -52368,7 +52382,7 @@
           "children": [
             {
               "type": "id",
-              "value": "Qd7Ay96Wv1I7rdp2-Vz69"
+              "value": "liMGLuvNCKOpq_THxFWd1"
             },
             {
               "type": "id",
@@ -52399,7 +52413,7 @@
           "children": [
             {
               "type": "id",
-              "value": "XnFlNfic1lU8kqa5qW3Ki"
+              "value": "RGZ4B6C6KZJ0Qra99oVEA"
             },
             {
               "type": "id",
@@ -52422,7 +52436,7 @@
           "children": [
             {
               "type": "id",
-              "value": "5L-QKZJVYOrunOu0zOICG"
+              "value": "XIW0sJNnV5hXdbdNUwdRF"
             },
             {
               "type": "id",
@@ -52441,7 +52455,7 @@
           "children": [
             {
               "type": "id",
-              "value": "iiMaCpZ-xULcxU2NgNo4O"
+              "value": "QpTG7bM7FN_ru5ZAkrwCo"
             },
             {
               "type": "id",
@@ -52914,15 +52928,6 @@
         }
       ],
       [
-        "iiMaCpZ-xULcxU2NgNo4O",
-        {
-          "type": "instance",
-          "id": "iiMaCpZ-xULcxU2NgNo4O",
-          "component": "HtmlEmbed",
-          "children": []
-        }
-      ],
-      [
         "7WfON-vgagF1Hv2g8wUIj",
         {
           "type": "instance",
@@ -52935,33 +52940,6 @@
               "value": "about GE Union"
             }
           ]
-        }
-      ],
-      [
-        "5L-QKZJVYOrunOu0zOICG",
-        {
-          "type": "instance",
-          "id": "5L-QKZJVYOrunOu0zOICG",
-          "component": "HtmlEmbed",
-          "children": []
-        }
-      ],
-      [
-        "XnFlNfic1lU8kqa5qW3Ki",
-        {
-          "type": "instance",
-          "id": "XnFlNfic1lU8kqa5qW3Ki",
-          "component": "HtmlEmbed",
-          "children": []
-        }
-      ],
-      [
-        "Qd7Ay96Wv1I7rdp2-Vz69",
-        {
-          "type": "instance",
-          "id": "Qd7Ay96Wv1I7rdp2-Vz69",
-          "component": "HtmlEmbed",
-          "children": []
         }
       ],
       [
@@ -57938,7 +57916,7 @@
           "children": [
             {
               "type": "id",
-              "value": "BXqSnJAuSQqhjG4BUbo3k"
+              "value": "5zXU79_3je-UCdtmF8ptD"
             },
             {
               "type": "id",
@@ -58011,15 +57989,6 @@
               "value": "Welcome to General Engineering! Find answers here."
             }
           ]
-        }
-      ],
-      [
-        "BXqSnJAuSQqhjG4BUbo3k",
-        {
-          "type": "instance",
-          "id": "BXqSnJAuSQqhjG4BUbo3k",
-          "component": "HtmlEmbed",
-          "children": []
         }
       ],
       [
@@ -60858,6 +60827,56 @@
           "id": "SoYVBdgFmk8PC49EOEpJu",
           "component": "HtmlEmbed",
           "label": "Close Icon",
+          "children": []
+        }
+      ],
+      [
+        "liMGLuvNCKOpq_THxFWd1",
+        {
+          "type": "instance",
+          "id": "liMGLuvNCKOpq_THxFWd1",
+          "component": "HtmlEmbed",
+          "label": "Root Style",
+          "children": []
+        }
+      ],
+      [
+        "RGZ4B6C6KZJ0Qra99oVEA",
+        {
+          "type": "instance",
+          "id": "RGZ4B6C6KZJ0Qra99oVEA",
+          "component": "HtmlEmbed",
+          "label": "Root Style",
+          "children": []
+        }
+      ],
+      [
+        "XIW0sJNnV5hXdbdNUwdRF",
+        {
+          "type": "instance",
+          "id": "XIW0sJNnV5hXdbdNUwdRF",
+          "component": "HtmlEmbed",
+          "label": "Root Style",
+          "children": []
+        }
+      ],
+      [
+        "5zXU79_3je-UCdtmF8ptD",
+        {
+          "type": "instance",
+          "id": "5zXU79_3je-UCdtmF8ptD",
+          "component": "HtmlEmbed",
+          "label": "Root Style",
+          "children": []
+        }
+      ],
+      [
+        "QpTG7bM7FN_ru5ZAkrwCo",
+        {
+          "type": "instance",
+          "id": "QpTG7bM7FN_ru5ZAkrwCo",
+          "component": "HtmlEmbed",
+          "label": "Root Style",
           "children": []
         }
       ]

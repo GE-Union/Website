@@ -11,7 +11,7 @@ import { Tooltip as Tooltip, TooltipTrigger as TooltipTrigger, TooltipContent as
 
       export const projectId = "94456f8c-a847-426a-aec8-16de390bd3eb";
 
-      export const lastPublished = "2025-06-20T20:28:15.306Z";
+      export const lastPublished = "2025-06-21T00:50:26.148Z";
 
       export const siteName = "GE Union";
 
@@ -39,7 +39,7 @@ import { Tooltip as Tooltip, TooltipTrigger as TooltipTrigger, TooltipContent as
 return <Body
 className={`w-body cdzo1k7 c1lzvaoj cm1ds2c c1qux398`}>
 <HtmlEmbed
-code={"<style>\n  h1{\n    font-family: Tanker;\n    font-weight: 500;\n    font-size: 5em;\n    color: var(--background);\n    line-height: 1;\n    margin: 0;\n  }\n  h2{\n    font-weight: 600;\n    font-size: 36px;\n    line-height: 1;\n    margin: 0;\n  }\n  p{\n    margin: 0;\n  }\n  \n  .icon-background{\n    background-color: var(--back-red-1);\n    z-index: 1;\n    overflow: hidden;\n    position: relative;\n  }\n  .icon-background::before{\n    content: \"\";\n    position: absolute;\n    width: 200%; height: 200%;\n    top: -50%; left: -50%;\n    background-image: url('/assets/icon-background_RyiWP8CNKOfskpwMp_P8Y.svg?width=1080&quality=80&format=auto');\n    background-size: 200px 115.4734411085px;\n    background-repeat: repeat;\n    animation: scrollBg 30s linear infinite;\n    z-index: -1;\n    opacity: var(--icon-background-opacity, 3%); mix-blend-mode: luminosity;\n    filter: blur(2px)\n  }\n  \n  .home-top::after{\n    position: absolute;\n    content: \"\";\n    width: 100%;\n    height: 250px;\n    background: linear-gradient(180deg, hsl(from var(--back-red-1) h s l / 0.65) 15%, hsl(from var(--back-red-1) h s l / 0) 100%);\n    z-index: -1;\n  }\n\n  @keyframes scrollBg {\n      0% {\n        background-position: 0 0;\n      }\n      100% {\n        background-position: -200px 115.4734411085px;\n      }\n    }\n\n  .home-top-card:hover .home-top-card-title-icon{\n    width: 38px;\n    padding-left: 3px;\n  }\n\n  @media only screen and (max-width: 767px) {\n    h1{\n      font-size: 4em;\n    }\n    h2{\n      font-size: 32px;\n    }\n  }\n</style>"}
+code={"<style>\n  h1{\n    font-family: Tanker;\n    font-weight: 500;\n    font-size: 5em;\n    color: var(--background);\n    line-height: 1;\n    margin: 0;\n  }\n  h2{\n    font-weight: 600;\n    font-size: 36px;\n    line-height: 1;\n    margin: 0;\n  }\n  p{\n    margin: 0;\n  }\n  \n  .icon-background{\n    background-color: var(--back-red-1);\n    z-index: 1;\n    overflow: hidden;\n    position: relative;\n  }\n  .icon-background::before{\n    content: \"\";\n    position: absolute;\n    width: 200%; height: 200%;\n    top: -50%; left: -50%;\n    background-image: url('/assets/icon-background_RyiWP8CNKOfskpwMp_P8Y.svg?width=1080&quality=80&format=auto');\n    background-size: 200px 115.4734411085px;\n    background-repeat: repeat;\n    animation: scrollBg 20s linear infinite;\n    z-index: -1;\n    opacity: var(--icon-background-opacity, 3%); mix-blend-mode: luminosity;\n    filter: blur(2px)\n  }\n  \n  .home-top::after{\n    position: absolute;\n    content: \"\";\n    width: 100%;\n    height: 250px;\n    background: linear-gradient(180deg, hsl(from var(--back-red-1) h s l / 0.65) 15%, hsl(from var(--back-red-1) h s l / 0) 100%);\n    z-index: -1;\n  }\n\n  @keyframes scrollBg {\n      0% {\n        background-position: 0 0;\n      }\n      100% {\n        background-position: -200px 115.4734411085px;\n      }\n    }\n\n  .home-top-card:hover .home-top-card-title-icon{\n    width: 38px;\n    padding-left: 3px;\n  }\n\n  @media only screen and (max-width: 767px) {\n    h1{\n      font-size: 4em;\n    }\n    h2{\n      font-size: 32px;\n    }\n  }\n</style>"}
 executeScriptOnCanvas={true}
 className={`w-html-embed`} />
 <Box
@@ -225,14 +225,14 @@ className={`w-element c1t205vl c1mngz4m cvuh4zx c14e6dcj c638992 ccyo9a2 c6piima
 src={"/assets/Calendar_Icon_JBq83QCbGJiotNNmNumnQ.svg"}
 width={650}
 height={570}
-className={`w-image cnkevhm c1oqdnpz cpc2g7h c1o8iolx c1w0yra6 c1sb186u c1730thw co345il c1lzvaoj ck7n286 c1rv4359 c5frzz4 c11l77i1 c13qonci`} />
+className={`w-image cnkevhm c1oqdnpz cpc2g7h c1kppqxz c1w0yra6 c1lxqyue c1bblaxa co345il c1lzvaoj ck7n286 c1sfn1pe c5frzz4 c1s1n1bm c13qonci`} />
 </div>
 <Box
 className={`w-box ck11ylk c767uka c1dohq8s c102e7b2 c1p5610w crsc1f9 c1c7zter c5xw8br cbg59jt`}>
 <Box
 className={`w-box cwthfpg c1x7uwo4 c12zhvo cxa4mkp ccoo3t2 cd3toq c17nm8vt c1xymrvd c8yo8yx cu8nwxp`}>
 <h1
-className={`w-element c1vn0xiq c14233kc c76nei5 cnkevhm c1som3p5 c1kz2gr c1wt45pu c1awmcrg cyoo8jj`}>
+className={`w-element c1vn0xiq c1730thw c76nei5 cnkevhm c1no9pry c1oidp1z c1wt45pu cyoo8jj c1udu965 c1oo3nn8`}>
 {"Coming Soon"}
 </h1>
 </Box>
@@ -265,7 +265,7 @@ className={`w-element c1t205vl`}>
 src={"/assets/Vault_Icon_b47VgS0N6eONtPMryR-cd.svg"}
 width={650}
 height={570}
-className={`w-image cnkevhm c1oqdnpz cpc2g7h c1o8iolx c1w0yra6 c1sb186u c1730thw co345il ck7n286`} />
+className={`w-image cnkevhm c1oqdnpz cpc2g7h c1kppqxz c1w0yra6 c1lxqyue c1bblaxa co345il ck7n286`} />
 </div>
 <p
 className={`w-element cy7nrqp c8l261o cdhy4s8 c5sx8jk c1wauoq4 c1w0yra6 cpq2gwm cyoo8jj cpyan2s c12tkve4 c5k3a4h crsc1f9 c1c7zter c1lot409 ccjnvj1 c1mkam2s crc7qf5`}>
@@ -297,7 +297,7 @@ className={`w-element c1t205vl`}>
 src={"/assets/About_GE_Icon_nX97REgvEFTexDZ2ZYnYa.svg"}
 width={650}
 height={570}
-className={`w-image cnkevhm c1oqdnpz cpc2g7h c1o8iolx c1w0yra6 c1sb186u c1730thw co345il ck7n286`} />
+className={`w-image cnkevhm c1oqdnpz cpc2g7h c1kppqxz c1w0yra6 c1lxqyue c1bblaxa co345il ck7n286`} />
 </div>
 <p
 className={`w-element cy7nrqp c8l261o cdhy4s8 c5sx8jk c1wauoq4 c1w0yra6 cpq2gwm cyoo8jj cpyan2s c12tkve4 c5k3a4h crsc1f9 c1c7zter c1lot409 ccjnvj1 c1mkam2s crc7qf5`}>
