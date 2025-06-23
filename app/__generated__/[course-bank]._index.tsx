@@ -11,7 +11,7 @@ import { Tabs as Tabs, TabsList as TabsList, TabsTrigger as TabsTrigger, TabsCon
 
       export const projectId = "94456f8c-a847-426a-aec8-16de390bd3eb";
 
-      export const lastPublished = "2025-06-21T00:50:26.148Z";
+      export const lastPublished = "2025-06-23T17:31:48.631Z";
 
       export const siteName = "GE Union";
 
@@ -60,24 +60,24 @@ className={`w-image c1g1752z c1l3m6tn c1wjaqd0`} />
 className={`w-box ci03eyw cavbteo c17p08f7 cy2vnym cgykfac c8chaf1 crymv6m ch588tu cd1c1x2 cgjpuuk co3wgvm cjdg5q7`}>
 <Link
 href={"/"}
-className={`w-link c4qqqhz cr2ujrk c8l261o c1ozmz5d c1ho4waj c1k74xht c1122adb c10pf28n c1w0lkxn ch9rsc5 c1et34yr c1tj415q`}>
+className={`w-link c4qqqhz c1l00ka2 c8l261o c1ozmz5d c1ho4waj c1k74xht c1122adb c10pf28n c1w0lkxn ch9rsc5 c1et34yr c1tj415q`}>
 {"Home"}
 </Link>
 <Link
 href={"/course-bank"}
-className={`w-link c4qqqhz cr2ujrk c8l261o c1wmsojl c1ho4waj c1k74xht c1122adb c10pf28n c1w0lkxn ch9rsc5 c1et34yr c1tj415q`}>
+className={`w-link c4qqqhz c1l00ka2 c8l261o c1wmsojl c1ho4waj c1k74xht c1122adb c10pf28n c1w0lkxn ch9rsc5 c1et34yr c1tj415q`}>
 {"Course Bank"}
 </Link>
 <Link
 href={"/calendar"}
-className={`w-link c4qqqhz cr2ujrk c8l261o c1ozmz5d c1ho4waj c1k74xht c1122adb c10pf28n c1w0lkxn ch9rsc5 c1et34yr c1tj415q`}>
+className={`w-link c4qqqhz c1l00ka2 c8l261o c1ozmz5d c1ho4waj c1k74xht c1122adb c10pf28n c1w0lkxn ch9rsc5 c1et34yr c1tj415q`}>
 {"Calendar"}
 </Link>
 <Tooltip
 delayDuration={0}>
 <TooltipTrigger>
 <div
-className={`w-element c4qqqhz cr2ujrk c8l261o c1ozmz5d c1ho4waj c1k74xht ch9rsc5 c1w0lkxn c1122adb c10pf28n cbahl6h c1tj415q`}>
+className={`w-element c4qqqhz c1l00ka2 c8l261o c1ozmz5d c1ho4waj c1k74xht ch9rsc5 c1w0lkxn c1122adb c10pf28n cbahl6h c1tj415q`}>
 {"About"}
 </div>
 </TooltipTrigger>
@@ -85,12 +85,12 @@ className={`w-element c4qqqhz cr2ujrk c8l261o c1ozmz5d c1ho4waj c1k74xht ch9rsc5
 className={`w-tooltip-content c5mlbae cm1ds2c c1fxgukz cdzo1k7 c1lp7lun c3ryv7d c1t11c95 c1kz25wt c1jbi97f crebcbz cfjpsss ci03eyw cu8ogtt c4bgnbx cj82r57 c14a5ioc cm4j335`}>
 <Link
 href={"/about-ge"}
-className={`w-link c4qqqhz cr2ujrk c8l261o c1ozmz5d c1ho4waj c1k74xht c1122adb c10pf28n c1w0lkxn ch9rsc5 cz5lin5 c1tj415q`}>
+className={`w-link c4qqqhz c1l00ka2 c8l261o c1ozmz5d c1ho4waj c1k74xht c1122adb c10pf28n c1w0lkxn ch9rsc5 cz5lin5 c1tj415q`}>
 {"General Engineering"}
 </Link>
 <Link
 href={"/about-geu"}
-className={`w-link c4qqqhz cr2ujrk c8l261o c1ozmz5d c1ho4waj c1k74xht c1122adb c10pf28n c1w0lkxn ch9rsc5 cz5lin5 c1tj415q`}>
+className={`w-link c4qqqhz c1l00ka2 c8l261o c1ozmz5d c1ho4waj c1k74xht c1122adb c10pf28n c1w0lkxn ch9rsc5 cz5lin5 c1tj415q`}>
 {"GE Union"}
 </Link>
 </TooltipContent>
@@ -178,10 +178,10 @@ className={`w-text cg3nt0s c74dsfz czgmbqe cyoo8jj c1wwlxnr cje5w08 c1bck0pu c16
 value={"0"}
 className={`w-tabs cu8ogtt c1v4vkm5 c3q79or cqlg791 c6yvppa ci03eyw`}>
 <TabsList
-className={`w-tabs-list cfyrpk4 c1qpyqes c1bti4b5 cd3toq c17nm8vt c8yo8yx c1xymrvd c1n9f9m4 c1jbi97f c1lgzutd csp87lc c1jsmjku c1cshlcb cde37yz ca1ntyv cwsyfmt`}>
+className={`w-tabs-list cfyrpk4 c1qpyqes c1bti4b5 cd3toq c17nm8vt c8yo8yx c1xymrvd c1n9f9m4 c1jbi97f c1lgzutd csp87lc c1lvtt9b c12gpzk6 c1jsmjku c1cshlcb cde37yz ca1ntyv cwsyfmt cgmjq0a c1xmffmh c142qj80 c15igavi`}>
 <TabsTrigger
 data-ws-index="0"
-className={`w-tab-trigger cfyrpk4 c1v4vkm5 c1bti4b5 c1sm0mvf cbfwnla c3fz80x c6pfjtb c1lp7lun c3ryv7d c1t11c95 c1kz25wt cr2ujrk c1tmykg6 ctdzf0s c1efnbdc c14hahek c1qt5xo2 ck08swj cuz3b7n c5atcat c13yk87r c12m3onu cxbwblh co1yi26 c1vk95sq c4m1pwg c1al8gxi cws4pam`}>
+className={`w-tab-trigger cfyrpk4 c1v4vkm5 c1bti4b5 c1sm0mvf cbfwnla c3fz80x c6pfjtb c1lp7lun c3ryv7d c1t11c95 c1kz25wt cr2ujrk c1tmykg6 ctdzf0s c1efnbdc c14hahek c1qt5xo2 ck08swj cuz3b7n c5atcat c13yk87r c12m3onu cxbwblh co1yi26 c1vk95sq c4m1pwg c1al8gxi cws4pam cqp7jpc c1kvgv3n`}>
 <Span
 className={`w-text-1 c426or5 cycv0tm ckiq6wr`}>
 {"Polytachnical "}
@@ -190,7 +190,7 @@ className={`w-text-1 c426or5 cycv0tm ckiq6wr`}>
 </TabsTrigger>
 <TabsTrigger
 data-ws-index="1"
-className={`w-tab-trigger cfyrpk4 c1v4vkm5 c1bti4b5 c1sm0mvf cbfwnla c3fz80x c6pfjtb c1lp7lun c3ryv7d c1t11c95 c1kz25wt cr2ujrk c1tmykg6 ctdzf0s c1efnbdc c14hahek c1qt5xo2 ck08swj cuz3b7n c5atcat c13yk87r c12m3onu cxbwblh co1yi26 c1vk95sq c4m1pwg c1al8gxi cws4pam`}>
+className={`w-tab-trigger cfyrpk4 c1v4vkm5 c1bti4b5 c1sm0mvf cbfwnla c3fz80x c6pfjtb c1lp7lun c3ryv7d c1t11c95 c1kz25wt cr2ujrk c1tmykg6 ctdzf0s c1efnbdc c14hahek c1qt5xo2 ck08swj cuz3b7n c5atcat c13yk87r c12m3onu cxbwblh co1yi26 c1vk95sq c4m1pwg c1al8gxi cws4pam cqp7jpc c1kvgv3n`}>
 {"Advanced"}
 <Span
 className={`w-text-1 cwti2ho cvuh4zx ckiq6wr`}>
@@ -199,7 +199,7 @@ className={`w-text-1 cwti2ho cvuh4zx ckiq6wr`}>
 </TabsTrigger>
 <TabsTrigger
 data-ws-index="2"
-className={`w-tab-trigger cfyrpk4 c1v4vkm5 c1bti4b5 c1sm0mvf cbfwnla c3fz80x c6pfjtb c1lp7lun c3ryv7d c1t11c95 c1kz25wt c1tmykg6 ctdzf0s c1efnbdc c14hahek c1qt5xo2 ck08swj cr2ujrk cuz3b7n c5atcat c13yk87r c12m3onu cxbwblh co1yi26 c1vk95sq c4m1pwg c1al8gxi cws4pam`}>
+className={`w-tab-trigger cfyrpk4 c1v4vkm5 c1bti4b5 c1sm0mvf cbfwnla c3fz80x c6pfjtb c1lp7lun c3ryv7d c1t11c95 c1kz25wt cr2ujrk c1tmykg6 ctdzf0s c1efnbdc c14hahek c1qt5xo2 ck08swj cuz3b7n c5atcat c13yk87r c12m3onu cxbwblh co1yi26 c1vk95sq c4m1pwg c1al8gxi cws4pam cqp7jpc c1kvgv3n`}>
 {"Cyber"}
 <Span
 className={`w-text-1 cwti2ho cvuh4zx ckiq6wr`}>
@@ -208,7 +208,7 @@ className={`w-text-1 cwti2ho cvuh4zx ckiq6wr`}>
 </TabsTrigger>
 <TabsTrigger
 data-ws-index="3"
-className={`w-tab-trigger cfyrpk4 c1v4vkm5 c1bti4b5 c1sm0mvf cbfwnla c3fz80x c6pfjtb c1lp7lun c3ryv7d c1t11c95 c1kz25wt cr2ujrk c1tmykg6 ctdzf0s c1efnbdc c14hahek c1qt5xo2 ck08swj cuz3b7n c5atcat c13yk87r c12m3onu cxbwblh co1yi26 c1vk95sq c4m1pwg c1al8gxi cws4pam`}>
+className={`w-tab-trigger cfyrpk4 c1v4vkm5 c1bti4b5 c1sm0mvf cbfwnla c3fz80x c6pfjtb c1lp7lun c3ryv7d c1t11c95 c1kz25wt cr2ujrk c1tmykg6 ctdzf0s c1efnbdc c14hahek c1qt5xo2 ck08swj cuz3b7n c5atcat c13yk87r c12m3onu cxbwblh co1yi26 c1vk95sq c4m1pwg c1al8gxi cws4pam cqp7jpc c1kvgv3n`}>
 {"Living"}
 <Span
 className={`w-text-1 cwti2ho cvuh4zx ckiq6wr`}>
@@ -217,7 +217,7 @@ className={`w-text-1 cwti2ho cvuh4zx ckiq6wr`}>
 </TabsTrigger>
 <TabsTrigger
 data-ws-index="4"
-className={`w-tab-trigger cfyrpk4 c1v4vkm5 c1bti4b5 c1sm0mvf cbfwnla c3fz80x c6pfjtb c1lp7lun c3ryv7d c1t11c95 c1kz25wt cr2ujrk c1tmykg6 ctdzf0s c1efnbdc c14hahek c1qt5xo2 ck08swj cuz3b7n c5atcat c13yk87r c12m3onu cxbwblh co1yi26 c1vk95sq c4m1pwg c1al8gxi cws4pam`}>
+className={`w-tab-trigger cfyrpk4 c1v4vkm5 c1bti4b5 c1sm0mvf cbfwnla c3fz80x c6pfjtb c1lp7lun c3ryv7d c1t11c95 c1kz25wt cr2ujrk c1tmykg6 ctdzf0s c1efnbdc c14hahek c1qt5xo2 ck08swj cuz3b7n c5atcat c13yk87r c12m3onu cxbwblh co1yi26 c1vk95sq c4m1pwg c1al8gxi cws4pam cqp7jpc c1kvgv3n`}>
 {"Future"}
 <Span
 className={`w-text-1 cwti2ho cvuh4zx ckiq6wr`}>
@@ -246,7 +246,7 @@ className={`w-item`}>
 <AccordionHeader
 className={`w-item-header ci03eyw`}>
 <AccordionTrigger
-className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny c8qj03j c8l261o c13u1sx6 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c1yyg526 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js`}>
+className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny cy7nrqp c8l261o c13u1sx6 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c1yyg526 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js cdz972a c74re8a`}>
 <Text
 className={`w-text c1kzhrg`}>
 {"Mathematics 1a"}
@@ -285,7 +285,7 @@ className={`w-item`}>
 <AccordionHeader
 className={`w-item-header ci03eyw`}>
 <AccordionTrigger
-className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny c8qj03j c8l261o c13u1sx6 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c1yyg526 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js`}>
+className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny cy7nrqp c8l261o c13u1sx6 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c1yyg526 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js cdz972a c74re8a`}>
 <Text
 className={`w-text`}>
 {"Mathematics 1b"}
@@ -324,7 +324,7 @@ className={`w-item`}>
 <AccordionHeader
 className={`w-item-header ci03eyw`}>
 <AccordionTrigger
-className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny c8qj03j c8l261o c13u1sx6 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c1yyg526 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js`}>
+className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny cy7nrqp c8l261o c13u1sx6 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c1yyg526 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js cdz972a c74re8a`}>
 <Text
 className={`w-text`}>
 {"Chemistry"}
@@ -363,7 +363,7 @@ className={`w-item`}>
 <AccordionHeader
 className={`w-item-header ci03eyw`}>
 <AccordionTrigger
-className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny c8qj03j c8l261o c13u1sx6 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c1yyg526 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js`}>
+className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny cy7nrqp c8l261o c13u1sx6 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c1yyg526 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js cdz972a c74re8a`}>
 <Text
 className={`w-text`}>
 {"Computer Programming"}
@@ -402,7 +402,7 @@ className={`w-item`}>
 <AccordionHeader
 className={`w-item-header ci03eyw`}>
 <AccordionTrigger
-className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny c8qj03j c8l261o c13u1sx6 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c1yyg526 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js`}>
+className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny cy7nrqp c8l261o c13u1sx6 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c1yyg526 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js cdz972a c74re8a`}>
 <Text
 className={`w-text`}>
 {"Physics"}
@@ -441,7 +441,7 @@ className={`w-item`}>
 <AccordionHeader
 className={`w-item-header ci03eyw`}>
 <AccordionTrigger
-className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny c8qj03j c8l261o c13u1sx6 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c1yyg526 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js`}>
+className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny cy7nrqp c8l261o c13u1sx6 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c1yyg526 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js cdz972a c74re8a`}>
 <Text
 className={`w-text`}>
 {"Statistics"}
@@ -480,7 +480,7 @@ className={`w-item`}>
 <AccordionHeader
 className={`w-item-header ci03eyw`}>
 <AccordionTrigger
-className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny c8qj03j c8l261o c13u1sx6 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c1yyg526 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js`}>
+className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny cy7nrqp c8l261o c13u1sx6 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c1yyg526 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js cdz972a c74re8a`}>
 <Text
 className={`w-text`}>
 {"Interdisciplinary Bioengineering"}
@@ -519,7 +519,7 @@ className={`w-item`}>
 <AccordionHeader
 className={`w-item-header ci03eyw`}>
 <AccordionTrigger
-className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny c8qj03j c8l261o c13u1sx6 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c1yyg526 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js`}>
+className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny cy7nrqp c8l261o c13u1sx6 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c1yyg526 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js cdz972a c74re8a`}>
 <Text
 className={`w-text`}>
 {"Science, Technology and Society"}
@@ -558,7 +558,7 @@ className={`w-item c1risi17`}>
 <AccordionHeader
 className={`w-item-header ci03eyw`}>
 <AccordionTrigger
-className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny c8qj03j c8l261o c13u1sx6 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c1yyg526 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js`}>
+className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny cy7nrqp c8l261o c13u1sx6 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c1yyg526 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js cdz972a c74re8a`}>
 <Text
 className={`w-text`}>
 {"Mathematics 2"}
@@ -614,7 +614,7 @@ className={`w-item`}>
 <AccordionHeader
 className={`w-item-header ci03eyw`}>
 <AccordionTrigger
-className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny c8qj03j c8l261o c13u1sx6 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c1yyg526 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js`}>
+className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny cy7nrqp c8l261o c13u1sx6 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c1yyg526 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js cdz972a c74re8a`}>
 <Text
 className={`w-text c1kzhrg`}>
 {"Introduction to Advanced Materials"}
@@ -653,7 +653,7 @@ className={`w-item`}>
 <AccordionHeader
 className={`w-item-header ci03eyw`}>
 <AccordionTrigger
-className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny c8qj03j c8l261o c13u1sx6 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c1yyg526 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js`}>
+className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny cy7nrqp c8l261o c13u1sx6 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c1yyg526 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js cdz972a c74re8a`}>
 <Text
 className={`w-text`}>
 {"Introduction to Numerical Algorithms"}
@@ -692,7 +692,7 @@ className={`w-item`}>
 <AccordionHeader
 className={`w-item-header ci03eyw`}>
 <AccordionTrigger
-className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny c8qj03j c8l261o c13u1sx6 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c1yyg526 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js`}>
+className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny cy7nrqp c8l261o c13u1sx6 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c1yyg526 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js cdz972a c74re8a`}>
 <Text
 className={`w-text`}>
 {"Physics for materials and energy"}
@@ -748,7 +748,7 @@ className={`w-item`}>
 <AccordionHeader
 className={`w-item-header ci03eyw`}>
 <AccordionTrigger
-className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny c8qj03j c8l261o c13u1sx6 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c1yyg526 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js`}>
+className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny cy7nrqp c8l261o c13u1sx6 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c1yyg526 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js cdz972a c74re8a`}>
 <Text
 className={`w-text c1kzhrg`}>
 {"Introduction to Cyber Systems"}
@@ -787,7 +787,7 @@ className={`w-item`}>
 <AccordionHeader
 className={`w-item-header ci03eyw`}>
 <AccordionTrigger
-className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny c8qj03j c8l261o c13u1sx6 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c1yyg526 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js`}>
+className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny cy7nrqp c8l261o c13u1sx6 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c1yyg526 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js cdz972a c74re8a`}>
 <Text
 className={`w-text`}>
 {"Discrete Mathematics"}
@@ -826,7 +826,7 @@ className={`w-item`}>
 <AccordionHeader
 className={`w-item-header ci03eyw`}>
 <AccordionTrigger
-className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny c8qj03j c8l261o c13u1sx6 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c1yyg526 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js`}>
+className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny cy7nrqp c8l261o c13u1sx6 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c1yyg526 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js cdz972a c74re8a`}>
 <Text
 className={`w-text`}>
 {"Algorithms and Data Structures 1"}
@@ -886,7 +886,7 @@ className={`w-item`}>
 <AccordionHeader
 className={`w-item-header ci03eyw`}>
 <AccordionTrigger
-className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny c8qj03j c8l261o c13u1sx6 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c1yyg526 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js`}>
+className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny cy7nrqp c8l261o c13u1sx6 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c1yyg526 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js cdz972a c74re8a`}>
 <Text
 className={`w-text c1kzhrg`}>
 {"Introduction to Living Systems"}
@@ -925,7 +925,7 @@ className={`w-item`}>
 <AccordionHeader
 className={`w-item-header ci03eyw`}>
 <AccordionTrigger
-className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny c8qj03j c8l261o c13u1sx6 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c1yyg526 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js`}>
+className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny cy7nrqp c8l261o c13u1sx6 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c1yyg526 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js cdz972a c74re8a`}>
 <Text
 className={`w-text`}>
 {"Introduction to genetic methods in engineering"}
@@ -964,7 +964,7 @@ className={`w-item`}>
 <AccordionHeader
 className={`w-item-header ci03eyw`}>
 <AccordionTrigger
-className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny c8qj03j c8l261o c13u1sx6 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c1yyg526 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js`}>
+className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny cy7nrqp c8l261o c13u1sx6 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c1yyg526 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js cdz972a c74re8a`}>
 <Text
 className={`w-text`}>
 {"Biochemistry"}
@@ -1020,7 +1020,7 @@ className={`w-item`}>
 <AccordionHeader
 className={`w-item-header ci03eyw`}>
 <AccordionTrigger
-className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny c8qj03j c8l261o c13u1sx6 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c1yyg526 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js`}>
+className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny cy7nrqp c8l261o c13u1sx6 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c1yyg526 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js cdz972a c74re8a`}>
 <Text
 className={`w-text c1kzhrg`}>
 {"Introduction to Future Energy"}
@@ -1059,7 +1059,7 @@ className={`w-item`}>
 <AccordionHeader
 className={`w-item-header ci03eyw`}>
 <AccordionTrigger
-className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny c8qj03j c8l261o c13u1sx6 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c1yyg526 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js`}>
+className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny cy7nrqp c8l261o c13u1sx6 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c1yyg526 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js cdz972a c74re8a`}>
 <Text
 className={`w-text`}>
 {"Introduction to Numerical Algorithms"}
@@ -1098,7 +1098,7 @@ className={`w-item`}>
 <AccordionHeader
 className={`w-item-header ci03eyw`}>
 <AccordionTrigger
-className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny c8qj03j c8l261o c13u1sx6 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c1yyg526 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js`}>
+className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny cy7nrqp c8l261o c13u1sx6 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c1yyg526 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js cdz972a c74re8a`}>
 <Text
 className={`w-text`}>
 {"Physics for materials and energy"}

@@ -11,7 +11,7 @@ import { Dialog as Dialog, DialogTrigger as DialogTrigger, DialogOverlay as Dial
 
       export const projectId = "94456f8c-a847-426a-aec8-16de390bd3eb";
 
-      export const lastPublished = "2025-06-21T00:50:26.148Z";
+      export const lastPublished = "2025-06-23T17:31:48.631Z";
 
       export const siteName = "GE Union";
 
@@ -36,6 +36,10 @@ className={`w-element c1lzvaoj c1qux398`}>
 code={"<style>\n  h1{\n    font-family: Tanker;\n    font-weight: 500;\n    font-size: 5em;\n    color: var(--background);\n    line-height: 1;\n    margin: 0;\n  }\n  h2{\n    font-weight: 600;\n    font-size: 36px;\n    line-height: 1;\n    margin: 0;\n  }\n  p{\n    margin: 0;\n  }\n  \n  .icon-background{\n    background-color: var(--back-red-1);\n    z-index: 1;\n    overflow: hidden;\n    position: relative;\n  }\n  .icon-background::before{\n    content: \"\";\n    position: absolute;\n    width: 200%; height: 200%;\n    top: -50%; left: -50%;\n    background-image: url('/assets/icon-background_RyiWP8CNKOfskpwMp_P8Y.svg?width=1080&quality=80&format=auto');\n    background-size: 200px 115.4734411085px;\n    background-repeat: repeat;\n    animation: scrollBg 20s linear infinite;\n    z-index: -1;\n    opacity: var(--icon-background-opacity, 3%); mix-blend-mode: luminosity;\n    filter: blur(2px)\n  }\n  \n  .home-top::after{\n    position: absolute;\n    content: \"\";\n    width: 100%;\n    height: 250px;\n    background: linear-gradient(180deg, hsl(from var(--back-red-1) h s l / 0.65) 15%, hsl(from var(--back-red-1) h s l / 0) 100%);\n    z-index: -1;\n  }\n\n  @keyframes scrollBg {\n      0% {\n        background-position: 0 0;\n      }\n      100% {\n        background-position: -200px 115.4734411085px;\n      }\n    }\n\n  .home-top-card:hover .home-top-card-title-icon{\n    width: 38px;\n    padding-left: 3px;\n  }\n\n  @media only screen and (max-width: 767px) {\n    h1{\n      font-size: 4em;\n    }\n    h2{\n      font-size: 32px;\n    }\n  }\n</style>"}
 executeScriptOnCanvas={true}
 className={`w-html-embed`} />
+<HtmlEmbed
+code={"<script src=\"https://cdn.jsdelivr.net/npm/@fullcalendar/core@6.1.17/index.global.min.js\"></script>\n<script src=\"https://cdn.jsdelivr.net/npm/@fullcalendar/daygrid@6.1.17/index.global.min.js\"></script>\n<script src=\"https://cdn.jsdelivr.net/npm/@fullcalendar/google-calendar@6.1.17/index.global.min.js\"></script>\n\n<script>\ndocument.addEventListener('DOMContentLoaded', function() {\n  var calendarEl = document.getElementById('calendar');\n\n  var calendar = new FullCalendar.Calendar(calendarEl, {\n    headerToolbar: {\n        left: 'prev,next today',\n        center: 'title',\n        right: ''\n    },\n    dayMaxEvents: true,\n    firstDay: 1,\n    googleCalendarApiKey: 'AIzaSyDBDJxCyN67h-VrQ53s9vm597mrLUiZgHM',\n    events: '23c6f451e6193a878c5affc55d18b050093a87075c0325964379924db8ee027a@group.calendar.google.com',\n\n    eventClick: function(info) {\n      // Prevent default Google Calendar link\n      info.jsEvent.preventDefault();\n      \n      const event = info.event;\n      const popup = document.getElementById('event-popup');\n      const background = document.getElementById('event-popup-back');\n      \n      // Set the content\n      popup.innerHTML = `\n        <strong>${event.title}</strong><br>\n        ${event.start.toLocaleString()}<br>\n        ${event.extendedProps.description || ''}<br>\n        ${event.extendedProps.location || ''}\n      `;\n      \n      // Position and show popup\n      background.style.display = 'flex';\n\n      background.onclick = function(){\n        const myself = document.getElementById('event-popup-back');\n        myself.style.display = 'none';\n      };\n    },\n\n    eventDataTransform: function(event) {\n        event.url = \"\";\n        return event;\n    }\n    \n  });\n  calendar.render();\n});\n</script>\n\n<style>\n  .fc-button {\n    background-color: var(--back-red-1) !important;\n    border-color: var(--back-red-1) !important;\n    color: #fff !important; /* Optional: Ensures text is visible */\n  }\n  \n  .fc-button:hover {\n    background-color: var(--back-red-1) !important;\n    opacity: 0.9;\n  }\n  \n  /* Change event background colours */\n  .fc-event {\n    background-color: var(--back-red-1) !important;\n    border-color: var(--back-red-1) !important;\n    color: #fff !important;\n  }\n\n  .fc .fc-scrollgrid td {\n    border: 1px solid var(--back-grey-1);\n    border-radius: var(--rad2);\n  }\n\n  .fc .fc-scrollgrid, .fc .fc-col-header-cell, .fc .fc-scrollgrid th {\n    border: none !important;\n  }\n\n  .fc .fc-day-today {\n    background-color: var(--back-grey-2) !important;\n    border-radius: 0 !important;\n    box-shadow: 0 0 80px var(--back-grey-2);\n  }\n</style>"}
+executeScriptOnCanvas={true}
+className={`w-html-embed`} />
 <Box
 className={`w-box cck00sw cd3toq c17nm8vt c1xymrvd c8yo8yx ci03eyw cu8ogtt cm1ds2c c1fxgukz c3q79or c1fhonxu cqlg791 cji7xkv c40iywk codsd31 c16er72m c1qt5xo2 c1uz2t7q c4psa79 c1ldi832 ${"icon-background home-top"}`}>
 <Box
@@ -53,24 +57,24 @@ className={`w-image c1g1752z c1l3m6tn c1wjaqd0`} />
 className={`w-box ci03eyw cavbteo c17p08f7 cy2vnym cgykfac c8chaf1 crymv6m ch588tu cd1c1x2 cgjpuuk co3wgvm cjdg5q7`}>
 <Link
 href={"/"}
-className={`w-link c4qqqhz cr2ujrk c8l261o c1ozmz5d c1ho4waj c1k74xht c1122adb c10pf28n c1w0lkxn ch9rsc5 c1et34yr c1tj415q`}>
+className={`w-link c4qqqhz c1l00ka2 c8l261o c1ozmz5d c1ho4waj c1k74xht c1122adb c10pf28n c1w0lkxn ch9rsc5 c1et34yr c1tj415q`}>
 {"Home"}
 </Link>
 <Link
 href={"/course-bank"}
-className={`w-link c4qqqhz cr2ujrk c8l261o c1ozmz5d c1ho4waj c1k74xht c1122adb c10pf28n c1w0lkxn ch9rsc5 c1et34yr c1tj415q`}>
+className={`w-link c4qqqhz c1l00ka2 c8l261o c1ozmz5d c1ho4waj c1k74xht c1122adb c10pf28n c1w0lkxn ch9rsc5 c1et34yr c1tj415q`}>
 {"Course Bank"}
 </Link>
 <Link
 href={"/calendar"}
-className={`w-link c4qqqhz cr2ujrk c8l261o czgmbqe c1ho4waj c1k74xht c1122adb c10pf28n c1w0lkxn ch9rsc5 c1et34yr c1tj415q`}>
+className={`w-link c4qqqhz c1l00ka2 c8l261o czgmbqe c1ho4waj c1k74xht c1122adb c10pf28n c1w0lkxn ch9rsc5 c1et34yr c1tj415q`}>
 {"Calendar"}
 </Link>
 <Tooltip
 delayDuration={0}>
 <TooltipTrigger>
 <div
-className={`w-element c4qqqhz cr2ujrk c8l261o c1ozmz5d c1ho4waj c1k74xht ch9rsc5 c1w0lkxn c1122adb c10pf28n cbahl6h c1tj415q`}>
+className={`w-element c4qqqhz c1l00ka2 c8l261o c1ozmz5d c1ho4waj c1k74xht ch9rsc5 c1w0lkxn c1122adb c10pf28n cbahl6h c1tj415q`}>
 {"About"}
 </div>
 </TooltipTrigger>
@@ -78,12 +82,12 @@ className={`w-element c4qqqhz cr2ujrk c8l261o c1ozmz5d c1ho4waj c1k74xht ch9rsc5
 className={`w-tooltip-content c5mlbae cm1ds2c c1fxgukz cdzo1k7 c1lp7lun c3ryv7d c1t11c95 c1kz25wt c1jbi97f crebcbz cfjpsss ci03eyw cu8ogtt c4bgnbx cj82r57 c14a5ioc cm4j335`}>
 <Link
 href={"/about-ge"}
-className={`w-link c4qqqhz cr2ujrk c8l261o c1ozmz5d c1ho4waj c1k74xht c1122adb c10pf28n c1w0lkxn ch9rsc5 cz5lin5 c1tj415q`}>
+className={`w-link c4qqqhz c1l00ka2 c8l261o c1ozmz5d c1ho4waj c1k74xht c1122adb c10pf28n c1w0lkxn ch9rsc5 cz5lin5 c1tj415q`}>
 {"General Engineering"}
 </Link>
 <Link
 href={"/about-geu"}
-className={`w-link c4qqqhz cr2ujrk c8l261o c1ozmz5d c1ho4waj c1k74xht c1122adb c10pf28n c1w0lkxn ch9rsc5 cz5lin5 c1tj415q`}>
+className={`w-link c4qqqhz c1l00ka2 c8l261o c1ozmz5d c1ho4waj c1k74xht c1122adb c10pf28n c1w0lkxn ch9rsc5 cz5lin5 c1tj415q`}>
 {"GE Union"}
 </Link>
 </TooltipContent>
@@ -167,10 +171,19 @@ className={`w-text cg3nt0s c74dsfz czgmbqe cyoo8jj c1wwlxnr cje5w08 c1bck0pu c16
 </Text>
 </Box>
 </Box>
-<h1
-className={`w-element c1vn0xiq cyoo8jj c1xlgu5t c8ao5vx c1hvaonn c9oz494`}>
-{"Coming Soon"}
-</h1>
+<div
+className={`w-element ci03eyw cu8ogtt c1v4vkm5 c3q79or cqlg791 c16e72yc cbeiaob`}>
+<div
+id={"calendar"}
+className={`w-element c1upsgln c2z8j1e`} />
+</div>
+<div
+id={"event-popup-back"}
+className={`w-element c15392bw c1jg0tfs c9q7jzv c13w5hsy c1sm4x0m cgqm29d cj1xbu9 c1ehyscn cvuh4zx cu8ogtt c1v4vkm5 c1bti4b5 ce0cz3j c15ikqm`}>
+<div
+id={"event-popup"}
+className={`w-element cxkmob3 cdjqerl cbeiaob c16e72yc cy3hgi9 ch5gnkm cdzo1k7 cd3toq c17nm8vt c1xymrvd c8yo8yx cnkevhm c1lz099s cdmn2c9`} />
+</div>
 </Body>
 }
 

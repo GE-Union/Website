@@ -11,7 +11,7 @@ import { Tooltip as Tooltip, TooltipTrigger as TooltipTrigger, TooltipContent as
 
       export const projectId = "94456f8c-a847-426a-aec8-16de390bd3eb";
 
-      export const lastPublished = "2025-06-21T00:50:26.148Z";
+      export const lastPublished = "2025-06-23T17:31:48.631Z";
 
       export const siteName = "GE Union";
 
@@ -53,24 +53,24 @@ className={`w-image c1g1752z c1l3m6tn c1wjaqd0`} />
 className={`w-box ci03eyw cavbteo c17p08f7 cy2vnym cgykfac c8chaf1 crymv6m ch588tu cd1c1x2 cgjpuuk co3wgvm cjdg5q7`}>
 <Link
 href={"/"}
-className={`w-link c4qqqhz cr2ujrk c8l261o c1ozmz5d c1ho4waj c1k74xht c1122adb c10pf28n c1w0lkxn ch9rsc5 c1et34yr c1tj415q`}>
+className={`w-link c4qqqhz c1l00ka2 c8l261o c1ozmz5d c1ho4waj c1k74xht c1122adb c10pf28n c1w0lkxn ch9rsc5 c1et34yr c1tj415q`}>
 {"Home"}
 </Link>
 <Link
 href={"/course-bank"}
-className={`w-link c4qqqhz cr2ujrk c8l261o c1ozmz5d c1ho4waj c1k74xht c1122adb c10pf28n c1w0lkxn ch9rsc5 c1et34yr c1tj415q`}>
+className={`w-link c4qqqhz c1l00ka2 c8l261o c1ozmz5d c1ho4waj c1k74xht c1122adb c10pf28n c1w0lkxn ch9rsc5 c1et34yr c1tj415q`}>
 {"Course Bank"}
 </Link>
 <Link
 href={"/calendar"}
-className={`w-link c4qqqhz cr2ujrk c8l261o c1ozmz5d c1ho4waj c1k74xht c1122adb c10pf28n c1w0lkxn ch9rsc5 c1et34yr c1tj415q`}>
+className={`w-link c4qqqhz c1l00ka2 c8l261o c1ozmz5d c1ho4waj c1k74xht c1122adb c10pf28n c1w0lkxn ch9rsc5 c1et34yr c1tj415q`}>
 {"Calendar"}
 </Link>
 <Tooltip
 delayDuration={0}>
 <TooltipTrigger>
 <div
-className={`w-element c4qqqhz cr2ujrk c8l261o c1ozmz5d c1ho4waj c1k74xht ch9rsc5 c1w0lkxn c1122adb c10pf28n cbahl6h c1tj415q`}>
+className={`w-element c4qqqhz c1l00ka2 c8l261o c1ozmz5d c1ho4waj c1k74xht ch9rsc5 c1w0lkxn c1122adb c10pf28n cbahl6h c1tj415q`}>
 {"About"}
 </div>
 </TooltipTrigger>
@@ -78,12 +78,12 @@ className={`w-element c4qqqhz cr2ujrk c8l261o c1ozmz5d c1ho4waj c1k74xht ch9rsc5
 className={`w-tooltip-content c5mlbae cm1ds2c c1fxgukz cdzo1k7 c1lp7lun c3ryv7d c1t11c95 c1kz25wt c1jbi97f crebcbz cfjpsss ci03eyw cu8ogtt c4bgnbx cj82r57 c14a5ioc cm4j335`}>
 <Link
 href={"/about-ge"}
-className={`w-link c4qqqhz cr2ujrk c8l261o c8qj03j c1ho4waj c1k74xht c1122adb c10pf28n c1w0lkxn ch9rsc5 cz5lin5 c1tj415q`}>
+className={`w-link c4qqqhz c1l00ka2 c8l261o c8qj03j c1ho4waj c1k74xht c1122adb c10pf28n c1w0lkxn ch9rsc5 cz5lin5 c1tj415q`}>
 {"General Engineering"}
 </Link>
 <Link
 href={"/about-geu"}
-className={`w-link c4qqqhz cr2ujrk c8l261o c1ozmz5d c1ho4waj c1k74xht c1122adb c10pf28n c1w0lkxn ch9rsc5 cz5lin5 c1tj415q`}>
+className={`w-link c4qqqhz c1l00ka2 c8l261o c1ozmz5d c1ho4waj c1k74xht c1122adb c10pf28n c1w0lkxn ch9rsc5 cz5lin5 c1tj415q`}>
 {"GE Union"}
 </Link>
 </TooltipContent>
