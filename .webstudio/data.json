@@ -1,14 +1,15 @@
 {
   "build": {
-    "id": "3c3b8a23-c832-40fa-8787-e91e8381ad23",
+    "id": "72ba4179-cef4-4462-852c-62bc5508b687",
     "projectId": "94456f8c-a847-426a-aec8-16de390bd3eb",
-    "version": 5778,
-    "createdAt": "2025-06-23T17:47:29.815+00:00",
-    "updatedAt": "2025-06-23T17:47:29.815+00:00",
+    "version": 6331,
+    "createdAt": "2025-06-25T01:14:12.808+00:00",
+    "updatedAt": "2025-06-25T01:14:12.808+00:00",
     "pages": {
       "meta": {
         "siteName": "GE Union",
-        "faviconAssetId": "3a1afb6b0c207e48f268e8301688d918a14c687541d92e3cd55e50ad3c02d765"
+        "faviconAssetId": "3a1afb6b0c207e48f268e8301688d918a14c687541d92e3cd55e50ad3c02d765",
+        "code": ""
       },
       "homePage": {
         "id": "wUK5ygvtFE2u3SZDaGCgn",
@@ -3359,7 +3360,7 @@
           "property": "height",
           "value": {
             "type": "keyword",
-            "value": "fit-content"
+            "value": "min-content"
           }
         }
       ],
@@ -39759,6 +39760,424 @@
             "value": 11
           }
         }
+      ],
+      [
+        "5ogovYx7scv1_8cQi5iXq:2EiFMEG40PBm9_fkelqpo:fontFamily:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "5ogovYx7scv1_8cQi5iXq",
+          "property": "fontFamily",
+          "value": {
+            "type": "fontFamily",
+            "value": [
+              "Rubik",
+              "Arial",
+              "Roboto",
+              "sans-serif"
+            ]
+          }
+        }
+      ],
+      [
+        "q67Qt74YAlOkw7Cxmx8jA:2EiFMEG40PBm9_fkelqpo:marginTop:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "q67Qt74YAlOkw7Cxmx8jA",
+          "property": "marginTop",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 50
+          }
+        }
+      ],
+      [
+        "q67Qt74YAlOkw7Cxmx8jA:2EiFMEG40PBm9_fkelqpo:marginBottom:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "q67Qt74YAlOkw7Cxmx8jA",
+          "property": "marginBottom",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 100
+          }
+        }
+      ],
+      [
+        "q67Qt74YAlOkw7Cxmx8jA:2EiFMEG40PBm9_fkelqpo:maxWidth:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "q67Qt74YAlOkw7Cxmx8jA",
+          "property": "maxWidth",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 800
+          }
+        }
+      ],
+      [
+        "7EAZnu2U_smbZ8RvekrWD:2EiFMEG40PBm9_fkelqpo:marginLeft:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "7EAZnu2U_smbZ8RvekrWD",
+          "property": "marginLeft",
+          "value": {
+            "type": "var",
+            "value": "gap1"
+          }
+        }
+      ],
+      [
+        "7EAZnu2U_smbZ8RvekrWD:2EiFMEG40PBm9_fkelqpo:marginRight:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "7EAZnu2U_smbZ8RvekrWD",
+          "property": "marginRight",
+          "value": {
+            "type": "var",
+            "value": "gap1"
+          }
+        }
+      ],
+      [
+        "7EAZnu2U_smbZ8RvekrWD:2EiFMEG40PBm9_fkelqpo:display:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "7EAZnu2U_smbZ8RvekrWD",
+          "property": "display",
+          "value": {
+            "type": "keyword",
+            "value": "flex"
+          }
+        }
+      ],
+      [
+        "7EAZnu2U_smbZ8RvekrWD:2EiFMEG40PBm9_fkelqpo:flexDirection:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "7EAZnu2U_smbZ8RvekrWD",
+          "property": "flexDirection",
+          "value": {
+            "type": "keyword",
+            "value": "column"
+          }
+        }
+      ],
+      [
+        "q67Qt74YAlOkw7Cxmx8jA:2EiFMEG40PBm9_fkelqpo:marginLeft:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "q67Qt74YAlOkw7Cxmx8jA",
+          "property": "marginLeft",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 40
+          }
+        }
+      ],
+      [
+        "q67Qt74YAlOkw7Cxmx8jA:2EiFMEG40PBm9_fkelqpo:marginRight:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "q67Qt74YAlOkw7Cxmx8jA",
+          "property": "marginRight",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 40
+          }
+        }
+      ],
+      [
+        "7EAZnu2U_smbZ8RvekrWD:2EiFMEG40PBm9_fkelqpo:alignItems:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "7EAZnu2U_smbZ8RvekrWD",
+          "property": "alignItems",
+          "value": {
+            "type": "keyword",
+            "value": "stretch"
+          }
+        }
+      ],
+      [
+        "q67Qt74YAlOkw7Cxmx8jA:2EiFMEG40PBm9_fkelqpo:alignSelf:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "q67Qt74YAlOkw7Cxmx8jA",
+          "property": "alignSelf",
+          "value": {
+            "type": "keyword",
+            "value": "center"
+          }
+        }
+      ],
+      [
+        "q67Qt74YAlOkw7Cxmx8jA:2EiFMEG40PBm9_fkelqpo:width:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "q67Qt74YAlOkw7Cxmx8jA",
+          "property": "width",
+          "value": {
+            "type": "unit",
+            "unit": "%",
+            "value": 100
+          }
+        }
+      ],
+      [
+        "1ulmQjz_zkSB7qObEUYm7:2EiFMEG40PBm9_fkelqpo:transitionProperty:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "1ulmQjz_zkSB7qObEUYm7",
+          "property": "transitionProperty",
+          "value": {
+            "type": "layers",
+            "value": [
+              {
+                "type": "unparsed",
+                "value": "opacity"
+              }
+            ]
+          }
+        }
+      ],
+      [
+        "1ulmQjz_zkSB7qObEUYm7:2EiFMEG40PBm9_fkelqpo:transitionDuration:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "1ulmQjz_zkSB7qObEUYm7",
+          "property": "transitionDuration",
+          "value": {
+            "type": "layers",
+            "value": [
+              {
+                "type": "unit",
+                "unit": "ms",
+                "value": 300
+              }
+            ]
+          }
+        }
+      ],
+      [
+        "1ulmQjz_zkSB7qObEUYm7:2EiFMEG40PBm9_fkelqpo:transitionTimingFunction:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "1ulmQjz_zkSB7qObEUYm7",
+          "property": "transitionTimingFunction",
+          "value": {
+            "type": "layers",
+            "value": [
+              {
+                "type": "keyword",
+                "value": "ease"
+              }
+            ]
+          }
+        }
+      ],
+      [
+        "1ulmQjz_zkSB7qObEUYm7:2EiFMEG40PBm9_fkelqpo:transitionDelay:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "1ulmQjz_zkSB7qObEUYm7",
+          "property": "transitionDelay",
+          "value": {
+            "type": "layers",
+            "value": [
+              {
+                "type": "unit",
+                "unit": "ms",
+                "value": 0
+              }
+            ]
+          }
+        }
+      ],
+      [
+        "1ulmQjz_zkSB7qObEUYm7:2EiFMEG40PBm9_fkelqpo:transitionBehavior:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "1ulmQjz_zkSB7qObEUYm7",
+          "property": "transitionBehavior",
+          "value": {
+            "type": "layers",
+            "value": [
+              {
+                "type": "keyword",
+                "value": "normal"
+              }
+            ]
+          }
+        }
+      ],
+      [
+        "1ulmQjz_zkSB7qObEUYm7:2EiFMEG40PBm9_fkelqpo:opacity:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "1ulmQjz_zkSB7qObEUYm7",
+          "property": "opacity",
+          "value": {
+            "type": "unit",
+            "unit": "number",
+            "value": 0
+          },
+          "listed": true
+        }
+      ],
+      [
+        "sfHVFtumnTbfZSO-NNvXM:2EiFMEG40PBm9_fkelqpo:marginTop:",
+        {
+          "styleSourceId": "sfHVFtumnTbfZSO-NNvXM",
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "property": "marginTop",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 50
+          }
+        }
+      ],
+      [
+        "sfHVFtumnTbfZSO-NNvXM:2EiFMEG40PBm9_fkelqpo:marginBottom:",
+        {
+          "styleSourceId": "sfHVFtumnTbfZSO-NNvXM",
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "property": "marginBottom",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 100
+          }
+        }
+      ],
+      [
+        "sfHVFtumnTbfZSO-NNvXM:2EiFMEG40PBm9_fkelqpo:maxWidth:",
+        {
+          "styleSourceId": "sfHVFtumnTbfZSO-NNvXM",
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "property": "maxWidth",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 800
+          }
+        }
+      ],
+      [
+        "XxfLbx4cF4tSGb9hpd6Y1:2EiFMEG40PBm9_fkelqpo:marginLeft:",
+        {
+          "styleSourceId": "XxfLbx4cF4tSGb9hpd6Y1",
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "property": "marginLeft",
+          "value": {
+            "type": "var",
+            "value": "gap1"
+          }
+        }
+      ],
+      [
+        "XxfLbx4cF4tSGb9hpd6Y1:2EiFMEG40PBm9_fkelqpo:marginRight:",
+        {
+          "styleSourceId": "XxfLbx4cF4tSGb9hpd6Y1",
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "property": "marginRight",
+          "value": {
+            "type": "var",
+            "value": "gap1"
+          }
+        }
+      ],
+      [
+        "XxfLbx4cF4tSGb9hpd6Y1:2EiFMEG40PBm9_fkelqpo:display:",
+        {
+          "styleSourceId": "XxfLbx4cF4tSGb9hpd6Y1",
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "property": "display",
+          "value": {
+            "type": "keyword",
+            "value": "flex"
+          }
+        }
+      ],
+      [
+        "XxfLbx4cF4tSGb9hpd6Y1:2EiFMEG40PBm9_fkelqpo:flexDirection:",
+        {
+          "styleSourceId": "XxfLbx4cF4tSGb9hpd6Y1",
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "property": "flexDirection",
+          "value": {
+            "type": "keyword",
+            "value": "column"
+          }
+        }
+      ],
+      [
+        "sfHVFtumnTbfZSO-NNvXM:2EiFMEG40PBm9_fkelqpo:marginLeft:",
+        {
+          "styleSourceId": "sfHVFtumnTbfZSO-NNvXM",
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "property": "marginLeft",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 40
+          }
+        }
+      ],
+      [
+        "sfHVFtumnTbfZSO-NNvXM:2EiFMEG40PBm9_fkelqpo:marginRight:",
+        {
+          "styleSourceId": "sfHVFtumnTbfZSO-NNvXM",
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "property": "marginRight",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 40
+          }
+        }
+      ],
+      [
+        "XxfLbx4cF4tSGb9hpd6Y1:2EiFMEG40PBm9_fkelqpo:alignItems:",
+        {
+          "styleSourceId": "XxfLbx4cF4tSGb9hpd6Y1",
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "property": "alignItems",
+          "value": {
+            "type": "keyword",
+            "value": "stretch"
+          }
+        }
+      ],
+      [
+        "sfHVFtumnTbfZSO-NNvXM:2EiFMEG40PBm9_fkelqpo:alignSelf:",
+        {
+          "styleSourceId": "sfHVFtumnTbfZSO-NNvXM",
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "property": "alignSelf",
+          "value": {
+            "type": "keyword",
+            "value": "center"
+          }
+        }
+      ],
+      [
+        "sfHVFtumnTbfZSO-NNvXM:2EiFMEG40PBm9_fkelqpo:width:",
+        {
+          "styleSourceId": "sfHVFtumnTbfZSO-NNvXM",
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "property": "width",
+          "value": {
+            "type": "unit",
+            "unit": "%",
+            "value": 100
+          }
+        }
       ]
     ],
     "styleSources": [
@@ -42610,41 +43029,6 @@
         }
       ],
       [
-        "jS_uavH2s5dMOWTIl3fjx",
-        {
-          "type": "local",
-          "id": "jS_uavH2s5dMOWTIl3fjx"
-        }
-      ],
-      [
-        "Ma0HIsJkP3gV7lKkAEza9",
-        {
-          "type": "local",
-          "id": "Ma0HIsJkP3gV7lKkAEza9"
-        }
-      ],
-      [
-        "S1VU70W_9j89Wkmsw-4Sg",
-        {
-          "type": "local",
-          "id": "S1VU70W_9j89Wkmsw-4Sg"
-        }
-      ],
-      [
-        "1ZytVIn7Nqx9DErN1sqy0",
-        {
-          "type": "local",
-          "id": "1ZytVIn7Nqx9DErN1sqy0"
-        }
-      ],
-      [
-        "OHY45RzZomPZun8v3Mp_D",
-        {
-          "type": "local",
-          "id": "OHY45RzZomPZun8v3Mp_D"
-        }
-      ],
-      [
         "uQccv0Fe_1IH6rvU_Lm7e",
         {
           "type": "local",
@@ -42677,6 +43061,69 @@
         {
           "type": "local",
           "id": "rh_5SNk--HtdVzJM_BrY3"
+        }
+      ],
+      [
+        "nIkDV320GrjtdwJFl9BsG",
+        {
+          "type": "local",
+          "id": "nIkDV320GrjtdwJFl9BsG"
+        }
+      ],
+      [
+        "kNVC6_kTLh_9cOStDYhwZ",
+        {
+          "type": "local",
+          "id": "kNVC6_kTLh_9cOStDYhwZ"
+        }
+      ],
+      [
+        "nKmnKmC-cxzmoIEnj0LPQ",
+        {
+          "type": "local",
+          "id": "nKmnKmC-cxzmoIEnj0LPQ"
+        }
+      ],
+      [
+        "CklWuPbb45X9L0GV4pGDJ",
+        {
+          "type": "local",
+          "id": "CklWuPbb45X9L0GV4pGDJ"
+        }
+      ],
+      [
+        "8iWmAIhKfIvJCj7Ti9afC",
+        {
+          "type": "local",
+          "id": "8iWmAIhKfIvJCj7Ti9afC"
+        }
+      ],
+      [
+        "q67Qt74YAlOkw7Cxmx8jA",
+        {
+          "type": "local",
+          "id": "q67Qt74YAlOkw7Cxmx8jA"
+        }
+      ],
+      [
+        "7EAZnu2U_smbZ8RvekrWD",
+        {
+          "type": "local",
+          "id": "7EAZnu2U_smbZ8RvekrWD"
+        }
+      ],
+      [
+        "XxfLbx4cF4tSGb9hpd6Y1",
+        {
+          "type": "local",
+          "id": "XxfLbx4cF4tSGb9hpd6Y1"
+        }
+      ],
+      [
+        "sfHVFtumnTbfZSO-NNvXM",
+        {
+          "type": "local",
+          "id": "sfHVFtumnTbfZSO-NNvXM"
         }
       ]
     ],
@@ -46942,51 +47389,6 @@
         }
       ],
       [
-        "liMGLuvNCKOpq_THxFWd1",
-        {
-          "instanceId": "liMGLuvNCKOpq_THxFWd1",
-          "values": [
-            "jS_uavH2s5dMOWTIl3fjx"
-          ]
-        }
-      ],
-      [
-        "RGZ4B6C6KZJ0Qra99oVEA",
-        {
-          "instanceId": "RGZ4B6C6KZJ0Qra99oVEA",
-          "values": [
-            "Ma0HIsJkP3gV7lKkAEza9"
-          ]
-        }
-      ],
-      [
-        "XIW0sJNnV5hXdbdNUwdRF",
-        {
-          "instanceId": "XIW0sJNnV5hXdbdNUwdRF",
-          "values": [
-            "S1VU70W_9j89Wkmsw-4Sg"
-          ]
-        }
-      ],
-      [
-        "5zXU79_3je-UCdtmF8ptD",
-        {
-          "instanceId": "5zXU79_3je-UCdtmF8ptD",
-          "values": [
-            "1ZytVIn7Nqx9DErN1sqy0"
-          ]
-        }
-      ],
-      [
-        "QpTG7bM7FN_ru5ZAkrwCo",
-        {
-          "instanceId": "QpTG7bM7FN_ru5ZAkrwCo",
-          "values": [
-            "OHY45RzZomPZun8v3Mp_D"
-          ]
-        }
-      ],
-      [
         "iMzOTNslIgEtR78-1QpQm",
         {
           "instanceId": "iMzOTNslIgEtR78-1QpQm",
@@ -47028,6 +47430,87 @@
           "instanceId": "qSpv6y7iHOQWLyJJDEHz0",
           "values": [
             "rh_5SNk--HtdVzJM_BrY3"
+          ]
+        }
+      ],
+      [
+        "KiYsBRtk-jGQ_O11QowMd",
+        {
+          "instanceId": "KiYsBRtk-jGQ_O11QowMd",
+          "values": [
+            "nIkDV320GrjtdwJFl9BsG"
+          ]
+        }
+      ],
+      [
+        "BFtPOxSpwQvZnN1SuKyCF",
+        {
+          "instanceId": "BFtPOxSpwQvZnN1SuKyCF",
+          "values": [
+            "kNVC6_kTLh_9cOStDYhwZ"
+          ]
+        }
+      ],
+      [
+        "05YMw3OvA7RL0rnaVp3fs",
+        {
+          "instanceId": "05YMw3OvA7RL0rnaVp3fs",
+          "values": [
+            "nKmnKmC-cxzmoIEnj0LPQ"
+          ]
+        }
+      ],
+      [
+        "M7lwyn8LrephEAmDlD732",
+        {
+          "instanceId": "M7lwyn8LrephEAmDlD732",
+          "values": [
+            "CklWuPbb45X9L0GV4pGDJ"
+          ]
+        }
+      ],
+      [
+        "zHHZ1wJ2xjRsYtqXl5qWo",
+        {
+          "instanceId": "zHHZ1wJ2xjRsYtqXl5qWo",
+          "values": [
+            "8iWmAIhKfIvJCj7Ti9afC"
+          ]
+        }
+      ],
+      [
+        "VEOjiAkgmGhk6WttyjWqY",
+        {
+          "instanceId": "VEOjiAkgmGhk6WttyjWqY",
+          "values": [
+            "q67Qt74YAlOkw7Cxmx8jA"
+          ]
+        }
+      ],
+      [
+        "43_lKzmcr7vtdOxEMcuJ9",
+        {
+          "instanceId": "43_lKzmcr7vtdOxEMcuJ9",
+          "values": [
+            "7EAZnu2U_smbZ8RvekrWD"
+          ]
+        }
+      ],
+      [
+        "NbqULkm64DexAxZNmOaI3",
+        {
+          "instanceId": "NbqULkm64DexAxZNmOaI3",
+          "values": [
+            "XxfLbx4cF4tSGb9hpd6Y1"
+          ]
+        }
+      ],
+      [
+        "PZQuLBrOdn-wRdFEVwSug",
+        {
+          "instanceId": "PZQuLBrOdn-wRdFEVwSug",
+          "values": [
+            "sfHVFtumnTbfZSO-NNvXM"
           ]
         }
       ]
@@ -47230,7 +47713,7 @@
           "instanceId": "HzoGz1cO4F_sgAQlowXRW",
           "name": "code",
           "type": "string",
-          "value": "<style>\n  h1{\n    font-family: Tanker;\n    font-weight: 500;\n    font-size: 5em;\n    color: var(--background);\n    line-height: 1;\n    margin: 0;\n  }\n  h2{\n    font-weight: 600;\n    font-size: 36px;\n    line-height: 1;\n    margin: 0;\n  }\n  p{\n    margin: 0;\n  }\n  \n  .icon-background{\n    background-color: var(--back-red-1);\n    z-index: 1;\n    overflow: hidden;\n    position: relative;\n  }\n  .icon-background::before{\n    content: \"\";\n    position: absolute;\n    width: 200%; height: 200%;\n    top: -50%; left: -50%;\n    background-image: url('/assets/icon-background_RyiWP8CNKOfskpwMp_P8Y.svg?width=1080&quality=80&format=auto');\n    background-size: 200px 115.4734411085px;\n    background-repeat: repeat;\n    animation: scrollBg 20s linear infinite;\n    z-index: -1;\n    opacity: var(--icon-background-opacity, 3%); mix-blend-mode: luminosity;\n    filter: blur(2px)\n  }\n  \n  .home-top::after{\n    position: absolute;\n    content: \"\";\n    width: 100%;\n    height: 250px;\n    background: linear-gradient(180deg, hsl(from var(--back-red-1) h s l / 0.65) 15%, hsl(from var(--back-red-1) h s l / 0) 100%);\n    z-index: -1;\n  }\n\n  @keyframes scrollBg {\n      0% {\n        background-position: 0 0;\n      }\n      100% {\n        background-position: -200px 115.4734411085px;\n      }\n    }\n\n  .home-top-card:hover .home-top-card-title-icon{\n    width: 38px;\n    padding-left: 3px;\n  }\n\n  @media only screen and (max-width: 767px) {\n    h1{\n      font-size: 4em;\n    }\n    h2{\n      font-size: 32px;\n    }\n  }\n</style>"
+          "value": "<style>\n@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300..900&display=swap');\n@import url('https://api.fontshare.com/v2/css?f[]=tanker@400&amp;display=swap');\n  \n  h1{\n    font-family: 'Tanker';\n    font-weight: 500;\n    font-size: 5em;\n    color: var(--background);\n    line-height: 1;\n    margin: 0;\n  }\n  h2{\n    font-weight: 600;\n    font-size: 36px;\n    line-height: 1;\n    margin: 0;\n  }\n  p{\n    margin: 0;\n  }\n  \n  .icon-background{\n    background-color: var(--back-red-1);\n    z-index: 1;\n    overflow: hidden;\n    position: relative;\n  }\n  .icon-background::before{\n    content: \"\";\n    position: absolute;\n    width: 200%; height: 200%;\n    top: -50%; left: -50%;\n    background-image: url('/assets/icon-background_RyiWP8CNKOfskpwMp_P8Y.svg?width=1080&quality=80&format=auto');\n    background-size: 200px 115.4734411085px;\n    background-repeat: repeat;\n    animation: scrollBg 20s linear infinite;\n    z-index: -1;\n    opacity: var(--icon-background-opacity, 3%); mix-blend-mode: luminosity;\n    filter: blur(2px)\n  }\n  \n  .home-top::after{\n    position: absolute;\n    content: \"\";\n    width: 100%;\n    height: 250px;\n    background: linear-gradient(180deg, hsl(from var(--back-red-1) h s l / 0.65) 15%, hsl(from var(--back-red-1) h s l / 0) 100%);\n    z-index: -1;\n  }\n\n  @keyframes scrollBg {\n      0% {\n        background-position: 0 0;\n      }\n      100% {\n        background-position: -200px 115.4734411085px;\n      }\n    }\n\n  .home-top-card:hover .home-top-card-title-icon{\n    width: 38px;\n    padding-left: 3px;\n  }\n\n  @media only screen and (max-width: 767px) {\n    h1{\n      font-size: 4em;\n    }\n    h2{\n      font-size: 32px;\n    }\n  }\n</style>"
         }
       ],
       [
@@ -49774,163 +50257,13 @@
         }
       ],
       [
-        "_Fsnj1D55zH0OP-_NqCuu",
-        {
-          "id": "_Fsnj1D55zH0OP-_NqCuu",
-          "instanceId": "liMGLuvNCKOpq_THxFWd1",
-          "name": "code",
-          "type": "string",
-          "value": "<style>\n  h1{\n    font-family: Tanker;\n    font-weight: 500;\n    font-size: 5em;\n    color: var(--background);\n    line-height: 1;\n    margin: 0;\n  }\n  h2{\n    font-weight: 600;\n    font-size: 36px;\n    line-height: 1;\n    margin: 0;\n  }\n  p{\n    margin: 0;\n  }\n  \n  .icon-background{\n    background-color: var(--back-red-1);\n    z-index: 1;\n    overflow: hidden;\n    position: relative;\n  }\n  .icon-background::before{\n    content: \"\";\n    position: absolute;\n    width: 200%; height: 200%;\n    top: -50%; left: -50%;\n    background-image: url('/assets/icon-background_RyiWP8CNKOfskpwMp_P8Y.svg?width=1080&quality=80&format=auto');\n    background-size: 200px 115.4734411085px;\n    background-repeat: repeat;\n    animation: scrollBg 20s linear infinite;\n    z-index: -1;\n    opacity: var(--icon-background-opacity, 3%); mix-blend-mode: luminosity;\n    filter: blur(2px)\n  }\n  \n  .home-top::after{\n    position: absolute;\n    content: \"\";\n    width: 100%;\n    height: 250px;\n    background: linear-gradient(180deg, hsl(from var(--back-red-1) h s l / 0.65) 15%, hsl(from var(--back-red-1) h s l / 0) 100%);\n    z-index: -1;\n  }\n\n  @keyframes scrollBg {\n      0% {\n        background-position: 0 0;\n      }\n      100% {\n        background-position: -200px 115.4734411085px;\n      }\n    }\n\n  .home-top-card:hover .home-top-card-title-icon{\n    width: 38px;\n    padding-left: 3px;\n  }\n\n  @media only screen and (max-width: 767px) {\n    h1{\n      font-size: 4em;\n    }\n    h2{\n      font-size: 32px;\n    }\n  }\n</style>"
-        }
-      ],
-      [
-        "F0iho4TAMoDi81P7nOVJm",
-        {
-          "id": "F0iho4TAMoDi81P7nOVJm",
-          "instanceId": "liMGLuvNCKOpq_THxFWd1",
-          "name": "executeScriptOnCanvas",
-          "type": "boolean",
-          "value": true
-        }
-      ],
-      [
-        "ooSi3wtVdv-NU-YhxFREh",
-        {
-          "id": "ooSi3wtVdv-NU-YhxFREh",
-          "instanceId": "liMGLuvNCKOpq_THxFWd1",
-          "name": "data-ws-show",
-          "type": "boolean",
-          "value": true
-        }
-      ],
-      [
-        "9JAQzDnA8sUsI2fTViQvo",
-        {
-          "id": "9JAQzDnA8sUsI2fTViQvo",
-          "instanceId": "RGZ4B6C6KZJ0Qra99oVEA",
-          "name": "code",
-          "type": "string",
-          "value": "<style>\n  h1{\n    font-family: Tanker;\n    font-weight: 500;\n    font-size: 5em;\n    color: var(--background);\n    line-height: 1;\n    margin: 0;\n  }\n  h2{\n    font-weight: 600;\n    font-size: 36px;\n    line-height: 1;\n    margin: 0;\n  }\n  p{\n    margin: 0;\n  }\n  \n  .icon-background{\n    background-color: var(--back-red-1);\n    z-index: 1;\n    overflow: hidden;\n    position: relative;\n  }\n  .icon-background::before{\n    content: \"\";\n    position: absolute;\n    width: 200%; height: 200%;\n    top: -50%; left: -50%;\n    background-image: url('/assets/icon-background_RyiWP8CNKOfskpwMp_P8Y.svg?width=1080&quality=80&format=auto');\n    background-size: 200px 115.4734411085px;\n    background-repeat: repeat;\n    animation: scrollBg 20s linear infinite;\n    z-index: -1;\n    opacity: var(--icon-background-opacity, 3%); mix-blend-mode: luminosity;\n    filter: blur(2px)\n  }\n  \n  .home-top::after{\n    position: absolute;\n    content: \"\";\n    width: 100%;\n    height: 250px;\n    background: linear-gradient(180deg, hsl(from var(--back-red-1) h s l / 0.65) 15%, hsl(from var(--back-red-1) h s l / 0) 100%);\n    z-index: -1;\n  }\n\n  @keyframes scrollBg {\n      0% {\n        background-position: 0 0;\n      }\n      100% {\n        background-position: -200px 115.4734411085px;\n      }\n    }\n\n  .home-top-card:hover .home-top-card-title-icon{\n    width: 38px;\n    padding-left: 3px;\n  }\n\n  @media only screen and (max-width: 767px) {\n    h1{\n      font-size: 4em;\n    }\n    h2{\n      font-size: 32px;\n    }\n  }\n</style>"
-        }
-      ],
-      [
-        "mQkngKLxkRhDD4N6cbfKb",
-        {
-          "id": "mQkngKLxkRhDD4N6cbfKb",
-          "instanceId": "RGZ4B6C6KZJ0Qra99oVEA",
-          "name": "executeScriptOnCanvas",
-          "type": "boolean",
-          "value": true
-        }
-      ],
-      [
-        "yX_om-14RQZTWxGmE7Nwt",
-        {
-          "id": "yX_om-14RQZTWxGmE7Nwt",
-          "instanceId": "RGZ4B6C6KZJ0Qra99oVEA",
-          "name": "data-ws-show",
-          "type": "boolean",
-          "value": true
-        }
-      ],
-      [
-        "As4tgg7hmu1PYrF_Nuusc",
-        {
-          "id": "As4tgg7hmu1PYrF_Nuusc",
-          "instanceId": "XIW0sJNnV5hXdbdNUwdRF",
-          "name": "code",
-          "type": "string",
-          "value": "<style>\n  h1{\n    font-family: Tanker;\n    font-weight: 500;\n    font-size: 5em;\n    color: var(--background);\n    line-height: 1;\n    margin: 0;\n  }\n  h2{\n    font-weight: 600;\n    font-size: 36px;\n    line-height: 1;\n    margin: 0;\n  }\n  p{\n    margin: 0;\n  }\n  \n  .icon-background{\n    background-color: var(--back-red-1);\n    z-index: 1;\n    overflow: hidden;\n    position: relative;\n  }\n  .icon-background::before{\n    content: \"\";\n    position: absolute;\n    width: 200%; height: 200%;\n    top: -50%; left: -50%;\n    background-image: url('/assets/icon-background_RyiWP8CNKOfskpwMp_P8Y.svg?width=1080&quality=80&format=auto');\n    background-size: 200px 115.4734411085px;\n    background-repeat: repeat;\n    animation: scrollBg 20s linear infinite;\n    z-index: -1;\n    opacity: var(--icon-background-opacity, 3%); mix-blend-mode: luminosity;\n    filter: blur(2px)\n  }\n  \n  .home-top::after{\n    position: absolute;\n    content: \"\";\n    width: 100%;\n    height: 250px;\n    background: linear-gradient(180deg, hsl(from var(--back-red-1) h s l / 0.65) 15%, hsl(from var(--back-red-1) h s l / 0) 100%);\n    z-index: -1;\n  }\n\n  @keyframes scrollBg {\n      0% {\n        background-position: 0 0;\n      }\n      100% {\n        background-position: -200px 115.4734411085px;\n      }\n    }\n\n  .home-top-card:hover .home-top-card-title-icon{\n    width: 38px;\n    padding-left: 3px;\n  }\n\n  @media only screen and (max-width: 767px) {\n    h1{\n      font-size: 4em;\n    }\n    h2{\n      font-size: 32px;\n    }\n  }\n</style>"
-        }
-      ],
-      [
-        "_GWAONKUViSay6-l5X5pU",
-        {
-          "id": "_GWAONKUViSay6-l5X5pU",
-          "instanceId": "XIW0sJNnV5hXdbdNUwdRF",
-          "name": "executeScriptOnCanvas",
-          "type": "boolean",
-          "value": true
-        }
-      ],
-      [
-        "j6c8KoZrJj8YYZFgycATO",
-        {
-          "id": "j6c8KoZrJj8YYZFgycATO",
-          "instanceId": "XIW0sJNnV5hXdbdNUwdRF",
-          "name": "data-ws-show",
-          "type": "boolean",
-          "value": true
-        }
-      ],
-      [
-        "w0BF-ogtsw4xcr-FSYCBv",
-        {
-          "id": "w0BF-ogtsw4xcr-FSYCBv",
-          "instanceId": "5zXU79_3je-UCdtmF8ptD",
-          "name": "code",
-          "type": "string",
-          "value": "<style>\n  h1{\n    font-family: Tanker;\n    font-weight: 500;\n    font-size: 5em;\n    color: var(--background);\n    line-height: 1;\n    margin: 0;\n  }\n  h2{\n    font-weight: 600;\n    font-size: 36px;\n    line-height: 1;\n    margin: 0;\n  }\n  p{\n    margin: 0;\n  }\n  \n  .icon-background{\n    background-color: var(--back-red-1);\n    z-index: 1;\n    overflow: hidden;\n    position: relative;\n  }\n  .icon-background::before{\n    content: \"\";\n    position: absolute;\n    width: 200%; height: 200%;\n    top: -50%; left: -50%;\n    background-image: url('/assets/icon-background_RyiWP8CNKOfskpwMp_P8Y.svg?width=1080&quality=80&format=auto');\n    background-size: 200px 115.4734411085px;\n    background-repeat: repeat;\n    animation: scrollBg 20s linear infinite;\n    z-index: -1;\n    opacity: var(--icon-background-opacity, 3%); mix-blend-mode: luminosity;\n    filter: blur(2px)\n  }\n  \n  .home-top::after{\n    position: absolute;\n    content: \"\";\n    width: 100%;\n    height: 250px;\n    background: linear-gradient(180deg, hsl(from var(--back-red-1) h s l / 0.65) 15%, hsl(from var(--back-red-1) h s l / 0) 100%);\n    z-index: -1;\n  }\n\n  @keyframes scrollBg {\n      0% {\n        background-position: 0 0;\n      }\n      100% {\n        background-position: -200px 115.4734411085px;\n      }\n    }\n\n  .home-top-card:hover .home-top-card-title-icon{\n    width: 38px;\n    padding-left: 3px;\n  }\n\n  @media only screen and (max-width: 767px) {\n    h1{\n      font-size: 4em;\n    }\n    h2{\n      font-size: 32px;\n    }\n  }\n</style>"
-        }
-      ],
-      [
-        "Eyhc3YK7tpxZH6ZVSs3bw",
-        {
-          "id": "Eyhc3YK7tpxZH6ZVSs3bw",
-          "instanceId": "5zXU79_3je-UCdtmF8ptD",
-          "name": "executeScriptOnCanvas",
-          "type": "boolean",
-          "value": true
-        }
-      ],
-      [
-        "40R7XpCyx-8ie_V4zFmTB",
-        {
-          "id": "40R7XpCyx-8ie_V4zFmTB",
-          "instanceId": "5zXU79_3je-UCdtmF8ptD",
-          "name": "data-ws-show",
-          "type": "boolean",
-          "value": true
-        }
-      ],
-      [
-        "hpGqgC34CMDsD8IpVqNd5",
-        {
-          "id": "hpGqgC34CMDsD8IpVqNd5",
-          "instanceId": "QpTG7bM7FN_ru5ZAkrwCo",
-          "name": "code",
-          "type": "string",
-          "value": "<style>\n  h1{\n    font-family: Tanker;\n    font-weight: 500;\n    font-size: 5em;\n    color: var(--background);\n    line-height: 1;\n    margin: 0;\n  }\n  h2{\n    font-weight: 600;\n    font-size: 36px;\n    line-height: 1;\n    margin: 0;\n  }\n  p{\n    margin: 0;\n  }\n  \n  .icon-background{\n    background-color: var(--back-red-1);\n    z-index: 1;\n    overflow: hidden;\n    position: relative;\n  }\n  .icon-background::before{\n    content: \"\";\n    position: absolute;\n    width: 200%; height: 200%;\n    top: -50%; left: -50%;\n    background-image: url('/assets/icon-background_RyiWP8CNKOfskpwMp_P8Y.svg?width=1080&quality=80&format=auto');\n    background-size: 200px 115.4734411085px;\n    background-repeat: repeat;\n    animation: scrollBg 20s linear infinite;\n    z-index: -1;\n    opacity: var(--icon-background-opacity, 3%); mix-blend-mode: luminosity;\n    filter: blur(2px)\n  }\n  \n  .home-top::after{\n    position: absolute;\n    content: \"\";\n    width: 100%;\n    height: 250px;\n    background: linear-gradient(180deg, hsl(from var(--back-red-1) h s l / 0.65) 15%, hsl(from var(--back-red-1) h s l / 0) 100%);\n    z-index: -1;\n  }\n\n  @keyframes scrollBg {\n      0% {\n        background-position: 0 0;\n      }\n      100% {\n        background-position: -200px 115.4734411085px;\n      }\n    }\n\n  .home-top-card:hover .home-top-card-title-icon{\n    width: 38px;\n    padding-left: 3px;\n  }\n\n  @media only screen and (max-width: 767px) {\n    h1{\n      font-size: 4em;\n    }\n    h2{\n      font-size: 32px;\n    }\n  }\n</style>"
-        }
-      ],
-      [
-        "ozcCyCSL0YP6ydMPYwhRP",
-        {
-          "id": "ozcCyCSL0YP6ydMPYwhRP",
-          "instanceId": "QpTG7bM7FN_ru5ZAkrwCo",
-          "name": "executeScriptOnCanvas",
-          "type": "boolean",
-          "value": true
-        }
-      ],
-      [
-        "5jHKAo_6w0QzKHOrgRGTn",
-        {
-          "id": "5jHKAo_6w0QzKHOrgRGTn",
-          "instanceId": "QpTG7bM7FN_ru5ZAkrwCo",
-          "name": "data-ws-show",
-          "type": "boolean",
-          "value": true
-        }
-      ],
-      [
         "VBN3GT4dMHguGWIIwof3z",
         {
           "id": "VBN3GT4dMHguGWIIwof3z",
           "instanceId": "fA38kGlBnqHbcZFOHPanA",
           "name": "data-ws-show",
           "type": "boolean",
-          "value": false
+          "value": true
         }
       ],
       [
@@ -49940,7 +50273,7 @@
           "instanceId": "iMzOTNslIgEtR78-1QpQm",
           "name": "code",
           "type": "string",
-          "value": "<style>\n  .calendar-container {\n    width: 100%;\n    padding: 20px;\n  }\n  .calendar-container * {\n    cursor: pointer;\n  }\n  .month-header {\n    text-align: center;\n    font-size: 1em;\n    margin-bottom: 10px;\n    font-weight: 600;\n  }\n  .datepicker-calendar {\n    display: grid;\n    grid-template-columns: repeat(7, 1fr);\n    gap: 7px;\n    text-align: center;\n  }\n  .day {\n    font-size: 0.9em;\n    font-weight: 600;\n  }\n  .date {\n    border: none;\n    border-radius: 10px;\n    aspect-ratio: 1;\n    background: hsl(from var(--back-grey-1) h s calc(l*0.99));\n    font-size: 23px;\n    font-weight: 600;\n    color: var(--front-3)\n  }\n  .faded {\n    opacity: 0.3;\n  }\n  .current-day {\n    background-color: var(--back-red-1);\n    color: white;\n    \n  }\n</style>\n\n<div class=\"calendar-container\">\n  <div class=\"month-header\" id=\"monthHeader\">Loading...</div>\n  <div class=\"datepicker-calendar\" id=\"calendar\"></div>\n</div>\n\n<script>\n  document.addEventListener('DOMContentLoaded', () => {\n    requestAnimationFrame(() => {\n      (function () {\n        const today = new Date();\n        const currentYear = today.getFullYear();\n        const currentMonth = today.getMonth(); // 0-indexed\n        const currentDate = today.getDate();\n      \n        const monthNames = [\n          \"January\", \"February\", \"March\", \"April\", \"May\", \"June\",\n          \"July\", \"August\", \"September\", \"October\", \"November\", \"December\"\n        ];\n      \n        document.getElementById(\"monthHeader\").textContent = `${monthNames[currentMonth]} ${currentYear}`;\n      \n        const calendar = document.getElementById(\"calendar\");\n      \n        const daysOfWeek = [\"Mo\", \"Tu\", \"We\", \"Th\", \"Fr\", \"Sa\", \"Su\"];\n        daysOfWeek.forEach(day => {\n          const span = document.createElement(\"span\");\n          span.className = \"day\";\n          span.textContent = day;\n          calendar.appendChild(span);\n        });\n      \n        const firstDay = new Date(currentYear, currentMonth, 1);\n        const startDay = (firstDay.getDay() + 6) % 7;\n      \n        const daysInMonth = new Date(currentYear, currentMonth + 1, 0).getDate();\n        const daysInPrevMonth = new Date(currentYear, currentMonth, 0).getDate();\n      \n        for (let i = startDay - 1; i >= 0; i--) {\n          const btn = document.createElement(\"button\");\n          btn.className = \"date faded\";\n          btn.textContent = daysInPrevMonth - i;\n          calendar.appendChild(btn);\n        }\n      \n        for (let i = 1; i <= daysInMonth; i++) {\n          const btn = document.createElement(\"button\");\n          btn.className = \"date\";\n          btn.textContent = i;\n          if (i === currentDate) {\n            btn.classList.add(\"current-day\");\n          }\n          calendar.appendChild(btn);\n        }\n      \n        const totalCells = startDay + daysInMonth;\n        const nextDays = (7 - (totalCells % 7)) % 7;\n        for (let i = 1; i <= nextDays; i++) {\n          const btn = document.createElement(\"button\");\n          btn.className = \"date faded\";\n          btn.textContent = i;\n          calendar.appendChild(btn);\n        }\n      })();\n    });\n  });\n</script>\n\n\n\n"
+          "value": "<style>\n  .calendar-container {\n    width: 100%;\n    padding: 20px;\n  }\n  .calendar-container * {\n    cursor: pointer;\n  }\n  .month-header {\n    text-align: center;\n    font-size: 1em;\n    margin-bottom: 10px;\n    font-weight: 600;\n  }\n  .datepicker-calendar {\n    display: grid;\n    grid-template-columns: repeat(7, 1fr);\n    gap: 7px;\n    text-align: center;\n  }\n  .day {\n    font-size: 0.9em;\n    font-weight: 600;\n  }\n  .date {\n    border: none;\n    border-radius: 10px;\n    aspect-ratio: 1;\n    background: hsl(from var(--back-grey-1) h s calc(l*0.99));\n    font-size: 23px;\n    font-weight: 600;\n    color: var(--front-3)\n  }\n  .faded {\n    opacity: 0.3;\n  }\n  .current-day {\n    background-color: var(--back-red-1);\n    color: white;\n    \n  }\n</style>\n\n<div class=\"calendar-container\">\n  <div class=\"month-header\" id=\"monthHeader\"></div>\n  <div class=\"datepicker-calendar\" id=\"calendar\"></div>\n</div>\n\n<script>\n  document.addEventListener('DOMContentLoaded', () => {\n    requestAnimationFrame(() => {\n      setTimeout(function() {\n        const today = new Date();\n        const currentYear = today.getFullYear();\n        const currentMonth = today.getMonth(); // 0-indexed\n        const currentDate = today.getDate();\n      \n        const monthNames = [\n          \"January\", \"February\", \"March\", \"April\", \"May\", \"June\",\n          \"July\", \"August\", \"September\", \"October\", \"November\", \"December\"\n        ];\n      \n        document.getElementById(\"monthHeader\").textContent = `${monthNames[currentMonth]} ${currentYear}`;\n      \n        const calendar = document.getElementById(\"calendar\");\n      \n        const daysOfWeek = [\"Mo\", \"Tu\", \"We\", \"Th\", \"Fr\", \"Sa\", \"Su\"];\n        daysOfWeek.forEach(day => {\n          const span = document.createElement(\"span\");\n          span.className = \"day\";\n          span.textContent = day;\n          calendar.appendChild(span);\n        });\n      \n        const firstDay = new Date(currentYear, currentMonth, 1);\n        const startDay = (firstDay.getDay() + 6) % 7;\n      \n        const daysInMonth = new Date(currentYear, currentMonth + 1, 0).getDate();\n        const daysInPrevMonth = new Date(currentYear, currentMonth, 0).getDate();\n      \n        for (let i = startDay - 1; i >= 0; i--) {\n          const btn = document.createElement(\"button\");\n          btn.className = \"date faded\";\n          btn.textContent = daysInPrevMonth - i;\n          calendar.appendChild(btn);\n        }\n      \n        for (let i = 1; i <= daysInMonth; i++) {\n          const btn = document.createElement(\"button\");\n          btn.className = \"date\";\n          btn.textContent = i;\n          if (i === currentDate) {\n            btn.classList.add(\"current-day\");\n          }\n          calendar.appendChild(btn);\n        }\n      \n        const totalCells = startDay + daysInMonth;\n        const nextDays = (7 - (totalCells % 7)) % 7;\n        for (let i = 1; i <= nextDays; i++) {\n          const btn = document.createElement(\"button\");\n          btn.className = \"date faded\";\n          btn.textContent = i;\n          calendar.appendChild(btn);\n        }\n\n        document.getElementById('mini-calendar-back').style.opacity = \"1\"; \n      }, 50)\n    });\n  });\n</script>\n\n\n\n"
         }
       ],
       [
@@ -49980,7 +50313,7 @@
           "instanceId": "BzY7RQauToDu69jkUwjjg",
           "name": "code",
           "type": "string",
-          "value": "<script src=\"https://cdn.jsdelivr.net/npm/@fullcalendar/core@6.1.17/index.global.min.js\"></script>\n<script src=\"https://cdn.jsdelivr.net/npm/@fullcalendar/daygrid@6.1.17/index.global.min.js\"></script>\n<script src=\"https://cdn.jsdelivr.net/npm/@fullcalendar/google-calendar@6.1.17/index.global.min.js\"></script>\n\n<script>\ndocument.addEventListener('DOMContentLoaded', function() {\n  var calendarEl = document.getElementById('calendar');\n\n  var calendar = new FullCalendar.Calendar(calendarEl, {\n    headerToolbar: {\n        left: 'prev,next today',\n        center: 'title',\n        right: ''\n    },\n    dayMaxEvents: true,\n    firstDay: 1,\n    googleCalendarApiKey: 'AIzaSyDBDJxCyN67h-VrQ53s9vm597mrLUiZgHM',\n    events: '23c6f451e6193a878c5affc55d18b050093a87075c0325964379924db8ee027a@group.calendar.google.com',\n\n    eventClick: function(info) {\n      // Prevent default Google Calendar link\n      info.jsEvent.preventDefault();\n      \n      const event = info.event;\n      const popup = document.getElementById('event-popup');\n      const background = document.getElementById('event-popup-back');\n      \n      // Set the content\n      popup.innerHTML = `\n        <strong>${event.title}</strong><br>\n        ${event.start.toLocaleString()}<br>\n        ${event.extendedProps.description || ''}<br>\n        ${event.extendedProps.location || ''}\n      `;\n      \n      // Position and show popup\n      background.style.display = 'flex';\n\n      background.onclick = function(){\n        const myself = document.getElementById('event-popup-back');\n        myself.style.display = 'none';\n      };\n    },\n\n    eventDataTransform: function(event) {\n        event.url = \"\";\n        return event;\n    }\n    \n  });\n  calendar.render();\n});\n</script>\n\n<style>\n  .fc-button {\n    background-color: var(--back-red-1) !important;\n    border-color: var(--back-red-1) !important;\n    color: #fff !important; /* Optional: Ensures text is visible */\n  }\n  \n  .fc-button:hover {\n    background-color: var(--back-red-1) !important;\n    opacity: 0.9;\n  }\n  \n  /* Change event background colours */\n  .fc-event {\n    background-color: var(--back-red-1) !important;\n    border-color: var(--back-red-1) !important;\n    color: #fff !important;\n  }\n\n  .fc .fc-scrollgrid td {\n    border: 1px solid var(--back-grey-1);\n    border-radius: var(--rad2);\n  }\n\n  .fc .fc-scrollgrid, .fc .fc-col-header-cell, .fc .fc-scrollgrid th {\n    border: none !important;\n  }\n\n  .fc .fc-day-today {\n    background-color: var(--back-grey-2) !important;\n    border-radius: 0 !important;\n    box-shadow: 0 0 80px var(--back-grey-2);\n  }\n</style>"
+          "value": "<script src=\"https://cdn.jsdelivr.net/npm/@fullcalendar/core@6.1.17/index.global.min.js\"></script>\n<script src=\"https://cdn.jsdelivr.net/npm/@fullcalendar/daygrid@6.1.17/index.global.min.js\"></script>\n<script src=\"https://cdn.jsdelivr.net/npm/@fullcalendar/google-calendar@6.1.17/index.global.min.js\"></script>\n\n<script>\ndocument.addEventListener('DOMContentLoaded', function() {\n  var calendarEl = document.getElementById('calendar');\n\n  var calendar = new FullCalendar.Calendar(calendarEl, {\n    headerToolbar: {\n        left: 'prev,next today',\n        center: 'title',\n        right: ''\n    },\n    dayMaxEvents: true,\n    firstDay: 1,\n    contentHeight: 'auto',\n    googleCalendarApiKey: 'AIzaSyDBDJxCyN67h-VrQ53s9vm597mrLUiZgHM',\n    events: '23c6f451e6193a878c5affc55d18b050093a87075c0325964379924db8ee027a@group.calendar.google.com',\n\n    eventClick: function(info) {\n      // Prevent default Google Calendar link\n      info.jsEvent.preventDefault();\n      \n      const event = info.event;\n      const popup = document.getElementById('event-popup');\n      const background = document.getElementById('event-popup-back');\n      \n      // Set the content\n      popup.innerHTML = `\n        <strong>${event.title}</strong><br>\n        ${event.start.toLocaleString()}<br>\n        ${event.extendedProps.description || ''}<br>\n        ${event.extendedProps.location || ''}\n      `;\n      \n      // Position and show popup\n      background.style.display = 'flex';\n\n      background.onclick = function(){\n        const myself = document.getElementById('event-popup-back');\n        myself.style.display = 'none';\n      };\n    },\n\n    eventDataTransform: function(event) {\n        event.url = \"\";\n        return event;\n    }\n    \n  });\n  calendar.render();\n});\n</script>\n\n<style>\n  .fc-button {\n    background-color: var(--back-red-1) !important;\n    border-color: var(--back-red-1) !important;\n    color: #fff !important; /* Optional: Ensures text is visible */\n  }\n  \n  .fc-button:hover {\n    background-color: var(--back-red-1) !important;\n    opacity: 0.9;\n  }\n  \n  /* Change event background colours */\n  .fc-event {\n    background-color: var(--back-red-1) !important;\n    border-color: var(--back-red-1) !important;\n    color: #fff !important;\n  }\n\n  .fc .fc-scrollgrid td {\n    border: 1px solid var(--back-grey-1);\n    border-radius: var(--rad2);\n  }\n\n  .fc .fc-scrollgrid, .fc .fc-col-header-cell, .fc .fc-scrollgrid th {\n    border: none !important;\n  }\n\n  .fc .fc-day-today {\n    background-color: var(--back-grey-2) !important;\n    border-radius: 0 !important;\n    box-shadow: 0 0 80px var(--back-grey-2);\n  }\n\n    .fc .fc-daygrid-day-frame {\n    min-height: 100px;\n  }\n  .calendar-container {\n  overflow-x: auto;\n  width: 100%;\n}\n</style>"
         }
       ],
       [
@@ -50021,6 +50354,256 @@
           "name": "id",
           "type": "string",
           "value": "event-popup"
+        }
+      ],
+      [
+        "GP7d9pyJsLU8Ykf0boQ5w",
+        {
+          "id": "GP7d9pyJsLU8Ykf0boQ5w",
+          "instanceId": "rt4DApSXkV8WvGFJfwE2s",
+          "name": "data-ws-show",
+          "type": "boolean",
+          "value": true
+        }
+      ],
+      [
+        "-qTh8BEz1qB25xks42uYD",
+        {
+          "id": "-qTh8BEz1qB25xks42uYD",
+          "instanceId": "KiYsBRtk-jGQ_O11QowMd",
+          "name": "code",
+          "type": "string",
+          "value": "<style>\n@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300..900&display=swap');\n@import url('https://api.fontshare.com/v2/css?f[]=tanker@400&amp;display=swap');\n  \n  h1{\n    font-family: 'Tanker';\n    font-weight: 500;\n    font-size: 5em;\n    color: var(--background);\n    line-height: 1;\n    margin: 0;\n  }\n  h2{\n    font-weight: 600;\n    font-size: 36px;\n    line-height: 1;\n    margin: 0;\n  }\n  p{\n    margin: 0;\n  }\n  \n  .icon-background{\n    background-color: var(--back-red-1);\n    z-index: 1;\n    overflow: hidden;\n    position: relative;\n  }\n  .icon-background::before{\n    content: \"\";\n    position: absolute;\n    width: 200%; height: 200%;\n    top: -50%; left: -50%;\n    background-image: url('/assets/icon-background_RyiWP8CNKOfskpwMp_P8Y.svg?width=1080&quality=80&format=auto');\n    background-size: 200px 115.4734411085px;\n    background-repeat: repeat;\n    animation: scrollBg 20s linear infinite;\n    z-index: -1;\n    opacity: var(--icon-background-opacity, 3%); mix-blend-mode: luminosity;\n    filter: blur(2px)\n  }\n  \n  .home-top::after{\n    position: absolute;\n    content: \"\";\n    width: 100%;\n    height: 250px;\n    background: linear-gradient(180deg, hsl(from var(--back-red-1) h s l / 0.65) 15%, hsl(from var(--back-red-1) h s l / 0) 100%);\n    z-index: -1;\n  }\n\n  @keyframes scrollBg {\n      0% {\n        background-position: 0 0;\n      }\n      100% {\n        background-position: -200px 115.4734411085px;\n      }\n    }\n\n  .home-top-card:hover .home-top-card-title-icon{\n    width: 38px;\n    padding-left: 3px;\n  }\n\n  @media only screen and (max-width: 767px) {\n    h1{\n      font-size: 4em;\n    }\n    h2{\n      font-size: 32px;\n    }\n  }\n</style>"
+        }
+      ],
+      [
+        "svmJNY9X8FicKWzQcaQPN",
+        {
+          "id": "svmJNY9X8FicKWzQcaQPN",
+          "instanceId": "KiYsBRtk-jGQ_O11QowMd",
+          "name": "executeScriptOnCanvas",
+          "type": "boolean",
+          "value": true
+        }
+      ],
+      [
+        "5tVwf3ZpaV801vIXlxqG-",
+        {
+          "id": "5tVwf3ZpaV801vIXlxqG-",
+          "instanceId": "KiYsBRtk-jGQ_O11QowMd",
+          "name": "data-ws-show",
+          "type": "boolean",
+          "value": true
+        }
+      ],
+      [
+        "9qsXbE9GLwejjtm_rhLcZ",
+        {
+          "id": "9qsXbE9GLwejjtm_rhLcZ",
+          "instanceId": "BFtPOxSpwQvZnN1SuKyCF",
+          "name": "code",
+          "type": "string",
+          "value": "<style>\n@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300..900&display=swap');\n@import url('https://api.fontshare.com/v2/css?f[]=tanker@400&amp;display=swap');\n  \n  h1{\n    font-family: 'Tanker';\n    font-weight: 500;\n    font-size: 5em;\n    color: var(--background);\n    line-height: 1;\n    margin: 0;\n  }\n  h2{\n    font-weight: 600;\n    font-size: 36px;\n    line-height: 1;\n    margin: 0;\n  }\n  p{\n    margin: 0;\n  }\n  \n  .icon-background{\n    background-color: var(--back-red-1);\n    z-index: 1;\n    overflow: hidden;\n    position: relative;\n  }\n  .icon-background::before{\n    content: \"\";\n    position: absolute;\n    width: 200%; height: 200%;\n    top: -50%; left: -50%;\n    background-image: url('/assets/icon-background_RyiWP8CNKOfskpwMp_P8Y.svg?width=1080&quality=80&format=auto');\n    background-size: 200px 115.4734411085px;\n    background-repeat: repeat;\n    animation: scrollBg 20s linear infinite;\n    z-index: -1;\n    opacity: var(--icon-background-opacity, 3%); mix-blend-mode: luminosity;\n    filter: blur(2px)\n  }\n  \n  .home-top::after{\n    position: absolute;\n    content: \"\";\n    width: 100%;\n    height: 250px;\n    background: linear-gradient(180deg, hsl(from var(--back-red-1) h s l / 0.65) 15%, hsl(from var(--back-red-1) h s l / 0) 100%);\n    z-index: -1;\n  }\n\n  @keyframes scrollBg {\n      0% {\n        background-position: 0 0;\n      }\n      100% {\n        background-position: -200px 115.4734411085px;\n      }\n    }\n\n  .home-top-card:hover .home-top-card-title-icon{\n    width: 38px;\n    padding-left: 3px;\n  }\n\n  @media only screen and (max-width: 767px) {\n    h1{\n      font-size: 4em;\n    }\n    h2{\n      font-size: 32px;\n    }\n  }\n</style>"
+        }
+      ],
+      [
+        "9jao7Uw5_U2Zpa-FahjIY",
+        {
+          "id": "9jao7Uw5_U2Zpa-FahjIY",
+          "instanceId": "BFtPOxSpwQvZnN1SuKyCF",
+          "name": "executeScriptOnCanvas",
+          "type": "boolean",
+          "value": true
+        }
+      ],
+      [
+        "S4u9OBTLE75dUMrmKGucB",
+        {
+          "id": "S4u9OBTLE75dUMrmKGucB",
+          "instanceId": "BFtPOxSpwQvZnN1SuKyCF",
+          "name": "data-ws-show",
+          "type": "boolean",
+          "value": true
+        }
+      ],
+      [
+        "LuLOlLIPZ5dk9HR8ZqRXY",
+        {
+          "id": "LuLOlLIPZ5dk9HR8ZqRXY",
+          "instanceId": "05YMw3OvA7RL0rnaVp3fs",
+          "name": "code",
+          "type": "string",
+          "value": "<style>\n@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300..900&display=swap');\n@import url('https://api.fontshare.com/v2/css?f[]=tanker@400&amp;display=swap');\n  \n  h1{\n    font-family: 'Tanker';\n    font-weight: 500;\n    font-size: 5em;\n    color: var(--background);\n    line-height: 1;\n    margin: 0;\n  }\n  h2{\n    font-weight: 600;\n    font-size: 36px;\n    line-height: 1;\n    margin: 0;\n  }\n  p{\n    margin: 0;\n  }\n  \n  .icon-background{\n    background-color: var(--back-red-1);\n    z-index: 1;\n    overflow: hidden;\n    position: relative;\n  }\n  .icon-background::before{\n    content: \"\";\n    position: absolute;\n    width: 200%; height: 200%;\n    top: -50%; left: -50%;\n    background-image: url('/assets/icon-background_RyiWP8CNKOfskpwMp_P8Y.svg?width=1080&quality=80&format=auto');\n    background-size: 200px 115.4734411085px;\n    background-repeat: repeat;\n    animation: scrollBg 20s linear infinite;\n    z-index: -1;\n    opacity: var(--icon-background-opacity, 3%); mix-blend-mode: luminosity;\n    filter: blur(2px)\n  }\n  \n  .home-top::after{\n    position: absolute;\n    content: \"\";\n    width: 100%;\n    height: 250px;\n    background: linear-gradient(180deg, hsl(from var(--back-red-1) h s l / 0.65) 15%, hsl(from var(--back-red-1) h s l / 0) 100%);\n    z-index: -1;\n  }\n\n  @keyframes scrollBg {\n      0% {\n        background-position: 0 0;\n      }\n      100% {\n        background-position: -200px 115.4734411085px;\n      }\n    }\n\n  .home-top-card:hover .home-top-card-title-icon{\n    width: 38px;\n    padding-left: 3px;\n  }\n\n  @media only screen and (max-width: 767px) {\n    h1{\n      font-size: 4em;\n    }\n    h2{\n      font-size: 32px;\n    }\n  }\n</style>"
+        }
+      ],
+      [
+        "vx5MwAad3dH8woTEhi7Q8",
+        {
+          "id": "vx5MwAad3dH8woTEhi7Q8",
+          "instanceId": "05YMw3OvA7RL0rnaVp3fs",
+          "name": "executeScriptOnCanvas",
+          "type": "boolean",
+          "value": true
+        }
+      ],
+      [
+        "jnDkwOVpi0OL_igsqeOCP",
+        {
+          "id": "jnDkwOVpi0OL_igsqeOCP",
+          "instanceId": "05YMw3OvA7RL0rnaVp3fs",
+          "name": "data-ws-show",
+          "type": "boolean",
+          "value": true
+        }
+      ],
+      [
+        "EjUK-qTaE1WcUnmzk8y_Y",
+        {
+          "id": "EjUK-qTaE1WcUnmzk8y_Y",
+          "instanceId": "M7lwyn8LrephEAmDlD732",
+          "name": "code",
+          "type": "string",
+          "value": "<style>\n@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300..900&display=swap');\n@import url('https://api.fontshare.com/v2/css?f[]=tanker@400&amp;display=swap');\n  \n  h1{\n    font-family: 'Tanker';\n    font-weight: 500;\n    font-size: 5em;\n    color: var(--background);\n    line-height: 1;\n    margin: 0;\n  }\n  h2{\n    font-weight: 600;\n    font-size: 36px;\n    line-height: 1;\n    margin: 0;\n  }\n  p{\n    margin: 0;\n  }\n  \n  .icon-background{\n    background-color: var(--back-red-1);\n    z-index: 1;\n    overflow: hidden;\n    position: relative;\n  }\n  .icon-background::before{\n    content: \"\";\n    position: absolute;\n    width: 200%; height: 200%;\n    top: -50%; left: -50%;\n    background-image: url('/assets/icon-background_RyiWP8CNKOfskpwMp_P8Y.svg?width=1080&quality=80&format=auto');\n    background-size: 200px 115.4734411085px;\n    background-repeat: repeat;\n    animation: scrollBg 20s linear infinite;\n    z-index: -1;\n    opacity: var(--icon-background-opacity, 3%); mix-blend-mode: luminosity;\n    filter: blur(2px)\n  }\n  \n  .home-top::after{\n    position: absolute;\n    content: \"\";\n    width: 100%;\n    height: 250px;\n    background: linear-gradient(180deg, hsl(from var(--back-red-1) h s l / 0.65) 15%, hsl(from var(--back-red-1) h s l / 0) 100%);\n    z-index: -1;\n  }\n\n  @keyframes scrollBg {\n      0% {\n        background-position: 0 0;\n      }\n      100% {\n        background-position: -200px 115.4734411085px;\n      }\n    }\n\n  .home-top-card:hover .home-top-card-title-icon{\n    width: 38px;\n    padding-left: 3px;\n  }\n\n  @media only screen and (max-width: 767px) {\n    h1{\n      font-size: 4em;\n    }\n    h2{\n      font-size: 32px;\n    }\n  }\n</style>"
+        }
+      ],
+      [
+        "Oue7POWeu1IstP6ZWMBQJ",
+        {
+          "id": "Oue7POWeu1IstP6ZWMBQJ",
+          "instanceId": "M7lwyn8LrephEAmDlD732",
+          "name": "executeScriptOnCanvas",
+          "type": "boolean",
+          "value": true
+        }
+      ],
+      [
+        "hhOKWhs_HMWu98iRbAVS_",
+        {
+          "id": "hhOKWhs_HMWu98iRbAVS_",
+          "instanceId": "M7lwyn8LrephEAmDlD732",
+          "name": "data-ws-show",
+          "type": "boolean",
+          "value": true
+        }
+      ],
+      [
+        "fLU5RQkxgWbDQuFCm4ifn",
+        {
+          "id": "fLU5RQkxgWbDQuFCm4ifn",
+          "instanceId": "zHHZ1wJ2xjRsYtqXl5qWo",
+          "name": "code",
+          "type": "string",
+          "value": "<style>\n@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300..900&display=swap');\n@import url('https://api.fontshare.com/v2/css?f[]=tanker@400&amp;display=swap');\n  \n  h1{\n    font-family: 'Tanker';\n    font-weight: 500;\n    font-size: 5em;\n    color: var(--background);\n    line-height: 1;\n    margin: 0;\n  }\n  h2{\n    font-weight: 600;\n    font-size: 36px;\n    line-height: 1;\n    margin: 0;\n  }\n  p{\n    margin: 0;\n  }\n  \n  .icon-background{\n    background-color: var(--back-red-1);\n    z-index: 1;\n    overflow: hidden;\n    position: relative;\n  }\n  .icon-background::before{\n    content: \"\";\n    position: absolute;\n    width: 200%; height: 200%;\n    top: -50%; left: -50%;\n    background-image: url('/assets/icon-background_RyiWP8CNKOfskpwMp_P8Y.svg?width=1080&quality=80&format=auto');\n    background-size: 200px 115.4734411085px;\n    background-repeat: repeat;\n    animation: scrollBg 20s linear infinite;\n    z-index: -1;\n    opacity: var(--icon-background-opacity, 3%); mix-blend-mode: luminosity;\n    filter: blur(2px)\n  }\n  \n  .home-top::after{\n    position: absolute;\n    content: \"\";\n    width: 100%;\n    height: 250px;\n    background: linear-gradient(180deg, hsl(from var(--back-red-1) h s l / 0.65) 15%, hsl(from var(--back-red-1) h s l / 0) 100%);\n    z-index: -1;\n  }\n\n  @keyframes scrollBg {\n      0% {\n        background-position: 0 0;\n      }\n      100% {\n        background-position: -200px 115.4734411085px;\n      }\n    }\n\n  .home-top-card:hover .home-top-card-title-icon{\n    width: 38px;\n    padding-left: 3px;\n  }\n\n  @media only screen and (max-width: 767px) {\n    h1{\n      font-size: 4em;\n    }\n    h2{\n      font-size: 32px;\n    }\n  }\n</style>"
+        }
+      ],
+      [
+        "aX7B_iOsqnGxrnAqBzWEM",
+        {
+          "id": "aX7B_iOsqnGxrnAqBzWEM",
+          "instanceId": "zHHZ1wJ2xjRsYtqXl5qWo",
+          "name": "executeScriptOnCanvas",
+          "type": "boolean",
+          "value": true
+        }
+      ],
+      [
+        "A0GEVxdXFn9D_RdZN0vRx",
+        {
+          "id": "A0GEVxdXFn9D_RdZN0vRx",
+          "instanceId": "zHHZ1wJ2xjRsYtqXl5qWo",
+          "name": "data-ws-show",
+          "type": "boolean",
+          "value": true
+        }
+      ],
+      [
+        "wqfXDrz-xaNUoNnTD1ICm",
+        {
+          "id": "wqfXDrz-xaNUoNnTD1ICm",
+          "instanceId": "pHc9gwKybTzMHeVqMro33",
+          "name": "code",
+          "type": "string",
+          "value": "<script>\n  if (typeof window.GE_QA_JSON_URL === 'undefined') {\n    window.GE_QA_JSON_URL = \"https://raw.githubusercontent.com/GE-Union/WebsiteContent/main/AboutGE/QnA.json\";\n  }\n  if (typeof window.GE_QA_CACHE_KEY === 'undefined') {\n    window.GE_QA_CACHE_KEY = \"coursebank_structure_cache\";\n  }\n  if (typeof window.CACHE_TTL === 'undefined') {\n    window.CACHE_TTL = 90 * 60 * 1000; // 90 min\n  }\n\n  async function fetchQnA() {\n    // try cache\n    const raw = localStorage.getItem(GE_QA_CACHE_KEY);\n    if (raw) {\n      const { ts, data } = JSON.parse(raw);\n      if (Date.now() - ts < CACHE_TTL) {\n        return data;\n      }\n    }\n    // otherwise re-fetch\n    const res = await fetch(GE_QA_JSON_URL, { cache: \"no-store\" });\n    if (!res.ok) throw new Error(\"Failed to load structure.json\");\n    const data = await res.json();\n    localStorage.setItem(\n      GE_QA_CACHE_KEY,\n      JSON.stringify({ ts: Date.now(), data }),\n    );\n    return data;\n  }\n\n  function initQnA() {\n    var qnaContainer = document.getElementById('qna-container');\n    if (!qnaContainer) return;\n    qnaContainer.innerHTML = \"\";\n\n    fetchQnA()\n      .then(data => {\n        if (!data.categories) {\n          qnaContainer.textContent = \"No Q&A data found.\";\n          return;\n        }\n\n        data.categories.forEach(category => {\n          // Create category title\n          const catTitle = document.createElement('h3');\n          catTitle.textContent = category.category;\n          qnaContainer.appendChild(catTitle);\n\n          // Create list for questions\n          const list = document.createElement('div');\n          list.className = 'qna-list';\n          \n          category.questions.forEach(q => {\n            const item = document.createElement('div');\n            item.className = 'qna-item';\n          \n            const question = document.createElement('div');\n            question.className = 'qna-question';\n            \n            const questionText = document.createElement('span');\n            questionText.textContent = q.question;\n            questionText.className = 'qna-question-text';\n          \n            const arrow = document.createElement('div');\n            arrow.className = 'qna-arrow';\n            arrow.innerHTML = `\n              <svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 16 16\" width=\"16\" height=\"16\" style=\"display: block;\">\n                <path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"m4 6 4 4 4-4\"/>\n              </svg>\n            `;\n          \n            question.appendChild(questionText);\n            question.appendChild(arrow);\n          \n            const answer = document.createElement('div');\n            answer.className = 'qna-answer';\n            answer.textContent = q.answer;\n            answer.style.display = 'none';\n          \n            question.addEventListener('click', () => {\n              const isVisible = answer.style.display === 'block';\n              answer.style.display = isVisible ? 'none' : 'block';\n              arrow.classList.toggle('open', !isVisible);\n            });\n          \n            item.appendChild(question);\n            item.appendChild(answer);\n            list.appendChild(item);\n            const hr = document.createElement(\"hr\");\n            list.appendChild(hr);\n          });\n\n          list.removeChild(list.lastElementChild);\n          qnaContainer.appendChild(list);\n\n\n        });\n      })\n      .catch(err => {\n        console.error(err);\n        qnaContainer.textContent = \"Failed to load Q&A data.\";\n      });\n  }\n  \n  document.addEventListener('DOMContentLoaded', () => {\n    requestAnimationFrame(() => {\n      initQnA();\n    });\n  });\n</script>"
+        }
+      ],
+      [
+        "p6YPiN38mx1frPnFvKq5u",
+        {
+          "id": "p6YPiN38mx1frPnFvKq5u",
+          "instanceId": "pHc9gwKybTzMHeVqMro33",
+          "name": "executeScriptOnCanvas",
+          "type": "boolean",
+          "value": true
+        }
+      ],
+      [
+        "LeqWtirAVzyqv05kgLrLf",
+        {
+          "id": "LeqWtirAVzyqv05kgLrLf",
+          "instanceId": "VEOjiAkgmGhk6WttyjWqY",
+          "name": "id",
+          "type": "string",
+          "value": "qna-container"
+        }
+      ],
+      [
+        "XwDfq8dYv3yyugvg9Y19p",
+        {
+          "id": "XwDfq8dYv3yyugvg9Y19p",
+          "instanceId": "28cLsPWH9OAYhDlCPsS23",
+          "name": "code",
+          "type": "string",
+          "value": "<style>\n  .qna-question {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  cursor: pointer;\n  font-weight: 500;\n  padding: 18px 0;\n  line-height: 1em;\n}\n  \n.qna-arrow svg {\n  width: 20px; height: 20px\n}\n\n.qna-arrow {\n  display: block;\n  align-content: center;\n  transition: transform 0.2s ease;\n  height: 20px; width: 20px;\n  transform-origin: 50% 50%;\n  user-select: none; pointer-events: none;\n  color: var(--front-3);\n}\n\n.qna-arrow.open {\n  transform: rotate(180deg);\n}\n\n.qna-answer {\n  margin: 5px 0 20px 0;\n  padding-left: 10px;\n  display: none;\n  transition: height 0.5s ease;\n}\n\n#qna-container hr{\n  margin: 0 10px 0 10px;\n  border-width: 0.5px;\n  border-color: var(--front-3);\n  opacity: 0.3;\n}\n\n</style>"
+        }
+      ],
+      [
+        "3eXlt1YNiQiSkw3QWpb39",
+        {
+          "id": "3eXlt1YNiQiSkw3QWpb39",
+          "instanceId": "AmJ1EmWsxS0vZw4BjfKQO",
+          "name": "id",
+          "type": "string",
+          "value": "mini-calendar-back"
+        }
+      ],
+      [
+        "dkzKXodOXfp4GVAZSkyvk",
+        {
+          "id": "dkzKXodOXfp4GVAZSkyvk",
+          "instanceId": "PZQuLBrOdn-wRdFEVwSug",
+          "name": "id",
+          "type": "string",
+          "value": "qna-container"
+        }
+      ],
+      [
+        "WkUhLn6-hrXEhgeySySHg",
+        {
+          "id": "WkUhLn6-hrXEhgeySySHg",
+          "instanceId": "qHrw_XMnqpWUGo8wUdcif",
+          "name": "code",
+          "type": "string",
+          "value": "<script>\n  if (typeof window.Intro_QA_JSON_URL === 'undefined') {\n    window.Intro_QA_JSON_URL = \"https://raw.githubusercontent.com/GE-Union/WebsiteContent/main/Introduction/QnA.json\";\n  }\n  if (typeof window.Intro_QA_CACHE_KEY === 'undefined') {\n    window.Intro_QA_CACHE_KEY = \"coursebank_structure_cache\";\n  }\n  if (typeof window.CACHE_TTL === 'undefined') {\n    window.CACHE_TTL = 90 * 60 * 1000; // 90 min\n  }\n\n  async function fetchQnA() {\n    // try cache\n    const raw = localStorage.getItem(Intro_QA_CACHE_KEY);\n    if (raw) {\n      const { ts, data } = JSON.parse(raw);\n      if (Date.now() - ts < CACHE_TTL) {\n        return data;\n      }\n    }\n    // otherwise re-fetch\n    const res = await fetch(Intro_QA_JSON_URL, { cache: \"no-store\" });\n    if (!res.ok) throw new Error(\"Failed to load structure.json\");\n    const data = await res.json();\n    localStorage.setItem(\n      Intro_QA_CACHE_KEY,\n      JSON.stringify({ ts: Date.now(), data }),\n    );\n    return data;\n  }\n\n  function initQnA() {\n    var qnaContainer = document.getElementById('qna-container');\n    if (!qnaContainer) return;\n    qnaContainer.innerHTML = \"\";\n\n    fetchQnA()\n      .then(data => {\n        if (!data.categories) {\n          qnaContainer.textContent = \"No Q&A data found.\";\n          return;\n        }\n\n        data.categories.forEach(category => {\n          // Create category title\n          const catTitle = document.createElement('h3');\n          catTitle.textContent = category.category;\n          qnaContainer.appendChild(catTitle);\n\n          // Create list for questions\n          const list = document.createElement('div');\n          list.className = 'qna-list';\n          \n          category.questions.forEach(q => {\n            const item = document.createElement('div');\n            item.className = 'qna-item';\n          \n            const question = document.createElement('div');\n            question.className = 'qna-question';\n            \n            const questionText = document.createElement('span');\n            questionText.textContent = q.question;\n            questionText.className = 'qna-question-text';\n          \n            const arrow = document.createElement('div');\n            arrow.className = 'qna-arrow';\n            arrow.innerHTML = `\n              <svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 16 16\" width=\"16\" height=\"16\" style=\"display: block;\">\n                <path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"m4 6 4 4 4-4\"/>\n              </svg>\n            `;\n          \n            question.appendChild(questionText);\n            question.appendChild(arrow);\n          \n            const answer = document.createElement('div');\n            answer.className = 'qna-answer';\n            answer.textContent = q.answer;\n            answer.style.display = 'none';\n          \n            question.addEventListener('click', () => {\n              const isVisible = answer.style.display === 'block';\n              answer.style.display = isVisible ? 'none' : 'block';\n              arrow.classList.toggle('open', !isVisible);\n            });\n          \n            item.appendChild(question);\n            item.appendChild(answer);\n            list.appendChild(item);\n            const hr = document.createElement(\"hr\");\n            list.appendChild(hr);\n          });\n\n          list.removeChild(list.lastElementChild);\n          qnaContainer.appendChild(list);\n\n\n        });\n      })\n      .catch(err => {\n        console.error(err);\n        qnaContainer.textContent = \"Failed to load Q&A data.\";\n      });\n  }\n  \n  document.addEventListener('DOMContentLoaded', () => {\n    requestAnimationFrame(() => {\n      initQnA();\n    });\n  });\n</script>"
+        }
+      ],
+      [
+        "TuCHmMJnOF_9gkSKWAhfJ",
+        {
+          "id": "TuCHmMJnOF_9gkSKWAhfJ",
+          "instanceId": "qHrw_XMnqpWUGo8wUdcif",
+          "name": "executeScriptOnCanvas",
+          "type": "boolean",
+          "value": true
+        }
+      ],
+      [
+        "qzOuNvHMECgTXgfsSv10K",
+        {
+          "id": "qzOuNvHMECgTXgfsSv10K",
+          "instanceId": "nPLE1rSQXtfUEicQC6hHQ",
+          "name": "code",
+          "type": "string",
+          "value": "<style>\n  .qna-question {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  cursor: pointer;\n  font-weight: 500;\n  padding: 18px 0;\n  line-height: 1em;\n}\n  \n.qna-arrow svg {\n  width: 20px; height: 20px\n}\n\n.qna-arrow {\n  display: block;\n  align-content: center;\n  transition: transform 0.2s ease;\n  height: 20px; width: 20px;\n  transform-origin: 50% 50%;\n  user-select: none; pointer-events: none;\n  color: var(--front-3);\n}\n\n.qna-arrow.open {\n  transform: rotate(180deg);\n}\n\n.qna-answer {\n  margin: 5px 0 20px 0;\n  padding-left: 10px;\n  display: none;\n  transition: height 0.5s ease;\n}\n\n#qna-container hr{\n  margin: 0 10px 0 10px;\n  border-width: 0.5px;\n  border-color: var(--front-3);\n  opacity: 0.3;\n}\n\n</style>"
         }
       ]
     ],
@@ -50991,7 +51574,7 @@
           "children": [
             {
               "type": "id",
-              "value": "liMGLuvNCKOpq_THxFWd1"
+              "value": "KiYsBRtk-jGQ_O11QowMd"
             },
             {
               "type": "id",
@@ -51022,7 +51605,7 @@
           "children": [
             {
               "type": "id",
-              "value": "RGZ4B6C6KZJ0Qra99oVEA"
+              "value": "BFtPOxSpwQvZnN1SuKyCF"
             },
             {
               "type": "id",
@@ -51053,11 +51636,23 @@
           "children": [
             {
               "type": "id",
-              "value": "XIW0sJNnV5hXdbdNUwdRF"
+              "value": "05YMw3OvA7RL0rnaVp3fs"
+            },
+            {
+              "type": "id",
+              "value": "pHc9gwKybTzMHeVqMro33"
+            },
+            {
+              "type": "id",
+              "value": "28cLsPWH9OAYhDlCPsS23"
             },
             {
               "type": "id",
               "value": "DGSINM_B7yj2MRYN4vKIA"
+            },
+            {
+              "type": "id",
+              "value": "43_lKzmcr7vtdOxEMcuJ9"
             }
           ]
         }
@@ -51072,7 +51667,7 @@
           "children": [
             {
               "type": "id",
-              "value": "QpTG7bM7FN_ru5ZAkrwCo"
+              "value": "zHHZ1wJ2xjRsYtqXl5qWo"
             },
             {
               "type": "id",
@@ -56533,11 +57128,23 @@
           "children": [
             {
               "type": "id",
-              "value": "5zXU79_3je-UCdtmF8ptD"
+              "value": "M7lwyn8LrephEAmDlD732"
+            },
+            {
+              "type": "id",
+              "value": "qHrw_XMnqpWUGo8wUdcif"
+            },
+            {
+              "type": "id",
+              "value": "nPLE1rSQXtfUEicQC6hHQ"
             },
             {
               "type": "id",
               "value": "DTaLV6uHKJMlOCtcJ-Wo9"
+            },
+            {
+              "type": "id",
+              "value": "NbqULkm64DexAxZNmOaI3"
             }
           ]
         }
@@ -59418,56 +60025,6 @@
         }
       ],
       [
-        "liMGLuvNCKOpq_THxFWd1",
-        {
-          "type": "instance",
-          "id": "liMGLuvNCKOpq_THxFWd1",
-          "component": "HtmlEmbed",
-          "label": "Root Style",
-          "children": []
-        }
-      ],
-      [
-        "RGZ4B6C6KZJ0Qra99oVEA",
-        {
-          "type": "instance",
-          "id": "RGZ4B6C6KZJ0Qra99oVEA",
-          "component": "HtmlEmbed",
-          "label": "Root Style",
-          "children": []
-        }
-      ],
-      [
-        "XIW0sJNnV5hXdbdNUwdRF",
-        {
-          "type": "instance",
-          "id": "XIW0sJNnV5hXdbdNUwdRF",
-          "component": "HtmlEmbed",
-          "label": "Root Style",
-          "children": []
-        }
-      ],
-      [
-        "5zXU79_3je-UCdtmF8ptD",
-        {
-          "type": "instance",
-          "id": "5zXU79_3je-UCdtmF8ptD",
-          "component": "HtmlEmbed",
-          "label": "Root Style",
-          "children": []
-        }
-      ],
-      [
-        "QpTG7bM7FN_ru5ZAkrwCo",
-        {
-          "type": "instance",
-          "id": "QpTG7bM7FN_ru5ZAkrwCo",
-          "component": "HtmlEmbed",
-          "label": "Root Style",
-          "children": []
-        }
-      ],
-      [
         "iMzOTNslIgEtR78-1QpQm",
         {
           "type": "instance",
@@ -59536,6 +60093,146 @@
           "component": "ws:element",
           "tag": "div",
           "label": "Event Popup",
+          "children": []
+        }
+      ],
+      [
+        "KiYsBRtk-jGQ_O11QowMd",
+        {
+          "type": "instance",
+          "id": "KiYsBRtk-jGQ_O11QowMd",
+          "component": "HtmlEmbed",
+          "label": "Root Style",
+          "children": []
+        }
+      ],
+      [
+        "BFtPOxSpwQvZnN1SuKyCF",
+        {
+          "type": "instance",
+          "id": "BFtPOxSpwQvZnN1SuKyCF",
+          "component": "HtmlEmbed",
+          "label": "Root Style",
+          "children": []
+        }
+      ],
+      [
+        "05YMw3OvA7RL0rnaVp3fs",
+        {
+          "type": "instance",
+          "id": "05YMw3OvA7RL0rnaVp3fs",
+          "component": "HtmlEmbed",
+          "label": "Root Style",
+          "children": []
+        }
+      ],
+      [
+        "M7lwyn8LrephEAmDlD732",
+        {
+          "type": "instance",
+          "id": "M7lwyn8LrephEAmDlD732",
+          "component": "HtmlEmbed",
+          "label": "Root Style",
+          "children": []
+        }
+      ],
+      [
+        "zHHZ1wJ2xjRsYtqXl5qWo",
+        {
+          "type": "instance",
+          "id": "zHHZ1wJ2xjRsYtqXl5qWo",
+          "component": "HtmlEmbed",
+          "label": "Root Style",
+          "children": []
+        }
+      ],
+      [
+        "pHc9gwKybTzMHeVqMro33",
+        {
+          "type": "instance",
+          "id": "pHc9gwKybTzMHeVqMro33",
+          "component": "HtmlEmbed",
+          "label": "QnA Script",
+          "children": []
+        }
+      ],
+      [
+        "43_lKzmcr7vtdOxEMcuJ9",
+        {
+          "type": "instance",
+          "id": "43_lKzmcr7vtdOxEMcuJ9",
+          "component": "ws:element",
+          "tag": "div",
+          "children": [
+            {
+              "type": "id",
+              "value": "VEOjiAkgmGhk6WttyjWqY"
+            }
+          ]
+        }
+      ],
+      [
+        "VEOjiAkgmGhk6WttyjWqY",
+        {
+          "type": "instance",
+          "id": "VEOjiAkgmGhk6WttyjWqY",
+          "component": "ws:element",
+          "tag": "div",
+          "children": []
+        }
+      ],
+      [
+        "28cLsPWH9OAYhDlCPsS23",
+        {
+          "type": "instance",
+          "id": "28cLsPWH9OAYhDlCPsS23",
+          "component": "HtmlEmbed",
+          "label": "QnA CSS",
+          "children": []
+        }
+      ],
+      [
+        "NbqULkm64DexAxZNmOaI3",
+        {
+          "type": "instance",
+          "id": "NbqULkm64DexAxZNmOaI3",
+          "component": "ws:element",
+          "tag": "div",
+          "children": [
+            {
+              "type": "id",
+              "value": "PZQuLBrOdn-wRdFEVwSug"
+            }
+          ]
+        }
+      ],
+      [
+        "PZQuLBrOdn-wRdFEVwSug",
+        {
+          "type": "instance",
+          "id": "PZQuLBrOdn-wRdFEVwSug",
+          "component": "ws:element",
+          "tag": "div",
+          "children": []
+        }
+      ],
+      [
+        "qHrw_XMnqpWUGo8wUdcif",
+        {
+          "type": "instance",
+          "id": "qHrw_XMnqpWUGo8wUdcif",
+          "component": "HtmlEmbed",
+          "label": "QnA Script",
+          "children": []
+        }
+      ],
+      [
+        "nPLE1rSQXtfUEicQC6hHQ",
+        {
+          "type": "instance",
+          "id": "nPLE1rSQXtfUEicQC6hHQ",
+          "component": "HtmlEmbed",
+          "label": "QnA CSS",
           "children": []
         }
       ]
@@ -59777,21 +60474,6 @@
       }
     },
     {
-      "id": "491bc0c9bf3cd3e0cf6280a33958bec8826521a53fda0606811e2fdf8b7f0c5f",
-      "name": "Tanker-Regular_vPx8SYfLVoGYGM2zAfTx1.woff",
-      "description": null,
-      "projectId": "94456f8c-a847-426a-aec8-16de390bd3eb",
-      "size": 26360,
-      "type": "font",
-      "createdAt": "2025-06-09T09:45:26.686+00:00",
-      "format": "woff",
-      "meta": {
-        "family": "Tanker",
-        "style": "normal",
-        "weight": 400
-      }
-    },
-    {
       "id": "5abb5dbc4ed6e141454a3237382b236cb3c9bb09d243cdedb9e5676c0fe2b929",
       "name": "Screenshot_2025-06-09_at_15.17.19_TDP3CA8b2pTflLXFxzO5v.png",
       "description": null,
@@ -59817,27 +60499,6 @@
       "meta": {
         "width": 650,
         "height": 570
-      }
-    },
-    {
-      "id": "673ed4786dc1e4a5df68dd0adf07ae3b9a91a01d56e543b854ae85bfb8721572",
-      "name": "Rubik-VariableFont_wght_rrlmmnwM8xol83_Rm9VjL.ttf",
-      "description": null,
-      "projectId": "94456f8c-a847-426a-aec8-16de390bd3eb",
-      "size": 353768,
-      "type": "font",
-      "createdAt": "2025-06-08T20:28:52.745+00:00",
-      "format": "ttf",
-      "meta": {
-        "family": "Rubik",
-        "variationAxes": {
-          "wght": {
-            "name": "Weight",
-            "min": 300,
-            "default": 300,
-            "max": 900
-          }
-        }
       }
     },
     {

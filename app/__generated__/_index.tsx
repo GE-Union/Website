@@ -11,7 +11,7 @@ import { Tooltip as Tooltip, TooltipTrigger as TooltipTrigger, TooltipContent as
 
       export const projectId = "94456f8c-a847-426a-aec8-16de390bd3eb";
 
-      export const lastPublished = "2025-06-23T17:47:29.815Z";
+      export const lastPublished = "2025-06-25T01:14:12.808Z";
 
       export const siteName = "GE Union";
 
@@ -22,7 +22,7 @@ import { Tooltip as Tooltip, TooltipTrigger as TooltipTrigger, TooltipContent as
 
       // Font assets on current page (can be preloaded)
       export const pageFontAssets: string[] =
-        ["Tanker-Regular_vPx8SYfLVoGYGM2zAfTx1.woff","Rubik-VariableFont_wght_rrlmmnwM8xol83_Rm9VjL.ttf"]
+        []
 
       export const pageBackgroundImageAssets: string[] =
         []
@@ -39,7 +39,7 @@ import { Tooltip as Tooltip, TooltipTrigger as TooltipTrigger, TooltipContent as
 return <Body
 className={`w-body cdzo1k7 c1lzvaoj cm1ds2c c1qux398 c1p2ptee`}>
 <HtmlEmbed
-code={"<style>\n  h1{\n    font-family: Tanker;\n    font-weight: 500;\n    font-size: 5em;\n    color: var(--background);\n    line-height: 1;\n    margin: 0;\n  }\n  h2{\n    font-weight: 600;\n    font-size: 36px;\n    line-height: 1;\n    margin: 0;\n  }\n  p{\n    margin: 0;\n  }\n  \n  .icon-background{\n    background-color: var(--back-red-1);\n    z-index: 1;\n    overflow: hidden;\n    position: relative;\n  }\n  .icon-background::before{\n    content: \"\";\n    position: absolute;\n    width: 200%; height: 200%;\n    top: -50%; left: -50%;\n    background-image: url('/assets/icon-background_RyiWP8CNKOfskpwMp_P8Y.svg?width=1080&quality=80&format=auto');\n    background-size: 200px 115.4734411085px;\n    background-repeat: repeat;\n    animation: scrollBg 20s linear infinite;\n    z-index: -1;\n    opacity: var(--icon-background-opacity, 3%); mix-blend-mode: luminosity;\n    filter: blur(2px)\n  }\n  \n  .home-top::after{\n    position: absolute;\n    content: \"\";\n    width: 100%;\n    height: 250px;\n    background: linear-gradient(180deg, hsl(from var(--back-red-1) h s l / 0.65) 15%, hsl(from var(--back-red-1) h s l / 0) 100%);\n    z-index: -1;\n  }\n\n  @keyframes scrollBg {\n      0% {\n        background-position: 0 0;\n      }\n      100% {\n        background-position: -200px 115.4734411085px;\n      }\n    }\n\n  .home-top-card:hover .home-top-card-title-icon{\n    width: 38px;\n    padding-left: 3px;\n  }\n\n  @media only screen and (max-width: 767px) {\n    h1{\n      font-size: 4em;\n    }\n    h2{\n      font-size: 32px;\n    }\n  }\n</style>"}
+code={"<style>\n@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300..900&display=swap');\n@import url('https://api.fontshare.com/v2/css?f[]=tanker@400&amp;display=swap');\n  \n  h1{\n    font-family: 'Tanker';\n    font-weight: 500;\n    font-size: 5em;\n    color: var(--background);\n    line-height: 1;\n    margin: 0;\n  }\n  h2{\n    font-weight: 600;\n    font-size: 36px;\n    line-height: 1;\n    margin: 0;\n  }\n  p{\n    margin: 0;\n  }\n  \n  .icon-background{\n    background-color: var(--back-red-1);\n    z-index: 1;\n    overflow: hidden;\n    position: relative;\n  }\n  .icon-background::before{\n    content: \"\";\n    position: absolute;\n    width: 200%; height: 200%;\n    top: -50%; left: -50%;\n    background-image: url('/assets/icon-background_RyiWP8CNKOfskpwMp_P8Y.svg?width=1080&quality=80&format=auto');\n    background-size: 200px 115.4734411085px;\n    background-repeat: repeat;\n    animation: scrollBg 20s linear infinite;\n    z-index: -1;\n    opacity: var(--icon-background-opacity, 3%); mix-blend-mode: luminosity;\n    filter: blur(2px)\n  }\n  \n  .home-top::after{\n    position: absolute;\n    content: \"\";\n    width: 100%;\n    height: 250px;\n    background: linear-gradient(180deg, hsl(from var(--back-red-1) h s l / 0.65) 15%, hsl(from var(--back-red-1) h s l / 0) 100%);\n    z-index: -1;\n  }\n\n  @keyframes scrollBg {\n      0% {\n        background-position: 0 0;\n      }\n      100% {\n        background-position: -200px 115.4734411085px;\n      }\n    }\n\n  .home-top-card:hover .home-top-card-title-icon{\n    width: 38px;\n    padding-left: 3px;\n  }\n\n  @media only screen and (max-width: 767px) {\n    h1{\n      font-size: 4em;\n    }\n    h2{\n      font-size: 32px;\n    }\n  }\n</style>"}
 executeScriptOnCanvas={true}
 className={`w-html-embed`} />
 <Box
@@ -170,7 +170,7 @@ className={`w-element cyoo8jj`}>
 {"GE Union"}
 </h1>
 <Text
-className={`w-text cg3nt0s c74dsfz czgmbqe cyoo8jj c1wwlxnr cje5w08 c1bck0pu c16hxlzn c1c73s0v c7u4ssh`}>
+className={`w-text cg3nt0s c74dsfz czgmbqe cyoo8jj c1wwlxnr cje5w08 cimns5a c1bck0pu c16hxlzn c1c73s0v c7u4ssh`}>
 {"Group of "}
 <Bold
 className={`w-bold-text`}>
@@ -230,9 +230,10 @@ className={`w-image cnkevhm c1oqdnpz cpc2g7h c1kppqxz c1w0yra6 c1lxqyue c1bblaxa
 <Box
 className={`w-box ck11ylk c767uka c1dohq8s c102e7b2 cvu8o32 c1p5610w crsc1f9 c1c7zter c5xw8br cbg59jt`}>
 <Box
-className={`w-box cwthfpg c5sx8jk c12zhvo cxa4mkp ccoo3t2 cd3toq c17nm8vt c1xymrvd c8yo8yx cu8nwxp cfefvni`}>
+id={"mini-calendar-back"}
+className={`w-box cwthfpg catlkx8 c12zhvo cxa4mkp ccoo3t2 cd3toq c17nm8vt c1xymrvd c8yo8yx cu8nwxp cfefvni c1jubil0 c18lspnc codsd31 c16er72m c1qt5xo2 crrwaeo`}>
 <HtmlEmbed
-code={"<style>\n  .calendar-container {\n    width: 100%;\n    padding: 20px;\n  }\n  .calendar-container * {\n    cursor: pointer;\n  }\n  .month-header {\n    text-align: center;\n    font-size: 1em;\n    margin-bottom: 10px;\n    font-weight: 600;\n  }\n  .datepicker-calendar {\n    display: grid;\n    grid-template-columns: repeat(7, 1fr);\n    gap: 7px;\n    text-align: center;\n  }\n  .day {\n    font-size: 0.9em;\n    font-weight: 600;\n  }\n  .date {\n    border: none;\n    border-radius: 10px;\n    aspect-ratio: 1;\n    background: hsl(from var(--back-grey-1) h s calc(l*0.99));\n    font-size: 23px;\n    font-weight: 600;\n    color: var(--front-3)\n  }\n  .faded {\n    opacity: 0.3;\n  }\n  .current-day {\n    background-color: var(--back-red-1);\n    color: white;\n    \n  }\n</style>\n\n<div class=\"calendar-container\">\n  <div class=\"month-header\" id=\"monthHeader\">Loading...</div>\n  <div class=\"datepicker-calendar\" id=\"calendar\"></div>\n</div>\n\n<script>\n  document.addEventListener('DOMContentLoaded', () => {\n    requestAnimationFrame(() => {\n      (function () {\n        const today = new Date();\n        const currentYear = today.getFullYear();\n        const currentMonth = today.getMonth(); // 0-indexed\n        const currentDate = today.getDate();\n      \n        const monthNames = [\n          \"January\", \"February\", \"March\", \"April\", \"May\", \"June\",\n          \"July\", \"August\", \"September\", \"October\", \"November\", \"December\"\n        ];\n      \n        document.getElementById(\"monthHeader\").textContent = `${monthNames[currentMonth]} ${currentYear}`;\n      \n        const calendar = document.getElementById(\"calendar\");\n      \n        const daysOfWeek = [\"Mo\", \"Tu\", \"We\", \"Th\", \"Fr\", \"Sa\", \"Su\"];\n        daysOfWeek.forEach(day => {\n          const span = document.createElement(\"span\");\n          span.className = \"day\";\n          span.textContent = day;\n          calendar.appendChild(span);\n        });\n      \n        const firstDay = new Date(currentYear, currentMonth, 1);\n        const startDay = (firstDay.getDay() + 6) % 7;\n      \n        const daysInMonth = new Date(currentYear, currentMonth + 1, 0).getDate();\n        const daysInPrevMonth = new Date(currentYear, currentMonth, 0).getDate();\n      \n        for (let i = startDay - 1; i >= 0; i--) {\n          const btn = document.createElement(\"button\");\n          btn.className = \"date faded\";\n          btn.textContent = daysInPrevMonth - i;\n          calendar.appendChild(btn);\n        }\n      \n        for (let i = 1; i <= daysInMonth; i++) {\n          const btn = document.createElement(\"button\");\n          btn.className = \"date\";\n          btn.textContent = i;\n          if (i === currentDate) {\n            btn.classList.add(\"current-day\");\n          }\n          calendar.appendChild(btn);\n        }\n      \n        const totalCells = startDay + daysInMonth;\n        const nextDays = (7 - (totalCells % 7)) % 7;\n        for (let i = 1; i <= nextDays; i++) {\n          const btn = document.createElement(\"button\");\n          btn.className = \"date faded\";\n          btn.textContent = i;\n          calendar.appendChild(btn);\n        }\n      })();\n    });\n  });\n</script>\n\n\n\n"}
+code={"<style>\n  .calendar-container {\n    width: 100%;\n    padding: 20px;\n  }\n  .calendar-container * {\n    cursor: pointer;\n  }\n  .month-header {\n    text-align: center;\n    font-size: 1em;\n    margin-bottom: 10px;\n    font-weight: 600;\n  }\n  .datepicker-calendar {\n    display: grid;\n    grid-template-columns: repeat(7, 1fr);\n    gap: 7px;\n    text-align: center;\n  }\n  .day {\n    font-size: 0.9em;\n    font-weight: 600;\n  }\n  .date {\n    border: none;\n    border-radius: 10px;\n    aspect-ratio: 1;\n    background: hsl(from var(--back-grey-1) h s calc(l*0.99));\n    font-size: 23px;\n    font-weight: 600;\n    color: var(--front-3)\n  }\n  .faded {\n    opacity: 0.3;\n  }\n  .current-day {\n    background-color: var(--back-red-1);\n    color: white;\n    \n  }\n</style>\n\n<div class=\"calendar-container\">\n  <div class=\"month-header\" id=\"monthHeader\"></div>\n  <div class=\"datepicker-calendar\" id=\"calendar\"></div>\n</div>\n\n<script>\n  document.addEventListener('DOMContentLoaded', () => {\n    requestAnimationFrame(() => {\n      setTimeout(function() {\n        const today = new Date();\n        const currentYear = today.getFullYear();\n        const currentMonth = today.getMonth(); // 0-indexed\n        const currentDate = today.getDate();\n      \n        const monthNames = [\n          \"January\", \"February\", \"March\", \"April\", \"May\", \"June\",\n          \"July\", \"August\", \"September\", \"October\", \"November\", \"December\"\n        ];\n      \n        document.getElementById(\"monthHeader\").textContent = `${monthNames[currentMonth]} ${currentYear}`;\n      \n        const calendar = document.getElementById(\"calendar\");\n      \n        const daysOfWeek = [\"Mo\", \"Tu\", \"We\", \"Th\", \"Fr\", \"Sa\", \"Su\"];\n        daysOfWeek.forEach(day => {\n          const span = document.createElement(\"span\");\n          span.className = \"day\";\n          span.textContent = day;\n          calendar.appendChild(span);\n        });\n      \n        const firstDay = new Date(currentYear, currentMonth, 1);\n        const startDay = (firstDay.getDay() + 6) % 7;\n      \n        const daysInMonth = new Date(currentYear, currentMonth + 1, 0).getDate();\n        const daysInPrevMonth = new Date(currentYear, currentMonth, 0).getDate();\n      \n        for (let i = startDay - 1; i >= 0; i--) {\n          const btn = document.createElement(\"button\");\n          btn.className = \"date faded\";\n          btn.textContent = daysInPrevMonth - i;\n          calendar.appendChild(btn);\n        }\n      \n        for (let i = 1; i <= daysInMonth; i++) {\n          const btn = document.createElement(\"button\");\n          btn.className = \"date\";\n          btn.textContent = i;\n          if (i === currentDate) {\n            btn.classList.add(\"current-day\");\n          }\n          calendar.appendChild(btn);\n        }\n      \n        const totalCells = startDay + daysInMonth;\n        const nextDays = (7 - (totalCells % 7)) % 7;\n        for (let i = 1; i <= nextDays; i++) {\n          const btn = document.createElement(\"button\");\n          btn.className = \"date faded\";\n          btn.textContent = i;\n          calendar.appendChild(btn);\n        }\n\n        document.getElementById('mini-calendar-back').style.opacity = \"1\"; \n      }, 50)\n    });\n  });\n</script>\n\n\n\n"}
 executeScriptOnCanvas={true}
 className={`w-html-embed c1k74xht`} />
 </Box>
@@ -308,6 +309,23 @@ className={`w-element cy7nrqp c8l261o cdhy4s8 c5sx8jk c1wauoq4 c1w0yra6 cpq2gwm 
 </Box>
 </Box>
 </Box>
+<div
+className={`w-element ci03eyw cu8ogtt c1v4vkm5 ciu9gta c8l261o c1wmsojl c3brmnq`}>
+<div
+className={`w-element cy2b8wa cd3toq c17nm8vt c1xymrvd c8yo8yx c1o3ocm4 c1q7at0i cjpac5y c1tmykg6 c156xldz codsd31 c16er72m c1qt5xo2 ci03eyw cu8ogtt c183x3a4 cs4zrmt chjepeg ct6fd0n c19raolx ct5uc8i ${"icon-background\n"}`}>
+<div
+className={`w-element c1o49hcl ci03eyw c1dgy9if c1a10q77 c1v4vkm5 c6d6cak c5dclxw c7tvdys cgiudld c1xj8ubg`}>
+<div
+className={`w-element cx80e38 c9iyznh c1xsuntc cez05na cr2fx1c c1ydphkn cpy5f0q c119ibn4 cqmovsy`} />
+<h2
+className={`w-element cx80e38 c9iyznh c1lt64h c1jzivuf chpvhw5 c125l1v1 c1k74xht`}>
+{"Coming Up"}
+</h2>
+</div>
+<div
+className={`w-element ck11ylk c767uka cxn45mh c134tzij c11cmzdu`} />
+</div>
+</div>
 <Box
 className={`w-box ci03eyw cu8ogtt c9py6bs c3brmnq cqaj6f4 c16lfnyl c1v4vkm5`}>
 <h2

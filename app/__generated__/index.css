@@ -1,9 +1,4 @@
-@font-face {
-  font-family: Tanker; font-style: normal; font-weight: 400; font-display: swap; src: url("/assets/Tanker-Regular_vPx8SYfLVoGYGM2zAfTx1.woff") format("woff");
-}
-@font-face {
-  font-family: Rubik; font-style: normal; font-weight: 300 900; font-display: swap; src: url("/assets/Rubik-VariableFont_wght_rrlmmnwM8xol83_Rm9VjL.ttf") format("truetype");
-}@layer presets {
+@layer presets {
   :root {
     display: grid;
     min-height: 100%;
@@ -515,6 +510,9 @@
   .cje5w08 {
     margin-bottom: 15px
   }
+  .cimns5a {
+    font-family: Rubik, Arial, Roboto, sans-serif
+  }
   .c9py6bs {
     padding-top: 60px
   }
@@ -746,6 +744,9 @@
   .cwthfpg {
     width: calc(100% + 20px)
   }
+  .catlkx8 {
+    height: min-content
+  }
   .c12zhvo {
     margin-top: 20px
   }
@@ -760,6 +761,15 @@
   }
   .cfefvni {
     min-width: 360px
+  }
+  .c1jubil0 {
+    transition-property: opacity
+  }
+  .c18lspnc {
+    transition-duration: 300ms
+  }
+  .crrwaeo {
+    opacity: 0
   }
   .cwawr8f {
     width: var(--reel-width)
@@ -1548,6 +1558,15 @@
   }
   .c1lz099s {
     z-index: 11
+  }
+  .c1duohc3 {
+    margin-bottom: 100px
+  }
+  .c1xawg3x {
+    margin-left: 40px
+  }
+  .c1j8f4ro {
+    margin-right: 40px
   }
 }
 @media all and (max-width: 991px) {
