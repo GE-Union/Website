@@ -11,7 +11,7 @@ import { Tooltip as Tooltip, TooltipTrigger as TooltipTrigger, TooltipContent as
 
       export const projectId = "94456f8c-a847-426a-aec8-16de390bd3eb";
 
-      export const lastPublished = "2025-08-27T18:24:26.813Z";
+      export const lastPublished = "2025-08-27T21:36:58.191Z";
 
       export const siteName = "GE Union";
 
@@ -213,7 +213,7 @@ className={`w-element chpvhw5 c1br4k3t c1vn0xiq c1fzztwi cz03vb2 cgjpuuk`}>
 </Link>
 <span
 className={`w-element`}>
-{"). Founded by H.C. Ørsted 1829 in, not only does it have great facilities and amazing teachers (like Steeven), but DTU has been heavly involved in inovations in fields such as Biotechnology, Materials Science or even inventing the modern wind turbine. The main campus situated in the north of Copenhagen in a rich city called Lyngby, (if the public transports actually work), it is about a 40-50min train/bus ride, 20min drive or about a 3h walk from the center."}
+{"). Founded by H.C. Ørsted 1829 in, not only does it have great facilities and amazing teachers (like Steeven), but DTU has been heavly involved in inovations in fields such as Biotechnology, Materials Science or even inventing the modern wind turbine (wow!). The main campus situated in the north of Copenhagen in a rich city called Lyngby, (if the public transports actually work), it is about a 40-50min train/bus ride, 20min drive or about a 3h walk from the center."}
 </span>
 </span>
 </p>
@@ -231,7 +231,63 @@ height={800}
 className={`w-image cbb1cch ct260lj c4gyptv c1p1mrll cvuh4zx czyi9o9 crgfw76 c1mwgji1 c1yp8zjv`} />
 <h2
 className={`w-element`}>
-{"Living In Denmark "}
+{"What the hell is PF?"}
+</h2>
+<div
+className={`w-element ci03eyw catlkx8 c1v4vkm5 c1prl6qi c15b9v9z c11mvqgx cfml0nf`}>
+<p
+className={`w-element catlkx8`}>
+<Link
+href={"https://www.pf.dk/en"}
+className={`w-element cz03vb2 cz0xufp c9st17j c11jzf7t c1335tz cqiqnof c1t9afk7`}>
+{"PF"}
+</Link>
+<span
+className={`w-element`}>
+{" is basically the mother of all DTU student organisations. As a general rule, If an organisation is student-led, it's surely somehow a part of PF (except for "}
+</span>
+<Link
+href={"https://www.pf.dk/en"}
+className={`w-element cz03vb2 cz0xufp c9st17j c11jzf7t c1335tz cqiqnof c1t9afk7`}>
+{"Nul-Kryds"}
+</Link>
+<span
+className={`w-element`}>
+{" for some reason?). This is mainly because PF predates the Danish constitution and is almost as old as DTU itself (founded in 1845). As a piece of DTU admin lore, PF and Nul-kryds are the 2 only student oganisations that DTU recognises and gives funding to. All other organisations need to receive their funds from PF."}
+</span>
+</p>
+<div
+className={`w-element c1dohq8s cc96m4b ci03eyw cq67jvo c1bti4b5 c18d5cyi c1qkexhc cycv0tm`}>
+<Image
+src={"/assets/pf_v1LIcbFFW8g4G_d6CCya4.png"}
+width={512}
+height={512}
+alt={""}
+className={`w-image c1yssf23 c58kvwj c7898it c8ao5vx c1e930on`} />
+</div>
+</div>
+<div
+className={`w-element`}>
+<h3
+className={`w-element`}>
+{"S-Huset"}
+</h3>
+<p
+className={`w-element`}>
+{"You might have already been to S-Huset (student house) for a beer or maybe for a sandwich at the café; if you have, you can thank PF for that. Unlike the 4 DTU-sponsored \"Friday Bars\" (Hegnet, Diamenten, Ether, Diagonalen) that are open from 14 to 21 on Fridays, S-Huset is independent and stays open till 1 on weekdays and 3 am on Fridays. "}
+</p>
+</div>
+</div>
+<div
+className={`w-element ccxbyd9 ctslah9 cj7bt5u c4qqqhz c1p34zf0 c1dsvsvh`}>
+<Image
+src={"/assets/denmark-denmark-svgrepo-com_2tKbgjDykJqfBmTwPfbFA.svg"}
+width={800}
+height={800}
+className={`w-image cbb1cch ct260lj c4gyptv c1p1mrll cvuh4zx czyi9o9 crgfw76 c1mwgji1 c1yp8zjv`} />
+<h2
+className={`w-element`}>
+{"What the hell is IDA?"}
 </h2>
 <div
 className={`w-element ci03eyw catlkx8 c1v4vkm5 c1prl6qi c15b9v9z c11mvqgx cfml0nf`}>
@@ -261,24 +317,6 @@ className={`w-element`}>
 <br />
 {""}
 {"Link to DTU's page cause its actually pretty good."}
-</p>
-</div>
-<div
-className={`w-element ccxbyd9 ctslah9 cj7bt5u c4qqqhz c1p34zf0 c1dsvsvh`}>
-<h2
-className={`w-element`}>
-{"Application Process "}
-</h2>
-<p
-className={`w-element`}>
-{"**Nulla sunt dolor cillum sit ipsum voluptate exercitation nisi consequat veniam esse est nostrud sunt duis. Culpa laborum aliqua veniam ut ullamco sint proident ad eu deserunt culpa exercitation enim nostrud. Nisi laborum velit ad laborum ullamco tempor nulla eiusmod. Qui est pariatur quis."}
-{""}
-<br />
-{""}
-{""}
-<br />
-{""}
-{"Enim magna ad sit reprehenderit dolore velit aliquip amet sit et quis minim cupidatat anim sint. Consectetur fugiat in dolor aute sit aliqua aute. Duis irure sit deserunt ea voluptate mollit qui deserunt ad irure eiusmod excepteur irure laboris. Pariatur commodo incididunt et id cupidatat sit qui in."}
 </p>
 </div>
 </Body>

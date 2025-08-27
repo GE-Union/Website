@@ -11,7 +11,7 @@ import { Tooltip as Tooltip, TooltipTrigger as TooltipTrigger, TooltipContent as
 
       export const projectId = "94456f8c-a847-426a-aec8-16de390bd3eb";
 
-      export const lastPublished = "2025-08-27T18:24:26.813Z";
+      export const lastPublished = "2025-08-27T21:36:58.191Z";
 
       export const siteName = "GE Union";
 
@@ -376,21 +376,24 @@ className={`w-box c58kvwj c9g6b5g c13gcvvn c1oqdnpz c1ckfy1d c1qp0aqz c1xos25p c
 className={`w-element cwawr8f ci03eyw cn8b0jh cywh3a cu8ogtt c1qqrgor`}>
 <Image
 src={"https://github.com/GE-Union/WebsiteContent/blob/main/images/reel-previews/reel1.png?raw=true"}
-optimize={true}
+optimize={false}
 loading={"lazy"}
 className={`w-image cd3toq c17nm8vt c1xymrvd c8yo8yx c1dohq8s c2z8j1e c1a9mgdi c117si4 c74spxi c1i89xtz c1k74xht c1wuzpx5`} />
+<HtmlEmbed
+code={"<img src=\"https://github.com/GE-Union/WebsiteContent/blob/main/images/reel-previews/reel1.png?raw=true\">"}
+className={`w-html-embed cd3toq c17nm8vt c1xymrvd c8yo8yx c1dohq8s c2z8j1e c1a9mgdi c117si4 c74spxi c1i89xtz c1k74xht c1wuzpx5`} />
 </div>
 <div
 className={`w-element cwawr8f ci03eyw cu8ogtt cn8b0jh cywh3a cy6xfzs`}>
 <Image
 src={"https://github.com/GE-Union/WebsiteContent/blob/main/images/reel-previews/reel2.png?raw=true"}
 loading={"lazy"}
-optimize={true}
+optimize={false}
 className={`w-image cd3toq c17nm8vt c1xymrvd c8yo8yx c1dohq8s c2z8j1e c1a9mgdi c117si4 c74spxi c1i89xtz c1k74xht c1wuzpx5`} />
 <Image
 src={"https://github.com/GE-Union/WebsiteContent/blob/main/images/reel-previews/reel3.png?raw=true"}
 loading={"lazy"}
-optimize={true}
+optimize={false}
 className={`w-image cd3toq c17nm8vt c1xymrvd c8yo8yx c1dohq8s c2z8j1e c1a9mgdi c117si4 c74spxi c1i89xtz c1k74xht c1wuzpx5`} />
 </div>
 <div
@@ -398,19 +401,19 @@ className={`w-element cwawr8f ci03eyw cn8b0jh cywh3a cu8ogtt c1rvt1lv`}>
 <Image
 src={"https://github.com/GE-Union/WebsiteContent/blob/main/images/reel-previews/reel4.png?raw=true"}
 loading={"lazy"}
-optimize={true}
+optimize={false}
 className={`w-image cd3toq c17nm8vt c1xymrvd c8yo8yx c1dohq8s c2z8j1e c1a9mgdi c117si4 c74spxi c1i89xtz c1k74xht c1wuzpx5`} />
 <Image
 src={"https://github.com/GE-Union/WebsiteContent/blob/main/images/reel-previews/reel5.png?raw=true"}
 loading={"lazy"}
-optimize={true}
+optimize={false}
 className={`w-image cd3toq c17nm8vt c1xymrvd c8yo8yx c1dohq8s c2z8j1e c1a9mgdi c117si4 c74spxi c1i89xtz c1k74xht c1wuzpx5`} />
 </div>
 <div
 className={`w-element cwawr8f ci03eyw cu8ogtt cn8b0jh cywh3a cy6xfzs`}>
 <Image
 src={"https://github.com/GE-Union/WebsiteContent/blob/main/images/reel-previews/reel6.png?raw=true"}
-optimize={true}
+optimize={false}
 loading={"lazy"}
 className={`w-image cd3toq c17nm8vt c1xymrvd c8yo8yx c1dohq8s c2z8j1e c1a9mgdi c117si4 c74spxi c1i89xtz c1k74xht c1wuzpx5`} />
 </div>

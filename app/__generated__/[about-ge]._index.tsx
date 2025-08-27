@@ -11,7 +11,7 @@ import { Tooltip as Tooltip, TooltipTrigger as TooltipTrigger, TooltipContent as
 
       export const projectId = "94456f8c-a847-426a-aec8-16de390bd3eb";
 
-      export const lastPublished = "2025-08-27T18:24:26.813Z";
+      export const lastPublished = "2025-08-27T21:36:58.191Z";
 
       export const siteName = "GE Union";
 
@@ -222,21 +222,7 @@ className={`w-element c1vn0xiq cr2ujrk c8py5un cycv0tm cf92qlo c1p20m63`}>
 </h2>
 <p
 className={`w-element`}>
-{"**Dolor reprehenderit fugiat aliqua et dolor excepteur est culpa qui dolore ut eiusmod Lorem esse eu. Dolore aliquip amet anim commodo commodo elit. Deserunt aliqua excepteur exercitation veniam amet ut occaecat amet id commodo do culpa cillum pariatur sunt. Reprehenderit consectetur ex velit incididunt."}
-{""}
-<br />
-{""}
-{""}
-<br />
-{""}
-{"Nulla sunt dolor cillum sit ipsum voluptate exercitation nisi consequat veniam esse est nostrud sunt duis. Culpa laborum aliqua veniam ut ullamco sint proident ad eu deserunt culpa exercitation enim nostrud. Nisi laborum velit ad laborum ullamco tempor nulla eiusmod. Qui est pariatur quis."}
-{""}
-<br />
-{""}
-{""}
-<br />
-{""}
-{"Elit aliquip ullamco qui irure sit consequat est ullamco Lorem deserunt ex eu. Sit sit non amet irure esse veniam qui tempor veniam culpa dolor cupidatat. Labore Lorem sit est incididunt ut veniam. Sunt magna id aliqua adipisicing ut consectetur cupidatat occaecat nostrud. Qui quis anim anim consequat ullamco qui deserunt consequat cupidatat nostrud dolor."}
+{"The polytechnical foundation is basically all the main general subjects every GE student will have to take, which include Chemistry, Bioengineering, Physics, Programming, Statistics, and Mathematics. Some are more of a pain than others, but the main point is to bring all students to a general standard across all these base subjects. "}
 </p>
 </div>
 <div
@@ -327,25 +313,24 @@ className={`w-element`}>
 className={`w-element ccxbyd9 ctslah9 cj7bt5u c4qqqhz c1p34zf0 c1dsvsvh`}>
 <h2
 className={`w-element`}>
-{"Application Process "}
+{"DTU Course Analyzer"}
 </h2>
 <p
 className={`w-element`}>
-{"**Nulla sunt dolor cillum sit ipsum voluptate exercitation nisi consequat veniam esse est nostrud sunt duis. Culpa laborum aliqua veniam ut ullamco sint proident ad eu deserunt culpa exercitation enim nostrud. Nisi laborum velit ad laborum ullamco tempor nulla eiusmod. Qui est pariatur quis."}
-{""}
-<br />
-{""}
-{""}
-<br />
-{""}
-{"Enim magna ad sit reprehenderit dolore velit aliquip amet sit et quis minim cupidatat anim sint. Consectetur fugiat in dolor aute sit aliqua aute. Duis irure sit deserunt ea voluptate mollit qui deserunt ad irure eiusmod excepteur irure laboris. Pariatur commodo incididunt et id cupidatat sit qui in."}
+<span
+className={`w-element`}>
+{"If you wish to learn more about different courses and what previous students thought of them, you can check out "}
+</span>
+<Link_1
+href={"https://dtucourseanalyzer.pythonanywhere.com/"}
+className={`w-element cz03vb2 czvb4c7 ck11ylk c767uka c1sy2opm`}>
+{"DTU Course Analyzer"}
+</Link_1>
+<span
+className={`w-element`}>
+{". It is a student made website that gives a lot of info about courses like pass rate, average grades but most importantly student opinions on lecturers :D (very important)"}
+</span>
 </p>
-</div>
-<div
-className={`w-element ccxbyd9 ctslah9 ci03eyw cu8ogtt c1qpyqes`}>
-<div
-id={"qna-container"}
-className={`w-element cbeiaob c1duohc3 c1gpt9gq c1xawg3x c1j8f4ro c4qqqhz c2z8j1e`} />
 </div>
 </Body>
 }
