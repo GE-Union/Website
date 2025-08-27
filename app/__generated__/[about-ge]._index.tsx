@@ -4,14 +4,14 @@
 
       import { Fragment, useState } from "react";
       import { useResource, useVariableState } from "@webstudio-is/react-sdk/runtime";
-      import { Body as Body, Link as Link } from "@webstudio-is/sdk-components-react-router";
-import { Box as Box, Text as Text, Image as Image, Button as Button, HtmlEmbed as HtmlEmbed } from "@webstudio-is/sdk-components-react";
+      import { Body as Body, Link as Link, Link as Link_1 } from "@webstudio-is/sdk-components-react-router";
+import { Box as Box, Text as Text, HtmlEmbed as HtmlEmbed, Image as Image, Button as Button } from "@webstudio-is/sdk-components-react";
 import { Tooltip as Tooltip, TooltipTrigger as TooltipTrigger, TooltipContent as TooltipContent, Dialog as Dialog, DialogTrigger as DialogTrigger, DialogOverlay as DialogOverlay, DialogContent as DialogContent, DialogDescription as DialogDescription, DialogClose as DialogClose } from "@webstudio-is/sdk-components-react-radix";
 
 
       export const projectId = "94456f8c-a847-426a-aec8-16de390bd3eb";
 
-      export const lastPublished = "2025-07-02T21:00:45.585Z";
+      export const lastPublished = "2025-08-27T17:10:36.903Z";
 
       export const siteName = "GE Union";
 
@@ -31,9 +31,9 @@ import { Tooltip as Tooltip, TooltipTrigger as TooltipTrigger, TooltipContent as
 
       const Page = (_props: { system: any; }) => {
 return <Body
-className={`w-element c1lzvaoj c1qux398`}>
+className={`w-element c1lzvaoj c1qux398 ci03eyw cu8ogtt c1qpyqes`}>
 <HtmlEmbed
-code={"<style>\n@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300..900&display=swap');\n@import url('https://api.fontshare.com/v2/css?f[]=tanker@400&amp;display=swap');\n  \n  h1{\n    font-family: 'Tanker';\n    font-weight: 500;\n    font-size: 5em;\n    color: var(--background);\n    line-height: 1;\n    margin: 0;\n  }\n  h2{\n    font-weight: 600;\n    font-size: 36px;\n    line-height: 1;\n    margin: 0;\n  }\n  p{\n    margin: 0;\n  }\n  \n  .icon-background{\n    background-color: var(--back-red-1);\n    z-index: 1;\n    overflow: hidden;\n    position: relative;\n  }\n  .icon-background::before{\n    content: \"\";\n    position: absolute;\n    width: 200%; height: 200%;\n    top: -50%; left: -50%;\n    background-image: url('/assets/icon-background_RyiWP8CNKOfskpwMp_P8Y.svg?width=1080&quality=80&format=auto');\n    background-size: 200px 115.4734411085px;\n    background-repeat: repeat;\n    animation: scrollBg 20s linear infinite;\n    z-index: -1;\n    opacity: var(--icon-background-opacity, 3%); mix-blend-mode: luminosity;\n    filter: blur(2px)\n  }\n  \n  .home-top::after{\n    position: absolute;\n    content: \"\";\n    width: 100%;\n    height: 250px;\n    background: linear-gradient(180deg, hsl(from var(--back-red-1) h s l / 0.65) 15%, hsl(from var(--back-red-1) h s l / 0) 100%);\n    z-index: -1;\n  }\n\n  @keyframes scrollBg {\n      0% {\n        background-position: 0 0;\n      }\n      100% {\n        background-position: -200px 115.4734411085px;\n      }\n    }\n\n  .home-top-card:hover .home-top-card-title-icon{\n    width: 38px;\n    padding-left: 3px;\n  }\n\n  @media only screen and (max-width: 767px) {\n    h1{\n      font-size: 4em;\n    }\n    h2{\n      font-size: 32px;\n    }\n  }\n</style>"}
+code={"<style>\n@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300..900&display=swap');\n@import url('https://api.fontshare.com/v2/css?f[]=tanker@400&amp;display=swap');\n  \n  h1{\n    font-family: 'Tanker';\n    font-weight: 500;\n    font-size: 5em;\n    color: var(--background);\n    line-height: 1;\n    margin: 0;\n  }\n  h2{\n    font-weight: 600;\n    font-size: 36px;\n    line-height: 1;\n    margin: 0;\n    margin-bottom: 0.5em;\n  }\n  p{\n    margin: 0;\n  }\n  \n  .icon-background{\n    background-color: var(--back-red-1);\n    z-index: 1;\n    overflow: hidden;\n    position: relative;\n  }\n  .icon-background::before{\n    content: \"\";\n    position: absolute;\n    width: 200%; height: 200%;\n    top: -50%; left: -50%;\n    background-image: url('/assets/icon-background_RyiWP8CNKOfskpwMp_P8Y.svg?width=1080&quality=80&format=auto');\n    background-size: 200px 115.4734411085px;\n    background-repeat: repeat;\n    animation: scrollBg 20s linear infinite;\n    z-index: -1;\n    opacity: var(--icon-background-opacity, 3%); mix-blend-mode: luminosity;\n    filter: blur(2px)\n  }\n  \n  .home-top::after{\n    position: absolute;\n    content: \"\";\n    width: 100%;\n    height: 250px;\n    background: linear-gradient(180deg, hsl(from var(--back-red-1) h s l / 0.65) 15%, hsl(from var(--back-red-1) h s l / 0) 100%);\n    z-index: -1;\n  }\n\n  @keyframes scrollBg {\n      0% {\n        background-position: 0 0;\n      }\n      100% {\n        background-position: -200px 115.4734411085px;\n      }\n    }\n\n  .home-top-card:hover .home-top-card-title-icon{\n    width: 38px;\n    padding-left: 3px;\n  }\n\n  @media only screen and (max-width: 767px) {\n    h1{\n      font-size: 4em;\n    }\n    h2{\n      font-size: 32px;\n    }\n  }\n</style>"}
 executeScriptOnCanvas={true}
 className={`w-html-embed`} />
 <HtmlEmbed
@@ -41,7 +41,7 @@ code={"<script>\n  if (typeof window.GE_QA_JSON_URL === 'undefined') {\n    wind
 executeScriptOnCanvas={true}
 className={`w-html-embed`} />
 <HtmlEmbed
-code={"<style>\n  .qna-question {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  cursor: pointer;\n  font-weight: 500;\n  padding: 18px 0;\n  line-height: 1em;\n}\n  \n.qna-arrow svg {\n  width: 20px; height: 20px\n}\n\n.qna-arrow {\n  display: block;\n  align-content: center;\n  transition: transform 0.2s ease;\n  height: 20px; width: 20px;\n  transform-origin: 50% 50%;\n  user-select: none; pointer-events: none;\n  color: var(--front-3);\n}\n\n.qna-arrow.open {\n  transform: rotate(180deg);\n}\n\n.qna-answer {\n  margin: 5px 0 20px 0;\n  padding-left: 10px;\n  display: none;\n  transition: height 0.5s ease;\n}\n\n#qna-container hr{\n  margin: 0 10px 0 10px;\n  border-width: 0.5px;\n  border-color: var(--front-3);\n  opacity: 0.3;\n}\n\n</style>"}
+code={"<style>\n  .qna-question {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  cursor: pointer;\n  font-weight: 500;\n  padding: 18px 0;\n  line-height: 1em;\n}\n  \n.qna-arrow svg {\n  width: 20px; height: 20px\n}\n\n.qna-arrow {\n  display: block;\n  align-content: center;\n  transition: transform 0.2s ease;\n  height: 20px; width: 20px;\n  transform-origin: 50% 50%;\n  user-select: none; pointer-events: none;\n  color: var(--front-3);\n}\n\n.qna-arrow.open {\n  transform: rotate(180deg);\n}\n\n.qna-answer {\n  margin: 5px 0 30px 0;\n  padding-left: 10px;\n  display: none;\n  transition: height 0.5s ease;\n}\n\n#qna-container hr{\n  margin: 0 10px 0 10px;\n  border-width: 0.5px;\n  border-color: var(--front-3);\n  opacity: 0.3;\n}\n\n</style>"}
 className={`w-html-embed`} />
 <Box
 className={`w-box cck00sw cd3toq c17nm8vt c1xymrvd c8yo8yx ci03eyw cu8ogtt cm1ds2c c1fxgukz c3q79or c1fhonxu cqlg791 cji7xkv c40iywk codsd31 c16er72m c1qt5xo2 c1uz2t7q c4psa79 c1ldi832 ${"icon-background home-top"}`}>
@@ -57,27 +57,36 @@ height={684}
 className={`w-image c1g1752z c1l3m6tn c1wjaqd0`} />
 </Link>
 <Box
-className={`w-box ci03eyw cavbteo c17p08f7 cy2vnym cgykfac c8chaf1 crymv6m ch588tu cd1c1x2 cgjpuuk co3wgvm cjdg5q7`}>
+className={`w-box ci03eyw c5zf3td c1bdekej cy2vnym cgykfac c8chaf1 crymv6m ch588tu cd1c1x2 cgjpuuk co3wgvm cjdg5q7`}>
 <Link
 href={"/"}
-className={`w-link c4qqqhz c1l00ka2 c8l261o c1ozmz5d c1ho4waj c1k74xht c1122adb c10pf28n c1w0lkxn ch9rsc5 c1et34yr c1tj415q`}>
+className={`w-link c4qqqhz c1l00ka2 c8l261o c1ozmz5d c1ho4waj c1k74xht c1122adb ch9rsc5 c10pf28n c1w0lkxn c1et34yr c1tj415q cycv0tm`}>
 {"Home"}
 </Link>
 <Link
 href={"/course-bank"}
-className={`w-link c4qqqhz c1l00ka2 c8l261o c1ozmz5d c1ho4waj c1k74xht c1122adb c10pf28n c1w0lkxn ch9rsc5 c1et34yr c1tj415q`}>
-{"Course Bank"}
+className={`w-link c4qqqhz c1l00ka2 c8l261o c1ozmz5d c1ho4waj c1k74xht c1122adb ch9rsc5 c10pf28n c1w0lkxn c1et34yr c1tj415q`}>
+<span
+className={`w-element cycv0tm`}>
+{"Course "}
+</span>
+{"Bank"}
 </Link>
 <Link
 href={"/calendar"}
-className={`w-link c4qqqhz c1l00ka2 c8l261o c1ozmz5d c1ho4waj c1k74xht c1122adb c10pf28n c1w0lkxn ch9rsc5 c1et34yr c1tj415q`}>
+className={`w-link c4qqqhz c1l00ka2 c8l261o c1ozmz5d c1ho4waj c1k74xht c1122adb ch9rsc5 c10pf28n c1w0lkxn c1et34yr c1tj415q`}>
 {"Calendar"}
+</Link>
+<Link
+href={"/introduction"}
+className={`w-link c4qqqhz c1l00ka2 c8l261o c1ozmz5d c1ho4waj c1k74xht c1122adb ch9rsc5 c10pf28n c1w0lkxn c1et34yr c1tj415q`}>
+{"Dashboard"}
 </Link>
 <Tooltip
 delayDuration={0}>
 <TooltipTrigger>
 <div
-className={`w-element c4qqqhz c1l00ka2 c8l261o c1ozmz5d c1ho4waj c1k74xht ch9rsc5 c1w0lkxn c1122adb c10pf28n cbahl6h c1tj415q`}>
+className={`w-element c4qqqhz c1l00ka2 c8l261o c1ozmz5d c1ho4waj c1k74xht c1122adb ch9rsc5 c10pf28n c1w0lkxn cbahl6h c1tj415q`}>
 {"About"}
 </div>
 </TooltipTrigger>
@@ -85,18 +94,24 @@ className={`w-element c4qqqhz c1l00ka2 c8l261o c1ozmz5d c1ho4waj c1k74xht ch9rsc
 className={`w-tooltip-content c5mlbae cm1ds2c c1fxgukz cdzo1k7 c1lp7lun c3ryv7d c1t11c95 c1kz25wt c1jbi97f crebcbz cfjpsss ci03eyw cu8ogtt c4bgnbx cj82r57 c14a5ioc cm4j335`}>
 <Link
 href={"/about-ge"}
-className={`w-link c4qqqhz c1l00ka2 c8l261o c8qj03j c1ho4waj c1k74xht c1122adb c10pf28n c1w0lkxn ch9rsc5 cz5lin5 c1tj415q`}>
+className={`w-link c4qqqhz c1l00ka2 c8l261o c8qj03j c1ho4waj c1k74xht c1122adb ch9rsc5 c10pf28n c1w0lkxn cz5lin5 c1tj415q`}>
 {"General Engineering"}
 </Link>
+<Link_1
+href={"/about-dtu"}
+className={`w-element c4qqqhz c1l00ka2 c8l261o c1ozmz5d c1ho4waj c1k74xht cz03vb2 cqo7rnh cz5lin5 c1tj415q`}>
+{"DTU"}
+</Link_1>
 <Link
 href={"/about-geu"}
-className={`w-link c4qqqhz c1l00ka2 c8l261o c1ozmz5d c1ho4waj c1k74xht c1122adb c10pf28n c1w0lkxn ch9rsc5 cz5lin5 c1tj415q`}>
+className={`w-link c4qqqhz c1l00ka2 c8l261o c1ozmz5d c1ho4waj c1k74xht c1122adb ch9rsc5 c10pf28n c1w0lkxn cz5lin5 c1tj415q`}>
 {"GE Union"}
 </Link>
 </TooltipContent>
 </Tooltip>
 </Box>
-<Dialog>
+<Dialog
+open={false}>
 <DialogTrigger>
 <Button
 className={`w-button cvuh4zx c1v4vkm5 c1bti4b5 c1jbi97f crebcbz cr2ujrk ciidiay c1kf82bd c7jsqgj ctcp1cq c1r8lktc c1t9gjz2 c7jkqej cn1fibt cnwk8w7 c10ybtws cdxgxee c1wmsojl co1yi26 c1vk95sq c12eb7ae`}>
@@ -141,9 +156,19 @@ className={`w-link c1sy2opm cr2ujrk c8l261o cy7nrqp c1ho4waj c1122adb c10pf28n c
 {"Calendar"}
 </Link>
 <Link
+href={"/introduction"}
+className={`w-link c1sy2opm cr2ujrk c8l261o cy7nrqp c1ho4waj c1122adb c10pf28n c1w0lkxn ch9rsc5 cz5lin5`}>
+{"Dashboard"}
+</Link>
+<Link
 href={"/about-geu"}
 className={`w-link c1sy2opm cr2ujrk c8l261o cy7nrqp c1ho4waj c1122adb c10pf28n c1w0lkxn ch9rsc5 cz5lin5`}>
 {"About GE"}
+</Link>
+<Link
+href={"/about-dtu"}
+className={`w-link c1sy2opm cr2ujrk c8l261o cy7nrqp c1ho4waj c1122adb c10pf28n c1w0lkxn ch9rsc5 cz5lin5`}>
+{"About DTU"}
 </Link>
 <Link
 href={"/about-geu"}
@@ -170,15 +195,157 @@ className={`w-element cyoo8jj cnurt1a c1wzvl6u`}>
 </h1>
 <Text
 className={`w-text cg3nt0s c74dsfz czgmbqe cyoo8jj c1wwlxnr cje5w08 c1bck0pu c16hxlzn c1c73s0v c7u4ssh`}>
-{"Everything you could ever wanna know about General Engineering."}
+{"Everything you need to know while you’re here"}
 </Text>
 </Box>
 </Box>
 <div
-className={`w-element c3q79or cqlg791 ci03eyw cu8ogtt c1qpyqes`}>
+className={`w-element ccxbyd9 ctslah9 cj7bt5u c4qqqhz c1p34zf0 c1dsvsvh`}>
+<h2
+className={`w-element`}>
+{"What is GE?"}
+</h2>
+<p
+className={`w-element`}>
+{"The Bachelor of Science in General Engineering at DTU is a three-year international programme that gives you a strong foundation in mathematics, physics, chemistry, and biotechnology. It teaches you to collaborate across disciplines and apply engineering skills to real-world challenges. Through practical design-build projects, you will develop problem-solving abilities and learn how to work effectively in diverse teams. Studying in an international environment with courses taught in English, you’ll gain the broad competences needed to become an innovative engineer ready to shape the future."}
+</p>
+</div>
+<div
+className={`w-element ccxbyd9 ctslah9 cj7bt5u c4qqqhz c1p34zf0 c1dsvsvh`}>
+<h2
+className={`w-element`}>
+{"Polytechnical Foundations "}
+<span
+className={`w-element c1vn0xiq cr2ujrk c8py5un cycv0tm cf92qlo c1p20m63`}>
+{"The Core Stuff"}
+</span>
+</h2>
+<p
+className={`w-element`}>
+{"**Dolor reprehenderit fugiat aliqua et dolor excepteur est culpa qui dolore ut eiusmod Lorem esse eu. Dolore aliquip amet anim commodo commodo elit. Deserunt aliqua excepteur exercitation veniam amet ut occaecat amet id commodo do culpa cillum pariatur sunt. Reprehenderit consectetur ex velit incididunt."}
+{""}
+<br />
+{""}
+{""}
+<br />
+{""}
+{"Nulla sunt dolor cillum sit ipsum voluptate exercitation nisi consequat veniam esse est nostrud sunt duis. Culpa laborum aliqua veniam ut ullamco sint proident ad eu deserunt culpa exercitation enim nostrud. Nisi laborum velit ad laborum ullamco tempor nulla eiusmod. Qui est pariatur quis."}
+{""}
+<br />
+{""}
+{""}
+<br />
+{""}
+{"Elit aliquip ullamco qui irure sit consequat est ullamco Lorem deserunt ex eu. Sit sit non amet irure esse veniam qui tempor veniam culpa dolor cupidatat. Labore Lorem sit est incididunt ut veniam. Sunt magna id aliqua adipisicing ut consectetur cupidatat occaecat nostrud. Qui quis anim anim consequat ullamco qui deserunt consequat cupidatat nostrud dolor."}
+</p>
+</div>
+<div
+className={`w-element ccxbyd9 ctslah9 cj7bt5u c4qqqhz c1p34zf0 c1dsvsvh`}>
+<h2
+className={`w-element`}>
+{"Specialisations "}
+<span
+className={`w-element c1vn0xiq cr2ujrk c8py5un cycv0tm cf92qlo c1p20m63`}>
+{"The Branches"}
+</span>
+</h2>
+<p
+className={`w-element`}>
+{"After completing the core courses in General Engineering, you can choose to specialise in one of four areas. Each specialisation builds on your broad engineering foundation and prepares you for specific industries and career paths:"}
+</p>
+<div
+className={`w-element ci03eyw c1vi0mt cqaj6f4 c16lfnyl c1bti4b5 cc4bk5j`}>
+<div
+className={`w-element cr9ub4b c153lglm ck11ylk c19haj7v c6775s7 ct2w13i c3brmnq cd3toq c17nm8vt c1xymrvd c8yo8yx c1io07hm ci03eyw cu8ogtt cq67jvo c1n9f9m4 cqxegdb cgrcr0q`}>
+<Image
+src={"/assets/S-Advanced-Icon_TWuU1GxlAwBjJmF4_F-gd.png"}
+width={4167}
+height={4167}
+className={`w-image c58kvwj c1oqdnpz c1d1pidh cj8tshh c1iwmpjl co345il c12zhvo`} />
+<h3
+className={`w-element c1r67alc`}>
+{"Advanced Materials "}
+<br />
+{""}
+</h3>
+<p
+className={`w-element`}>
+{"Focus on developing new sustainable and functional materials for manufacturing, nanotechnology, acoustics, and physics. This track prepares you to innovate in creating materials that will shape industries and future technologies."}
+</p>
+</div>
+<div
+className={`w-element cr9ub4b c153lglm ck11ylk c19haj7v c6775s7 ct2w13i c3brmnq cd3toq c17nm8vt c1xymrvd c8yo8yx c1io07hm ci03eyw cu8ogtt cq67jvo c1n9f9m4 cqxegdb cgrcr0q`}>
+<Image
+src={"/assets/S-Cyber-Icon_gtF6axbVfym-YHvyK1vT6.png"}
+width={4167}
+height={4167}
+className={`w-image c58kvwj c1oqdnpz c1d1pidh cj8tshh c1iwmpjl co345il c12zhvo`} />
+<h3
+className={`w-element c1r67alc`}>
+{"Cyber Systems"}
+</h3>
+<p
+className={`w-element`}>
+{"Dive into computers, artificial intelligence, data analytics, modelling, software and hardware development. This specialisation equips you to work with cutting-edge technologies in computing and digital systems."}
+</p>
+</div>
+<div
+className={`w-element cr9ub4b c153lglm ck11ylk c19haj7v c6775s7 ct2w13i c3brmnq cd3toq c17nm8vt c1xymrvd c8yo8yx c1io07hm ci03eyw cu8ogtt cq67jvo c1n9f9m4 cqxegdb cgrcr0q`}>
+<Image
+src={"/assets/S-Living-Icon_GY_Y8vI69OfuA7uQA4-A2.png"}
+width={4167}
+height={4167}
+className={`w-image c58kvwj c1oqdnpz c1d1pidh cj8tshh c1iwmpjl co345il c12zhvo`} />
+<h3
+className={`w-element c1r67alc`}>
+{"Living Systems"}
+</h3>
+<p
+className={`w-element`}>
+{"Explore engineering related to all living things including aquatic systems, medicine, healthcare, and food production. This specialisation connects biology, chemistry, and technology to create sustainable solutions that improve health and protect the environment."}
+</p>
+</div>
+<div
+className={`w-element cr9ub4b c153lglm ck11ylk c19haj7v c6775s7 ct2w13i c3brmnq cd3toq c17nm8vt c1xymrvd c8yo8yx c1io07hm ci03eyw cu8ogtt cq67jvo c1n9f9m4 cqxegdb cgrcr0q`}>
+<Image
+src={"/assets/S-Energy-Icon_mssMv-71p9Azt25Zel5LO.png"}
+width={4167}
+height={4167}
+className={`w-image c58kvwj c1oqdnpz c1d1pidh cj8tshh c1iwmpjl co345il c12zhvo`} />
+<h3
+className={`w-element c1r67alc`}>
+{"Future Energy"}
+</h3>
+<p
+className={`w-element`}>
+{"Work on creating a sustainable world by developing renewable energy technologies such as wind and solar power, electrolysis, applied chemistry, and entrepreneurship. This specialisation focuses on the energy solutions of tomorrow."}
+</p>
+</div>
+</div>
+</div>
+<div
+className={`w-element ccxbyd9 ctslah9 cj7bt5u c4qqqhz c1p34zf0 c1dsvsvh`}>
+<h2
+className={`w-element`}>
+{"Application Process "}
+</h2>
+<p
+className={`w-element`}>
+{"**Nulla sunt dolor cillum sit ipsum voluptate exercitation nisi consequat veniam esse est nostrud sunt duis. Culpa laborum aliqua veniam ut ullamco sint proident ad eu deserunt culpa exercitation enim nostrud. Nisi laborum velit ad laborum ullamco tempor nulla eiusmod. Qui est pariatur quis."}
+{""}
+<br />
+{""}
+{""}
+<br />
+{""}
+{"Enim magna ad sit reprehenderit dolore velit aliquip amet sit et quis minim cupidatat anim sint. Consectetur fugiat in dolor aute sit aliqua aute. Duis irure sit deserunt ea voluptate mollit qui deserunt ad irure eiusmod excepteur irure laboris. Pariatur commodo incididunt et id cupidatat sit qui in."}
+</p>
+</div>
+<div
+className={`w-element ccxbyd9 ctslah9 ci03eyw cu8ogtt c1qpyqes`}>
 <div
 id={"qna-container"}
-className={`w-element cbeiaob c1duohc3 c1f0lefa c1xawg3x c1j8f4ro c4qqqhz c2z8j1e`} />
+className={`w-element cbeiaob c1duohc3 c1gpt9gq c1xawg3x c1j8f4ro c4qqqhz c2z8j1e`} />
 </div>
 </Body>
 }

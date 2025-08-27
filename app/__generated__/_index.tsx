@@ -5,13 +5,13 @@
       import { Fragment, useState } from "react";
       import { useResource, useVariableState } from "@webstudio-is/react-sdk/runtime";
       import { Body as Body, Link as Link, Link as Link_1 } from "@webstudio-is/sdk-components-react-router";
-import { Box as Box, Text as Text, Bold as Bold, Image as Image, HtmlEmbed as HtmlEmbed, Span as Span, Button as Button } from "@webstudio-is/sdk-components-react";
+import { Box as Box, Text as Text, Image as Image, HtmlEmbed as HtmlEmbed, Span as Span, Button as Button } from "@webstudio-is/sdk-components-react";
 import { Tooltip as Tooltip, TooltipTrigger as TooltipTrigger, TooltipContent as TooltipContent, Dialog as Dialog, DialogTrigger as DialogTrigger, DialogOverlay as DialogOverlay, DialogContent as DialogContent, DialogDescription as DialogDescription, DialogClose as DialogClose } from "@webstudio-is/sdk-components-react-radix";
 
 
       export const projectId = "94456f8c-a847-426a-aec8-16de390bd3eb";
 
-      export const lastPublished = "2025-07-02T21:00:45.585Z";
+      export const lastPublished = "2025-08-27T17:10:36.903Z";
 
       export const siteName = "GE Union";
 
@@ -37,7 +37,7 @@ import { Tooltip as Tooltip, TooltipTrigger as TooltipTrigger, TooltipContent as
 
       const Page = (_props: { system: any; }) => {
 return <Body
-className={`w-body cdzo1k7 c1lzvaoj cm1ds2c c1qux398 c1p2ptee`}>
+className={`w-body cdzo1k7 c1lzvaoj cm1ds2c c1qux398`}>
 <HtmlEmbed
 code={"<style>\n@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300..900&display=swap');\n@import url('https://api.fontshare.com/v2/css?f[]=tanker@400&amp;display=swap');\n  \n  h1{\n    font-family: 'Tanker';\n    font-weight: 500;\n    font-size: 5em;\n    color: var(--background);\n    line-height: 1;\n    margin: 0;\n  }\n  h2{\n    font-weight: 600;\n    font-size: 36px;\n    line-height: 1;\n    margin: 0;\n  }\n  p{\n    margin: 0;\n  }\n  \n  .icon-background{\n    background-color: var(--back-red-1);\n    z-index: 1;\n    overflow: hidden;\n    position: relative;\n  }\n  .icon-background::before{\n    content: \"\";\n    position: absolute;\n    width: 200%; height: 200%;\n    top: -50%; left: -50%;\n    background-image: url('/assets/icon-background_RyiWP8CNKOfskpwMp_P8Y.svg?width=1080&quality=80&format=auto');\n    background-size: 200px 115.4734411085px;\n    background-repeat: repeat;\n    animation: scrollBg 20s linear infinite;\n    z-index: -1;\n    opacity: var(--icon-background-opacity, 3%); mix-blend-mode: luminosity;\n    filter: blur(2px)\n  }\n  \n  .home-top::after{\n    position: absolute;\n    content: \"\";\n    width: 100%;\n    height: 250px;\n    background: linear-gradient(180deg, hsl(from var(--back-red-1) h s l / 0.65) 15%, hsl(from var(--back-red-1) h s l / 0) 100%);\n    z-index: -1;\n  }\n\n  @keyframes scrollBg {\n      0% {\n        background-position: 0 0;\n      }\n      100% {\n        background-position: -200px 115.4734411085px;\n      }\n    }\n\n  .home-top-card:hover .home-top-card-title-icon{\n    width: 38px;\n    padding-left: 3px;\n  }\n\n  @media only screen and (max-width: 767px) {\n    h1{\n      font-size: 4em;\n    }\n    h2{\n      font-size: 32px;\n    }\n  }\n</style>"}
 executeScriptOnCanvas={true}
@@ -50,35 +50,46 @@ className={`w-box c1vu5acx cd3toq c17nm8vt c1xymrvd c8yo8yx c1duce4z ci03eyw cu8
 className={`w-box c19h37rc ci03eyw c1nj86ny c1mz59p0 c13f4d8e c1122adb cx911xm c4qqqhz c2z8j1e c19dc97m`}>
 <Link
 href={"/"}
+id={"menu-icon"}
 className={`w-link cmvyqw5 cz7iu34 c40iywk codsd31 c16er72m c1qt5xo2 c3gx87z cqyp7hg c1moglug`}>
 <Image
 src={"/assets/GE_Logo_-_Big_AQmTkCh-ue9Xfr1xXdV_k.svg"}
 width={492}
 height={684}
+id={"menu-icon-image"}
 className={`w-image c1g1752z c1l3m6tn c1wjaqd0`} />
 </Link>
 <Box
-className={`w-box ci03eyw cavbteo c17p08f7 cy2vnym cgykfac c8chaf1 crymv6m ch588tu cd1c1x2 cgjpuuk co3wgvm cjdg5q7`}>
+className={`w-box ci03eyw c5zf3td c1bdekej cy2vnym cgykfac c8chaf1 crymv6m ch588tu cd1c1x2 cgjpuuk co3wgvm cjdg5q7`}>
 <Link
 href={"/"}
-className={`w-link c4qqqhz c1l00ka2 c8l261o c1wmsojl c1ho4waj c1k74xht c1122adb c10pf28n c1w0lkxn ch9rsc5 c1et34yr c1tj415q`}>
+className={`w-link c4qqqhz c1l00ka2 c8l261o c1wmsojl c1ho4waj c1k74xht c1122adb ch9rsc5 c10pf28n c1w0lkxn c1et34yr c1tj415q cycv0tm`}>
 {"Home"}
 </Link>
 <Link
 href={"/course-bank"}
-className={`w-link c4qqqhz c1l00ka2 c8l261o c1ozmz5d c1ho4waj c1k74xht c1122adb c10pf28n c1w0lkxn ch9rsc5 c1et34yr c1tj415q`}>
-{"Course Bank"}
+className={`w-link c4qqqhz c1l00ka2 c8l261o c1ozmz5d c1ho4waj c1k74xht c1122adb ch9rsc5 c10pf28n c1w0lkxn c1et34yr c1tj415q`}>
+<span
+className={`w-element cycv0tm`}>
+{"Course "}
+</span>
+{"Bank"}
 </Link>
 <Link
 href={"/calendar"}
-className={`w-link c4qqqhz c1l00ka2 c8l261o c1ozmz5d c1ho4waj c1k74xht c1122adb c10pf28n c1w0lkxn ch9rsc5 c1et34yr c1tj415q`}>
+className={`w-link c4qqqhz c1l00ka2 c8l261o c1ozmz5d c1ho4waj c1k74xht c1122adb ch9rsc5 c10pf28n c1w0lkxn c1et34yr c1tj415q`}>
 {"Calendar"}
+</Link>
+<Link
+href={"/introduction"}
+className={`w-link c4qqqhz c1l00ka2 c8l261o c1ozmz5d c1ho4waj c1k74xht c1122adb ch9rsc5 c10pf28n c1w0lkxn c1et34yr c1tj415q`}>
+{"Dashboard"}
 </Link>
 <Tooltip
 delayDuration={0}>
 <TooltipTrigger>
 <div
-className={`w-element c4qqqhz c1l00ka2 c8l261o c1ozmz5d c1ho4waj c1k74xht ch9rsc5 c1w0lkxn c1122adb c10pf28n cbahl6h c1tj415q`}>
+className={`w-element c4qqqhz c1l00ka2 c8l261o c1ozmz5d c1ho4waj c1k74xht c1122adb ch9rsc5 c10pf28n c1w0lkxn cbahl6h c1tj415q`}>
 {"About"}
 </div>
 </TooltipTrigger>
@@ -86,18 +97,24 @@ className={`w-element c4qqqhz c1l00ka2 c8l261o c1ozmz5d c1ho4waj c1k74xht ch9rsc
 className={`w-tooltip-content c5mlbae cm1ds2c c1fxgukz cdzo1k7 c1lp7lun c3ryv7d c1t11c95 c1kz25wt c1jbi97f crebcbz cfjpsss ci03eyw cu8ogtt c4bgnbx cj82r57 c14a5ioc cm4j335`}>
 <Link
 href={"/about-ge"}
-className={`w-link c4qqqhz c1l00ka2 c8l261o c1ozmz5d c1ho4waj c1k74xht c1122adb c10pf28n c1w0lkxn ch9rsc5 cz5lin5 c1tj415q`}>
+className={`w-link c4qqqhz c1l00ka2 c8l261o c1ozmz5d c1ho4waj c1k74xht c1122adb ch9rsc5 c10pf28n c1w0lkxn cz5lin5 c1tj415q`}>
 {"General Engineering"}
 </Link>
+<Link_1
+href={"/about-dtu"}
+className={`w-element c4qqqhz c1l00ka2 c8l261o c1ozmz5d c1ho4waj c1k74xht cz03vb2 cqo7rnh cz5lin5 c1tj415q`}>
+{"DTU"}
+</Link_1>
 <Link
 href={"/about-geu"}
-className={`w-link c4qqqhz c1l00ka2 c8l261o c1ozmz5d c1ho4waj c1k74xht c1122adb c10pf28n c1w0lkxn ch9rsc5 cz5lin5 c1tj415q`}>
+className={`w-link c4qqqhz c1l00ka2 c8l261o c1ozmz5d c1ho4waj c1k74xht c1122adb ch9rsc5 c10pf28n c1w0lkxn cz5lin5 c1tj415q`}>
 {"GE Union"}
 </Link>
 </TooltipContent>
 </Tooltip>
 </Box>
-<Dialog>
+<Dialog
+open={false}>
 <DialogTrigger>
 <Button
 className={`w-button cvuh4zx c1v4vkm5 c1bti4b5 c1jbi97f crebcbz cr2ujrk ciidiay c1kf82bd c7jsqgj ctcp1cq c1r8lktc c1t9gjz2 c7jkqej cn1fibt cnwk8w7 c10ybtws cdxgxee c1wmsojl co1yi26 c1vk95sq c12eb7ae`}>
@@ -142,9 +159,19 @@ className={`w-link c1sy2opm cr2ujrk c8l261o cy7nrqp c1ho4waj c1122adb c10pf28n c
 {"Calendar"}
 </Link>
 <Link
+href={"/introduction"}
+className={`w-link c1sy2opm cr2ujrk c8l261o cy7nrqp c1ho4waj c1122adb c10pf28n c1w0lkxn ch9rsc5 cz5lin5`}>
+{"Dashboard"}
+</Link>
+<Link
 href={"/about-geu"}
 className={`w-link c1sy2opm cr2ujrk c8l261o cy7nrqp c1ho4waj c1122adb c10pf28n c1w0lkxn ch9rsc5 cz5lin5`}>
 {"About GE"}
+</Link>
+<Link
+href={"/about-dtu"}
+className={`w-link c1sy2opm cr2ujrk c8l261o cy7nrqp c1ho4waj c1122adb c10pf28n c1w0lkxn ch9rsc5 cz5lin5`}>
+{"About DTU"}
 </Link>
 <Link
 href={"/about-geu"}
@@ -171,17 +198,12 @@ className={`w-element cyoo8jj`}>
 </h1>
 <Text
 className={`w-text cg3nt0s c74dsfz czgmbqe cyoo8jj c1wwlxnr cje5w08 cimns5a c1bck0pu c16hxlzn c1c73s0v c7u4ssh`}>
-{"Group of "}
-<Bold
-className={`w-bold-text`}>
-{"guys"}
-</Bold>
-{" that do "}
-<Bold
-className={`w-bold-text`}>
-{"stuff"}
-</Bold>
-{". See what we do here! "}
+{"Your "}
+<b
+className={`w-element`}>
+{"community hub"}
+</b>
+{" at General Engineering!"}
 </Text>
 </Box>
 </Box>
@@ -193,7 +215,7 @@ className={`w-link c8nmv6p cwqnf9o c1vn0xiq c1n9f9m4 c4bgnbx cj82r57 c14a5ioc cm
 <div
 className={`w-element ci03eyw c197jlyy c1tmykg6 c121nwe4 codsd31 c16er72m c1qt5xo2 c1v4vkm5`}>
 <Text
-className={`w-text c1lt64h c12zdnex c7amdgj c1nx261z c7tuxro`}>
+className={`w-text c1lt64h c12zdnex c7amdgj c1k74xht c1nx261z c7tuxro`}>
 {"Calendar"}
 </Text>
 <Image
@@ -201,7 +223,7 @@ src={"/assets/Arrow_H1ljlBGfuft_TMCdE7Zb5.svg"}
 width={25}
 height={24}
 loading={"eager"}
-className={`w-image c1mngz4m c1rwubzf c1tmykg6 c40iywk codsd31 c16er72m c1qt5xo2 cpt3wp3 cgykxgu crl8cro ${"home-top-card-title-icon"}`} />
+className={`w-image c1mngz4m c1rwubzf c1tmykg6 c40iywk codsd31 c16er72m c1qt5xo2 cpt3wp3 c1k74xht cgykxgu crl8cro ${"home-top-card-title-icon"}`} />
 </div>
 <Box
 className={`w-box ck11ylk c767uka c1dohq8s ci03eyw c1nj86ny c1v4vkm5 c1l3m6tn c11gzzxy cc356ws`}>
@@ -225,7 +247,7 @@ className={`w-element c1t205vl c1mngz4m cvuh4zx c14e6dcj c638992 ccyo9a2 c6piima
 src={"/assets/Calendar_Icon_JBq83QCbGJiotNNmNumnQ.svg"}
 width={650}
 height={570}
-className={`w-image cnkevhm c1oqdnpz cpc2g7h c1kppqxz c1w0yra6 c1lxqyue c1bblaxa co345il c1lzvaoj ck7n286 c1sfn1pe c5frzz4 c1s1n1bm c13qonci`} />
+className={`w-image cnkevhm c1oqdnpz cpc2g7h c1kppqxz c1w0yra6 c1lxqyue c1bblaxa co345il c1k74xht c1lzvaoj ck7n286 c1sfn1pe c5frzz4 c1s1n1bm c13qonci`} />
 </div>
 <Box
 className={`w-box ck11ylk c767uka c1dohq8s c102e7b2 cvu8o32 c1p5610w crsc1f9 c1c7zter c5xw8br cbg59jt`}>
@@ -233,7 +255,7 @@ className={`w-box ck11ylk c767uka c1dohq8s c102e7b2 cvu8o32 c1p5610w crsc1f9 c1c
 id={"mini-calendar-back"}
 className={`w-box cwthfpg catlkx8 c12zhvo cxa4mkp ccoo3t2 cd3toq c17nm8vt c1xymrvd c8yo8yx cu8nwxp cfefvni c1jubil0 c18lspnc codsd31 c16er72m c1qt5xo2 crrwaeo`}>
 <HtmlEmbed
-code={"<style>\n  .calendar-container {\n    width: 100%;\n    padding: 20px;\n  }\n  .calendar-container * {\n    cursor: pointer;\n  }\n  .month-header {\n    text-align: center;\n    font-size: 1em;\n    margin-bottom: 10px;\n    font-weight: 600;\n  }\n  .datepicker-calendar {\n    display: grid;\n    grid-template-columns: repeat(7, 1fr);\n    gap: 7px;\n    text-align: center;\n  }\n  .day {\n    font-size: 0.9em;\n    font-weight: 600;\n  }\n  .date {\n    border: none;\n    border-radius: 10px;\n    aspect-ratio: 1;\n    background: hsl(from var(--back-grey-1) h s calc(l*0.99));\n    font-size: 23px;\n    font-weight: 600;\n    color: var(--front-3)\n  }\n  .faded {\n    opacity: 0.3;\n  }\n  .current-day {\n    background-color: var(--back-red-1);\n    color: white;\n    \n  }\n</style>\n\n<div class=\"calendar-container\">\n  <div class=\"month-header\" id=\"monthHeader\"></div>\n  <div class=\"datepicker-calendar\" id=\"calendar\"></div>\n</div>\n\n<script>\n  document.addEventListener('DOMContentLoaded', () => {\n    requestAnimationFrame(() => {\n      setTimeout(function() {\n        const today = new Date();\n        const currentYear = today.getFullYear();\n        const currentMonth = today.getMonth(); // 0-indexed\n        const currentDate = today.getDate();\n      \n        const monthNames = [\n          \"January\", \"February\", \"March\", \"April\", \"May\", \"June\",\n          \"July\", \"August\", \"September\", \"October\", \"November\", \"December\"\n        ];\n      \n        document.getElementById(\"monthHeader\").textContent = `${monthNames[currentMonth]} ${currentYear}`;\n      \n        const calendar = document.getElementById(\"calendar\");\n      \n        const daysOfWeek = [\"Mo\", \"Tu\", \"We\", \"Th\", \"Fr\", \"Sa\", \"Su\"];\n        daysOfWeek.forEach(day => {\n          const span = document.createElement(\"span\");\n          span.className = \"day\";\n          span.textContent = day;\n          calendar.appendChild(span);\n        });\n      \n        const firstDay = new Date(currentYear, currentMonth, 1);\n        const startDay = (firstDay.getDay() + 6) % 7;\n      \n        const daysInMonth = new Date(currentYear, currentMonth + 1, 0).getDate();\n        const daysInPrevMonth = new Date(currentYear, currentMonth, 0).getDate();\n      \n        for (let i = startDay - 1; i >= 0; i--) {\n          const btn = document.createElement(\"button\");\n          btn.className = \"date faded\";\n          btn.textContent = daysInPrevMonth - i;\n          calendar.appendChild(btn);\n        }\n      \n        for (let i = 1; i <= daysInMonth; i++) {\n          const btn = document.createElement(\"button\");\n          btn.className = \"date\";\n          btn.textContent = i;\n          if (i === currentDate) {\n            btn.classList.add(\"current-day\");\n          }\n          calendar.appendChild(btn);\n        }\n      \n        const totalCells = startDay + daysInMonth;\n        const nextDays = (7 - (totalCells % 7)) % 7;\n        for (let i = 1; i <= nextDays; i++) {\n          const btn = document.createElement(\"button\");\n          btn.className = \"date faded\";\n          btn.textContent = i;\n          calendar.appendChild(btn);\n        }\n\n        document.getElementById('mini-calendar-back').style.opacity = \"1\"; \n      }, 50)\n    });\n  });\n</script>\n\n\n\n"}
+code={"<style>\n  .calendar-container {\n    width: 100%;\n    padding: 20px;\n  }\n  .calendar-container * {\n    cursor: pointer;\n  }\n  .month-header {\n    text-align: center;\n    font-size: 1em;\n    margin-bottom: 10px;\n    font-weight: 600;\n  }\n  .datepicker-calendar {\n    display: grid;\n    grid-template-columns: repeat(7, 1fr);\n    gap: 7px;\n    text-align: center;\n  }\n  .day {\n    font-size: 0.9em;\n    font-weight: 600;\n  }\n  .date {\n    border: none;\n    border-radius: 10px;\n    aspect-ratio: 1;\n    background: hsl(from var(--back-grey-1) h s calc(l*0.99));\n    font-size: 23px;\n    font-weight: 600;\n    color: var(--front-3)\n  }\n  .faded {\n    opacity: 0.3;\n  }\n  .current-day {\n    background-color: var(--back-red-1);\n    color: white;\n    \n  }\n</style>\n\n<div class=\"calendar-container\">\n  <div class=\"month-header\" id=\"monthHeader\"></div>\n  <div class=\"datepicker-calendar\" id=\"calendar\"></div>\n</div>\n\n<script>\n  document.addEventListener('DOMContentLoaded', () => {\n    requestAnimationFrame(() => {\n      setTimeout(function() {\n        const today = new Date();\n        const currentYear = today.getFullYear();\n        const currentMonth = today.getMonth(); // 0-indexed\n        const currentDate = today.getDate();\n      \n        const monthNames = [\n          \"January\", \"February\", \"March\", \"April\", \"May\", \"June\",\n          \"July\", \"August\", \"September\", \"October\", \"November\", \"December\"\n        ];\n      \n        document.getElementById(\"monthHeader\").textContent = `${monthNames[currentMonth]} ${currentYear}`;\n      \n        const calendar = document.getElementById(\"calendar\");\n      \n        const daysOfWeek = [\"Mo\", \"Tu\", \"We\", \"Th\", \"Fr\", \"Sa\", \"Su\"];\n        daysOfWeek.forEach(day => {\n          const span = document.createElement(\"span\");\n          span.className = \"day\";\n          span.textContent = day;\n          calendar.appendChild(span);\n        });\n      \n        const firstDay = new Date(currentYear, currentMonth, 1);\n        const startDay = (firstDay.getDay() + 6) % 7;\n      \n        const daysInMonth = new Date(currentYear, currentMonth + 1, 0).getDate();\n        const daysInPrevMonth = new Date(currentYear, currentMonth, 0).getDate();\n      \n        for (let i = startDay - 1; i >= 0; i--) {\n          const btn = document.createElement(\"button\");\n          btn.className = \"date faded\";\n          btn.textContent = daysInPrevMonth - i;\n          calendar.appendChild(btn);\n        }\n      \n        for (let i = 1; i <= daysInMonth; i++) {\n          const btn = document.createElement(\"button\");\n          btn.className = \"date\";\n          btn.textContent = i;\n          if (i === currentDate) {\n            btn.classList.add(\"current-day\");\n          }\n          calendar.appendChild(btn);\n        }\n      \n        const totalCells = startDay + daysInMonth;\n        const nextDays = (7 - (totalCells % 7)) % 7;\n        for (let i = 1; i <= nextDays; i++) {\n          const btn = document.createElement(\"button\");\n          btn.className = \"date faded\";\n          btn.textContent = i;\n          calendar.appendChild(btn);\n        }\n\n        document.getElementById('mini-calendar-back').style.opacity = \"1\"; \n      }, 200)\n    });\n  });\n</script>\n\n\n\n"}
 executeScriptOnCanvas={true}
 className={`w-html-embed c1k74xht`} />
 </Box>
@@ -248,7 +270,7 @@ className={`w-link c8nmv6p cwqnf9o c1vn0xiq c1n9f9m4 c4bgnbx cj82r57 c14a5ioc cm
 <div
 className={`w-element ci03eyw c197jlyy c1tmykg6 c121nwe4 codsd31 c16er72m c1qt5xo2 c1v4vkm5 ceiem4c`}>
 <Text
-className={`w-text c1lt64h c12zdnex c7amdgj c1nx261z c7tuxro`}>
+className={`w-text c1lt64h c12zdnex c7amdgj c1k74xht c1nx261z c7tuxro`}>
 {"Course Bank"}
 </Text>
 <Image
@@ -256,7 +278,7 @@ src={"/assets/Arrow_H1ljlBGfuft_TMCdE7Zb5.svg"}
 width={25}
 height={24}
 loading={"eager"}
-className={`w-image c1mngz4m c1rwubzf c1tmykg6 c40iywk codsd31 c16er72m c1qt5xo2 cpt3wp3 cgykxgu crl8cro ${"home-top-card-title-icon"}`} />
+className={`w-image c1mngz4m c1rwubzf c1tmykg6 c40iywk codsd31 c16er72m c1qt5xo2 cpt3wp3 c1k74xht cgykxgu crl8cro ${"home-top-card-title-icon"}`} />
 </div>
 <div
 className={`w-element ck11ylk c767uka c1dohq8s`}>
@@ -266,29 +288,29 @@ className={`w-element c1t205vl`}>
 src={"/assets/Vault_Icon_b47VgS0N6eONtPMryR-cd.svg"}
 width={650}
 height={570}
-className={`w-image cnkevhm c1oqdnpz cpc2g7h c1kppqxz c1w0yra6 c1lxqyue c1bblaxa co345il ck7n286`} />
+className={`w-image cnkevhm c1oqdnpz cpc2g7h c1kppqxz c1w0yra6 c1lxqyue c1bblaxa co345il c1k74xht ck7n286`} />
 </div>
 <p
 className={`w-element cy7nrqp c8l261o cdhy4s8 c5sx8jk c1wauoq4 c1w0yra6 cpq2gwm cyoo8jj cpyan2s c12tkve4 c5k3a4h crsc1f9 c1c7zter c1lot409 ccjnvj1 c1mkam2s crc7qf5`}>
-{"Here's some demo text for a good demonstration of what I'm trying to do."}
+{"See notes made by older students for your course!"}
 </p>
 </div>
 </Link>
 <Link
-href={"/about-ge"}
+href={"/introduction"}
 className={`w-link c8nmv6p cwqnf9o c1vn0xiq c1n9f9m4 c4bgnbx cj82r57 c14a5ioc cm4j335 c1xz83ly c12s4iry c1ixcxvm cct8mvq c1ho4waj cu8ogtt c1v4vkm5 ck11ylk c767uka c102e7b2 ci03eyw cdmn2c9 cm5zmxq cvr3dv5 ${"home-top-card"}`}>
 <div
 className={`w-element ci03eyw c197jlyy c1tmykg6 c121nwe4 codsd31 c16er72m c1qt5xo2 c1v4vkm5`}>
 <Text
-className={`w-text c1lt64h c12zdnex c7amdgj c1nx261z c7tuxro`}>
-{"about GE"}
+className={`w-text c1lt64h c12zdnex c7amdgj c1k74xht c1nx261z c7tuxro`}>
+{"Dashboard"}
 </Text>
 <Image
 src={"/assets/Arrow_H1ljlBGfuft_TMCdE7Zb5.svg"}
 width={25}
 height={24}
 loading={"eager"}
-className={`w-image c1mngz4m c1rwubzf c1tmykg6 c40iywk codsd31 c16er72m c1qt5xo2 cpt3wp3 cgykxgu crl8cro ${"home-top-card-title-icon"}`} />
+className={`w-image c1mngz4m c1rwubzf c1tmykg6 c40iywk codsd31 c16er72m c1qt5xo2 cpt3wp3 c1k74xht cgykxgu crl8cro ${"home-top-card-title-icon"}`} />
 </div>
 <div
 className={`w-element ck11ylk c767uka c1dohq8s`}>
@@ -298,43 +320,33 @@ className={`w-element c1t205vl`}>
 src={"/assets/About_GE_Icon_nX97REgvEFTexDZ2ZYnYa.svg"}
 width={650}
 height={570}
-className={`w-image cnkevhm c1oqdnpz cpc2g7h c1kppqxz c1w0yra6 c1lxqyue c1bblaxa co345il ck7n286`} />
+className={`w-image cnkevhm c1oqdnpz cpc2g7h c1kppqxz c1w0yra6 c1lxqyue c1bblaxa co345il c1k74xht ck7n286`} />
 </div>
 <p
 className={`w-element cy7nrqp c8l261o cdhy4s8 c5sx8jk c1wauoq4 c1w0yra6 cpq2gwm cyoo8jj cpyan2s c12tkve4 c5k3a4h crsc1f9 c1c7zter c1lot409 ccjnvj1 c1mkam2s crc7qf5`}>
-{"Here's some demo text for a good demonstration of what I'm trying to do."}
+{"All the relevant tools you will needs as a student studying General Engineering"}
 </p>
 </div>
 </Link>
 </Box>
 </Box>
 </Box>
-<div
-className={`w-element ci03eyw cu8ogtt c1v4vkm5 ciu9gta c8l261o c1wmsojl c3brmnq`}>
-<div
-className={`w-element cy2b8wa cd3toq c17nm8vt c1xymrvd c8yo8yx c1o3ocm4 c1q7at0i cjpac5y c1tmykg6 c156xldz codsd31 c16er72m c1qt5xo2 ci03eyw cu8ogtt c183x3a4 cs4zrmt chjepeg ct6fd0n c19raolx ct5uc8i ${"icon-background\n"}`}>
-<div
-className={`w-element c1o49hcl ci03eyw c1dgy9if c1a10q77 c1v4vkm5 c6d6cak c5dclxw c7tvdys cgiudld c1xj8ubg`}>
-<div
-className={`w-element cx80e38 c9iyznh c1xsuntc cez05na cr2fx1c c1ydphkn cpy5f0q c119ibn4 cqmovsy`} />
-<h2
-className={`w-element cx80e38 c9iyznh c1lt64h c1jzivuf chpvhw5 c125l1v1 c1k74xht`}>
-{"Coming Up"}
-</h2>
-</div>
-<div
-className={`w-element ck11ylk c767uka cxn45mh c134tzij c11cmzdu`} />
-</div>
-</div>
 <Box
-className={`w-box ci03eyw cu8ogtt c9py6bs c3brmnq cqaj6f4 c16lfnyl c1v4vkm5`}>
+className={`w-box ci03eyw cu8ogtt c1dxr3mf c3brmnq cqaj6f4 c16lfnyl c1v4vkm5`}>
 <h2
 className={`w-element`}>
 {"Who We Are"}
 </h2>
 <p
 className={`w-element c1km7ytz cwfxmkq cyoo8jj c1f0lefa c1q98tuy c19a8u9t`}>
-{"Longer description of what we do. This should explain in better detail who we are, what we do, and why we do it, also specifying what people can get from us. More info will be available via the button. This is just a summary for those who are confused."}
+{"GE Union is the student organization for General Engineering at DTU."}
+{""}
+<br />
+{""}
+{"We bring students together through social events, academic support, and career opportunities."}
+{""}
+<br />
+{""}
 </p>
 <Link
 href={"/about-geu"}
@@ -351,7 +363,12 @@ className={`w-image c1nfcmlw`} />
 </Link>
 </Box>
 <Box
-className={`w-box c1n9f9m4 c7hwif1 c1iebwwx`} />
+className={`w-box c1duohc3 c19f83kh`}>
+<HtmlEmbed
+code={"<link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/flickity@2/dist/flickity.min.css\">\n  <style>\n    .carousel {\n      background: #fff;\n      margin: 0;\n      width: 100%;\n      max--width: 900px;\n      overflow-y: visible;\n    }\n\n    /* Each cell in the carousel */\n    .carousel-cell {\n      width: 450px; /* you can tweak this */\n      margin-right: var(--gap1);\n      overflow: hidden;\n      border-radius: var(--rad2);\n    }\n\n    /* Image styling to handle different aspect ratios */\n    .carousel-cell img {\n      display: block;\n      width: 100%;\n      height: 300px;\n      object-fit: cover; /* keep full image visible */\n      background: #eee;   /* fallback background */\n    }\n  </style>\n\n\n\n  <div class=\"carousel\">\n    <div class=\"carousel-cell\"><img src=\"https://picsum.photos/id/1015/600/400\" alt=\"\"></div>\n    <div class=\"carousel-cell\"><img src=\"https://picsum.photos/id/1016/400/600\" alt=\"\"></div>\n    <div class=\"carousel-cell\"><img src=\"https://picsum.photos/id/1018/500/500\" alt=\"\"></div>\n    <div class=\"carousel-cell\"><img src=\"https://picsum.photos/id/1020/800/500\" alt=\"\"></div>\n    <div class=\"carousel-cell\"><img src=\"https://picsum.photos/id/1024/400/300\" alt=\"\"></div>\n  </div>\n\n  <!-- Flickity JS from jsDelivr -->\n  <script src=\"https://cdn.jsdelivr.net/npm/flickity@2/dist/flickity.pkgd.min.js\"></script>\n  <script>\n    var elem = document.querySelector('.carousel');\n    var flkty = new Flickity(elem, {\n      wrapAround: true,\n      autoPlay: 4000,              // 2s between slides\n      pauseAutoPlayOnHover: true,  // stop when hovered\n      freeScroll: false,\n      prevNextButtons: true,\n      pageDots: false,\n      draggable: true\n    });\n  </script>"}
+executeScriptOnCanvas={true}
+className={`w-html-embed`} />
+</Box>
 <Box
 className={`w-box c3q79or cqlg791 ctg5cc4 cd3toq c17nm8vt c1xymrvd c8yo8yx c1n9f9m4 ci03eyw cu8ogtt ccjedbp c1z0fjz8 c9py6bs czpkcbu cz85z79 cl4abvr cnkevhm c8nmv6p cwqnf9o c1v4vkm5 c3zzp20 ckpfi68 cy3m4bk c16o2wqc cwwztsj`}>
 <Box
@@ -359,46 +376,44 @@ className={`w-box c58kvwj c9g6b5g c13gcvvn c1oqdnpz c1ckfy1d c1qp0aqz c1xos25p c
 <div
 className={`w-element cwawr8f ci03eyw cn8b0jh cywh3a cu8ogtt c1qqrgor`}>
 <Image
-src={"/assets/Screenshot_2025-06-09_at_15.12.21_xgls5tLl42q4e_k6MmtjO.png"}
-width={912}
-height={1544}
-className={`w-image cd3toq c17nm8vt c1xymrvd c8yo8yx c1dohq8s c2z8j1e c1a9mgdi c117si4 c74spxi c1i89xtz c1wuzpx5`} />
+src={"https://github.com/GE-Union/WebsiteContent/blob/main/images/reel-previews/reel1.png?raw=true"}
+optimize={true}
+loading={"lazy"}
+className={`w-image cd3toq c17nm8vt c1xymrvd c8yo8yx c1dohq8s c2z8j1e c1a9mgdi c117si4 c74spxi c1i89xtz c1k74xht c1wuzpx5`} />
 </div>
 <div
 className={`w-element cwawr8f ci03eyw cu8ogtt cn8b0jh cywh3a cy6xfzs`}>
 <Image
-src={"/assets/Screenshot_2025-06-09_at_15.15.22_28Nk3FxKrVQH3_D-DJB9V.png"}
-width={1012}
-height={1598}
-className={`w-image cd3toq c17nm8vt c1xymrvd c8yo8yx c1dohq8s c2z8j1e c1a9mgdi c117si4 c74spxi c1i89xtz c1wuzpx5`} />
-<Image
-src={"/assets/Screenshot_2025-06-09_at_15.12.00_VuYJoCf9M7gEJK1UitS5V.png"}
-width={922}
-height={1568}
+src={"https://github.com/GE-Union/WebsiteContent/blob/main/images/reel-previews/reel2.png?raw=true"}
 loading={"lazy"}
-className={`w-image cd3toq c17nm8vt c1xymrvd c8yo8yx c1dohq8s c2z8j1e c1a9mgdi c117si4 c74spxi c1i89xtz c1wuzpx5`} />
+optimize={true}
+className={`w-image cd3toq c17nm8vt c1xymrvd c8yo8yx c1dohq8s c2z8j1e c1a9mgdi c117si4 c74spxi c1i89xtz c1k74xht c1wuzpx5`} />
+<Image
+src={"https://github.com/GE-Union/WebsiteContent/blob/main/images/reel-previews/reel3.png?raw=true"}
+loading={"lazy"}
+optimize={true}
+className={`w-image cd3toq c17nm8vt c1xymrvd c8yo8yx c1dohq8s c2z8j1e c1a9mgdi c117si4 c74spxi c1i89xtz c1k74xht c1wuzpx5`} />
 </div>
 <div
 className={`w-element cwawr8f ci03eyw cn8b0jh cywh3a cu8ogtt c1rvt1lv`}>
 <Image
-src={"/assets/Screenshot_2025-06-09_at_15.16.25_5EHDhLRRJGycIY9CMDZBm.png"}
-width={814}
-height={1526}
-className={`w-image cd3toq c17nm8vt c1xymrvd c8yo8yx c1dohq8s c2z8j1e c1a9mgdi c117si4 c74spxi c1i89xtz c1wuzpx5`} />
-<Image
-src={"/assets/Screenshot_2025-06-09_at_15.13.24_cygbVPsKh8byh2bPb6QNx.png"}
-width={936}
-height={1598}
+src={"https://github.com/GE-Union/WebsiteContent/blob/main/images/reel-previews/reel4.png?raw=true"}
 loading={"lazy"}
-className={`w-image cd3toq c17nm8vt c1xymrvd c8yo8yx c1dohq8s c2z8j1e c1a9mgdi c117si4 c74spxi c1i89xtz c1wuzpx5`} />
+optimize={true}
+className={`w-image cd3toq c17nm8vt c1xymrvd c8yo8yx c1dohq8s c2z8j1e c1a9mgdi c117si4 c74spxi c1i89xtz c1k74xht c1wuzpx5`} />
+<Image
+src={"https://github.com/GE-Union/WebsiteContent/blob/main/images/reel-previews/reel5.png?raw=true"}
+loading={"lazy"}
+optimize={true}
+className={`w-image cd3toq c17nm8vt c1xymrvd c8yo8yx c1dohq8s c2z8j1e c1a9mgdi c117si4 c74spxi c1i89xtz c1k74xht c1wuzpx5`} />
 </div>
 <div
 className={`w-element cwawr8f ci03eyw cu8ogtt cn8b0jh cywh3a cy6xfzs`}>
 <Image
-src={"/assets/Screenshot_2025-06-09_at_15.17.19_TDP3CA8b2pTflLXFxzO5v.png"}
-width={856}
-height={1546}
-className={`w-image cd3toq c17nm8vt c1xymrvd c8yo8yx c1dohq8s c2z8j1e c1a9mgdi c117si4 c74spxi c1i89xtz c1wuzpx5`} />
+src={"https://github.com/GE-Union/WebsiteContent/blob/main/images/reel-previews/reel6.png?raw=true"}
+optimize={true}
+loading={"lazy"}
+className={`w-image cd3toq c17nm8vt c1xymrvd c8yo8yx c1dohq8s c2z8j1e c1a9mgdi c117si4 c74spxi c1i89xtz c1k74xht c1wuzpx5`} />
 </div>
 </Box>
 <Box
@@ -467,7 +482,7 @@ className={`w-element`}>
 </h2>
 <p
 className={`w-element c7wcowi c2z8j1e cmndei7 c3q79or c8qj03j`}>
-{"Find us with a flair, we exist there too. Interact with the lads and get answers for most frequent questions."}
+{"We’re also active on the DTU subreddit! Look out for the GE flair, where we answer questions from future GE students about housing, finances, and student life at DTU."}
 </p>
 </Box>
 <Link
@@ -495,7 +510,7 @@ className={`w-element`}>
 </h2>
 <p
 className={`w-element c7wcowi c2z8j1e cmndei7 c3q79or c8qj03j`}>
-{"Tired of writing at this point. Imagine this contains lots of fascinating information."}
+{"Follow us on Facebook for job postings, events, memes, and all the GE vibes you need!"}
 </p>
 </Box>
 <Link
@@ -549,6 +564,10 @@ className={`w-element`}>
 {"Built with Webstudio"}
 </div>
 </Link_1>
+<HtmlEmbed
+code={"<style>\n  /* Optional quality-of-life styles */\n  #menu-icon, #menu-icon-image {\n    cursor: grab;\n    touch-action: none;   /* allow smooth touch drag */\n    user--select: none;    /* avoid text selection while dragging */\n    will-change: transform;\n    \n    user-drag: none;\n    -webkit-user-drag: none;\n    user--select: none;\n    -moz-user-select: none;\n    -webkit-user--select: none;\n    -ms-user--select: none;\n  }\n  #menu-icon.dragging { cursor: grabbing; }\n</style>\n\n<script>\n(() => {\n  const icon = document.getElementById('menu-icon');\n  if (!icon) return;\n\n  // position is managed purely via transform so layout doesn't shift\n  let tx = 0, ty = 0;               // current translation\n  let vx = 0, vy = 0;               // current velocity (px/s)\n  let dragging = false;\n  let startX = 0, startY = 0;       // pointer-down position\n  let lastPx = 0, lastPy = 0;       // last pointer position (for velocity)\n  let lastT = 0;                    // last timestamp\n\n  // Spring params: tweak for feel\n  const STIFFNESS = 300;   // spring constant (higher = snappier)\n  const DAMPING   = 15;   // damping (lower = bouncier)\n  const EPS_POS   = 0.5;  // stop threshold (position, px)\n  const EPS_VEL   = 0.5;  // stop threshold (velocity, px/s)\n\n  const setTransform = () => {\n    icon.style.transform = `translate(${tx}px, ${ty}px)`;\n  };\n\n  const onPointerDown = (e) => {\n    dragging = true;\n    icon.classList.add('dragging');\n    icon.setPointerCapture?.(e.pointerId);\n\n    startX = e.clientX - tx;\n    startY = e.clientY - ty;\n\n    lastPx = e.clientX;\n    lastPy = e.clientY;\n    lastT  = performance.now();\n    vx = 0; vy = 0; // reset; we'll accumulate movement velocity\n  };\n\n  const onPointerMove = (e) => {\n    if (!dragging) return;\n\n    const now = performance.now();\n    const dt  = (now - lastT) / 1000;\n    tx = e.clientX - startX;\n    ty = e.clientY - startY;\n\n    // simple low-pass filtered velocity estimate for spring kick\n    if (dt > 0) {\n      const instVx = (e.clientX - lastPx) / dt;\n      const instVy = (e.clientY - lastPy) / dt;\n      vx = 0.8 * vx + 0.2 * instVx;\n      vy = 0.8 * vy + 0.2 * instVy;\n    }\n    lastPx = e.clientX;\n    lastPy = e.clientY;\n    lastT  = now;\n\n    setTransform();\n  };\n\n  const onPointerUp = (e) => {\n    if (!dragging) return;\n    dragging = false;\n    icon.classList.remove('dragging');\n    icon.releasePointerCapture?.(e.pointerId);\n    animateBack(); // start spring home\n  };\n\n  function animateBack() {\n    let prev = performance.now();\n    function step(now) {\n      const dt = Math.min((now - prev) / 1000, 0.032); // clamp dt for stability\n      prev = now;\n\n      // Hooke's law: F = -k*x - c*v (mass=1)\n      const ax = -STIFFNESS * tx - DAMPING * vx;\n      const ay = -STIFFNESS * ty - DAMPING * vy;\n\n      vx += ax * dt;\n      vy += ay * dt;\n      tx += vx * dt;\n      ty += vy * dt;\n\n      setTransform();\n\n      const nearOrigin = Math.hypot(tx, ty) < EPS_POS;\n      const slowEnough = Math.hypot(vx, vy) < EPS_VEL;\n\n      if (nearOrigin && slowEnough) {\n        // snap exactly home to avoid subpixel fuzz\n        tx = ty = vx = vy = 0;\n        setTransform();\n        return;\n      }\n      // If user grabbed again, stop the spring.\n      if (dragging) return;\n\n      requestAnimationFrame(step);\n    }\n    requestAnimationFrame(step);\n  }\n\n  // Keep it floating above other content while dragging (no layout changes)\n  icon.style.zIndex = (parseInt(getComputedStyle(icon).zIndex) || 1).toString();\n\n  // Bind events\n  icon.addEventListener('pointerdown', onPointerDown);\n  window.addEventListener('pointermove', onPointerMove, { passive: true });\n  window.addEventListener('pointerup', onPointerUp);\n  window.addEventListener('pointercancel', onPointerUp);\n})();\n</script>"}
+executeScriptOnCanvas={true}
+className={`w-html-embed`} />
 </Body>
 }
 

@@ -29,13 +29,13 @@ import {
   pageFontAssets,
   pageBackgroundImageAssets,
   breakpoints,
-} from "../__generated__/[about-ge]._index";
+} from "../__generated__/[about-dtu]._index";
 import {
   getResources,
   getPageMeta,
   getRemixParams,
   contactEmail,
-} from "../__generated__/[about-ge]._index.server";
+} from "../__generated__/[about-dtu]._index.server";
 import * as constants from "../constants.mjs";
 import css from "../__generated__/index.css?url";
 import { sitemap } from "../__generated__/$resources.sitemap.xml";

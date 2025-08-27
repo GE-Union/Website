@@ -21,8 +21,8 @@ export const getResources = (_props: { system: System }) => {
   resources: Record<string, any>;
 }): PageMeta => {
   return {
-    title: "Dashboard",
-    description: "",
+    title: "About General Engineering",
+    description: "Find anything you want to know about General Engineering: Structure, Specialisations, Life, etc.",
     excludePageFromSearch: true,
     language: "",
     socialImageAssetName: undefined,

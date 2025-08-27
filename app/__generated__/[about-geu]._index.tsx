@@ -5,13 +5,13 @@
       import { Fragment, useState } from "react";
       import { useResource, useVariableState } from "@webstudio-is/react-sdk/runtime";
       import { Body as Body, Link as Link, Link as Link_1 } from "@webstudio-is/sdk-components-react-router";
-import { Box as Box, Text as Text, Image as Image, Button as Button, HtmlEmbed as HtmlEmbed } from "@webstudio-is/sdk-components-react";
+import { Box as Box, Text as Text, HtmlEmbed as HtmlEmbed, Image as Image, Button as Button } from "@webstudio-is/sdk-components-react";
 import { Tooltip as Tooltip, TooltipTrigger as TooltipTrigger, TooltipContent as TooltipContent, Dialog as Dialog, DialogTrigger as DialogTrigger, DialogOverlay as DialogOverlay, DialogContent as DialogContent, DialogDescription as DialogDescription, DialogClose as DialogClose } from "@webstudio-is/sdk-components-react-radix";
 
 
       export const projectId = "94456f8c-a847-426a-aec8-16de390bd3eb";
 
-      export const lastPublished = "2025-07-02T21:00:45.585Z";
+      export const lastPublished = "2025-08-27T17:10:36.903Z";
 
       export const siteName = "GE Union";
 
@@ -40,7 +40,7 @@ className={`w-html-embed`} />
 className={`w-box cck00sw cd3toq c17nm8vt c1xymrvd c8yo8yx ci03eyw cu8ogtt cm1ds2c c1fxgukz c3q79or c1fhonxu cqlg791 cji7xkv c40iywk codsd31 c16er72m c1qt5xo2 c1uz2t7q c4psa79 c1ldi832 ${"icon-background home-top"}`}>
 <Box
 className={`w-box c19h37rc ci03eyw c1nj86ny c1mz59p0 c13f4d8e c1122adb cx911xm c4qqqhz c2z8j1e c19dc97m`}>
-<Link
+<Link_1
 href={"/"}
 className={`w-link cmvyqw5 cz7iu34 c40iywk codsd31 c16er72m c1qt5xo2 c3gx87z cqyp7hg c1moglug`}>
 <Image
@@ -48,48 +48,63 @@ src={"/assets/GE_Logo_-_Big_AQmTkCh-ue9Xfr1xXdV_k.svg"}
 width={492}
 height={684}
 className={`w-image c1g1752z c1l3m6tn c1wjaqd0`} />
-</Link>
+</Link_1>
 <Box
-className={`w-box ci03eyw cavbteo c17p08f7 cy2vnym cgykfac c8chaf1 crymv6m ch588tu cd1c1x2 cgjpuuk co3wgvm cjdg5q7`}>
-<Link
+className={`w-box ci03eyw c5zf3td c1bdekej cy2vnym cgykfac c8chaf1 crymv6m ch588tu cd1c1x2 cgjpuuk co3wgvm cjdg5q7`}>
+<Link_1
 href={"/"}
-className={`w-link c4qqqhz c1l00ka2 c8l261o c1ozmz5d c1ho4waj c1k74xht c1122adb c10pf28n c1w0lkxn ch9rsc5 c1et34yr c1tj415q`}>
+className={`w-link c4qqqhz c1l00ka2 c8l261o c1ozmz5d c1ho4waj c1k74xht c1122adb ch9rsc5 c10pf28n c1w0lkxn c1et34yr c1tj415q cycv0tm`}>
 {"Home"}
-</Link>
-<Link
+</Link_1>
+<Link_1
 href={"/course-bank"}
-className={`w-link c4qqqhz c1l00ka2 c8l261o c1ozmz5d c1ho4waj c1k74xht c1122adb c10pf28n c1w0lkxn ch9rsc5 c1et34yr c1tj415q`}>
-{"Course Bank"}
-</Link>
-<Link
+className={`w-link c4qqqhz c1l00ka2 c8l261o c1ozmz5d c1ho4waj c1k74xht c1122adb ch9rsc5 c10pf28n c1w0lkxn c1et34yr c1tj415q`}>
+<span
+className={`w-element cycv0tm`}>
+{"Course "}
+</span>
+{"Bank"}
+</Link_1>
+<Link_1
 href={"/calendar"}
-className={`w-link c4qqqhz c1l00ka2 c8l261o c1ozmz5d c1ho4waj c1k74xht c1122adb c10pf28n c1w0lkxn ch9rsc5 c1et34yr c1tj415q`}>
+className={`w-link c4qqqhz c1l00ka2 c8l261o c1ozmz5d c1ho4waj c1k74xht c1122adb ch9rsc5 c10pf28n c1w0lkxn c1et34yr c1tj415q`}>
 {"Calendar"}
-</Link>
+</Link_1>
+<Link_1
+href={"/introduction"}
+className={`w-link c4qqqhz c1l00ka2 c8l261o c1ozmz5d c1ho4waj c1k74xht c1122adb ch9rsc5 c10pf28n c1w0lkxn c1et34yr c1tj415q`}>
+{"Dashboard"}
+</Link_1>
 <Tooltip
 delayDuration={0}>
 <TooltipTrigger>
 <div
-className={`w-element c4qqqhz c1l00ka2 c8l261o c1ozmz5d c1ho4waj c1k74xht ch9rsc5 c1w0lkxn c1122adb c10pf28n cbahl6h c1tj415q`}>
+className={`w-element c4qqqhz c1l00ka2 c8l261o c1ozmz5d c1ho4waj c1k74xht c1122adb ch9rsc5 c10pf28n c1w0lkxn cbahl6h c1tj415q`}>
 {"About"}
 </div>
 </TooltipTrigger>
 <TooltipContent
 className={`w-tooltip-content c5mlbae cm1ds2c c1fxgukz cdzo1k7 c1lp7lun c3ryv7d c1t11c95 c1kz25wt c1jbi97f crebcbz cfjpsss ci03eyw cu8ogtt c4bgnbx cj82r57 c14a5ioc cm4j335`}>
-<Link
+<Link_1
 href={"/about-ge"}
-className={`w-link c4qqqhz c1l00ka2 c8l261o c1ozmz5d c1ho4waj c1k74xht c1122adb c10pf28n c1w0lkxn ch9rsc5 cz5lin5 c1tj415q`}>
+className={`w-link c4qqqhz c1l00ka2 c8l261o c1ozmz5d c1ho4waj c1k74xht c1122adb ch9rsc5 c10pf28n c1w0lkxn cz5lin5 c1tj415q`}>
 {"General Engineering"}
-</Link>
+</Link_1>
 <Link
-href={"/about-geu"}
-className={`w-link c4qqqhz c1l00ka2 c8l261o c8qj03j c1ho4waj c1k74xht c1122adb c10pf28n c1w0lkxn ch9rsc5 cz5lin5 c1tj415q`}>
-{"GE Union"}
+href={"/about-dtu"}
+className={`w-element c4qqqhz c1l00ka2 c8l261o c1ozmz5d c1ho4waj c1k74xht cz03vb2 cqo7rnh cz5lin5 c1tj415q`}>
+{"DTU"}
 </Link>
+<Link_1
+href={"/about-geu"}
+className={`w-link c4qqqhz c1l00ka2 c8l261o c8qj03j c1ho4waj c1k74xht c1122adb ch9rsc5 c10pf28n c1w0lkxn cz5lin5 c1tj415q`}>
+{"GE Union"}
+</Link_1>
 </TooltipContent>
 </Tooltip>
 </Box>
-<Dialog>
+<Dialog
+open={false}>
 <DialogTrigger>
 <Button
 className={`w-button cvuh4zx c1v4vkm5 c1bti4b5 c1jbi97f crebcbz cr2ujrk ciidiay c1kf82bd c7jsqgj ctcp1cq c1r8lktc c1t9gjz2 c7jkqej cn1fibt cnwk8w7 c10ybtws cdxgxee c1wmsojl co1yi26 c1vk95sq c12eb7ae`}>
@@ -118,31 +133,41 @@ className={`w-element`}>
 </Box>
 <Box
 className={`w-box ci03eyw c1rb689p c1hbxsx0 cy2vnym cgykfac cu8ogtt cfx1lak c12zhvo c8chaf1 crymv6m cjdg5q7`}>
-<Link
+<Link_1
 href={"/"}
 className={`w-link c1sy2opm cr2ujrk c8l261o cy7nrqp c1ho4waj c1122adb c10pf28n c1w0lkxn ch9rsc5 cz5lin5`}>
 {"Home"}
-</Link>
-<Link
+</Link_1>
+<Link_1
 href={"/course-bank"}
 className={`w-link c1sy2opm cr2ujrk c8l261o cy7nrqp c1ho4waj c1122adb c10pf28n c1w0lkxn ch9rsc5 cz5lin5`}>
 {"Course Bank"}
-</Link>
-<Link
+</Link_1>
+<Link_1
 href={"/calendar"}
 className={`w-link c1sy2opm cr2ujrk c8l261o cy7nrqp c1ho4waj c1122adb c10pf28n c1w0lkxn ch9rsc5 cz5lin5`}>
 {"Calendar"}
-</Link>
-<Link
+</Link_1>
+<Link_1
+href={"/introduction"}
+className={`w-link c1sy2opm cr2ujrk c8l261o cy7nrqp c1ho4waj c1122adb c10pf28n c1w0lkxn ch9rsc5 cz5lin5`}>
+{"Dashboard"}
+</Link_1>
+<Link_1
 href={"/about-geu"}
 className={`w-link c1sy2opm cr2ujrk c8l261o cy7nrqp c1ho4waj c1122adb c10pf28n c1w0lkxn ch9rsc5 cz5lin5`}>
 {"About GE"}
-</Link>
-<Link
+</Link_1>
+<Link_1
+href={"/about-dtu"}
+className={`w-link c1sy2opm cr2ujrk c8l261o cy7nrqp c1ho4waj c1122adb c10pf28n c1w0lkxn ch9rsc5 cz5lin5`}>
+{"About DTU"}
+</Link_1>
+<Link_1
 href={"/about-geu"}
 className={`w-link c1sy2opm cr2ujrk c8l261o cy7nrqp c1ho4waj c1122adb c10pf28n c1w0lkxn ch9rsc5 cz5lin5`}>
 {"About GE Union"}
-</Link>
+</Link_1>
 </Box>
 </Box>
 <DialogClose
@@ -172,12 +197,12 @@ className={`w-element ci03eyw c1bti4b5 c1prl6qi c15b9v9z cbeiaob c1v4vkm5 cuqkdi
 <div
 className={`w-element ck11ylk c767uka cxn45mh c1dsvsvh c11cmzdu cvuh4zx c14e6dcj cngynuq c14r7o8r c1fsw25j c12tny8 cly6kwb cnaoejs`}>
 <p
-className={`w-element cyoo8jj cu7mlpt cy7nrqp c1nndd8u cqphno7`}>
-{"GE Union (GEU) is a student-led community hub "}
+className={`w-element cyoo8jj cu7mlpt cy7nrqp c1nndd8u c8h98z5 c1ai6gqv`}>
+{"GEU is a student-led community hub "}
 <br />
 {"  "}
 <span
-className={`w-element cly2rzj cr2ujrk c1lt64h c1f9u155 casuw30 cdzgsn1`}>
+className={`w-element cly2rzj cr2ujrk c1lt64h c1f9u155 c1lhrjj6 c1xrfqic`}>
 {"by GE students "}
 <br />
 {"for GE students"}
@@ -199,14 +224,14 @@ className={`w-element cx80e38 c9iyznh c1lt64h c1jzivuf chpvhw5 c125l1v1 c1k74xht
 </h2>
 </div>
 <div
-className={`w-element ck11ylk c767uka cxn45mh c1dsvsvh c11cmzdu`}>
+className={`w-element ck11ylk c767uka cxn45mh cvku5ok c11cmzdu c15oj64s`}>
 <p
-className={`w-element cyoo8jj cu7mlpt c1wmsojl c1nndd8u cqphno7`}>
-{"GE Union (GEU) is a student-led community hub "}
+className={`w-element cyoo8jj cu7mlpt c1wmsojl czeluz0 c1nndd8u cqphno7`}>
+{"GEU is a student-led community hub "}
 <br />
 {"  "}
 <span
-className={`w-element cly2rzj cr2ujrk c1lt64h c1f9u155 casuw30 cdzgsn1`}>
+className={`w-element c1syq5xc cr2ujrk c1lt64h c1f9u155 casuw30 cdzgsn1`}>
 {"by GE students "}
 <br />
 {"for GE students"}
@@ -291,19 +316,19 @@ className={`w-element`}>
 {"your"}
 </b>
 {" community. So, stay updated on events and opportunities on our "}
-<Link_1
+<Link
 href={"https://geunion.dk/"}
 target={"_blank"}
 className={`w-element`}>
 {"website"}
-</Link_1>
+</Link>
 {" and "}
-<Link_1
+<Link
 href={"https://www.instagram.com/ge.union/"}
 target={"_blank"}
 className={`w-element`}>
 {"Instagram"}
-</Link_1>
+</Link>
 {" and join the team! More information will be provided on how to join GE Union during the start of the semester."}
 </p>
 </div>

@@ -4,14 +4,14 @@
 
       import { Fragment, useState } from "react";
       import { useResource, useVariableState } from "@webstudio-is/react-sdk/runtime";
-      import { Body as Body, Link as Link } from "@webstudio-is/sdk-components-react-router";
+      import { Body as Body, Link as Link, Link as Link_1 } from "@webstudio-is/sdk-components-react-router";
 import { HtmlEmbed as HtmlEmbed, Box as Box, Text as Text, Span as Span, Image as Image, Button as Button } from "@webstudio-is/sdk-components-react";
 import { Tabs as Tabs, TabsList as TabsList, TabsTrigger as TabsTrigger, TabsContent as TabsContent, Accordion as Accordion, AccordionItem as AccordionItem, AccordionHeader as AccordionHeader, AccordionTrigger as AccordionTrigger, AccordionContent as AccordionContent, Tooltip as Tooltip, TooltipTrigger as TooltipTrigger, TooltipContent as TooltipContent, Dialog as Dialog, DialogTrigger as DialogTrigger, DialogOverlay as DialogOverlay, DialogContent as DialogContent, DialogDescription as DialogDescription, DialogClose as DialogClose } from "@webstudio-is/sdk-components-react-radix";
 
 
       export const projectId = "94456f8c-a847-426a-aec8-16de390bd3eb";
 
-      export const lastPublished = "2025-07-02T21:00:45.585Z";
+      export const lastPublished = "2025-08-27T17:10:36.903Z";
 
       export const siteName = "GE Union";
 
@@ -57,27 +57,36 @@ height={684}
 className={`w-image c1g1752z c1l3m6tn c1wjaqd0`} />
 </Link>
 <Box
-className={`w-box ci03eyw cavbteo c17p08f7 cy2vnym cgykfac c8chaf1 crymv6m ch588tu cd1c1x2 cgjpuuk co3wgvm cjdg5q7`}>
+className={`w-box ci03eyw c5zf3td c1bdekej cy2vnym cgykfac c8chaf1 crymv6m ch588tu cd1c1x2 cgjpuuk co3wgvm cjdg5q7`}>
 <Link
 href={"/"}
-className={`w-link c4qqqhz c1l00ka2 c8l261o c1ozmz5d c1ho4waj c1k74xht c1122adb c10pf28n c1w0lkxn ch9rsc5 c1et34yr c1tj415q`}>
+className={`w-link c4qqqhz c1l00ka2 c8l261o c1ozmz5d c1ho4waj c1k74xht c1122adb ch9rsc5 c10pf28n c1w0lkxn c1et34yr c1tj415q cycv0tm`}>
 {"Home"}
 </Link>
 <Link
 href={"/course-bank"}
-className={`w-link c4qqqhz c1l00ka2 c8l261o c1wmsojl c1ho4waj c1k74xht c1122adb c10pf28n c1w0lkxn ch9rsc5 c1et34yr c1tj415q`}>
-{"Course Bank"}
+className={`w-link c4qqqhz c1l00ka2 c8l261o c1wmsojl c1ho4waj c1k74xht c1122adb ch9rsc5 c10pf28n c1w0lkxn c1et34yr c1tj415q`}>
+<span
+className={`w-element cycv0tm`}>
+{"Course "}
+</span>
+{"Bank"}
 </Link>
 <Link
 href={"/calendar"}
-className={`w-link c4qqqhz c1l00ka2 c8l261o c1ozmz5d c1ho4waj c1k74xht c1122adb c10pf28n c1w0lkxn ch9rsc5 c1et34yr c1tj415q`}>
+className={`w-link c4qqqhz c1l00ka2 c8l261o c1ozmz5d c1ho4waj c1k74xht c1122adb ch9rsc5 c10pf28n c1w0lkxn c1et34yr c1tj415q`}>
 {"Calendar"}
+</Link>
+<Link
+href={"/introduction"}
+className={`w-link c4qqqhz c1l00ka2 c8l261o c1ozmz5d c1ho4waj c1k74xht c1122adb ch9rsc5 c10pf28n c1w0lkxn c1et34yr c1tj415q`}>
+{"Dashboard"}
 </Link>
 <Tooltip
 delayDuration={0}>
 <TooltipTrigger>
 <div
-className={`w-element c4qqqhz c1l00ka2 c8l261o c1ozmz5d c1ho4waj c1k74xht ch9rsc5 c1w0lkxn c1122adb c10pf28n cbahl6h c1tj415q`}>
+className={`w-element c4qqqhz c1l00ka2 c8l261o c1ozmz5d c1ho4waj c1k74xht c1122adb ch9rsc5 c10pf28n c1w0lkxn cbahl6h c1tj415q`}>
 {"About"}
 </div>
 </TooltipTrigger>
@@ -85,18 +94,24 @@ className={`w-element c4qqqhz c1l00ka2 c8l261o c1ozmz5d c1ho4waj c1k74xht ch9rsc
 className={`w-tooltip-content c5mlbae cm1ds2c c1fxgukz cdzo1k7 c1lp7lun c3ryv7d c1t11c95 c1kz25wt c1jbi97f crebcbz cfjpsss ci03eyw cu8ogtt c4bgnbx cj82r57 c14a5ioc cm4j335`}>
 <Link
 href={"/about-ge"}
-className={`w-link c4qqqhz c1l00ka2 c8l261o c1ozmz5d c1ho4waj c1k74xht c1122adb c10pf28n c1w0lkxn ch9rsc5 cz5lin5 c1tj415q`}>
+className={`w-link c4qqqhz c1l00ka2 c8l261o c1ozmz5d c1ho4waj c1k74xht c1122adb ch9rsc5 c10pf28n c1w0lkxn cz5lin5 c1tj415q`}>
 {"General Engineering"}
 </Link>
+<Link_1
+href={"/about-dtu"}
+className={`w-element c4qqqhz c1l00ka2 c8l261o c1ozmz5d c1ho4waj c1k74xht cz03vb2 cqo7rnh cz5lin5 c1tj415q`}>
+{"DTU"}
+</Link_1>
 <Link
 href={"/about-geu"}
-className={`w-link c4qqqhz c1l00ka2 c8l261o c1ozmz5d c1ho4waj c1k74xht c1122adb c10pf28n c1w0lkxn ch9rsc5 cz5lin5 c1tj415q`}>
+className={`w-link c4qqqhz c1l00ka2 c8l261o c1ozmz5d c1ho4waj c1k74xht c1122adb ch9rsc5 c10pf28n c1w0lkxn cz5lin5 c1tj415q`}>
 {"GE Union"}
 </Link>
 </TooltipContent>
 </Tooltip>
 </Box>
-<Dialog>
+<Dialog
+open={false}>
 <DialogTrigger>
 <Button
 className={`w-button cvuh4zx c1v4vkm5 c1bti4b5 c1jbi97f crebcbz cr2ujrk ciidiay c1kf82bd c7jsqgj ctcp1cq c1r8lktc c1t9gjz2 c7jkqej cn1fibt cnwk8w7 c10ybtws cdxgxee c1wmsojl co1yi26 c1vk95sq c12eb7ae`}>
@@ -141,9 +156,19 @@ className={`w-link c1sy2opm cr2ujrk c8l261o cy7nrqp c1ho4waj c1122adb c10pf28n c
 {"Calendar"}
 </Link>
 <Link
+href={"/introduction"}
+className={`w-link c1sy2opm cr2ujrk c8l261o cy7nrqp c1ho4waj c1122adb c10pf28n c1w0lkxn ch9rsc5 cz5lin5`}>
+{"Dashboard"}
+</Link>
+<Link
 href={"/about-geu"}
 className={`w-link c1sy2opm cr2ujrk c8l261o cy7nrqp c1ho4waj c1122adb c10pf28n c1w0lkxn ch9rsc5 cz5lin5`}>
 {"About GE"}
+</Link>
+<Link
+href={"/about-dtu"}
+className={`w-link c1sy2opm cr2ujrk c8l261o cy7nrqp c1ho4waj c1122adb c10pf28n c1w0lkxn ch9rsc5 cz5lin5`}>
+{"About DTU"}
 </Link>
 <Link
 href={"/about-geu"}
@@ -170,7 +195,7 @@ className={`w-element cyoo8jj cnurt1a c1wzvl6u`}>
 </h1>
 <Text
 className={`w-text cg3nt0s c74dsfz czgmbqe cyoo8jj c1wwlxnr cje5w08 c1bck0pu c16hxlzn c1c73s0v c7u4ssh`}>
-{"Stuff for and about courses."}
+{"Your GE hub for course info and notes."}
 </Text>
 </Box>
 </Box>
@@ -267,7 +292,7 @@ className={`w-html-embed`} />
 className={`w-item-content cm1ds2c c1fxgukz c1jbi97f crebcbz c1tmykg6 ctdzf0s c1efnbdc c14hahek c1qt5xo2 c984udg c15qt4h4 c11ua5hp`}>
 <span
 className={`w-element`}>
-{"The course content provides a part of the mathematical basis for a broad range of technical fields and also provides a starting point for further studies in mathematics and applied mathematics."}
+{"Covers logic, complex numbers, polynomials, linear algebra, and differential equations, combining theory with computation. Strengthens problem-solving through reasoning, thematic exercises, and computer-based methods."}
 </span>
 <h3
 className={`w-element cc02v1c`}>
@@ -306,7 +331,7 @@ className={`w-html-embed`} />
 className={`w-item-content cm1ds2c c1fxgukz c1jbi97f crebcbz c1tmykg6 ctdzf0s c1efnbdc c14hahek c1qt5xo2 c984udg c15qt4h4 c11ua5hp`}>
 <span
 className={`w-element`}>
-{"The goal is to strengthen the students' ability to, on the one hand, use a mathematical way of thinking and, on the other hand, an algorithmic and computational approach to understanding and working with basic concepts from multivariate calculus."}
+{"Focuses on multivariable calculus, including gradients, Jacobians, Taylor expansions, optimization, and vector fields. Combines theory and computation with integrals, parameterizations, and the spectral theorem. Develops skills through thematic exercises, group projects, and computer-based methods."}
 </span>
 <h3
 className={`w-element cc02v1c`}>
@@ -345,7 +370,7 @@ className={`w-html-embed`} />
 className={`w-item-content cm1ds2c c1fxgukz c1jbi97f crebcbz c1tmykg6 ctdzf0s c1efnbdc c14hahek c1qt5xo2 c984udg c15qt4h4 c11ua5hp`}>
 <span
 className={`w-element`}>
-{"To achieve knowledge of the fundamental chemical principles, which are part of the common polytechnic basis of the civil bachelor's degrees."}
+{"Covers atomic structure, bonding, thermodynamics, equilibrium, kinetics, acids/bases, and redox reactions. Connects chemistry to materials, catalysis, and element cycles with focus on technology and sustainability."}
 </span>
 <h3
 className={`w-element cc02v1c`}>
@@ -384,7 +409,7 @@ className={`w-html-embed`} />
 className={`w-item-content cm1ds2c c1fxgukz c1jbi97f crebcbz c1tmykg6 ctdzf0s c1efnbdc c14hahek c1qt5xo2 c984udg c15qt4h4 c11ua5hp`}>
 <span
 className={`w-element`}>
-{"To achieve knowledge of the fundamental chemical principles, which are part of the common polytechnic basis of the civil bachelor's degrees."}
+{"Learn the basics of Python programming while solving real problems with code. You’ll practice everything from loops and functions to working with data, and even try out simple projects. A hands-on way to build the coding skills every engineer needs."}
 </span>
 <h3
 className={`w-element cc02v1c`}>
@@ -423,7 +448,7 @@ className={`w-html-embed`} />
 className={`w-item-content cm1ds2c c1fxgukz c1jbi97f crebcbz c1tmykg6 ctdzf0s c1efnbdc c14hahek c1qt5xo2 c984udg c15qt4h4 c11ua5hp`}>
 <span
 className={`w-element`}>
-{"To achieve knowledge of the fundamental chemical principles, which are part of the common polytechnic basis of the civil bachelor's degrees."}
+{"Covers the big three of engineering physics: mechanics, thermodynamics, and electromagnetism: plus  experiments. You’ll learn to model real systems, crunch data in Python, and see how physics explains (almost) everything around you."}
 </span>
 <h3
 className={`w-element cc02v1c`}>
@@ -462,7 +487,7 @@ className={`w-html-embed`} />
 className={`w-item-content cm1ds2c c1fxgukz c1jbi97f crebcbz c1tmykg6 ctdzf0s c1efnbdc c14hahek c1qt5xo2 c984udg c15qt4h4 c11ua5hp`}>
 <span
 className={`w-element`}>
-{"To achieve knowledge of the fundamental chemical principles, which are part of the common polytechnic basis of the civil bachelor's degrees."}
+{"Learn how to make sense of data with graphs, probability, and statistical models. You’ll try out tools like Python to test ideas, run regressions, and check if results actually make sense."}
 </span>
 <h3
 className={`w-element cc02v1c`}>
@@ -501,7 +526,7 @@ className={`w-html-embed`} />
 className={`w-item-content cm1ds2c c1fxgukz c1jbi97f crebcbz c1tmykg6 ctdzf0s c1efnbdc c14hahek c1qt5xo2 c984udg c15qt4h4 c11ua5hp`}>
 <span
 className={`w-element`}>
-{"To achieve knowledge of the fundamental chemical principles, which are part of the common polytechnic basis of the civil bachelor's degrees."}
+{"Get an intro to biology and biotechnology and see how they connect to engineering. From DNA and proteins to ecosystems and data science, you’ll explore how biology can inspire tech. Finish with a group project solving a real-world problem."}
 </span>
 <h3
 className={`w-element cc02v1c`}>
@@ -540,7 +565,7 @@ className={`w-html-embed`} />
 className={`w-item-content cm1ds2c c1fxgukz c1jbi97f crebcbz c1tmykg6 ctdzf0s c1efnbdc c14hahek c1qt5xo2 c984udg c15qt4h4 c11ua5hp`}>
 <span
 className={`w-element`}>
-{"To achieve knowledge of the fundamental chemical principles, which are part of the common polytechnic basis of the civil bachelor's degrees."}
+{"Explore how technology shapes society and sustainability from ethics and the SDGs to public debates about innovation. You’ll analyze real cases, tackle dilemmas, and learn tools to think critically about the role of engineers in the world."}
 </span>
 <h3
 className={`w-element cc02v1c`}>
@@ -552,9 +577,11 @@ executeScriptOnCanvas={true}
 className={`w-html-embed`} />
 </AccordionContent>
 </AccordionItem>
+<hr
+className={`w-element c1vn0xiq cn1fibt cnwk8w7 c1jeji4x c10ybtws c1og6ug8 c1yzzewo c1cck0k8 c1l807ik c189xzjf c10n22ue`} />
 <AccordionItem
 data-ws-index="8"
-className={`w-item c1risi17`}>
+className={`w-item`}>
 <AccordionHeader
 className={`w-item-header ci03eyw`}>
 <AccordionTrigger
@@ -579,14 +606,17 @@ className={`w-html-embed`} />
 className={`w-item-content cm1ds2c c1fxgukz c1jbi97f crebcbz c1tmykg6 ctdzf0s c1efnbdc c14hahek c1qt5xo2 c984udg c15qt4h4 c11ua5hp`}>
 <span
 className={`w-element`}>
-{"To achieve knowledge of the fundamental chemical principles, which are part of the common polytechnic basis of the civil bachelor's degrees."}
+{"Takes math to the next level with differential equations, infinite series, and Fourier series. You’ll learn how to solve complex systems, test stability, and approximate functions."}
+{""}
+<br />
+{""}
 </span>
 <h3
 className={`w-element cc02v1c`}>
 {"Notes"}
 </h3>
 <HtmlEmbed
-code={"<div class=\"file-list\"\n     data-folder=\"polytechnical-foundations/maths2\">\n  Loading…\n</div>\n<script>\n  initFileLists();\n</script>"}
+code={"<div class=\"file-list\"\n     data-folder=\"rest-of-obligatory-courses/maths2\">\n  Loading…\n</div>\n<script>\n  initFileLists();\n</script>"}
 executeScriptOnCanvas={true}
 className={`w-html-embed`} />
 </AccordionContent>
@@ -603,7 +633,7 @@ className={`w-element cyoo8jj czga5yl c197srfe cc02v1c c19b7rd2`}>
 className={`w-element`}>
 {"Advanced Materials"}
 </b>
-{" specialisation focuses on a particular kind of material, the advanced kind. This means it deals with advanced stuff."}
+{" specialization is about creating sustainable and functional materials for the future. From nanotechnology and modeling to acoustics, physics, and manufacturing, it opens doors across cutting-edge engineering fields."}
 </p>
 <Accordion
 collapsible={true}
@@ -618,10 +648,10 @@ className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c1
 <Text
 className={`w-text c1kzhrg`}>
 {"Introduction to Advanced Materials"}
-<Span
-className={`w-text-1 chpvhw5 c1br4k3t c1vn0xiq c17g3f7v cgjpuuk`}>
-{"01003"}
-</Span>
+<span
+className={`w-element chpvhw5 c1br4k3t c1vn0xiq c17g3f7v cgjpuuk`}>
+{"41680"}
+</span>
 </Text>
 <Box
 className={`w-box coxlzp3 c178lpvj cbg292c c767uka c1tmykg6 c40iywk c1efnbdc c14hahek c1qt5xo2`}>
@@ -635,7 +665,7 @@ className={`w-html-embed`} />
 className={`w-item-content cm1ds2c c1fxgukz c1jbi97f crebcbz c1tmykg6 ctdzf0s c1efnbdc c14hahek c1qt5xo2 c984udg c15qt4h4 c11ua5hp`}>
 <span
 className={`w-element`}>
-{"The course content provides a part of the mathematical basis for a broad range of technical fields and also provides a starting point for further studies in mathematics and applied mathematics."}
+{"No description"}
 </span>
 <h3
 className={`w-element cc02v1c`}>
@@ -657,10 +687,10 @@ className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c1
 <Text
 className={`w-text`}>
 {"Introduction to Numerical Algorithms"}
-<Span
-className={`w-text-1 chpvhw5 c1br4k3t c1vn0xiq c17g3f7v cgjpuuk`}>
-{"01004"}
-</Span>
+<span
+className={`w-element chpvhw5 c1br4k3t c1vn0xiq c17g3f7v cgjpuuk`}>
+{"02601"}
+</span>
 </Text>
 <Box
 className={`w-box coxlzp3 c178lpvj cbg292c c767uka c1tmykg6 c40iywk c1efnbdc c14hahek c1qt5xo2`}>
@@ -674,7 +704,7 @@ className={`w-html-embed`} />
 className={`w-item-content cm1ds2c c1fxgukz c1jbi97f crebcbz c1tmykg6 ctdzf0s c1efnbdc c14hahek c1qt5xo2 c984udg c15qt4h4 c11ua5hp`}>
 <span
 className={`w-element`}>
-{"The goal is to strengthen the students' ability to, on the one hand, use a mathematical way of thinking and, on the other hand, an algorithmic and computational approach to understanding and working with basic concepts from multivariate calculus."}
+{"No description"}
 </span>
 <h3
 className={`w-element cc02v1c`}>
@@ -695,11 +725,11 @@ className={`w-item-header ci03eyw`}>
 className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny cy7nrqp c8l261o c13u1sx6 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c1yyg526 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js cdz972a c74re8a`}>
 <Text
 className={`w-text`}>
-{"Physics for materials and energy"}
-<Span
-className={`w-text-1 chpvhw5 c1br4k3t c1vn0xiq c17g3f7v cgjpuuk`}>
-{"26020"}
-</Span>
+{"Resource Engineering"}
+<span
+className={`w-element chpvhw5 c1br4k3t c1vn0xiq c17g3f7v cgjpuuk`}>
+{"12139"}
+</span>
 </Text>
 <Box
 className={`w-box coxlzp3 c178lpvj cbg292c c767uka c1tmykg6 c40iywk c1efnbdc c14hahek c1qt5xo2`}>
@@ -713,7 +743,46 @@ className={`w-html-embed`} />
 className={`w-item-content cm1ds2c c1fxgukz c1jbi97f crebcbz c1tmykg6 ctdzf0s c1efnbdc c14hahek c1qt5xo2 c984udg c15qt4h4 c11ua5hp`}>
 <span
 className={`w-element`}>
-{"To achieve knowledge of the fundamental chemical principles, which are part of the common polytechnic basis of the civil bachelor's degrees."}
+{"No description"}
+</span>
+<h3
+className={`w-element cc02v1c`}>
+{"Notes"}
+</h3>
+<HtmlEmbed
+code={"<div class=\"file-list\"\n     data-folder=\"advanced-materials/resource-engineering\">\n  Loading…\n</div>\n<script>\n  initFileLists();\n</script>"}
+executeScriptOnCanvas={true}
+className={`w-html-embed`} />
+</AccordionContent>
+</AccordionItem>
+<AccordionItem
+data-ws-index="3"
+className={`w-item`}>
+<AccordionHeader
+className={`w-item-header ci03eyw`}>
+<AccordionTrigger
+className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny cy7nrqp c8l261o c13u1sx6 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c1yyg526 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js cdz972a c74re8a`}>
+<Text
+className={`w-text`}>
+{"Physics for Materials and Energy"}
+<span
+className={`w-element chpvhw5 c1br4k3t c1vn0xiq c17g3f7v cgjpuuk`}>
+{"10080"}
+</span>
+</Text>
+<Box
+className={`w-box coxlzp3 c178lpvj cbg292c c767uka c1tmykg6 c40iywk c1efnbdc c14hahek c1qt5xo2`}>
+<HtmlEmbed
+code={"<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 16 16\" width=\"100%\" height=\"100%\" style=\"display: block;\"><path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"m4 6 4 4 4-4\"/></svg>"}
+className={`w-html-embed`} />
+</Box>
+</AccordionTrigger>
+</AccordionHeader>
+<AccordionContent
+className={`w-item-content cm1ds2c c1fxgukz c1jbi97f crebcbz c1tmykg6 ctdzf0s c1efnbdc c14hahek c1qt5xo2 c984udg c15qt4h4 c11ua5hp`}>
+<span
+className={`w-element`}>
+{"No description"}
 </span>
 <h3
 className={`w-element cc02v1c`}>
@@ -721,6 +790,281 @@ className={`w-element cc02v1c`}>
 </h3>
 <HtmlEmbed
 code={"<div class=\"file-list\"\n     data-folder=\"advanced-materials/physics-for-materials-and-energy\">\n  Loading…\n</div>\n<script>\n  initFileLists();\n</script>"}
+executeScriptOnCanvas={true}
+className={`w-html-embed`} />
+</AccordionContent>
+</AccordionItem>
+<AccordionItem
+data-ws-index="4"
+className={`w-item`}>
+<AccordionHeader
+className={`w-item-header ci03eyw`}>
+<AccordionTrigger
+className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny cy7nrqp c8l261o c13u1sx6 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c1yyg526 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js cdz972a c74re8a`}>
+<Text
+className={`w-text`}>
+{"Materials Technology"}
+<span
+className={`w-element chpvhw5 c1br4k3t c1vn0xiq c17g3f7v cgjpuuk`}>
+{"41684"}
+</span>
+</Text>
+<Box
+className={`w-box coxlzp3 c178lpvj cbg292c c767uka c1tmykg6 c40iywk c1efnbdc c14hahek c1qt5xo2`}>
+<HtmlEmbed
+code={"<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 16 16\" width=\"100%\" height=\"100%\" style=\"display: block;\"><path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"m4 6 4 4 4-4\"/></svg>"}
+className={`w-html-embed`} />
+</Box>
+</AccordionTrigger>
+</AccordionHeader>
+<AccordionContent
+className={`w-item-content cm1ds2c c1fxgukz c1jbi97f crebcbz c1tmykg6 ctdzf0s c1efnbdc c14hahek c1qt5xo2 c984udg c15qt4h4 c11ua5hp`}>
+<span
+className={`w-element`}>
+{"No description"}
+</span>
+<h3
+className={`w-element cc02v1c`}>
+{"Notes"}
+</h3>
+<HtmlEmbed
+code={"<div class=\"file-list\"\n     data-folder=\"advanced-materials/materials-technology\">\n  Loading…\n</div>\n<script>\n  initFileLists();\n</script>"}
+executeScriptOnCanvas={true}
+className={`w-html-embed`} />
+</AccordionContent>
+</AccordionItem>
+<AccordionItem
+data-ws-index="5"
+className={`w-item`}>
+<AccordionHeader
+className={`w-item-header ci03eyw`}>
+<AccordionTrigger
+className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny cy7nrqp c8l261o c13u1sx6 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c1yyg526 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js cdz972a c74re8a`}>
+<Text
+className={`w-text`}>
+{"Materials Characterization and Testing"}
+<span
+className={`w-element chpvhw5 c1br4k3t c1vn0xiq c17g3f7v cgjpuuk`}>
+{"41685"}
+</span>
+</Text>
+<Box
+className={`w-box coxlzp3 c178lpvj cbg292c c767uka c1tmykg6 c40iywk c1efnbdc c14hahek c1qt5xo2`}>
+<HtmlEmbed
+code={"<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 16 16\" width=\"100%\" height=\"100%\" style=\"display: block;\"><path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"m4 6 4 4 4-4\"/></svg>"}
+className={`w-html-embed`} />
+</Box>
+</AccordionTrigger>
+</AccordionHeader>
+<AccordionContent
+className={`w-item-content cm1ds2c c1fxgukz c1jbi97f crebcbz c1tmykg6 ctdzf0s c1efnbdc c14hahek c1qt5xo2 c984udg c15qt4h4 c11ua5hp`}>
+<span
+className={`w-element`}>
+{"No description"}
+</span>
+<h3
+className={`w-element cc02v1c`}>
+{"Notes"}
+</h3>
+<HtmlEmbed
+code={"<div class=\"file-list\"\n     data-folder=\"advanced-materials/materials-characterization-and-testing\">\n  Loading…\n</div>\n<script>\n  initFileLists();\n</script>"}
+executeScriptOnCanvas={true}
+className={`w-html-embed`} />
+</AccordionContent>
+</AccordionItem>
+<hr
+className={`w-element c1vn0xiq cn1fibt cnwk8w7 c1jeji4x c10ybtws c1og6ug8 c1yzzewo c1cck0k8 c1l807ik c189xzjf c10n22ue`} />
+<AccordionItem
+data-ws-index="6"
+className={`w-item`}>
+<AccordionHeader
+className={`w-item-header ci03eyw`}>
+<AccordionTrigger
+className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny cy7nrqp c8l261o c13u1sx6 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c1yyg526 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js cdz972a c74re8a`}>
+<Text
+className={`w-text`}>
+{"Introduction to Machine Learning"}
+<span
+className={`w-element chpvhw5 c1br4k3t c1vn0xiq c17g3f7v cgjpuuk`}>
+{"02451"}
+</span>
+</Text>
+<Box
+className={`w-box coxlzp3 c178lpvj cbg292c c767uka c1tmykg6 c40iywk c1efnbdc c14hahek c1qt5xo2`}>
+<HtmlEmbed
+code={"<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 16 16\" width=\"100%\" height=\"100%\" style=\"display: block;\"><path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"m4 6 4 4 4-4\"/></svg>"}
+className={`w-html-embed`} />
+</Box>
+</AccordionTrigger>
+</AccordionHeader>
+<AccordionContent
+className={`w-item-content cm1ds2c c1fxgukz c1jbi97f crebcbz c1tmykg6 ctdzf0s c1efnbdc c14hahek c1qt5xo2 c984udg c15qt4h4 c11ua5hp`}>
+<span
+className={`w-element`}>
+{"No description"}
+</span>
+<h3
+className={`w-element cc02v1c`}>
+{"Notes"}
+</h3>
+<HtmlEmbed
+code={"<div class=\"file-list\"\n     data-folder=\"advanced-materials/introduction-to-machine-learning\">\n  Loading…\n</div>\n<script>\n  initFileLists();\n</script>"}
+executeScriptOnCanvas={true}
+className={`w-html-embed`} />
+</AccordionContent>
+</AccordionItem>
+<AccordionItem
+data-ws-index="7"
+className={`w-item`}>
+<AccordionHeader
+className={`w-item-header ci03eyw`}>
+<AccordionTrigger
+className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny cy7nrqp c8l261o c13u1sx6 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c1yyg526 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js cdz972a c74re8a`}>
+<Text
+className={`w-text`}>
+{"Image Analysis"}
+<span
+className={`w-element chpvhw5 c1br4k3t c1vn0xiq c17g3f7v cgjpuuk`}>
+{"02503"}
+</span>
+</Text>
+<Box
+className={`w-box coxlzp3 c178lpvj cbg292c c767uka c1tmykg6 c40iywk c1efnbdc c14hahek c1qt5xo2`}>
+<HtmlEmbed
+code={"<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 16 16\" width=\"100%\" height=\"100%\" style=\"display: block;\"><path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"m4 6 4 4 4-4\"/></svg>"}
+className={`w-html-embed`} />
+</Box>
+</AccordionTrigger>
+</AccordionHeader>
+<AccordionContent
+className={`w-item-content cm1ds2c c1fxgukz c1jbi97f crebcbz c1tmykg6 ctdzf0s c1efnbdc c14hahek c1qt5xo2 c984udg c15qt4h4 c11ua5hp`}>
+<span
+className={`w-element`}>
+{"No description"}
+</span>
+<h3
+className={`w-element cc02v1c`}>
+{"Notes"}
+</h3>
+<HtmlEmbed
+code={"<div class=\"file-list\"\n     data-folder=\"advanced-materials/image-analysis\">\n  Loading…\n</div>\n<script>\n  initFileLists();\n</script>"}
+executeScriptOnCanvas={true}
+className={`w-html-embed`} />
+</AccordionContent>
+</AccordionItem>
+<AccordionItem
+data-ws-index="8"
+className={`w-item`}>
+<AccordionHeader
+className={`w-item-header ci03eyw`}>
+<AccordionTrigger
+className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny cy7nrqp c8l261o c13u1sx6 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c1yyg526 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js cdz972a c74re8a`}>
+<Text
+className={`w-text`}>
+{"Mathematical Modelling"}
+<span
+className={`w-element chpvhw5 c1br4k3t c1vn0xiq c17g3f7v cgjpuuk`}>
+{"02526"}
+</span>
+</Text>
+<Box
+className={`w-box coxlzp3 c178lpvj cbg292c c767uka c1tmykg6 c40iywk c1efnbdc c14hahek c1qt5xo2`}>
+<HtmlEmbed
+code={"<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 16 16\" width=\"100%\" height=\"100%\" style=\"display: block;\"><path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"m4 6 4 4 4-4\"/></svg>"}
+className={`w-html-embed`} />
+</Box>
+</AccordionTrigger>
+</AccordionHeader>
+<AccordionContent
+className={`w-item-content cm1ds2c c1fxgukz c1jbi97f crebcbz c1tmykg6 ctdzf0s c1efnbdc c14hahek c1qt5xo2 c984udg c15qt4h4 c11ua5hp`}>
+<span
+className={`w-element`}>
+{"No description"}
+</span>
+<h3
+className={`w-element cc02v1c`}>
+{"Notes"}
+</h3>
+<HtmlEmbed
+code={"<div class=\"file-list\"\n     data-folder=\"advanced-materials/mathematical-modelling\">\n  Loading…\n</div>\n<script>\n  initFileLists();\n</script>"}
+executeScriptOnCanvas={true}
+className={`w-html-embed`} />
+</AccordionContent>
+</AccordionItem>
+<AccordionItem
+data-ws-index="9"
+className={`w-item`}>
+<AccordionHeader
+className={`w-item-header ci03eyw`}>
+<AccordionTrigger
+className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny cy7nrqp c8l261o c13u1sx6 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c1yyg526 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js cdz972a c74re8a`}>
+<Text
+className={`w-text`}>
+{"Introduction to 3D printing"}
+<span
+className={`w-element chpvhw5 c1br4k3t c1vn0xiq c17g3f7v cgjpuuk`}>
+{"41789"}
+</span>
+</Text>
+<Box
+className={`w-box coxlzp3 c178lpvj cbg292c c767uka c1tmykg6 c40iywk c1efnbdc c14hahek c1qt5xo2`}>
+<HtmlEmbed
+code={"<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 16 16\" width=\"100%\" height=\"100%\" style=\"display: block;\"><path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"m4 6 4 4 4-4\"/></svg>"}
+className={`w-html-embed`} />
+</Box>
+</AccordionTrigger>
+</AccordionHeader>
+<AccordionContent
+className={`w-item-content cm1ds2c c1fxgukz c1jbi97f crebcbz c1tmykg6 ctdzf0s c1efnbdc c14hahek c1qt5xo2 c984udg c15qt4h4 c11ua5hp`}>
+<span
+className={`w-element`}>
+{"No description"}
+</span>
+<h3
+className={`w-element cc02v1c`}>
+{"Notes"}
+</h3>
+<HtmlEmbed
+code={"<div class=\"file-list\"\n     data-folder=\"advanced-materials/introduction-to-3d-printing\">\n  Loading…\n</div>\n<script>\n  initFileLists();\n</script>"}
+executeScriptOnCanvas={true}
+className={`w-html-embed`} />
+</AccordionContent>
+</AccordionItem>
+<AccordionItem
+data-ws-index="10"
+className={`w-item`}>
+<AccordionHeader
+className={`w-item-header ci03eyw`}>
+<AccordionTrigger
+className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny cy7nrqp c8l261o c13u1sx6 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c1yyg526 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js cdz972a c74re8a`}>
+<Text
+className={`w-text`}>
+{"Computer Simulation of Materials"}
+<span
+className={`w-element chpvhw5 c1br4k3t c1vn0xiq c17g3f7v cgjpuuk`}>
+{"47212"}
+</span>
+</Text>
+<Box
+className={`w-box coxlzp3 c178lpvj cbg292c c767uka c1tmykg6 c40iywk c1efnbdc c14hahek c1qt5xo2`}>
+<HtmlEmbed
+code={"<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 16 16\" width=\"100%\" height=\"100%\" style=\"display: block;\"><path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"m4 6 4 4 4-4\"/></svg>"}
+className={`w-html-embed`} />
+</Box>
+</AccordionTrigger>
+</AccordionHeader>
+<AccordionContent
+className={`w-item-content cm1ds2c c1fxgukz c1jbi97f crebcbz c1tmykg6 ctdzf0s c1efnbdc c14hahek c1qt5xo2 c984udg c15qt4h4 c11ua5hp`}>
+<span
+className={`w-element`}>
+{"No description"}
+</span>
+<h3
+className={`w-element cc02v1c`}>
+{"Notes"}
+</h3>
+<HtmlEmbed
+code={"<div class=\"file-list\"\n     data-folder=\"advanced-materials/computer-simulations-of-materials\">\n  Loading…\n</div>\n<script>\n  initFileLists();\n</script>"}
 executeScriptOnCanvas={true}
 className={`w-html-embed`} />
 </AccordionContent>
@@ -737,7 +1081,7 @@ className={`w-element cyoo8jj czga5yl c197srfe cc02v1c c19b7rd2`}>
 className={`w-element`}>
 {"Cyber Systems"}
 </b>
-{" specialisation is about computers and integrated systems. It is objectively the best specialisation for the best people."}
+{" specialization is about computers and integrated systems. It is objectively the best specialization for the best people."}
 </p>
 <Accordion
 collapsible={true}
@@ -752,10 +1096,10 @@ className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c1
 <Text
 className={`w-text c1kzhrg`}>
 {"Introduction to Cyber Systems"}
-<Span
-className={`w-text-1 chpvhw5 c1br4k3t c1vn0xiq c17g3f7v cgjpuuk`}>
-{"01003"}
-</Span>
+<span
+className={`w-element chpvhw5 c1br4k3t c1vn0xiq c17g3f7v cgjpuuk`}>
+{"02135"}
+</span>
 </Text>
 <Box
 className={`w-box coxlzp3 c178lpvj cbg292c c767uka c1tmykg6 c40iywk c1efnbdc c14hahek c1qt5xo2`}>
@@ -769,14 +1113,14 @@ className={`w-html-embed`} />
 className={`w-item-content cm1ds2c c1fxgukz c1jbi97f crebcbz c1tmykg6 ctdzf0s c1efnbdc c14hahek c1qt5xo2 c984udg c15qt4h4 c11ua5hp`}>
 <span
 className={`w-element`}>
-{"The course content provides a part of the mathematical basis for a broad range of technical fields and also provides a starting point for further studies in mathematics and applied mathematics."}
+{"No description"}
 </span>
 <h3
 className={`w-element cc02v1c`}>
 {"Notes"}
 </h3>
 <HtmlEmbed
-code={"<div class=\"file-list\"\n     data-folder=\"polytechnical-foundations/maths1a\">\n  Loading…\n</div>\n<script>\n  initFileLists();\n</script>"}
+code={"<div class=\"file-list\"\n     data-folder=\"cyber-systems/introduction-to-cyber-systems\">\n  Loading…\n</div>\n<script>\n  initFileLists();\n</script>"}
 executeScriptOnCanvas={true}
 className={`w-html-embed`} />
 </AccordionContent>
@@ -791,10 +1135,10 @@ className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c1
 <Text
 className={`w-text`}>
 {"Discrete Mathematics"}
-<Span
-className={`w-text-1 chpvhw5 c1br4k3t c1vn0xiq c17g3f7v cgjpuuk`}>
-{"01004"}
-</Span>
+<span
+className={`w-element chpvhw5 c1br4k3t c1vn0xiq c17g3f7v cgjpuuk`}>
+{"01017"}
+</span>
 </Text>
 <Box
 className={`w-box coxlzp3 c178lpvj cbg292c c767uka c1tmykg6 c40iywk c1efnbdc c14hahek c1qt5xo2`}>
@@ -808,14 +1152,14 @@ className={`w-html-embed`} />
 className={`w-item-content cm1ds2c c1fxgukz c1jbi97f crebcbz c1tmykg6 ctdzf0s c1efnbdc c14hahek c1qt5xo2 c984udg c15qt4h4 c11ua5hp`}>
 <span
 className={`w-element`}>
-{"The goal is to strengthen the students' ability to, on the one hand, use a mathematical way of thinking and, on the other hand, an algorithmic and computational approach to understanding and working with basic concepts from multivariate calculus."}
+{"No description"}
 </span>
 <h3
 className={`w-element cc02v1c`}>
 {"Notes"}
 </h3>
 <HtmlEmbed
-code={"<div class=\"file-list\"\n     data-folder=\"polytechnical-foundations/maths1b\">\n  Loading…\n</div>\n<script>\n  initFileLists();\n</script>"}
+code={"<div class=\"file-list\"\n     data-folder=\"cyber-systems/discrete-mathematics\">\n  Loading…\n</div>\n<script>\n  initFileLists();\n</script>"}
 executeScriptOnCanvas={true}
 className={`w-html-embed`} />
 </AccordionContent>
@@ -847,14 +1191,131 @@ className={`w-html-embed`} />
 className={`w-item-content cm1ds2c c1fxgukz c1jbi97f crebcbz c1tmykg6 ctdzf0s c1efnbdc c14hahek c1qt5xo2 c984udg c15qt4h4 c11ua5hp`}>
 <span
 className={`w-element`}>
-{"To achieve knowledge of the fundamental chemical principles, which are part of the common polytechnic basis of the civil bachelor's degrees."}
+{"No description"}
 </span>
 <h3
 className={`w-element cc02v1c`}>
 {"Notes"}
 </h3>
 <HtmlEmbed
-code={"<div class=\"file-list\"\n     data-folder=\"polytechnical-foundations/chemistry\">\n  Loading…\n</div>\n<script>\n  initFileLists();\n</script>"}
+code={"<div class=\"file-list\"\n     data-folder=\"cyber-systems/algorithms-and-data-structures1\">\n  Loading…\n</div>\n<script>\n  initFileLists();\n</script>"}
+executeScriptOnCanvas={true}
+className={`w-html-embed`} />
+</AccordionContent>
+</AccordionItem>
+<AccordionItem
+data-ws-index="3"
+className={`w-item`}>
+<AccordionHeader
+className={`w-item-header ci03eyw`}>
+<AccordionTrigger
+className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny cy7nrqp c8l261o c13u1sx6 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c1yyg526 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js cdz972a c74re8a`}>
+<Text
+className={`w-text`}>
+{"Computer Science Modelling"}
+<span
+className={`w-element chpvhw5 c1br4k3t c1vn0xiq c17g3f7v cgjpuuk`}>
+{"02141"}
+</span>
+</Text>
+<Box
+className={`w-box coxlzp3 c178lpvj cbg292c c767uka c1tmykg6 c40iywk c1efnbdc c14hahek c1qt5xo2`}>
+<HtmlEmbed
+code={"<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 16 16\" width=\"100%\" height=\"100%\" style=\"display: block;\"><path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"m4 6 4 4 4-4\"/></svg>"}
+className={`w-html-embed`} />
+</Box>
+</AccordionTrigger>
+</AccordionHeader>
+<AccordionContent
+className={`w-item-content cm1ds2c c1fxgukz c1jbi97f crebcbz c1tmykg6 ctdzf0s c1efnbdc c14hahek c1qt5xo2 c984udg c15qt4h4 c11ua5hp`}>
+<span
+className={`w-element`}>
+{"No description"}
+</span>
+<h3
+className={`w-element cc02v1c`}>
+{"Notes"}
+</h3>
+<HtmlEmbed
+code={"<div class=\"file-list\"\n     data-folder=\"cyber-systems/computer-science-modelling\">\n  Loading…\n</div>\n<script>\n  initFileLists();\n</script>"}
+executeScriptOnCanvas={true}
+className={`w-html-embed`} />
+</AccordionContent>
+</AccordionItem>
+<AccordionItem
+data-ws-index="4"
+className={`w-item`}>
+<AccordionHeader
+className={`w-item-header ci03eyw`}>
+<AccordionTrigger
+className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny cy7nrqp c8l261o c13u1sx6 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c1yyg526 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js cdz972a c74re8a`}>
+<Text
+className={`w-text`}>
+{"Functional Programming"}
+<span
+className={`w-element chpvhw5 c1br4k3t c1vn0xiq c17g3f7v cgjpuuk`}>
+{"02157"}
+</span>
+</Text>
+<Box
+className={`w-box coxlzp3 c178lpvj cbg292c c767uka c1tmykg6 c40iywk c1efnbdc c14hahek c1qt5xo2`}>
+<HtmlEmbed
+code={"<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 16 16\" width=\"100%\" height=\"100%\" style=\"display: block;\"><path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"m4 6 4 4 4-4\"/></svg>"}
+className={`w-html-embed`} />
+</Box>
+</AccordionTrigger>
+</AccordionHeader>
+<AccordionContent
+className={`w-item-content cm1ds2c c1fxgukz c1jbi97f crebcbz c1tmykg6 ctdzf0s c1efnbdc c14hahek c1qt5xo2 c984udg c15qt4h4 c11ua5hp`}>
+<span
+className={`w-element`}>
+{"No description"}
+</span>
+<h3
+className={`w-element cc02v1c`}>
+{"Notes"}
+</h3>
+<HtmlEmbed
+code={"<div class=\"file-list\"\n     data-folder=\"cyber-systems/functional-programming\">\n  Loading…\n</div>\n<script>\n  initFileLists();\n</script>"}
+executeScriptOnCanvas={true}
+className={`w-html-embed`} />
+</AccordionContent>
+</AccordionItem>
+<AccordionItem
+data-ws-index="5"
+className={`w-item`}>
+<AccordionHeader
+className={`w-item-header ci03eyw`}>
+<AccordionTrigger
+className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny cy7nrqp c8l261o c13u1sx6 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c1yyg526 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js cdz972a c74re8a`}>
+<Text
+className={`w-text`}>
+{"Agile Object-oriented Software Development"}
+<span
+className={`w-element chpvhw5 c1br4k3t c1vn0xiq c17g3f7v cgjpuuk`}>
+{"02160"}
+</span>
+</Text>
+<Box
+className={`w-box coxlzp3 c178lpvj cbg292c c767uka c1tmykg6 c40iywk c1efnbdc c14hahek c1qt5xo2`}>
+<HtmlEmbed
+code={"<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 16 16\" width=\"100%\" height=\"100%\" style=\"display: block;\"><path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"m4 6 4 4 4-4\"/></svg>"}
+className={`w-html-embed`} />
+</Box>
+</AccordionTrigger>
+</AccordionHeader>
+<AccordionContent
+className={`w-item-content cm1ds2c c1fxgukz c1jbi97f crebcbz c1tmykg6 ctdzf0s c1efnbdc c14hahek c1qt5xo2 c984udg c15qt4h4 c11ua5hp`}>
+<span
+className={`w-element`}>
+{"No description"}
+</span>
+<h3
+className={`w-element cc02v1c`}>
+{"Notes"}
+</h3>
+<HtmlEmbed
+code={"<div class=\"file-list\"\n     data-folder=\"cyber-systems/agile-object-oriented-software-development\">\n  Loading…\n</div>\n<script>\n  initFileLists();\n</script>"}
 executeScriptOnCanvas={true}
 className={`w-html-embed`} />
 </AccordionContent>
@@ -871,11 +1332,7 @@ className={`w-element cyoo8jj czga5yl c197srfe cc02v1c c19b7rd2`}>
 className={`w-element`}>
 {"Living Systems"}
 </b>
-{" specialisation sucks."}
-{""}
-<br />
-{""}
-{" "}
+{" specialization covers everything from food and aquatic engineering to healthcare, medicine, and chemicals. It’s a gateway to Denmark’s world-leading biotech and pharma scene, with strong links to companies like Novo Nordisk."}
 </p>
 <Accordion
 collapsible={true}
@@ -890,10 +1347,10 @@ className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c1
 <Text
 className={`w-text c1kzhrg`}>
 {"Introduction to Living Systems"}
-<Span
-className={`w-text-1 chpvhw5 c1br4k3t c1vn0xiq c17g3f7v cgjpuuk`}>
-{"01003"}
-</Span>
+<span
+className={`w-element chpvhw5 c1br4k3t c1vn0xiq c17g3f7v cgjpuuk`}>
+{"12701"}
+</span>
 </Text>
 <Box
 className={`w-box coxlzp3 c178lpvj cbg292c c767uka c1tmykg6 c40iywk c1efnbdc c14hahek c1qt5xo2`}>
@@ -907,14 +1364,14 @@ className={`w-html-embed`} />
 className={`w-item-content cm1ds2c c1fxgukz c1jbi97f crebcbz c1tmykg6 ctdzf0s c1efnbdc c14hahek c1qt5xo2 c984udg c15qt4h4 c11ua5hp`}>
 <span
 className={`w-element`}>
-{"The course content provides a part of the mathematical basis for a broad range of technical fields and also provides a starting point for further studies in mathematics and applied mathematics."}
+{"No description"}
 </span>
 <h3
 className={`w-element cc02v1c`}>
 {"Notes"}
 </h3>
 <HtmlEmbed
-code={"<div class=\"file-list\"\n     data-folder=\"polytechnical-foundations/maths1a\">\n  Loading…\n</div>\n<script>\n  initFileLists();\n</script>"}
+code={"<div class=\"file-list\"\n     data-folder=\"living-systems/introduction-to-living-systems\">\n  Loading…\n</div>\n<script>\n  initFileLists();\n</script>"}
 executeScriptOnCanvas={true}
 className={`w-html-embed`} />
 </AccordionContent>
@@ -928,11 +1385,11 @@ className={`w-item-header ci03eyw`}>
 className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny cy7nrqp c8l261o c13u1sx6 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c1yyg526 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js cdz972a c74re8a`}>
 <Text
 className={`w-text`}>
-{"Introduction to genetic methods in engineering"}
-<Span
-className={`w-text-1 chpvhw5 c1br4k3t c1vn0xiq c17g3f7v cgjpuuk`}>
-{"01004"}
-</Span>
+{"Introduction to Genetic Methods in Engineering"}
+<span
+className={`w-element chpvhw5 c1br4k3t c1vn0xiq c17g3f7v cgjpuuk`}>
+{"25106"}
+</span>
 </Text>
 <Box
 className={`w-box coxlzp3 c178lpvj cbg292c c767uka c1tmykg6 c40iywk c1efnbdc c14hahek c1qt5xo2`}>
@@ -946,14 +1403,14 @@ className={`w-html-embed`} />
 className={`w-item-content cm1ds2c c1fxgukz c1jbi97f crebcbz c1tmykg6 ctdzf0s c1efnbdc c14hahek c1qt5xo2 c984udg c15qt4h4 c11ua5hp`}>
 <span
 className={`w-element`}>
-{"The goal is to strengthen the students' ability to, on the one hand, use a mathematical way of thinking and, on the other hand, an algorithmic and computational approach to understanding and working with basic concepts from multivariate calculus."}
+{"**The goal is to strengthen the students' ability to, on the one hand, use a mathematical way of thinking and, on the other hand, an algorithmic and computational approach to understanding and working with basic concepts from multivariate calculus."}
 </span>
 <h3
 className={`w-element cc02v1c`}>
 {"Notes"}
 </h3>
 <HtmlEmbed
-code={"<div class=\"file-list\"\n     data-folder=\"polytechnical-foundations/maths1b\">\n  Loading…\n</div>\n<script>\n  initFileLists();\n</script>"}
+code={"<div class=\"file-list\"\n     data-folder=\"living-systems/introduction-to-genetic-methods-in-engineering\">\n  Loading…\n</div>\n<script>\n  initFileLists();\n</script>"}
 executeScriptOnCanvas={true}
 className={`w-html-embed`} />
 </AccordionContent>
@@ -968,10 +1425,10 @@ className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c1
 <Text
 className={`w-text`}>
 {"Biochemistry"}
-<Span
-className={`w-text-1 chpvhw5 c1br4k3t c1vn0xiq c17g3f7v cgjpuuk`}>
-{"26020"}
-</Span>
+<span
+className={`w-element chpvhw5 c1br4k3t c1vn0xiq c17g3f7v cgjpuuk`}>
+{"27022"}
+</span>
 </Text>
 <Box
 className={`w-box coxlzp3 c178lpvj cbg292c c767uka c1tmykg6 c40iywk c1efnbdc c14hahek c1qt5xo2`}>
@@ -985,14 +1442,367 @@ className={`w-html-embed`} />
 className={`w-item-content cm1ds2c c1fxgukz c1jbi97f crebcbz c1tmykg6 ctdzf0s c1efnbdc c14hahek c1qt5xo2 c984udg c15qt4h4 c11ua5hp`}>
 <span
 className={`w-element`}>
-{"To achieve knowledge of the fundamental chemical principles, which are part of the common polytechnic basis of the civil bachelor's degrees."}
+{"No description"}
 </span>
 <h3
 className={`w-element cc02v1c`}>
 {"Notes"}
 </h3>
 <HtmlEmbed
-code={"<div class=\"file-list\"\n     data-folder=\"polytechnical-foundations/chemistry\">\n  Loading…\n</div>\n<script>\n  initFileLists();\n</script>"}
+code={"<div class=\"file-list\"\n     data-folder=\"living-systems/biochemistry\">\n  Loading…\n</div>\n<script>\n  initFileLists();\n</script>"}
+executeScriptOnCanvas={true}
+className={`w-html-embed`} />
+</AccordionContent>
+</AccordionItem>
+<AccordionItem
+data-ws-index="3"
+className={`w-item`}>
+<AccordionHeader
+className={`w-item-header ci03eyw`}>
+<AccordionTrigger
+className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny cy7nrqp c8l261o c13u1sx6 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c1yyg526 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js cdz972a c74re8a`}>
+<Text
+className={`w-text`}>
+{"Experimental Molecular Microbiology"}
+<span
+className={`w-element chpvhw5 c1br4k3t c1vn0xiq c17g3f7v cgjpuuk`}>
+{"27027"}
+</span>
+</Text>
+<Box
+className={`w-box coxlzp3 c178lpvj cbg292c c767uka c1tmykg6 c40iywk c1efnbdc c14hahek c1qt5xo2`}>
+<HtmlEmbed
+code={"<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 16 16\" width=\"100%\" height=\"100%\" style=\"display: block;\"><path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"m4 6 4 4 4-4\"/></svg>"}
+className={`w-html-embed`} />
+</Box>
+</AccordionTrigger>
+</AccordionHeader>
+<AccordionContent
+className={`w-item-content cm1ds2c c1fxgukz c1jbi97f crebcbz c1tmykg6 ctdzf0s c1efnbdc c14hahek c1qt5xo2 c984udg c15qt4h4 c11ua5hp`}>
+<span
+className={`w-element`}>
+{"No description"}
+</span>
+<h3
+className={`w-element cc02v1c`}>
+{"Notes"}
+</h3>
+<HtmlEmbed
+code={"<div class=\"file-list\"\n     data-folder=\"living-systems/experimental-molecular-microbiology\">\n  Loading…\n</div>\n<script>\n  initFileLists();\n</script>"}
+executeScriptOnCanvas={true}
+className={`w-html-embed`} />
+</AccordionContent>
+</AccordionItem>
+<hr
+className={`w-element c1vn0xiq cn1fibt cnwk8w7 c1jeji4x c10ybtws c1og6ug8 c1yzzewo c1cck0k8 c1l807ik c189xzjf c10n22ue`} />
+<AccordionItem
+data-ws-index="4"
+className={`w-item`}>
+<AccordionHeader
+className={`w-item-header ci03eyw`}>
+<AccordionTrigger
+className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny cy7nrqp c8l261o c13u1sx6 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c1yyg526 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js cdz972a c74re8a`}>
+<Text
+className={`w-text`}>
+{"Introduction to Bioinformatics"}
+<span
+className={`w-element chpvhw5 c1br4k3t c1vn0xiq c17g3f7v cgjpuuk`}>
+{"22111"}
+</span>
+</Text>
+<Box
+className={`w-box coxlzp3 c178lpvj cbg292c c767uka c1tmykg6 c40iywk c1efnbdc c14hahek c1qt5xo2`}>
+<HtmlEmbed
+code={"<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 16 16\" width=\"100%\" height=\"100%\" style=\"display: block;\"><path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"m4 6 4 4 4-4\"/></svg>"}
+className={`w-html-embed`} />
+</Box>
+</AccordionTrigger>
+</AccordionHeader>
+<AccordionContent
+className={`w-item-content cm1ds2c c1fxgukz c1jbi97f crebcbz c1tmykg6 ctdzf0s c1efnbdc c14hahek c1qt5xo2 c984udg c15qt4h4 c11ua5hp`}>
+<span
+className={`w-element`}>
+{"No description"}
+</span>
+<h3
+className={`w-element cc02v1c`}>
+{"Notes"}
+</h3>
+<HtmlEmbed
+code={"<div class=\"file-list\"\n     data-folder=\"living-systems/introduction-to-bioinformatics\">\n  Loading…\n</div>\n<script>\n  initFileLists();\n</script>"}
+executeScriptOnCanvas={true}
+className={`w-html-embed`} />
+</AccordionContent>
+</AccordionItem>
+<AccordionItem
+data-ws-index="5"
+className={`w-item`}>
+<AccordionHeader
+className={`w-item-header ci03eyw`}>
+<AccordionTrigger
+className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny cy7nrqp c8l261o c13u1sx6 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c1yyg526 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js cdz972a c74re8a`}>
+<Text
+className={`w-text`}>
+{"Ecology"}
+<span
+className={`w-element chpvhw5 c1br4k3t c1vn0xiq c17g3f7v cgjpuuk`}>
+{"25105"}
+</span>
+</Text>
+<Box
+className={`w-box coxlzp3 c178lpvj cbg292c c767uka c1tmykg6 c40iywk c1efnbdc c14hahek c1qt5xo2`}>
+<HtmlEmbed
+code={"<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 16 16\" width=\"100%\" height=\"100%\" style=\"display: block;\"><path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"m4 6 4 4 4-4\"/></svg>"}
+className={`w-html-embed`} />
+</Box>
+</AccordionTrigger>
+</AccordionHeader>
+<AccordionContent
+className={`w-item-content cm1ds2c c1fxgukz c1jbi97f crebcbz c1tmykg6 ctdzf0s c1efnbdc c14hahek c1qt5xo2 c984udg c15qt4h4 c11ua5hp`}>
+<span
+className={`w-element`}>
+{"No description"}
+</span>
+<h3
+className={`w-element cc02v1c`}>
+{"Notes"}
+</h3>
+<HtmlEmbed
+code={"<div class=\"file-list\"\n     data-folder=\"living-systems/ecology\">\n  Loading…\n</div>\n<script>\n  initFileLists();\n</script>"}
+executeScriptOnCanvas={true}
+className={`w-html-embed`} />
+</AccordionContent>
+</AccordionItem>
+<AccordionItem
+data-ws-index="6"
+className={`w-item`}>
+<AccordionHeader
+className={`w-item-header ci03eyw`}>
+<AccordionTrigger
+className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny cy7nrqp c8l261o c13u1sx6 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c1yyg526 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js cdz972a c74re8a`}>
+<Text
+className={`w-text`}>
+{"Fisheries and Aquaculture"}
+<span
+className={`w-element chpvhw5 c1br4k3t c1vn0xiq c17g3f7v cgjpuuk`}>
+{"25107"}
+</span>
+</Text>
+<Box
+className={`w-box coxlzp3 c178lpvj cbg292c c767uka c1tmykg6 c40iywk c1efnbdc c14hahek c1qt5xo2`}>
+<HtmlEmbed
+code={"<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 16 16\" width=\"100%\" height=\"100%\" style=\"display: block;\"><path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"m4 6 4 4 4-4\"/></svg>"}
+className={`w-html-embed`} />
+</Box>
+</AccordionTrigger>
+</AccordionHeader>
+<AccordionContent
+className={`w-item-content cm1ds2c c1fxgukz c1jbi97f crebcbz c1tmykg6 ctdzf0s c1efnbdc c14hahek c1qt5xo2 c984udg c15qt4h4 c11ua5hp`}>
+<span
+className={`w-element`}>
+{"No description"}
+</span>
+<h3
+className={`w-element cc02v1c`}>
+{"Notes"}
+</h3>
+<HtmlEmbed
+code={"<div class=\"file-list\"\n     data-folder=\"living-systems/fisheries-and-aquaculture\">\n  Loading…\n</div>\n<script>\n  initFileLists();\n</script>"}
+executeScriptOnCanvas={true}
+className={`w-html-embed`} />
+</AccordionContent>
+</AccordionItem>
+<AccordionItem
+data-ws-index="7"
+className={`w-item`}>
+<AccordionHeader
+className={`w-item-header ci03eyw`}>
+<AccordionTrigger
+className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny cy7nrqp c8l261o c13u1sx6 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c1yyg526 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js cdz972a c74re8a`}>
+<Text
+className={`w-text`}>
+{"Applied Molecular Techniques"}
+<span
+className={`w-element chpvhw5 c1br4k3t c1vn0xiq c17g3f7v cgjpuuk`}>
+{"25108"}
+</span>
+</Text>
+<Box
+className={`w-box coxlzp3 c178lpvj cbg292c c767uka c1tmykg6 c40iywk c1efnbdc c14hahek c1qt5xo2`}>
+<HtmlEmbed
+code={"<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 16 16\" width=\"100%\" height=\"100%\" style=\"display: block;\"><path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"m4 6 4 4 4-4\"/></svg>"}
+className={`w-html-embed`} />
+</Box>
+</AccordionTrigger>
+</AccordionHeader>
+<AccordionContent
+className={`w-item-content cm1ds2c c1fxgukz c1jbi97f crebcbz c1tmykg6 ctdzf0s c1efnbdc c14hahek c1qt5xo2 c984udg c15qt4h4 c11ua5hp`}>
+<span
+className={`w-element`}>
+{"No description"}
+</span>
+<h3
+className={`w-element cc02v1c`}>
+{"Notes"}
+</h3>
+<HtmlEmbed
+code={"<div class=\"file-list\"\n     data-folder=\"living-systems/applied-molecular-techniques\">\n  Loading…\n</div>\n<script>\n  initFileLists();\n</script>"}
+executeScriptOnCanvas={true}
+className={`w-html-embed`} />
+</AccordionContent>
+</AccordionItem>
+<AccordionItem
+data-ws-index="8"
+className={`w-item`}>
+<AccordionHeader
+className={`w-item-header ci03eyw`}>
+<AccordionTrigger
+className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny cy7nrqp c8l261o c13u1sx6 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c1yyg526 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js cdz972a c74re8a`}>
+<Text
+className={`w-text`}>
+{"Biophysics and Biophysical Chemistry"}
+<span
+className={`w-element chpvhw5 c1br4k3t c1vn0xiq c17g3f7v cgjpuuk`}>
+{"26211"}
+</span>
+</Text>
+<Box
+className={`w-box coxlzp3 c178lpvj cbg292c c767uka c1tmykg6 c40iywk c1efnbdc c14hahek c1qt5xo2`}>
+<HtmlEmbed
+code={"<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 16 16\" width=\"100%\" height=\"100%\" style=\"display: block;\"><path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"m4 6 4 4 4-4\"/></svg>"}
+className={`w-html-embed`} />
+</Box>
+</AccordionTrigger>
+</AccordionHeader>
+<AccordionContent
+className={`w-item-content cm1ds2c c1fxgukz c1jbi97f crebcbz c1tmykg6 ctdzf0s c1efnbdc c14hahek c1qt5xo2 c984udg c15qt4h4 c11ua5hp`}>
+<span
+className={`w-element`}>
+{"No description"}
+</span>
+<h3
+className={`w-element cc02v1c`}>
+{"Notes"}
+</h3>
+<HtmlEmbed
+code={"<div class=\"file-list\"\n     data-folder=\"living-systems/biophysics-and-biophysical-chemistry\">\n  Loading…\n</div>\n<script>\n  initFileLists();\n</script>"}
+executeScriptOnCanvas={true}
+className={`w-html-embed`} />
+</AccordionContent>
+</AccordionItem>
+<AccordionItem
+data-ws-index="9"
+className={`w-item`}>
+<AccordionHeader
+className={`w-item-header ci03eyw`}>
+<AccordionTrigger
+className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny cy7nrqp c8l261o c13u1sx6 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c1yyg526 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js cdz972a c74re8a`}>
+<Text
+className={`w-text`}>
+{"Molecular Biology"}
+<span
+className={`w-element chpvhw5 c1br4k3t c1vn0xiq c17g3f7v cgjpuuk`}>
+{"27026"}
+</span>
+</Text>
+<Box
+className={`w-box coxlzp3 c178lpvj cbg292c c767uka c1tmykg6 c40iywk c1efnbdc c14hahek c1qt5xo2`}>
+<HtmlEmbed
+code={"<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 16 16\" width=\"100%\" height=\"100%\" style=\"display: block;\"><path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"m4 6 4 4 4-4\"/></svg>"}
+className={`w-html-embed`} />
+</Box>
+</AccordionTrigger>
+</AccordionHeader>
+<AccordionContent
+className={`w-item-content cm1ds2c c1fxgukz c1jbi97f crebcbz c1tmykg6 ctdzf0s c1efnbdc c14hahek c1qt5xo2 c984udg c15qt4h4 c11ua5hp`}>
+<span
+className={`w-element`}>
+{"No description"}
+</span>
+<h3
+className={`w-element cc02v1c`}>
+{"Notes"}
+</h3>
+<HtmlEmbed
+code={"<div class=\"file-list\"\n     data-folder=\"living-systems/molecular-biology\">\n  Loading…\n</div>\n<script>\n  initFileLists();\n</script>"}
+executeScriptOnCanvas={true}
+className={`w-html-embed`} />
+</AccordionContent>
+</AccordionItem>
+<AccordionItem
+data-ws-index="10"
+className={`w-item`}>
+<AccordionHeader
+className={`w-item-header ci03eyw`}>
+<AccordionTrigger
+className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny cy7nrqp c8l261o c13u1sx6 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c1yyg526 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js cdz972a c74re8a`}>
+<Text
+className={`w-text`}>
+{"Fermentation Technology"}
+<span
+className={`w-element chpvhw5 c1br4k3t c1vn0xiq c17g3f7v cgjpuuk`}>
+{"27034"}
+</span>
+</Text>
+<Box
+className={`w-box coxlzp3 c178lpvj cbg292c c767uka c1tmykg6 c40iywk c1efnbdc c14hahek c1qt5xo2`}>
+<HtmlEmbed
+code={"<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 16 16\" width=\"100%\" height=\"100%\" style=\"display: block;\"><path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"m4 6 4 4 4-4\"/></svg>"}
+className={`w-html-embed`} />
+</Box>
+</AccordionTrigger>
+</AccordionHeader>
+<AccordionContent
+className={`w-item-content cm1ds2c c1fxgukz c1jbi97f crebcbz c1tmykg6 ctdzf0s c1efnbdc c14hahek c1qt5xo2 c984udg c15qt4h4 c11ua5hp`}>
+<span
+className={`w-element`}>
+{"No description"}
+</span>
+<h3
+className={`w-element cc02v1c`}>
+{"Notes"}
+</h3>
+<HtmlEmbed
+code={"<div class=\"file-list\"\n     data-folder=\"living-systems/fermentation-technology\">\n  Loading…\n</div>\n<script>\n  initFileLists();\n</script>"}
+executeScriptOnCanvas={true}
+className={`w-html-embed`} />
+</AccordionContent>
+</AccordionItem>
+<AccordionItem
+data-ws-index="11"
+className={`w-item`}>
+<AccordionHeader
+className={`w-item-header ci03eyw`}>
+<AccordionTrigger
+className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny cy7nrqp c8l261o c13u1sx6 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c1yyg526 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js cdz972a c74re8a`}>
+<Text
+className={`w-text`}>
+{"Bio Process Technology"}
+<span
+className={`w-element chpvhw5 c1br4k3t c1vn0xiq c17g3f7v cgjpuuk`}>
+{"28025"}
+</span>
+</Text>
+<Box
+className={`w-box coxlzp3 c178lpvj cbg292c c767uka c1tmykg6 c40iywk c1efnbdc c14hahek c1qt5xo2`}>
+<HtmlEmbed
+code={"<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 16 16\" width=\"100%\" height=\"100%\" style=\"display: block;\"><path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"m4 6 4 4 4-4\"/></svg>"}
+className={`w-html-embed`} />
+</Box>
+</AccordionTrigger>
+</AccordionHeader>
+<AccordionContent
+className={`w-item-content cm1ds2c c1fxgukz c1jbi97f crebcbz c1tmykg6 ctdzf0s c1efnbdc c14hahek c1qt5xo2 c984udg c15qt4h4 c11ua5hp`}>
+<span
+className={`w-element`}>
+{"No description"}
+</span>
+<h3
+className={`w-element cc02v1c`}>
+{"Notes"}
+</h3>
+<HtmlEmbed
+code={"<div class=\"file-list\"\n     data-folder=\"living-systems/bio-process-technology\">\n  Loading…\n</div>\n<script>\n  initFileLists();\n</script>"}
 executeScriptOnCanvas={true}
 className={`w-html-embed`} />
 </AccordionContent>
@@ -1009,7 +1819,7 @@ className={`w-element cyoo8jj czga5yl c197srfe cc02v1c c19b7rd2`}>
 className={`w-element`}>
 {"Future Energy"}
 </b>
-{" specialisation is about the green energy transition. It is not recommended that you take this, but the intro course looks good on the CV."}
+{" specialization focuses on the green transition, from wind and solar power to electrolysis, applied chemistry, and sustainable entrepreneurship. It opens doors to careers in Denmark’s energy sector, with leading companies like Vestas driving innovation worldwide."}
 </p>
 <Accordion
 collapsible={true}
@@ -1024,10 +1834,10 @@ className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c1
 <Text
 className={`w-text c1kzhrg`}>
 {"Introduction to Future Energy"}
-<Span
-className={`w-text-1 chpvhw5 c1br4k3t c1vn0xiq c17g3f7v cgjpuuk`}>
-{"01003"}
-</Span>
+<span
+className={`w-element chpvhw5 c1br4k3t c1vn0xiq c17g3f7v cgjpuuk`}>
+{"47202"}
+</span>
 </Text>
 <Box
 className={`w-box coxlzp3 c178lpvj cbg292c c767uka c1tmykg6 c40iywk c1efnbdc c14hahek c1qt5xo2`}>
@@ -1041,14 +1851,14 @@ className={`w-html-embed`} />
 className={`w-item-content cm1ds2c c1fxgukz c1jbi97f crebcbz c1tmykg6 ctdzf0s c1efnbdc c14hahek c1qt5xo2 c984udg c15qt4h4 c11ua5hp`}>
 <span
 className={`w-element`}>
-{"The course content provides a part of the mathematical basis for a broad range of technical fields and also provides a starting point for further studies in mathematics and applied mathematics."}
+{"No description"}
 </span>
 <h3
 className={`w-element cc02v1c`}>
 {"Notes"}
 </h3>
 <HtmlEmbed
-code={"<div class=\"file-list\"\n     data-folder=\"polytechnical-foundations/maths1a\">\n  Loading…\n</div>\n<script>\n  initFileLists();\n</script>"}
+code={"<div class=\"file-list\"\n     data-folder=\"future-energy/introduction-to-future-energy\">\n  Loading…\n</div>\n<script>\n  initFileLists();\n</script>"}
 executeScriptOnCanvas={true}
 className={`w-html-embed`} />
 </AccordionContent>
@@ -1063,10 +1873,10 @@ className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c1
 <Text
 className={`w-text`}>
 {"Introduction to Numerical Algorithms"}
-<Span
-className={`w-text-1 chpvhw5 c1br4k3t c1vn0xiq c17g3f7v cgjpuuk`}>
-{"01004"}
-</Span>
+<span
+className={`w-element chpvhw5 c1br4k3t c1vn0xiq c17g3f7v cgjpuuk`}>
+{"02601"}
+</span>
 </Text>
 <Box
 className={`w-box coxlzp3 c178lpvj cbg292c c767uka c1tmykg6 c40iywk c1efnbdc c14hahek c1qt5xo2`}>
@@ -1080,14 +1890,14 @@ className={`w-html-embed`} />
 className={`w-item-content cm1ds2c c1fxgukz c1jbi97f crebcbz c1tmykg6 ctdzf0s c1efnbdc c14hahek c1qt5xo2 c984udg c15qt4h4 c11ua5hp`}>
 <span
 className={`w-element`}>
-{"The goal is to strengthen the students' ability to, on the one hand, use a mathematical way of thinking and, on the other hand, an algorithmic and computational approach to understanding and working with basic concepts from multivariate calculus."}
+{"No description"}
 </span>
 <h3
 className={`w-element cc02v1c`}>
 {"Notes"}
 </h3>
 <HtmlEmbed
-code={"<div class=\"file-list\"\n     data-folder=\"polytechnical-foundations/maths1b\">\n  Loading…\n</div>\n<script>\n  initFileLists();\n</script>"}
+code={"<div class=\"file-list\"\n     data-folder=\"future-energy/introduction-to-numerical-algorithms\">\n  Loading…\n</div>\n<script>\n  initFileLists();\n</script>"}
 executeScriptOnCanvas={true}
 className={`w-html-embed`} />
 </AccordionContent>
@@ -1101,11 +1911,11 @@ className={`w-item-header ci03eyw`}>
 className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny cy7nrqp c8l261o c13u1sx6 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c1yyg526 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js cdz972a c74re8a`}>
 <Text
 className={`w-text`}>
-{"Physics for materials and energy"}
-<Span
-className={`w-text-1 chpvhw5 c1br4k3t c1vn0xiq c17g3f7v cgjpuuk`}>
-{"26020"}
-</Span>
+{"Physics for Materials and Energy"}
+<span
+className={`w-element chpvhw5 c1br4k3t c1vn0xiq c17g3f7v cgjpuuk`}>
+{"10080"}
+</span>
 </Text>
 <Box
 className={`w-box coxlzp3 c178lpvj cbg292c c767uka c1tmykg6 c40iywk c1efnbdc c14hahek c1qt5xo2`}>
@@ -1119,14 +1929,328 @@ className={`w-html-embed`} />
 className={`w-item-content cm1ds2c c1fxgukz c1jbi97f crebcbz c1tmykg6 ctdzf0s c1efnbdc c14hahek c1qt5xo2 c984udg c15qt4h4 c11ua5hp`}>
 <span
 className={`w-element`}>
-{"To achieve knowledge of the fundamental chemical principles, which are part of the common polytechnic basis of the civil bachelor's degrees."}
+{"No description"}
 </span>
 <h3
 className={`w-element cc02v1c`}>
 {"Notes"}
 </h3>
 <HtmlEmbed
-code={"<div class=\"file-list\"\n     data-folder=\"polytechnical-foundations/chemistry\">\n  Loading…\n</div>\n<script>\n  initFileLists();\n</script>"}
+code={"<div class=\"file-list\"\n     data-folder=\"future-energy/physics-for-materials-and-energy\">\n  Loading…\n</div>\n<script>\n  initFileLists();\n</script>"}
+executeScriptOnCanvas={true}
+className={`w-html-embed`} />
+</AccordionContent>
+</AccordionItem>
+<AccordionItem
+data-ws-index="3"
+className={`w-item`}>
+<AccordionHeader
+className={`w-item-header ci03eyw`}>
+<AccordionTrigger
+className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny cy7nrqp c8l261o c13u1sx6 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c1yyg526 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js cdz972a c74re8a`}>
+<Text
+className={`w-text`}>
+{"General Electrical Engineering"}
+<span
+className={`w-element chpvhw5 c1br4k3t c1vn0xiq c17g3f7v cgjpuuk`}>
+{"46055"}
+</span>
+</Text>
+<Box
+className={`w-box coxlzp3 c178lpvj cbg292c c767uka c1tmykg6 c40iywk c1efnbdc c14hahek c1qt5xo2`}>
+<HtmlEmbed
+code={"<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 16 16\" width=\"100%\" height=\"100%\" style=\"display: block;\"><path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"m4 6 4 4 4-4\"/></svg>"}
+className={`w-html-embed`} />
+</Box>
+</AccordionTrigger>
+</AccordionHeader>
+<AccordionContent
+className={`w-item-content cm1ds2c c1fxgukz c1jbi97f crebcbz c1tmykg6 ctdzf0s c1efnbdc c14hahek c1qt5xo2 c984udg c15qt4h4 c11ua5hp`}>
+<span
+className={`w-element`}>
+{"No description"}
+</span>
+<h3
+className={`w-element cc02v1c`}>
+{"Notes"}
+</h3>
+<HtmlEmbed
+code={"<div class=\"file-list\"\n     data-folder=\"future-energy/general-electrical-engineering\">\n  Loading…\n</div>\n<script>\n  initFileLists();\n</script>"}
+executeScriptOnCanvas={true}
+className={`w-html-embed`} />
+</AccordionContent>
+</AccordionItem>
+<AccordionItem
+data-ws-index="4"
+className={`w-item`}>
+<AccordionHeader
+className={`w-item-header ci03eyw`}>
+<AccordionTrigger
+className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny cy7nrqp c8l261o c13u1sx6 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c1yyg526 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js cdz972a c74re8a`}>
+<Text
+className={`w-text`}>
+{"Engineering Thermodynamics"}
+<span
+className={`w-element chpvhw5 c1br4k3t c1vn0xiq c17g3f7v cgjpuuk`}>
+{"47201"}
+</span>
+</Text>
+<Box
+className={`w-box coxlzp3 c178lpvj cbg292c c767uka c1tmykg6 c40iywk c1efnbdc c14hahek c1qt5xo2`}>
+<HtmlEmbed
+code={"<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 16 16\" width=\"100%\" height=\"100%\" style=\"display: block;\"><path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"m4 6 4 4 4-4\"/></svg>"}
+className={`w-html-embed`} />
+</Box>
+</AccordionTrigger>
+</AccordionHeader>
+<AccordionContent
+className={`w-item-content cm1ds2c c1fxgukz c1jbi97f crebcbz c1tmykg6 ctdzf0s c1efnbdc c14hahek c1qt5xo2 c984udg c15qt4h4 c11ua5hp`}>
+<span
+className={`w-element`}>
+{"No description"}
+</span>
+<h3
+className={`w-element cc02v1c`}>
+{"Notes"}
+</h3>
+<HtmlEmbed
+code={"<div class=\"file-list\"\n     data-folder=\"future-energy/engineering-thermodynamics\">\n  Loading…\n</div>\n<script>\n  initFileLists();\n</script>"}
+executeScriptOnCanvas={true}
+className={`w-html-embed`} />
+</AccordionContent>
+</AccordionItem>
+<hr
+className={`w-element c1vn0xiq cn1fibt cnwk8w7 c1jeji4x c10ybtws c1og6ug8 c1yzzewo c1cck0k8 c1l807ik c189xzjf c10n22ue`} />
+<AccordionItem
+data-ws-index="5"
+className={`w-item`}>
+<AccordionHeader
+className={`w-item-header ci03eyw`}>
+<AccordionTrigger
+className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny cy7nrqp c8l261o c13u1sx6 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c1yyg526 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js cdz972a c74re8a`}>
+<Text
+className={`w-text`}>
+{"Physics of Solar Energy and Energy Storage"}
+<span
+className={`w-element chpvhw5 c1br4k3t c1vn0xiq c17g3f7v cgjpuuk`}>
+{"10260"}
+</span>
+</Text>
+<Box
+className={`w-box coxlzp3 c178lpvj cbg292c c767uka c1tmykg6 c40iywk c1efnbdc c14hahek c1qt5xo2`}>
+<HtmlEmbed
+code={"<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 16 16\" width=\"100%\" height=\"100%\" style=\"display: block;\"><path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"m4 6 4 4 4-4\"/></svg>"}
+className={`w-html-embed`} />
+</Box>
+</AccordionTrigger>
+</AccordionHeader>
+<AccordionContent
+className={`w-item-content cm1ds2c c1fxgukz c1jbi97f crebcbz c1tmykg6 ctdzf0s c1efnbdc c14hahek c1qt5xo2 c984udg c15qt4h4 c11ua5hp`}>
+<span
+className={`w-element`}>
+{"No description"}
+</span>
+<h3
+className={`w-element cc02v1c`}>
+{"Notes"}
+</h3>
+<HtmlEmbed
+code={"<div class=\"file-list\"\n     data-folder=\"future-energy/physics-of-solar-energy-and-energy-storage\">\n  Loading…\n</div>\n<script>\n  initFileLists();\n</script>"}
+executeScriptOnCanvas={true}
+className={`w-html-embed`} />
+</AccordionContent>
+</AccordionItem>
+<AccordionItem
+data-ws-index="6"
+className={`w-item`}>
+<AccordionHeader
+className={`w-item-header ci03eyw`}>
+<AccordionTrigger
+className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny cy7nrqp c8l261o c13u1sx6 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c1yyg526 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js cdz972a c74re8a`}>
+<Text
+className={`w-text`}>
+{"Climate Change"}
+<span
+className={`w-element chpvhw5 c1br4k3t c1vn0xiq c17g3f7v cgjpuuk`}>
+{"12205"}
+</span>
+</Text>
+<Box
+className={`w-box coxlzp3 c178lpvj cbg292c c767uka c1tmykg6 c40iywk c1efnbdc c14hahek c1qt5xo2`}>
+<HtmlEmbed
+code={"<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 16 16\" width=\"100%\" height=\"100%\" style=\"display: block;\"><path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"m4 6 4 4 4-4\"/></svg>"}
+className={`w-html-embed`} />
+</Box>
+</AccordionTrigger>
+</AccordionHeader>
+<AccordionContent
+className={`w-item-content cm1ds2c c1fxgukz c1jbi97f crebcbz c1tmykg6 ctdzf0s c1efnbdc c14hahek c1qt5xo2 c984udg c15qt4h4 c11ua5hp`}>
+<span
+className={`w-element`}>
+{"No description"}
+</span>
+<h3
+className={`w-element cc02v1c`}>
+{"Notes"}
+</h3>
+<HtmlEmbed
+code={"<div class=\"file-list\"\n     data-folder=\"future-energy/climate-change\">\n  Loading…\n</div>\n<script>\n  initFileLists();\n</script>"}
+executeScriptOnCanvas={true}
+className={`w-html-embed`} />
+</AccordionContent>
+</AccordionItem>
+<AccordionItem
+data-ws-index="7"
+className={`w-item`}>
+<AccordionHeader
+className={`w-item-header ci03eyw`}>
+<AccordionTrigger
+className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny cy7nrqp c8l261o c13u1sx6 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c1yyg526 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js cdz972a c74re8a`}>
+<Text
+className={`w-text`}>
+{"Introduction to Wind Energy"}
+<span
+className={`w-element chpvhw5 c1br4k3t c1vn0xiq c17g3f7v cgjpuuk`}>
+{"46000"}
+</span>
+</Text>
+<Box
+className={`w-box coxlzp3 c178lpvj cbg292c c767uka c1tmykg6 c40iywk c1efnbdc c14hahek c1qt5xo2`}>
+<HtmlEmbed
+code={"<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 16 16\" width=\"100%\" height=\"100%\" style=\"display: block;\"><path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"m4 6 4 4 4-4\"/></svg>"}
+className={`w-html-embed`} />
+</Box>
+</AccordionTrigger>
+</AccordionHeader>
+<AccordionContent
+className={`w-item-content cm1ds2c c1fxgukz c1jbi97f crebcbz c1tmykg6 ctdzf0s c1efnbdc c14hahek c1qt5xo2 c984udg c15qt4h4 c11ua5hp`}>
+<span
+className={`w-element`}>
+{"No description"}
+</span>
+<h3
+className={`w-element cc02v1c`}>
+{"Notes"}
+</h3>
+<HtmlEmbed
+code={"<div class=\"file-list\"\n     data-folder=\"future-energy/introduction-to-wind-energy\">\n  Loading…\n</div>\n<script>\n  initFileLists();\n</script>"}
+executeScriptOnCanvas={true}
+className={`w-html-embed`} />
+</AccordionContent>
+</AccordionItem>
+<AccordionItem
+data-ws-index="8"
+className={`w-item`}>
+<AccordionHeader
+className={`w-item-header ci03eyw`}>
+<AccordionTrigger
+className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny cy7nrqp c8l261o c13u1sx6 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c1yyg526 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js cdz972a c74re8a`}>
+<Text
+className={`w-text`}>
+{"Introduction to Energy Analytics"}
+<span
+className={`w-element chpvhw5 c1br4k3t c1vn0xiq c17g3f7v cgjpuuk`}>
+{"46040"}
+</span>
+</Text>
+<Box
+className={`w-box coxlzp3 c178lpvj cbg292c c767uka c1tmykg6 c40iywk c1efnbdc c14hahek c1qt5xo2`}>
+<HtmlEmbed
+code={"<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 16 16\" width=\"100%\" height=\"100%\" style=\"display: block;\"><path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"m4 6 4 4 4-4\"/></svg>"}
+className={`w-html-embed`} />
+</Box>
+</AccordionTrigger>
+</AccordionHeader>
+<AccordionContent
+className={`w-item-content cm1ds2c c1fxgukz c1jbi97f crebcbz c1tmykg6 ctdzf0s c1efnbdc c14hahek c1qt5xo2 c984udg c15qt4h4 c11ua5hp`}>
+<span
+className={`w-element`}>
+{"No description"}
+</span>
+<h3
+className={`w-element cc02v1c`}>
+{"Notes"}
+</h3>
+<HtmlEmbed
+code={"<div class=\"file-list\"\n     data-folder=\"future-energy/introduction-to-energy-analytics\">\n  Loading…\n</div>\n<script>\n  initFileLists();\n</script>"}
+executeScriptOnCanvas={true}
+className={`w-html-embed`} />
+</AccordionContent>
+</AccordionItem>
+<AccordionItem
+data-ws-index="9"
+className={`w-item`}>
+<AccordionHeader
+className={`w-item-header ci03eyw`}>
+<AccordionTrigger
+className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny cy7nrqp c8l261o c13u1sx6 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c1yyg526 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js cdz972a c74re8a`}>
+<Text
+className={`w-text`}>
+{"Electrochemical Energy Technologies"}
+<span
+className={`w-element chpvhw5 c1br4k3t c1vn0xiq c17g3f7v cgjpuuk`}>
+{"47205"}
+</span>
+</Text>
+<Box
+className={`w-box coxlzp3 c178lpvj cbg292c c767uka c1tmykg6 c40iywk c1efnbdc c14hahek c1qt5xo2`}>
+<HtmlEmbed
+code={"<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 16 16\" width=\"100%\" height=\"100%\" style=\"display: block;\"><path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"m4 6 4 4 4-4\"/></svg>"}
+className={`w-html-embed`} />
+</Box>
+</AccordionTrigger>
+</AccordionHeader>
+<AccordionContent
+className={`w-item-content cm1ds2c c1fxgukz c1jbi97f crebcbz c1tmykg6 ctdzf0s c1efnbdc c14hahek c1qt5xo2 c984udg c15qt4h4 c11ua5hp`}>
+<span
+className={`w-element`}>
+{"No description"}
+</span>
+<h3
+className={`w-element cc02v1c`}>
+{"Notes"}
+</h3>
+<HtmlEmbed
+code={"<div class=\"file-list\"\n     data-folder=\"future-energy/electrochemical-energy-technologies\">\n  Loading…\n</div>\n<script>\n  initFileLists();\n</script>"}
+executeScriptOnCanvas={true}
+className={`w-html-embed`} />
+</AccordionContent>
+</AccordionItem>
+<AccordionItem
+data-ws-index="10"
+className={`w-item`}>
+<AccordionHeader
+className={`w-item-header ci03eyw`}>
+<AccordionTrigger
+className={`w-item-trigger ci03eyw ck11ylk c19haj7v c1ehv6bb c1v4vkm5 cr2ujrk c18uv5ha camisri c15oj64s chfgnq1 c4bgnbx cj82r57 c14a5ioc cm4j335 c1nj86ny cy7nrqp c8l261o c13u1sx6 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c1yyg526 c4vngu5 cqo7rnh ci1qamt cgt2byq cvstnbo cyou3x7 c1qa96js cdz972a c74re8a`}>
+<Text
+className={`w-text`}>
+{"Electrochemical Energy Storage and Power2X"}
+<span
+className={`w-element chpvhw5 c1br4k3t c1vn0xiq c17g3f7v cgjpuuk`}>
+{"47211"}
+</span>
+</Text>
+<Box
+className={`w-box coxlzp3 c178lpvj cbg292c c767uka c1tmykg6 c40iywk c1efnbdc c14hahek c1qt5xo2`}>
+<HtmlEmbed
+code={"<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 16 16\" width=\"100%\" height=\"100%\" style=\"display: block;\"><path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" d=\"m4 6 4 4 4-4\"/></svg>"}
+className={`w-html-embed`} />
+</Box>
+</AccordionTrigger>
+</AccordionHeader>
+<AccordionContent
+className={`w-item-content cm1ds2c c1fxgukz c1jbi97f crebcbz c1tmykg6 ctdzf0s c1efnbdc c14hahek c1qt5xo2 c984udg c15qt4h4 c11ua5hp`}>
+<span
+className={`w-element`}>
+{"No description"}
+</span>
+<h3
+className={`w-element cc02v1c`}>
+{"Notes"}
+</h3>
+<HtmlEmbed
+code={"<div class=\"file-list\"\n     data-folder=\"future-energy/electrochemical-energy-storage-and-power2x\">\n  Loading…\n</div>\n<script>\n  initFileLists();\n</script>"}
 executeScriptOnCanvas={true}
 className={`w-html-embed`} />
 </AccordionContent>
