@@ -1,10 +1,10 @@
 {
   "build": {
-    "id": "f41fa23b-2bd1-44d7-926a-93ee918a2fb5",
+    "id": "6c5ea30a-51e2-40ac-8319-26bebafc3dc9",
     "projectId": "94456f8c-a847-426a-aec8-16de390bd3eb",
-    "version": 8524,
-    "createdAt": "2025-08-27T21:36:58.191+00:00",
-    "updatedAt": "2025-08-27T21:36:58.191+00:00",
+    "version": 8575,
+    "createdAt": "2025-08-27T22:06:25.247+00:00",
+    "updatedAt": "2025-08-27T22:06:25.247+00:00",
     "pages": {
       "meta": {
         "siteName": "GE Union",
@@ -25240,58 +25240,6 @@
         }
       ],
       [
-        "gBbSDxXpSqbZd3A1RtV8x:2EiFMEG40PBm9_fkelqpo:paddingTop:",
-        {
-          "styleSourceId": "gBbSDxXpSqbZd3A1RtV8x",
-          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
-          "property": "paddingTop",
-          "value": {
-            "type": "unit",
-            "unit": "px",
-            "value": 10
-          }
-        }
-      ],
-      [
-        "gBbSDxXpSqbZd3A1RtV8x:2EiFMEG40PBm9_fkelqpo:paddingBottom:",
-        {
-          "styleSourceId": "gBbSDxXpSqbZd3A1RtV8x",
-          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
-          "property": "paddingBottom",
-          "value": {
-            "type": "unit",
-            "unit": "px",
-            "value": 10
-          }
-        }
-      ],
-      [
-        "gBbSDxXpSqbZd3A1RtV8x:2EiFMEG40PBm9_fkelqpo:paddingRight:",
-        {
-          "styleSourceId": "gBbSDxXpSqbZd3A1RtV8x",
-          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
-          "property": "paddingRight",
-          "value": {
-            "type": "unit",
-            "unit": "px",
-            "value": 5
-          }
-        }
-      ],
-      [
-        "gBbSDxXpSqbZd3A1RtV8x:2EiFMEG40PBm9_fkelqpo:paddingLeft:",
-        {
-          "styleSourceId": "gBbSDxXpSqbZd3A1RtV8x",
-          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
-          "property": "paddingLeft",
-          "value": {
-            "type": "unit",
-            "unit": "px",
-            "value": 5
-          }
-        }
-      ],
-      [
         "NtpluBqjWg7r42HJw8js-:2EiFMEG40PBm9_fkelqpo:marginRight:",
         {
           "styleSourceId": "NtpluBqjWg7r42HJw8js-",
@@ -25405,151 +25353,6 @@
             "type": "unit",
             "unit": "px",
             "value": 5
-          }
-        }
-      ],
-      [
-        "lUr6AvAYjZSYiXpk-a2mb:2EiFMEG40PBm9_fkelqpo:width:",
-        {
-          "styleSourceId": "lUr6AvAYjZSYiXpk-a2mb",
-          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
-          "property": "width",
-          "value": {
-            "type": "unit",
-            "unit": "px",
-            "value": 70
-          }
-        }
-      ],
-      [
-        "gezXOOwL_w2i8WdWEl46d:2EiFMEG40PBm9_fkelqpo:width:",
-        {
-          "styleSourceId": "gezXOOwL_w2i8WdWEl46d",
-          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
-          "property": "width",
-          "value": {
-            "type": "keyword",
-            "value": "fit-content"
-          }
-        }
-      ],
-      [
-        "lUr6AvAYjZSYiXpk-a2mb:2EiFMEG40PBm9_fkelqpo:height:",
-        {
-          "styleSourceId": "lUr6AvAYjZSYiXpk-a2mb",
-          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
-          "property": "height",
-          "value": {
-            "type": "unit",
-            "unit": "%",
-            "value": 100
-          }
-        }
-      ],
-      [
-        "gezXOOwL_w2i8WdWEl46d:2EiFMEG40PBm9_fkelqpo:scale::hover",
-        {
-          "styleSourceId": "gezXOOwL_w2i8WdWEl46d",
-          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
-          "state": ":hover",
-          "property": "scale",
-          "value": {
-            "type": "tuple",
-            "value": [
-              {
-                "type": "unit",
-                "unit": "number",
-                "value": 1.05
-              }
-            ]
-          },
-          "listed": true
-        }
-      ],
-      [
-        "gezXOOwL_w2i8WdWEl46d:2EiFMEG40PBm9_fkelqpo:transitionProperty:",
-        {
-          "styleSourceId": "gezXOOwL_w2i8WdWEl46d",
-          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
-          "property": "transitionProperty",
-          "value": {
-            "type": "layers",
-            "value": [
-              {
-                "type": "unparsed",
-                "value": "scale"
-              }
-            ]
-          }
-        }
-      ],
-      [
-        "gezXOOwL_w2i8WdWEl46d:2EiFMEG40PBm9_fkelqpo:transitionDuration:",
-        {
-          "styleSourceId": "gezXOOwL_w2i8WdWEl46d",
-          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
-          "property": "transitionDuration",
-          "value": {
-            "type": "layers",
-            "value": [
-              {
-                "type": "unit",
-                "unit": "ms",
-                "value": 200
-              }
-            ]
-          }
-        }
-      ],
-      [
-        "gezXOOwL_w2i8WdWEl46d:2EiFMEG40PBm9_fkelqpo:transitionTimingFunction:",
-        {
-          "styleSourceId": "gezXOOwL_w2i8WdWEl46d",
-          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
-          "property": "transitionTimingFunction",
-          "value": {
-            "type": "layers",
-            "value": [
-              {
-                "type": "keyword",
-                "value": "ease"
-              }
-            ]
-          }
-        }
-      ],
-      [
-        "gezXOOwL_w2i8WdWEl46d:2EiFMEG40PBm9_fkelqpo:transitionDelay:",
-        {
-          "styleSourceId": "gezXOOwL_w2i8WdWEl46d",
-          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
-          "property": "transitionDelay",
-          "value": {
-            "type": "layers",
-            "value": [
-              {
-                "type": "unit",
-                "unit": "ms",
-                "value": 0
-              }
-            ]
-          }
-        }
-      ],
-      [
-        "gezXOOwL_w2i8WdWEl46d:2EiFMEG40PBm9_fkelqpo:transitionBehavior:",
-        {
-          "styleSourceId": "gezXOOwL_w2i8WdWEl46d",
-          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
-          "property": "transitionBehavior",
-          "value": {
-            "type": "layers",
-            "value": [
-              {
-                "type": "keyword",
-                "value": "normal"
-              }
-            ]
           }
         }
       ],
@@ -27573,44 +27376,6 @@
         }
       ],
       [
-        "gezXOOwL_w2i8WdWEl46d:eCbcXJaLEKSKcnbAPzNF0:height:",
-        {
-          "styleSourceId": "gezXOOwL_w2i8WdWEl46d",
-          "breakpointId": "eCbcXJaLEKSKcnbAPzNF0",
-          "property": "height",
-          "value": {
-            "type": "unit",
-            "unit": "%",
-            "value": 78
-          }
-        }
-      ],
-      [
-        "gezXOOwL_w2i8WdWEl46d:eCbcXJaLEKSKcnbAPzNF0:alignSelf:",
-        {
-          "styleSourceId": "gezXOOwL_w2i8WdWEl46d",
-          "breakpointId": "eCbcXJaLEKSKcnbAPzNF0",
-          "property": "alignSelf",
-          "value": {
-            "type": "keyword",
-            "value": "center"
-          }
-        }
-      ],
-      [
-        "lUr6AvAYjZSYiXpk-a2mb:eCbcXJaLEKSKcnbAPzNF0:width:",
-        {
-          "styleSourceId": "lUr6AvAYjZSYiXpk-a2mb",
-          "breakpointId": "eCbcXJaLEKSKcnbAPzNF0",
-          "property": "width",
-          "value": {
-            "type": "unit",
-            "unit": "px",
-            "value": 50
-          }
-        }
-      ],
-      [
         "TKZBiwFcq8yg_eZ8syiWH:eCbcXJaLEKSKcnbAPzNF0:marginTop:",
         {
           "styleSourceId": "TKZBiwFcq8yg_eZ8syiWH",
@@ -28216,18 +27981,6 @@
         }
       ],
       [
-        "gBbSDxXpSqbZd3A1RtV8x:Uvcw_OJqyPoLioZzUbP1x:display:",
-        {
-          "styleSourceId": "gBbSDxXpSqbZd3A1RtV8x",
-          "breakpointId": "Uvcw_OJqyPoLioZzUbP1x",
-          "property": "display",
-          "value": {
-            "type": "keyword",
-            "value": "none"
-          }
-        }
-      ],
-      [
         "GqageahxjhAFhBHFW8JME:Uvcw_OJqyPoLioZzUbP1x:display:",
         {
           "styleSourceId": "GqageahxjhAFhBHFW8JME",
@@ -28236,18 +27989,6 @@
           "value": {
             "type": "keyword",
             "value": "none"
-          }
-        }
-      ],
-      [
-        "gBbSDxXpSqbZd3A1RtV8x:2EiFMEG40PBm9_fkelqpo:color:",
-        {
-          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
-          "styleSourceId": "gBbSDxXpSqbZd3A1RtV8x",
-          "property": "color",
-          "value": {
-            "type": "var",
-            "value": "background"
           }
         }
       ],
@@ -60596,6 +60337,108 @@
             "value": "normal"
           }
         }
+      ],
+      [
+        "YHLppx1I75ZibN7yiFmoH:2EiFMEG40PBm9_fkelqpo:color:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "YHLppx1I75ZibN7yiFmoH",
+          "property": "color",
+          "value": {
+            "type": "var",
+            "value": "background"
+          }
+        }
+      ],
+      [
+        "YHLppx1I75ZibN7yiFmoH:2EiFMEG40PBm9_fkelqpo:paddingLeft:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "YHLppx1I75ZibN7yiFmoH",
+          "property": "paddingLeft",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 5
+          }
+        }
+      ],
+      [
+        "YHLppx1I75ZibN7yiFmoH:2EiFMEG40PBm9_fkelqpo:paddingRight:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "YHLppx1I75ZibN7yiFmoH",
+          "property": "paddingRight",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 5
+          }
+        }
+      ],
+      [
+        "YHLppx1I75ZibN7yiFmoH:Uvcw_OJqyPoLioZzUbP1x:display:",
+        {
+          "breakpointId": "Uvcw_OJqyPoLioZzUbP1x",
+          "styleSourceId": "YHLppx1I75ZibN7yiFmoH",
+          "property": "display",
+          "value": {
+            "type": "keyword",
+            "value": "none"
+          }
+        }
+      ],
+      [
+        "9M0C5Btl2VNydAqF5fZcV:2EiFMEG40PBm9_fkelqpo:width:",
+        {
+          "styleSourceId": "9M0C5Btl2VNydAqF5fZcV",
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "property": "width",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 70
+          }
+        }
+      ],
+      [
+        "9M0C5Btl2VNydAqF5fZcV:2EiFMEG40PBm9_fkelqpo:height:",
+        {
+          "styleSourceId": "9M0C5Btl2VNydAqF5fZcV",
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "property": "height",
+          "value": {
+            "type": "unit",
+            "unit": "%",
+            "value": 100
+          }
+        }
+      ],
+      [
+        "9M0C5Btl2VNydAqF5fZcV:eCbcXJaLEKSKcnbAPzNF0:width:",
+        {
+          "styleSourceId": "9M0C5Btl2VNydAqF5fZcV",
+          "breakpointId": "eCbcXJaLEKSKcnbAPzNF0",
+          "property": "width",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 50
+          }
+        }
+      ],
+      [
+        "YHLppx1I75ZibN7yiFmoH:2EiFMEG40PBm9_fkelqpo:cursor:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "YHLppx1I75ZibN7yiFmoH",
+          "property": "cursor",
+          "value": {
+            "type": "keyword",
+            "value": "pointer"
+          },
+          "listed": true
+        }
       ]
     ],
     "styleSources": [
@@ -62773,31 +62616,10 @@
         }
       ],
       [
-        "gezXOOwL_w2i8WdWEl46d",
-        {
-          "type": "local",
-          "id": "gezXOOwL_w2i8WdWEl46d"
-        }
-      ],
-      [
-        "lUr6AvAYjZSYiXpk-a2mb",
-        {
-          "type": "local",
-          "id": "lUr6AvAYjZSYiXpk-a2mb"
-        }
-      ],
-      [
         "NtpluBqjWg7r42HJw8js-",
         {
           "type": "local",
           "id": "NtpluBqjWg7r42HJw8js-"
-        }
-      ],
-      [
-        "gBbSDxXpSqbZd3A1RtV8x",
-        {
-          "type": "local",
-          "id": "gBbSDxXpSqbZd3A1RtV8x"
         }
       ],
       [
@@ -65213,6 +65035,20 @@
         {
           "type": "local",
           "id": "TF4THuJFRxVHaqVuM9dI_"
+        }
+      ],
+      [
+        "YHLppx1I75ZibN7yiFmoH",
+        {
+          "type": "local",
+          "id": "YHLppx1I75ZibN7yiFmoH"
+        }
+      ],
+      [
+        "9M0C5Btl2VNydAqF5fZcV",
+        {
+          "type": "local",
+          "id": "9M0C5Btl2VNydAqF5fZcV"
         }
       ]
     ],
@@ -68537,39 +68373,11 @@
         }
       ],
       [
-        "Zel30OfGArT-ZqApdaFyZ",
-        {
-          "instanceId": "Zel30OfGArT-ZqApdaFyZ",
-          "values": [
-            "gezXOOwL_w2i8WdWEl46d"
-          ]
-        }
-      ],
-      [
-        "EgtRQ3FwNua9E-1XgGD2I",
-        {
-          "instanceId": "EgtRQ3FwNua9E-1XgGD2I",
-          "values": [
-            "lUr6AvAYjZSYiXpk-a2mb"
-          ]
-        }
-      ],
-      [
         "alSaMWUO9ZmvMHWX_7mtb",
         {
           "instanceId": "alSaMWUO9ZmvMHWX_7mtb",
           "values": [
             "NtpluBqjWg7r42HJw8js-"
-          ]
-        }
-      ],
-      [
-        "aaOqzeCEvK_SsaT09QfTn",
-        {
-          "instanceId": "aaOqzeCEvK_SsaT09QfTn",
-          "values": [
-            "aPz1LCaVaOsiZUulgmT0U",
-            "gBbSDxXpSqbZd3A1RtV8x"
           ]
         }
       ],
@@ -72648,11 +72456,21 @@
         }
       ],
       [
-        "2n08SgVXh3jnd1h8O0pzd",
+        "IPwdmU4vKg6LB3wq_okWf",
         {
-          "instanceId": "2n08SgVXh3jnd1h8O0pzd",
+          "instanceId": "IPwdmU4vKg6LB3wq_okWf",
           "values": [
-            "9azKYj0k1doXh9eQRfexr"
+            "aPz1LCaVaOsiZUulgmT0U",
+            "YHLppx1I75ZibN7yiFmoH"
+          ]
+        }
+      ],
+      [
+        "FUpJlM9x5VkrL0X_PEw5t",
+        {
+          "instanceId": "FUpJlM9x5VkrL0X_PEw5t",
+          "values": [
+            "9M0C5Btl2VNydAqF5fZcV"
           ]
         }
       ]
@@ -74889,36 +74707,6 @@
         }
       ],
       [
-        "uBTtlsmHC16GtJXb01iyn",
-        {
-          "id": "uBTtlsmHC16GtJXb01iyn",
-          "instanceId": "EgtRQ3FwNua9E-1XgGD2I",
-          "name": "src",
-          "type": "asset",
-          "value": "2166560cb392d96b776d995bd8ef28ccb6d6ea3ce8461205da85157265f4be27"
-        }
-      ],
-      [
-        "P4eAEboRlyQ3XMKqtI3Ql",
-        {
-          "id": "P4eAEboRlyQ3XMKqtI3Ql",
-          "instanceId": "EgtRQ3FwNua9E-1XgGD2I",
-          "name": "width",
-          "type": "asset",
-          "value": "2166560cb392d96b776d995bd8ef28ccb6d6ea3ce8461205da85157265f4be27"
-        }
-      ],
-      [
-        "ldHMH30KQBo4iaG_bcuus",
-        {
-          "id": "ldHMH30KQBo4iaG_bcuus",
-          "instanceId": "EgtRQ3FwNua9E-1XgGD2I",
-          "name": "height",
-          "type": "asset",
-          "value": "2166560cb392d96b776d995bd8ef28ccb6d6ea3ce8461205da85157265f4be27"
-        }
-      ],
-      [
         "vtGj31-mU4B_Hk0HVa0hj",
         {
           "id": "vtGj31-mU4B_Hk0HVa0hj",
@@ -76595,7 +76383,7 @@
           "instanceId": "Z6vKSEz7uPCrs2zN-xMFn",
           "name": "code",
           "type": "string",
-          "value": "<style>\n  /* Optional quality-of-life styles */\n  #menu-icon, #menu-icon-image {\n    cursor: grab;\n    touch-action: none;   /* allow smooth touch drag */\n    will-change: transform;\n    \n    user-drag: none;\n    -webkit-user-drag: none;\n    -moz-user-drag: none;\n    user-select: none;    /* avoid text selection while dragging */\n    -moz-user-select: none;\n    -webkit-user-select: none;\n    -ms-user-select: none;\n  }\n  #menu-icon.dragging { cursor: grabbing; }\n</style>\n\n<script>\n(() => {\n  const icon = document.getElementById('menu-icon');\n  if (!icon) return;\n\n  // position is managed purely via transform so layout doesn't shift\n  let tx = 0, ty = 0;               // current translation\n  let vx = 0, vy = 0;               // current velocity (px/s)\n  let dragging = false;\n  let startX = 0, startY = 0;       // pointer-down position\n  let lastPx = 0, lastPy = 0;       // last pointer position (for velocity)\n  let lastT = 0;                    // last timestamp\n\n  // Spring params: tweak for feel\n  const STIFFNESS = 300;   // spring constant (higher = snappier)\n  const DAMPING   = 15;   // damping (lower = bouncier)\n  const EPS_POS   = 0.5;  // stop threshold (position, px)\n  const EPS_VEL   = 0.5;  // stop threshold (velocity, px/s)\n\n  const setTransform = () => {\n    icon.style.transform = `translate(${tx}px, ${ty}px)`;\n  };\n\n  const onPointerDown = (e) => {\n    dragging = true;\n    icon.classList.add('dragging');\n    icon.setPointerCapture?.(e.pointerId);\n\n    startX = e.clientX - tx;\n    startY = e.clientY - ty;\n\n    lastPx = e.clientX;\n    lastPy = e.clientY;\n    lastT  = performance.now();\n    vx = 0; vy = 0; // reset; we'll accumulate movement velocity\n  };\n\n  const onPointerMove = (e) => {\n    if (!dragging) return;\n\n    const now = performance.now();\n    const dt  = (now - lastT) / 1000;\n    tx = e.clientX - startX;\n    ty = e.clientY - startY;\n\n    // simple low-pass filtered velocity estimate for spring kick\n    if (dt > 0) {\n      const instVx = (e.clientX - lastPx) / dt;\n      const instVy = (e.clientY - lastPy) / dt;\n      vx = 0.8 * vx + 0.2 * instVx;\n      vy = 0.8 * vy + 0.2 * instVy;\n    }\n    lastPx = e.clientX;\n    lastPy = e.clientY;\n    lastT  = now;\n\n    setTransform();\n  };\n\n  const onPointerUp = (e) => {\n    if (!dragging) return;\n    dragging = false;\n    icon.classList.remove('dragging');\n    icon.releasePointerCapture?.(e.pointerId);\n    animateBack(); // start spring home\n  };\n\n  function animateBack() {\n    let prev = performance.now();\n    function step(now) {\n      const dt = Math.min((now - prev) / 1000, 0.032); // clamp dt for stability\n      prev = now;\n\n      // Hooke's law: F = -k*x - c*v (mass=1)\n      const ax = -STIFFNESS * tx - DAMPING * vx;\n      const ay = -STIFFNESS * ty - DAMPING * vy;\n\n      vx += ax * dt;\n      vy += ay * dt;\n      tx += vx * dt;\n      ty += vy * dt;\n\n      setTransform();\n\n      const nearOrigin = Math.hypot(tx, ty) < EPS_POS;\n      const slowEnough = Math.hypot(vx, vy) < EPS_VEL;\n\n      if (nearOrigin && slowEnough) {\n        // snap exactly home to avoid subpixel fuzz\n        tx = ty = vx = vy = 0;\n        setTransform();\n        return;\n      }\n      // If user grabbed again, stop the spring.\n      if (dragging) return;\n\n      requestAnimationFrame(step);\n    }\n    requestAnimationFrame(step);\n  }\n\n  // Keep it floating above other content while dragging (no layout changes)\n  icon.style.zIndex = (parseInt(getComputedStyle(icon).zIndex) || 1).toString();\n\n  // Bind events\n  icon.addEventListener('pointerdown', onPointerDown);\n  window.addEventListener('pointermove', onPointerMove, { passive: true });\n  window.addEventListener('pointerup', onPointerUp);\n  window.addEventListener('pointercancel', onPointerUp);\n})();\n</script>"
+          "value": "<style>\n  /* Optional quality-of-life styles */\n  #menu-icon {\n    cursor: grab;\n    touch-action: none;   /* allow smooth touch drag */\n    will-change: transform;\n    \n    user-drag: none;\n    -webkit-user-drag: none;\n    -moz-user-drag: none;\n    user-select: none;    /* avoid text selection while dragging */\n    -moz-user-select: none;\n    -webkit-user-select: none;\n    -ms-user-select: none;\n  }\n  #menu-icon.dragging { cursor: grabbing; }\n</style>\n\n<script>\n(() => {\n  const icon = document.getElementById('menu-icon');\n  if (!icon) return;\n\n  // position is managed purely via transform so layout doesn't shift\n  let tx = 0, ty = 0;               // current translation\n  let vx = 0, vy = 0;               // current velocity (px/s)\n  let dragging = false;\n  let startX = 0, startY = 0;       // pointer-down position\n  let lastPx = 0, lastPy = 0;       // last pointer position (for velocity)\n  let lastT = 0;                    // last timestamp\n\n  // Spring params: tweak for feel\n  const STIFFNESS = 300;   // spring constant (higher = snappier)\n  const DAMPING   = 15;   // damping (lower = bouncier)\n  const EPS_POS   = 0.5;  // stop threshold (position, px)\n  const EPS_VEL   = 0.5;  // stop threshold (velocity, px/s)\n\n  const setTransform = () => {\n    icon.style.transform = `translate(${tx}px, ${ty}px)`;\n  };\n\n  const onPointerDown = (e) => {\n    dragging = true;\n    icon.classList.add('dragging');\n    icon.setPointerCapture?.(e.pointerId);\n\n    startX = e.clientX - tx;\n    startY = e.clientY - ty;\n\n    lastPx = e.clientX;\n    lastPy = e.clientY;\n    lastT  = performance.now();\n    vx = 0; vy = 0; // reset; we'll accumulate movement velocity\n  };\n\n  const onPointerMove = (e) => {\n    if (!dragging) return;\n\n    const now = performance.now();\n    const dt  = (now - lastT) / 1000;\n    tx = e.clientX - startX;\n    ty = e.clientY - startY;\n\n    // simple low-pass filtered velocity estimate for spring kick\n    if (dt > 0) {\n      const instVx = (e.clientX - lastPx) / dt;\n      const instVy = (e.clientY - lastPy) / dt;\n      vx = 0.8 * vx + 0.2 * instVx;\n      vy = 0.8 * vy + 0.2 * instVy;\n    }\n    lastPx = e.clientX;\n    lastPy = e.clientY;\n    lastT  = now;\n\n    setTransform();\n  };\n\n  const onPointerUp = (e) => {\n    if (!dragging) return;\n    dragging = false;\n    icon.classList.remove('dragging');\n    icon.releasePointerCapture?.(e.pointerId);\n    animateBack(); // start spring home\n  };\n\n  function animateBack() {\n    let prev = performance.now();\n    function step(now) {\n      const dt = Math.min((now - prev) / 1000, 0.032); // clamp dt for stability\n      prev = now;\n\n      // Hooke's law: F = -k*x - c*v (mass=1)\n      const ax = -STIFFNESS * tx - DAMPING * vx;\n      const ay = -STIFFNESS * ty - DAMPING * vy;\n\n      vx += ax * dt;\n      vy += ay * dt;\n      tx += vx * dt;\n      ty += vy * dt;\n\n      setTransform();\n\n      const nearOrigin = Math.hypot(tx, ty) < EPS_POS;\n      const slowEnough = Math.hypot(vx, vy) < EPS_VEL;\n\n      if (nearOrigin && slowEnough) {\n        // snap exactly home to avoid subpixel fuzz\n        tx = ty = vx = vy = 0;\n        setTransform();\n        return;\n      }\n      // If user grabbed again, stop the spring.\n      if (dragging) return;\n\n      requestAnimationFrame(step);\n    }\n    requestAnimationFrame(step);\n  }\n\n  // Keep it floating above other content while dragging (no layout changes)\n  icon.style.zIndex = (parseInt(getComputedStyle(icon).zIndex) || 1).toString();\n\n  // Bind events\n  icon.addEventListener('pointerdown', onPointerDown);\n  window.addEventListener('pointermove', onPointerMove, { passive: true });\n  window.addEventListener('pointerup', onPointerUp);\n  window.addEventListener('pointercancel', onPointerUp);\n})();\n</script>"
         }
       ],
       [
@@ -76606,26 +76394,6 @@
           "name": "executeScriptOnCanvas",
           "type": "boolean",
           "value": true
-        }
-      ],
-      [
-        "BKEI2jUIFtiOeAh0AL3cx",
-        {
-          "id": "BKEI2jUIFtiOeAh0AL3cx",
-          "instanceId": "Zel30OfGArT-ZqApdaFyZ",
-          "name": "id",
-          "type": "string",
-          "value": "menu-icon"
-        }
-      ],
-      [
-        "dG2jKYGWxC4Zndofc37pP",
-        {
-          "id": "dG2jKYGWxC4Zndofc37pP",
-          "instanceId": "EgtRQ3FwNua9E-1XgGD2I",
-          "name": "id",
-          "type": "string",
-          "value": "menu-icon-image"
         }
       ],
       [
@@ -77355,7 +77123,7 @@
           "instanceId": "wyX-5P_9f_CiObfSmxDFO",
           "name": "code",
           "type": "string",
-          "value": "<div class=\"carousel-cell\"><img src=\"https://picsum.photos/id/1015/600/400\" alt=\"\"></div>\n<div class=\"carousel-cell\"><img src=\"https://picsum.photos/id/1016/400/600\" alt=\"\"></div>\n<div class=\"carousel-cell\"><img src=\"https://picsum.photos/id/1018/500/500\" alt=\"\"></div>\n<div class=\"carousel-cell\"><img src=\"https://picsum.photos/id/1020/800/500\" alt=\"\"></div>\n<div class=\"carousel-cell\"><img src=\"https://picsum.photos/id/1024/400/300\" alt=\"\"></div>"
+          "value": "<div class=\"carousel-cell\"><img src=\"https://github.com/GE-Union/WebsiteContent/blob/main/images/home-carousel/1.jpg?raw=true\" alt=\"\"></div>\n<div class=\"carousel-cell\"><img src=\"https://github.com/GE-Union/WebsiteContent/blob/main/images/home-carousel/2.jpg?raw=true\" alt=\"\"></div>\n<div class=\"carousel-cell\"><img src=\"https://github.com/GE-Union/WebsiteContent/blob/main/images/home-carousel/3.jpg?raw=true\" alt=\"\"></div>\n<div class=\"carousel-cell\"><img src=\"https://github.com/GE-Union/WebsiteContent/blob/main/images/home-carousel/4.jpg?raw=true\" alt=\"\"></div>\n<div class=\"carousel-cell\"><img src=\"https://github.com/GE-Union/WebsiteContent/blob/main/images/home-carousel/5.jpg?raw=true\" alt=\"\"></div>\n<div class=\"carousel-cell\"><img src=\"https://github.com/GE-Union/WebsiteContent/blob/main/images/home-carousel/6.jpg?raw=true\" alt=\"\"></div>"
         }
       ],
       [
@@ -77779,13 +77547,43 @@
         }
       ],
       [
-        "gLuoKuInT8dgwtnF2Hlwp",
+        "UemF74MXufFu_crQFa6LJ",
         {
-          "id": "gLuoKuInT8dgwtnF2Hlwp",
-          "instanceId": "2n08SgVXh3jnd1h8O0pzd",
-          "name": "code",
+          "id": "UemF74MXufFu_crQFa6LJ",
+          "instanceId": "FUpJlM9x5VkrL0X_PEw5t",
+          "name": "src",
+          "type": "asset",
+          "value": "2166560cb392d96b776d995bd8ef28ccb6d6ea3ce8461205da85157265f4be27"
+        }
+      ],
+      [
+        "ORMCv_ETSuwtTbOfCc7Ur",
+        {
+          "id": "ORMCv_ETSuwtTbOfCc7Ur",
+          "instanceId": "FUpJlM9x5VkrL0X_PEw5t",
+          "name": "width",
+          "type": "asset",
+          "value": "2166560cb392d96b776d995bd8ef28ccb6d6ea3ce8461205da85157265f4be27"
+        }
+      ],
+      [
+        "vREa3xabHVOHIwHGrKNst",
+        {
+          "id": "vREa3xabHVOHIwHGrKNst",
+          "instanceId": "FUpJlM9x5VkrL0X_PEw5t",
+          "name": "height",
+          "type": "asset",
+          "value": "2166560cb392d96b776d995bd8ef28ccb6d6ea3ce8461205da85157265f4be27"
+        }
+      ],
+      [
+        "EZZB80NPp7I8XCf9-rRyU",
+        {
+          "id": "EZZB80NPp7I8XCf9-rRyU",
+          "instanceId": "FUpJlM9x5VkrL0X_PEw5t",
+          "name": "id",
           "type": "string",
-          "value": "<img src=\"https://github.com/GE-Union/WebsiteContent/blob/main/images/reel-previews/reel1.png?raw=true\">"
+          "value": "menu-icon"
         }
       ]
     ],
@@ -78567,10 +78365,6 @@
             {
               "type": "id",
               "value": "pNNIQKrvTr0fAyfdliI_H"
-            },
-            {
-              "type": "id",
-              "value": "2n08SgVXh3jnd1h8O0pzd"
             }
           ]
         }
@@ -85652,7 +85446,7 @@
           "children": [
             {
               "type": "id",
-              "value": "Zel30OfGArT-ZqApdaFyZ"
+              "value": "FUpJlM9x5VkrL0X_PEw5t"
             },
             {
               "type": "id",
@@ -85666,29 +85460,6 @@
         }
       ],
       [
-        "Zel30OfGArT-ZqApdaFyZ",
-        {
-          "type": "instance",
-          "id": "Zel30OfGArT-ZqApdaFyZ",
-          "component": "Link",
-          "children": [
-            {
-              "type": "id",
-              "value": "EgtRQ3FwNua9E-1XgGD2I"
-            }
-          ]
-        }
-      ],
-      [
-        "EgtRQ3FwNua9E-1XgGD2I",
-        {
-          "type": "instance",
-          "id": "EgtRQ3FwNua9E-1XgGD2I",
-          "component": "Image",
-          "children": []
-        }
-      ],
-      [
         "alSaMWUO9ZmvMHWX_7mtb",
         {
           "type": "instance",
@@ -85697,7 +85468,7 @@
           "children": [
             {
               "type": "id",
-              "value": "aaOqzeCEvK_SsaT09QfTn"
+              "value": "IPwdmU4vKg6LB3wq_okWf"
             },
             {
               "type": "id",
@@ -85714,20 +85485,6 @@
             {
               "type": "id",
               "value": "cmVr28tAcxTVKThs8G4Km"
-            }
-          ]
-        }
-      ],
-      [
-        "aaOqzeCEvK_SsaT09QfTn",
-        {
-          "type": "instance",
-          "id": "aaOqzeCEvK_SsaT09QfTn",
-          "component": "Link",
-          "children": [
-            {
-              "type": "text",
-              "value": "Home"
             }
           ]
         }
@@ -95622,11 +95379,26 @@
         }
       ],
       [
-        "2n08SgVXh3jnd1h8O0pzd",
+        "IPwdmU4vKg6LB3wq_okWf",
         {
           "type": "instance",
-          "id": "2n08SgVXh3jnd1h8O0pzd",
-          "component": "HtmlEmbed",
+          "id": "IPwdmU4vKg6LB3wq_okWf",
+          "component": "ws:element",
+          "tag": "p",
+          "children": [
+            {
+              "type": "text",
+              "value": "Home"
+            }
+          ]
+        }
+      ],
+      [
+        "FUpJlM9x5VkrL0X_PEw5t",
+        {
+          "type": "instance",
+          "id": "FUpJlM9x5VkrL0X_PEw5t",
+          "component": "Image",
           "children": []
         }
       ]

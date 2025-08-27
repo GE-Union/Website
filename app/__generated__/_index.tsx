@@ -11,7 +11,7 @@ import { Tooltip as Tooltip, TooltipTrigger as TooltipTrigger, TooltipContent as
 
       export const projectId = "94456f8c-a847-426a-aec8-16de390bd3eb";
 
-      export const lastPublished = "2025-08-27T21:36:58.191Z";
+      export const lastPublished = "2025-08-27T22:06:25.247Z";
 
       export const siteName = "GE Union";
 
@@ -48,22 +48,18 @@ className={`w-box c3q79or cqlg791 c1fhonxu ci03eyw cu8ogtt c1nj86ny c1hj4una c85
 className={`w-box c1vu5acx cd3toq c17nm8vt c1xymrvd c8yo8yx c1duce4z ci03eyw cu8ogtt c1171g5c cji7xkv c40iywk codsd31 c16er72m c1qt5xo2 cxh7lm9 ${"icon-background home-top"}`}>
 <Box
 className={`w-box c19h37rc ci03eyw c1nj86ny c1mz59p0 c13f4d8e c1122adb cx911xm c4qqqhz c2z8j1e c19dc97m`}>
-<Link
-id={"menu-icon"}
-className={`w-link cmvyqw5 cz7iu34 c40iywk codsd31 c16er72m c1qt5xo2 c3gx87z cqyp7hg c1moglug`}>
 <Image
 src={"/assets/GE_Logo_-_Big_AQmTkCh-ue9Xfr1xXdV_k.svg"}
 width={492}
 height={684}
-id={"menu-icon-image"}
+id={"menu-icon"}
 className={`w-image c1g1752z c1l3m6tn c1wjaqd0`} />
-</Link>
 <Box
 className={`w-box ci03eyw c5zf3td c1bdekej cy2vnym cgykfac c8chaf1 crymv6m ch588tu cd1c1x2 cgjpuuk co3wgvm cjdg5q7`}>
-<Link
-className={`w-link c4qqqhz c1l00ka2 c8l261o c1wmsojl c1ho4waj c1k74xht c1122adb ch9rsc5 c10pf28n c1w0lkxn c1et34yr c1tj415q cycv0tm`}>
+<p
+className={`w-element c4qqqhz c1l00ka2 c8l261o c1wmsojl c1ho4waj c1k74xht c1122adb ch9rsc5 c10pf28n c1w0lkxn c1p2ptee c1et34yr c1tj415q cycv0tm`}>
 {"Home"}
-</Link>
+</p>
 <Link
 href={"/course-bank"}
 className={`w-link c4qqqhz c1l00ka2 c8l261o c1ozmz5d c1ho4waj c1k74xht c1122adb ch9rsc5 c10pf28n c1w0lkxn c1et34yr c1tj415q`}>
@@ -363,7 +359,7 @@ className={`w-image c1nfcmlw`} />
 <Box
 className={`w-box c1duohc3 c19f83kh`}>
 <HtmlEmbed
-code={"<div class=\"carousel-cell\"><img src=\"https://picsum.photos/id/1015/600/400\" alt=\"\"></div>\n<div class=\"carousel-cell\"><img src=\"https://picsum.photos/id/1016/400/600\" alt=\"\"></div>\n<div class=\"carousel-cell\"><img src=\"https://picsum.photos/id/1018/500/500\" alt=\"\"></div>\n<div class=\"carousel-cell\"><img src=\"https://picsum.photos/id/1020/800/500\" alt=\"\"></div>\n<div class=\"carousel-cell\"><img src=\"https://picsum.photos/id/1024/400/300\" alt=\"\"></div>"}
+code={"<div class=\"carousel-cell\"><img src=\"https://github.com/GE-Union/WebsiteContent/blob/main/images/home-carousel/1.jpg?raw=true\" alt=\"\"></div>\n<div class=\"carousel-cell\"><img src=\"https://github.com/GE-Union/WebsiteContent/blob/main/images/home-carousel/2.jpg?raw=true\" alt=\"\"></div>\n<div class=\"carousel-cell\"><img src=\"https://github.com/GE-Union/WebsiteContent/blob/main/images/home-carousel/3.jpg?raw=true\" alt=\"\"></div>\n<div class=\"carousel-cell\"><img src=\"https://github.com/GE-Union/WebsiteContent/blob/main/images/home-carousel/4.jpg?raw=true\" alt=\"\"></div>\n<div class=\"carousel-cell\"><img src=\"https://github.com/GE-Union/WebsiteContent/blob/main/images/home-carousel/5.jpg?raw=true\" alt=\"\"></div>\n<div class=\"carousel-cell\"><img src=\"https://github.com/GE-Union/WebsiteContent/blob/main/images/home-carousel/6.jpg?raw=true\" alt=\"\"></div>"}
 executeScriptOnCanvas={true}
 id={"carousel"}
 className={`w-html-embed c6f08mx cgmpm3f cn4tmju c14xcs5y`} />
@@ -379,9 +375,6 @@ src={"https://github.com/GE-Union/WebsiteContent/blob/main/images/reel-previews/
 optimize={false}
 loading={"lazy"}
 className={`w-image cd3toq c17nm8vt c1xymrvd c8yo8yx c1dohq8s c2z8j1e c1a9mgdi c117si4 c74spxi c1i89xtz c1k74xht c1wuzpx5`} />
-<HtmlEmbed
-code={"<img src=\"https://github.com/GE-Union/WebsiteContent/blob/main/images/reel-previews/reel1.png?raw=true\">"}
-className={`w-html-embed cd3toq c17nm8vt c1xymrvd c8yo8yx c1dohq8s c2z8j1e c1a9mgdi c117si4 c74spxi c1i89xtz c1k74xht c1wuzpx5`} />
 </div>
 <div
 className={`w-element cwawr8f ci03eyw cu8ogtt cn8b0jh cywh3a cy6xfzs`}>
@@ -575,7 +568,7 @@ code={"<link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/flickity@2/d
 executeScriptOnCanvas={true}
 className={`w-html-embed cgmpm3f`} />
 <HtmlEmbed
-code={"<style>\n  /* Optional quality-of-life styles */\n  #menu-icon, #menu-icon-image {\n    cursor: grab;\n    touch-action: none;   /* allow smooth touch drag */\n    will-change: transform;\n    \n    user-drag: none;\n    -webkit-user-drag: none;\n    -moz-user-drag: none;\n    user-select: none;    /* avoid text selection while dragging */\n    -moz-user-select: none;\n    -webkit-user-select: none;\n    -ms-user-select: none;\n  }\n  #menu-icon.dragging { cursor: grabbing; }\n</style>\n\n<script>\n(() => {\n  const icon = document.getElementById('menu-icon');\n  if (!icon) return;\n\n  // position is managed purely via transform so layout doesn't shift\n  let tx = 0, ty = 0;               // current translation\n  let vx = 0, vy = 0;               // current velocity (px/s)\n  let dragging = false;\n  let startX = 0, startY = 0;       // pointer-down position\n  let lastPx = 0, lastPy = 0;       // last pointer position (for velocity)\n  let lastT = 0;                    // last timestamp\n\n  // Spring params: tweak for feel\n  const STIFFNESS = 300;   // spring constant (higher = snappier)\n  const DAMPING   = 15;   // damping (lower = bouncier)\n  const EPS_POS   = 0.5;  // stop threshold (position, px)\n  const EPS_VEL   = 0.5;  // stop threshold (velocity, px/s)\n\n  const setTransform = () => {\n    icon.style.transform = `translate(${tx}px, ${ty}px)`;\n  };\n\n  const onPointerDown = (e) => {\n    dragging = true;\n    icon.classList.add('dragging');\n    icon.setPointerCapture?.(e.pointerId);\n\n    startX = e.clientX - tx;\n    startY = e.clientY - ty;\n\n    lastPx = e.clientX;\n    lastPy = e.clientY;\n    lastT  = performance.now();\n    vx = 0; vy = 0; // reset; we'll accumulate movement velocity\n  };\n\n  const onPointerMove = (e) => {\n    if (!dragging) return;\n\n    const now = performance.now();\n    const dt  = (now - lastT) / 1000;\n    tx = e.clientX - startX;\n    ty = e.clientY - startY;\n\n    // simple low-pass filtered velocity estimate for spring kick\n    if (dt > 0) {\n      const instVx = (e.clientX - lastPx) / dt;\n      const instVy = (e.clientY - lastPy) / dt;\n      vx = 0.8 * vx + 0.2 * instVx;\n      vy = 0.8 * vy + 0.2 * instVy;\n    }\n    lastPx = e.clientX;\n    lastPy = e.clientY;\n    lastT  = now;\n\n    setTransform();\n  };\n\n  const onPointerUp = (e) => {\n    if (!dragging) return;\n    dragging = false;\n    icon.classList.remove('dragging');\n    icon.releasePointerCapture?.(e.pointerId);\n    animateBack(); // start spring home\n  };\n\n  function animateBack() {\n    let prev = performance.now();\n    function step(now) {\n      const dt = Math.min((now - prev) / 1000, 0.032); // clamp dt for stability\n      prev = now;\n\n      // Hooke's law: F = -k*x - c*v (mass=1)\n      const ax = -STIFFNESS * tx - DAMPING * vx;\n      const ay = -STIFFNESS * ty - DAMPING * vy;\n\n      vx += ax * dt;\n      vy += ay * dt;\n      tx += vx * dt;\n      ty += vy * dt;\n\n      setTransform();\n\n      const nearOrigin = Math.hypot(tx, ty) < EPS_POS;\n      const slowEnough = Math.hypot(vx, vy) < EPS_VEL;\n\n      if (nearOrigin && slowEnough) {\n        // snap exactly home to avoid subpixel fuzz\n        tx = ty = vx = vy = 0;\n        setTransform();\n        return;\n      }\n      // If user grabbed again, stop the spring.\n      if (dragging) return;\n\n      requestAnimationFrame(step);\n    }\n    requestAnimationFrame(step);\n  }\n\n  // Keep it floating above other content while dragging (no layout changes)\n  icon.style.zIndex = (parseInt(getComputedStyle(icon).zIndex) || 1).toString();\n\n  // Bind events\n  icon.addEventListener('pointerdown', onPointerDown);\n  window.addEventListener('pointermove', onPointerMove, { passive: true });\n  window.addEventListener('pointerup', onPointerUp);\n  window.addEventListener('pointercancel', onPointerUp);\n})();\n</script>"}
+code={"<style>\n  /* Optional quality-of-life styles */\n  #menu-icon {\n    cursor: grab;\n    touch-action: none;   /* allow smooth touch drag */\n    will-change: transform;\n    \n    user-drag: none;\n    -webkit-user-drag: none;\n    -moz-user-drag: none;\n    user-select: none;    /* avoid text selection while dragging */\n    -moz-user-select: none;\n    -webkit-user-select: none;\n    -ms-user-select: none;\n  }\n  #menu-icon.dragging { cursor: grabbing; }\n</style>\n\n<script>\n(() => {\n  const icon = document.getElementById('menu-icon');\n  if (!icon) return;\n\n  // position is managed purely via transform so layout doesn't shift\n  let tx = 0, ty = 0;               // current translation\n  let vx = 0, vy = 0;               // current velocity (px/s)\n  let dragging = false;\n  let startX = 0, startY = 0;       // pointer-down position\n  let lastPx = 0, lastPy = 0;       // last pointer position (for velocity)\n  let lastT = 0;                    // last timestamp\n\n  // Spring params: tweak for feel\n  const STIFFNESS = 300;   // spring constant (higher = snappier)\n  const DAMPING   = 15;   // damping (lower = bouncier)\n  const EPS_POS   = 0.5;  // stop threshold (position, px)\n  const EPS_VEL   = 0.5;  // stop threshold (velocity, px/s)\n\n  const setTransform = () => {\n    icon.style.transform = `translate(${tx}px, ${ty}px)`;\n  };\n\n  const onPointerDown = (e) => {\n    dragging = true;\n    icon.classList.add('dragging');\n    icon.setPointerCapture?.(e.pointerId);\n\n    startX = e.clientX - tx;\n    startY = e.clientY - ty;\n\n    lastPx = e.clientX;\n    lastPy = e.clientY;\n    lastT  = performance.now();\n    vx = 0; vy = 0; // reset; we'll accumulate movement velocity\n  };\n\n  const onPointerMove = (e) => {\n    if (!dragging) return;\n\n    const now = performance.now();\n    const dt  = (now - lastT) / 1000;\n    tx = e.clientX - startX;\n    ty = e.clientY - startY;\n\n    // simple low-pass filtered velocity estimate for spring kick\n    if (dt > 0) {\n      const instVx = (e.clientX - lastPx) / dt;\n      const instVy = (e.clientY - lastPy) / dt;\n      vx = 0.8 * vx + 0.2 * instVx;\n      vy = 0.8 * vy + 0.2 * instVy;\n    }\n    lastPx = e.clientX;\n    lastPy = e.clientY;\n    lastT  = now;\n\n    setTransform();\n  };\n\n  const onPointerUp = (e) => {\n    if (!dragging) return;\n    dragging = false;\n    icon.classList.remove('dragging');\n    icon.releasePointerCapture?.(e.pointerId);\n    animateBack(); // start spring home\n  };\n\n  function animateBack() {\n    let prev = performance.now();\n    function step(now) {\n      const dt = Math.min((now - prev) / 1000, 0.032); // clamp dt for stability\n      prev = now;\n\n      // Hooke's law: F = -k*x - c*v (mass=1)\n      const ax = -STIFFNESS * tx - DAMPING * vx;\n      const ay = -STIFFNESS * ty - DAMPING * vy;\n\n      vx += ax * dt;\n      vy += ay * dt;\n      tx += vx * dt;\n      ty += vy * dt;\n\n      setTransform();\n\n      const nearOrigin = Math.hypot(tx, ty) < EPS_POS;\n      const slowEnough = Math.hypot(vx, vy) < EPS_VEL;\n\n      if (nearOrigin && slowEnough) {\n        // snap exactly home to avoid subpixel fuzz\n        tx = ty = vx = vy = 0;\n        setTransform();\n        return;\n      }\n      // If user grabbed again, stop the spring.\n      if (dragging) return;\n\n      requestAnimationFrame(step);\n    }\n    requestAnimationFrame(step);\n  }\n\n  // Keep it floating above other content while dragging (no layout changes)\n  icon.style.zIndex = (parseInt(getComputedStyle(icon).zIndex) || 1).toString();\n\n  // Bind events\n  icon.addEventListener('pointerdown', onPointerDown);\n  window.addEventListener('pointermove', onPointerMove, { passive: true });\n  window.addEventListener('pointerup', onPointerUp);\n  window.addEventListener('pointercancel', onPointerUp);\n})();\n</script>"}
 executeScriptOnCanvas={true}
 className={`w-html-embed`} />
 </Body>

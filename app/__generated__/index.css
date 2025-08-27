@@ -1486,15 +1486,6 @@
   .cx911xm {
     max-width: 1800px
   }
-  .cmvyqw5 {
-    width: fit-content
-  }
-  .c3gx87z:hover {
-    scale: 1.05
-  }
-  .c1g1752z {
-    width: 70px
-  }
   .c5zf3td {
     column-gap: 30px
   }
@@ -1507,6 +1498,9 @@
   .c1l00ka2 {
     font-weight: 600
   }
+  .c1ozmz5d {
+    color: rgba(0, 0, 0, 0.48)
+  }
   .ch9rsc5 {
     padding-left: 5px
   }
@@ -1515,9 +1509,6 @@
   }
   .c1et34yr:hover {
     color: rgba(255, 255, 255, 0.91)
-  }
-  .c1ozmz5d {
-    color: rgba(0, 0, 0, 0.48)
   }
   .cbahl6h:hover {
     color: rgba(0, 0, 0, 0.48)
@@ -1730,6 +1721,15 @@
   .c10n22ue {
     opacity: 0.5
   }
+  .cmvyqw5 {
+    width: fit-content
+  }
+  .c3gx87z:hover {
+    scale: 1.05
+  }
+  .c1g1752z {
+    width: 70px
+  }
   .cgmpm3f {
     --img-scale: 1
   }
@@ -1753,6 +1753,9 @@
   }
   .c1t9afk7 {
     font-style: normal
+  }
+  .c1p2ptee {
+    cursor: pointer
   }
 }
 @media all and (max-width: 991px) {
@@ -2174,15 +2177,6 @@
   .c19dc97m {
     height: 60px
   }
-  .cqyp7hg {
-    height: 78%
-  }
-  .c1moglug {
-    align-self: center
-  }
-  .c1wjaqd0 {
-    width: 50px
-  }
   .ch588tu {
     visibility: collapse
   }
@@ -2236,6 +2230,15 @@
   }
   .c1yp8zjv {
     margin-top: 93px
+  }
+  .cqyp7hg {
+    height: 78%
+  }
+  .c1moglug {
+    align-self: center
+  }
+  .c1wjaqd0 {
+    width: 50px
   }
   .c14xcs5y {
     --img-scale: 0.5
