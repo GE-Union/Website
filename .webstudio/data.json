@@ -1,10 +1,10 @@
 {
   "build": {
-    "id": "cf370082-aade-40c5-908d-f4c7ed74aa69",
+    "id": "5ff08189-0dba-4f68-9aee-9dd9250001fe",
     "projectId": "94456f8c-a847-426a-aec8-16de390bd3eb",
-    "version": 8177,
-    "createdAt": "2025-08-27T18:08:42.454+00:00",
-    "updatedAt": "2025-08-27T18:08:42.454+00:00",
+    "version": 8242,
+    "createdAt": "2025-08-27T18:24:26.813+00:00",
+    "updatedAt": "2025-08-27T18:24:26.813+00:00",
     "pages": {
       "meta": {
         "siteName": "GE Union",
@@ -73654,26 +73654,6 @@
         }
       ],
       [
-        "4EAOeDqGFhMf25_pPTt4H",
-        {
-          "id": "4EAOeDqGFhMf25_pPTt4H",
-          "instanceId": "Zel30OfGArT-ZqApdaFyZ",
-          "name": "href",
-          "type": "page",
-          "value": "wUK5ygvtFE2u3SZDaGCgn"
-        }
-      ],
-      [
-        "ir9XIPiw8mPFx7li0xizw",
-        {
-          "id": "ir9XIPiw8mPFx7li0xizw",
-          "instanceId": "aaOqzeCEvK_SsaT09QfTn",
-          "name": "href",
-          "type": "page",
-          "value": "wUK5ygvtFE2u3SZDaGCgn"
-        }
-      ],
-      [
         "vtGj31-mU4B_Hk0HVa0hj",
         {
           "id": "vtGj31-mU4B_Hk0HVa0hj",
@@ -76310,7 +76290,7 @@
           "instanceId": "BdgEyfusPKUbYenE7UP2V",
           "name": "code",
           "type": "string",
-          "value": "<script>\n  document.addEventListener('DOMContentLoaded', () => {\n    requestAnimationFrame(() => {\n      setTimeout(function() {\n        const today = new Date();\n        const currentYear = today.getFullYear();\n        const currentMonth = today.getMonth(); // 0-indexed\n        const currentDate = today.getDate();\n      \n        const monthNames = [\n          \"January\", \"February\", \"March\", \"April\", \"May\", \"June\",\n          \"July\", \"August\", \"September\", \"October\", \"November\", \"December\"\n        ];\n      \n        document.getElementById(\"monthHeader\").textContent = `${monthNames[currentMonth]} ${currentYear}`;\n      \n        const calendar = document.getElementById(\"calendar\");\n      \n        const daysOfWeek = [\"Mo\", \"Tu\", \"We\", \"Th\", \"Fr\", \"Sa\", \"Su\"];\n        daysOfWeek.forEach(day => {\n          const span = document.createElement(\"span\");\n          span.className = \"day\";\n          span.textContent = day;\n          calendar.appendChild(span);\n        });\n      \n        const firstDay = new Date(currentYear, currentMonth, 1);\n        const startDay = (firstDay.getDay() + 6) % 7;\n      \n        const daysInMonth = new Date(currentYear, currentMonth + 1, 0).getDate();\n        const daysInPrevMonth = new Date(currentYear, currentMonth, 0).getDate();\n      \n        for (let i = startDay - 1; i >= 0; i--) {\n          const btn = document.createElement(\"button\");\n          btn.className = \"date faded\";\n          btn.textContent = daysInPrevMonth - i;\n          calendar.appendChild(btn);\n        }\n      \n        for (let i = 1; i <= daysInMonth; i++) {\n          const btn = document.createElement(\"button\");\n          btn.className = \"date\";\n          btn.textContent = i;\n          if (i === currentDate) {\n            btn.classList.add(\"current-day\");\n          }\n          calendar.appendChild(btn);\n        }\n      \n        const totalCells = startDay + daysInMonth;\n        const nextDays = (7 - (totalCells % 7)) % 7;\n        for (let i = 1; i <= nextDays; i++) {\n          const btn = document.createElement(\"button\");\n          btn.className = \"date faded\";\n          btn.textContent = i;\n          calendar.appendChild(btn);\n        }\n\n        document.getElementById('mini-calendar-back').style.opacity = \"1\"; \n      }, 500)\n    });\n  });\n</script>"
+          "value": "<script>\n  document.addEventListener('DOMContentLoaded', () => {\n    requestAnimationFrame(() => {\n      setTimeout(function() {\n          loadCalendar();\n      }, 500)\n    });\n  });\n\n  function loadCalendar() {\n    const today = new Date();\n        const currentYear = today.getFullYear();\n        const currentMonth = today.getMonth(); // 0-indexed\n        const currentDate = today.getDate();\n      \n        const monthNames = [\n          \"January\", \"February\", \"March\", \"April\", \"May\", \"June\",\n          \"July\", \"August\", \"September\", \"October\", \"November\", \"December\"\n        ];\n      \n        document.getElementById(\"monthHeader\").textContent = `${monthNames[currentMonth]} ${currentYear}`;\n      \n        const calendar = document.getElementById(\"calendar\");\n      \n        const daysOfWeek = [\"Mo\", \"Tu\", \"We\", \"Th\", \"Fr\", \"Sa\", \"Su\"];\n        daysOfWeek.forEach(day => {\n          const span = document.createElement(\"span\");\n          span.className = \"day\";\n          span.textContent = day;\n          calendar.appendChild(span);\n        });\n      \n        const firstDay = new Date(currentYear, currentMonth, 1);\n        const startDay = (firstDay.getDay() + 6) % 7;\n      \n        const daysInMonth = new Date(currentYear, currentMonth + 1, 0).getDate();\n        const daysInPrevMonth = new Date(currentYear, currentMonth, 0).getDate();\n      \n        for (let i = startDay - 1; i >= 0; i--) {\n          const btn = document.createElement(\"button\");\n          btn.className = \"date faded\";\n          btn.textContent = daysInPrevMonth - i;\n          calendar.appendChild(btn);\n        }\n      \n        for (let i = 1; i <= daysInMonth; i++) {\n          const btn = document.createElement(\"button\");\n          btn.className = \"date\";\n          btn.textContent = i;\n          if (i === currentDate) {\n            btn.classList.add(\"current-day\");\n          }\n          calendar.appendChild(btn);\n        }\n      \n        const totalCells = startDay + daysInMonth;\n        const nextDays = (7 - (totalCells % 7)) % 7;\n        for (let i = 1; i <= nextDays; i++) {\n          const btn = document.createElement(\"button\");\n          btn.className = \"date faded\";\n          btn.textContent = i;\n          calendar.appendChild(btn);\n        }\n\n        document.getElementById('mini-calendar-back').style.opacity = \"1\";\n  }\n  \n</script>"
         }
       ],
       [
@@ -78672,11 +78652,12 @@
         {
           "type": "instance",
           "id": "QPp2kBQ-rE7YgWWiqCGjK",
-          "component": "Span",
+          "component": "ws:element",
+          "tag": "span",
           "children": [
             {
               "type": "text",
-              "value": "Polytachnical "
+              "value": "Polytechnical "
             }
           ]
         }

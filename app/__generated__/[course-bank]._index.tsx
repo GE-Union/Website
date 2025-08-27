@@ -11,7 +11,7 @@ import { Tabs as Tabs, TabsList as TabsList, TabsTrigger as TabsTrigger, TabsCon
 
       export const projectId = "94456f8c-a847-426a-aec8-16de390bd3eb";
 
-      export const lastPublished = "2025-08-27T18:08:42.454Z";
+      export const lastPublished = "2025-08-27T18:24:26.813Z";
 
       export const siteName = "GE Union";
 
@@ -207,10 +207,10 @@ className={`w-tabs-list cfyrpk4 c1qpyqes c1bti4b5 cd3toq c17nm8vt c8yo8yx c1xymr
 <TabsTrigger
 data-ws-index="0"
 className={`w-tab-trigger cfyrpk4 c1v4vkm5 c1bti4b5 c1sm0mvf cbfwnla c3fz80x c6pfjtb c1lp7lun c3ryv7d c1t11c95 c1kz25wt cr2ujrk c1tmykg6 ctdzf0s c1efnbdc c14hahek c1qt5xo2 ck08swj cuz3b7n c5atcat c13yk87r c12m3onu cxbwblh co1yi26 c1vk95sq c4m1pwg c1al8gxi cws4pam cqp7jpc c1kvgv3n`}>
-<Span
-className={`w-text-1 c426or5 cycv0tm ckiq6wr`}>
-{"Polytachnical "}
-</Span>
+<span
+className={`w-element c426or5 cycv0tm ckiq6wr`}>
+{"Polytechnical "}
+</span>
 {"Foundations"}
 </TabsTrigger>
 <TabsTrigger

@@ -11,7 +11,7 @@ import { Tooltip as Tooltip, TooltipTrigger as TooltipTrigger, TooltipContent as
 
       export const projectId = "94456f8c-a847-426a-aec8-16de390bd3eb";
 
-      export const lastPublished = "2025-08-27T18:08:42.454Z";
+      export const lastPublished = "2025-08-27T18:24:26.813Z";
 
       export const siteName = "GE Union";
 
@@ -49,7 +49,6 @@ className={`w-box c1vu5acx cd3toq c17nm8vt c1xymrvd c8yo8yx c1duce4z ci03eyw cu8
 <Box
 className={`w-box c19h37rc ci03eyw c1nj86ny c1mz59p0 c13f4d8e c1122adb cx911xm c4qqqhz c2z8j1e c19dc97m`}>
 <Link
-href={"/"}
 id={"menu-icon"}
 className={`w-link cmvyqw5 cz7iu34 c40iywk codsd31 c16er72m c1qt5xo2 c3gx87z cqyp7hg c1moglug`}>
 <Image
@@ -62,7 +61,6 @@ className={`w-image c1g1752z c1l3m6tn c1wjaqd0`} />
 <Box
 className={`w-box ci03eyw c5zf3td c1bdekej cy2vnym cgykfac c8chaf1 crymv6m ch588tu cd1c1x2 cgjpuuk co3wgvm cjdg5q7`}>
 <Link
-href={"/"}
 className={`w-link c4qqqhz c1l00ka2 c8l261o c1wmsojl c1ho4waj c1k74xht c1122adb ch9rsc5 c10pf28n c1w0lkxn c1et34yr c1tj415q cycv0tm`}>
 {"Home"}
 </Link>
@@ -566,7 +564,7 @@ className={`w-element`}>
 </div>
 </Link_1>
 <HtmlEmbed
-code={"<script>\n  document.addEventListener('DOMContentLoaded', () => {\n    requestAnimationFrame(() => {\n      setTimeout(function() {\n        const today = new Date();\n        const currentYear = today.getFullYear();\n        const currentMonth = today.getMonth(); // 0-indexed\n        const currentDate = today.getDate();\n      \n        const monthNames = [\n          \"January\", \"February\", \"March\", \"April\", \"May\", \"June\",\n          \"July\", \"August\", \"September\", \"October\", \"November\", \"December\"\n        ];\n      \n        document.getElementById(\"monthHeader\").textContent = `${monthNames[currentMonth]} ${currentYear}`;\n      \n        const calendar = document.getElementById(\"calendar\");\n      \n        const daysOfWeek = [\"Mo\", \"Tu\", \"We\", \"Th\", \"Fr\", \"Sa\", \"Su\"];\n        daysOfWeek.forEach(day => {\n          const span = document.createElement(\"span\");\n          span.className = \"day\";\n          span.textContent = day;\n          calendar.appendChild(span);\n        });\n      \n        const firstDay = new Date(currentYear, currentMonth, 1);\n        const startDay = (firstDay.getDay() + 6) % 7;\n      \n        const daysInMonth = new Date(currentYear, currentMonth + 1, 0).getDate();\n        const daysInPrevMonth = new Date(currentYear, currentMonth, 0).getDate();\n      \n        for (let i = startDay - 1; i >= 0; i--) {\n          const btn = document.createElement(\"button\");\n          btn.className = \"date faded\";\n          btn.textContent = daysInPrevMonth - i;\n          calendar.appendChild(btn);\n        }\n      \n        for (let i = 1; i <= daysInMonth; i++) {\n          const btn = document.createElement(\"button\");\n          btn.className = \"date\";\n          btn.textContent = i;\n          if (i === currentDate) {\n            btn.classList.add(\"current-day\");\n          }\n          calendar.appendChild(btn);\n        }\n      \n        const totalCells = startDay + daysInMonth;\n        const nextDays = (7 - (totalCells % 7)) % 7;\n        for (let i = 1; i <= nextDays; i++) {\n          const btn = document.createElement(\"button\");\n          btn.className = \"date faded\";\n          btn.textContent = i;\n          calendar.appendChild(btn);\n        }\n\n        document.getElementById('mini-calendar-back').style.opacity = \"1\"; \n      }, 500)\n    });\n  });\n</script>"}
+code={"<script>\n  document.addEventListener('DOMContentLoaded', () => {\n    requestAnimationFrame(() => {\n      setTimeout(function() {\n          loadCalendar();\n      }, 500)\n    });\n  });\n\n  function loadCalendar() {\n    const today = new Date();\n        const currentYear = today.getFullYear();\n        const currentMonth = today.getMonth(); // 0-indexed\n        const currentDate = today.getDate();\n      \n        const monthNames = [\n          \"January\", \"February\", \"March\", \"April\", \"May\", \"June\",\n          \"July\", \"August\", \"September\", \"October\", \"November\", \"December\"\n        ];\n      \n        document.getElementById(\"monthHeader\").textContent = `${monthNames[currentMonth]} ${currentYear}`;\n      \n        const calendar = document.getElementById(\"calendar\");\n      \n        const daysOfWeek = [\"Mo\", \"Tu\", \"We\", \"Th\", \"Fr\", \"Sa\", \"Su\"];\n        daysOfWeek.forEach(day => {\n          const span = document.createElement(\"span\");\n          span.className = \"day\";\n          span.textContent = day;\n          calendar.appendChild(span);\n        });\n      \n        const firstDay = new Date(currentYear, currentMonth, 1);\n        const startDay = (firstDay.getDay() + 6) % 7;\n      \n        const daysInMonth = new Date(currentYear, currentMonth + 1, 0).getDate();\n        const daysInPrevMonth = new Date(currentYear, currentMonth, 0).getDate();\n      \n        for (let i = startDay - 1; i >= 0; i--) {\n          const btn = document.createElement(\"button\");\n          btn.className = \"date faded\";\n          btn.textContent = daysInPrevMonth - i;\n          calendar.appendChild(btn);\n        }\n      \n        for (let i = 1; i <= daysInMonth; i++) {\n          const btn = document.createElement(\"button\");\n          btn.className = \"date\";\n          btn.textContent = i;\n          if (i === currentDate) {\n            btn.classList.add(\"current-day\");\n          }\n          calendar.appendChild(btn);\n        }\n      \n        const totalCells = startDay + daysInMonth;\n        const nextDays = (7 - (totalCells % 7)) % 7;\n        for (let i = 1; i <= nextDays; i++) {\n          const btn = document.createElement(\"button\");\n          btn.className = \"date faded\";\n          btn.textContent = i;\n          calendar.appendChild(btn);\n        }\n\n        document.getElementById('mini-calendar-back').style.opacity = \"1\";\n  }\n  \n</script>"}
 executeScriptOnCanvas={true}
 className={`w-html-embed`} />
 <HtmlEmbed
