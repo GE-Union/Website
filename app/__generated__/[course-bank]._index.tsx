@@ -11,7 +11,7 @@ import { Tabs as Tabs, TabsList as TabsList, TabsTrigger as TabsTrigger, TabsCon
 
       export const projectId = "94456f8c-a847-426a-aec8-16de390bd3eb";
 
-      export const lastPublished = "2025-08-27T17:57:27.843Z";
+      export const lastPublished = "2025-08-27T18:08:42.454Z";
 
       export const siteName = "GE Union";
 
@@ -1403,7 +1403,7 @@ className={`w-html-embed`} />
 className={`w-item-content cm1ds2c c1fxgukz c1jbi97f crebcbz c1tmykg6 ctdzf0s c1efnbdc c14hahek c1qt5xo2 c984udg c15qt4h4 c11ua5hp`}>
 <span
 className={`w-element`}>
-{"**The goal is to strengthen the students' ability to, on the one hand, use a mathematical way of thinking and, on the other hand, an algorithmic and computational approach to understanding and working with basic concepts from multivariate calculus."}
+{"No description"}
 </span>
 <h3
 className={`w-element cc02v1c`}>
