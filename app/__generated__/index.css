@@ -1730,6 +1730,9 @@
   .c10n22ue {
     opacity: 0.5
   }
+  .cgmpm3f {
+    --img-scale: 1
+  }
 }
 @media all and (max-width: 991px) {
   :root {
@@ -2028,6 +2031,9 @@
   .c1p1mrll {
     margin-top: -64px
   }
+  .cn4tmju {
+    --img-scale: 0.6
+  }
 }
 @media all and (max-width: 479px) {
   :root {
@@ -2209,5 +2215,8 @@
   }
   .c1yp8zjv {
     margin-top: 93px
+  }
+  .c14xcs5y {
+    --img-scale: 0.5
   }
 }

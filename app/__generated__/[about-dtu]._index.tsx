@@ -11,7 +11,7 @@ import { Tooltip as Tooltip, TooltipTrigger as TooltipTrigger, TooltipContent as
 
       export const projectId = "94456f8c-a847-426a-aec8-16de390bd3eb";
 
-      export const lastPublished = "2025-08-27T17:10:36.903Z";
+      export const lastPublished = "2025-08-27T17:57:27.843Z";
 
       export const siteName = "GE Union";
 
@@ -209,11 +209,11 @@ className={`w-element`}>
 <Link
 href={"https://engirank.eu/"}
 className={`w-element chpvhw5 c1br4k3t c1vn0xiq c1fzztwi cz03vb2 cgjpuuk`}>
-{"click here to prove the haters wrong"}
+{"click here for proof"}
 </Link>
 <span
 className={`w-element`}>
-{"). Not only does it have great facilities and amazing teachers (like Steeven) but it also has some really great teachers, like the Mathematics 1 teacher (Steeven). The main campus situated in the north of Copenhagen in a rich city called Lyngby, (if the public transports actually work), it is about a 40-50min train/bus ride, 20min drive or about a 3h walk from the center. Some other people study in bellerup but we don't really know them.   "}
+{"). Founded by H.C. Ørsted 1829 in, not only does it have great facilities and amazing teachers (like Steeven), but DTU has been heavly involved in inovations in fields such as Biotechnology, Materials Science or even inventing the modern wind turbine. The main campus situated in the north of Copenhagen in a rich city called Lyngby, (if the public transports actually work), it is about a 40-50min train/bus ride, 20min drive or about a 3h walk from the center."}
 </span>
 </span>
 </p>

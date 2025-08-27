@@ -1,10 +1,10 @@
 {
   "build": {
-    "id": "317d2a29-7d43-4814-935e-e952be718532",
+    "id": "441d14f5-c3db-4a7b-aab4-0aba625f2c57",
     "projectId": "94456f8c-a847-426a-aec8-16de390bd3eb",
-    "version": 8072,
-    "createdAt": "2025-08-27T17:10:36.903+00:00",
-    "updatedAt": "2025-08-27T17:10:36.903+00:00",
+    "version": 8160,
+    "createdAt": "2025-08-27T17:57:27.843+00:00",
+    "updatedAt": "2025-08-27T17:57:27.843+00:00",
     "pages": {
       "meta": {
         "siteName": "GE Union",
@@ -59507,6 +59507,74 @@
             "value": "gap1"
           }
         }
+      ],
+      [
+        "Ht0hnFBz9MZ7ELrOt6N3x:2EiFMEG40PBm9_fkelqpo:--img-scale:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "Ht0hnFBz9MZ7ELrOt6N3x",
+          "property": "--img-scale",
+          "value": {
+            "type": "unit",
+            "unit": "number",
+            "value": 1
+          },
+          "listed": true
+        }
+      ],
+      [
+        "yK9ZbEq0pysqWTnMfRPIt:2EiFMEG40PBm9_fkelqpo:display:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "yK9ZbEq0pysqWTnMfRPIt",
+          "property": "display",
+          "value": {
+            "type": "keyword",
+            "value": "block"
+          }
+        }
+      ],
+      [
+        "yK9ZbEq0pysqWTnMfRPIt:2EiFMEG40PBm9_fkelqpo:--img-scale:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "yK9ZbEq0pysqWTnMfRPIt",
+          "property": "--img-scale",
+          "value": {
+            "type": "unit",
+            "unit": "number",
+            "value": 1
+          },
+          "listed": true
+        }
+      ],
+      [
+        "yK9ZbEq0pysqWTnMfRPIt:Uvcw_OJqyPoLioZzUbP1x:--img-scale:",
+        {
+          "breakpointId": "Uvcw_OJqyPoLioZzUbP1x",
+          "styleSourceId": "yK9ZbEq0pysqWTnMfRPIt",
+          "property": "--img-scale",
+          "value": {
+            "type": "unit",
+            "unit": "number",
+            "value": 0.6
+          },
+          "listed": true
+        }
+      ],
+      [
+        "yK9ZbEq0pysqWTnMfRPIt:eCbcXJaLEKSKcnbAPzNF0:--img-scale:",
+        {
+          "breakpointId": "eCbcXJaLEKSKcnbAPzNF0",
+          "styleSourceId": "yK9ZbEq0pysqWTnMfRPIt",
+          "property": "--img-scale",
+          "value": {
+            "type": "unit",
+            "unit": "number",
+            "value": 0.5
+          },
+          "listed": true
+        }
       ]
     ],
     "styleSources": [
@@ -64026,6 +64094,13 @@
         {
           "type": "local",
           "id": "30beuiVZMYFhWXyk88Elk"
+        }
+      ],
+      [
+        "Ht0hnFBz9MZ7ELrOt6N3x",
+        {
+          "type": "local",
+          "id": "Ht0hnFBz9MZ7ELrOt6N3x"
         }
       ]
     ],
@@ -71306,6 +71381,15 @@
             "-hgTwNFEFLBNPpqbO8N0f"
           ]
         }
+      ],
+      [
+        "Aop-EmZazWxO4vGKRxJm3",
+        {
+          "instanceId": "Aop-EmZazWxO4vGKRxJm3",
+          "values": [
+            "Ht0hnFBz9MZ7ELrOt6N3x"
+          ]
+        }
       ]
     ],
     "props": [
@@ -73046,7 +73130,7 @@
           "instanceId": "iMzOTNslIgEtR78-1QpQm",
           "name": "code",
           "type": "string",
-          "value": "<style>\n  .calendar-container {\n    width: 100%;\n    padding: 20px;\n  }\n  .calendar-container * {\n    cursor: pointer;\n  }\n  .month-header {\n    text-align: center;\n    font-size: 1em;\n    margin-bottom: 10px;\n    font-weight: 600;\n  }\n  .datepicker-calendar {\n    display: grid;\n    grid-template-columns: repeat(7, 1fr);\n    gap: 7px;\n    text-align: center;\n  }\n  .day {\n    font-size: 0.9em;\n    font-weight: 600;\n  }\n  .date {\n    border: none;\n    border-radius: 10px;\n    aspect-ratio: 1;\n    background: hsl(from var(--back-grey-1) h s calc(l*0.99));\n    font-size: 23px;\n    font-weight: 600;\n    color: var(--front-3)\n  }\n  .faded {\n    opacity: 0.3;\n  }\n  .current-day {\n    background-color: var(--back-red-1);\n    color: white;\n    \n  }\n</style>\n\n<div class=\"calendar-container\">\n  <div class=\"month-header\" id=\"monthHeader\"></div>\n  <div class=\"datepicker-calendar\" id=\"calendar\"></div>\n</div>\n\n<script>\n  document.addEventListener('DOMContentLoaded', () => {\n    requestAnimationFrame(() => {\n      setTimeout(function() {\n        const today = new Date();\n        const currentYear = today.getFullYear();\n        const currentMonth = today.getMonth(); // 0-indexed\n        const currentDate = today.getDate();\n      \n        const monthNames = [\n          \"January\", \"February\", \"March\", \"April\", \"May\", \"June\",\n          \"July\", \"August\", \"September\", \"October\", \"November\", \"December\"\n        ];\n      \n        document.getElementById(\"monthHeader\").textContent = `${monthNames[currentMonth]} ${currentYear}`;\n      \n        const calendar = document.getElementById(\"calendar\");\n      \n        const daysOfWeek = [\"Mo\", \"Tu\", \"We\", \"Th\", \"Fr\", \"Sa\", \"Su\"];\n        daysOfWeek.forEach(day => {\n          const span = document.createElement(\"span\");\n          span.className = \"day\";\n          span.textContent = day;\n          calendar.appendChild(span);\n        });\n      \n        const firstDay = new Date(currentYear, currentMonth, 1);\n        const startDay = (firstDay.getDay() + 6) % 7;\n      \n        const daysInMonth = new Date(currentYear, currentMonth + 1, 0).getDate();\n        const daysInPrevMonth = new Date(currentYear, currentMonth, 0).getDate();\n      \n        for (let i = startDay - 1; i >= 0; i--) {\n          const btn = document.createElement(\"button\");\n          btn.className = \"date faded\";\n          btn.textContent = daysInPrevMonth - i;\n          calendar.appendChild(btn);\n        }\n      \n        for (let i = 1; i <= daysInMonth; i++) {\n          const btn = document.createElement(\"button\");\n          btn.className = \"date\";\n          btn.textContent = i;\n          if (i === currentDate) {\n            btn.classList.add(\"current-day\");\n          }\n          calendar.appendChild(btn);\n        }\n      \n        const totalCells = startDay + daysInMonth;\n        const nextDays = (7 - (totalCells % 7)) % 7;\n        for (let i = 1; i <= nextDays; i++) {\n          const btn = document.createElement(\"button\");\n          btn.className = \"date faded\";\n          btn.textContent = i;\n          calendar.appendChild(btn);\n        }\n\n        document.getElementById('mini-calendar-back').style.opacity = \"1\"; \n      }, 200)\n    });\n  });\n</script>\n\n\n\n"
+          "value": "<style>\n  .calendar-container {\n    width: 100%;\n    padding: 20px;\n  }\n  .calendar-container * {\n    cursor: pointer;\n  }\n  .month-header {\n    text-align: center;\n    font-size: 1em;\n    margin-bottom: 10px;\n    font-weight: 600;\n  }\n  .datepicker-calendar {\n    display: grid;\n    grid-template-columns: repeat(7, 1fr);\n    gap: 7px;\n    text-align: center;\n  }\n  .day {\n    font-size: 0.9em;\n    font-weight: 600;\n  }\n  .date {\n    border: none;\n    border-radius: 10px;\n    aspect-ratio: 1;\n    background: hsl(from var(--back-grey-1) h s calc(l*0.99));\n    font-size: 23px;\n    font-weight: 600;\n    color: var(--front-3)\n  }\n  .faded {\n    opacity: 0.3;\n  }\n  .current-day {\n    background-color: var(--back-red-1);\n    color: white;\n    \n  }\n</style>\n\n<div class=\"calendar-container\">\n  <div class=\"month-header\" id=\"monthHeader\"></div>\n  <div class=\"datepicker-calendar\" id=\"calendar\"></div>\n</div>\n\n\n\n"
         }
       ],
       [
@@ -75266,7 +75350,7 @@
           "instanceId": "Z6vKSEz7uPCrs2zN-xMFn",
           "name": "code",
           "type": "string",
-          "value": "<style>\n  /* Optional quality-of-life styles */\n  #menu-icon, #menu-icon-image {\n    cursor: grab;\n    touch-action: none;   /* allow smooth touch drag */\n    user--select: none;    /* avoid text selection while dragging */\n    will-change: transform;\n    \n    user-drag: none;\n    -webkit-user-drag: none;\n    user--select: none;\n    -moz-user-select: none;\n    -webkit-user--select: none;\n    -ms-user--select: none;\n  }\n  #menu-icon.dragging { cursor: grabbing; }\n</style>\n\n<script>\n(() => {\n  const icon = document.getElementById('menu-icon');\n  if (!icon) return;\n\n  // position is managed purely via transform so layout doesn't shift\n  let tx = 0, ty = 0;               // current translation\n  let vx = 0, vy = 0;               // current velocity (px/s)\n  let dragging = false;\n  let startX = 0, startY = 0;       // pointer-down position\n  let lastPx = 0, lastPy = 0;       // last pointer position (for velocity)\n  let lastT = 0;                    // last timestamp\n\n  // Spring params: tweak for feel\n  const STIFFNESS = 300;   // spring constant (higher = snappier)\n  const DAMPING   = 15;   // damping (lower = bouncier)\n  const EPS_POS   = 0.5;  // stop threshold (position, px)\n  const EPS_VEL   = 0.5;  // stop threshold (velocity, px/s)\n\n  const setTransform = () => {\n    icon.style.transform = `translate(${tx}px, ${ty}px)`;\n  };\n\n  const onPointerDown = (e) => {\n    dragging = true;\n    icon.classList.add('dragging');\n    icon.setPointerCapture?.(e.pointerId);\n\n    startX = e.clientX - tx;\n    startY = e.clientY - ty;\n\n    lastPx = e.clientX;\n    lastPy = e.clientY;\n    lastT  = performance.now();\n    vx = 0; vy = 0; // reset; we'll accumulate movement velocity\n  };\n\n  const onPointerMove = (e) => {\n    if (!dragging) return;\n\n    const now = performance.now();\n    const dt  = (now - lastT) / 1000;\n    tx = e.clientX - startX;\n    ty = e.clientY - startY;\n\n    // simple low-pass filtered velocity estimate for spring kick\n    if (dt > 0) {\n      const instVx = (e.clientX - lastPx) / dt;\n      const instVy = (e.clientY - lastPy) / dt;\n      vx = 0.8 * vx + 0.2 * instVx;\n      vy = 0.8 * vy + 0.2 * instVy;\n    }\n    lastPx = e.clientX;\n    lastPy = e.clientY;\n    lastT  = now;\n\n    setTransform();\n  };\n\n  const onPointerUp = (e) => {\n    if (!dragging) return;\n    dragging = false;\n    icon.classList.remove('dragging');\n    icon.releasePointerCapture?.(e.pointerId);\n    animateBack(); // start spring home\n  };\n\n  function animateBack() {\n    let prev = performance.now();\n    function step(now) {\n      const dt = Math.min((now - prev) / 1000, 0.032); // clamp dt for stability\n      prev = now;\n\n      // Hooke's law: F = -k*x - c*v (mass=1)\n      const ax = -STIFFNESS * tx - DAMPING * vx;\n      const ay = -STIFFNESS * ty - DAMPING * vy;\n\n      vx += ax * dt;\n      vy += ay * dt;\n      tx += vx * dt;\n      ty += vy * dt;\n\n      setTransform();\n\n      const nearOrigin = Math.hypot(tx, ty) < EPS_POS;\n      const slowEnough = Math.hypot(vx, vy) < EPS_VEL;\n\n      if (nearOrigin && slowEnough) {\n        // snap exactly home to avoid subpixel fuzz\n        tx = ty = vx = vy = 0;\n        setTransform();\n        return;\n      }\n      // If user grabbed again, stop the spring.\n      if (dragging) return;\n\n      requestAnimationFrame(step);\n    }\n    requestAnimationFrame(step);\n  }\n\n  // Keep it floating above other content while dragging (no layout changes)\n  icon.style.zIndex = (parseInt(getComputedStyle(icon).zIndex) || 1).toString();\n\n  // Bind events\n  icon.addEventListener('pointerdown', onPointerDown);\n  window.addEventListener('pointermove', onPointerMove, { passive: true });\n  window.addEventListener('pointerup', onPointerUp);\n  window.addEventListener('pointercancel', onPointerUp);\n})();\n</script>"
+          "value": "<style>\n  /* Optional quality-of-life styles */\n  #menu-icon, #menu-icon-image {\n    cursor: grab;\n    touch-action: none;   /* allow smooth touch drag */\n    will-change: transform;\n    \n    user-drag: none;\n    -webkit-user-drag: none;\n    user-select: none;    /* avoid text selection while dragging */\n    -moz-user-select: none;\n    -webkit-user-select: none;\n    -ms-user-select: none;\n  }\n  #menu-icon.dragging { cursor: grabbing; }\n</style>\n\n<script>\n(() => {\n  const icon = document.getElementById('menu-icon');\n  if (!icon) return;\n\n  // position is managed purely via transform so layout doesn't shift\n  let tx = 0, ty = 0;               // current translation\n  let vx = 0, vy = 0;               // current velocity (px/s)\n  let dragging = false;\n  let startX = 0, startY = 0;       // pointer-down position\n  let lastPx = 0, lastPy = 0;       // last pointer position (for velocity)\n  let lastT = 0;                    // last timestamp\n\n  // Spring params: tweak for feel\n  const STIFFNESS = 300;   // spring constant (higher = snappier)\n  const DAMPING   = 15;   // damping (lower = bouncier)\n  const EPS_POS   = 0.5;  // stop threshold (position, px)\n  const EPS_VEL   = 0.5;  // stop threshold (velocity, px/s)\n\n  const setTransform = () => {\n    icon.style.transform = `translate(${tx}px, ${ty}px)`;\n  };\n\n  const onPointerDown = (e) => {\n    dragging = true;\n    icon.classList.add('dragging');\n    icon.setPointerCapture?.(e.pointerId);\n\n    startX = e.clientX - tx;\n    startY = e.clientY - ty;\n\n    lastPx = e.clientX;\n    lastPy = e.clientY;\n    lastT  = performance.now();\n    vx = 0; vy = 0; // reset; we'll accumulate movement velocity\n  };\n\n  const onPointerMove = (e) => {\n    if (!dragging) return;\n\n    const now = performance.now();\n    const dt  = (now - lastT) / 1000;\n    tx = e.clientX - startX;\n    ty = e.clientY - startY;\n\n    // simple low-pass filtered velocity estimate for spring kick\n    if (dt > 0) {\n      const instVx = (e.clientX - lastPx) / dt;\n      const instVy = (e.clientY - lastPy) / dt;\n      vx = 0.8 * vx + 0.2 * instVx;\n      vy = 0.8 * vy + 0.2 * instVy;\n    }\n    lastPx = e.clientX;\n    lastPy = e.clientY;\n    lastT  = now;\n\n    setTransform();\n  };\n\n  const onPointerUp = (e) => {\n    if (!dragging) return;\n    dragging = false;\n    icon.classList.remove('dragging');\n    icon.releasePointerCapture?.(e.pointerId);\n    animateBack(); // start spring home\n  };\n\n  function animateBack() {\n    let prev = performance.now();\n    function step(now) {\n      const dt = Math.min((now - prev) / 1000, 0.032); // clamp dt for stability\n      prev = now;\n\n      // Hooke's law: F = -k*x - c*v (mass=1)\n      const ax = -STIFFNESS * tx - DAMPING * vx;\n      const ay = -STIFFNESS * ty - DAMPING * vy;\n\n      vx += ax * dt;\n      vy += ay * dt;\n      tx += vx * dt;\n      ty += vy * dt;\n\n      setTransform();\n\n      const nearOrigin = Math.hypot(tx, ty) < EPS_POS;\n      const slowEnough = Math.hypot(vx, vy) < EPS_VEL;\n\n      if (nearOrigin && slowEnough) {\n        // snap exactly home to avoid subpixel fuzz\n        tx = ty = vx = vy = 0;\n        setTransform();\n        return;\n      }\n      // If user grabbed again, stop the spring.\n      if (dragging) return;\n\n      requestAnimationFrame(step);\n    }\n    requestAnimationFrame(step);\n  }\n\n  // Keep it floating above other content while dragging (no layout changes)\n  icon.style.zIndex = (parseInt(getComputedStyle(icon).zIndex) || 1).toString();\n\n  // Bind events\n  icon.addEventListener('pointerdown', onPointerDown);\n  window.addEventListener('pointermove', onPointerMove, { passive: true });\n  window.addEventListener('pointerup', onPointerUp);\n  window.addEventListener('pointercancel', onPointerUp);\n})();\n</script>"
         }
       ],
       [
@@ -76026,7 +76110,7 @@
           "instanceId": "wyX-5P_9f_CiObfSmxDFO",
           "name": "code",
           "type": "string",
-          "value": "<link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/flickity@2/dist/flickity.min.css\">\n  <style>\n    .carousel {\n      background: #fff;\n      margin: 0;\n      width: 100%;\n      max--width: 900px;\n      overflow-y: visible;\n    }\n\n    /* Each cell in the carousel */\n    .carousel-cell {\n      width: 450px; /* you can tweak this */\n      margin-right: var(--gap1);\n      overflow: hidden;\n      border-radius: var(--rad2);\n    }\n\n    /* Image styling to handle different aspect ratios */\n    .carousel-cell img {\n      display: block;\n      width: 100%;\n      height: 300px;\n      object-fit: cover; /* keep full image visible */\n      background: #eee;   /* fallback background */\n    }\n  </style>\n\n\n\n  <div class=\"carousel\">\n    <div class=\"carousel-cell\"><img src=\"https://picsum.photos/id/1015/600/400\" alt=\"\"></div>\n    <div class=\"carousel-cell\"><img src=\"https://picsum.photos/id/1016/400/600\" alt=\"\"></div>\n    <div class=\"carousel-cell\"><img src=\"https://picsum.photos/id/1018/500/500\" alt=\"\"></div>\n    <div class=\"carousel-cell\"><img src=\"https://picsum.photos/id/1020/800/500\" alt=\"\"></div>\n    <div class=\"carousel-cell\"><img src=\"https://picsum.photos/id/1024/400/300\" alt=\"\"></div>\n  </div>\n\n  <!-- Flickity JS from jsDelivr -->\n  <script src=\"https://cdn.jsdelivr.net/npm/flickity@2/dist/flickity.pkgd.min.js\"></script>\n  <script>\n    var elem = document.querySelector('.carousel');\n    var flkty = new Flickity(elem, {\n      wrapAround: true,\n      autoPlay: 4000,              // 2s between slides\n      pauseAutoPlayOnHover: true,  // stop when hovered\n      freeScroll: false,\n      prevNextButtons: true,\n      pageDots: false,\n      draggable: true\n    });\n  </script>"
+          "value": "<div class=\"carousel-cell\"><img src=\"https://picsum.photos/id/1015/600/400\" alt=\"\"></div>\n<div class=\"carousel-cell\"><img src=\"https://picsum.photos/id/1016/400/600\" alt=\"\"></div>\n<div class=\"carousel-cell\"><img src=\"https://picsum.photos/id/1018/500/500\" alt=\"\"></div>\n<div class=\"carousel-cell\"><img src=\"https://picsum.photos/id/1020/800/500\" alt=\"\"></div>\n<div class=\"carousel-cell\"><img src=\"https://picsum.photos/id/1024/400/300\" alt=\"\"></div>"
         }
       ],
       [
@@ -76198,6 +76282,56 @@
           "type": "boolean",
           "value": true
         }
+      ],
+      [
+        "aopdV9oP5pXKUW-T9vPJH",
+        {
+          "id": "aopdV9oP5pXKUW-T9vPJH",
+          "instanceId": "Aop-EmZazWxO4vGKRxJm3",
+          "name": "code",
+          "type": "string",
+          "value": "<link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/flickity@2/dist/flickity.min.css\">\n  <style>\n    .carousel {\n      background: #fff;\n      margin: 0;\n      width: 100%;\n      max--width: 900px;\n      overflow-y: visible;\n    }\n\n    /* Each cell in the carousel */\n    .carousel-cell {\n      width: calc(450px * var(--img-scale)); /* you can tweak this */\n      margin-right: var(--gap1);\n      overflow: hidden;\n      border-radius: var(--rad2);\n    }\n\n    /* Image styling to handle different aspect ratios */\n    .carousel-cell img {\n      display: block;\n      width: 100%;\n      height: calc(300px * var(--img-scale));\n      object-fit: cover; /* keep full image visible */\n      background: #eee;   /* fallback background */\n    }\n  </style>\n\n  <!-- Flickity JS from jsDelivr -->\n  <script src=\"https://cdn.jsdelivr.net/npm/flickity@2/dist/flickity.pkgd.min.js\">\n    \n  </script>\n  <script>\n    document.addEventListener('DOMContentLoaded', () => {\n      var elem = document.getElementById('carousel');\n      var flkty = new Flickity(elem, {\n        wrapAround: true,\n        autoPlay: 4000,              // 2s between slides\n        pauseAutoPlayOnHover: true,  // stop when hovered\n        freeScroll: false,\n        prevNextButtons: true,\n        pageDots: false,\n        draggable: true\n      });\n    });\n  </script>"
+        }
+      ],
+      [
+        "fMAKpLZhUTWSJZJPx3hcB",
+        {
+          "id": "fMAKpLZhUTWSJZJPx3hcB",
+          "instanceId": "Aop-EmZazWxO4vGKRxJm3",
+          "name": "executeScriptOnCanvas",
+          "type": "boolean",
+          "value": true
+        }
+      ],
+      [
+        "AG03hyj5FZCENLkAqQ36F",
+        {
+          "id": "AG03hyj5FZCENLkAqQ36F",
+          "instanceId": "BdgEyfusPKUbYenE7UP2V",
+          "name": "code",
+          "type": "string",
+          "value": "<script>\n  document.addEventListener('DOMContentLoaded', () => {\n    requestAnimationFrame(() => {\n      setTimeout(function() {\n        const today = new Date();\n        const currentYear = today.getFullYear();\n        const currentMonth = today.getMonth(); // 0-indexed\n        const currentDate = today.getDate();\n      \n        const monthNames = [\n          \"January\", \"February\", \"March\", \"April\", \"May\", \"June\",\n          \"July\", \"August\", \"September\", \"October\", \"November\", \"December\"\n        ];\n      \n        document.getElementById(\"monthHeader\").textContent = `${monthNames[currentMonth]} ${currentYear}`;\n      \n        const calendar = document.getElementById(\"calendar\");\n      \n        const daysOfWeek = [\"Mo\", \"Tu\", \"We\", \"Th\", \"Fr\", \"Sa\", \"Su\"];\n        daysOfWeek.forEach(day => {\n          const span = document.createElement(\"span\");\n          span.className = \"day\";\n          span.textContent = day;\n          calendar.appendChild(span);\n        });\n      \n        const firstDay = new Date(currentYear, currentMonth, 1);\n        const startDay = (firstDay.getDay() + 6) % 7;\n      \n        const daysInMonth = new Date(currentYear, currentMonth + 1, 0).getDate();\n        const daysInPrevMonth = new Date(currentYear, currentMonth, 0).getDate();\n      \n        for (let i = startDay - 1; i >= 0; i--) {\n          const btn = document.createElement(\"button\");\n          btn.className = \"date faded\";\n          btn.textContent = daysInPrevMonth - i;\n          calendar.appendChild(btn);\n        }\n      \n        for (let i = 1; i <= daysInMonth; i++) {\n          const btn = document.createElement(\"button\");\n          btn.className = \"date\";\n          btn.textContent = i;\n          if (i === currentDate) {\n            btn.classList.add(\"current-day\");\n          }\n          calendar.appendChild(btn);\n        }\n      \n        const totalCells = startDay + daysInMonth;\n        const nextDays = (7 - (totalCells % 7)) % 7;\n        for (let i = 1; i <= nextDays; i++) {\n          const btn = document.createElement(\"button\");\n          btn.className = \"date faded\";\n          btn.textContent = i;\n          calendar.appendChild(btn);\n        }\n\n        document.getElementById('mini-calendar-back').style.opacity = \"1\"; \n      }, 200)\n    });\n  });\n</script>"
+        }
+      ],
+      [
+        "58EwEvA87FqO1KadNk8EJ",
+        {
+          "id": "58EwEvA87FqO1KadNk8EJ",
+          "instanceId": "BdgEyfusPKUbYenE7UP2V",
+          "name": "executeScriptOnCanvas",
+          "type": "boolean",
+          "value": true
+        }
+      ],
+      [
+        "rOMenOxfI1rn-H1igVVdr",
+        {
+          "id": "rOMenOxfI1rn-H1igVVdr",
+          "instanceId": "wyX-5P_9f_CiObfSmxDFO",
+          "name": "id",
+          "type": "string",
+          "value": "carousel"
+        }
       ]
     ],
     "dataSources": [],
@@ -76237,6 +76371,14 @@
             {
               "type": "id",
               "value": "iCngEFmzikjPrqjuwOPBT"
+            },
+            {
+              "type": "id",
+              "value": "BdgEyfusPKUbYenE7UP2V"
+            },
+            {
+              "type": "id",
+              "value": "Aop-EmZazWxO4vGKRxJm3"
             },
             {
               "type": "id",
@@ -82772,6 +82914,7 @@
           "type": "instance",
           "id": "iMzOTNslIgEtR78-1QpQm",
           "component": "HtmlEmbed",
+          "label": "Calendar",
           "children": []
         }
       ],
@@ -85071,7 +85214,7 @@
           "children": [
             {
               "type": "text",
-              "value": "click here to prove the haters wrong"
+              "value": "click here for proof"
             }
           ]
         }
@@ -85101,7 +85244,7 @@
           "children": [
             {
               "type": "text",
-              "value": "). Not only does it have great facilities and amazing teachers (like Steeven) but it also has some really great teachers, like the Mathematics 1 teacher (Steeven). The main campus situated in the north of Copenhagen in a rich city called Lyngby, (if the public transports actually work), it is about a 40-50min train/bus ride, 20min drive or about a 3h walk from the center. Some other people study in bellerup but we don't really know them.   "
+              "value": "). Founded by H.C. Ørsted 1829 in, not only does it have great facilities and amazing teachers (like Steeven), but DTU has been heavly involved in inovations in fields such as Biotechnology, Materials Science or even inventing the modern wind turbine. The main campus situated in the north of Copenhagen in a rich city called Lyngby, (if the public transports actually work), it is about a 40-50min train/bus ride, 20min drive or about a 3h walk from the center."
             }
           ]
         }
@@ -93528,6 +93671,26 @@
           "id": "CNVHDlcSrCH6dgmAKfJP3",
           "component": "HtmlEmbed",
           "label": "Note List",
+          "children": []
+        }
+      ],
+      [
+        "Aop-EmZazWxO4vGKRxJm3",
+        {
+          "type": "instance",
+          "id": "Aop-EmZazWxO4vGKRxJm3",
+          "component": "HtmlEmbed",
+          "label": "Image Carousel Script",
+          "children": []
+        }
+      ],
+      [
+        "BdgEyfusPKUbYenE7UP2V",
+        {
+          "type": "instance",
+          "id": "BdgEyfusPKUbYenE7UP2V",
+          "component": "HtmlEmbed",
+          "label": "Calendar Script",
           "children": []
         }
       ]
