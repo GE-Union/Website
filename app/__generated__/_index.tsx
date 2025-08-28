@@ -11,7 +11,7 @@ import { Tooltip as Tooltip, TooltipTrigger as TooltipTrigger, TooltipContent as
 
       export const projectId = "94456f8c-a847-426a-aec8-16de390bd3eb";
 
-      export const lastPublished = "2025-08-28T21:52:01.462Z";
+      export const lastPublished = "2025-08-28T23:20:38.652Z";
 
       export const siteName = "GE Union";
 
@@ -29,9 +29,24 @@ import { Tooltip as Tooltip, TooltipTrigger as TooltipTrigger, TooltipContent as
 
       
             
+            const Script = ({children, ...props}: Record<string, string | boolean>) => {
+              if (children == null) {
+                return <script {...props} />;
+              }
+
+              return <script {...props} dangerouslySetInnerHTML={{__html: children}} />;
+            };
+            const Style = ({children, ...props}: Record<string, string | boolean>) => {
+              if (children == null) {
+                return <style {...props} />;
+              }
+
+              return <style {...props} dangerouslySetInnerHTML={{__html: children}} />;
+            };
+            
 
             export const CustomCode = () => {
-              return (<></>);
+              return (<><Script async src={"https://www.googletagmanager.com/gtag/js?id=G-T1BFLB9XDL"}></Script><Script>{"\n  window.dataLayer = window.dataLayer || [];\n  function gtag(){dataLayer.push(arguments);}\n  gtag('js', new Date());\n\n  gtag('config', 'G-T1BFLB9XDL');\n"}</Script></>);
             }
           
 
@@ -320,6 +335,11 @@ className={`w-element cy7nrqp c8l261o cdhy4s8 c5sx8jk c1wauoq4 c1w0yra6 cpq2gwm 
 </Box>
 </Box>
 </Box>
+<HtmlEmbed
+code={"<div class=\"carousel-cell\">\n  <div class=\"cell-content\">\n    <img src=\"https://github.com/GE-Union/WebsiteContent/blob/main/images/home-carousel/1.jpg?raw=true\" alt=\"\">\n    <div class=\"caption\">The GE Union team</div>\n  </div>\n</div>\n\n<div class=\"carousel-cell\">\n  <div class=\"cell-content\">\n    <img src=\"https://github.com/GE-Union/WebsiteContent/blob/main/images/home-carousel/2.jpg?raw=true\" alt=\"\">\n    <div class=\"caption\">Gift for support tutors</div>\n  </div>\n</div>\n\n<div class=\"carousel-cell\">\n  <div class=\"cell-content\">\n    <img src=\"https://github.com/GE-Union/WebsiteContent/blob/main/images/home-carousel/3.jpg?raw=true\" alt=\"\">\n    <div class=\"caption\">GEU event pizza break</div>\n  </div>\n</div>\n\n<div class=\"carousel-cell\">\n  <div class=\"cell-content\">\n    <img src=\"https://github.com/GE-Union/WebsiteContent/blob/main/images/home-carousel/4.jpg?raw=true\" alt=\"\">\n    <div class=\"caption\">Maths brush-up course</div>\n  </div>\n</div>\n\n<div class=\"carousel-cell\">\n  <div class=\"cell-content\">\n    <img src=\"https://github.com/GE-Union/WebsiteContent/blob/main/images/home-carousel/5.jpg?raw=true\" alt=\"\">\n    <div class=\"caption\">Bar staff at GE Grill</div>\n  </div>\n</div>\n\n<div class=\"carousel-cell\">\n  <div class=\"cell-content\">\n    <img src=\"https://github.com/GE-Union/WebsiteContent/blob/main/images/home-carousel/6.jpg?raw=true\" alt=\"\">\n    <div class=\"caption\">GE Grill event</div>\n  </div>\n</div>"}
+executeScriptOnCanvas={true}
+id={"carousel"}
+className={`w-html-embed c6f08mx cgmpm3f csljhnv c19f83kh c1duohc3 c1w0yra6 cpq2gwm c13w5hsy cm1ds2c c1vhywez c1122adb c197srfe cn4tmju c14xcs5y c144cj3d cux2glt c1m8g7bv`} />
 <Box
 className={`w-box ci03eyw cu8ogtt c1dxr3mf c3brmnq cqaj6f4 c16lfnyl c1v4vkm5`}>
 <h2
@@ -351,11 +371,6 @@ height={24}
 className={`w-image c1nfcmlw`} />
 </Link>
 </Box>
-<HtmlEmbed
-code={"<div class=\"carousel-cell\">\n  <div class=\"cell-content\">\n    <img src=\"https://github.com/GE-Union/WebsiteContent/blob/main/images/home-carousel/1.jpg?raw=true\" alt=\"\">\n    <div class=\"caption\">The GE Union team</div>\n  </div>\n</div>\n\n<div class=\"carousel-cell\">\n  <div class=\"cell-content\">\n    <img src=\"https://github.com/GE-Union/WebsiteContent/blob/main/images/home-carousel/2.jpg?raw=true\" alt=\"\">\n    <div class=\"caption\">Gift for support tutors</div>\n  </div>\n</div>\n\n<div class=\"carousel-cell\">\n  <div class=\"cell-content\">\n    <img src=\"https://github.com/GE-Union/WebsiteContent/blob/main/images/home-carousel/3.jpg?raw=true\" alt=\"\">\n    <div class=\"caption\">GEU event pizza break</div>\n  </div>\n</div>\n\n<div class=\"carousel-cell\">\n  <div class=\"cell-content\">\n    <img src=\"https://github.com/GE-Union/WebsiteContent/blob/main/images/home-carousel/4.jpg?raw=true\" alt=\"\">\n    <div class=\"caption\">Maths brush-up course</div>\n  </div>\n</div>\n\n<div class=\"carousel-cell\">\n  <div class=\"cell-content\">\n    <img src=\"https://github.com/GE-Union/WebsiteContent/blob/main/images/home-carousel/5.jpg?raw=true\" alt=\"\">\n    <div class=\"caption\">Bar staff at GE Grill</div>\n  </div>\n</div>\n\n<div class=\"carousel-cell\">\n  <div class=\"cell-content\">\n    <img src=\"https://github.com/GE-Union/WebsiteContent/blob/main/images/home-carousel/6.jpg?raw=true\" alt=\"\">\n    <div class=\"caption\">GE Grill event</div>\n  </div>\n</div>"}
-executeScriptOnCanvas={true}
-id={"carousel"}
-className={`w-html-embed c6f08mx cgmpm3f csljhnv c19f83kh c1duohc3 c1w0yra6 cpq2gwm c13w5hsy cm1ds2c c1vhywez c1122adb c197srfe cn4tmju c14xcs5y c144cj3d cux2glt c1m8g7bv`} />
 <Box
 className={`w-box c3q79or cqlg791 cd3toq c17nm8vt c1xymrvd c8yo8yx c1n9f9m4 ci03eyw cu8ogtt ccjedbp c1z0fjz8 c9py6bs czpkcbu cz85z79 cl4abvr cnkevhm c8nmv6p cwqnf9o c1v4vkm5 c3zzp20 ckpfi68 cy3m4bk c16o2wqc cwwztsj`}>
 <Box
@@ -558,7 +573,7 @@ className={`w-element c7wcowi c2z8j1e cmndei7 c3q79or c8qj03j cvuh4zx cxxvcyz`}>
 </p>
 </Box>
 <Link
-href={"https://www.facebook.com/people/GE-Union/61573069635006/?_rdr"}
+href={"mailto:geunion.dtu@gmail.com"}
 target={"_blank"}
 className={`w-link c10pf28n c6775s7 ct2w13i c1kmtbg4 c341g64 c11h9c5s c17hd63g cnrv5xy c1ho4waj czgmbqe c8l261o cr2ujrk cvuh4zx c1pd7k79 c2gl1gx cda4yqq c767uka c1x65yvk cv1qn8j c1jon836 co5x0w6 c5sx8jk c1122adb c1bti4b5 cz7iu34 c40iywk codsd31 c16er72m c1qt5xo2 c7xu66z c1582rzp cpyan2s c6t3p65`}>
 <Text

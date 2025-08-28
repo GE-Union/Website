@@ -1,15 +1,15 @@
 {
   "build": {
-    "id": "bb820ad5-422c-44d8-a40b-c76955cd171c",
+    "id": "e5d5dbe4-c238-4e3f-a60c-45238e1c97a0",
     "projectId": "94456f8c-a847-426a-aec8-16de390bd3eb",
-    "version": 10972,
-    "createdAt": "2025-08-28T21:52:01.462+00:00",
-    "updatedAt": "2025-08-28T21:52:01.462+00:00",
+    "version": 10977,
+    "createdAt": "2025-08-28T23:20:38.652+00:00",
+    "updatedAt": "2025-08-28T23:20:38.652+00:00",
     "pages": {
       "meta": {
         "siteName": "GE Union",
         "faviconAssetId": "3a1afb6b0c207e48f268e8301688d918a14c687541d92e3cd55e50ad3c02d765",
-        "code": ""
+        "code": "<!-- Google tag (gtag.js) -->\n<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-T1BFLB9XDL\"></script>\n<script>\n  window.dataLayer = window.dataLayer || [];\n  function gtag(){dataLayer.push(arguments);}\n  gtag('js', new Date());\n\n  gtag('config', 'G-T1BFLB9XDL');\n</script>"
       },
       "homePage": {
         "id": "wUK5ygvtFE2u3SZDaGCgn",
@@ -86614,7 +86614,7 @@
           "instanceId": "bx917KphOITa8dawPchjx",
           "name": "href",
           "type": "string",
-          "value": "https://www.facebook.com/people/GE-Union/61573069635006/?_rdr"
+          "value": "mailto:geunion.dtu@gmail.com"
         }
       ],
       [
@@ -86648,15 +86648,15 @@
             },
             {
               "type": "id",
+              "value": "lYUiMaH6SA7SN9LOobH1O"
+            },
+            {
+              "type": "id",
               "value": "fA38kGlBnqHbcZFOHPanA"
             },
             {
               "type": "id",
               "value": "c5XZEhgJmhipvebGDdmok"
-            },
-            {
-              "type": "id",
-              "value": "lYUiMaH6SA7SN9LOobH1O"
             },
             {
               "type": "id",
