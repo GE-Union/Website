@@ -1,10 +1,10 @@
 {
   "build": {
-    "id": "572a8a1f-bb17-4b8c-a944-b754930d84df",
+    "id": "e04a093c-7b8b-453b-acc2-a0d63b82fb48",
     "projectId": "94456f8c-a847-426a-aec8-16de390bd3eb",
-    "version": 9017,
-    "createdAt": "2025-08-28T00:39:27.669+00:00",
-    "updatedAt": "2025-08-28T00:39:27.669+00:00",
+    "version": 9366,
+    "createdAt": "2025-08-28T01:52:20.369+00:00",
+    "updatedAt": "2025-08-28T01:52:20.369+00:00",
     "pages": {
       "meta": {
         "siteName": "GE Union",
@@ -22251,7 +22251,7 @@
           "property": "position",
           "value": {
             "type": "keyword",
-            "value": "relative"
+            "value": "absolute"
           }
         }
       ],
@@ -60687,6 +60687,19 @@
             "value": "auto"
           }
         }
+      ],
+      [
+        "rh_5SNk--HtdVzJM_BrY3:2EiFMEG40PBm9_fkelqpo:userSelect:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "rh_5SNk--HtdVzJM_BrY3",
+          "property": "userSelect",
+          "value": {
+            "type": "keyword",
+            "value": "all"
+          },
+          "listed": true
+        }
       ]
     ],
     "styleSources": [
@@ -77861,7 +77874,7 @@
           "instanceId": "BzY7RQauToDu69jkUwjjg",
           "name": "code",
           "type": "string",
-          "value": "<script src=\"https://cdn.jsdelivr.net/npm/@fullcalendar/core@6.1.17/index.global.min.js\"></script>\n<script src=\"https://cdn.jsdelivr.net/npm/@fullcalendar/daygrid@6.1.17/index.global.min.js\"></script>\n<script src=\"https://cdn.jsdelivr.net/npm/@fullcalendar/google-calendar@6.1.17/index.global.min.js\"></script>\n\n<script>\ndocument.addEventListener('DOMContentLoaded', function() {\n  var calendarEl = document.getElementById('calendar');\n\n  var calendar = new FullCalendar.Calendar(calendarEl, {\n    headerToolbar: {\n        left: 'prev,next today',\n        center: 'title',\n        right: ''\n    },\n    dayMaxEvents: true,\n    dayMaxEvents: 3,\n    firstDay: 1,\n    contentHeight: 'auto',\n    googleCalendarApiKey: 'AIzaSyDBDJxCyN67h-VrQ53s9vm597mrLUiZgHM',\n    events: '23c6f451e6193a878c5affc55d18b050093a87075c0325964379924db8ee027a@group.calendar.google.com',\n\n    eventContent: function(arg) {\n        // only show the event title, no time or dot\n        return {\n          html: '<div class=\"fc-event-title\" style=\"font-weight:normal;\">'\n                  + arg.event.title +\n                '</div>'\n        };\n    },\n\n    eventClick: function(info) {\n      // Prevent default Google Calendar link\n      info.jsEvent.preventDefault();\n      \n      const event = info.event;\n      const popup = document.getElementById('event-popup');\n      const background = document.getElementById('event-popup-back');\n      \n      // Set the content\n      popup.innerHTML = `\n        <strong>${event.title}</strong><br>\n        ${event.start.toLocaleString()}<br>\n        ${event.extendedProps.description || ''}<br>\n        ${event.extendedProps.location || ''}\n      `;\n      \n      // Position and show popup\n      background.style.display = 'flex';\n\n      background.onclick = function(){\n        const myself = document.getElementById('event-popup-back');\n        myself.style.display = 'none';\n      };\n    },\n\n    eventDataTransform: function(event) {\n        event.url = \"\";\n        return event;\n    }\n    \n  });\n  calendar.render();\n});\n</script>\n\n<style>\n  .fc-button {\n    background-color: var(--back-red-1) !important;\n    border-color: var(--back-red-1) !important;\n    color: #fff !important; /* Optional: Ensures text is visible */\n  }\n  \n  .fc-button:hover {\n    background-color: var(--back-red-1) !important;\n    opacity: 0.9;\n  }\n  \n  /* Change event background colours */\n  .fc-event {\n    background-color: var(--back-red-1) !important;\n    border-color: var(--back-red-1) !important;\n    color: #fff !important;\n  }\n\n  .fc .fc-scrollgrid td {\n    border: 1px solid var(--back-grey-1);\n    border-radius: var(--rad2);\n  }\n\n  .fc .fc-scrollgrid, .fc .fc-col-header-cell, .fc .fc-scrollgrid th {\n    border: none !important;\n  }\n\n  /* Highlight today */\n  .fc .fc-day-today {\n    background-color: rgb(from var(--back-red-1) r g b / 0.17) !important;\n    border-radius: 0 !important;\n    box-shadow: 0 0 80px rgb(from var(--back-red-1) r g b / 0.1);\n  }\n  .fc-day-today .fc-daygrid-day-number{\n    font-weight: 600;\n  }\n\n    .fc .fc-daygrid-day-frame {\n    min-height: 110px;\n  }\n  .calendar-container {\n  overflow-x: auto;\n  width: 100%;\n}\n\n  /* Pading for events in day */\n  .fc-daygrid-day-top{\n    margin-bottom: -7px;\n  }\n  .fc-event-title{\n    margin: -1px 0 -1px 4px;\n  }\n  .fc-daygrid-day-events{\n    margin-bottom: 2px !important;\n  }\n</style>"
+          "value": "<script src=\"https://cdn.jsdelivr.net/npm/@fullcalendar/core@6.1.17/index.global.min.js\"></script>\n<script src=\"https://cdn.jsdelivr.net/npm/@fullcalendar/daygrid@6.1.17/index.global.min.js\"></script>\n<script src=\"https://cdn.jsdelivr.net/npm/@fullcalendar/google-calendar@6.1.17/index.global.min.js\"></script>\n\n<script>\ndocument.addEventListener('DOMContentLoaded', function() {\n  var calendarEl = document.getElementById('calendar');\n\n  var calendar = new FullCalendar.Calendar(calendarEl, {\n    headerToolbar: {\n        left: 'prev,next today',\n        center: 'title',\n        right: ''\n    },\n    dayMaxEvents: 3,\n    firstDay: 1,\n    contentHeight: 'auto',\n    googleCalendarApiKey: 'AIzaSyDBDJxCyN67h-VrQ53s9vm597mrLUiZgHM',\n    events: '23c6f451e6193a878c5affc55d18b050093a87075c0325964379924db8ee027a@group.calendar.google.com',\n\n    eventContent: function(arg) {\n        // only show the event title, no time or dot\n        return {\n          html: '<div class=\"fc-event-title\" style=\"font-weight:normal;\">'\n                  + arg.event.title +\n                '</div>'\n        };\n    },\n\n    eventClick: function(info) {\n      // Prevent default Google Calendar link\n      info.jsEvent.preventDefault();\n      \n      const event = info.event;\n      const popup = document.getElementById('event-popup');\n      const background = document.getElementById('event-popup-back');\n\n      var eLoc = event.extendedProps.location || '';\n      if (eLoc != '') eLoc = \"<span class='pop-loc-pin'>⚲</span> \" + eLoc;\n      \n      // Set the content\n      popup.innerHTML = `\n        <h2 class='event-pop-title'>${event.title}</h2>\n        <span class='event-pop-time'>${formatDate(event.start)}</span>\n        <p class='event-pop-loc'>${eLoc || ''}</p>\n        <p class='event-pop-desc'>${event.extendedProps.description || ''}</p>\n      `;\n      \n      // Position and show popup\n      background.style.display = 'flex';\n\n      background.onclick = function(){\n        const myself = document.getElementById('event-popup-back');\n        myself.style.display = 'none';\n      };\n      popup.onclick = function(e) {\n        e.stopPropagation(); // prevents the click from reaching background\n      };\n    },\n\n    eventDataTransform: function(event) {\n        event.url = \"\";\n        return event;\n    }\n    \n  });\n  calendar.render();\n});\n\n\n\n  function formatDate(date) {\n  const options = { weekday: 'long', day: 'numeric', month: 'long', hour: '2-digit', minute: '2-digit' };\n  let formatted = new Intl.DateTimeFormat('en-GB', options).format(date);\n\n  // Add suffix to day (1st, 2nd, 3rd, 4th…)\n  const day = date.getDate();\n  const suffix = (d => {\n    if (d > 3 && d < 21) return 'th';\n    switch (d % 10) {\n      case 1: return 'st';\n      case 2: return 'nd';\n      case 3: return 'rd';\n      default: return 'th';\n    }\n  })(day);\n\n  formatted = formatted.replace(day, `${day}${suffix}`);\n  return formatted;\n}\n\n</script>\n\n<style>\n  .fc-button {\n    background-color: var(--back-red-1) !important;\n    border-color: var(--back-red-1) !important;\n    color: #fff !important; /* Optional: Ensures text is visible */\n  }\n  \n  .fc-button:hover {\n    background-color: var(--back-red-1) !important;\n    opacity: 0.9;\n  }\n  \n  /* Change event background colours */\n  .fc-event {\n    background-color: var(--back-red-1) !important;\n    border-color: var(--back-red-1) !important;\n    color: #fff !important;\n  }\n\n  .fc .fc-scrollgrid td {\n    border: 1px solid var(--back-grey-1);\n    border-radius: var(--rad2);\n  }\n\n  .fc .fc-scrollgrid, .fc .fc-col-header-cell, .fc .fc-scrollgrid th {\n    border: none !important;\n  }\n\n  /* Highlight today */\n  .fc .fc-day-today {\n    background-color: rgb(from var(--back-red-1) r g b / 0.17) !important;\n    border-radius: 0 !important;\n    box-shadow: 0 0 80px rgb(from var(--back-red-1) r g b / 0.1);\n  }\n  .fc-day-today .fc-daygrid-day-number{\n    font-weight: 600;\n  }\n\n    .fc .fc-daygrid-day-frame {\n    min-height: 110px;\n  }\n  .calendar-container {\n  overflow-x: auto;\n  width: 100%;\n}\n\n  /* Pading for events in day */\n  .fc-daygrid-day-top{\n    margin-bottom: -7px;\n  }\n  .fc-event-title{\n    margin: -1px 0 -1px 4px;\n  }\n  .fc-daygrid-day-events{\n    margin-bottom: 2px !important;\n  }\n\n  /* Popup Styles */\n  .event-pop-title {\n    margin: -30px 0 -15px 25px;\n    padding: 0;\n  }\n  .event-pop-time {\n    margin-left: -13px;\n    font-size: 18px;\n    opacity: 0.6;\n  }\n  .event-pop-desc {\n    margin: -30px 50px -20px 50px;\n  }\n  .event-pop-loc {\n    margin-left: 25px;\n    margin-top: -23px;\n    font-size: 18px;\n    opacity: 0.6;\n  }\n  .pop-loc-pin {\n    font-weight: 700;\n  }\n</style>"
         }
       ],
       [
