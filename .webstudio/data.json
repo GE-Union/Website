@@ -1,10 +1,10 @@
 {
   "build": {
-    "id": "a151a426-fea1-458d-9089-97849c64adb3",
+    "id": "2fa2696c-a414-4936-bcd5-5d79ead6f566",
     "projectId": "94456f8c-a847-426a-aec8-16de390bd3eb",
-    "version": 10559,
-    "createdAt": "2025-08-28T20:01:48.044+00:00",
-    "updatedAt": "2025-08-28T20:01:48.044+00:00",
+    "version": 10654,
+    "createdAt": "2025-08-28T20:34:32.022+00:00",
+    "updatedAt": "2025-08-28T20:34:32.022+00:00",
     "pages": {
       "meta": {
         "siteName": "GE Union",
@@ -21789,8 +21789,8 @@
           "styleSourceId": "nqvMQ6tJZKV1ms8ugkA5e",
           "property": "marginLeft",
           "value": {
-            "type": "var",
-            "value": "gap1"
+            "type": "unparsed",
+            "value": "calc(3 * var(--gap1))"
           }
         }
       ],
@@ -21801,8 +21801,8 @@
           "styleSourceId": "nqvMQ6tJZKV1ms8ugkA5e",
           "property": "marginRight",
           "value": {
-            "type": "var",
-            "value": "gap1"
+            "type": "unparsed",
+            "value": "calc(3 * var(--gap1))"
           }
         }
       ],
@@ -60765,215 +60765,6 @@
         }
       ],
       [
-        "hsBxXYXzbwzo48j6-A1dV:2EiFMEG40PBm9_fkelqpo:width:",
-        {
-          "styleSourceId": "hsBxXYXzbwzo48j6-A1dV",
-          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
-          "property": "width",
-          "value": {
-            "type": "keyword",
-            "value": "fit-content"
-          }
-        }
-      ],
-      [
-        "XyHFe7iOG460oMZDIWKFG:2EiFMEG40PBm9_fkelqpo:height:",
-        {
-          "styleSourceId": "XyHFe7iOG460oMZDIWKFG",
-          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
-          "property": "height",
-          "value": {
-            "type": "unit",
-            "unit": "%",
-            "value": 100
-          }
-        }
-      ],
-      [
-        "hsBxXYXzbwzo48j6-A1dV:2EiFMEG40PBm9_fkelqpo:scale::hover",
-        {
-          "styleSourceId": "hsBxXYXzbwzo48j6-A1dV",
-          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
-          "state": ":hover",
-          "property": "scale",
-          "value": {
-            "type": "tuple",
-            "value": [
-              {
-                "type": "unit",
-                "unit": "number",
-                "value": 1.05
-              }
-            ]
-          },
-          "listed": true
-        }
-      ],
-      [
-        "hsBxXYXzbwzo48j6-A1dV:2EiFMEG40PBm9_fkelqpo:transitionProperty:",
-        {
-          "styleSourceId": "hsBxXYXzbwzo48j6-A1dV",
-          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
-          "property": "transitionProperty",
-          "value": {
-            "type": "layers",
-            "value": [
-              {
-                "type": "unparsed",
-                "value": "scale"
-              }
-            ]
-          }
-        }
-      ],
-      [
-        "hsBxXYXzbwzo48j6-A1dV:2EiFMEG40PBm9_fkelqpo:transitionDuration:",
-        {
-          "styleSourceId": "hsBxXYXzbwzo48j6-A1dV",
-          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
-          "property": "transitionDuration",
-          "value": {
-            "type": "layers",
-            "value": [
-              {
-                "type": "unit",
-                "unit": "ms",
-                "value": 200
-              }
-            ]
-          }
-        }
-      ],
-      [
-        "hsBxXYXzbwzo48j6-A1dV:2EiFMEG40PBm9_fkelqpo:transitionTimingFunction:",
-        {
-          "styleSourceId": "hsBxXYXzbwzo48j6-A1dV",
-          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
-          "property": "transitionTimingFunction",
-          "value": {
-            "type": "layers",
-            "value": [
-              {
-                "type": "keyword",
-                "value": "ease"
-              }
-            ]
-          }
-        }
-      ],
-      [
-        "hsBxXYXzbwzo48j6-A1dV:2EiFMEG40PBm9_fkelqpo:transitionDelay:",
-        {
-          "styleSourceId": "hsBxXYXzbwzo48j6-A1dV",
-          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
-          "property": "transitionDelay",
-          "value": {
-            "type": "layers",
-            "value": [
-              {
-                "type": "unit",
-                "unit": "ms",
-                "value": 0
-              }
-            ]
-          }
-        }
-      ],
-      [
-        "hsBxXYXzbwzo48j6-A1dV:2EiFMEG40PBm9_fkelqpo:transitionBehavior:",
-        {
-          "styleSourceId": "hsBxXYXzbwzo48j6-A1dV",
-          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
-          "property": "transitionBehavior",
-          "value": {
-            "type": "layers",
-            "value": [
-              {
-                "type": "keyword",
-                "value": "normal"
-              }
-            ]
-          }
-        }
-      ],
-      [
-        "hsBxXYXzbwzo48j6-A1dV:eCbcXJaLEKSKcnbAPzNF0:height:",
-        {
-          "styleSourceId": "hsBxXYXzbwzo48j6-A1dV",
-          "breakpointId": "eCbcXJaLEKSKcnbAPzNF0",
-          "property": "height",
-          "value": {
-            "type": "unit",
-            "unit": "%",
-            "value": 78
-          }
-        }
-      ],
-      [
-        "hsBxXYXzbwzo48j6-A1dV:eCbcXJaLEKSKcnbAPzNF0:alignSelf:",
-        {
-          "styleSourceId": "hsBxXYXzbwzo48j6-A1dV",
-          "breakpointId": "eCbcXJaLEKSKcnbAPzNF0",
-          "property": "alignSelf",
-          "value": {
-            "type": "keyword",
-            "value": "center"
-          }
-        }
-      ],
-      [
-        "XyHFe7iOG460oMZDIWKFG:eCbcXJaLEKSKcnbAPzNF0:width:",
-        {
-          "breakpointId": "eCbcXJaLEKSKcnbAPzNF0",
-          "styleSourceId": "XyHFe7iOG460oMZDIWKFG",
-          "property": "width",
-          "value": {
-            "type": "unit",
-            "unit": "px",
-            "value": 154
-          }
-        }
-      ],
-      [
-        "XyHFe7iOG460oMZDIWKFG:2EiFMEG40PBm9_fkelqpo:filter:",
-        {
-          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
-          "styleSourceId": "XyHFe7iOG460oMZDIWKFG",
-          "property": "filter",
-          "value": {
-            "type": "tuple",
-            "value": [
-              {
-                "type": "function",
-                "args": {
-                  "type": "tuple",
-                  "value": [
-                    {
-                      "type": "unit",
-                      "unit": "%",
-                      "value": 100
-                    }
-                  ]
-                },
-                "name": "invert"
-              }
-            ]
-          }
-        }
-      ],
-      [
-        "XyHFe7iOG460oMZDIWKFG:2EiFMEG40PBm9_fkelqpo:width:",
-        {
-          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
-          "styleSourceId": "XyHFe7iOG460oMZDIWKFG",
-          "property": "width",
-          "value": {
-            "type": "keyword",
-            "value": "fit-content"
-          }
-        }
-      ],
-      [
         "ADiINVHP1MDv1OzC3oYCU:2EiFMEG40PBm9_fkelqpo:display:",
         {
           "breakpointId": "2EiFMEG40PBm9_fkelqpo",
@@ -61223,18 +61014,6 @@
           "value": {
             "type": "keyword",
             "value": "center"
-          }
-        }
-      ],
-      [
-        "hsBxXYXzbwzo48j6-A1dV:2EiFMEG40PBm9_fkelqpo:alignSelf:",
-        {
-          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
-          "styleSourceId": "hsBxXYXzbwzo48j6-A1dV",
-          "property": "alignSelf",
-          "value": {
-            "type": "keyword",
-            "value": "stretch"
           }
         }
       ],
@@ -64215,30 +63994,6 @@
         }
       ],
       [
-        "nqvMQ6tJZKV1ms8ugkA5e:2EiFMEG40PBm9_fkelqpo:overflowX:",
-        {
-          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
-          "styleSourceId": "nqvMQ6tJZKV1ms8ugkA5e",
-          "property": "overflowX",
-          "value": {
-            "type": "keyword",
-            "value": "hidden"
-          }
-        }
-      ],
-      [
-        "nqvMQ6tJZKV1ms8ugkA5e:2EiFMEG40PBm9_fkelqpo:overflowY:",
-        {
-          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
-          "styleSourceId": "nqvMQ6tJZKV1ms8ugkA5e",
-          "property": "overflowY",
-          "value": {
-            "type": "keyword",
-            "value": "hidden"
-          }
-        }
-      ],
-      [
         "rh_5SNk--HtdVzJM_BrY3:Uvcw_OJqyPoLioZzUbP1x:paddingLeft:",
         {
           "breakpointId": "Uvcw_OJqyPoLioZzUbP1x",
@@ -64939,6 +64694,355 @@
             "type": "keyword",
             "value": "block"
           }
+        }
+      ],
+      [
+        "nqvMQ6tJZKV1ms8ugkA5e:2EiFMEG40PBm9_fkelqpo:maxWidth:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "nqvMQ6tJZKV1ms8ugkA5e",
+          "property": "maxWidth",
+          "value": {
+            "type": "unit",
+            "unit": "vw",
+            "value": 100
+          }
+        }
+      ],
+      [
+        "k2FRYqp-8JiY8a2cDi1Sk:Uvcw_OJqyPoLioZzUbP1x:maxWidth:",
+        {
+          "breakpointId": "Uvcw_OJqyPoLioZzUbP1x",
+          "styleSourceId": "k2FRYqp-8JiY8a2cDi1Sk",
+          "property": "maxWidth",
+          "value": {
+            "type": "unit",
+            "unit": "vw",
+            "value": 100
+          }
+        }
+      ],
+      [
+        "ur9f6J13_8BTYD1hb0C3o:2EiFMEG40PBm9_fkelqpo:overflowX:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "ur9f6J13_8BTYD1hb0C3o",
+          "property": "overflowX",
+          "value": {
+            "type": "keyword",
+            "value": "hidden"
+          },
+          "listed": true
+        }
+      ],
+      [
+        "4ryRjFSESg774YjtgDtlB:2EiFMEG40PBm9_fkelqpo:height:",
+        {
+          "styleSourceId": "4ryRjFSESg774YjtgDtlB",
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "property": "height",
+          "value": {
+            "type": "unit",
+            "unit": "%",
+            "value": 100
+          }
+        }
+      ],
+      [
+        "4ryRjFSESg774YjtgDtlB:eCbcXJaLEKSKcnbAPzNF0:width:",
+        {
+          "breakpointId": "eCbcXJaLEKSKcnbAPzNF0",
+          "styleSourceId": "4ryRjFSESg774YjtgDtlB",
+          "property": "width",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 154
+          }
+        }
+      ],
+      [
+        "4ryRjFSESg774YjtgDtlB:2EiFMEG40PBm9_fkelqpo:filter:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "4ryRjFSESg774YjtgDtlB",
+          "property": "filter",
+          "value": {
+            "type": "tuple",
+            "value": [
+              {
+                "type": "function",
+                "args": {
+                  "type": "tuple",
+                  "value": [
+                    {
+                      "type": "unit",
+                      "unit": "%",
+                      "value": 100
+                    }
+                  ]
+                },
+                "name": "invert"
+              }
+            ]
+          }
+        }
+      ],
+      [
+        "4ryRjFSESg774YjtgDtlB:2EiFMEG40PBm9_fkelqpo:width:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "4ryRjFSESg774YjtgDtlB",
+          "property": "width",
+          "value": {
+            "type": "keyword",
+            "value": "fit-content"
+          }
+        }
+      ],
+      [
+        "4ryRjFSESg774YjtgDtlB:2EiFMEG40PBm9_fkelqpo:userSelect:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "4ryRjFSESg774YjtgDtlB",
+          "property": "userSelect",
+          "value": {
+            "type": "keyword",
+            "value": "none"
+          },
+          "listed": true
+        }
+      ],
+      [
+        "5BNNm5sEgc5h6CvI4BxLb:2EiFMEG40PBm9_fkelqpo:userSelect:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "5BNNm5sEgc5h6CvI4BxLb",
+          "property": "userSelect",
+          "value": {
+            "type": "keyword",
+            "value": "none"
+          },
+          "listed": true
+        }
+      ],
+      [
+        "goLqVURtUBTEFCR-lNhbl:2EiFMEG40PBm9_fkelqpo:userSelect:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "goLqVURtUBTEFCR-lNhbl",
+          "property": "userSelect",
+          "value": {
+            "type": "keyword",
+            "value": "none"
+          },
+          "listed": true
+        }
+      ],
+      [
+        "u6XM1dU7SrBH8n3UqU6NT:2EiFMEG40PBm9_fkelqpo:userSelect:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "u6XM1dU7SrBH8n3UqU6NT",
+          "property": "userSelect",
+          "value": {
+            "type": "keyword",
+            "value": "none"
+          },
+          "listed": true
+        }
+      ],
+      [
+        "-XMP-To0bWgIxCNOAqbsQ:2EiFMEG40PBm9_fkelqpo:userSelect:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "-XMP-To0bWgIxCNOAqbsQ",
+          "property": "userSelect",
+          "value": {
+            "type": "keyword",
+            "value": "none"
+          },
+          "listed": true
+        }
+      ],
+      [
+        "BouPjXY8RBwmifeVNvufv:2EiFMEG40PBm9_fkelqpo:userSelect:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "BouPjXY8RBwmifeVNvufv",
+          "property": "userSelect",
+          "value": {
+            "type": "keyword",
+            "value": "none"
+          },
+          "listed": true
+        }
+      ],
+      [
+        "Xkw_3hfp7nuRJg91tsF_x:2EiFMEG40PBm9_fkelqpo:userSelect:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "Xkw_3hfp7nuRJg91tsF_x",
+          "property": "userSelect",
+          "value": {
+            "type": "keyword",
+            "value": "none"
+          },
+          "listed": true
+        }
+      ],
+      [
+        "9M0C5Btl2VNydAqF5fZcV:2EiFMEG40PBm9_fkelqpo:scale::hover",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "9M0C5Btl2VNydAqF5fZcV",
+          "state": ":hover",
+          "property": "scale",
+          "value": {
+            "type": "tuple",
+            "value": [
+              {
+                "type": "unit",
+                "unit": "%",
+                "value": 108
+              },
+              {
+                "type": "unit",
+                "unit": "%",
+                "value": 108
+              },
+              {
+                "type": "unit",
+                "unit": "%",
+                "value": 100
+              }
+            ]
+          }
+        }
+      ],
+      [
+        "9M0C5Btl2VNydAqF5fZcV:2EiFMEG40PBm9_fkelqpo:transitionProperty:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "9M0C5Btl2VNydAqF5fZcV",
+          "property": "transitionProperty",
+          "value": {
+            "type": "layers",
+            "value": [
+              {
+                "type": "unparsed",
+                "value": "scale"
+              }
+            ]
+          }
+        }
+      ],
+      [
+        "9M0C5Btl2VNydAqF5fZcV:2EiFMEG40PBm9_fkelqpo:transitionDuration:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "9M0C5Btl2VNydAqF5fZcV",
+          "property": "transitionDuration",
+          "value": {
+            "type": "layers",
+            "value": [
+              {
+                "type": "unit",
+                "unit": "ms",
+                "value": 200
+              }
+            ]
+          }
+        }
+      ],
+      [
+        "9M0C5Btl2VNydAqF5fZcV:2EiFMEG40PBm9_fkelqpo:transitionTimingFunction:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "9M0C5Btl2VNydAqF5fZcV",
+          "property": "transitionTimingFunction",
+          "value": {
+            "type": "layers",
+            "value": [
+              {
+                "type": "keyword",
+                "value": "ease"
+              }
+            ]
+          }
+        }
+      ],
+      [
+        "9M0C5Btl2VNydAqF5fZcV:2EiFMEG40PBm9_fkelqpo:transitionDelay:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "9M0C5Btl2VNydAqF5fZcV",
+          "property": "transitionDelay",
+          "value": {
+            "type": "layers",
+            "value": [
+              {
+                "type": "unit",
+                "unit": "ms",
+                "value": 0
+              }
+            ]
+          }
+        }
+      ],
+      [
+        "9M0C5Btl2VNydAqF5fZcV:2EiFMEG40PBm9_fkelqpo:transitionBehavior:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "9M0C5Btl2VNydAqF5fZcV",
+          "property": "transitionBehavior",
+          "value": {
+            "type": "layers",
+            "value": [
+              {
+                "type": "keyword",
+                "value": "normal"
+              }
+            ]
+          }
+        }
+      ],
+      [
+        "9iVXr6KF099LseaNfx7B2:xOnFYyuZv5VkMeeKDLyiu:maxWidth:",
+        {
+          "breakpointId": "xOnFYyuZv5VkMeeKDLyiu",
+          "styleSourceId": "9iVXr6KF099LseaNfx7B2",
+          "property": "maxWidth",
+          "value": {
+            "type": "unit",
+            "unit": "vw",
+            "value": 100
+          }
+        }
+      ],
+      [
+        "9iVXr6KF099LseaNfx7B2:xOnFYyuZv5VkMeeKDLyiu:overflowX:",
+        {
+          "breakpointId": "xOnFYyuZv5VkMeeKDLyiu",
+          "styleSourceId": "9iVXr6KF099LseaNfx7B2",
+          "property": "overflowX",
+          "value": {
+            "type": "keyword",
+            "value": "hidden"
+          }
+        }
+      ],
+      [
+        "9iVXr6KF099LseaNfx7B2:xOnFYyuZv5VkMeeKDLyiu:overflowY:",
+        {
+          "breakpointId": "xOnFYyuZv5VkMeeKDLyiu",
+          "styleSourceId": "9iVXr6KF099LseaNfx7B2",
+          "property": "overflowY",
+          "value": {
+            "type": "keyword",
+            "value": "visible"
+          },
+          "listed": true
         }
       ]
     ],
@@ -69568,20 +69672,6 @@
         }
       ],
       [
-        "hsBxXYXzbwzo48j6-A1dV",
-        {
-          "type": "local",
-          "id": "hsBxXYXzbwzo48j6-A1dV"
-        }
-      ],
-      [
-        "XyHFe7iOG460oMZDIWKFG",
-        {
-          "type": "local",
-          "id": "XyHFe7iOG460oMZDIWKFG"
-        }
-      ],
-      [
         "Vbdow7naiPrHA9GwYJgc5",
         {
           "type": "token",
@@ -70077,6 +70167,13 @@
         {
           "type": "local",
           "id": "7cp-I86zcLoM0fRKB8YKm"
+        }
+      ],
+      [
+        "4ryRjFSESg774YjtgDtlB",
+        {
+          "type": "local",
+          "id": "4ryRjFSESg774YjtgDtlB"
         }
       ]
     ],
@@ -77496,24 +77593,6 @@
         }
       ],
       [
-        "2rsnHMNA-66_c3SqaMIdu",
-        {
-          "instanceId": "2rsnHMNA-66_c3SqaMIdu",
-          "values": [
-            "hsBxXYXzbwzo48j6-A1dV"
-          ]
-        }
-      ],
-      [
-        "g7vgDVnpkaz5oCed2Dtq4",
-        {
-          "instanceId": "g7vgDVnpkaz5oCed2Dtq4",
-          "values": [
-            "XyHFe7iOG460oMZDIWKFG"
-          ]
-        }
-      ],
-      [
         "iTVvpS1dED-AlXXx3-9VI",
         {
           "instanceId": "iTVvpS1dED-AlXXx3-9VI",
@@ -77547,13 +77626,6 @@
             "Vbdow7naiPrHA9GwYJgc5",
             "jReXwXlsqTK2DExg08RYx"
           ]
-        }
-      ],
-      [
-        "7ZcVuj6dj6AzvJ0xfxJYC",
-        {
-          "instanceId": "7ZcVuj6dj6AzvJ0xfxJYC",
-          "values": []
         }
       ],
       [
@@ -78372,6 +78444,22 @@
           "values": [
             "7cp-I86zcLoM0fRKB8YKm"
           ]
+        }
+      ],
+      [
+        "qrO8fmPKfa0jikTefY0HQ",
+        {
+          "instanceId": "qrO8fmPKfa0jikTefY0HQ",
+          "values": [
+            "4ryRjFSESg774YjtgDtlB"
+          ]
+        }
+      ],
+      [
+        "7ZcVuj6dj6AzvJ0xfxJYC",
+        {
+          "instanceId": "7ZcVuj6dj6AzvJ0xfxJYC",
+          "values": []
         }
       ]
     ],
@@ -83453,7 +83541,7 @@
           "instanceId": "BzY7RQauToDu69jkUwjjg",
           "name": "code",
           "type": "string",
-          "value": "<script src=\"https://cdn.jsdelivr.net/npm/@fullcalendar/core@6.1.17/index.global.min.js\"></script>\n<script src=\"https://cdn.jsdelivr.net/npm/@fullcalendar/daygrid@6.1.17/index.global.min.js\"></script>\n<script src=\"https://cdn.jsdelivr.net/npm/@fullcalendar/google-calendar@6.1.17/index.global.min.js\"></script>\n\n<script>\ndocument.addEventListener('DOMContentLoaded', function() {\n  var calendarEl = document.getElementById('calendar');\n\n  var calendar = new FullCalendar.Calendar(calendarEl, {\n    headerToolbar: {\n        left: 'prev,next today',\n        center: 'title',\n        right: ''\n    },\n    dayMaxEvents: 3,\n    firstDay: 1,\n    contentHeight: 'auto',\n    googleCalendarApiKey: 'AIzaSyDBDJxCyN67h-VrQ53s9vm597mrLUiZgHM',\n    events: '23c6f451e6193a878c5affc55d18b050093a87075c0325964379924db8ee027a@group.calendar.google.com',\n\n    eventContent: function(arg) {\n        // only show the event title, no time or dot\n        return {\n          html: '<div class=\"fc-event-title\" style=\"font-weight:normal;\">'\n                  + arg.event.title +\n                '</div>'\n        };\n    },\n\n    eventClick: function(info) {\n      // Prevent default Google Calendar link\n      info.jsEvent.preventDefault();\n      \n      const event = info.event;\n      const popup = document.getElementById('event-popup');\n      const background = document.getElementById('event-popup-back');\n\n      var eLoc = event.extendedProps.location || '';\n      if (eLoc != '') eLoc = \"<span class='pop-loc-pin'>⚲</span> \" + eLoc;\n      \n      // Set the content\n      popup.innerHTML = `\n        <h2 class='event-pop-title'>${event.title}</h2>\n        <span class='event-pop-time'>${formatDate(event.start, event.end)}</span>\n        <p class='event-pop-loc'>${eLoc || ''}</p>\n        <p class='event-pop-desc'>${event.extendedProps.description || ''}</p>\n      `;\n      \n      // Position and show popup\n      background.style.display = 'flex';\n\n      background.onclick = function(){\n        const myself = document.getElementById('event-popup-back');\n        myself.style.display = 'none';\n      };\n      popup.onclick = function(e) {\n        e.stopPropagation(); // prevents the click from reaching background\n      };\n    },\n\n    eventDataTransform: function(event) {\n        event.url = \"\";\n        return event;\n    }\n    \n  });\n  calendar.render();\n});\n\n\n  function formatDate(startDate, endDate) {\n    console.log(startDate);\n    console.log(endDate);\n    \n    const locale = 'en-GB';\n    const msDay = 24 * 60 * 60 * 1000;\n  \n    const toMidnight = d => new Date(d.getFullYear(), d.getMonth(), d.getDate());\n    const isMidnight = d => d.getHours() === 0 && d.getMinutes() === 0 && d.getSeconds() === 0 && d.getMilliseconds() === 0;\n    const sameDay = (a, b) =>\n      a.getFullYear() === b.getFullYear() &&\n      a.getMonth() === b.getMonth() &&\n      a.getDate() === b.getDate();\n  \n    const daySuffix = d => {\n      if (d > 3 && d < 21) return 'th';\n      switch (d % 10) {\n        case 1: return 'st';\n        case 2: return 'nd';\n        case 3: return 'rd';\n        default: return 'th';\n      }\n    };\n  \n    // Build “Friday, 29th August” or “29th August”\n    const formatDay = (date, withWeekday = true) => {\n      const opts = withWeekday\n        ? { weekday: 'long', day: 'numeric', month: 'long' }\n        : { day: 'numeric', month: 'long' };\n  \n      // Use parts so we only suffix the day number, not times\n      const parts = new Intl.DateTimeFormat(locale, opts).formatToParts(date);\n      const dayNum = date.getDate();\n      const suffixed = `${dayNum}${daySuffix(dayNum)}`;\n  \n      return parts.map(p => {\n        if (p.type === 'day') return suffixed;\n        return p.value;\n      }).join('').replace(/\\s+/g, ' ').trim();\n    };\n  \n    const formatTimeHM = d =>\n      new Intl.DateTimeFormat(locale, { hour: '2-digit', minute: '2-digit' }).format(d);\n  \n    // Detect single-day all-day (supports ICS: end at 00:00 next day)\n    const isAllDaySingleDay = (start, end) => {\n      console.log('1');\n      if (!start) return false;\n      if (!end) return isMidnight(start); // best effort: no end & midnight start\n      if (sameDay(start, end)) {\n        \n      console.log('2');\n        // All-day if start 00:00 and end is 23:59:59.999-ish (rare) — allow generous check\n        return isMidnight(start) && !isMidnight(end) && end - start >= msDay - 60000;\n      }\n      // ICS typical: start 00:00 of day X, end 00:00 of day X+1 (exclusive)\n      console.log('we should be here');\n      console.log(isMidnight(start) && isMidnight(end) && (end - start === msDay));\n      return isMidnight(start) && isMidnight(end) && (end - start === msDay);\n    };\n  \n    // Count unique calendar days touched by the event.\n    // If end is exactly midnight, treat as exclusive (ICS) by shifting back a millisecond.\n    const uniqueDayCount = (start, end) => {\n      if (!end) return 1;\n      const s0 = toMidnight(start);\n      let e0 = toMidnight(end);\n      if (isMidnight(end) && end > start) {\n        e0 = new Date(e0.getTime() - 1); // previous day late night\n      }\n      const e = toMidnight(e0);\n      return Math.floor((e - s0) / msDay) + 1;\n    };\n  \n    const hasEnd = endDate instanceof Date && !isNaN(endDate);\n    const start = startDate;\n    const end = hasEnd ? endDate : null;\n  \n    // === CASES ===\n\n    // Single-day all-day event: \"Friday, 29th August\"\n    if (isAllDaySingleDay(start, end || start)) {\n      return `${formatDay(start, true)}`;\n    }\n    \n    // Any multi-day event (dates differ): \"29th August to 3rd September (N days)\"\n    if (end && !sameDay(start, end)) {\n      const span = `${formatDay(start, false)} to ${formatDay(end, false)}`;\n      const days = uniqueDayCount(start, end);\n      return `${span} (${days} ${days === 1 ? 'day' : 'days'})`;\n    }\n  \n    // Same-day with start & end times: \"Friday, 29th August at 16:00-20:30\"\n    if (end && sameDay(start, end)) {\n      const startT = formatTimeHM(start);\n      const endT = formatTimeHM(end);\n      if (startT !== endT) {\n        return `${formatDay(start, true)} at ${startT}-${endT}`;\n      }\n      // If times are identical, just show one time\n      return `${formatDay(start, true)} at ${startT}`;\n    }\n  \n    // No end time: \"Friday, 29th August at 16:00\"\n    return `${formatDay(start, true)} at ${formatTimeHM(start)}`;\n  }\n\n\n</script>\n\n<style>\n  .fc-button {\n    background-color: var(--back-red-1) !important;\n    border-color: var(--back-red-1) !important;\n    color: #fff !important; /* Optional: Ensures text is visible */\n  }\n  \n  .fc-button:hover {\n    background-color: var(--back-red-1) !important;\n    opacity: 0.9;\n  }\n  \n  /* Change event background colours */\n  .fc-event {\n    background-color: var(--back-red-1) !important;\n    border-color: var(--back-red-1) !important;\n    color: #fff !important;\n  }\n\n  .fc .fc-scrollgrid td {\n    border: 1px solid var(--back-grey-1);\n    border-radius: var(--rad2);\n  }\n\n  .fc .fc-scrollgrid, .fc .fc-col-header-cell, .fc .fc-scrollgrid th {\n    border: none !important;\n  }\n\n  /* Highlight today */\n  .fc .fc-day-today {\n    background-color: rgb(from var(--back-red-1) r g b / 0.17) !important;\n    border-radius: 0 !important;\n    box-shadow: 0 0 80px rgb(from var(--back-red-1) r g b / 0.1);\n  }\n  .fc-day-today .fc-daygrid-day-number{\n    font-weight: 600;\n  }\n\n    .fc .fc-daygrid-day-frame {\n    min-height: 110px;\n  }\n  .calendar-container {\n  overflow-x: auto;\n  width: 100%;\n}\n\n  /* Pading for events in day */\n  .fc-daygrid-day-top{\n    margin-bottom: -7px;\n  }\n  .fc-event-title{\n    margin: -1px 0 -1px 4px;\n  }\n  .fc-daygrid-day-events{\n    margin-bottom: 2px !important;\n  }\n\n  /* Popup Styles */\n  .event-pop-title {\n    margin: -30px 0 -15px 25px;\n    padding: 0;\n  }\n  .event-pop-time {\n    margin-left: -13px;\n    font-size: 18px;\n    opacity: 0.6;\n  }\n  .event-pop-desc {\n    margin: -30px 50px -20px 50px;\n  }\n  .event-pop-loc {\n    margin-left: 25px;\n    margin-top: -23px;\n    font-size: 18px;\n    opacity: 0.6;\n  }\n  .pop-loc-pin {\n    font-weight: 700;\n  }\n\n  /* Mobile: horizontally scroll the month grid, keep toolbar fixed */\n@media (max-width: 767px) {\n  /* Only the grid scrolls sideways */\n  #calendar .fc-view-harness {\n    overflow-x: auto;\n    overflow-y: hidden;\n    -webkit-overflow-scrolling: touch; /* iOS momentum */\n  }\n\n  /* Ensure the grid is wider than the screen so it can scroll */\n  #calendar .fc-scrollgrid {\n    min-width: 750px; /* e.g., ~128px per day * 7; tweak as you like */\n    margin: 0 var(--gap1);\n    \n    -ms-overflow-style: none;  /* Internet Explorer 10+ */\n    scrollbar-width: none;\n  }\n  .fc-header-toolbar {\n    margin: 0 var(--gap1);\n  }\n  #calendar .fc-scrollgrid::-webkit-scrollbar { \n    width: 0;\n    height: 0;\n  }\n}\n</style>"
+          "value": "<script src=\"https://cdn.jsdelivr.net/npm/@fullcalendar/core@6.1.17/index.global.min.js\"></script>\n<script src=\"https://cdn.jsdelivr.net/npm/@fullcalendar/daygrid@6.1.17/index.global.min.js\"></script>\n<script src=\"https://cdn.jsdelivr.net/npm/@fullcalendar/google-calendar@6.1.17/index.global.min.js\"></script>\n\n<script>\ndocument.addEventListener('DOMContentLoaded', function() {\n  var calendarEl = document.getElementById('calendar');\n\n  var calendar = new FullCalendar.Calendar(calendarEl, {\n    headerToolbar: {\n        left: 'prev,next today',\n        center: 'title',\n        right: ''\n    },\n    dayMaxEvents: 3,\n    firstDay: 1,\n    contentHeight: 'auto',\n    googleCalendarApiKey: 'AIzaSyDBDJxCyN67h-VrQ53s9vm597mrLUiZgHM',\n    events: '23c6f451e6193a878c5affc55d18b050093a87075c0325964379924db8ee027a@group.calendar.google.com',\n\n    eventContent: function(arg) {\n        // only show the event title, no time or dot\n        return {\n          html: '<div class=\"fc-event-title\" style=\"font-weight:normal;\">'\n                  + arg.event.title +\n                '</div>'\n        };\n    },\n\n    eventClick: function(info) {\n      // Prevent default Google Calendar link\n      info.jsEvent.preventDefault();\n      \n      const event = info.event;\n      const popup = document.getElementById('event-popup');\n      const background = document.getElementById('event-popup-back');\n\n      var eLoc = event.extendedProps.location || '';\n      if (eLoc != '') eLoc = \"<span class='pop-loc-pin'>⚲</span> \" + eLoc;\n      \n      // Set the content\n      popup.innerHTML = `\n        <h2 class='event-pop-title'>${event.title}</h2>\n        <span class='event-pop-time'>${formatDate(event.start, event.end)}</span>\n        <p class='event-pop-loc'>${eLoc || ''}</p>\n        <p class='event-pop-desc'>${event.extendedProps.description || ''}</p>\n      `;\n      \n      // Position and show popup\n      background.style.display = 'flex';\n\n      background.onclick = function(){\n        const myself = document.getElementById('event-popup-back');\n        myself.style.display = 'none';\n      };\n      popup.onclick = function(e) {\n        e.stopPropagation(); // prevents the click from reaching background\n      };\n    },\n\n    eventDataTransform: function(event) {\n        event.url = \"\";\n        return event;\n    }\n    \n  });\n  calendar.render();\n});\n\n\n  function formatDate(startDate, endDate) {\n    console.log(startDate);\n    console.log(endDate);\n    \n    const locale = 'en-GB';\n    const msDay = 24 * 60 * 60 * 1000;\n  \n    const toMidnight = d => new Date(d.getFullYear(), d.getMonth(), d.getDate());\n    const isMidnight = d => d.getHours() === 0 && d.getMinutes() === 0 && d.getSeconds() === 0 && d.getMilliseconds() === 0;\n    const sameDay = (a, b) =>\n      a.getFullYear() === b.getFullYear() &&\n      a.getMonth() === b.getMonth() &&\n      a.getDate() === b.getDate();\n  \n    const daySuffix = d => {\n      if (d > 3 && d < 21) return 'th';\n      switch (d % 10) {\n        case 1: return 'st';\n        case 2: return 'nd';\n        case 3: return 'rd';\n        default: return 'th';\n      }\n    };\n  \n    // Build “Friday, 29th August” or “29th August”\n    const formatDay = (date, withWeekday = true) => {\n      const opts = withWeekday\n        ? { weekday: 'long', day: 'numeric', month: 'long' }\n        : { day: 'numeric', month: 'long' };\n  \n      // Use parts so we only suffix the day number, not times\n      const parts = new Intl.DateTimeFormat(locale, opts).formatToParts(date);\n      const dayNum = date.getDate();\n      const suffixed = `${dayNum}${daySuffix(dayNum)}`;\n  \n      return parts.map(p => {\n        if (p.type === 'day') return suffixed;\n        return p.value;\n      }).join('').replace(/\\s+/g, ' ').trim();\n    };\n  \n    const formatTimeHM = d =>\n      new Intl.DateTimeFormat(locale, { hour: '2-digit', minute: '2-digit' }).format(d);\n  \n    // Detect single-day all-day (supports ICS: end at 00:00 next day)\n    const isAllDaySingleDay = (start, end) => {\n      console.log('1');\n      if (!start) return false;\n      if (!end) return isMidnight(start); // best effort: no end & midnight start\n      if (sameDay(start, end)) {\n        \n      console.log('2');\n        // All-day if start 00:00 and end is 23:59:59.999-ish (rare) — allow generous check\n        return isMidnight(start) && !isMidnight(end) && end - start >= msDay - 60000;\n      }\n      // ICS typical: start 00:00 of day X, end 00:00 of day X+1 (exclusive)\n      console.log('we should be here');\n      console.log(isMidnight(start) && isMidnight(end) && (end - start === msDay));\n      return isMidnight(start) && isMidnight(end) && (end - start === msDay);\n    };\n  \n    // Count unique calendar days touched by the event.\n    // If end is exactly midnight, treat as exclusive (ICS) by shifting back a millisecond.\n    const uniqueDayCount = (start, end) => {\n      if (!end) return 1;\n      const s0 = toMidnight(start);\n      let e0 = toMidnight(end);\n      if (isMidnight(end) && end > start) {\n        e0 = new Date(e0.getTime() - 1); // previous day late night\n      }\n      const e = toMidnight(e0);\n      return Math.floor((e - s0) / msDay) + 1;\n    };\n  \n    const hasEnd = endDate instanceof Date && !isNaN(endDate);\n    const start = startDate;\n    const end = hasEnd ? endDate : null;\n  \n    // === CASES ===\n\n    // Single-day all-day event: \"Friday, 29th August\"\n    if (isAllDaySingleDay(start, end || start)) {\n      return `${formatDay(start, true)}`;\n    }\n    \n    // Any multi-day event (dates differ): \"29th August to 3rd September (N days)\"\n    if (end && !sameDay(start, end)) {\n      const span = `${formatDay(start, false)} to ${formatDay(end, false)}`;\n      const days = uniqueDayCount(start, end);\n      return `${span} (${days} ${days === 1 ? 'day' : 'days'})`;\n    }\n  \n    // Same-day with start & end times: \"Friday, 29th August at 16:00-20:30\"\n    if (end && sameDay(start, end)) {\n      const startT = formatTimeHM(start);\n      const endT = formatTimeHM(end);\n      if (startT !== endT) {\n        return `${formatDay(start, true)} at ${startT}-${endT}`;\n      }\n      // If times are identical, just show one time\n      return `${formatDay(start, true)} at ${startT}`;\n    }\n  \n    // No end time: \"Friday, 29th August at 16:00\"\n    return `${formatDay(start, true)} at ${formatTimeHM(start)}`;\n  }\n\n\n</script>\n\n<style>\n  .fc-button {\n    background-color: var(--back-red-1) !important;\n    border-color: var(--back-red-1) !important;\n    color: #fff !important; /* Optional: Ensures text is visible */\n  }\n  \n  .fc-button:hover {\n    background-color: var(--back-red-1) !important;\n    opacity: 0.9;\n  }\n  \n  /* Change event background colours */\n  .fc-event {\n    background-color: var(--back-red-1) !important;\n    border-color: var(--back-red-1) !important;\n    color: #fff !important;\n  }\n\n  .fc .fc-scrollgrid td {\n    border: 1px solid var(--back-grey-1);\n    border-radius: var(--rad2);\n  }\n\n  .fc .fc-scrollgrid, .fc .fc-col-header-cell, .fc .fc-scrollgrid th {\n    border: none !important;\n  }\n\n  /* Highlight today */\n  .fc .fc-day-today {\n    background-color: rgb(from var(--back-red-1) r g b / 0.17) !important;\n    border-radius: 0 !important;\n    box-shadow: 0 0 80px rgb(from var(--back-red-1) r g b / 0.1);\n  }\n  .fc-day-today .fc-daygrid-day-number{\n    font-weight: 600;\n  }\n\n    .fc .fc-daygrid-day-frame {\n    min-height: 110px;\n  }\n  .calendar-container {\n  overflow-x: auto;\n  width: 100%;\n}\n\n  /* Pading for events in day */\n  .fc-daygrid-day-top{\n    margin-bottom: -7px;\n  }\n  .fc-event-title{\n    margin: -1px 0 -1px 4px;\n  }\n  .fc-daygrid-day-events{\n    margin-bottom: 2px !important;\n  }\n\n  /* Popup Styles */\n  .event-pop-title {\n    margin: -30px 0 -15px 25px;\n    padding: 0;\n  }\n  .event-pop-time {\n    margin-left: -13px;\n    font-size: 18px;\n    opacity: 0.6;\n  }\n  .event-pop-desc {\n    margin: -30px 50px -20px 50px;\n  }\n  .event-pop-loc {\n    margin-left: 25px;\n    margin-top: -23px;\n    font-size: 18px;\n    opacity: 0.6;\n  }\n  .pop-loc-pin {\n    font-weight: 700;\n  }\n\n  /* Mobile: horizontally scroll the month grid, keep toolbar fixed */\n@media (max-width: 767px) {\n  /* Only the grid scrolls sideways */\n  #calendar .fc-view-harness {\n    overflow-x: auto;\n    overflow-y: hidden;\n    -webkit-overflow-scrolling: touch; /* iOS momentum */\n  }\n\n  /* Ensure the grid is wider than the screen so it can scroll */\n  #calendar .fc-scrollgrid {\n    min-width: 750px; /* e.g., ~128px per day * 7; tweak as you like */\n    margin-left: calc(2 * var(--gap1));\n    padding-right: calc(2 * var(--gap1));\n    \n    -ms-overflow-style: none;  /* Internet Explorer 10+ */\n    scrollbar-width: none;\n  }\n  .fc-header-toolbar {\n    margin: 0 calc(2 * var(--gap1));\n  }\n  #calendar .fc-scrollgrid::-webkit-scrollbar { \n    width: 0;\n    height: 0;\n  }\n\n  .fc-button {\n    padding: 2px 5px !important;\n  }\n  .fc-toolbar-title {\n    font-size: 25px !important;\n    padding-left: 10px;\n    text-align: center;\n  }\n}\n</style>"
         }
       ],
       [
@@ -83567,56 +83655,6 @@
         }
       ],
       [
-        "I6Fn4XIVcNJv53R-a3QdK",
-        {
-          "id": "I6Fn4XIVcNJv53R-a3QdK",
-          "instanceId": "g7vgDVnpkaz5oCed2Dtq4",
-          "name": "src",
-          "type": "asset",
-          "value": "7c9bc201560fca1239f565be7fec2206b265df4eda7691a6f0d2d0fa538de64d"
-        }
-      ],
-      [
-        "_uAyuDQcvT125Nh8GRWL7",
-        {
-          "id": "_uAyuDQcvT125Nh8GRWL7",
-          "instanceId": "g7vgDVnpkaz5oCed2Dtq4",
-          "name": "width",
-          "type": "asset",
-          "value": "7c9bc201560fca1239f565be7fec2206b265df4eda7691a6f0d2d0fa538de64d"
-        }
-      ],
-      [
-        "IGZg3R9T9-ZK3YLukiILG",
-        {
-          "id": "IGZg3R9T9-ZK3YLukiILG",
-          "instanceId": "g7vgDVnpkaz5oCed2Dtq4",
-          "name": "height",
-          "type": "asset",
-          "value": "7c9bc201560fca1239f565be7fec2206b265df4eda7691a6f0d2d0fa538de64d"
-        }
-      ],
-      [
-        "Ghy2b3ye-26MMovI423mj",
-        {
-          "id": "Ghy2b3ye-26MMovI423mj",
-          "instanceId": "2rsnHMNA-66_c3SqaMIdu",
-          "name": "href",
-          "type": "page",
-          "value": "wUK5ygvtFE2u3SZDaGCgn"
-        }
-      ],
-      [
-        "_8M6WE_fvUo3G6c27YvFJ",
-        {
-          "id": "_8M6WE_fvUo3G6c27YvFJ",
-          "instanceId": "g7vgDVnpkaz5oCed2Dtq4",
-          "name": "alt",
-          "type": "asset",
-          "value": "7c9bc201560fca1239f565be7fec2206b265df4eda7691a6f0d2d0fa538de64d"
-        }
-      ],
-      [
         "2XhyA4Ou0950djRLDiRr0",
         {
           "id": "2XhyA4Ou0950djRLDiRr0",
@@ -83661,56 +83699,6 @@
         {
           "id": "JtO3kWoGiwzUnJBla27pv",
           "instanceId": "BXD38xwjHYklcixyFBuLw",
-          "name": "loading",
-          "type": "string",
-          "value": "lazy"
-        }
-      ],
-      [
-        "4EWfsJEjV2yy5N2JNwXkU",
-        {
-          "id": "4EWfsJEjV2yy5N2JNwXkU",
-          "instanceId": "7ZcVuj6dj6AzvJ0xfxJYC",
-          "name": "src",
-          "type": "asset",
-          "value": "ce63b7d6a79dfb0bbeae1e34bfcfe48bca588afd455d64b04637df02291b7872"
-        }
-      ],
-      [
-        "Z8HvZAzwUTd6P4iMN-NG7",
-        {
-          "id": "Z8HvZAzwUTd6P4iMN-NG7",
-          "instanceId": "7ZcVuj6dj6AzvJ0xfxJYC",
-          "name": "width",
-          "type": "asset",
-          "value": "ce63b7d6a79dfb0bbeae1e34bfcfe48bca588afd455d64b04637df02291b7872"
-        }
-      ],
-      [
-        "aBl1DvZilHQAIVO-vfBEe",
-        {
-          "id": "aBl1DvZilHQAIVO-vfBEe",
-          "instanceId": "7ZcVuj6dj6AzvJ0xfxJYC",
-          "name": "height",
-          "type": "asset",
-          "value": "ce63b7d6a79dfb0bbeae1e34bfcfe48bca588afd455d64b04637df02291b7872"
-        }
-      ],
-      [
-        "JXhc3u7v9s5-79yNQMHD9",
-        {
-          "id": "JXhc3u7v9s5-79yNQMHD9",
-          "instanceId": "7ZcVuj6dj6AzvJ0xfxJYC",
-          "name": "alt",
-          "type": "asset",
-          "value": "ce63b7d6a79dfb0bbeae1e34bfcfe48bca588afd455d64b04637df02291b7872"
-        }
-      ],
-      [
-        "WPtOe4cRKGUWYM1_cCm26",
-        {
-          "id": "WPtOe4cRKGUWYM1_cCm26",
-          "instanceId": "7ZcVuj6dj6AzvJ0xfxJYC",
           "name": "loading",
           "type": "string",
           "value": "lazy"
@@ -86034,6 +86022,96 @@
           "name": "alt",
           "type": "asset",
           "value": "be01d0aef6b1bec380c782499efc517a7cff126c315b18da19d0c606522ae00e"
+        }
+      ],
+      [
+        "coUOfW30aNsYGS9g_Q_Gj",
+        {
+          "id": "coUOfW30aNsYGS9g_Q_Gj",
+          "instanceId": "qrO8fmPKfa0jikTefY0HQ",
+          "name": "src",
+          "type": "asset",
+          "value": "7c9bc201560fca1239f565be7fec2206b265df4eda7691a6f0d2d0fa538de64d"
+        }
+      ],
+      [
+        "Z9xkLAFSXZCq2t-BOIjVK",
+        {
+          "id": "Z9xkLAFSXZCq2t-BOIjVK",
+          "instanceId": "qrO8fmPKfa0jikTefY0HQ",
+          "name": "width",
+          "type": "asset",
+          "value": "7c9bc201560fca1239f565be7fec2206b265df4eda7691a6f0d2d0fa538de64d"
+        }
+      ],
+      [
+        "Ff8fgKOs4fR23Frmrrv5f",
+        {
+          "id": "Ff8fgKOs4fR23Frmrrv5f",
+          "instanceId": "qrO8fmPKfa0jikTefY0HQ",
+          "name": "height",
+          "type": "asset",
+          "value": "7c9bc201560fca1239f565be7fec2206b265df4eda7691a6f0d2d0fa538de64d"
+        }
+      ],
+      [
+        "nBatPj9J49d0-Oxr2hs5X",
+        {
+          "id": "nBatPj9J49d0-Oxr2hs5X",
+          "instanceId": "qrO8fmPKfa0jikTefY0HQ",
+          "name": "alt",
+          "type": "asset",
+          "value": "7c9bc201560fca1239f565be7fec2206b265df4eda7691a6f0d2d0fa538de64d"
+        }
+      ],
+      [
+        "4EWfsJEjV2yy5N2JNwXkU",
+        {
+          "id": "4EWfsJEjV2yy5N2JNwXkU",
+          "instanceId": "7ZcVuj6dj6AzvJ0xfxJYC",
+          "name": "src",
+          "type": "asset",
+          "value": "ce63b7d6a79dfb0bbeae1e34bfcfe48bca588afd455d64b04637df02291b7872"
+        }
+      ],
+      [
+        "Z8HvZAzwUTd6P4iMN-NG7",
+        {
+          "id": "Z8HvZAzwUTd6P4iMN-NG7",
+          "instanceId": "7ZcVuj6dj6AzvJ0xfxJYC",
+          "name": "width",
+          "type": "asset",
+          "value": "ce63b7d6a79dfb0bbeae1e34bfcfe48bca588afd455d64b04637df02291b7872"
+        }
+      ],
+      [
+        "aBl1DvZilHQAIVO-vfBEe",
+        {
+          "id": "aBl1DvZilHQAIVO-vfBEe",
+          "instanceId": "7ZcVuj6dj6AzvJ0xfxJYC",
+          "name": "height",
+          "type": "asset",
+          "value": "ce63b7d6a79dfb0bbeae1e34bfcfe48bca588afd455d64b04637df02291b7872"
+        }
+      ],
+      [
+        "JXhc3u7v9s5-79yNQMHD9",
+        {
+          "id": "JXhc3u7v9s5-79yNQMHD9",
+          "instanceId": "7ZcVuj6dj6AzvJ0xfxJYC",
+          "name": "alt",
+          "type": "asset",
+          "value": "ce63b7d6a79dfb0bbeae1e34bfcfe48bca588afd455d64b04637df02291b7872"
+        }
+      ],
+      [
+        "WPtOe4cRKGUWYM1_cCm26",
+        {
+          "id": "WPtOe4cRKGUWYM1_cCm26",
+          "instanceId": "7ZcVuj6dj6AzvJ0xfxJYC",
+          "name": "loading",
+          "type": "string",
+          "value": "lazy"
         }
       ]
     ],
@@ -103889,36 +103967,13 @@
           "children": [
             {
               "type": "id",
-              "value": "2rsnHMNA-66_c3SqaMIdu"
+              "value": "qrO8fmPKfa0jikTefY0HQ"
             },
             {
               "type": "id",
               "value": "iTVvpS1dED-AlXXx3-9VI"
             }
           ]
-        }
-      ],
-      [
-        "2rsnHMNA-66_c3SqaMIdu",
-        {
-          "type": "instance",
-          "id": "2rsnHMNA-66_c3SqaMIdu",
-          "component": "Link",
-          "children": [
-            {
-              "type": "id",
-              "value": "g7vgDVnpkaz5oCed2Dtq4"
-            }
-          ]
-        }
-      ],
-      [
-        "g7vgDVnpkaz5oCed2Dtq4",
-        {
-          "type": "instance",
-          "id": "g7vgDVnpkaz5oCed2Dtq4",
-          "component": "Image",
-          "children": []
         }
       ],
       [
@@ -103985,15 +104040,6 @@
               "value": "7ZcVuj6dj6AzvJ0xfxJYC"
             }
           ]
-        }
-      ],
-      [
-        "7ZcVuj6dj6AzvJ0xfxJYC",
-        {
-          "type": "instance",
-          "id": "7ZcVuj6dj6AzvJ0xfxJYC",
-          "component": "Image",
-          "children": []
         }
       ],
       [
@@ -105387,6 +105433,24 @@
         {
           "type": "instance",
           "id": "ewoSG__QAVCcxwcLv1hKq",
+          "component": "Image",
+          "children": []
+        }
+      ],
+      [
+        "qrO8fmPKfa0jikTefY0HQ",
+        {
+          "type": "instance",
+          "id": "qrO8fmPKfa0jikTefY0HQ",
+          "component": "Image",
+          "children": []
+        }
+      ],
+      [
+        "7ZcVuj6dj6AzvJ0xfxJYC",
+        {
+          "type": "instance",
+          "id": "7ZcVuj6dj6AzvJ0xfxJYC",
           "component": "Image",
           "children": []
         }

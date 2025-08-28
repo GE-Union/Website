@@ -11,7 +11,7 @@ import { Tabs as Tabs, TabsList as TabsList, TabsTrigger as TabsTrigger, TabsCon
 
       export const projectId = "94456f8c-a847-426a-aec8-16de390bd3eb";
 
-      export const lastPublished = "2025-08-28T20:01:48.044Z";
+      export const lastPublished = "2025-08-28T20:34:32.022Z";
 
       export const siteName = "GE Union";
 
@@ -185,7 +185,7 @@ className={`w-html-embed`} />
 <Box
 className={`w-box c65isya ck11ylk c19haj7v ci03eyw cu8ogtt c1bti4b5 cve325e c14k8w3n cjdez0h c4psa79 chvq5aa chtpppz`}>
 <h1
-className={`w-element cyoo8jj cnurt1a c1wzvl6u`}>
+className={`w-element cyoo8jj c1k74xht cnurt1a c1wzvl6u`}>
 {"Course bank"}
 </h1>
 <Text
