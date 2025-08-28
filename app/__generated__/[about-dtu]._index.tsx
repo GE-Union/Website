@@ -11,7 +11,7 @@ import { Tooltip as Tooltip, TooltipTrigger as TooltipTrigger, TooltipContent as
 
       export const projectId = "94456f8c-a847-426a-aec8-16de390bd3eb";
 
-      export const lastPublished = "2025-08-28T01:52:20.369Z";
+      export const lastPublished = "2025-08-28T20:01:48.044Z";
 
       export const siteName = "GE Union";
 
@@ -40,7 +40,7 @@ className={`w-html-embed`} />
 className={`w-box cck00sw cd3toq c17nm8vt c1xymrvd c8yo8yx ci03eyw cu8ogtt cm1ds2c c1fxgukz c3q79or c1fhonxu cqlg791 cji7xkv c40iywk codsd31 c16er72m c1qt5xo2 c1uz2t7q c4psa79 c1ldi832 ${"icon-background home-top"}`}>
 <Box
 className={`w-box c19h37rc ci03eyw c1nj86ny c1mz59p0 c13f4d8e c1122adb cx911xm c4qqqhz c2z8j1e c19dc97m`}>
-<Link_1
+<Link
 href={"/"}
 className={`w-link cmvyqw5 cz7iu34 c40iywk codsd31 c16er72m c1qt5xo2 c3gx87z cqyp7hg c1moglug`}>
 <Image
@@ -48,15 +48,15 @@ src={"/assets/GE_Logo_-_Big_AQmTkCh-ue9Xfr1xXdV_k.svg"}
 width={492}
 height={684}
 className={`w-image c1g1752z c1l3m6tn c1wjaqd0`} />
-</Link_1>
+</Link>
 <Box
 className={`w-box ci03eyw c5zf3td c1bdekej cy2vnym cgykfac c8chaf1 crymv6m ch588tu cd1c1x2 cgjpuuk co3wgvm cjdg5q7`}>
-<Link_1
+<Link
 href={"/"}
 className={`w-link c4qqqhz c1l00ka2 c8l261o c1ozmz5d c1ho4waj c1k74xht c1122adb ch9rsc5 c10pf28n c1w0lkxn c1et34yr c1tj415q cycv0tm`}>
 {"Home"}
-</Link_1>
-<Link_1
+</Link>
+<Link
 href={"/course-bank"}
 className={`w-link c4qqqhz c1l00ka2 c8l261o c1ozmz5d c1ho4waj c1k74xht c1122adb ch9rsc5 c10pf28n c1w0lkxn c1et34yr c1tj415q`}>
 <span
@@ -64,12 +64,12 @@ className={`w-element cycv0tm`}>
 {"Course "}
 </span>
 {"Bank"}
-</Link_1>
-<Link_1
+</Link>
+<Link
 href={"/calendar"}
 className={`w-link c4qqqhz c1l00ka2 c8l261o c1ozmz5d c1ho4waj c1k74xht c1122adb ch9rsc5 c10pf28n c1w0lkxn c1et34yr c1tj415q`}>
 {"Calendar"}
-</Link_1>
+</Link>
 <Tooltip
 delayDuration={0}>
 <TooltipTrigger>
@@ -80,21 +80,21 @@ className={`w-element c4qqqhz c1l00ka2 c8l261o c1ozmz5d c1ho4waj c1k74xht c1122a
 </TooltipTrigger>
 <TooltipContent
 className={`w-tooltip-content c5mlbae cm1ds2c c1fxgukz cdzo1k7 c1lp7lun c3ryv7d c1t11c95 c1kz25wt c1jbi97f crebcbz cfjpsss ci03eyw cu8ogtt c4bgnbx cj82r57 c14a5ioc cm4j335`}>
-<Link_1
+<Link
 href={"/about-ge"}
 className={`w-link c4qqqhz c1l00ka2 c8l261o c1ozmz5d c1ho4waj c1k74xht c1122adb ch9rsc5 c10pf28n c1w0lkxn cz5lin5 c1tj415q`}>
 {"General Engineering"}
-</Link_1>
-<Link
+</Link>
+<Link_1
 href={"/about-dtu"}
 className={`w-element c4qqqhz c1l00ka2 c8l261o c8qj03j c1ho4waj c1k74xht cz03vb2 cqo7rnh cz5lin5 c1tj415q`}>
 {"DTU"}
-</Link>
-<Link_1
+</Link_1>
+<Link
 href={"/about-geu"}
 className={`w-link c4qqqhz c1l00ka2 c8l261o c1ozmz5d c1ho4waj c1k74xht c1122adb ch9rsc5 c10pf28n c1w0lkxn cz5lin5 c1tj415q`}>
 {"GE Union"}
-</Link_1>
+</Link>
 </TooltipContent>
 </Tooltip>
 </Box>
@@ -128,41 +128,41 @@ className={`w-element`}>
 </Box>
 <Box
 className={`w-box ci03eyw c1rb689p c1hbxsx0 cy2vnym cgykfac cu8ogtt cfx1lak c12zhvo c8chaf1 crymv6m cjdg5q7`}>
-<Link_1
+<Link
 href={"/"}
 className={`w-link c1sy2opm cr2ujrk c8l261o cy7nrqp c1ho4waj c1122adb c10pf28n c1w0lkxn ch9rsc5 cz5lin5`}>
 {"Home"}
-</Link_1>
-<Link_1
+</Link>
+<Link
 href={"/course-bank"}
 className={`w-link c1sy2opm cr2ujrk c8l261o cy7nrqp c1ho4waj c1122adb c10pf28n c1w0lkxn ch9rsc5 cz5lin5`}>
 {"Course Bank"}
-</Link_1>
-<Link_1
+</Link>
+<Link
 href={"/calendar"}
 className={`w-link c1sy2opm cr2ujrk c8l261o cy7nrqp c1ho4waj c1122adb c10pf28n c1w0lkxn ch9rsc5 cz5lin5`}>
 {"Calendar"}
-</Link_1>
-<Link_1
+</Link>
+<Link
 href={"/introduction"}
 className={`w-link c1sy2opm cr2ujrk c8l261o cy7nrqp c1ho4waj c1122adb c10pf28n c1w0lkxn ch9rsc5 cz5lin5`}>
 {"Dashboard"}
-</Link_1>
-<Link_1
+</Link>
+<Link
 href={"/about-geu"}
 className={`w-link c1sy2opm cr2ujrk c8l261o cy7nrqp c1ho4waj c1122adb c10pf28n c1w0lkxn ch9rsc5 cz5lin5`}>
 {"About GE"}
-</Link_1>
-<Link_1
+</Link>
+<Link
 href={"/about-dtu"}
 className={`w-link c1sy2opm cr2ujrk c8l261o cy7nrqp c1ho4waj c1122adb c10pf28n c1w0lkxn ch9rsc5 cz5lin5`}>
 {"About DTU"}
-</Link_1>
-<Link_1
+</Link>
+<Link
 href={"/about-geu"}
 className={`w-link c1sy2opm cr2ujrk c8l261o cy7nrqp c1ho4waj c1122adb c10pf28n c1w0lkxn ch9rsc5 cz5lin5`}>
 {"About GE Union"}
-</Link_1>
+</Link>
 </Box>
 </Box>
 <DialogClose
@@ -188,11 +188,42 @@ className={`w-text cg3nt0s c74dsfz czgmbqe cyoo8jj c1wwlxnr cje5w08 c1k74xht c1b
 </Box>
 </Box>
 <div
-className={`w-element ccxbyd9 ctslah9 cj7bt5u c4qqqhz c1p34zf0 c1dsvsvh`}>
+className={`w-element cvuh4zx ckiq6wr`}>
+<Image
+src={"/assets/DTU_Logo_Ir4X3IvjYl1LrQdKx8B5X.svg"}
+width={468}
+height={683}
+alt={""}
+className={`w-image c1x3epop cww5rzx cejbzap c3n0xi`} />
+</div>
+<div
+className={`w-element ccxbyd9 ctslah9 clrom7z c4qqqhz c1p34zf0 c1dsvsvh ci03eyw c7dq5yt c1erinc3 catlkx8 c1m3jn9j c17u97jl c1spep64 c39ez8k`}>
+<Image
+src={"/assets/DTU_Logo_Ir4X3IvjYl1LrQdKx8B5X.svg"}
+width={46}
+height={68}
+alt={""}
+className={`w-image c1l3m6tn c169jybr cywgt5k cycv0tm`} />
+<div
+className={`w-element`}>
+<div
+className={`w-element`}>
 <h2
 className={`w-element`}>
-{"What is DTU?"}
+{"What is "}
+<span
+className={`w-element c1r3ijl0 c1ionsgt c10yf0de c1ij4r40`}>
+{"DTU"}
+</span>
+{"?"}
 </h2>
+<Image
+src={"/assets/DTU_Logo_Ir4X3IvjYl1LrQdKx8B5X.svg"}
+width={468}
+height={683}
+alt={""}
+className={`w-image cbb1cch c192h3vw chva2w cpdl5o6 cxxvcyz ccteu3v c1y9qbks clrh4h0 cvuh4zx cgjpuuk`} />
+</div>
 <p
 className={`w-element`}>
 <span
@@ -201,11 +232,11 @@ className={`w-element`}>
 className={`w-element`}>
 {"DTU is undoubtedly the best engineering university in europe ("}
 </span>
-<Link
+<Link_1
 href={"https://engirank.eu/"}
 className={`w-element chpvhw5 c1br4k3t c1vn0xiq c1fzztwi cz03vb2 cgjpuuk`}>
 {"click here for proof"}
-</Link>
+</Link_1>
 <span
 className={`w-element`}>
 {"). Founded by H.C. Ørsted 1829 in, not only does it have great facilities and amazing teachers (like Steeven), but DTU has been heavly involved in inovations in fields such as Biotechnology, Materials Science or even inventing the modern wind turbine (wow!). The main campus situated in the north of Copenhagen in a rich city called Lyngby, (if the public transports actually work), it is about a 40-50min train/bus ride, 20min drive or about a 3h walk from the center."}
@@ -213,8 +244,9 @@ className={`w-element`}>
 </span>
 </p>
 </div>
+</div>
 <div
-className={`w-element ccxbyd9 ctslah9 cj7bt5u c4qqqhz c1p34zf0 c1dsvsvh`}>
+className={`w-element ccxbyd9 ctslah9 clrom7z c4qqqhz c1p34zf0 c1dsvsvh c1m3jn9j`}>
 <Image
 src={"/assets/denmark-denmark-svgrepo-com_2tKbgjDykJqfBmTwPfbFA.svg"}
 width={800}
@@ -228,20 +260,20 @@ className={`w-element c10jlucd`}>
 className={`w-element ci03eyw catlkx8 c1v4vkm5 c5ysdna c10qj6hj cloqs28 c1euhnlj cuekr74 cmho28s`}>
 <p
 className={`w-element catlkx8 ceiem4c`}>
-<Link
+<Link_1
 href={"https://www.pf.dk/en"}
 className={`w-element cz03vb2 cz0xufp c9st17j c11jzf7t c1335tz cqiqnof c1t9afk7`}>
 {"PF"}
-</Link>
+</Link_1>
 <span
 className={`w-element`}>
 {" is basically the mother of all DTU student organisations. As a general rule, If an organisation is student-led, it's surely somehow a part of PF (except for "}
 </span>
-<Link
+<Link_1
 href={"https://nul-kryds.dk/"}
 className={`w-element cz03vb2 cz0xufp c9st17j c11jzf7t c1335tz cqiqnof c1t9afk7`}>
 {"Nul-Kryds"}
-</Link>
+</Link_1>
 <span
 className={`w-element`}>
 {" for some reason?). This is mainly because PF predates the Danish constitution and is almost as old as DTU itself (founded in 1845). As a piece of DTU admin lore, PF and Nul-kryds are the 2 only student oganisations that DTU recognises and gives funding to. All other organisations need to receive their funds from PF."}
@@ -270,11 +302,25 @@ className={`w-element`}>
 </div>
 </div>
 <div
-className={`w-element ccxbyd9 ctslah9 cj7bt5u c4qqqhz c1p34zf0 c1duohc3`}>
+className={`w-element ccxbyd9 ctslah9 clrom7z c4qqqhz c1p34zf0 c1duohc3 c1nixf1k`}>
+<div
+className={`w-element`}>
 <h2
 className={`w-element`}>
-{"What the hell is IDA?"}
+{"What the hell is "}
+<span
+className={`w-element c1r3ijl0 c2st41q c7u4ssh cagwawx`}>
+{"IDA"}
+</span>
+{"?"}
 </h2>
+<Image
+src={"/assets/ida_vxJXM3ZQMHYnDy0d1GadA.png"}
+width={190}
+height={78}
+alt={""}
+className={`w-image cbb1cch c192h3vw c1jzx0qs cxxvcyz cgu8udb c5jmnrj c1tr3pou cvuh4zx cgjpuuk`} />
+</div>
 <div
 className={`w-element ci03eyw catlkx8 c1v4vkm5 c1sqf2ek c10pyque c1bbxo3g c1pnodu0`}>
 <p
@@ -283,11 +329,11 @@ className={`w-element`}>
 className={`w-element`}>
 {"Simply put, IDA is a gift from god for DTU students; they're a trade union, but they also offer free home insurance for STEM students in Denmark. They are the people to talk to for everything regarding grown-up stuff, such as CV & career help, contracts & legal documents, salary negotiation, and they also organise plenty of events, both professional and just fun. You can check out their website here: "}
 </span>
-<Link
+<Link_1
 href={"https://english.ida.dk/"}
 className={`w-element cz03vb2 c10tpvj3`}>
 {"IDA english website"}
-</Link>
+</Link_1>
 </p>
 <div
 className={`w-element c1dohq8s cc96m4b ci03eyw cfx1lak c1bti4b5 c18d5cyi c5xw8br c9m7qox cycv0tm`}>
@@ -304,6 +350,72 @@ className={`w-element c14xzzjo`}>
 {"Most importantly, make sure to apply for their free home insurance; it's free and covers so much. After signing up (for free), you could spill coffee on your laptop, and they'll pay for it. As I said, a gift from god."}
 </p>
 </div>
+<Box
+className={`w-box c9esr7v cm1ds2c c1fxgukz cd3toq c17nm8vt c1xymrvd c8yo8yx csaxvfs ce1jmtw c1m7qrvj c1o7c5y4 c1ndanu0 ${"icon-background"}`}>
+<div
+className={`w-element ci03eyw c1nj86ny c4jnp6s c1l3m6tn c1w0yra6 cpq2gwm c1v4vkm5 c16pnwu4 cypyahl cs11lv9 c1njbxf1`}>
+<Link
+href={"/"}
+className={`w-link cmvyqw5 cz7iu34 c40iywk codsd31 c16er72m c1qt5xo2 c1dohq8s c3gx87z cqyp7hg c1moglug`}>
+<Image
+src={"/assets/GEU_Icon_D3w8VZ53_-Z22xmyL4iB1.svg"}
+width={256}
+height={238}
+alt={""}
+className={`w-image c1l3m6tn ct616nu cmvyqw5 cc5htwv`} />
+</Link>
+<div
+className={`w-element ci03eyw c1is6v5c co8t7od c1nj86ny c74dsfz c1jwuvkp cezuxvu`}>
+<Link_1
+href={"https://www.instagram.com/ge.union/"}
+target={"_blank"}
+className={`w-element c1d1pidh cda4yqq c767uka c1l3m6tn cqb6n9z c8ao5vx c1tf1rtc c1erptst`}>
+<Image
+src={"/assets/icons8-instagram-100_Bv473-epGJTlb2PIIMZrK.png"}
+width={100}
+height={100}
+alt={""}
+loading={"lazy"}
+className={`w-image`} />
+</Link_1>
+<Link_1
+href={"https://www.facebook.com/people/GE-Union/61573069635006/?_rdr"}
+target={"_blank"}
+className={`w-element c1d1pidh cda4yqq c767uka c1l3m6tn cqb6n9z c8ao5vx c1tf1rtc c1erptst`}>
+<Image
+src={"/assets/icons8-facebook-100_h1qyKfUPJkKqOQqUT8Zyf.png"}
+width={100}
+height={100}
+alt={""}
+loading={"lazy"}
+className={`w-image`} />
+</Link_1>
+<Link_1
+href={"https://www.linkedin.com/groups/10061020/"}
+target={"_blank"}
+className={`w-element c1d1pidh cda4yqq c767uka c1l3m6tn cqb6n9z c8ao5vx c1tf1rtc c1erptst`}>
+<Image
+src={"/assets/icons8-linkedin-100_32y9UEexB2a26klZGd2BD.png"}
+width={100}
+height={100}
+alt={""}
+loading={"lazy"}
+className={`w-image`} />
+</Link_1>
+<Link_1
+href={"https://www.reddit.com/r/DTU/"}
+className={`w-element c1d1pidh cda4yqq c767uka c1l3m6tn cqb6n9z c8ao5vx c1tf1rtc c1erptst`}>
+<Image
+src={"/assets/icons8-reddit-100_Q4RTsOhheuWPPCcLZd7_J.png"}
+width={100}
+height={100}
+alt={""}
+loading={"lazy"}
+className={`w-image`} />
+</Link_1>
+</div>
+</div>
+</Box>
 </Body>
 }
 

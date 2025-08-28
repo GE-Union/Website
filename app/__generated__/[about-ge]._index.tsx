@@ -11,7 +11,7 @@ import { Tooltip as Tooltip, TooltipTrigger as TooltipTrigger, TooltipContent as
 
       export const projectId = "94456f8c-a847-426a-aec8-16de390bd3eb";
 
-      export const lastPublished = "2025-08-28T01:52:20.369Z";
+      export const lastPublished = "2025-08-28T20:01:48.044Z";
 
       export const siteName = "GE Union";
 
@@ -195,7 +195,7 @@ className={`w-text cg3nt0s c74dsfz czgmbqe cyoo8jj c1wwlxnr cje5w08 c1k74xht c1b
 </Box>
 </Box>
 <div
-className={`w-element ccxbyd9 ctslah9 cj7bt5u c4qqqhz c1p34zf0 c1dsvsvh`}>
+className={`w-element ccxbyd9 ctslah9 clrom7z c4qqqhz c1p34zf0 c1dsvsvh c1m3jn9j`}>
 <h2
 className={`w-element`}>
 {"What is GE?"}
@@ -206,7 +206,7 @@ className={`w-element`}>
 </p>
 </div>
 <div
-className={`w-element ccxbyd9 ctslah9 cj7bt5u c4qqqhz c1p34zf0 c1dsvsvh`}>
+className={`w-element ccxbyd9 ctslah9 clrom7z c4qqqhz c1p34zf0 c1dsvsvh c1m3jn9j`}>
 <h2
 className={`w-element`}>
 {"Polytechnical Foundations "}
@@ -221,7 +221,7 @@ className={`w-element`}>
 </p>
 </div>
 <div
-className={`w-element ccxbyd9 ctslah9 cj7bt5u c4qqqhz c1p34zf0 c1dsvsvh`}>
+className={`w-element ccxbyd9 ctslah9 clrom7z c4qqqhz c1p34zf0 c1dsvsvh c1m3jn9j`}>
 <h2
 className={`w-element`}>
 {"Specialisations "}
@@ -305,7 +305,7 @@ className={`w-element`}>
 </div>
 </div>
 <div
-className={`w-element ccxbyd9 ctslah9 cj7bt5u c4qqqhz c1p34zf0 c1duohc3`}>
+className={`w-element ccxbyd9 ctslah9 clrom7z c4qqqhz c1p34zf0 c1duohc3 c1m3jn9j`}>
 <h2
 className={`w-element`}>
 {"DTU Course Analyzer"}
@@ -327,6 +327,72 @@ className={`w-element`}>
 </span>
 </p>
 </div>
+<Box
+className={`w-box c9esr7v cm1ds2c c1fxgukz cd3toq c17nm8vt c1xymrvd c8yo8yx csaxvfs ce1jmtw c1m7qrvj c1o7c5y4 c1ndanu0 ${"icon-background"}`}>
+<div
+className={`w-element ci03eyw c1nj86ny c4jnp6s c1l3m6tn c1w0yra6 cpq2gwm c1v4vkm5 c16pnwu4 cypyahl cs11lv9 c1njbxf1`}>
+<Link
+href={"/"}
+className={`w-link cmvyqw5 cz7iu34 c40iywk codsd31 c16er72m c1qt5xo2 c1dohq8s c3gx87z cqyp7hg c1moglug`}>
+<Image
+src={"/assets/GEU_Icon_D3w8VZ53_-Z22xmyL4iB1.svg"}
+width={256}
+height={238}
+alt={""}
+className={`w-image c1l3m6tn ct616nu cmvyqw5 cc5htwv`} />
+</Link>
+<div
+className={`w-element ci03eyw c1is6v5c co8t7od c1nj86ny c74dsfz c1jwuvkp cezuxvu`}>
+<Link_1
+href={"https://www.instagram.com/ge.union/"}
+target={"_blank"}
+className={`w-element c1d1pidh cda4yqq c767uka c1l3m6tn cqb6n9z c8ao5vx c1tf1rtc c1erptst`}>
+<Image
+src={"/assets/icons8-instagram-100_Bv473-epGJTlb2PIIMZrK.png"}
+width={100}
+height={100}
+alt={""}
+loading={"lazy"}
+className={`w-image`} />
+</Link_1>
+<Link_1
+href={"https://www.facebook.com/people/GE-Union/61573069635006/?_rdr"}
+target={"_blank"}
+className={`w-element c1d1pidh cda4yqq c767uka c1l3m6tn cqb6n9z c8ao5vx c1tf1rtc c1erptst`}>
+<Image
+src={"/assets/icons8-facebook-100_h1qyKfUPJkKqOQqUT8Zyf.png"}
+width={100}
+height={100}
+alt={""}
+loading={"lazy"}
+className={`w-image`} />
+</Link_1>
+<Link_1
+href={"https://www.linkedin.com/groups/10061020/"}
+target={"_blank"}
+className={`w-element c1d1pidh cda4yqq c767uka c1l3m6tn cqb6n9z c8ao5vx c1tf1rtc c1erptst`}>
+<Image
+src={"/assets/icons8-linkedin-100_32y9UEexB2a26klZGd2BD.png"}
+width={100}
+height={100}
+alt={""}
+loading={"lazy"}
+className={`w-image`} />
+</Link_1>
+<Link_1
+href={"https://www.reddit.com/r/DTU/"}
+className={`w-element c1d1pidh cda4yqq c767uka c1l3m6tn cqb6n9z c8ao5vx c1tf1rtc c1erptst`}>
+<Image
+src={"/assets/icons8-reddit-100_Q4RTsOhheuWPPCcLZd7_J.png"}
+width={100}
+height={100}
+alt={""}
+loading={"lazy"}
+className={`w-image`} />
+</Link_1>
+</div>
+</div>
+</Box>
 </Body>
 }
 

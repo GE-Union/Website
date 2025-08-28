@@ -11,7 +11,7 @@ import { Tabs as Tabs, TabsList as TabsList, TabsTrigger as TabsTrigger, TabsCon
 
       export const projectId = "94456f8c-a847-426a-aec8-16de390bd3eb";
 
-      export const lastPublished = "2025-08-28T01:52:20.369Z";
+      export const lastPublished = "2025-08-28T20:01:48.044Z";
 
       export const siteName = "GE Union";
 
@@ -196,9 +196,9 @@ className={`w-text cg3nt0s c74dsfz czgmbqe cyoo8jj c1wwlxnr cje5w08 c1k74xht c1b
 </Box>
 <Tabs
 value={"0"}
-className={`w-tabs cu8ogtt c1v4vkm5 c3q79or cqlg791 c6yvppa ci03eyw`}>
+className={`w-tabs cu8ogtt c1v4vkm5 c3q79or cqlg791 cbeiaob ci03eyw`}>
 <TabsList
-className={`w-tabs-list cfyrpk4 c1qpyqes c1bti4b5 cd3toq c17nm8vt c8yo8yx c1xymrvd c1n9f9m4 c1jbi97f c1lgzutd csp87lc c1lvtt9b c12gpzk6 c1jsmjku c1cshlcb cde37yz ca1ntyv cwsyfmt cgmjq0a c1xmffmh c142qj80 c15igavi`}>
+className={`w-tabs-list cfyrpk4 c1qpyqes c1bti4b5 cd3toq c17nm8vt c8yo8yx c1xymrvd c1n9f9m4 c1jbi97f c1lgzutd c1s5tu31 c1lvtt9b c12gpzk6 c1jsmjku c1cshlcb cde37yz ca1ntyv cwsyfmt cgmjq0a c1xmffmh c142qj80 c15igavi`}>
 <TabsTrigger
 data-ws-index="0"
 className={`w-tab-trigger cfyrpk4 c1v4vkm5 c1bti4b5 c1sm0mvf cbfwnla c3fz80x c6pfjtb c1lp7lun c3ryv7d c1t11c95 c1kz25wt cr2ujrk c1tmykg6 ctdzf0s c1efnbdc c14hahek c1qt5xo2 ck08swj cuz3b7n c5atcat c13yk87r c12m3onu cxbwblh co1yi26 c1vk95sq c4m1pwg c1al8gxi cws4pam cqp7jpc c1kvgv3n`}>
@@ -2253,7 +2253,7 @@ className={`w-html-embed`} />
 </Accordion>
 </TabsContent>
 <div
-className={`w-element cbeiaob ci03eyw c16e72yc cqaj6f4 c16lfnyl c1fri8go c1jj1apw`}>
+className={`w-element c1aa51lf ci03eyw c1sxsgjp cqaj6f4 c16lfnyl c1fri8go c1jj1apw`}>
 <div
 className={`w-element ci03eyw c1v4vkm5 c1svdh6y cft5z6j c156d1ag c1uw2bda cnd6e42 col1yiq corpumv c1q3q0jq c1rdt54o c6775s7 c5v0tdv c5wuwv0 c8nmv6p cwqnf9o cgam0gy c1lvim05`}>
 <h4
@@ -2298,6 +2298,72 @@ className={`w-image c1nfcmlw`} />
 </div>
 </div>
 </Tabs>
+<Box
+className={`w-box c9esr7v cm1ds2c c1fxgukz cd3toq c17nm8vt c1xymrvd c8yo8yx csaxvfs ce1jmtw c1m7qrvj c1o7c5y4 c1ndanu0 ${"icon-background"}`}>
+<div
+className={`w-element ci03eyw c1nj86ny c4jnp6s c1l3m6tn c1w0yra6 cpq2gwm c1v4vkm5 c16pnwu4 cypyahl cs11lv9 c1njbxf1`}>
+<Link
+href={"/"}
+className={`w-link cmvyqw5 cz7iu34 c40iywk codsd31 c16er72m c1qt5xo2 c1dohq8s c3gx87z cqyp7hg c1moglug`}>
+<Image
+src={"/assets/GEU_Icon_D3w8VZ53_-Z22xmyL4iB1.svg"}
+width={256}
+height={238}
+alt={""}
+className={`w-image c1l3m6tn ct616nu cmvyqw5 cc5htwv`} />
+</Link>
+<div
+className={`w-element ci03eyw c1is6v5c co8t7od c1nj86ny c74dsfz c1jwuvkp cezuxvu`}>
+<Link_1
+href={"https://www.instagram.com/ge.union/"}
+target={"_blank"}
+className={`w-element c1d1pidh cda4yqq c767uka c1l3m6tn cqb6n9z c8ao5vx c1tf1rtc c1erptst`}>
+<Image
+src={"/assets/icons8-instagram-100_Bv473-epGJTlb2PIIMZrK.png"}
+width={100}
+height={100}
+alt={""}
+loading={"lazy"}
+className={`w-image`} />
+</Link_1>
+<Link_1
+href={"https://www.facebook.com/people/GE-Union/61573069635006/?_rdr"}
+target={"_blank"}
+className={`w-element c1d1pidh cda4yqq c767uka c1l3m6tn cqb6n9z c8ao5vx c1tf1rtc c1erptst`}>
+<Image
+src={"/assets/icons8-facebook-100_h1qyKfUPJkKqOQqUT8Zyf.png"}
+width={100}
+height={100}
+alt={""}
+loading={"lazy"}
+className={`w-image`} />
+</Link_1>
+<Link_1
+href={"https://www.linkedin.com/groups/10061020/"}
+target={"_blank"}
+className={`w-element c1d1pidh cda4yqq c767uka c1l3m6tn cqb6n9z c8ao5vx c1tf1rtc c1erptst`}>
+<Image
+src={"/assets/icons8-linkedin-100_32y9UEexB2a26klZGd2BD.png"}
+width={100}
+height={100}
+alt={""}
+loading={"lazy"}
+className={`w-image`} />
+</Link_1>
+<Link_1
+href={"https://www.reddit.com/r/DTU/"}
+className={`w-element c1d1pidh cda4yqq c767uka c1l3m6tn cqb6n9z c8ao5vx c1tf1rtc c1erptst`}>
+<Image
+src={"/assets/icons8-reddit-100_Q4RTsOhheuWPPCcLZd7_J.png"}
+width={100}
+height={100}
+alt={""}
+loading={"lazy"}
+className={`w-image`} />
+</Link_1>
+</div>
+</div>
+</Box>
 </Body>
 }
 
