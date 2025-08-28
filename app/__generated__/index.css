@@ -462,6 +462,9 @@
   .c1qux398 {
     min-height: 100vh
   }
+  .c13w5hsy {
+    width: 100vw
+  }
   .ck11ylk {
     flex-grow: 1
   }
@@ -591,9 +594,6 @@
   }
   .c1nfcmlw {
     width: 21.5px
-  }
-  .ctg5cc4 {
-    margin-bottom: var(--gap1)
   }
   .c1n9f9m4 {
     background-color: var(--back-grey-1)
@@ -1334,9 +1334,6 @@
   .c9q7jzv {
     left: 50%
   }
-  .c13w5hsy {
-    width: 100vw
-  }
   .c1sm4x0m {
     height: 100vh
   }
@@ -1841,6 +1838,21 @@
   .c169jybr {
     width: 129px
   }
+  .csvbhp4 {
+    width: 240px
+  }
+  .cbajjfw {
+    height: 120px
+  }
+  .cz4wxbc {
+    margin-top: -100px
+  }
+  .cc39ds7 {
+    width: 70%
+  }
+  .cje7rrh {
+    margin-top: 58px
+  }
 }
 @media all and (max-width: 991px) {
   :root {
@@ -2103,14 +2115,14 @@
   .c19a8u9t {
     margin-right: 50px
   }
+  .cycv0tm {
+    display: none
+  }
   .c142qj80 {
     column-gap: 3px
   }
   .c15igavi {
     row-gap: 3px
-  }
-  .cycv0tm {
-    display: none
   }
   .c1fri8go {
     flex-wrap: wrap
@@ -2285,6 +2297,9 @@
   }
   .c1tr3pou {
     margin-left: 250px
+  }
+  .c6t3p65 {
+    display: flex
   }
 }
 @media all and (max-width: 479px) {

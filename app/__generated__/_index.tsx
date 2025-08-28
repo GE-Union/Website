@@ -11,7 +11,7 @@ import { Tooltip as Tooltip, TooltipTrigger as TooltipTrigger, TooltipContent as
 
       export const projectId = "94456f8c-a847-426a-aec8-16de390bd3eb";
 
-      export const lastPublished = "2025-08-28T20:34:32.022Z";
+      export const lastPublished = "2025-08-28T21:52:01.462Z";
 
       export const siteName = "GE Union";
 
@@ -37,7 +37,7 @@ import { Tooltip as Tooltip, TooltipTrigger as TooltipTrigger, TooltipContent as
 
       const Page = (_props: { system: any; }) => {
 return <Body
-className={`w-body cdzo1k7 c1lzvaoj cm1ds2c c1qux398`}>
+className={`w-body cdzo1k7 c1lzvaoj cm1ds2c c1qux398 c13w5hsy`}>
 <HtmlEmbed
 code={"<style>\n@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300..900&display=swap');\n@import url('https://api.fontshare.com/v2/css?f[]=tanker@400&amp;display=swap');\n  \n  h1{\n    font-family: 'Tanker';\n    font-weight: 500;\n    font-size: 5em;\n    color: var(--background);\n    line-height: 1;\n    margin: 0;\n  }\n  h2{\n    font-weight: 600;\n    font-size: 36px;\n    line-height: 1;\n    margin: 0;\n  }\n  p{\n    margin: 0;\n  }\n  \n  .icon-background{\n    background-color: var(--back-red-1);\n    z-index: 1;\n    overflow: hidden;\n    position: relative;\n  }\n  .icon-background::before{\n    content: \"\";\n    position: absolute;\n    width: 200%; height: 200%;\n    top: -50%; left: -50%;\n    background-image: url('/assets/icon-background_RyiWP8CNKOfskpwMp_P8Y.svg?width=1080&quality=80&format=auto');\n    background-size: 200px 115.4734411085px;\n    background-repeat: repeat;\n    animation: scrollBg 20s linear infinite;\n    z-index: -1;\n    opacity: var(--icon-background-opacity, 3%); mix-blend-mode: luminosity;\n    filter: blur(2px)\n  }\n  \n  .home-top::after{\n    position: absolute;\n    content: \"\";\n    width: 100%;\n    height: 250px;\n    background: linear-gradient(180deg, hsl(from var(--back-red-1) h s l / 0.65) 15%, hsl(from var(--back-red-1) h s l / 0) 100%);\n    z-index: -1;\n  }\n\n  @keyframes scrollBg {\n      0% {\n        background-position: 0 0;\n      }\n      100% {\n        background-position: -200px 115.4734411085px;\n      }\n    }\n\n  .home-top-card:hover .home-top-card-title-icon{\n    width: 38px;\n    padding-left: 3px;\n  }\n\n  @media only screen and (max-width: 767px) {\n    h1{\n      font-size: 4em;\n    }\n    h2{\n      font-size: 32px;\n    }\n  }\n</style>"}
 executeScriptOnCanvas={true}
@@ -355,9 +355,9 @@ className={`w-image c1nfcmlw`} />
 code={"<div class=\"carousel-cell\">\n  <div class=\"cell-content\">\n    <img src=\"https://github.com/GE-Union/WebsiteContent/blob/main/images/home-carousel/1.jpg?raw=true\" alt=\"\">\n    <div class=\"caption\">The GE Union team</div>\n  </div>\n</div>\n\n<div class=\"carousel-cell\">\n  <div class=\"cell-content\">\n    <img src=\"https://github.com/GE-Union/WebsiteContent/blob/main/images/home-carousel/2.jpg?raw=true\" alt=\"\">\n    <div class=\"caption\">Gift for support tutors</div>\n  </div>\n</div>\n\n<div class=\"carousel-cell\">\n  <div class=\"cell-content\">\n    <img src=\"https://github.com/GE-Union/WebsiteContent/blob/main/images/home-carousel/3.jpg?raw=true\" alt=\"\">\n    <div class=\"caption\">GEU event pizza break</div>\n  </div>\n</div>\n\n<div class=\"carousel-cell\">\n  <div class=\"cell-content\">\n    <img src=\"https://github.com/GE-Union/WebsiteContent/blob/main/images/home-carousel/4.jpg?raw=true\" alt=\"\">\n    <div class=\"caption\">Maths brush-up course</div>\n  </div>\n</div>\n\n<div class=\"carousel-cell\">\n  <div class=\"cell-content\">\n    <img src=\"https://github.com/GE-Union/WebsiteContent/blob/main/images/home-carousel/5.jpg?raw=true\" alt=\"\">\n    <div class=\"caption\">Bar staff at GE Grill</div>\n  </div>\n</div>\n\n<div class=\"carousel-cell\">\n  <div class=\"cell-content\">\n    <img src=\"https://github.com/GE-Union/WebsiteContent/blob/main/images/home-carousel/6.jpg?raw=true\" alt=\"\">\n    <div class=\"caption\">GE Grill event</div>\n  </div>\n</div>"}
 executeScriptOnCanvas={true}
 id={"carousel"}
-className={`w-html-embed c6f08mx cgmpm3f csljhnv c19f83kh c1duohc3 c1w0yra6 cpq2gwm c13w5hsy cm1ds2c c1vhywez cn4tmju c14xcs5y c144cj3d cux2glt c1m8g7bv ${"carr"}`} />
+className={`w-html-embed c6f08mx cgmpm3f csljhnv c19f83kh c1duohc3 c1w0yra6 cpq2gwm c13w5hsy cm1ds2c c1vhywez c1122adb c197srfe cn4tmju c14xcs5y c144cj3d cux2glt c1m8g7bv`} />
 <Box
-className={`w-box c3q79or cqlg791 ctg5cc4 cd3toq c17nm8vt c1xymrvd c8yo8yx c1n9f9m4 ci03eyw cu8ogtt ccjedbp c1z0fjz8 c9py6bs czpkcbu cz85z79 cl4abvr cnkevhm c8nmv6p cwqnf9o c1v4vkm5 c3zzp20 ckpfi68 cy3m4bk c16o2wqc cwwztsj`}>
+className={`w-box c3q79or cqlg791 cd3toq c17nm8vt c1xymrvd c8yo8yx c1n9f9m4 ci03eyw cu8ogtt ccjedbp c1z0fjz8 c9py6bs czpkcbu cz85z79 cl4abvr cnkevhm c8nmv6p cwqnf9o c1v4vkm5 c3zzp20 ckpfi68 cy3m4bk c16o2wqc cwwztsj`}>
 <Box
 className={`w-box c58kvwj c9g6b5g c13gcvvn c1oqdnpz c1ckfy1d c1qp0aqz c1xos25p c1du959o chqmdb4 c1pmzggb ci03eyw cn8b0jh cywh3a ccmrhvk`}>
 <div
@@ -524,19 +524,53 @@ className={`w-element`}>
 {"Contact us"}
 </h2>
 <p
-className={`w-element c7wcowi c2z8j1e cmndei7 c3q79or c8qj03j`}>
-{"You can reach us at "}
+className={`w-element c7wcowi c2z8j1e cmndei7 c3q79or c8qj03j ci03eyw cycv0tm`}>
+{"You can reach us with any questions at "}
 <Link_1
 href={"mailto:geunion.dtu@gmail.com"}
 className={`w-element c5pdwyd c1ho4waj`}>
+<div
+className={`w-element c58kvwj csvbhp4 cbajjfw cz4wxbc cm1ds2c c1fxgukz`}>
+<Image
+src={"/assets/envelope-letter-1_54WdrB-vdhWtpZNklaRdT.svg"}
+width={512}
+height={512}
+alt={""}
+id={"mail-hover-letter"}
+className={`w-image cc39ds7 c1w0yra6 cpq2gwm cje7rrh c1iwmpjl`} />
+<HtmlEmbed
+code={"<style>\n  #mail-hover-letter {\n    transition: translate 0.4s, rotate 0.4s, scale 0.4s, opacity 0.4s;\n  }\n  a:hover #mail-hover-letter{\n    translate: 0 -52px;\n    rotate: 6deg;\n    scale: 1.2;\n    opacity: 0.15;\n  }\n</style>"}
+executeScriptOnCanvas={true}
+className={`w-html-embed`} />
+</div>
+<span
+className={`w-element`}>
 <b
 className={`w-element`}>
 {"geunion.dtu@gmail.com"}
 </b>
+</span>
 </Link_1>
-{" for any questions you have!"}
+</p>
+<p
+className={`w-element c7wcowi c2z8j1e cmndei7 c3q79or c8qj03j cvuh4zx cxxvcyz`}>
+{"Send us an email with any questions or suggestions you have, or drop us a message on Instagram."}
 </p>
 </Box>
+<Link
+href={"https://www.facebook.com/people/GE-Union/61573069635006/?_rdr"}
+target={"_blank"}
+className={`w-link c10pf28n c6775s7 ct2w13i c1kmtbg4 c341g64 c11h9c5s c17hd63g cnrv5xy c1ho4waj czgmbqe c8l261o cr2ujrk cvuh4zx c1pd7k79 c2gl1gx cda4yqq c767uka c1x65yvk cv1qn8j c1jon836 co5x0w6 c5sx8jk c1122adb c1bti4b5 cz7iu34 c40iywk codsd31 c16er72m c1qt5xo2 c7xu66z c1582rzp cpyan2s c6t3p65`}>
+<Text
+className={`w-text`}>
+{"Send Email"}
+</Text>
+<Image
+src={"/assets/Arrow_H1ljlBGfuft_TMCdE7Zb5.svg"}
+width={25}
+height={24}
+className={`w-image c1nfcmlw`} />
+</Link>
 </Box>
 </Box>
 <Link_1
@@ -548,7 +582,7 @@ code={"<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"currentColor\" viewBox=\
 className={`w-html-embed c6f08mx c58jkk8 c4bwhth c767uka`} />
 <div
 className={`w-element`}>
-{"Built with Webstudio"}
+{".Built with Webstudio"}
 </div>
 </Link_1>
 <HtmlEmbed
@@ -556,7 +590,7 @@ code={"<script>\n  document.addEventListener('DOMContentLoaded', () => {\n    re
 executeScriptOnCanvas={true}
 className={`w-html-embed`} />
 <HtmlEmbed
-code={"<link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/flickity@2/dist/flickity.min.css\">\n  <style>\n    /* Each cell in the carousel */\n    .carousel-cell {\n      width: calc(450px * var(--img-scale));\n      margin-right: var(--gap1);\n      display: flex;\n      flex-direction: column; /* stack image + text vertically */\n      align-items: stretch;\n      opacity: 0.9;\n    }\n\n    #carousel, .flickity-viewport {\n      overflow: visible !important;\n    }\n\n    /* Image styling to handle different aspect ratios */\n    .cell-content > img {\n      display: block;\n      position: relative;\n      width: 100%;\n      height: calc(300px * var(--img-scale));\n      object-fit: cover;\n      background: #eee;   /* fallback background */\n      overflow: hidden;\n      border-radius: var(--rad2);\n      transition: margin-top 0.5s;\n      z-index: 5;\n    }\n    \n    .carousel-cell .caption {\n      position: relative;\n      text-align: center;\n      transition: margin-top 0.5s;\n      margin-top: -30px;\n      z-index: 1;\n    }\n    .is-selected .caption {\n      margin-top: 5px;\n    }\n    .is-selected img {\n      margin-top: -5px;\n    }\n    .is-selected {\n      opacity: 1;\n    }\n  </style>\n\n  <!-- Flickity JS from jsDelivr -->\n  <script src=\"https://cdn.jsdelivr.net/npm/flickity@2/dist/flickity.pkgd.min.js\">\n    \n  </script>\n  <script>\n    document.addEventListener('DOMContentLoaded', () => {\n      setTimeout(function() {\n      var elem = document.getElementById('carousel');\n      var flkty = new Flickity(elem, {\n        wrapAround: true,\n        autoPlay: 3000,              // 3s between slides\n        pauseAutoPlayOnHover: true,  // stop when hovered\n        freeScroll: false,\n        prevNextButtons: true,\n        pageDots: false,\n        draggable: true,\n        selectedAttraction: 0.01,\nfriction: 0.15\n      });\n      }, 500)});\n  </script>"}
+code={"<link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/flickity@2/dist/flickity.min.css\">\n  <style>\n    /* Each cell in the carousel */\n    .carousel-cell {\n      width: calc(450px * var(--img-scale));\n      margin-right: var(--gap1);\n      display: flex;\n      flex-direction: column; /* stack image + text vertically */\n      align-items: stretch;\n      opacity: 0.9;\n    }\n\n    .flickity-viewport {\n      overflow: visible !important;\n    } #carousel {\n      overflow-x: hidden !important;\n      overflow-y: visible !important;\n    }\n\n    /* Image styling to handle different aspect ratios */\n    .cell-content > img {\n      display: block;\n      position: relative;\n      width: 100%;\n      height: calc(300px * var(--img-scale));\n      object-fit: cover;\n      background: #eee;   /* fallback background */\n      overflow: hidden;\n      border-radius: var(--rad2);\n      transition: margin-top 0.5s;\n      z-index: 5;\n    }\n    \n    .carousel-cell .caption {\n      position: relative;\n      text-align: center;\n      transition: margin-top 0.5s;\n      margin-top: -30px;\n      z-index: 1;\n    }\n    .is-selected .caption {\n      margin-top: 5px;\n    }\n    .is-selected img {\n      margin-top: -5px;\n    }\n    .is-selected {\n      opacity: 1;\n    }\n  </style>\n\n  <!-- Flickity JS from jsDelivr -->\n  <script src=\"https://cdn.jsdelivr.net/npm/flickity@2/dist/flickity.pkgd.min.js\">\n    \n  </script>\n  <script>\n    document.addEventListener('DOMContentLoaded', () => {\n      setTimeout(function() {\n      var elem = document.getElementById('carousel');\n      var flkty = new Flickity(elem, {\n        wrapAround: true,\n        autoPlay: 3000,              // 3s between slides\n        pauseAutoPlayOnHover: true,  // stop when hovered\n        freeScroll: false,\n        prevNextButtons: true,\n        pageDots: false,\n        draggable: true,\n        selectedAttraction: 0.01,\nfriction: 0.15\n      });\n      }, 500)});\n  </script>"}
 executeScriptOnCanvas={true}
 className={`w-html-embed cgmpm3f`} />
 <HtmlEmbed

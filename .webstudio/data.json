@@ -1,10 +1,10 @@
 {
   "build": {
-    "id": "2fa2696c-a414-4936-bcd5-5d79ead6f566",
+    "id": "bb820ad5-422c-44d8-a40b-c76955cd171c",
     "projectId": "94456f8c-a847-426a-aec8-16de390bd3eb",
-    "version": 10654,
-    "createdAt": "2025-08-28T20:34:32.022+00:00",
-    "updatedAt": "2025-08-28T20:34:32.022+00:00",
+    "version": 10972,
+    "createdAt": "2025-08-28T21:52:01.462+00:00",
+    "updatedAt": "2025-08-28T21:52:01.462+00:00",
     "pages": {
       "meta": {
         "siteName": "GE Union",
@@ -1762,18 +1762,6 @@
           "breakpointId": "2EiFMEG40PBm9_fkelqpo",
           "styleSourceId": "INlS8tMb5Q9STJmDcL70W",
           "property": "marginRight",
-          "value": {
-            "type": "var",
-            "value": "gap1"
-          }
-        }
-      ],
-      [
-        "INlS8tMb5Q9STJmDcL70W:2EiFMEG40PBm9_fkelqpo:marginBottom:",
-        {
-          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
-          "styleSourceId": "INlS8tMb5Q9STJmDcL70W",
-          "property": "marginBottom",
           "value": {
             "type": "var",
             "value": "gap1"
@@ -65044,6 +65032,305 @@
           },
           "listed": true
         }
+      ],
+      [
+        "9iVXr6KF099LseaNfx7B2:2EiFMEG40PBm9_fkelqpo:paddingTop:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "9iVXr6KF099LseaNfx7B2",
+          "property": "paddingTop",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 10
+          }
+        }
+      ],
+      [
+        "9iVXr6KF099LseaNfx7B2:2EiFMEG40PBm9_fkelqpo:paddingBottom:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "9iVXr6KF099LseaNfx7B2",
+          "property": "paddingBottom",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 30
+          }
+        }
+      ],
+      [
+        "IcBVDCzNZqVCTAd5KEcxr:2EiFMEG40PBm9_fkelqpo:position:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "IcBVDCzNZqVCTAd5KEcxr",
+          "property": "position",
+          "value": {
+            "type": "keyword",
+            "value": "absolute"
+          }
+        }
+      ],
+      [
+        "vsNTVlfq2NtorrQtL_WR_:2EiFMEG40PBm9_fkelqpo:display:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "vsNTVlfq2NtorrQtL_WR_",
+          "property": "display",
+          "value": {
+            "type": "keyword",
+            "value": "flex"
+          }
+        }
+      ],
+      [
+        "IcBVDCzNZqVCTAd5KEcxr:2EiFMEG40PBm9_fkelqpo:width:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "IcBVDCzNZqVCTAd5KEcxr",
+          "property": "width",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 240
+          }
+        }
+      ],
+      [
+        "IcBVDCzNZqVCTAd5KEcxr:2EiFMEG40PBm9_fkelqpo:height:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "IcBVDCzNZqVCTAd5KEcxr",
+          "property": "height",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 120
+          }
+        }
+      ],
+      [
+        "IcBVDCzNZqVCTAd5KEcxr:2EiFMEG40PBm9_fkelqpo:marginTop:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "IcBVDCzNZqVCTAd5KEcxr",
+          "property": "marginTop",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": -100
+          }
+        }
+      ],
+      [
+        "IcBVDCzNZqVCTAd5KEcxr:2EiFMEG40PBm9_fkelqpo:overflowX:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "IcBVDCzNZqVCTAd5KEcxr",
+          "property": "overflowX",
+          "value": {
+            "type": "keyword",
+            "value": "hidden"
+          }
+        }
+      ],
+      [
+        "IcBVDCzNZqVCTAd5KEcxr:2EiFMEG40PBm9_fkelqpo:overflowY:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "IcBVDCzNZqVCTAd5KEcxr",
+          "property": "overflowY",
+          "value": {
+            "type": "keyword",
+            "value": "hidden"
+          }
+        }
+      ],
+      [
+        "qcocnRRZawgDyl5sdTR8Q:2EiFMEG40PBm9_fkelqpo:width:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "qcocnRRZawgDyl5sdTR8Q",
+          "property": "width",
+          "value": {
+            "type": "unit",
+            "unit": "%",
+            "value": 70
+          }
+        }
+      ],
+      [
+        "qcocnRRZawgDyl5sdTR8Q:2EiFMEG40PBm9_fkelqpo:marginLeft:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "qcocnRRZawgDyl5sdTR8Q",
+          "property": "marginLeft",
+          "value": {
+            "type": "keyword",
+            "value": "auto"
+          }
+        }
+      ],
+      [
+        "qcocnRRZawgDyl5sdTR8Q:2EiFMEG40PBm9_fkelqpo:marginRight:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "qcocnRRZawgDyl5sdTR8Q",
+          "property": "marginRight",
+          "value": {
+            "type": "keyword",
+            "value": "auto"
+          }
+        }
+      ],
+      [
+        "qcocnRRZawgDyl5sdTR8Q:2EiFMEG40PBm9_fkelqpo:marginTop:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "qcocnRRZawgDyl5sdTR8Q",
+          "property": "marginTop",
+          "value": {
+            "type": "unit",
+            "value": 58,
+            "unit": "px"
+          }
+        }
+      ],
+      [
+        "1uioWySjdCdlzdvNfAE6j:2EiFMEG40PBm9_fkelqpo:width:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "1uioWySjdCdlzdvNfAE6j",
+          "property": "width",
+          "value": {
+            "type": "unit",
+            "unit": "vw",
+            "value": 100
+          }
+        }
+      ],
+      [
+        "qcocnRRZawgDyl5sdTR8Q:2EiFMEG40PBm9_fkelqpo:opacity:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "qcocnRRZawgDyl5sdTR8Q",
+          "property": "opacity",
+          "value": {
+            "type": "unit",
+            "unit": "number",
+            "value": 0.08
+          },
+          "listed": true
+        }
+      ],
+      [
+        "vsNTVlfq2NtorrQtL_WR_:Uvcw_OJqyPoLioZzUbP1x:display:",
+        {
+          "breakpointId": "Uvcw_OJqyPoLioZzUbP1x",
+          "styleSourceId": "vsNTVlfq2NtorrQtL_WR_",
+          "property": "display",
+          "value": {
+            "type": "keyword",
+            "value": "none"
+          }
+        }
+      ],
+      [
+        "jHJgo0aH4WkdmyYRNqa4N:Uvcw_OJqyPoLioZzUbP1x:display:",
+        {
+          "breakpointId": "Uvcw_OJqyPoLioZzUbP1x",
+          "styleSourceId": "jHJgo0aH4WkdmyYRNqa4N",
+          "property": "display",
+          "value": {
+            "type": "keyword",
+            "value": "block"
+          }
+        }
+      ],
+      [
+        "jHJgo0aH4WkdmyYRNqa4N:2EiFMEG40PBm9_fkelqpo:display:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "jHJgo0aH4WkdmyYRNqa4N",
+          "property": "display",
+          "value": {
+            "type": "keyword",
+            "value": "none"
+          }
+        }
+      ],
+      [
+        "MLbanp7tHjW5Hke2_3cpl:2EiFMEG40PBm9_fkelqpo:width:",
+        {
+          "styleSourceId": "MLbanp7tHjW5Hke2_3cpl",
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "property": "width",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 21.5
+          }
+        }
+      ],
+      [
+        "jj_tzh9h1TWjj31QC9HX8:2EiFMEG40PBm9_fkelqpo:outlineStyle:",
+        {
+          "styleSourceId": "jj_tzh9h1TWjj31QC9HX8",
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "property": "outlineStyle",
+          "value": {
+            "type": "keyword",
+            "value": "solid"
+          }
+        }
+      ],
+      [
+        "jj_tzh9h1TWjj31QC9HX8:2EiFMEG40PBm9_fkelqpo:outlineWidth:",
+        {
+          "styleSourceId": "jj_tzh9h1TWjj31QC9HX8",
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "property": "outlineWidth",
+          "value": {
+            "type": "var",
+            "value": "reel-gap"
+          }
+        }
+      ],
+      [
+        "jj_tzh9h1TWjj31QC9HX8:2EiFMEG40PBm9_fkelqpo:outlineColor:",
+        {
+          "styleSourceId": "jj_tzh9h1TWjj31QC9HX8",
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "property": "outlineColor",
+          "value": {
+            "type": "var",
+            "value": "back-grey-1"
+          }
+        }
+      ],
+      [
+        "jj_tzh9h1TWjj31QC9HX8:Uvcw_OJqyPoLioZzUbP1x:display:",
+        {
+          "breakpointId": "Uvcw_OJqyPoLioZzUbP1x",
+          "styleSourceId": "jj_tzh9h1TWjj31QC9HX8",
+          "property": "display",
+          "value": {
+            "type": "keyword",
+            "value": "flex"
+          }
+        }
+      ],
+      [
+        "jj_tzh9h1TWjj31QC9HX8:2EiFMEG40PBm9_fkelqpo:display:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "jj_tzh9h1TWjj31QC9HX8",
+          "property": "display",
+          "value": {
+            "type": "keyword",
+            "value": "none"
+          }
+        }
       ]
     ],
     "styleSources": [
@@ -70175,6 +70462,55 @@
           "type": "local",
           "id": "4ryRjFSESg774YjtgDtlB"
         }
+      ],
+      [
+        "IcBVDCzNZqVCTAd5KEcxr",
+        {
+          "type": "local",
+          "id": "IcBVDCzNZqVCTAd5KEcxr"
+        }
+      ],
+      [
+        "vsNTVlfq2NtorrQtL_WR_",
+        {
+          "type": "local",
+          "id": "vsNTVlfq2NtorrQtL_WR_"
+        }
+      ],
+      [
+        "qcocnRRZawgDyl5sdTR8Q",
+        {
+          "type": "local",
+          "id": "qcocnRRZawgDyl5sdTR8Q"
+        }
+      ],
+      [
+        "uOL8X1RIXeE59Tfg2T_3F",
+        {
+          "type": "local",
+          "id": "uOL8X1RIXeE59Tfg2T_3F"
+        }
+      ],
+      [
+        "jHJgo0aH4WkdmyYRNqa4N",
+        {
+          "type": "local",
+          "id": "jHJgo0aH4WkdmyYRNqa4N"
+        }
+      ],
+      [
+        "jj_tzh9h1TWjj31QC9HX8",
+        {
+          "type": "local",
+          "id": "jj_tzh9h1TWjj31QC9HX8"
+        }
+      ],
+      [
+        "MLbanp7tHjW5Hke2_3cpl",
+        {
+          "type": "local",
+          "id": "MLbanp7tHjW5Hke2_3cpl"
+        }
       ]
     ],
     "styleSourceSelections": [
@@ -70869,7 +71205,8 @@
         {
           "instanceId": "JBZ-T87Rf94z5HyElPMVc",
           "values": [
-            "YHEKQaLJLaWwJk2nF5qYo"
+            "YHEKQaLJLaWwJk2nF5qYo",
+            "vsNTVlfq2NtorrQtL_WR_"
           ]
         }
       ],
@@ -78461,6 +78798,62 @@
           "instanceId": "7ZcVuj6dj6AzvJ0xfxJYC",
           "values": []
         }
+      ],
+      [
+        "3PZmK0KN-RARdo2E4PuVL",
+        {
+          "instanceId": "3PZmK0KN-RARdo2E4PuVL",
+          "values": [
+            "IcBVDCzNZqVCTAd5KEcxr"
+          ]
+        }
+      ],
+      [
+        "auBJNO7sWNGRYJAqh_ALh",
+        {
+          "instanceId": "auBJNO7sWNGRYJAqh_ALh",
+          "values": [
+            "qcocnRRZawgDyl5sdTR8Q"
+          ]
+        }
+      ],
+      [
+        "Nlkq2zPqMY7jJZTpcQ3Aj",
+        {
+          "instanceId": "Nlkq2zPqMY7jJZTpcQ3Aj",
+          "values": [
+            "uOL8X1RIXeE59Tfg2T_3F"
+          ]
+        }
+      ],
+      [
+        "BGVa01S3zW5LL61YFwmaP",
+        {
+          "instanceId": "BGVa01S3zW5LL61YFwmaP",
+          "values": [
+            "YHEKQaLJLaWwJk2nF5qYo",
+            "jHJgo0aH4WkdmyYRNqa4N"
+          ]
+        }
+      ],
+      [
+        "bx917KphOITa8dawPchjx",
+        {
+          "instanceId": "bx917KphOITa8dawPchjx",
+          "values": [
+            "SumJn3KS-U3VMJ-t7C_Ja",
+            "jj_tzh9h1TWjj31QC9HX8"
+          ]
+        }
+      ],
+      [
+        "0tM1bYYIvFcpiau0Z40mr",
+        {
+          "instanceId": "0tM1bYYIvFcpiau0Z40mr",
+          "values": [
+            "MLbanp7tHjW5Hke2_3cpl"
+          ]
+        }
       ]
     ],
     "props": [
@@ -83181,7 +83574,7 @@
           "instanceId": "Aop-EmZazWxO4vGKRxJm3",
           "name": "code",
           "type": "string",
-          "value": "<link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/flickity@2/dist/flickity.min.css\">\n  <style>\n    /* Each cell in the carousel */\n    .carousel-cell {\n      width: calc(450px * var(--img-scale));\n      margin-right: var(--gap1);\n      display: flex;\n      flex-direction: column; /* stack image + text vertically */\n      align-items: stretch;\n      opacity: 0.9;\n    }\n\n    #carousel, .flickity-viewport {\n      overflow: visible !important;\n    }\n\n    /* Image styling to handle different aspect ratios */\n    .cell-content > img {\n      display: block;\n      position: relative;\n      width: 100%;\n      height: calc(300px * var(--img-scale));\n      object-fit: cover;\n      background: #eee;   /* fallback background */\n      overflow: hidden;\n      border-radius: var(--rad2);\n      transition: margin-top 0.5s;\n      z-index: 5;\n    }\n    \n    .carousel-cell .caption {\n      position: relative;\n      text-align: center;\n      transition: margin-top 0.5s;\n      margin-top: -30px;\n      z-index: 1;\n    }\n    .is-selected .caption {\n      margin-top: 5px;\n    }\n    .is-selected img {\n      margin-top: -5px;\n    }\n    .is-selected {\n      opacity: 1;\n    }\n  </style>\n\n  <!-- Flickity JS from jsDelivr -->\n  <script src=\"https://cdn.jsdelivr.net/npm/flickity@2/dist/flickity.pkgd.min.js\">\n    \n  </script>\n  <script>\n    document.addEventListener('DOMContentLoaded', () => {\n      setTimeout(function() {\n      var elem = document.getElementById('carousel');\n      var flkty = new Flickity(elem, {\n        wrapAround: true,\n        autoPlay: 3000,              // 3s between slides\n        pauseAutoPlayOnHover: true,  // stop when hovered\n        freeScroll: false,\n        prevNextButtons: true,\n        pageDots: false,\n        draggable: true,\n        selectedAttraction: 0.01,\nfriction: 0.15\n      });\n      }, 500)});\n  </script>"
+          "value": "<link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/flickity@2/dist/flickity.min.css\">\n  <style>\n    /* Each cell in the carousel */\n    .carousel-cell {\n      width: calc(450px * var(--img-scale));\n      margin-right: var(--gap1);\n      display: flex;\n      flex-direction: column; /* stack image + text vertically */\n      align-items: stretch;\n      opacity: 0.9;\n    }\n\n    .flickity-viewport {\n      overflow: visible !important;\n    } #carousel {\n      overflow-x: hidden !important;\n      overflow-y: visible !important;\n    }\n\n    /* Image styling to handle different aspect ratios */\n    .cell-content > img {\n      display: block;\n      position: relative;\n      width: 100%;\n      height: calc(300px * var(--img-scale));\n      object-fit: cover;\n      background: #eee;   /* fallback background */\n      overflow: hidden;\n      border-radius: var(--rad2);\n      transition: margin-top 0.5s;\n      z-index: 5;\n    }\n    \n    .carousel-cell .caption {\n      position: relative;\n      text-align: center;\n      transition: margin-top 0.5s;\n      margin-top: -30px;\n      z-index: 1;\n    }\n    .is-selected .caption {\n      margin-top: 5px;\n    }\n    .is-selected img {\n      margin-top: -5px;\n    }\n    .is-selected {\n      opacity: 1;\n    }\n  </style>\n\n  <!-- Flickity JS from jsDelivr -->\n  <script src=\"https://cdn.jsdelivr.net/npm/flickity@2/dist/flickity.pkgd.min.js\">\n    \n  </script>\n  <script>\n    document.addEventListener('DOMContentLoaded', () => {\n      setTimeout(function() {\n      var elem = document.getElementById('carousel');\n      var flkty = new Flickity(elem, {\n        wrapAround: true,\n        autoPlay: 3000,              // 3s between slides\n        pauseAutoPlayOnHover: true,  // stop when hovered\n        freeScroll: false,\n        prevNextButtons: true,\n        pageDots: false,\n        draggable: true,\n        selectedAttraction: 0.01,\nfriction: 0.15\n      });\n      }, 500)});\n  </script>"
         }
       ],
       [
@@ -83632,16 +84025,6 @@
           "name": "optimize",
           "type": "boolean",
           "value": false
-        }
-      ],
-      [
-        "6f2ZRj8Xn-nF2jCyrf6MO",
-        {
-          "id": "6f2ZRj8Xn-nF2jCyrf6MO",
-          "instanceId": "lYUiMaH6SA7SN9LOobH1O",
-          "name": "className",
-          "type": "string",
-          "value": "carr"
         }
       ],
       [
@@ -86113,6 +86496,136 @@
           "type": "string",
           "value": "lazy"
         }
+      ],
+      [
+        "YuZA3JQ4OEmFZkLlASCOU",
+        {
+          "id": "YuZA3JQ4OEmFZkLlASCOU",
+          "instanceId": "auBJNO7sWNGRYJAqh_ALh",
+          "name": "src",
+          "type": "asset",
+          "value": "638a5bebec2bf9212493d1a909b45fe0a7324e3abdf9c118b466bc0643ea21b1"
+        }
+      ],
+      [
+        "tr2cSP7S4tnFBU22_ZGVx",
+        {
+          "id": "tr2cSP7S4tnFBU22_ZGVx",
+          "instanceId": "auBJNO7sWNGRYJAqh_ALh",
+          "name": "width",
+          "type": "asset",
+          "value": "638a5bebec2bf9212493d1a909b45fe0a7324e3abdf9c118b466bc0643ea21b1"
+        }
+      ],
+      [
+        "FukrZxNjASQBEfNAMCOcf",
+        {
+          "id": "FukrZxNjASQBEfNAMCOcf",
+          "instanceId": "auBJNO7sWNGRYJAqh_ALh",
+          "name": "height",
+          "type": "asset",
+          "value": "638a5bebec2bf9212493d1a909b45fe0a7324e3abdf9c118b466bc0643ea21b1"
+        }
+      ],
+      [
+        "6nWXN8eDx3wsFoVqtDc5U",
+        {
+          "id": "6nWXN8eDx3wsFoVqtDc5U",
+          "instanceId": "auBJNO7sWNGRYJAqh_ALh",
+          "name": "alt",
+          "type": "asset",
+          "value": "638a5bebec2bf9212493d1a909b45fe0a7324e3abdf9c118b466bc0643ea21b1"
+        }
+      ],
+      [
+        "2_xqtEJjvq9KppWin7lH9",
+        {
+          "id": "2_xqtEJjvq9KppWin7lH9",
+          "instanceId": "auBJNO7sWNGRYJAqh_ALh",
+          "name": "id",
+          "type": "string",
+          "value": "mail-hover-letter"
+        }
+      ],
+      [
+        "hPR7K6pP78PvPMoPRkWNi",
+        {
+          "id": "hPR7K6pP78PvPMoPRkWNi",
+          "instanceId": "NLY926FplGzvzUwxcTiHy",
+          "name": "code",
+          "type": "string",
+          "value": "<style>\n  #mail-hover-letter {\n    transition: translate 0.4s, rotate 0.4s, scale 0.4s, opacity 0.4s;\n  }\n  a:hover #mail-hover-letter{\n    translate: 0 -52px;\n    rotate: 6deg;\n    scale: 1.2;\n    opacity: 0.15;\n  }\n</style>"
+        }
+      ],
+      [
+        "ldHTnQC6OHngRKS5fWUcU",
+        {
+          "id": "ldHTnQC6OHngRKS5fWUcU",
+          "instanceId": "NLY926FplGzvzUwxcTiHy",
+          "name": "executeScriptOnCanvas",
+          "type": "boolean",
+          "value": true
+        }
+      ],
+      [
+        "EPt3chZEVJB3OBDFlBlSI",
+        {
+          "id": "EPt3chZEVJB3OBDFlBlSI",
+          "instanceId": "auBJNO7sWNGRYJAqh_ALh",
+          "name": "data-ws-show",
+          "type": "boolean",
+          "value": true
+        }
+      ],
+      [
+        "NenxFAoRPieK3FL2Pmug6",
+        {
+          "id": "NenxFAoRPieK3FL2Pmug6",
+          "instanceId": "0tM1bYYIvFcpiau0Z40mr",
+          "name": "src",
+          "type": "asset",
+          "value": "0ca684ccd93da9649d2dc7636a88ab4ad82d853a6d9e23cfebefc7e9298fb560"
+        }
+      ],
+      [
+        "unovuMqqfDX2C-ZeCNR6M",
+        {
+          "id": "unovuMqqfDX2C-ZeCNR6M",
+          "instanceId": "0tM1bYYIvFcpiau0Z40mr",
+          "name": "width",
+          "type": "asset",
+          "value": "0ca684ccd93da9649d2dc7636a88ab4ad82d853a6d9e23cfebefc7e9298fb560"
+        }
+      ],
+      [
+        "09AKMciOd4stANvnTm7sJ",
+        {
+          "id": "09AKMciOd4stANvnTm7sJ",
+          "instanceId": "0tM1bYYIvFcpiau0Z40mr",
+          "name": "height",
+          "type": "asset",
+          "value": "0ca684ccd93da9649d2dc7636a88ab4ad82d853a6d9e23cfebefc7e9298fb560"
+        }
+      ],
+      [
+        "Q5suAPYNhL4I-CydI6nqO",
+        {
+          "id": "Q5suAPYNhL4I-CydI6nqO",
+          "instanceId": "bx917KphOITa8dawPchjx",
+          "name": "href",
+          "type": "string",
+          "value": "https://www.facebook.com/people/GE-Union/61573069635006/?_rdr"
+        }
+      ],
+      [
+        "ljIm1c2RgRTHtZHp985YV",
+        {
+          "id": "ljIm1c2RgRTHtZHp985YV",
+          "instanceId": "bx917KphOITa8dawPchjx",
+          "name": "target",
+          "type": "string",
+          "value": "_blank"
+        }
       ]
     ],
     "dataSources": [],
@@ -86849,6 +87362,10 @@
             {
               "type": "id",
               "value": "y-mckz0VK1cVKxEu90C0_"
+            },
+            {
+              "type": "id",
+              "value": "bx917KphOITa8dawPchjx"
             }
           ]
         }
@@ -86867,6 +87384,10 @@
             {
               "type": "id",
               "value": "JBZ-T87Rf94z5HyElPMVc"
+            },
+            {
+              "type": "id",
+              "value": "BGVa01S3zW5LL61YFwmaP"
             }
           ]
         }
@@ -87029,7 +87550,7 @@
           "children": [
             {
               "type": "text",
-              "value": "Built with Webstudio"
+              "value": ".Built with Webstudio"
             }
           ]
         }
@@ -87641,15 +88162,11 @@
           "children": [
             {
               "type": "text",
-              "value": "You can reach us at "
+              "value": "You can reach us with any questions at "
             },
             {
               "type": "id",
               "value": "d1Z01oxREXvzrczoJ_CrY"
-            },
-            {
-              "type": "text",
-              "value": " for any questions you have!"
             }
           ]
         }
@@ -92686,7 +93203,11 @@
           "children": [
             {
               "type": "id",
-              "value": "pnfdOfg7IvHXjac6q7Agg"
+              "value": "3PZmK0KN-RARdo2E4PuVL"
+            },
+            {
+              "type": "id",
+              "value": "09znATqI0rb2IdLKdBi-I"
             }
           ]
         }
@@ -105454,6 +105975,116 @@
           "component": "Image",
           "children": []
         }
+      ],
+      [
+        "09znATqI0rb2IdLKdBi-I",
+        {
+          "type": "instance",
+          "id": "09znATqI0rb2IdLKdBi-I",
+          "component": "ws:element",
+          "tag": "span",
+          "children": [
+            {
+              "type": "id",
+              "value": "pnfdOfg7IvHXjac6q7Agg"
+            }
+          ]
+        }
+      ],
+      [
+        "3PZmK0KN-RARdo2E4PuVL",
+        {
+          "type": "instance",
+          "id": "3PZmK0KN-RARdo2E4PuVL",
+          "component": "ws:element",
+          "tag": "div",
+          "children": [
+            {
+              "type": "id",
+              "value": "auBJNO7sWNGRYJAqh_ALh"
+            },
+            {
+              "type": "id",
+              "value": "NLY926FplGzvzUwxcTiHy"
+            }
+          ]
+        }
+      ],
+      [
+        "auBJNO7sWNGRYJAqh_ALh",
+        {
+          "type": "instance",
+          "id": "auBJNO7sWNGRYJAqh_ALh",
+          "component": "Image",
+          "label": "Mail Hover Letter",
+          "children": []
+        }
+      ],
+      [
+        "NLY926FplGzvzUwxcTiHy",
+        {
+          "type": "instance",
+          "id": "NLY926FplGzvzUwxcTiHy",
+          "component": "HtmlEmbed",
+          "label": "Mail Hover Letter CSS",
+          "children": []
+        }
+      ],
+      [
+        "BGVa01S3zW5LL61YFwmaP",
+        {
+          "type": "instance",
+          "id": "BGVa01S3zW5LL61YFwmaP",
+          "component": "ws:element",
+          "tag": "p",
+          "children": [
+            {
+              "type": "text",
+              "value": "Send us an email with any questions or suggestions you have, or drop us a message on Instagram."
+            }
+          ]
+        }
+      ],
+      [
+        "bx917KphOITa8dawPchjx",
+        {
+          "type": "instance",
+          "id": "bx917KphOITa8dawPchjx",
+          "component": "Link",
+          "children": [
+            {
+              "type": "id",
+              "value": "bxhmuGw-JIvZNFUvmp-UA"
+            },
+            {
+              "type": "id",
+              "value": "0tM1bYYIvFcpiau0Z40mr"
+            }
+          ]
+        }
+      ],
+      [
+        "bxhmuGw-JIvZNFUvmp-UA",
+        {
+          "type": "instance",
+          "id": "bxhmuGw-JIvZNFUvmp-UA",
+          "component": "Text",
+          "children": [
+            {
+              "type": "text",
+              "value": "Send Email"
+            }
+          ]
+        }
+      ],
+      [
+        "0tM1bYYIvFcpiau0Z40mr",
+        {
+          "type": "instance",
+          "id": "0tM1bYYIvFcpiau0Z40mr",
+          "component": "Image",
+          "children": []
+        }
       ]
     ],
     "deployment": {
@@ -105747,6 +106378,20 @@
       "meta": {
         "width": 100,
         "height": 100
+      }
+    },
+    {
+      "id": "638a5bebec2bf9212493d1a909b45fe0a7324e3abdf9c118b466bc0643ea21b1",
+      "name": "envelope-letter-1_54WdrB-vdhWtpZNklaRdT.svg",
+      "projectId": "94456f8c-a847-426a-aec8-16de390bd3eb",
+      "filename": "envelope-letter",
+      "size": 1390,
+      "type": "image",
+      "format": "svg",
+      "createdAt": "2025-08-28T21:13:26.662+00:00",
+      "meta": {
+        "width": 512,
+        "height": 512
       }
     },
     {
