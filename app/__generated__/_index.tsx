@@ -11,7 +11,7 @@ import { Tooltip as Tooltip, TooltipTrigger as TooltipTrigger, TooltipContent as
 
       export const projectId = "94456f8c-a847-426a-aec8-16de390bd3eb";
 
-      export const lastPublished = "2025-08-27T22:06:25.247Z";
+      export const lastPublished = "2025-08-28T00:39:27.669Z";
 
       export const siteName = "GE Union";
 
@@ -73,11 +73,6 @@ className={`w-element cycv0tm`}>
 href={"/calendar"}
 className={`w-link c4qqqhz c1l00ka2 c8l261o c1ozmz5d c1ho4waj c1k74xht c1122adb ch9rsc5 c10pf28n c1w0lkxn c1et34yr c1tj415q`}>
 {"Calendar"}
-</Link>
-<Link
-href={"/introduction"}
-className={`w-link c4qqqhz c1l00ka2 c8l261o c1ozmz5d c1ho4waj c1k74xht c1122adb ch9rsc5 c10pf28n c1w0lkxn c1et34yr c1tj415q`}>
-{"Dashboard"}
 </Link>
 <Tooltip
 delayDuration={0}>
@@ -187,11 +182,11 @@ className={`w-html-embed`} />
 <Box
 className={`w-box cprdnmx ck11ylk c19haj7v ci03eyw cu8ogtt c1bti4b5 cgiudld c1xj8ubg cpr5h0z c16m1c5v c2i8l03`}>
 <h1
-className={`w-element cyoo8jj`}>
+className={`w-element cyoo8jj c1k74xht`}>
 {"GE Union"}
 </h1>
 <Text
-className={`w-text cg3nt0s c74dsfz czgmbqe cyoo8jj c1wwlxnr cje5w08 cimns5a c1bck0pu c16hxlzn c1c73s0v c7u4ssh`}>
+className={`w-text cg3nt0s c74dsfz czgmbqe cyoo8jj c1wwlxnr cje5w08 c1k74xht cimns5a c1bck0pu c16hxlzn c1c73s0v c7u4ssh`}>
 {"Your "}
 <b
 className={`w-element`}>
@@ -356,14 +351,11 @@ height={24}
 className={`w-image c1nfcmlw`} />
 </Link>
 </Box>
-<Box
-className={`w-box c1duohc3 c19f83kh`}>
 <HtmlEmbed
 code={"<div class=\"carousel-cell\"><img src=\"https://github.com/GE-Union/WebsiteContent/blob/main/images/home-carousel/1.jpg?raw=true\" alt=\"\"></div>\n<div class=\"carousel-cell\"><img src=\"https://github.com/GE-Union/WebsiteContent/blob/main/images/home-carousel/2.jpg?raw=true\" alt=\"\"></div>\n<div class=\"carousel-cell\"><img src=\"https://github.com/GE-Union/WebsiteContent/blob/main/images/home-carousel/3.jpg?raw=true\" alt=\"\"></div>\n<div class=\"carousel-cell\"><img src=\"https://github.com/GE-Union/WebsiteContent/blob/main/images/home-carousel/4.jpg?raw=true\" alt=\"\"></div>\n<div class=\"carousel-cell\"><img src=\"https://github.com/GE-Union/WebsiteContent/blob/main/images/home-carousel/5.jpg?raw=true\" alt=\"\"></div>\n<div class=\"carousel-cell\"><img src=\"https://github.com/GE-Union/WebsiteContent/blob/main/images/home-carousel/6.jpg?raw=true\" alt=\"\"></div>"}
 executeScriptOnCanvas={true}
 id={"carousel"}
-className={`w-html-embed c6f08mx cgmpm3f cn4tmju c14xcs5y`} />
-</Box>
+className={`w-html-embed c6f08mx cgmpm3f csljhnv cm1ds2c c1fxgukz c19f83kh c1duohc3 c1w0yra6 cpq2gwm cn4tmju c14xcs5y`} />
 <Box
 className={`w-box c3q79or cqlg791 ctg5cc4 cd3toq c17nm8vt c1xymrvd c8yo8yx c1n9f9m4 ci03eyw cu8ogtt ccjedbp c1z0fjz8 c9py6bs czpkcbu cz85z79 cl4abvr cnkevhm c8nmv6p cwqnf9o c1v4vkm5 c3zzp20 ckpfi68 cy3m4bk c16o2wqc cwwztsj`}>
 <Box

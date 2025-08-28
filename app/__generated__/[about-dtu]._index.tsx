@@ -11,7 +11,7 @@ import { Tooltip as Tooltip, TooltipTrigger as TooltipTrigger, TooltipContent as
 
       export const projectId = "94456f8c-a847-426a-aec8-16de390bd3eb";
 
-      export const lastPublished = "2025-08-27T22:06:25.247Z";
+      export const lastPublished = "2025-08-28T00:39:27.669Z";
 
       export const siteName = "GE Union";
 
@@ -69,11 +69,6 @@ className={`w-element cycv0tm`}>
 href={"/calendar"}
 className={`w-link c4qqqhz c1l00ka2 c8l261o c1ozmz5d c1ho4waj c1k74xht c1122adb ch9rsc5 c10pf28n c1w0lkxn c1et34yr c1tj415q`}>
 {"Calendar"}
-</Link_1>
-<Link_1
-href={"/introduction"}
-className={`w-link c4qqqhz c1l00ka2 c8l261o c1ozmz5d c1ho4waj c1k74xht c1122adb ch9rsc5 c10pf28n c1w0lkxn c1et34yr c1tj415q`}>
-{"Dashboard"}
 </Link_1>
 <Tooltip
 delayDuration={0}>
@@ -187,8 +182,8 @@ className={`w-element cyoo8jj cnurt1a c1wzvl6u`}>
 {"about DTU"}
 </h1>
 <Text
-className={`w-text cg3nt0s c74dsfz czgmbqe cyoo8jj c1wwlxnr cje5w08 c1bck0pu c16hxlzn c1c73s0v c7u4ssh`}>
-{"**Everything you need to know while you’re here"}
+className={`w-text cg3nt0s c74dsfz czgmbqe cyoo8jj c1wwlxnr cje5w08 c1k74xht c1bck0pu c16hxlzn c1c73s0v c7u4ssh`}>
+{"What to know about the school itself"}
 </Text>
 </Box>
 </Box>
@@ -217,10 +212,6 @@ className={`w-element`}>
 </span>
 </span>
 </p>
-<span
-className={`w-element c1glt4ei c1ibpzl9 c1m4ybgm cf22hiw c1br4k3t ct6c38y`}>
-{"- GE9 student 2025"}
-</span>
 </div>
 <div
 className={`w-element ccxbyd9 ctslah9 cj7bt5u c4qqqhz c1p34zf0 c1dsvsvh`}>
@@ -230,13 +221,13 @@ width={800}
 height={800}
 className={`w-image cbb1cch ct260lj c4gyptv c1p1mrll cvuh4zx czyi9o9 crgfw76 c1mwgji1 c1yp8zjv`} />
 <h2
-className={`w-element`}>
+className={`w-element c10jlucd`}>
 {"What the hell is PF?"}
 </h2>
 <div
-className={`w-element ci03eyw catlkx8 c1v4vkm5 c1prl6qi c15b9v9z c11mvqgx cfml0nf`}>
+className={`w-element ci03eyw catlkx8 c1v4vkm5 c5ysdna c10qj6hj cloqs28 c1euhnlj cuekr74 cmho28s`}>
 <p
-className={`w-element catlkx8`}>
+className={`w-element catlkx8 ceiem4c`}>
 <Link
 href={"https://www.pf.dk/en"}
 className={`w-element cz03vb2 cz0xufp c9st17j c11jzf7t c1335tz cqiqnof c1t9afk7`}>
@@ -247,7 +238,7 @@ className={`w-element`}>
 {" is basically the mother of all DTU student organisations. As a general rule, If an organisation is student-led, it's surely somehow a part of PF (except for "}
 </span>
 <Link
-href={"https://www.pf.dk/en"}
+href={"https://nul-kryds.dk/"}
 className={`w-element cz03vb2 cz0xufp c9st17j c11jzf7t c1335tz cqiqnof c1t9afk7`}>
 {"Nul-Kryds"}
 </Link>
@@ -257,13 +248,13 @@ className={`w-element`}>
 </span>
 </p>
 <div
-className={`w-element c1dohq8s cc96m4b ci03eyw cq67jvo c1bti4b5 c18d5cyi c1qkexhc cycv0tm`}>
+className={`w-element c1dohq8s cywyj2c ci03eyw cq67jvo c1bti4b5 c18d5cyi c1qkexhc c1yjp7xb c1s4e4no`}>
 <Image
 src={"/assets/pf_v1LIcbFFW8g4G_d6CCya4.png"}
 width={512}
 height={512}
 alt={""}
-className={`w-image c1yssf23 c58kvwj c7898it c8ao5vx c1e930on`} />
+className={`w-image c1yssf23 c58kvwj c7898it c8ao5vx c615b72 cbv71vy cql385l c5i7s9p cpdl5o6 c1yvsbq5 cbajk5q c7dfb6a cqy2tuz`} />
 </div>
 </div>
 <div
@@ -274,49 +265,43 @@ className={`w-element`}>
 </h3>
 <p
 className={`w-element`}>
-{"You might have already been to S-Huset (student house) for a beer or maybe for a sandwich at the café; if you have, you can thank PF for that. Unlike the 4 DTU-sponsored \"Friday Bars\" (Hegnet, Diamenten, Ether, Diagonalen) that are open from 14 to 21 on Fridays, S-Huset is independent and stays open till 1 on weekdays and 3 am on Fridays. "}
+{"You might have already been to S-Huset (student house) for a beer or maybe for a sandwich at the café; if you have, you can thank PF for that. Unlike the 4 DTU-sponsored \"Friday Bars\" (Hegnet, Diamenten, Ether, Diagonalen) that are open from 14 to 21 on Fridays, S-Huset is independent and stays open till 1 on weekdays and 3 am on Fridays. It's a great bar that you can chill at from lunch time to late evening, playing pool, foosball, or ping pong with cheap beer! "}
 </p>
 </div>
 </div>
 <div
-className={`w-element ccxbyd9 ctslah9 cj7bt5u c4qqqhz c1p34zf0 c1dsvsvh`}>
-<Image
-src={"/assets/denmark-denmark-svgrepo-com_2tKbgjDykJqfBmTwPfbFA.svg"}
-width={800}
-height={800}
-className={`w-image cbb1cch ct260lj c4gyptv c1p1mrll cvuh4zx czyi9o9 crgfw76 c1mwgji1 c1yp8zjv`} />
+className={`w-element ccxbyd9 ctslah9 cj7bt5u c4qqqhz c1p34zf0 c1duohc3`}>
 <h2
 className={`w-element`}>
 {"What the hell is IDA?"}
 </h2>
 <div
-className={`w-element ci03eyw catlkx8 c1v4vkm5 c1prl6qi c15b9v9z c11mvqgx cfml0nf`}>
-<p
-className={`w-element catlkx8`}>
-{"**Dolor reprehenderit fugiat aliqua et dolor excepteur est culpa qui dolore ut eiusmod Lorem esse eu. Dolore aliquip amet anim commodo commodo elit. Deserunt aliqua excepteur exercitation veniam amet ut occaecat amet id commodo do culpa cillum pariatur sunt. Reprehenderit consectetur ex velit incididunt."}
-</p>
-<div
-className={`w-element c1dohq8s cc96m4b ci03eyw cq67jvo c1bti4b5 c18d5cyi c1qkexhc cycv0tm`}>
-<Image
-src={"/assets/denmark-denmark-svgrepo-com_2tKbgjDykJqfBmTwPfbFA.svg"}
-width={800}
-height={800}
-className={`w-image c1yssf23 c58kvwj c7898it c8ao5vx c1e930on`} />
-</div>
-</div>
+className={`w-element ci03eyw catlkx8 c1v4vkm5 c1sqf2ek c10pyque c1bbxo3g c1pnodu0`}>
 <p
 className={`w-element`}>
-{""}
-<br />
-{""}
-{"**Nulla sunt dolor cillum sit ipsum voluptate exercitation nisi consequat veniam esse est nostrud sunt duis. Culpa laborum aliqua veniam ut ullamco sint proident ad eu deserunt culpa exercitation enim nostrud. Nisi laborum velit ad laborum ullamco tempor nulla eiusmod. Qui est pariatur quis."}
-{""}
-<br />
-{""}
-{""}
-<br />
-{""}
-{"Link to DTU's page cause its actually pretty good."}
+<span
+className={`w-element`}>
+{"Simply put, IDA is a gift from god for DTU students; they're a trade union, but they also offer free home insurance for STEM students in Denmark. They are the people to talk to for everything regarding grown-up stuff, such as CV & career help, contracts & legal documents, salary negotiation, and they also organise plenty of events, both professional and just fun. You can check out their website here: "}
+</span>
+<Link
+href={"https://english.ida.dk/"}
+className={`w-element cz03vb2 c10tpvj3`}>
+{"IDA english website"}
+</Link>
+</p>
+<div
+className={`w-element c1dohq8s cc96m4b ci03eyw cfx1lak c1bti4b5 c18d5cyi c5xw8br c9m7qox cycv0tm`}>
+<Image
+src={"/assets/ida_vxJXM3ZQMHYnDy0d1GadA.png"}
+width={190}
+height={78}
+alt={""}
+className={`w-image c2oalyv c58kvwj c7898it c8ao5vx ce9edmz c2qrd9k cghtjis`} />
+</div>
+</div>
+<p
+className={`w-element c14xzzjo`}>
+{"Most importantly, make sure to apply for their free home insurance; it's free and covers so much. After signing up (for free), you could spill coffee on your laptop, and they'll pay for it. As I said, a gift from god."}
 </p>
 </div>
 </Body>

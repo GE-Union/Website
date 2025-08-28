@@ -11,7 +11,7 @@ import { Tooltip as Tooltip, TooltipTrigger as TooltipTrigger, TooltipContent as
 
       export const projectId = "94456f8c-a847-426a-aec8-16de390bd3eb";
 
-      export const lastPublished = "2025-08-27T22:06:25.247Z";
+      export const lastPublished = "2025-08-28T00:39:27.669Z";
 
       export const siteName = "GE Union";
 
@@ -69,11 +69,6 @@ className={`w-element cycv0tm`}>
 href={"/calendar"}
 className={`w-link c4qqqhz c1l00ka2 c8l261o c1ozmz5d c1ho4waj c1k74xht c1122adb ch9rsc5 c10pf28n c1w0lkxn c1et34yr c1tj415q`}>
 {"Calendar"}
-</Link_1>
-<Link_1
-href={"/introduction"}
-className={`w-link c4qqqhz c1l00ka2 c8l261o c1ozmz5d c1ho4waj c1k74xht c1122adb ch9rsc5 c10pf28n c1w0lkxn c1et34yr c1tj415q`}>
-{"Dashboard"}
 </Link_1>
 <Tooltip
 delayDuration={0}>
@@ -187,7 +182,7 @@ className={`w-element cyoo8jj cnurt1a c1wzvl6u`}>
 {"about GE Union"}
 </h1>
 <Text
-className={`w-text cg3nt0s c74dsfz czgmbqe cyoo8jj c1wwlxnr cje5w08 c1bck0pu c16hxlzn c1c73s0v c7u4ssh`}>
+className={`w-text cg3nt0s c74dsfz czgmbqe cyoo8jj c1wwlxnr cje5w08 c1k74xht c1bck0pu c16hxlzn c1c73s0v c7u4ssh`}>
 {"Who are we and why are we here?"}
 </Text>
 </Box>
@@ -303,7 +298,7 @@ className={`w-element`}>
 </div>
 </div>
 <div
-className={`w-element cwdskt4 cyoo8jj cxa4mkp cy2vnym c1duohc3`}>
+className={`w-element cwdskt4 cyoo8jj cxa4mkp cy2vnym c4jdyrv`}>
 <h2
 className={`w-element`}>
 {"Want to Join?"}

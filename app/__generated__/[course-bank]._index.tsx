@@ -11,7 +11,7 @@ import { Tabs as Tabs, TabsList as TabsList, TabsTrigger as TabsTrigger, TabsCon
 
       export const projectId = "94456f8c-a847-426a-aec8-16de390bd3eb";
 
-      export const lastPublished = "2025-08-27T22:06:25.247Z";
+      export const lastPublished = "2025-08-28T00:39:27.669Z";
 
       export const siteName = "GE Union";
 
@@ -76,11 +76,6 @@ className={`w-element cycv0tm`}>
 href={"/calendar"}
 className={`w-link c4qqqhz c1l00ka2 c8l261o c1ozmz5d c1ho4waj c1k74xht c1122adb ch9rsc5 c10pf28n c1w0lkxn c1et34yr c1tj415q`}>
 {"Calendar"}
-</Link>
-<Link
-href={"/introduction"}
-className={`w-link c4qqqhz c1l00ka2 c8l261o c1ozmz5d c1ho4waj c1k74xht c1122adb ch9rsc5 c10pf28n c1w0lkxn c1et34yr c1tj415q`}>
-{"Dashboard"}
 </Link>
 <Tooltip
 delayDuration={0}>
@@ -194,7 +189,7 @@ className={`w-element cyoo8jj cnurt1a c1wzvl6u`}>
 {"Course bank"}
 </h1>
 <Text
-className={`w-text cg3nt0s c74dsfz czgmbqe cyoo8jj c1wwlxnr cje5w08 c1bck0pu c16hxlzn c1c73s0v c7u4ssh`}>
+className={`w-text cg3nt0s c74dsfz czgmbqe cyoo8jj c1wwlxnr cje5w08 c1k74xht c1bck0pu c16hxlzn c1c73s0v c7u4ssh`}>
 {"Your GE hub for course info and notes."}
 </Text>
 </Box>
@@ -2267,6 +2262,7 @@ className={`w-element ca2fle4 cc02v1c c5fuofq cuz3b7n`}>
 </h4>
 <Link
 href={"https://www.studocu.com/da/institution/danmarks-tekniske-universitet/2833"}
+target={"_blank"}
 className={`w-link c10pf28n c6775s7 ct2w13i c1kmtbg4 c341g64 c11h9c5s c17hd63g cnrv5xy c1ho4waj czgmbqe c8l261o cr2ujrk ci03eyw c1pd7k79 c2gl1gx cda4yqq c767uka c1x65yvk cv1qn8j c1jon836 co5x0w6 c5sx8jk c1122adb c1bti4b5 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c143l1dc cbazxvp c1ydztro cpyan2s c15o04ri`}>
 <Text
 className={`w-text`}>
@@ -2287,6 +2283,7 @@ className={`w-element ca2fle4 cc02v1c c5fuofq cuz3b7n`}>
 </h4>
 <Link
 href={"https://docs.google.com/forms/d/e/1FAIpQLSfsAo2xfW8tSNVPVtKocAg1h23JNxV34xfJyf_n_9SxwNugzw/viewform"}
+target={"_blank"}
 className={`w-link c10pf28n c6775s7 ct2w13i c1kmtbg4 c341g64 c11h9c5s c17hd63g cnrv5xy c1ho4waj czgmbqe c8l261o cr2ujrk ci03eyw c1pd7k79 c2gl1gx cda4yqq c767uka c1x65yvk cv1qn8j c1jon836 co5x0w6 c5sx8jk c1122adb c1bti4b5 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c1bf26ov cbazxvp c1ydztro cpyan2s c15o04ri`}>
 <Text
 className={`w-text`}>

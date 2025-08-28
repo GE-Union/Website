@@ -11,7 +11,7 @@ import { Tooltip as Tooltip, TooltipTrigger as TooltipTrigger, TooltipContent as
 
       export const projectId = "94456f8c-a847-426a-aec8-16de390bd3eb";
 
-      export const lastPublished = "2025-08-27T22:06:25.247Z";
+      export const lastPublished = "2025-08-28T00:39:27.669Z";
 
       export const siteName = "GE Union";
 
@@ -37,7 +37,7 @@ code={"<style>\n@import url('https://fonts.googleapis.com/css2?family=Rubik:wght
 executeScriptOnCanvas={true}
 className={`w-html-embed`} />
 <HtmlEmbed
-code={"<script src=\"https://cdn.jsdelivr.net/npm/@fullcalendar/core@6.1.17/index.global.min.js\"></script>\n<script src=\"https://cdn.jsdelivr.net/npm/@fullcalendar/daygrid@6.1.17/index.global.min.js\"></script>\n<script src=\"https://cdn.jsdelivr.net/npm/@fullcalendar/google-calendar@6.1.17/index.global.min.js\"></script>\n\n<script>\ndocument.addEventListener('DOMContentLoaded', function() {\n  var calendarEl = document.getElementById('calendar');\n\n  var calendar = new FullCalendar.Calendar(calendarEl, {\n    headerToolbar: {\n        left: 'prev,next today',\n        center: 'title',\n        right: ''\n    },\n    dayMaxEvents: true,\n    firstDay: 1,\n    contentHeight: 'auto',\n    googleCalendarApiKey: 'AIzaSyDBDJxCyN67h-VrQ53s9vm597mrLUiZgHM',\n    events: '23c6f451e6193a878c5affc55d18b050093a87075c0325964379924db8ee027a@group.calendar.google.com',\n\n    eventClick: function(info) {\n      // Prevent default Google Calendar link\n      info.jsEvent.preventDefault();\n      \n      const event = info.event;\n      const popup = document.getElementById('event-popup');\n      const background = document.getElementById('event-popup-back');\n      \n      // Set the content\n      popup.innerHTML = `\n        <strong>${event.title}</strong><br>\n        ${event.start.toLocaleString()}<br>\n        ${event.extendedProps.description || ''}<br>\n        ${event.extendedProps.location || ''}\n      `;\n      \n      // Position and show popup\n      background.style.display = 'flex';\n\n      background.onclick = function(){\n        const myself = document.getElementById('event-popup-back');\n        myself.style.display = 'none';\n      };\n    },\n\n    eventDataTransform: function(event) {\n        event.url = \"\";\n        return event;\n    }\n    \n  });\n  calendar.render();\n});\n</script>\n\n<style>\n  .fc-button {\n    background-color: var(--back-red-1) !important;\n    border-color: var(--back-red-1) !important;\n    color: #fff !important; /* Optional: Ensures text is visible */\n  }\n  \n  .fc-button:hover {\n    background-color: var(--back-red-1) !important;\n    opacity: 0.9;\n  }\n  \n  /* Change event background colours */\n  .fc-event {\n    background-color: var(--back-red-1) !important;\n    border-color: var(--back-red-1) !important;\n    color: #fff !important;\n  }\n\n  .fc .fc-scrollgrid td {\n    border: 1px solid var(--back-grey-1);\n    border-radius: var(--rad2);\n  }\n\n  .fc .fc-scrollgrid, .fc .fc-col-header-cell, .fc .fc-scrollgrid th {\n    border: none !important;\n  }\n\n  .fc .fc-day-today {\n    background-color: var(--back-grey-2) !important;\n    border-radius: 0 !important;\n    box-shadow: 0 0 80px var(--back-grey-2);\n  }\n\n    .fc .fc-daygrid-day-frame {\n    min-height: 100px;\n  }\n  .calendar-container {\n  overflow-x: auto;\n  width: 100%;\n}\n</style>"}
+code={"<script src=\"https://cdn.jsdelivr.net/npm/@fullcalendar/core@6.1.17/index.global.min.js\"></script>\n<script src=\"https://cdn.jsdelivr.net/npm/@fullcalendar/daygrid@6.1.17/index.global.min.js\"></script>\n<script src=\"https://cdn.jsdelivr.net/npm/@fullcalendar/google-calendar@6.1.17/index.global.min.js\"></script>\n\n<script>\ndocument.addEventListener('DOMContentLoaded', function() {\n  var calendarEl = document.getElementById('calendar');\n\n  var calendar = new FullCalendar.Calendar(calendarEl, {\n    headerToolbar: {\n        left: 'prev,next today',\n        center: 'title',\n        right: ''\n    },\n    dayMaxEvents: true,\n    dayMaxEvents: 3,\n    firstDay: 1,\n    contentHeight: 'auto',\n    googleCalendarApiKey: 'AIzaSyDBDJxCyN67h-VrQ53s9vm597mrLUiZgHM',\n    events: '23c6f451e6193a878c5affc55d18b050093a87075c0325964379924db8ee027a@group.calendar.google.com',\n\n    eventContent: function(arg) {\n        // only show the event title, no time or dot\n        return {\n          html: '<div class=\"fc-event-title\" style=\"font-weight:normal;\">'\n                  + arg.event.title +\n                '</div>'\n        };\n    },\n\n    eventClick: function(info) {\n      // Prevent default Google Calendar link\n      info.jsEvent.preventDefault();\n      \n      const event = info.event;\n      const popup = document.getElementById('event-popup');\n      const background = document.getElementById('event-popup-back');\n      \n      // Set the content\n      popup.innerHTML = `\n        <strong>${event.title}</strong><br>\n        ${event.start.toLocaleString()}<br>\n        ${event.extendedProps.description || ''}<br>\n        ${event.extendedProps.location || ''}\n      `;\n      \n      // Position and show popup\n      background.style.display = 'flex';\n\n      background.onclick = function(){\n        const myself = document.getElementById('event-popup-back');\n        myself.style.display = 'none';\n      };\n    },\n\n    eventDataTransform: function(event) {\n        event.url = \"\";\n        return event;\n    }\n    \n  });\n  calendar.render();\n});\n</script>\n\n<style>\n  .fc-button {\n    background-color: var(--back-red-1) !important;\n    border-color: var(--back-red-1) !important;\n    color: #fff !important; /* Optional: Ensures text is visible */\n  }\n  \n  .fc-button:hover {\n    background-color: var(--back-red-1) !important;\n    opacity: 0.9;\n  }\n  \n  /* Change event background colours */\n  .fc-event {\n    background-color: var(--back-red-1) !important;\n    border-color: var(--back-red-1) !important;\n    color: #fff !important;\n  }\n\n  .fc .fc-scrollgrid td {\n    border: 1px solid var(--back-grey-1);\n    border-radius: var(--rad2);\n  }\n\n  .fc .fc-scrollgrid, .fc .fc-col-header-cell, .fc .fc-scrollgrid th {\n    border: none !important;\n  }\n\n  /* Highlight today */\n  .fc .fc-day-today {\n    background-color: rgb(from var(--back-red-1) r g b / 0.17) !important;\n    border-radius: 0 !important;\n    box-shadow: 0 0 80px rgb(from var(--back-red-1) r g b / 0.1);\n  }\n  .fc-day-today .fc-daygrid-day-number{\n    font-weight: 600;\n  }\n\n    .fc .fc-daygrid-day-frame {\n    min-height: 110px;\n  }\n  .calendar-container {\n  overflow-x: auto;\n  width: 100%;\n}\n\n  /* Pading for events in day */\n  .fc-daygrid-day-top{\n    margin-bottom: -7px;\n  }\n  .fc-event-title{\n    margin: -1px 0 -1px 4px;\n  }\n  .fc-daygrid-day-events{\n    margin-bottom: 2px !important;\n  }\n</style>"}
 executeScriptOnCanvas={true}
 className={`w-html-embed`} />
 <Box
@@ -73,11 +73,6 @@ className={`w-element cycv0tm`}>
 href={"/calendar"}
 className={`w-link c4qqqhz c1l00ka2 c8l261o c1wmsojl c1ho4waj c1k74xht c1122adb ch9rsc5 c10pf28n c1w0lkxn c1et34yr c1tj415q`}>
 {"Calendar"}
-</Link>
-<Link
-href={"/introduction"}
-className={`w-link c4qqqhz c1l00ka2 c8l261o c1ozmz5d c1ho4waj c1k74xht c1122adb ch9rsc5 c10pf28n c1w0lkxn c1et34yr c1tj415q`}>
-{"Dashboard"}
 </Link>
 <Tooltip
 delayDuration={0}>
@@ -191,7 +186,7 @@ className={`w-element cyoo8jj cnurt1a c1wzvl6u`}>
 {"Calendar"}
 </h1>
 <Text
-className={`w-text cg3nt0s c74dsfz czgmbqe cyoo8jj c1wwlxnr cje5w08 c1bck0pu c16hxlzn c1c73s0v c7u4ssh`}>
+className={`w-text cg3nt0s c74dsfz czgmbqe cyoo8jj c1wwlxnr cje5w08 c1k74xht c1bck0pu c16hxlzn c1c73s0v c7u4ssh`}>
 {"See calendar stuff with times and dates and stuff."}
 </Text>
 </Box>
@@ -200,7 +195,7 @@ className={`w-text cg3nt0s c74dsfz czgmbqe cyoo8jj c1wwlxnr cje5w08 c1bck0pu c16
 className={`w-element ci03eyw cu8ogtt c1v4vkm5 c3q79or cqlg791 c16e72yc cbeiaob`}>
 <div
 id={"calendar"}
-className={`w-element c1upsgln c2z8j1e`} />
+className={`w-element c4eoysd c2z8j1e`} />
 </div>
 <div
 id={"event-popup-back"}
