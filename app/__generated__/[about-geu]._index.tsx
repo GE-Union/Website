@@ -11,7 +11,7 @@ import { Tooltip as Tooltip, TooltipTrigger as TooltipTrigger, TooltipContent as
 
       export const projectId = "94456f8c-a847-426a-aec8-16de390bd3eb";
 
-      export const lastPublished = "2025-08-28T23:20:38.652Z";
+      export const lastPublished = "2025-08-29T01:13:26.805Z";
 
       export const siteName = "GE Union";
 
@@ -252,8 +252,14 @@ className={`w-element`}>
 </p>
 </div>
 </div>
+<Image
+src={"/assets/GE_Logo_-_Black_ELdGguoKnkmGIG7zpf438.svg"}
+width={498}
+height={618}
+alt={""}
+className={`w-image c1rw57mb c16e72yc c8ao5vx c1w0yra6 cpq2gwm cbeiaob c1k74xht`} />
 <div
-className={`w-element cwdskt4 cyoo8jj cxa4mkp cy2vnym`}>
+className={`w-element cyoo8jj cxa4mkp cy2vnym`}>
 <h2
 className={`w-element`}>
 {"What We Do"}
@@ -297,8 +303,14 @@ className={`w-element`}>
 </div>
 </div>
 </div>
+<Image
+src={"/assets/GE_Logo_-_Black_ELdGguoKnkmGIG7zpf438.svg"}
+width={498}
+height={618}
+alt={""}
+className={`w-image c1rw57mb c16e72yc c8ao5vx c1w0yra6 cpq2gwm cbeiaob c1k74xht`} />
 <div
-className={`w-element cwdskt4 cyoo8jj cxa4mkp cy2vnym c4jdyrv`}>
+className={`w-element cyoo8jj cxa4mkp cy2vnym c4jdyrv`}>
 <h2
 className={`w-element`}>
 {"Want to Join?"}

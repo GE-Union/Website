@@ -11,7 +11,7 @@ import { Tooltip as Tooltip, TooltipTrigger as TooltipTrigger, TooltipContent as
 
       export const projectId = "94456f8c-a847-426a-aec8-16de390bd3eb";
 
-      export const lastPublished = "2025-08-28T23:20:38.652Z";
+      export const lastPublished = "2025-08-29T01:13:26.805Z";
 
       export const siteName = "GE Union";
 
@@ -335,13 +335,14 @@ className={`w-element cy7nrqp c8l261o cdhy4s8 c5sx8jk c1wauoq4 c1w0yra6 cpq2gwm 
 </Box>
 </Box>
 </Box>
-<HtmlEmbed
-code={"<div class=\"carousel-cell\">\n  <div class=\"cell-content\">\n    <img src=\"https://github.com/GE-Union/WebsiteContent/blob/main/images/home-carousel/1.jpg?raw=true\" alt=\"\">\n    <div class=\"caption\">The GE Union team</div>\n  </div>\n</div>\n\n<div class=\"carousel-cell\">\n  <div class=\"cell-content\">\n    <img src=\"https://github.com/GE-Union/WebsiteContent/blob/main/images/home-carousel/2.jpg?raw=true\" alt=\"\">\n    <div class=\"caption\">Gift for support tutors</div>\n  </div>\n</div>\n\n<div class=\"carousel-cell\">\n  <div class=\"cell-content\">\n    <img src=\"https://github.com/GE-Union/WebsiteContent/blob/main/images/home-carousel/3.jpg?raw=true\" alt=\"\">\n    <div class=\"caption\">GEU event pizza break</div>\n  </div>\n</div>\n\n<div class=\"carousel-cell\">\n  <div class=\"cell-content\">\n    <img src=\"https://github.com/GE-Union/WebsiteContent/blob/main/images/home-carousel/4.jpg?raw=true\" alt=\"\">\n    <div class=\"caption\">Maths brush-up course</div>\n  </div>\n</div>\n\n<div class=\"carousel-cell\">\n  <div class=\"cell-content\">\n    <img src=\"https://github.com/GE-Union/WebsiteContent/blob/main/images/home-carousel/5.jpg?raw=true\" alt=\"\">\n    <div class=\"caption\">Bar staff at GE Grill</div>\n  </div>\n</div>\n\n<div class=\"carousel-cell\">\n  <div class=\"cell-content\">\n    <img src=\"https://github.com/GE-Union/WebsiteContent/blob/main/images/home-carousel/6.jpg?raw=true\" alt=\"\">\n    <div class=\"caption\">GE Grill event</div>\n  </div>\n</div>"}
-executeScriptOnCanvas={true}
-id={"carousel"}
-className={`w-html-embed c6f08mx cgmpm3f csljhnv c19f83kh c1duohc3 c1w0yra6 cpq2gwm c13w5hsy cm1ds2c c1vhywez c1122adb c197srfe cn4tmju c14xcs5y c144cj3d cux2glt c1m8g7bv`} />
 <Box
-className={`w-box ci03eyw cu8ogtt c1dxr3mf c3brmnq cqaj6f4 c16lfnyl c1v4vkm5`}>
+className={`w-box ci03eyw cu8ogtt c86dv24 c3brmnq cqaj6f4 c16lfnyl c1v4vkm5`}>
+<Image
+src={"/assets/GE_Logo_-_Black_ELdGguoKnkmGIG7zpf438.svg"}
+width={498}
+height={618}
+alt={""}
+className={`w-image c1rw57mb c6h0iwq c8ao5vx c1k74xht`} />
 <h2
 className={`w-element`}>
 {"Who We Are"}
@@ -371,6 +372,11 @@ height={24}
 className={`w-image c1nfcmlw`} />
 </Link>
 </Box>
+<HtmlEmbed
+code={"<div class=\"carousel-cell\">\n  <div class=\"cell-content\">\n    <img src=\"https://github.com/GE-Union/WebsiteContent/blob/main/images/home-carousel/1.jpg?raw=true\" alt=\"\">\n    <div class=\"caption\">The GE Union team</div>\n  </div>\n</div>\n\n<div class=\"carousel-cell\">\n  <div class=\"cell-content\">\n    <img src=\"https://github.com/GE-Union/WebsiteContent/blob/main/images/home-carousel/2.jpg?raw=true\" alt=\"\">\n    <div class=\"caption\">Gift for support tutors</div>\n  </div>\n</div>\n\n<div class=\"carousel-cell\">\n  <div class=\"cell-content\">\n    <img src=\"https://github.com/GE-Union/WebsiteContent/blob/main/images/home-carousel/3.jpg?raw=true\" alt=\"\">\n    <div class=\"caption\">GEU event pizza break</div>\n  </div>\n</div>\n\n<div class=\"carousel-cell\">\n  <div class=\"cell-content\">\n    <img src=\"https://github.com/GE-Union/WebsiteContent/blob/main/images/home-carousel/4.jpg?raw=true\" alt=\"\">\n    <div class=\"caption\">Maths brush-up course</div>\n  </div>\n</div>\n\n<div class=\"carousel-cell\">\n  <div class=\"cell-content\">\n    <img src=\"https://github.com/GE-Union/WebsiteContent/blob/main/images/home-carousel/5.jpg?raw=true\" alt=\"\">\n    <div class=\"caption\">Bar staff at GE Grill</div>\n  </div>\n</div>\n\n<div class=\"carousel-cell\">\n  <div class=\"cell-content\">\n    <img src=\"https://github.com/GE-Union/WebsiteContent/blob/main/images/home-carousel/6.jpg?raw=true\" alt=\"\">\n    <div class=\"caption\">GE Grill event</div>\n  </div>\n</div>"}
+executeScriptOnCanvas={true}
+id={"carousel"}
+className={`w-html-embed c6f08mx cgmpm3f csljhnv c19f83kh c1duohc3 c1w0yra6 cpq2gwm c13w5hsy cm1ds2c c1vhywez c1122adb c197srfe cn4tmju c14xcs5y c144cj3d cux2glt c1m8g7bv`} />
 <Box
 className={`w-box c3q79or cqlg791 cd3toq c17nm8vt c1xymrvd c8yo8yx c1n9f9m4 ci03eyw cu8ogtt ccjedbp c1z0fjz8 c9py6bs czpkcbu cz85z79 cl4abvr cnkevhm c8nmv6p cwqnf9o c1v4vkm5 c3zzp20 ckpfi68 cy3m4bk c16o2wqc cwwztsj`}>
 <Box
@@ -546,20 +552,22 @@ href={"mailto:geunion.dtu@gmail.com"}
 className={`w-element c5pdwyd c1ho4waj`}>
 <div
 className={`w-element c58kvwj csvbhp4 cbajjfw cz4wxbc cm1ds2c c1fxgukz`}>
+<div
+className={`w-element c58kvwj csvbhp4 c1dxr8ri c10dz52c czctaki c1v1s9us ce1ywqb c1hackn6 c15j8t4a c1vmh594 c19raxa1 cvcrnuz`} />
 <Image
 src={"/assets/envelope-letter-1_54WdrB-vdhWtpZNklaRdT.svg"}
 width={512}
 height={512}
 alt={""}
 id={"mail-hover-letter"}
-className={`w-image cc39ds7 c1w0yra6 cpq2gwm cje7rrh c1iwmpjl`} />
+className={`w-image cc39ds7 c1w0yra6 cpq2gwm cje7rrh c1iwmpjl cnkevhm ceiem4c`} />
 <HtmlEmbed
 code={"<style>\n  #mail-hover-letter {\n    transition: translate 0.4s, rotate 0.4s, scale 0.4s, opacity 0.4s;\n  }\n  a:hover #mail-hover-letter{\n    translate: 0 -52px;\n    rotate: 6deg;\n    scale: 1.2;\n    opacity: 0.15;\n  }\n</style>"}
 executeScriptOnCanvas={true}
 className={`w-html-embed`} />
 </div>
 <span
-className={`w-element`}>
+className={`w-element cnkevhm c15loy8m`}>
 <b
 className={`w-element`}>
 {"geunion.dtu@gmail.com"}

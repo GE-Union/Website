@@ -11,7 +11,7 @@ import { Tabs as Tabs, TabsList as TabsList, TabsTrigger as TabsTrigger, TabsCon
 
       export const projectId = "94456f8c-a847-426a-aec8-16de390bd3eb";
 
-      export const lastPublished = "2025-08-28T23:20:38.652Z";
+      export const lastPublished = "2025-08-29T01:13:26.805Z";
 
       export const siteName = "GE Union";
 
