@@ -11,7 +11,7 @@ import { Tooltip as Tooltip, TooltipTrigger as TooltipTrigger, TooltipContent as
 
       export const projectId = "94456f8c-a847-426a-aec8-16de390bd3eb";
 
-      export const lastPublished = "2025-08-29T01:13:26.805Z";
+      export const lastPublished = "2025-08-29T01:41:00.015Z";
 
       export const siteName = "GE Union";
 
@@ -251,7 +251,7 @@ className={`w-element c1t205vl c1mngz4m cvuh4zx c14e6dcj c638992 ccyo9a2 c6piima
 src={"/assets/Calendar_Icon_JBq83QCbGJiotNNmNumnQ.svg"}
 width={650}
 height={570}
-className={`w-image cnkevhm c1oqdnpz cpc2g7h c1kppqxz c1w0yra6 c1lxqyue c1bblaxa co345il c1k74xht c1lzvaoj ck7n286 c1sfn1pe c5frzz4 c1s1n1bm c13qonci`} />
+className={`w-image cnkevhm c1oqdnpz cpc2g7h c1kppqxz c1w0yra6 c1lxqyue c1bblaxa co345il c1k74xht c19dg1ud c1lzvaoj ck7n286 c1sfn1pe c5frzz4 c1s1n1bm c13qonci`} />
 </div>
 <Box
 className={`w-box ck11ylk c767uka c1dohq8s c102e7b2 cvu8o32 c1p5610w crsc1f9 c1c7zter c5xw8br cbg59jt`}>
@@ -292,7 +292,7 @@ className={`w-element c1t205vl`}>
 src={"/assets/Vault_Icon_b47VgS0N6eONtPMryR-cd.svg"}
 width={650}
 height={570}
-className={`w-image cnkevhm c1oqdnpz cpc2g7h c1kppqxz c1w0yra6 c1lxqyue c1bblaxa co345il c1k74xht ck7n286`} />
+className={`w-image cnkevhm c1oqdnpz cpc2g7h c1kppqxz c1w0yra6 c1lxqyue c1bblaxa co345il c1k74xht c19dg1ud ck7n286`} />
 </div>
 <p
 className={`w-element cy7nrqp c8l261o cdhy4s8 c5sx8jk c1wauoq4 c1w0yra6 cpq2gwm cyoo8jj cpyan2s c12tkve4 c5k3a4h crsc1f9 c1c7zter c1lot409 ccjnvj1 c1mkam2s crc7qf5`}>
@@ -324,7 +324,7 @@ className={`w-element c1t205vl`}>
 src={"/assets/About_GE_Icon_nX97REgvEFTexDZ2ZYnYa.svg"}
 width={650}
 height={570}
-className={`w-image cnkevhm c1oqdnpz cpc2g7h c1kppqxz c1w0yra6 c1lxqyue c1bblaxa co345il c1k74xht ck7n286`} />
+className={`w-image cnkevhm c1oqdnpz cpc2g7h c1kppqxz c1w0yra6 c1lxqyue c1bblaxa co345il c1k74xht c19dg1ud ck7n286`} />
 </div>
 <p
 className={`w-element cy7nrqp c8l261o cdhy4s8 c5sx8jk c1wauoq4 c1w0yra6 cpq2gwm cyoo8jj cpyan2s c12tkve4 c5k3a4h crsc1f9 c1c7zter c1lot409 ccjnvj1 c1mkam2s crc7qf5`}>
@@ -336,13 +336,13 @@ className={`w-element cy7nrqp c8l261o cdhy4s8 c5sx8jk c1wauoq4 c1w0yra6 cpq2gwm 
 </Box>
 </Box>
 <Box
-className={`w-box ci03eyw cu8ogtt c86dv24 c3brmnq cqaj6f4 c16lfnyl c1v4vkm5`}>
+className={`w-box ci03eyw cu8ogtt c1g95588 c3brmnq cqaj6f4 c16lfnyl c1v4vkm5`}>
 <Image
 src={"/assets/GE_Logo_-_Black_ELdGguoKnkmGIG7zpf438.svg"}
 width={498}
 height={618}
 alt={""}
-className={`w-image c1rw57mb c6h0iwq c8ao5vx c1k74xht`} />
+className={`w-image c1shgpg6 c16e72yc c14233kc c1w0yra6 cpq2gwm cbeiaob c1k74xht c19dg1ud`} />
 <h2
 className={`w-element`}>
 {"Who We Are"}
@@ -560,7 +560,7 @@ width={512}
 height={512}
 alt={""}
 id={"mail-hover-letter"}
-className={`w-image cc39ds7 c1w0yra6 cpq2gwm cje7rrh c1iwmpjl cnkevhm ceiem4c`} />
+className={`w-image cc39ds7 c1w0yra6 cpq2gwm cje7rrh c1iwmpjl cnkevhm ceiem4c c19dg1ud c1k74xht`} />
 <HtmlEmbed
 code={"<style>\n  #mail-hover-letter {\n    transition: translate 0.4s, rotate 0.4s, scale 0.4s, opacity 0.4s;\n  }\n  a:hover #mail-hover-letter{\n    translate: 0 -52px;\n    rotate: 6deg;\n    scale: 1.2;\n    opacity: 0.15;\n  }\n</style>"}
 executeScriptOnCanvas={true}
@@ -617,7 +617,7 @@ code={"<link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/flickity@2/d
 executeScriptOnCanvas={true}
 className={`w-html-embed cgmpm3f`} />
 <HtmlEmbed
-code={"<style>\n  /* Optional quality-of-life styles */\n  #menu-icon {\n    cursor: grab;\n    touch-action: none;   /* allow smooth touch drag */\n    will-change: transform;\n    \n    user-drag: none;\n    -webkit-user-drag: none;\n    -moz-user-drag: none;\n    user-select: none;    /* avoid text selection while dragging */\n    -moz-user-select: none;\n    -webkit-user-select: none;\n    -ms-user-select: none;\n  }\n  #menu-icon.dragging { cursor: grabbing; }\n</style>\n\n<script>\n(() => {\n  const icon = document.getElementById('menu-icon');\n  if (!icon) return;\n\n  // position is managed purely via transform so layout doesn't shift\n  let tx = 0, ty = 0;               // current translation\n  let vx = 0, vy = 0;               // current velocity (px/s)\n  let dragging = false;\n  let startX = 0, startY = 0;       // pointer-down position\n  let lastPx = 0, lastPy = 0;       // last pointer position (for velocity)\n  let lastT = 0;                    // last timestamp\n\n  // Spring params: tweak for feel\n  const STIFFNESS = 300;   // spring constant (higher = snappier)\n  const DAMPING   = 15;   // damping (lower = bouncier)\n  const EPS_POS   = 0.5;  // stop threshold (position, px)\n  const EPS_VEL   = 0.5;  // stop threshold (velocity, px/s)\n\n  const setTransform = () => {\n    icon.style.transform = `translate(${tx}px, ${ty}px)`;\n  };\n\n  const onPointerDown = (e) => {\n    dragging = true;\n    icon.classList.add('dragging');\n    icon.setPointerCapture?.(e.pointerId);\n\n    startX = e.clientX - tx;\n    startY = e.clientY - ty;\n\n    lastPx = e.clientX;\n    lastPy = e.clientY;\n    lastT  = performance.now();\n    vx = 0; vy = 0; // reset; we'll accumulate movement velocity\n  };\n\n  const onPointerMove = (e) => {\n    if (!dragging) return;\n\n    const now = performance.now();\n    const dt  = (now - lastT) / 1000;\n    tx = e.clientX - startX;\n    ty = e.clientY - startY;\n\n    // simple low-pass filtered velocity estimate for spring kick\n    if (dt > 0) {\n      const instVx = (e.clientX - lastPx) / dt;\n      const instVy = (e.clientY - lastPy) / dt;\n      vx = 0.8 * vx + 0.2 * instVx;\n      vy = 0.8 * vy + 0.2 * instVy;\n    }\n    lastPx = e.clientX;\n    lastPy = e.clientY;\n    lastT  = now;\n\n    setTransform();\n  };\n\n  const onPointerUp = (e) => {\n    if (!dragging) return;\n    dragging = false;\n    icon.classList.remove('dragging');\n    icon.releasePointerCapture?.(e.pointerId);\n    animateBack(); // start spring home\n  };\n\n  function animateBack() {\n    let prev = performance.now();\n    function step(now) {\n      const dt = Math.min((now - prev) / 1000, 0.032); // clamp dt for stability\n      prev = now;\n\n      // Hooke's law: F = -k*x - c*v (mass=1)\n      const ax = -STIFFNESS * tx - DAMPING * vx;\n      const ay = -STIFFNESS * ty - DAMPING * vy;\n\n      vx += ax * dt;\n      vy += ay * dt;\n      tx += vx * dt;\n      ty += vy * dt;\n\n      setTransform();\n\n      const nearOrigin = Math.hypot(tx, ty) < EPS_POS;\n      const slowEnough = Math.hypot(vx, vy) < EPS_VEL;\n\n      if (nearOrigin && slowEnough) {\n        // snap exactly home to avoid subpixel fuzz\n        tx = ty = vx = vy = 0;\n        setTransform();\n        return;\n      }\n      // If user grabbed again, stop the spring.\n      if (dragging) return;\n\n      requestAnimationFrame(step);\n    }\n    requestAnimationFrame(step);\n  }\n\n  // Keep it floating above other content while dragging (no layout changes)\n  icon.style.zIndex = (parseInt(getComputedStyle(icon).zIndex) || 1).toString();\n\n  // Bind events\n  icon.addEventListener('pointerdown', onPointerDown);\n  window.addEventListener('pointermove', onPointerMove, { passive: true });\n  window.addEventListener('pointerup', onPointerUp);\n  window.addEventListener('pointercancel', onPointerUp);\n})();\n</script>"}
+code={"<style>\n  /* Optional quality-of-life styles */\n  #menu-icon {\n    cursor: grab;\n    touch-action: none;   /* allow smooth touch drag */\n    will-change: transform;\n    \n    user-drag: none;\n    -webkit-user-drag: none;\n    -moz-user-drag: none;\n    user-select: none;    /* avoid text selection while dragging */\n    -moz-user-select: none;\n    -webkit-user-select: none;\n    -ms-user-select: none;\n  }\n  #menu-icon.dragging { cursor: grabbing; }\n</style>\n\n<script>\n(() => {\n  const icon = document.getElementById('menu-icon');\n  if (!icon) return;\n\n  // Stop firefox sucking\n  icon.addEventListener('dragstart', e => e.preventDefault());\n\n\n  // position is managed purely via transform so layout doesn't shift\n  let tx = 0, ty = 0;               // current translation\n  let vx = 0, vy = 0;               // current velocity (px/s)\n  let dragging = false;\n  let startX = 0, startY = 0;       // pointer-down position\n  let lastPx = 0, lastPy = 0;       // last pointer position (for velocity)\n  let lastT = 0;                    // last timestamp\n\n  // Spring params: tweak for feel\n  const STIFFNESS = 300;   // spring constant (higher = snappier)\n  const DAMPING   = 15;   // damping (lower = bouncier)\n  const EPS_POS   = 0.5;  // stop threshold (position, px)\n  const EPS_VEL   = 0.5;  // stop threshold (velocity, px/s)\n\n  const setTransform = () => {\n    icon.style.transform = `translate(${tx}px, ${ty}px)`;\n  };\n\n  const onPointerDown = (e) => {\n    dragging = true;\n    icon.classList.add('dragging');\n    icon.setPointerCapture?.(e.pointerId);\n\n    startX = e.clientX - tx;\n    startY = e.clientY - ty;\n\n    lastPx = e.clientX;\n    lastPy = e.clientY;\n    lastT  = performance.now();\n    vx = 0; vy = 0; // reset; we'll accumulate movement velocity\n  };\n\n  const onPointerMove = (e) => {\n    if (!dragging) return;\n\n    const now = performance.now();\n    const dt  = (now - lastT) / 1000;\n    tx = e.clientX - startX;\n    ty = e.clientY - startY;\n\n    // simple low-pass filtered velocity estimate for spring kick\n    if (dt > 0) {\n      const instVx = (e.clientX - lastPx) / dt;\n      const instVy = (e.clientY - lastPy) / dt;\n      vx = 0.8 * vx + 0.2 * instVx;\n      vy = 0.8 * vy + 0.2 * instVy;\n    }\n    lastPx = e.clientX;\n    lastPy = e.clientY;\n    lastT  = now;\n\n    setTransform();\n  };\n\n  const onPointerUp = (e) => {\n    if (!dragging) return;\n    dragging = false;\n    icon.classList.remove('dragging');\n    icon.releasePointerCapture?.(e.pointerId);\n    animateBack(); // start spring home\n  };\n\n  function animateBack() {\n    let prev = performance.now();\n    function step(now) {\n      const dt = Math.min((now - prev) / 1000, 0.032); // clamp dt for stability\n      prev = now;\n\n      // Hooke's law: F = -k*x - c*v (mass=1)\n      const ax = -STIFFNESS * tx - DAMPING * vx;\n      const ay = -STIFFNESS * ty - DAMPING * vy;\n\n      vx += ax * dt;\n      vy += ay * dt;\n      tx += vx * dt;\n      ty += vy * dt;\n\n      setTransform();\n\n      const nearOrigin = Math.hypot(tx, ty) < EPS_POS;\n      const slowEnough = Math.hypot(vx, vy) < EPS_VEL;\n\n      if (nearOrigin && slowEnough) {\n        // snap exactly home to avoid subpixel fuzz\n        tx = ty = vx = vy = 0;\n        setTransform();\n        return;\n      }\n      // If user grabbed again, stop the spring.\n      if (dragging) return;\n\n      requestAnimationFrame(step);\n    }\n    requestAnimationFrame(step);\n  }\n\n  // Keep it floating above other content while dragging (no layout changes)\n  icon.style.zIndex = (parseInt(getComputedStyle(icon).zIndex) || 1).toString();\n\n  // Bind events\n  icon.addEventListener('pointerdown', onPointerDown);\n  window.addEventListener('pointermove', onPointerMove, { passive: true });\n  window.addEventListener('pointerup', onPointerUp);\n  window.addEventListener('pointercancel', onPointerUp);\n})();\n</script>"}
 executeScriptOnCanvas={true}
 className={`w-html-embed`} />
 <Box

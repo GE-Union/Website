@@ -11,7 +11,7 @@ import { Tooltip as Tooltip, TooltipTrigger as TooltipTrigger, TooltipContent as
 
       export const projectId = "94456f8c-a847-426a-aec8-16de390bd3eb";
 
-      export const lastPublished = "2025-08-29T01:13:26.805Z";
+      export const lastPublished = "2025-08-29T01:41:00.015Z";
 
       export const siteName = "GE Union";
 
@@ -257,7 +257,7 @@ src={"/assets/GE_Logo_-_Black_ELdGguoKnkmGIG7zpf438.svg"}
 width={498}
 height={618}
 alt={""}
-className={`w-image c1rw57mb c16e72yc c8ao5vx c1w0yra6 cpq2gwm cbeiaob c1k74xht`} />
+className={`w-image c1shgpg6 c16e72yc c14233kc c1w0yra6 cpq2gwm cbeiaob c1k74xht c19dg1ud`} />
 <div
 className={`w-element cyoo8jj cxa4mkp cy2vnym`}>
 <h2
@@ -308,7 +308,7 @@ src={"/assets/GE_Logo_-_Black_ELdGguoKnkmGIG7zpf438.svg"}
 width={498}
 height={618}
 alt={""}
-className={`w-image c1rw57mb c16e72yc c8ao5vx c1w0yra6 cpq2gwm cbeiaob c1k74xht`} />
+className={`w-image c1shgpg6 c16e72yc c14233kc c1w0yra6 cpq2gwm cbeiaob c1k74xht c19dg1ud`} />
 <div
 className={`w-element cyoo8jj cxa4mkp cy2vnym c4jdyrv`}>
 <h2
@@ -351,7 +351,7 @@ src={"/assets/GEU_Icon_D3w8VZ53_-Z22xmyL4iB1.svg"}
 width={256}
 height={238}
 alt={""}
-className={`w-image c1l3m6tn ct616nu cmvyqw5 cc5htwv`} />
+className={`w-image c1l3m6tn ct616nu cmvyqw5 cqw0qi cc5htwv`} />
 </Link_1>
 <div
 className={`w-element ci03eyw c1is6v5c co8t7od c1nj86ny c74dsfz c1jwuvkp cezuxvu`}>
