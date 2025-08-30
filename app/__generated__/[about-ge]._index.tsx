@@ -11,7 +11,7 @@ import { Tooltip as Tooltip, TooltipTrigger as TooltipTrigger, TooltipContent as
 
       export const projectId = "94456f8c-a847-426a-aec8-16de390bd3eb";
 
-      export const lastPublished = "2025-08-29T01:41:00.015Z";
+      export const lastPublished = "2025-08-30T02:11:55.578Z";
 
       export const siteName = "GE Union";
 
@@ -31,7 +31,7 @@ import { Tooltip as Tooltip, TooltipTrigger as TooltipTrigger, TooltipContent as
 
       const Page = (_props: { system: any; }) => {
 return <Body
-className={`w-element c1lzvaoj c1qux398 ci03eyw cu8ogtt c1qpyqes`}>
+className={`w-element c1lzvaoj c1qux398 ci03eyw cu8ogtt c1qpyqes cm1ds2c`}>
 <HtmlEmbed
 code={"<style>\n@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300..900&display=swap');\n@import url('https://api.fontshare.com/v2/css?f[]=tanker@400&amp;display=swap');\n  \n  h1{\n    font-family: 'Tanker';\n    font-weight: 500;\n    font-size: 5em;\n    color: var(--background);\n    line-height: 1;\n    margin: 0;\n  }\n  h2{\n    font-weight: 600;\n    font-size: 36px;\n    line-height: 1;\n    margin: 0;\n    margin-bottom: 0.5em;\n  }\n  p{\n    margin: 0;\n  }\n  \n  .icon-background{\n    background-color: var(--back-red-1);\n    z-index: 1;\n    overflow: hidden;\n    position: relative;\n  }\n  .icon-background::before{\n    content: \"\";\n    position: absolute;\n    width: 200%; height: 200%;\n    top: -50%; left: -50%;\n    background-image: url('/assets/icon-background_RyiWP8CNKOfskpwMp_P8Y.svg?width=1080&quality=80&format=auto');\n    background-size: 200px 115.4734411085px;\n    background-repeat: repeat;\n    animation: scrollBg 20s linear infinite;\n    z-index: -1;\n    opacity: var(--icon-background-opacity, 3%); mix-blend-mode: luminosity;\n    filter: blur(2px)\n  }\n  \n  .home-top::after{\n    position: absolute;\n    content: \"\";\n    width: 100%;\n    height: 250px;\n    background: linear-gradient(180deg, hsl(from var(--back-red-1) h s l / 0.65) 15%, hsl(from var(--back-red-1) h s l / 0) 100%);\n    z-index: -1;\n  }\n\n  @keyframes scrollBg {\n      0% {\n        background-position: 0 0;\n      }\n      100% {\n        background-position: -200px 115.4734411085px;\n      }\n    }\n\n  .home-top-card:hover .home-top-card-title-icon{\n    width: 38px;\n    padding-left: 3px;\n  }\n\n  @media only screen and (max-width: 767px) {\n    h1{\n      font-size: 4em;\n    }\n    h2{\n      font-size: 32px;\n    }\n  }\n</style>"}
 executeScriptOnCanvas={true}
@@ -49,7 +49,9 @@ className={`w-box cck00sw cd3toq c17nm8vt c1xymrvd c8yo8yx ci03eyw cu8ogtt cm1ds
 className={`w-box c19h37rc ci03eyw c1nj86ny c1mz59p0 c13f4d8e c1122adb cx911xm c4qqqhz c2z8j1e c19dc97m`}>
 <Link
 href={"/"}
-className={`w-link cmvyqw5 cz7iu34 c40iywk codsd31 c16er72m c1qt5xo2 c3gx87z cqyp7hg c1moglug`}>
+target={"_self"}
+id={"menu-icon"}
+className={`w-link cmvyqw5 cz7iu34 c40iywk codsd31 c16er72m c1qt5xo2 cqyp7hg c1moglug`}>
 <Image
 src={"/assets/GE_Logo_-_Big_AQmTkCh-ue9Xfr1xXdV_k.svg"}
 width={492}
@@ -189,47 +191,100 @@ className={`w-element cyoo8jj c1k74xht cnurt1a c1wzvl6u`}>
 {"about GE"}
 </h1>
 <Text
-className={`w-text cg3nt0s c74dsfz czgmbqe cyoo8jj c1wwlxnr cje5w08 c1k74xht c1bck0pu c16hxlzn c1c73s0v c7u4ssh`}>
+className={`w-text cqawzgp c1s7gudn czgmbqe cyoo8jj c1wwlxnr cje5w08 c1k74xht c1bck0pu cnurt1a c1wzvl6u c7u4ssh`}>
 {"Everything you need to know while you’re here"}
 </Text>
 </Box>
 </Box>
 <div
-className={`w-element ccxbyd9 ctslah9 clrom7z c4qqqhz c1p34zf0 c1dsvsvh c1m3jn9j`}>
-<h2
+className={`w-element ci03eyw c1rwubzf c1log017 c1nj86ny cpq2gwm c1w0yra6 cj7bt5u c19dg1ud cbbmghh c1k74xht c9au2ch cyuvfar c1wjiq3p c19dst95 c18fbvuf c1x3epop`}>
+<Image
+src={"/assets/S-Advanced-Icon_TWuU1GxlAwBjJmF4_F-gd.png"}
+alt={""}
+loading={"lazy"}
+className={`w-image cqb6n9z c1fo9mp9 c1k3gxy3`} />
+<Image
+src={"/assets/S-Cyber-Icon_gtF6axbVfym-YHvyK1vT6.png"}
+alt={""}
+loading={"lazy"}
+className={`w-image cqb6n9z c1fo9mp9 c1k3gxy3`} />
+<Image
+src={"/assets/S-Living-Icon_GY_Y8vI69OfuA7uQA4-A2.png"}
+alt={""}
+loading={"lazy"}
+width={4167}
+height={4167}
+className={`w-image cqb6n9z c1fo9mp9 c1k3gxy3`} />
+<Image
+src={"/assets/S-Energy-Icon_mssMv-71p9Azt25Zel5LO.png"}
+alt={""}
+loading={"lazy"}
+width={4167}
+height={4167}
+className={`w-image cqb6n9z c1fo9mp9 c1k3gxy3`} />
+</div>
+<div
+className={`w-element ccxbyd9 ctslah9 cj7bt5u c4qqqhz c1p34zf0 c1dsvsvh c1nixf1k`}>
+<p
+className={`w-element cyoo8jj c1l00ka2 ca8r8od c1twkhmw c1pkzl4t csju6l8 c1q6vwwy c1iwy39r`}>
+{"The Bachelor of Science in General Engineering at DTU"}
+</p>
+<p
+className={`w-element cd1g2e5 cyoo8jj csju6l8`}>
+{"But we like to call it "}
+<b
 className={`w-element`}>
-{"What is GE?"}
-</h2>
+{"GE"}
+</b>
+{"."}
+</p>
 <p
 className={`w-element`}>
-{"The Bachelor of Science in General Engineering at DTU is a three-year international programme that gives you a strong foundation in mathematics, physics, chemistry, and biotechnology. It teaches you to collaborate across disciplines and apply engineering skills to real-world challenges. Through practical design-build projects, you will develop problem-solving abilities and learn how to work effectively in diverse teams. Studying in an international environment with courses taught in English, you’ll gain the broad competences needed to become an innovative engineer ready to shape the future."}
+{"It's a three-year international programme that gives you a strong foundation in mathematics, physics, chemistry, and biotechnology. It teaches you to collaborate across disciplines and apply engineering skills to real-world challenges. Through practical design-build projects, you will develop problem-solving abilities and learn how to work effectively in diverse teams. Studying in an international environment with courses taught in English, you’ll gain the broad competences needed to become an innovative engineer ready to shape the future."}
 </p>
 </div>
 <div
-className={`w-element ccxbyd9 ctslah9 clrom7z c4qqqhz c1p34zf0 c1dsvsvh c1m3jn9j`}>
+className={`w-element ccxbyd9 ctslah9 cj7bt5u c4qqqhz c1p34zf0 c1dsvsvh ci03eyw cs5vl0c c1s1dhpt c1m3jn9j`}>
+<div
+className={`w-element`}>
 <h2
+className={`w-element`}>
+{"Curriculum"}
+</h2>
+<h3
 className={`w-element`}>
 {"Polytechnical Foundations "}
 <span
 className={`w-element c1vn0xiq cr2ujrk c8py5un cycv0tm cf92qlo c1p20m63`}>
 {"The Core Stuff"}
 </span>
-</h2>
+</h3>
 <p
 className={`w-element`}>
 {"The polytechnical foundation is basically all the main general subjects every GE student will have to take, which include Chemistry, Bioengineering, Physics, Programming, Statistics, and Mathematics. Some are more of a pain than others, but the main point is to bring all students to a general standard across all these base subjects. "}
 </p>
 </div>
+<Image
+src={"https://student.dtu.dk/-/media/subsites/studieordninger/general-engineering/ge-ects-fordeling.png"}
+optimize={false}
+loading={"lazy"}
+className={`w-image c1tpjvk7 cjxjfnc ce30i2p cbg59jt`} />
+</div>
+<Image
+src={"https://student.dtu.dk/-/media/subsites/studieordninger/general-engineering/ge-ects-fordeling.png"}
+optimize={false}
+loading={"lazy"}
+className={`w-image c1tpjvk7 c4qqqhz cvuh4zx ce30i2p c14e6dcj cri3ouj cr2180h cpgn581 c1sucy14 c1e7x5sb c1eiysop c1pv9cz1`} />
 <div
-className={`w-element ccxbyd9 ctslah9 clrom7z c4qqqhz c1p34zf0 c1dsvsvh c1m3jn9j`}>
-<h2
+className={`w-element ccxbyd9 ctslah9 c12zhvo c4qqqhz c1p34zf0 c1dsvsvh cwkfinq`}>
+<h3
 className={`w-element`}>
 {"Specialisations "}
 <span
 className={`w-element c1vn0xiq cr2ujrk c8py5un cycv0tm cf92qlo c1p20m63`}>
 {"The Branches"}
 </span>
-</h2>
+</h3>
 <p
 className={`w-element`}>
 {"After completing the core courses in General Engineering, you can choose to specialise in one of four areas. Each specialisation builds on your broad engineering foundation and prepares you for specific industries and career paths:"}
@@ -393,6 +448,10 @@ className={`w-image`} />
 </div>
 </div>
 </Box>
+<HtmlEmbed
+code={"<style>\n  /* Optional quality-of-life styles */\n  #menu-icon {\n    cursor: grab;\n    touch-action: none;   /* allow smooth touch drag */\n    will-change: transform;\n    \n    uuser-drag: none;\n    -webkit-uuser-drag: none;\n    -moz-uuser-drag: none;\n    user-select: none;    /* avoid text selection while dragging */\n    -moz-user-select: none;\n    -webkit-user-select: none;\n    -ms-user-select: none;\n  }\n  #menu-icon.dragging { cursor: grabbing; }\n</style>\n\n<script>\n(() => {\n  const icon = document.getElementById('menu-icon');\n  if (!icon) return;\n\n  // position is managed purely via transform so layout doesn't shift\n  let pointerID = null;\n  let tx = 0, ty = 0;               // current translation\n  let vx = 0, vy = 0;               // current velocity (px/s)\n  let dragging = false;\n  let startX = 0, startY = 0;       // pointer-down position\n  let lastPx = 0, lastPy = 0;       // last pointer position (for velocity)\n  let lastT = 0;                    // last timestamp\n\n  // Spring params: tweak for feel\n  const STIFFNESS = 300;   // spring constant (higher = snappier)\n  const DAMPING   = 15;   // damping (lower = bouncier)\n  const EPS_POS   = 0.5;  // stop threshold (position, px)\n  const EPS_VEL   = 0.5;  // stop threshold (velocity, px/s)\n\n  const originalHref = icon.href;\n\n  \n  const setTransform = () => {\n    icon.style.transform = `translate(${tx}px, ${ty}px)`;\n  };\n\n  const onPointerDown = (e) => {\n    curPointerID = e.pointerId;\n    startX = e.clientX - tx;\n    startY = e.clientY - ty;\n\n    lastPx = e.clientX;\n    lastPy = e.clientY;\n    lastT  = performance.now();\n    vx = 0; vy = 0; // reset; we'll accumulate movement velocity\n  }\n  \n  const onDragStart = (e) => {\n    e.preventDefault();\n    icon.removeAttribute('href');\n    dragging = true;\n    icon.classList.add('dragging');\n    icon.setPointerCapture?.(curPointerId);\n  };\n\n  const onPointerMove = (e) => {\n    if (!dragging) return;\n\n    const now = performance.now();\n    const dt  = (now - lastT) / 1000;\n    tx = e.clientX - startX;\n    ty = e.clientY - startY;\n\n    // simple low-pass filtered velocity estimate for spring kick\n    if (dt > 0) {\n      const instVx = (e.clientX - lastPx) / dt;\n      const instVy = (e.clientY - lastPy) / dt;\n      vx = 0.8 * vx + 0.2 * instVx;\n      vy = 0.8 * vy + 0.2 * instVy;\n    }\n    lastPx = e.clientX;\n    lastPy = e.clientY;\n    lastT  = now;\n\n    setTransform();\n  };\n\n  const onPointerUp = (e) => {\n    if (!dragging) return;\n    e.preventDefault();\n    e.stopPropagation()\n    e.stopImmediatePropagation();\n    dragging = false;\n    icon.classList.remove('dragging');\n    icon.releasePointerCapture?.(e.pointerId);\n    animateBack(); // start spring home\n    return;\n  };\n\n  function animateBack() {\n    let prev = performance.now();\n    function step(now) {\n      const dt = Math.min((now - prev) / 1000, 0.032); // clamp dt for stability\n      prev = now;\n\n      // Hooke's law: F = -k*x - c*v (mass=1)\n      const ax = -STIFFNESS * tx - DAMPING * vx;\n      const ay = -STIFFNESS * ty - DAMPING * vy;\n\n      vx += ax * dt;\n      vy += ay * dt;\n      tx += vx * dt;\n      ty += vy * dt;\n\n      setTransform();\n\n      const nearOrigin = Math.hypot(tx, ty) < EPS_POS;\n      const slowEnough = Math.hypot(vx, vy) < EPS_VEL;\n\n      if (nearOrigin && slowEnough) {\n        // snap exactly home to avoid subpixel fuzz\n        tx = ty = vx = vy = 0;\n        setTransform();\n        icon.setAttribute('href', originalHref);\n        return;\n      }\n      // If user grabbed again, stop the spring.\n      if (dragging) return;\n\n      requestAnimationFrame(step);\n    }\n    requestAnimationFrame(step);\n  }\n\n  // Keep it floating above other content while dragging (no layout changes)\n  icon.style.zIndex = (parseInt(getComputedStyle(icon).zIndex) || 1).toString();\n\n  // Bind events\n  icon.addEventListener('dragstart', onDragStart);\n  icon.addEventListener('pointerdown', onPointerDown);\n  window.addEventListener('pointermove', onPointerMove, { passive: true });\n  window.addEventListener('pointerup', onPointerUp);\n  window.addEventListener('pointercancel', onPointerUp);\n})();\n</script>"}
+executeScriptOnCanvas={true}
+className={`w-html-embed`} />
 </Body>
 }
 

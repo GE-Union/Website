@@ -11,7 +11,7 @@ import { Tooltip as Tooltip, TooltipTrigger as TooltipTrigger, TooltipContent as
 
       export const projectId = "94456f8c-a847-426a-aec8-16de390bd3eb";
 
-      export const lastPublished = "2025-08-29T01:41:00.015Z";
+      export const lastPublished = "2025-08-30T02:11:55.578Z";
 
       export const siteName = "GE Union";
 
@@ -31,7 +31,7 @@ import { Tooltip as Tooltip, TooltipTrigger as TooltipTrigger, TooltipContent as
 
       const Page = (_props: { system: any; }) => {
 return <Body
-className={`w-element c1lzvaoj c1qux398`}>
+className={`w-element c1lzvaoj c1qux398 cm1ds2c`}>
 <HtmlEmbed
 code={"<style>\n@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300..900&display=swap');\n@import url('https://api.fontshare.com/v2/css?f[]=tanker@400&amp;display=swap');\n  \n  h1{\n    font-family: 'Tanker';\n    font-weight: 500;\n    font-size: 5em;\n    color: var(--background);\n    line-height: 1;\n    margin: 0;\n  }\n  h2{\n    font-weight: 600;\n    font-size: 36px;\n    line-height: 1;\n    margin: 0;\n    margin-bottom: 0.3em;\n  }\n  p{\n    margin: 0;\n  }\n  \n  .icon-background{\n    background-color: var(--back-red-1);\n    z-index: 1;\n    overflow: hidden;\n    position: relative;\n  }\n  .icon-background::before{\n    content: \"\";\n    position: absolute;\n    width: 200%; height: 200%;\n    top: -50%; left: -50%;\n    background-image: url('/assets/icon-background_RyiWP8CNKOfskpwMp_P8Y.svg?width=1080&quality=80&format=auto');\n    background-size: 200px 115.4734411085px;\n    background-repeat: repeat;\n    animation: scrollBg 20s linear infinite;\n    z-index: -1;\n    opacity: var(--icon-background-opacity, 3%); mix-blend-mode: luminosity;\n    filter: blur(2px)\n  }\n  \n  .home-top::after{\n    position: absolute;\n    content: \"\";\n    width: 100%;\n    height: 250px;\n    background: linear-gradient(180deg, hsl(from var(--back-red-1) h s l / 0.65) 15%, hsl(from var(--back-red-1) h s l / 0) 100%);\n    z-index: -1;\n  }\n\n  @keyframes scrollBg {\n      0% {\n        background-position: 0 0;\n      }\n      100% {\n        background-position: -200px 115.4734411085px;\n      }\n    }\n\n  .home-top-card:hover .home-top-card-title-icon{\n    width: 38px;\n    padding-left: 3px;\n  }\n\n  @media only screen and (max-width: 767px) {\n    h1{\n      font-size: 4em;\n    }\n    h2{\n      font-size: 32px;\n    }\n  }\n</style>"}
 executeScriptOnCanvas={true}
@@ -42,7 +42,9 @@ className={`w-box cck00sw cd3toq c17nm8vt c1xymrvd c8yo8yx ci03eyw cu8ogtt cm1ds
 className={`w-box c19h37rc ci03eyw c1nj86ny c1mz59p0 c13f4d8e c1122adb cx911xm c4qqqhz c2z8j1e c19dc97m`}>
 <Link_1
 href={"/"}
-className={`w-link cmvyqw5 cz7iu34 c40iywk codsd31 c16er72m c1qt5xo2 c3gx87z cqyp7hg c1moglug`}>
+target={"_self"}
+id={"menu-icon"}
+className={`w-link cmvyqw5 cz7iu34 c40iywk codsd31 c16er72m c1qt5xo2 cqyp7hg c1moglug`}>
 <Image
 src={"/assets/GE_Logo_-_Big_AQmTkCh-ue9Xfr1xXdV_k.svg"}
 width={492}
@@ -182,13 +184,13 @@ className={`w-element cyoo8jj c1k74xht cnurt1a c1wzvl6u`}>
 {"about GE Union"}
 </h1>
 <Text
-className={`w-text cg3nt0s c74dsfz czgmbqe cyoo8jj c1wwlxnr cje5w08 c1k74xht c1bck0pu c16hxlzn c1c73s0v c7u4ssh`}>
+className={`w-text cqawzgp c1s7gudn czgmbqe cyoo8jj c1wwlxnr cje5w08 c1k74xht c1bck0pu cnurt1a c1wzvl6u c7u4ssh`}>
 {"Who are we and why are we here?"}
 </Text>
 </Box>
 </Box>
 <div
-className={`w-element ci03eyw c1bti4b5 c1prl6qi c15b9v9z c1aa51lf c1v4vkm5 cuqkdit c1bzjoez c1ac3qw6 cc356ws c3knbg7`}>
+className={`w-element ci03eyw c1bti4b5 c1ubxcee c16fkvsp c1aa51lf c1v4vkm5 cuqkdit c1bzjoez c1ac3qw6 cc356ws c3knbg7`}>
 <div
 className={`w-element ck11ylk c767uka cxn45mh c1dsvsvh c11cmzdu cvuh4zx c14e6dcj cngynuq c14r7o8r c1fsw25j c12tny8 cly6kwb cnaoejs`}>
 <p
@@ -208,7 +210,7 @@ className={`w-element cly2rzj cr2ujrk c1lt64h c1f9u155 c1lhrjj6 c1xrfqic`}>
 </p>
 </div>
 <div
-className={`w-element cy2b8wa cd3toq c17nm8vt c1xymrvd c8yo8yx c5fu1hc ci03eyw cu8ogtt c5t1rtw c1sug8fi c5sx8jk ct6fd0n c19raolx c1ouh616 c1sdo29q c1fgu9om cbg59jt ${"icon-background\n"}`}>
+className={`w-element cy2b8wa cd3toq c17nm8vt c1xymrvd c8yo8yx cc96m4b ci03eyw cu8ogtt c5t1rtw c87opo9 c5sx8jk ct6fd0n c19raolx c1ouh616 c1sdo29q c1fgu9om cbg59jt ${"icon-background\n"}`}>
 <div
 className={`w-element c1o49hcl ci03eyw c1dgy9if c1a10q77 c1v4vkm5 c6d6cak c5dclxw c7tvdys cgiudld c1xj8ubg`}>
 <div
@@ -257,7 +259,7 @@ src={"/assets/GE_Logo_-_Black_ELdGguoKnkmGIG7zpf438.svg"}
 width={498}
 height={618}
 alt={""}
-className={`w-image c1shgpg6 c16e72yc c14233kc c1w0yra6 cpq2gwm cbeiaob c1k74xht c19dg1ud`} />
+className={`w-image c1shgpg6 c7hwif1 c14233kc c1w0yra6 cpq2gwm cj7bt5u c1k74xht c19dg1ud`} />
 <div
 className={`w-element cyoo8jj cxa4mkp cy2vnym`}>
 <h2
@@ -270,7 +272,7 @@ className={`w-element ci03eyw c1vi0mt cqaj6f4 c16lfnyl c1bti4b5 cc4bk5j`}>
 className={`w-element c1o50h06 c1et1u9b ck11ylk c19haj7v c6775s7 ct2w13i c3brmnq cd3toq c17nm8vt c1xymrvd c8yo8yx c1io07hm c1n9f9m4 cqxegdb cgrcr0q`}>
 <h3
 className={`w-element`}>
-{"Academic & Social events "}
+{"Events 🎫  "}
 <br />
 {""}
 </h3>
@@ -283,22 +285,22 @@ className={`w-element`}>
 className={`w-element c1o50h06 c1et1u9b ck11ylk c19haj7v c6775s7 ct2w13i c3brmnq cd3toq c17nm8vt c1xymrvd c8yo8yx c1io07hm c1n9f9m4 cqxegdb cgrcr0q`}>
 <h3
 className={`w-element`}>
-{"The Website"}
+{"Website 🌐 "}
 </h3>
 <p
 className={`w-element`}>
-{"Here you can find all the relevant knowledge about GE - without the fluff. We took all the hacks we wish we had, and put them in one place. You get our honest opinions on the four specialisations, worked past exams, revised notes from older students, formula booklets, a deadline calendar, and most importantly, an academically supportive community."}
+{"All the knowledge about GE – no fluff. We’ve bundled the hacks we wish we had into one place: honest takes on the four specialisations, past exams, revised notes, formula booklets, and a deadline calendar. Most importantly, it’s about sharing and supporting each other so no one has to study alone."}
 </p>
 </div>
 <div
 className={`w-element c1o50h06 c1et1u9b ck11ylk c19haj7v c6775s7 ct2w13i c3brmnq cd3toq c17nm8vt c1xymrvd c8yo8yx c1io07hm c1n9f9m4 cqxegdb cgrcr0q`}>
 <h3
 className={`w-element`}>
-{"Partnerships and Career"}
+{"Career 💼 "}
 </h3>
 <p
 className={`w-element`}>
-{"We connect you with exciting companies, career tips, and real opportunities. Whether it’s exclusive events with industry professionals, company visits, or student jobs. We help you explore what’s out there. You’ll learn what companies are looking for, how to stand out, and what it’s actually like to work in different fields, all while building a network that could kickstart your career."}
+{"From company visits to career tips, we connect you with opportunities worth grabbing. You’ll meet industry professionals, hear what companies actually look for, and get a feel for different fields. Along the way, you build a network that could kickstart your career, while picking up the tools to stand out."}
 </p>
 </div>
 </div>
@@ -308,7 +310,7 @@ src={"/assets/GE_Logo_-_Black_ELdGguoKnkmGIG7zpf438.svg"}
 width={498}
 height={618}
 alt={""}
-className={`w-image c1shgpg6 c16e72yc c14233kc c1w0yra6 cpq2gwm cbeiaob c1k74xht c19dg1ud`} />
+className={`w-image c1shgpg6 c7hwif1 c14233kc c1w0yra6 cpq2gwm cj7bt5u c1k74xht c19dg1ud`} />
 <div
 className={`w-element cyoo8jj cxa4mkp cy2vnym c4jdyrv`}>
 <h2
@@ -405,6 +407,10 @@ className={`w-image`} />
 </div>
 </div>
 </Box>
+<HtmlEmbed
+code={"<style>\n  /* Optional quality-of-life styles */\n  #menu-icon {\n    cursor: grab;\n    touch-action: none;   /* allow smooth touch drag */\n    will-change: transform;\n    \n    uuser-drag: none;\n    -webkit-uuser-drag: none;\n    -moz-uuser-drag: none;\n    user-select: none;    /* avoid text selection while dragging */\n    -moz-user-select: none;\n    -webkit-user-select: none;\n    -ms-user-select: none;\n  }\n  #menu-icon.dragging { cursor: grabbing; }\n</style>\n\n<script>\n(() => {\n  const icon = document.getElementById('menu-icon');\n  if (!icon) return;\n\n  // position is managed purely via transform so layout doesn't shift\n  let pointerID = null;\n  let tx = 0, ty = 0;               // current translation\n  let vx = 0, vy = 0;               // current velocity (px/s)\n  let dragging = false;\n  let startX = 0, startY = 0;       // pointer-down position\n  let lastPx = 0, lastPy = 0;       // last pointer position (for velocity)\n  let lastT = 0;                    // last timestamp\n\n  // Spring params: tweak for feel\n  const STIFFNESS = 300;   // spring constant (higher = snappier)\n  const DAMPING   = 15;   // damping (lower = bouncier)\n  const EPS_POS   = 0.5;  // stop threshold (position, px)\n  const EPS_VEL   = 0.5;  // stop threshold (velocity, px/s)\n\n  const originalHref = icon.href;\n\n  \n  const setTransform = () => {\n    icon.style.transform = `translate(${tx}px, ${ty}px)`;\n  };\n\n  const onPointerDown = (e) => {\n    curPointerID = e.pointerId;\n    startX = e.clientX - tx;\n    startY = e.clientY - ty;\n\n    lastPx = e.clientX;\n    lastPy = e.clientY;\n    lastT  = performance.now();\n    vx = 0; vy = 0; // reset; we'll accumulate movement velocity\n  }\n  \n  const onDragStart = (e) => {\n    e.preventDefault();\n    icon.removeAttribute('href');\n    dragging = true;\n    icon.classList.add('dragging');\n    icon.setPointerCapture?.(curPointerId);\n  };\n\n  const onPointerMove = (e) => {\n    if (!dragging) return;\n\n    const now = performance.now();\n    const dt  = (now - lastT) / 1000;\n    tx = e.clientX - startX;\n    ty = e.clientY - startY;\n\n    // simple low-pass filtered velocity estimate for spring kick\n    if (dt > 0) {\n      const instVx = (e.clientX - lastPx) / dt;\n      const instVy = (e.clientY - lastPy) / dt;\n      vx = 0.8 * vx + 0.2 * instVx;\n      vy = 0.8 * vy + 0.2 * instVy;\n    }\n    lastPx = e.clientX;\n    lastPy = e.clientY;\n    lastT  = now;\n\n    setTransform();\n  };\n\n  const onPointerUp = (e) => {\n    if (!dragging) return;\n    e.preventDefault();\n    e.stopPropagation()\n    e.stopImmediatePropagation();\n    dragging = false;\n    icon.classList.remove('dragging');\n    icon.releasePointerCapture?.(e.pointerId);\n    animateBack(); // start spring home\n    return;\n  };\n\n  function animateBack() {\n    let prev = performance.now();\n    function step(now) {\n      const dt = Math.min((now - prev) / 1000, 0.032); // clamp dt for stability\n      prev = now;\n\n      // Hooke's law: F = -k*x - c*v (mass=1)\n      const ax = -STIFFNESS * tx - DAMPING * vx;\n      const ay = -STIFFNESS * ty - DAMPING * vy;\n\n      vx += ax * dt;\n      vy += ay * dt;\n      tx += vx * dt;\n      ty += vy * dt;\n\n      setTransform();\n\n      const nearOrigin = Math.hypot(tx, ty) < EPS_POS;\n      const slowEnough = Math.hypot(vx, vy) < EPS_VEL;\n\n      if (nearOrigin && slowEnough) {\n        // snap exactly home to avoid subpixel fuzz\n        tx = ty = vx = vy = 0;\n        setTransform();\n        icon.setAttribute('href', originalHref);\n        return;\n      }\n      // If user grabbed again, stop the spring.\n      if (dragging) return;\n\n      requestAnimationFrame(step);\n    }\n    requestAnimationFrame(step);\n  }\n\n  // Keep it floating above other content while dragging (no layout changes)\n  icon.style.zIndex = (parseInt(getComputedStyle(icon).zIndex) || 1).toString();\n\n  // Bind events\n  icon.addEventListener('dragstart', onDragStart);\n  icon.addEventListener('pointerdown', onPointerDown);\n  window.addEventListener('pointermove', onPointerMove, { passive: true });\n  window.addEventListener('pointerup', onPointerUp);\n  window.addEventListener('pointercancel', onPointerUp);\n})();\n</script>"}
+executeScriptOnCanvas={true}
+className={`w-html-embed`} />
 </Body>
 }
 

@@ -1,10 +1,10 @@
 {
   "build": {
-    "id": "eb6c4e31-fb07-435b-b6cd-9ef3f9303060",
+    "id": "b45e5ea7-1152-4337-89cc-6e75caac4853",
     "projectId": "94456f8c-a847-426a-aec8-16de390bd3eb",
-    "version": 11097,
-    "createdAt": "2025-08-29T01:41:00.015+00:00",
-    "updatedAt": "2025-08-29T01:41:00.015+00:00",
+    "version": 11626,
+    "createdAt": "2025-08-30T02:11:55.578+00:00",
+    "updatedAt": "2025-08-30T02:11:55.578+00:00",
     "pages": {
       "meta": {
         "siteName": "GE Union",
@@ -1288,7 +1288,7 @@
           "value": {
             "type": "unit",
             "unit": "px",
-            "value": 50
+            "value": 35
           }
         }
       ],
@@ -1301,7 +1301,7 @@
           "value": {
             "type": "unit",
             "unit": "px",
-            "value": 50
+            "value": 35
           }
         }
       ],
@@ -7027,7 +7027,7 @@
           "value": {
             "type": "unit",
             "unit": "px",
-            "value": 30
+            "value": 20
           }
         }
       ],
@@ -7040,7 +7040,7 @@
           "value": {
             "type": "unit",
             "unit": "px",
-            "value": 30
+            "value": 20
           }
         }
       ],
@@ -20631,7 +20631,7 @@
           "property": "maxWidth",
           "value": {
             "type": "unit",
-            "unit": "%",
+            "unit": "vw",
             "value": 100
           }
         }
@@ -22568,7 +22568,7 @@
           "value": {
             "type": "unit",
             "unit": "px",
-            "value": 520
+            "value": 500
           }
         }
       ],
@@ -23113,9 +23113,8 @@
           "styleSourceId": "8p7rT3oOOP8VbZ1L29EZT",
           "property": "columnGap",
           "value": {
-            "type": "unit",
-            "unit": "px",
-            "value": 40
+            "type": "unparsed",
+            "value": "min(3vw, 60px)"
           }
         }
       ],
@@ -23126,9 +23125,8 @@
           "styleSourceId": "8p7rT3oOOP8VbZ1L29EZT",
           "property": "rowGap",
           "value": {
-            "type": "unit",
-            "unit": "px",
-            "value": 40
+            "type": "unparsed",
+            "value": "min(3vw, 60px)"
           }
         }
       ],
@@ -23288,7 +23286,7 @@
           "value": {
             "type": "unit",
             "unit": "px",
-            "value": 520
+            "value": 500
           }
         }
       ],
@@ -24812,43 +24810,6 @@
         }
       ],
       [
-        "FXkbtcIniDpn8LtehhYY0:2EiFMEG40PBm9_fkelqpo:color:",
-        {
-          "styleSourceId": "FXkbtcIniDpn8LtehhYY0",
-          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
-          "property": "color",
-          "value": {
-            "type": "var",
-            "value": "front-3"
-          }
-        }
-      ],
-      [
-        "FXkbtcIniDpn8LtehhYY0:2EiFMEG40PBm9_fkelqpo:fontWeight:",
-        {
-          "styleSourceId": "FXkbtcIniDpn8LtehhYY0",
-          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
-          "property": "fontWeight",
-          "value": {
-            "type": "keyword",
-            "value": "500"
-          }
-        }
-      ],
-      [
-        "FXkbtcIniDpn8LtehhYY0:2EiFMEG40PBm9_fkelqpo:marginLeft:",
-        {
-          "styleSourceId": "FXkbtcIniDpn8LtehhYY0",
-          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
-          "property": "marginLeft",
-          "value": {
-            "type": "unit",
-            "unit": "em",
-            "value": 0.5
-          }
-        }
-      ],
-      [
         "TZeS6uzs7dA6d-uq7NUl4:Uvcw_OJqyPoLioZzUbP1x:display:",
         {
           "breakpointId": "Uvcw_OJqyPoLioZzUbP1x",
@@ -24857,31 +24818,6 @@
           "value": {
             "type": "keyword",
             "value": "none"
-          }
-        }
-      ],
-      [
-        "FXkbtcIniDpn8LtehhYY0:Uvcw_OJqyPoLioZzUbP1x:display:",
-        {
-          "breakpointId": "Uvcw_OJqyPoLioZzUbP1x",
-          "styleSourceId": "FXkbtcIniDpn8LtehhYY0",
-          "property": "display",
-          "value": {
-            "type": "keyword",
-            "value": "none"
-          }
-        }
-      ],
-      [
-        "FXkbtcIniDpn8LtehhYY0:xOnFYyuZv5VkMeeKDLyiu:fontSize:",
-        {
-          "breakpointId": "xOnFYyuZv5VkMeeKDLyiu",
-          "styleSourceId": "FXkbtcIniDpn8LtehhYY0",
-          "property": "fontSize",
-          "value": {
-            "type": "unit",
-            "unit": "em",
-            "value": 0.72
           }
         }
       ],
@@ -24895,19 +24831,6 @@
             "type": "unit",
             "unit": "em",
             "value": 0.72
-          }
-        }
-      ],
-      [
-        "FXkbtcIniDpn8LtehhYY0:xOnFYyuZv5VkMeeKDLyiu:marginLeft:",
-        {
-          "breakpointId": "xOnFYyuZv5VkMeeKDLyiu",
-          "styleSourceId": "FXkbtcIniDpn8LtehhYY0",
-          "property": "marginLeft",
-          "value": {
-            "type": "unit",
-            "unit": "em",
-            "value": 0.2
           }
         }
       ],
@@ -29395,26 +29318,6 @@
         }
       ],
       [
-        "wYMBXh9aBUSxLyBlPlVvv:2EiFMEG40PBm9_fkelqpo:scale::hover",
-        {
-          "styleSourceId": "wYMBXh9aBUSxLyBlPlVvv",
-          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
-          "state": ":hover",
-          "property": "scale",
-          "value": {
-            "type": "tuple",
-            "value": [
-              {
-                "type": "unit",
-                "unit": "number",
-                "value": 1.05
-              }
-            ]
-          },
-          "listed": true
-        }
-      ],
-      [
         "wYMBXh9aBUSxLyBlPlVvv:2EiFMEG40PBm9_fkelqpo:transitionProperty:",
         {
           "styleSourceId": "wYMBXh9aBUSxLyBlPlVvv",
@@ -32530,26 +32433,6 @@
             "unit": "%",
             "value": 100
           }
-        }
-      ],
-      [
-        "Ljb-3ydOUvftwhEALcDcU:2EiFMEG40PBm9_fkelqpo:scale::hover",
-        {
-          "styleSourceId": "Ljb-3ydOUvftwhEALcDcU",
-          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
-          "state": ":hover",
-          "property": "scale",
-          "value": {
-            "type": "tuple",
-            "value": [
-              {
-                "type": "unit",
-                "unit": "number",
-                "value": 1.05
-              }
-            ]
-          },
-          "listed": true
         }
       ],
       [
@@ -35671,26 +35554,6 @@
         }
       ],
       [
-        "MXUN5iSsweHQtHk0beCcx:2EiFMEG40PBm9_fkelqpo:scale::hover",
-        {
-          "styleSourceId": "MXUN5iSsweHQtHk0beCcx",
-          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
-          "state": ":hover",
-          "property": "scale",
-          "value": {
-            "type": "tuple",
-            "value": [
-              {
-                "type": "unit",
-                "unit": "number",
-                "value": 1.05
-              }
-            ]
-          },
-          "listed": true
-        }
-      ],
-      [
         "MXUN5iSsweHQtHk0beCcx:2EiFMEG40PBm9_fkelqpo:transitionProperty:",
         {
           "styleSourceId": "MXUN5iSsweHQtHk0beCcx",
@@ -38806,26 +38669,6 @@
             "unit": "%",
             "value": 100
           }
-        }
-      ],
-      [
-        "pKq8Aey9t2aPzSzfHXnge:2EiFMEG40PBm9_fkelqpo:scale::hover",
-        {
-          "styleSourceId": "pKq8Aey9t2aPzSzfHXnge",
-          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
-          "state": ":hover",
-          "property": "scale",
-          "value": {
-            "type": "tuple",
-            "value": [
-              {
-                "type": "unit",
-                "unit": "number",
-                "value": 1.05
-              }
-            ]
-          },
-          "listed": true
         }
       ],
       [
@@ -41947,26 +41790,6 @@
         }
       ],
       [
-        "vp-yC6hC3J6gaL5DN7B4Y:2EiFMEG40PBm9_fkelqpo:scale::hover",
-        {
-          "styleSourceId": "vp-yC6hC3J6gaL5DN7B4Y",
-          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
-          "state": ":hover",
-          "property": "scale",
-          "value": {
-            "type": "tuple",
-            "value": [
-              {
-                "type": "unit",
-                "unit": "number",
-                "value": 1.05
-              }
-            ]
-          },
-          "listed": true
-        }
-      ],
-      [
         "vp-yC6hC3J6gaL5DN7B4Y:2EiFMEG40PBm9_fkelqpo:transitionProperty:",
         {
           "styleSourceId": "vp-yC6hC3J6gaL5DN7B4Y",
@@ -45082,26 +44905,6 @@
             "unit": "%",
             "value": 100
           }
-        }
-      ],
-      [
-        "4SIWcfhLWeSWg2G9DpP4l:2EiFMEG40PBm9_fkelqpo:scale::hover",
-        {
-          "styleSourceId": "4SIWcfhLWeSWg2G9DpP4l",
-          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
-          "state": ":hover",
-          "property": "scale",
-          "value": {
-            "type": "tuple",
-            "value": [
-              {
-                "type": "unit",
-                "unit": "number",
-                "value": 1.05
-              }
-            ]
-          },
-          "listed": true
         }
       ],
       [
@@ -64617,7 +64420,7 @@
           "property": "marginTop",
           "value": {
             "type": "unit",
-            "value": 30,
+            "value": 60,
             "unit": "px"
           }
         }
@@ -64839,35 +64642,6 @@
             "value": "none"
           },
           "listed": true
-        }
-      ],
-      [
-        "9M0C5Btl2VNydAqF5fZcV:2EiFMEG40PBm9_fkelqpo:scale::hover",
-        {
-          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
-          "styleSourceId": "9M0C5Btl2VNydAqF5fZcV",
-          "state": ":hover",
-          "property": "scale",
-          "value": {
-            "type": "tuple",
-            "value": [
-              {
-                "type": "unit",
-                "unit": "%",
-                "value": 108
-              },
-              {
-                "type": "unit",
-                "unit": "%",
-                "value": 108
-              },
-              {
-                "type": "unit",
-                "unit": "%",
-                "value": 100
-              }
-            ]
-          }
         }
       ],
       [
@@ -65310,13 +65084,13 @@
       [
         "-YMqcGI-X7vuJSbS3FuvQ:2EiFMEG40PBm9_fkelqpo:marginBottom:",
         {
-          "styleSourceId": "-YMqcGI-X7vuJSbS3FuvQ",
           "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "-YMqcGI-X7vuJSbS3FuvQ",
           "property": "marginBottom",
           "value": {
             "type": "unit",
             "unit": "px",
-            "value": 50
+            "value": 60
           }
         }
       ],
@@ -65361,13 +65135,13 @@
       [
         "-YMqcGI-X7vuJSbS3FuvQ:2EiFMEG40PBm9_fkelqpo:marginTop:",
         {
-          "styleSourceId": "-YMqcGI-X7vuJSbS3FuvQ",
           "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "-YMqcGI-X7vuJSbS3FuvQ",
           "property": "marginTop",
           "value": {
             "type": "unit",
             "unit": "px",
-            "value": 50
+            "value": 60
           }
         }
       ],
@@ -65784,6 +65558,1074 @@
             "type": "unit",
             "unit": "number",
             "value": 1.1
+          }
+        }
+      ],
+      [
+        "Be9piWGLvZNYEsYOw1ZXv:2EiFMEG40PBm9_fkelqpo:display:",
+        {
+          "styleSourceId": "Be9piWGLvZNYEsYOw1ZXv",
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "property": "display",
+          "value": {
+            "type": "keyword",
+            "value": "flex"
+          }
+        }
+      ],
+      [
+        "Be9piWGLvZNYEsYOw1ZXv:2EiFMEG40PBm9_fkelqpo:height:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "Be9piWGLvZNYEsYOw1ZXv",
+          "property": "height",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 30
+          }
+        }
+      ],
+      [
+        "Be9piWGLvZNYEsYOw1ZXv:2EiFMEG40PBm9_fkelqpo:width:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "Be9piWGLvZNYEsYOw1ZXv",
+          "property": "width",
+          "value": {
+            "type": "unit",
+            "unit": "%",
+            "value": 25
+          }
+        }
+      ],
+      [
+        "Be9piWGLvZNYEsYOw1ZXv:2EiFMEG40PBm9_fkelqpo:justifyContent:",
+        {
+          "styleSourceId": "Be9piWGLvZNYEsYOw1ZXv",
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "property": "justifyContent",
+          "value": {
+            "type": "keyword",
+            "value": "space-between"
+          }
+        }
+      ],
+      [
+        "Be9piWGLvZNYEsYOw1ZXv:2EiFMEG40PBm9_fkelqpo:marginRight:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "Be9piWGLvZNYEsYOw1ZXv",
+          "property": "marginRight",
+          "value": {
+            "type": "keyword",
+            "value": "auto"
+          }
+        }
+      ],
+      [
+        "Be9piWGLvZNYEsYOw1ZXv:2EiFMEG40PBm9_fkelqpo:marginLeft:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "Be9piWGLvZNYEsYOw1ZXv",
+          "property": "marginLeft",
+          "value": {
+            "type": "keyword",
+            "value": "auto"
+          }
+        }
+      ],
+      [
+        "dkUxdMnm9scbYk9pqgEcm:2EiFMEG40PBm9_fkelqpo:objectFit:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "dkUxdMnm9scbYk9pqgEcm",
+          "property": "objectFit",
+          "value": {
+            "type": "keyword",
+            "value": "contain"
+          }
+        }
+      ],
+      [
+        "dp2MVdm8gmSpO_sa40BfU:2EiFMEG40PBm9_fkelqpo:objectFit:",
+        {
+          "styleSourceId": "dp2MVdm8gmSpO_sa40BfU",
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "property": "objectFit",
+          "value": {
+            "type": "keyword",
+            "value": "contain"
+          }
+        }
+      ],
+      [
+        "dp2MVdm8gmSpO_sa40BfU:2EiFMEG40PBm9_fkelqpo:width:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "dp2MVdm8gmSpO_sa40BfU",
+          "property": "width",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 60
+          }
+        }
+      ],
+      [
+        "dkUxdMnm9scbYk9pqgEcm:2EiFMEG40PBm9_fkelqpo:width:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "dkUxdMnm9scbYk9pqgEcm",
+          "property": "width",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 60
+          }
+        }
+      ],
+      [
+        "OZPu6GrFe-H0ouS7gsUgP:2EiFMEG40PBm9_fkelqpo:objectFit:",
+        {
+          "styleSourceId": "OZPu6GrFe-H0ouS7gsUgP",
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "property": "objectFit",
+          "value": {
+            "type": "keyword",
+            "value": "contain"
+          }
+        }
+      ],
+      [
+        "OZPu6GrFe-H0ouS7gsUgP:2EiFMEG40PBm9_fkelqpo:width:",
+        {
+          "styleSourceId": "OZPu6GrFe-H0ouS7gsUgP",
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "property": "width",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 60
+          }
+        }
+      ],
+      [
+        "zIV3yJdipQ4pLv17ijfQ7:2EiFMEG40PBm9_fkelqpo:objectFit:",
+        {
+          "styleSourceId": "zIV3yJdipQ4pLv17ijfQ7",
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "property": "objectFit",
+          "value": {
+            "type": "keyword",
+            "value": "contain"
+          }
+        }
+      ],
+      [
+        "zIV3yJdipQ4pLv17ijfQ7:2EiFMEG40PBm9_fkelqpo:width:",
+        {
+          "styleSourceId": "zIV3yJdipQ4pLv17ijfQ7",
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "property": "width",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 60
+          }
+        }
+      ],
+      [
+        "Be9piWGLvZNYEsYOw1ZXv:2EiFMEG40PBm9_fkelqpo:marginTop:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "Be9piWGLvZNYEsYOw1ZXv",
+          "property": "marginTop",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 60
+          }
+        }
+      ],
+      [
+        "P9eBAGp1hDI6GD7xXiXsT:2EiFMEG40PBm9_fkelqpo:marginTop:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "P9eBAGp1hDI6GD7xXiXsT",
+          "property": "marginTop",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 60
+          }
+        }
+      ],
+      [
+        "Be9piWGLvZNYEsYOw1ZXv:2EiFMEG40PBm9_fkelqpo:pointerEvents:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "Be9piWGLvZNYEsYOw1ZXv",
+          "property": "pointerEvents",
+          "value": {
+            "type": "keyword",
+            "value": "none"
+          },
+          "listed": true
+        }
+      ],
+      [
+        "Be9piWGLvZNYEsYOw1ZXv:2EiFMEG40PBm9_fkelqpo:opacity:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "Be9piWGLvZNYEsYOw1ZXv",
+          "property": "opacity",
+          "value": {
+            "type": "unit",
+            "unit": "number",
+            "value": 0.3
+          },
+          "listed": true
+        }
+      ],
+      [
+        "Be9piWGLvZNYEsYOw1ZXv:2EiFMEG40PBm9_fkelqpo:userSelect:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "Be9piWGLvZNYEsYOw1ZXv",
+          "property": "userSelect",
+          "value": {
+            "type": "keyword",
+            "value": "none"
+          },
+          "listed": true
+        }
+      ],
+      [
+        "Be9piWGLvZNYEsYOw1ZXv:2EiFMEG40PBm9_fkelqpo:maxWidth:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "Be9piWGLvZNYEsYOw1ZXv",
+          "property": "maxWidth",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 400
+          }
+        }
+      ],
+      [
+        "Be9piWGLvZNYEsYOw1ZXv:xOnFYyuZv5VkMeeKDLyiu:width:",
+        {
+          "breakpointId": "xOnFYyuZv5VkMeeKDLyiu",
+          "styleSourceId": "Be9piWGLvZNYEsYOw1ZXv",
+          "property": "width",
+          "value": {
+            "type": "unit",
+            "unit": "%",
+            "value": 44
+          }
+        }
+      ],
+      [
+        "Be9piWGLvZNYEsYOw1ZXv:2EiFMEG40PBm9_fkelqpo:minWidth:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "Be9piWGLvZNYEsYOw1ZXv",
+          "property": "minWidth",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 300
+          }
+        }
+      ],
+      [
+        "Be9piWGLvZNYEsYOw1ZXv:eCbcXJaLEKSKcnbAPzNF0:minWidth:",
+        {
+          "breakpointId": "eCbcXJaLEKSKcnbAPzNF0",
+          "styleSourceId": "Be9piWGLvZNYEsYOw1ZXv",
+          "property": "minWidth",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 150
+          }
+        }
+      ],
+      [
+        "Be9piWGLvZNYEsYOw1ZXv:eCbcXJaLEKSKcnbAPzNF0:height:",
+        {
+          "breakpointId": "eCbcXJaLEKSKcnbAPzNF0",
+          "styleSourceId": "Be9piWGLvZNYEsYOw1ZXv",
+          "property": "height",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 25
+          }
+        }
+      ],
+      [
+        "dkUxdMnm9scbYk9pqgEcm:eCbcXJaLEKSKcnbAPzNF0:width:",
+        {
+          "breakpointId": "eCbcXJaLEKSKcnbAPzNF0",
+          "styleSourceId": "dkUxdMnm9scbYk9pqgEcm",
+          "property": "width",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 30
+          }
+        }
+      ],
+      [
+        "dp2MVdm8gmSpO_sa40BfU:eCbcXJaLEKSKcnbAPzNF0:width:",
+        {
+          "breakpointId": "eCbcXJaLEKSKcnbAPzNF0",
+          "styleSourceId": "dp2MVdm8gmSpO_sa40BfU",
+          "property": "width",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 30
+          }
+        }
+      ],
+      [
+        "zIV3yJdipQ4pLv17ijfQ7:eCbcXJaLEKSKcnbAPzNF0:width:",
+        {
+          "breakpointId": "eCbcXJaLEKSKcnbAPzNF0",
+          "styleSourceId": "zIV3yJdipQ4pLv17ijfQ7",
+          "property": "width",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 30
+          }
+        }
+      ],
+      [
+        "OZPu6GrFe-H0ouS7gsUgP:eCbcXJaLEKSKcnbAPzNF0:width:",
+        {
+          "breakpointId": "eCbcXJaLEKSKcnbAPzNF0",
+          "styleSourceId": "OZPu6GrFe-H0ouS7gsUgP",
+          "property": "width",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 30
+          }
+        }
+      ],
+      [
+        "Be9piWGLvZNYEsYOw1ZXv:eCbcXJaLEKSKcnbAPzNF0:width:",
+        {
+          "breakpointId": "eCbcXJaLEKSKcnbAPzNF0",
+          "styleSourceId": "Be9piWGLvZNYEsYOw1ZXv",
+          "property": "width",
+          "value": {
+            "type": "unit",
+            "unit": "%",
+            "value": 55
+          }
+        }
+      ],
+      [
+        "P9eBAGp1hDI6GD7xXiXsT:Uvcw_OJqyPoLioZzUbP1x:marginTop:",
+        {
+          "breakpointId": "Uvcw_OJqyPoLioZzUbP1x",
+          "styleSourceId": "P9eBAGp1hDI6GD7xXiXsT",
+          "property": "marginTop",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 60
+          }
+        }
+      ],
+      [
+        "o1MeFYe01V657if9LJ1WX:2EiFMEG40PBm9_fkelqpo:textAlign:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "o1MeFYe01V657if9LJ1WX",
+          "property": "textAlign",
+          "value": {
+            "type": "keyword",
+            "value": "center"
+          }
+        }
+      ],
+      [
+        "o1MeFYe01V657if9LJ1WX:2EiFMEG40PBm9_fkelqpo:fontWeight:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "o1MeFYe01V657if9LJ1WX",
+          "property": "fontWeight",
+          "value": {
+            "type": "keyword",
+            "value": "600"
+          }
+        }
+      ],
+      [
+        "o1MeFYe01V657if9LJ1WX:2EiFMEG40PBm9_fkelqpo:fontSize:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "o1MeFYe01V657if9LJ1WX",
+          "property": "fontSize",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 25
+          }
+        }
+      ],
+      [
+        "o1MeFYe01V657if9LJ1WX:2EiFMEG40PBm9_fkelqpo:paddingBottom:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "o1MeFYe01V657if9LJ1WX",
+          "property": "paddingBottom",
+          "value": {
+            "type": "unit",
+            "value": 4,
+            "unit": "px"
+          }
+        }
+      ],
+      [
+        "giShYtgiyjeZOuZrpwKLs:2EiFMEG40PBm9_fkelqpo:paddingBottom:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "giShYtgiyjeZOuZrpwKLs",
+          "property": "paddingBottom",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 16
+          }
+        }
+      ],
+      [
+        "giShYtgiyjeZOuZrpwKLs:2EiFMEG40PBm9_fkelqpo:textAlign:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "giShYtgiyjeZOuZrpwKLs",
+          "property": "textAlign",
+          "value": {
+            "type": "keyword",
+            "value": "center"
+          }
+        }
+      ],
+      [
+        "o1MeFYe01V657if9LJ1WX:eCbcXJaLEKSKcnbAPzNF0:fontSize:",
+        {
+          "breakpointId": "eCbcXJaLEKSKcnbAPzNF0",
+          "styleSourceId": "o1MeFYe01V657if9LJ1WX",
+          "property": "fontSize",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 20
+          }
+        }
+      ],
+      [
+        "o1MeFYe01V657if9LJ1WX:eCbcXJaLEKSKcnbAPzNF0:textAlign:",
+        {
+          "breakpointId": "eCbcXJaLEKSKcnbAPzNF0",
+          "styleSourceId": "o1MeFYe01V657if9LJ1WX",
+          "property": "textAlign",
+          "value": {
+            "type": "keyword",
+            "value": "start"
+          }
+        }
+      ],
+      [
+        "giShYtgiyjeZOuZrpwKLs:eCbcXJaLEKSKcnbAPzNF0:textAlign:",
+        {
+          "breakpointId": "eCbcXJaLEKSKcnbAPzNF0",
+          "styleSourceId": "giShYtgiyjeZOuZrpwKLs",
+          "property": "textAlign",
+          "value": {
+            "type": "keyword",
+            "value": "start"
+          }
+        }
+      ],
+      [
+        "o1MeFYe01V657if9LJ1WX:eCbcXJaLEKSKcnbAPzNF0:paddingBottom:",
+        {
+          "breakpointId": "eCbcXJaLEKSKcnbAPzNF0",
+          "styleSourceId": "o1MeFYe01V657if9LJ1WX",
+          "property": "paddingBottom",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 8
+          }
+        }
+      ],
+      [
+        "o1MeFYe01V657if9LJ1WX:Uvcw_OJqyPoLioZzUbP1x:fontSize:",
+        {
+          "breakpointId": "Uvcw_OJqyPoLioZzUbP1x",
+          "styleSourceId": "o1MeFYe01V657if9LJ1WX",
+          "property": "fontSize",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 20
+          }
+        }
+      ],
+      [
+        "RqnjlLuKfxyuN_K5tIgCD:2EiFMEG40PBm9_fkelqpo:marginTop:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "RqnjlLuKfxyuN_K5tIgCD",
+          "property": "marginTop",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 20
+          }
+        }
+      ],
+      [
+        "c2U9bsFlOMiAH3Jd7Nt3Z:2EiFMEG40PBm9_fkelqpo:marginTop:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "c2U9bsFlOMiAH3Jd7Nt3Z",
+          "property": "marginTop",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 60
+          }
+        }
+      ],
+      [
+        "RqnjlLuKfxyuN_K5tIgCD:Uvcw_OJqyPoLioZzUbP1x:marginTop:",
+        {
+          "breakpointId": "Uvcw_OJqyPoLioZzUbP1x",
+          "styleSourceId": "RqnjlLuKfxyuN_K5tIgCD",
+          "property": "marginTop",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 20
+          }
+        }
+      ],
+      [
+        "wZjdkqZuOkY0JRpZv1dIw:2EiFMEG40PBm9_fkelqpo:color:",
+        {
+          "styleSourceId": "wZjdkqZuOkY0JRpZv1dIw",
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "property": "color",
+          "value": {
+            "type": "var",
+            "value": "front-3"
+          }
+        }
+      ],
+      [
+        "wZjdkqZuOkY0JRpZv1dIw:2EiFMEG40PBm9_fkelqpo:fontWeight:",
+        {
+          "styleSourceId": "wZjdkqZuOkY0JRpZv1dIw",
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "property": "fontWeight",
+          "value": {
+            "type": "keyword",
+            "value": "500"
+          }
+        }
+      ],
+      [
+        "wZjdkqZuOkY0JRpZv1dIw:2EiFMEG40PBm9_fkelqpo:marginLeft:",
+        {
+          "styleSourceId": "wZjdkqZuOkY0JRpZv1dIw",
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "property": "marginLeft",
+          "value": {
+            "type": "unit",
+            "unit": "em",
+            "value": 0.5
+          }
+        }
+      ],
+      [
+        "wZjdkqZuOkY0JRpZv1dIw:Uvcw_OJqyPoLioZzUbP1x:display:",
+        {
+          "breakpointId": "Uvcw_OJqyPoLioZzUbP1x",
+          "styleSourceId": "wZjdkqZuOkY0JRpZv1dIw",
+          "property": "display",
+          "value": {
+            "type": "keyword",
+            "value": "none"
+          }
+        }
+      ],
+      [
+        "wZjdkqZuOkY0JRpZv1dIw:xOnFYyuZv5VkMeeKDLyiu:fontSize:",
+        {
+          "breakpointId": "xOnFYyuZv5VkMeeKDLyiu",
+          "styleSourceId": "wZjdkqZuOkY0JRpZv1dIw",
+          "property": "fontSize",
+          "value": {
+            "type": "unit",
+            "unit": "em",
+            "value": 0.72
+          }
+        }
+      ],
+      [
+        "wZjdkqZuOkY0JRpZv1dIw:xOnFYyuZv5VkMeeKDLyiu:marginLeft:",
+        {
+          "breakpointId": "xOnFYyuZv5VkMeeKDLyiu",
+          "styleSourceId": "wZjdkqZuOkY0JRpZv1dIw",
+          "property": "marginLeft",
+          "value": {
+            "type": "unit",
+            "unit": "em",
+            "value": 0.2
+          }
+        }
+      ],
+      [
+        "c2U9bsFlOMiAH3Jd7Nt3Z:2EiFMEG40PBm9_fkelqpo:display:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "c2U9bsFlOMiAH3Jd7Nt3Z",
+          "property": "display",
+          "value": {
+            "type": "keyword",
+            "value": "flex"
+          }
+        }
+      ],
+      [
+        "W3nronoXL5UFIkB-wwDvm:2EiFMEG40PBm9_fkelqpo:height:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "W3nronoXL5UFIkB-wwDvm",
+          "property": "height",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 175
+          }
+        }
+      ],
+      [
+        "W3nronoXL5UFIkB-wwDvm:2EiFMEG40PBm9_fkelqpo:alignSelf:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "W3nronoXL5UFIkB-wwDvm",
+          "property": "alignSelf",
+          "value": {
+            "type": "keyword",
+            "value": "flex-end"
+          }
+        }
+      ],
+      [
+        "c2U9bsFlOMiAH3Jd7Nt3Z:2EiFMEG40PBm9_fkelqpo:columnGap:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "c2U9bsFlOMiAH3Jd7Nt3Z",
+          "property": "columnGap",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 35
+          }
+        }
+      ],
+      [
+        "c2U9bsFlOMiAH3Jd7Nt3Z:2EiFMEG40PBm9_fkelqpo:rowGap:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "c2U9bsFlOMiAH3Jd7Nt3Z",
+          "property": "rowGap",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 35
+          }
+        }
+      ],
+      [
+        "W3nronoXL5UFIkB-wwDvm:xOnFYyuZv5VkMeeKDLyiu:left:",
+        {
+          "breakpointId": "xOnFYyuZv5VkMeeKDLyiu",
+          "styleSourceId": "W3nronoXL5UFIkB-wwDvm",
+          "property": "left",
+          "value": {
+            "type": "unit",
+            "unit": "%",
+            "value": 32.5
+          }
+        }
+      ],
+      [
+        "W3nronoXL5UFIkB-wwDvm:xOnFYyuZv5VkMeeKDLyiu:display:",
+        {
+          "breakpointId": "xOnFYyuZv5VkMeeKDLyiu",
+          "styleSourceId": "W3nronoXL5UFIkB-wwDvm",
+          "property": "display",
+          "value": {
+            "type": "keyword",
+            "value": "none"
+          }
+        }
+      ],
+      [
+        "wAed7E3dNx0nb2cS_g7RT:2EiFMEG40PBm9_fkelqpo:height:",
+        {
+          "styleSourceId": "wAed7E3dNx0nb2cS_g7RT",
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "property": "height",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 175
+          }
+        }
+      ],
+      [
+        "wAed7E3dNx0nb2cS_g7RT:2EiFMEG40PBm9_fkelqpo:alignSelf:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "wAed7E3dNx0nb2cS_g7RT",
+          "property": "alignSelf",
+          "value": {
+            "type": "keyword",
+            "value": "center"
+          }
+        }
+      ],
+      [
+        "wAed7E3dNx0nb2cS_g7RT:xOnFYyuZv5VkMeeKDLyiu:left:",
+        {
+          "styleSourceId": "wAed7E3dNx0nb2cS_g7RT",
+          "breakpointId": "xOnFYyuZv5VkMeeKDLyiu",
+          "property": "left",
+          "value": {
+            "type": "unit",
+            "unit": "%",
+            "value": 32.5
+          }
+        }
+      ],
+      [
+        "wAed7E3dNx0nb2cS_g7RT:xOnFYyuZv5VkMeeKDLyiu:display:",
+        {
+          "breakpointId": "xOnFYyuZv5VkMeeKDLyiu",
+          "styleSourceId": "wAed7E3dNx0nb2cS_g7RT",
+          "property": "display",
+          "value": {
+            "type": "keyword",
+            "value": "block"
+          }
+        }
+      ],
+      [
+        "wAed7E3dNx0nb2cS_g7RT:2EiFMEG40PBm9_fkelqpo:display:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "wAed7E3dNx0nb2cS_g7RT",
+          "property": "display",
+          "value": {
+            "type": "keyword",
+            "value": "none"
+          }
+        }
+      ],
+      [
+        "wAed7E3dNx0nb2cS_g7RT:xOnFYyuZv5VkMeeKDLyiu:height:",
+        {
+          "breakpointId": "xOnFYyuZv5VkMeeKDLyiu",
+          "styleSourceId": "wAed7E3dNx0nb2cS_g7RT",
+          "property": "height",
+          "value": {
+            "type": "keyword",
+            "value": "auto"
+          }
+        }
+      ],
+      [
+        "wAed7E3dNx0nb2cS_g7RT:xOnFYyuZv5VkMeeKDLyiu:width:",
+        {
+          "breakpointId": "xOnFYyuZv5VkMeeKDLyiu",
+          "styleSourceId": "wAed7E3dNx0nb2cS_g7RT",
+          "property": "width",
+          "value": {
+            "type": "unit",
+            "unit": "%",
+            "value": 50
+          }
+        }
+      ],
+      [
+        "wAed7E3dNx0nb2cS_g7RT:xOnFYyuZv5VkMeeKDLyiu:marginTop:",
+        {
+          "breakpointId": "xOnFYyuZv5VkMeeKDLyiu",
+          "styleSourceId": "wAed7E3dNx0nb2cS_g7RT",
+          "property": "marginTop",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 20
+          }
+        }
+      ],
+      [
+        "wAed7E3dNx0nb2cS_g7RT:xOnFYyuZv5VkMeeKDLyiu:minWidth:",
+        {
+          "breakpointId": "xOnFYyuZv5VkMeeKDLyiu",
+          "styleSourceId": "wAed7E3dNx0nb2cS_g7RT",
+          "property": "minWidth",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 400
+          }
+        }
+      ],
+      [
+        "wAed7E3dNx0nb2cS_g7RT:Uvcw_OJqyPoLioZzUbP1x:minWidth:",
+        {
+          "breakpointId": "Uvcw_OJqyPoLioZzUbP1x",
+          "styleSourceId": "wAed7E3dNx0nb2cS_g7RT",
+          "property": "minWidth",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 350
+          }
+        }
+      ],
+      [
+        "wAed7E3dNx0nb2cS_g7RT:eCbcXJaLEKSKcnbAPzNF0:minWidth:",
+        {
+          "breakpointId": "eCbcXJaLEKSKcnbAPzNF0",
+          "styleSourceId": "wAed7E3dNx0nb2cS_g7RT",
+          "property": "minWidth",
+          "value": {
+            "type": "keyword",
+            "value": "auto"
+          }
+        }
+      ],
+      [
+        "wAed7E3dNx0nb2cS_g7RT:eCbcXJaLEKSKcnbAPzNF0:width:",
+        {
+          "breakpointId": "eCbcXJaLEKSKcnbAPzNF0",
+          "styleSourceId": "wAed7E3dNx0nb2cS_g7RT",
+          "property": "width",
+          "value": {
+            "type": "unit",
+            "unit": "%",
+            "value": 70
+          }
+        }
+      ],
+      [
+        "9azKYj0k1doXh9eQRfexr:2EiFMEG40PBm9_fkelqpo:pointerEvents:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "9azKYj0k1doXh9eQRfexr",
+          "property": "pointerEvents",
+          "value": {
+            "type": "keyword",
+            "value": "none"
+          },
+          "listed": true
+        }
+      ],
+      [
+        "HmRoN_C9U7n9zyjvzoyEj:2EiFMEG40PBm9_fkelqpo:overflowX:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "HmRoN_C9U7n9zyjvzoyEj",
+          "property": "overflowX",
+          "value": {
+            "type": "keyword",
+            "value": "hidden"
+          },
+          "listed": true
+        }
+      ],
+      [
+        "KNk_xRmkXWNXJNak2Sr38:2EiFMEG40PBm9_fkelqpo:overflowX:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "KNk_xRmkXWNXJNak2Sr38",
+          "property": "overflowX",
+          "value": {
+            "type": "keyword",
+            "value": "hidden"
+          },
+          "listed": true
+        }
+      ],
+      [
+        "9MmDDiYQWNQuy3WHscfRH:2EiFMEG40PBm9_fkelqpo:overflowX:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "9MmDDiYQWNQuy3WHscfRH",
+          "property": "overflowX",
+          "value": {
+            "type": "keyword",
+            "value": "hidden"
+          },
+          "listed": true
+        }
+      ],
+      [
+        "BouPjXY8RBwmifeVNvufv:2EiFMEG40PBm9_fkelqpo:overflowX:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "BouPjXY8RBwmifeVNvufv",
+          "property": "overflowX",
+          "value": {
+            "type": "keyword",
+            "value": "hidden"
+          },
+          "listed": true
+        }
+      ],
+      [
+        "CC7F69v07TRj5pqOQqpLo:2EiFMEG40PBm9_fkelqpo:overflowX:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "CC7F69v07TRj5pqOQqpLo",
+          "property": "overflowX",
+          "value": {
+            "type": "keyword",
+            "value": "hidden"
+          },
+          "listed": true
+        }
+      ],
+      [
+        "4ryRjFSESg774YjtgDtlB:2EiFMEG40PBm9_fkelqpo:transitionProperty:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "4ryRjFSESg774YjtgDtlB",
+          "property": "transitionProperty",
+          "value": {
+            "type": "layers",
+            "value": [
+              {
+                "type": "unparsed",
+                "value": "scale"
+              }
+            ]
+          }
+        }
+      ],
+      [
+        "4ryRjFSESg774YjtgDtlB:2EiFMEG40PBm9_fkelqpo:transitionDuration:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "4ryRjFSESg774YjtgDtlB",
+          "property": "transitionDuration",
+          "value": {
+            "type": "layers",
+            "value": [
+              {
+                "type": "unit",
+                "unit": "ms",
+                "value": 200
+              }
+            ]
+          }
+        }
+      ],
+      [
+        "4ryRjFSESg774YjtgDtlB:2EiFMEG40PBm9_fkelqpo:transitionTimingFunction:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "4ryRjFSESg774YjtgDtlB",
+          "property": "transitionTimingFunction",
+          "value": {
+            "type": "layers",
+            "value": [
+              {
+                "type": "keyword",
+                "value": "ease"
+              }
+            ]
+          }
+        }
+      ],
+      [
+        "4ryRjFSESg774YjtgDtlB:2EiFMEG40PBm9_fkelqpo:transitionDelay:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "4ryRjFSESg774YjtgDtlB",
+          "property": "transitionDelay",
+          "value": {
+            "type": "layers",
+            "value": [
+              {
+                "type": "unit",
+                "unit": "ms",
+                "value": 0
+              }
+            ]
+          }
+        }
+      ],
+      [
+        "4ryRjFSESg774YjtgDtlB:2EiFMEG40PBm9_fkelqpo:transitionBehavior:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "4ryRjFSESg774YjtgDtlB",
+          "property": "transitionBehavior",
+          "value": {
+            "type": "layers",
+            "value": [
+              {
+                "type": "keyword",
+                "value": "normal"
+              }
+            ]
+          }
+        }
+      ],
+      [
+        "4ryRjFSESg774YjtgDtlB:2EiFMEG40PBm9_fkelqpo:scale::hover",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "4ryRjFSESg774YjtgDtlB",
+          "state": ":hover",
+          "property": "scale",
+          "value": {
+            "type": "tuple",
+            "value": [
+              {
+                "type": "unit",
+                "unit": "%",
+                "value": 105
+              },
+              {
+                "type": "unit",
+                "unit": "%",
+                "value": 105
+              },
+              {
+                "type": "unit",
+                "unit": "%",
+                "value": 100
+              }
+            ]
           }
         }
       ]
@@ -67902,13 +68744,6 @@
         {
           "type": "local",
           "id": "UAgkrwirIq82WWCDcHCpn"
-        }
-      ],
-      [
-        "FXkbtcIniDpn8LtehhYY0",
-        {
-          "type": "local",
-          "id": "FXkbtcIniDpn8LtehhYY0"
         }
       ],
       [
@@ -70987,6 +71822,83 @@
         {
           "type": "local",
           "id": "y9H10ih76Veg0UKY42QbL"
+        }
+      ],
+      [
+        "Be9piWGLvZNYEsYOw1ZXv",
+        {
+          "type": "local",
+          "id": "Be9piWGLvZNYEsYOw1ZXv"
+        }
+      ],
+      [
+        "dkUxdMnm9scbYk9pqgEcm",
+        {
+          "type": "local",
+          "id": "dkUxdMnm9scbYk9pqgEcm"
+        }
+      ],
+      [
+        "dp2MVdm8gmSpO_sa40BfU",
+        {
+          "type": "local",
+          "id": "dp2MVdm8gmSpO_sa40BfU"
+        }
+      ],
+      [
+        "OZPu6GrFe-H0ouS7gsUgP",
+        {
+          "type": "local",
+          "id": "OZPu6GrFe-H0ouS7gsUgP"
+        }
+      ],
+      [
+        "zIV3yJdipQ4pLv17ijfQ7",
+        {
+          "type": "local",
+          "id": "zIV3yJdipQ4pLv17ijfQ7"
+        }
+      ],
+      [
+        "o1MeFYe01V657if9LJ1WX",
+        {
+          "type": "local",
+          "id": "o1MeFYe01V657if9LJ1WX"
+        }
+      ],
+      [
+        "giShYtgiyjeZOuZrpwKLs",
+        {
+          "type": "local",
+          "id": "giShYtgiyjeZOuZrpwKLs"
+        }
+      ],
+      [
+        "c2U9bsFlOMiAH3Jd7Nt3Z",
+        {
+          "type": "local",
+          "id": "c2U9bsFlOMiAH3Jd7Nt3Z"
+        }
+      ],
+      [
+        "wZjdkqZuOkY0JRpZv1dIw",
+        {
+          "type": "local",
+          "id": "wZjdkqZuOkY0JRpZv1dIw"
+        }
+      ],
+      [
+        "W3nronoXL5UFIkB-wwDvm",
+        {
+          "type": "local",
+          "id": "W3nronoXL5UFIkB-wwDvm"
+        }
+      ],
+      [
+        "wAed7E3dNx0nb2cS_g7RT",
+        {
+          "type": "local",
+          "id": "wAed7E3dNx0nb2cS_g7RT"
         }
       ]
     ],
@@ -74180,16 +75092,8 @@
         {
           "instanceId": "KgJv2re0fg1yur0ID7-1D",
           "values": [
-            "7MX0lZW3_ZfzukdqVrVw7"
-          ]
-        }
-      ],
-      [
-        "GHQFlssBq4IXj2KnNxoeJ",
-        {
-          "instanceId": "GHQFlssBq4IXj2KnNxoeJ",
-          "values": [
-            "FXkbtcIniDpn8LtehhYY0"
+            "7MX0lZW3_ZfzukdqVrVw7",
+            "c2U9bsFlOMiAH3Jd7Nt3Z"
           ]
         }
       ],
@@ -79376,6 +80280,96 @@
             "-YMqcGI-X7vuJSbS3FuvQ"
           ]
         }
+      ],
+      [
+        "b7eaHo_yXMynEie2HIy0a",
+        {
+          "instanceId": "b7eaHo_yXMynEie2HIy0a",
+          "values": [
+            "Be9piWGLvZNYEsYOw1ZXv"
+          ]
+        }
+      ],
+      [
+        "vfDTy2bZzKJg14hB0N36J",
+        {
+          "instanceId": "vfDTy2bZzKJg14hB0N36J",
+          "values": [
+            "dkUxdMnm9scbYk9pqgEcm"
+          ]
+        }
+      ],
+      [
+        "rSDH3-mmLVCZemXNujEQR",
+        {
+          "instanceId": "rSDH3-mmLVCZemXNujEQR",
+          "values": [
+            "dp2MVdm8gmSpO_sa40BfU"
+          ]
+        }
+      ],
+      [
+        "dj020Uoac5gSpigrWBmA_",
+        {
+          "instanceId": "dj020Uoac5gSpigrWBmA_",
+          "values": [
+            "OZPu6GrFe-H0ouS7gsUgP"
+          ]
+        }
+      ],
+      [
+        "Y7lBOnnBZAleVIiRjpgGU",
+        {
+          "instanceId": "Y7lBOnnBZAleVIiRjpgGU",
+          "values": [
+            "zIV3yJdipQ4pLv17ijfQ7"
+          ]
+        }
+      ],
+      [
+        "PGaMJTUKY94nDbCOGvvMG",
+        {
+          "instanceId": "PGaMJTUKY94nDbCOGvvMG",
+          "values": [
+            "o1MeFYe01V657if9LJ1WX"
+          ]
+        }
+      ],
+      [
+        "_DLVZ5xgJzFKcBIDnW_Jn",
+        {
+          "instanceId": "_DLVZ5xgJzFKcBIDnW_Jn",
+          "values": [
+            "giShYtgiyjeZOuZrpwKLs"
+          ]
+        }
+      ],
+      [
+        "6wsAVK-5piU69iGdkMKf3",
+        {
+          "instanceId": "6wsAVK-5piU69iGdkMKf3",
+          "values": [
+            "wZjdkqZuOkY0JRpZv1dIw"
+          ]
+        }
+      ],
+      [
+        "IJdSYpuAfw8YH8iWGf0mL",
+        {
+          "instanceId": "IJdSYpuAfw8YH8iWGf0mL",
+          "values": [
+            "W3nronoXL5UFIkB-wwDvm"
+          ]
+        }
+      ],
+      [
+        "klNYlmuRZgXURM6DH5ttE",
+        {
+          "instanceId": "klNYlmuRZgXURM6DH5ttE",
+          "values": [
+            "wAed7E3dNx0nb2cS_g7RT"
+          ]
+        }
       ]
     ],
     "props": [
@@ -80046,7 +81040,7 @@
           "instanceId": "O2wr5EP9IcjVbWwvjWrE3",
           "name": "code",
           "type": "string",
-          "value": "<script>\n  // 1) Configuration\n  if (typeof window.JSON_URL === 'undefined') {\n    window.JSON_URL = \"https://raw.githubusercontent.com/GE-Union/CourseBank/main/structure.json\";\n  }\n  if (typeof window.CACHE_KEY === 'undefined') {\n    window.CACHE_KEY = \"coursebank_structure_cache\";\n  }\n  if (typeof window.CACHE_TTL === 'undefined') {\n    window.CACHE_TTL = 90 * 60 * 1000; // 90 min\n  }\n  if (typeof window.EXT_COLORS === 'undefined') {\n    window.EXT_COLORS = {\n      PDF: \"#D32F2F\",\n      IPYNB: \"#F37C2F\",\n      ZIP: \"#595959\",\n      DOCX: \"#2A5699\",\n      XLSX: \"#1D6F42\",\n      PPTX: \"#D24726\",\n      TXT: \"#616161\",\n    };\n  }\n\n  \n  // 3) Helpers\n  async function fetchStructure() {\n    // try cache\n    const raw = localStorage.getItem(CACHE_KEY);\n    if (false) {\n      const { ts, data } = JSON.parse(raw);\n      if (Date.now() - ts < CACHE_TTL) {\n        return data;\n      }\n    }\n    // otherwise re-fetch\n    const res = await fetch(JSON_URL, { cache: \"no-store\" });\n    if (!res.ok) throw new Error(\"Failed to load structure.json\");\n    const data = await res.json();\n    localStorage.setItem(\n      CACHE_KEY,\n      JSON.stringify({ ts: Date.now(), data }),\n    );\n    return data;\n  }\n  \n  function getFolderData(structure, folderPath) {\n    const parts = folderPath.split(\"/\");\n    let cur = structure;\n    for (const p of parts) {\n      if (!(p in cur)) return null;\n      cur = cur[p];\n    }\n    return Array.isArray(cur) ? cur : null;\n  }\n  \n  function makeFileLink(folder, file) {\n    const container = document.createElement(\"div\");\n    container.className = \"custom-file-link\";\n  \n    // split name & author\n    const [rawName, rawAuth] = file.split(\"-a-\");\n    const filename = (rawName || file).replace(/_/g, \" \");\n    const author = rawAuth\n      ? rawAuth.replace(/_/g, \" \").replace(/\\.[^/.]+$/, \"\")\n      : \"Unknown\";\n  \n    const ext = file.split(\".\").pop().toUpperCase();\n  \n    const fullPath = `${folder}/${file}`;\n    const encodedPath = fullPath\n      .split('/')\n      .map(seg => encodeURIComponent(seg))\n      .join('/');\n  \n    const a = document.createElement('a');\n    if (['PDF'].includes(ext)) {\n      a.target = '_blank';\n      a.href = `https://raw.githubusercontent.com/GE-Union/CourseBank/main/${encodedPath}`;\n    } else {\n      a.setAttribute('download', \"\");\n      a.href = `https://raw.githubusercontent.com/GE-Union/CourseBank/main/${encodedPath}`; // direct download\n      //a.href = `https://geunion.dk/coursebank/${encodedPath}`;  // proxy script\n    }\n    a.style.display = 'flex';\n    a.style.alignItems = 'center';\n    a.style.width = '100%';\n    a.style.lineHeight = \"1.2\";\n  \n    // icon\n    const icon = document.createElement(\"div\");\n    icon.className = \"file-icon\";\n    const img = document.createElement(\"img\");\n    img.src =\n      \"https://raw.githubusercontent.com/GE-Union/CourseBank/main/res/file-icon.svg\";\n    img.alt = \"File Icon\";\n    icon.appendChild(img);\n  \n    const badge = document.createElement(\"div\");\n    badge.className = \"extension-badge\";\n    badge.textContent = ext;\n    badge.style.backgroundColor =\n      EXT_COLORS[ext] || \"var(--global-palette2,#1e73be)\";\n    icon.appendChild(badge);\n  \n    // details\n    const details = document.createElement(\"div\");\n    details.className = \"file-details\";\n    details.innerHTML = `<strong>${filename}</strong><span>${author}</span>`;\n  \n    // assemble\n    a.appendChild(icon);\n    a.appendChild(details);\n    container.appendChild(a);\n    return container;\n  }\n  \n  async function initFileLists() {\n    const holders = document.querySelectorAll(\".file-list\");\n    console.log(holders);\n    if (!holders.length) return;\n  \n    try {\n      const structure = await fetchStructure();\n      holders.forEach((holder) => {\n        const folder = holder.dataset.folder;\n        holder.innerHTML = \"\"; // clear “Loading…”\n        const files = getFolderData(structure, folder);\n        if (!files) {\n          holder.textContent = \"No notes found\";\n          return;\n        }\n        files.forEach((f) => holder.appendChild(makeFileLink(folder, f)));\n        console.log(`Populated ${folder}`);\n      });\n    } catch (err) {\n      console.error(err);\n      holders.forEach((holder) => {\n        holder.textContent = \"Unable to load course structure.\";\n      });\n    }\n  }\n  \n  document.addEventListener('DOMContentLoaded', () => {\n    requestAnimationFrame(() => {\n      setTimeout(function() {initFileLists();}, 500)\n    });\n  });\n</script>"
+          "value": "<script>\n  // 1) Configuration\n  if (typeof window.JSON_URL === 'undefined') {\n    window.JSON_URL = \"https://raw.githubusercontent.com/GE-Union/CourseBank/main/structure.json\";\n  }\n  if (typeof window.CACHE_KEY === 'undefined') {\n    window.CACHE_KEY = \"coursebank_structure_cache\";\n  }\n  if (typeof window.CACHE_TTL === 'undefined') {\n    window.CACHE_TTL = 90 * 60 * 1000; // 90 min\n  }\n  if (typeof window.EXT_COLORS === 'undefined') {\n    window.EXT_COLORS = {\n      PDF: \"#D32F2F\",\n      IPYNB: \"#F37C2F\",\n      ZIP: \"#595959\",\n      DOCX: \"#2A5699\",\n      XLSX: \"#1D6F42\",\n      PPTX: \"#D24726\",\n      TXT: \"#616161\",\n    };\n  }\n\n\n\n\n\n\n\n\n\n\n\n\n  // Utility: fetch a file from GitHub RAW and return a Blob with a guessed MIME\n  async function fetchGitHubBlob(pathInRepo) {\n    const owner  = \"GE-Union\";\n    const repo   = \"CourseBank\";\n    const branch = \"main\";\n\n    const url = `https://raw.githubusercontent.com/GE-Union/CourseBank/main/${pathInRepo}`;\n    const res = await fetch(url); // CORS must be allowed by GitHub (usually is on raw.githubusercontent.com)\n    if (!res.ok) throw new Error(`Failed to fetch: ${res.status} ${res.statusText}`);\n\n    const ext = (pathInRepo.split(\".\").pop() || \"\").toLowerCase();\n    const buf = await res.arrayBuffer();\n\n    // Minimal MIME mapping\n    const mimeByExt = {\n      pdf: \"application/pdf\",\n      ipynb: \"application/json\",    // notebooks are JSON; download will use filename anyway\n      txt: \"text/plain\",\n      json: \"application/json\",\n      png: \"image/png\",\n      jpg: \"image/jpeg\",\n      jpeg: \"image/jpeg\",\n      svg: \"image/svg+xml\",\n      html: \"text/html\",\n      csv: \"text/csv\"\n    };\n    const type = mimeByExt[ext] || (res.headers.get(\"content-type\") || \"application/octet-stream\");\n    return new Blob([buf], { type });\n  }\n\n  // Open PDF inline in a new tab using the browser’s viewer\n  async function openPdfInline(pathInRepo) {\n    // Open a tab immediately to avoid popup blockers\n    const win = window.open(\"\", \"_blank\");\n    try {\n      const blob = await fetchGitHubBlob(pathInRepo);\n      const url = URL.createObjectURL(blob);\n      win.location = url;\n\n      // Optional: revoke after the new tab finishes loading\n      // (can't reliably know, so do a delayed revoke)\n      setTimeout(() => URL.revokeObjectURL(url), 60_000);\n    } catch (err) {\n      if (win) win.close();\n      console.error(err);\n      alert(\"Could not open PDF.\");\n    }\n  }\n\n  // Force download (works for .ipynb and anything else you want to download)\n  async function downloadFile(pathInRepo) {\n    try {\n      const blob = await fetchGitHubBlob(pathInRepo);\n      const url = URL.createObjectURL(blob);\n      const a = document.createElement(\"a\");\n      a.href = url;\n      a.download = decodeURIComponent(pathInRepo.split(\"/\").pop() || \"file\");\n      document.body.appendChild(a);\n      a.click();\n      a.remove();\n      setTimeout(() => URL.revokeObjectURL(url), 10_000);\n    } catch (err) {\n      console.error(err);\n      alert(\"Could not download file.\");\n    }\n  }\n\n  // wiring for anchors\n  function wireDownloadLink(a, pathInRepo) {\n    const lower = pathInRepo.toLowerCase();\n    if (lower.endsWith(\".pdf\")) {\n      a.href = \"#\";\n      a.onclick = (e) => { e.preventDefault(); openPdfInline(pathInRepo); };\n      a.target = \"_blank\";\n      a.rel = \"noopener\";\n    } else if (lower.endsWith(\".ipynb\")) {\n      a.href = \"#\";\n      a.onclick = (e) => { e.preventDefault(); downloadFile(pathInRepo); };\n      a.removeAttribute(\"target\");\n    } else {\n      // default: point directly to RAW\n      a.href = `https://raw.githubusercontent.com/GE-Union/CourseBank/main/${encodeURI(pathInRepo)}`;\n    }\n  }\n\n\n\n\n\n\n\n\n\n\n\n  \n\n  \n  // 3) Helpers\n  async function fetchStructure() {\n    // try cache\n    const raw = localStorage.getItem(CACHE_KEY);\n    if (false) {\n      const { ts, data } = JSON.parse(raw);\n      if (Date.now() - ts < CACHE_TTL) {\n        return data;\n      }\n    }\n    // otherwise re-fetch\n    const res = await fetch(JSON_URL, { cache: \"no-store\" });\n    if (!res.ok) throw new Error(\"Failed to load structure.json\");\n    const data = await res.json();\n    localStorage.setItem(\n      CACHE_KEY,\n      JSON.stringify({ ts: Date.now(), data }),\n    );\n    return data;\n  }\n  \n  function getFolderData(structure, folderPath) {\n    const parts = folderPath.split(\"/\");\n    let cur = structure;\n    for (const p of parts) {\n      if (!(p in cur)) return null;\n      cur = cur[p];\n    }\n    return Array.isArray(cur) ? cur : null;\n  }\n  \n  function makeFileLink(folder, file) {\n    const container = document.createElement(\"div\");\n    container.className = \"custom-file-link\";\n  \n    // split name & author\n    const [rawName, rawAuth] = file.split(\"-a-\");\n    const filename = (rawName || file).replace(/_/g, \" \");\n    const author = rawAuth\n      ? rawAuth.replace(/_/g, \" \").replace(/\\.[^/.]+$/, \"\")\n      : \"Unknown\";\n  \n    const ext = file.split(\".\").pop().toUpperCase();\n  \n    const fullPath = `${folder}/${file}`;\n    const encodedPath = fullPath\n      .split('/')\n      .map(seg => encodeURIComponent(seg))\n      .join('/');\n  \n    const a = document.createElement('a');\n    /*if (['PDF'].includes(ext)) {\n      a.target = '_blank';\n      a.href = `https://raw.githubusercontent.com/GE-Union/CourseBank/main/${encodedPath}`;\n    } else {\n      a.setAttribute('download', \"\");\n      a.href = `https://raw.githubusercontent.com/GE-Union/CourseBank/main/${encodedPath}`; // direct download\n      //a.href = `https://geunion.dk/coursebank/${encodedPath}`;  // proxy script\n    }*/\n    wireDownloadLink(a, encodedPath);\n    a.style.display = 'flex';\n    a.style.alignItems = 'center';\n    a.style.width = '100%';\n    a.style.lineHeight = \"1.2\";\n  \n    // icon\n    const icon = document.createElement(\"div\");\n    icon.className = \"file-icon\";\n    const img = document.createElement(\"img\");\n    img.src =\n      \"https://raw.githubusercontent.com/GE-Union/CourseBank/main/res/file-icon.svg\";\n    img.alt = \"File Icon\";\n    icon.appendChild(img);\n  \n    const badge = document.createElement(\"div\");\n    badge.className = \"extension-badge\";\n    badge.textContent = ext;\n    badge.style.backgroundColor =\n      EXT_COLORS[ext] || \"var(--global-palette2,#1e73be)\";\n    icon.appendChild(badge);\n  \n    // details\n    const details = document.createElement(\"div\");\n    details.className = \"file-details\";\n    details.innerHTML = `<strong>${filename}</strong><span>${author}</span>`;\n  \n    // assemble\n    a.appendChild(icon);\n    a.appendChild(details);\n    container.appendChild(a);\n    return container;\n  }\n  \n  async function initFileLists() {\n    const holders = document.querySelectorAll(\".file-list\");\n    console.log(holders);\n    if (!holders.length) return;\n  \n    try {\n      const structure = await fetchStructure();\n      holders.forEach((holder) => {\n        const folder = holder.dataset.folder;\n        holder.innerHTML = \"\"; // clear “Loading…”\n        const files = getFolderData(structure, folder);\n        if (!files) {\n          holder.textContent = \"No notes found\";\n          return;\n        }\n        files.forEach((f) => holder.appendChild(makeFileLink(folder, f)));\n        console.log(`Populated ${folder}`);\n      });\n    } catch (err) {\n      console.error(err);\n      holders.forEach((holder) => {\n        holder.textContent = \"Unable to load course structure.\";\n      });\n    }\n  }\n  \n  document.addEventListener('DOMContentLoaded', () => {\n    requestAnimationFrame(() => {\n      setTimeout(function() {initFileLists();}, 500)\n    });\n  });\n</script>"
         }
       ],
       [
@@ -83194,26 +84188,6 @@
         {
           "id": "WtUgsXGXVJxHG4Y9smX5c",
           "instanceId": "_dQB3rQVmtk559TQt-sr-",
-          "name": "executeScriptOnCanvas",
-          "type": "boolean",
-          "value": true
-        }
-      ],
-      [
-        "CghihWaYqLtCgC4jrw0jM",
-        {
-          "id": "CghihWaYqLtCgC4jrw0jM",
-          "instanceId": "Z6vKSEz7uPCrs2zN-xMFn",
-          "name": "code",
-          "type": "string",
-          "value": "<style>\n  /* Optional quality-of-life styles */\n  #menu-icon {\n    cursor: grab;\n    touch-action: none;   /* allow smooth touch drag */\n    will-change: transform;\n    \n    user-drag: none;\n    -webkit-user-drag: none;\n    -moz-user-drag: none;\n    user-select: none;    /* avoid text selection while dragging */\n    -moz-user-select: none;\n    -webkit-user-select: none;\n    -ms-user-select: none;\n  }\n  #menu-icon.dragging { cursor: grabbing; }\n</style>\n\n<script>\n(() => {\n  const icon = document.getElementById('menu-icon');\n  if (!icon) return;\n\n  // Stop firefox sucking\n  icon.addEventListener('dragstart', e => e.preventDefault());\n\n\n  // position is managed purely via transform so layout doesn't shift\n  let tx = 0, ty = 0;               // current translation\n  let vx = 0, vy = 0;               // current velocity (px/s)\n  let dragging = false;\n  let startX = 0, startY = 0;       // pointer-down position\n  let lastPx = 0, lastPy = 0;       // last pointer position (for velocity)\n  let lastT = 0;                    // last timestamp\n\n  // Spring params: tweak for feel\n  const STIFFNESS = 300;   // spring constant (higher = snappier)\n  const DAMPING   = 15;   // damping (lower = bouncier)\n  const EPS_POS   = 0.5;  // stop threshold (position, px)\n  const EPS_VEL   = 0.5;  // stop threshold (velocity, px/s)\n\n  const setTransform = () => {\n    icon.style.transform = `translate(${tx}px, ${ty}px)`;\n  };\n\n  const onPointerDown = (e) => {\n    dragging = true;\n    icon.classList.add('dragging');\n    icon.setPointerCapture?.(e.pointerId);\n\n    startX = e.clientX - tx;\n    startY = e.clientY - ty;\n\n    lastPx = e.clientX;\n    lastPy = e.clientY;\n    lastT  = performance.now();\n    vx = 0; vy = 0; // reset; we'll accumulate movement velocity\n  };\n\n  const onPointerMove = (e) => {\n    if (!dragging) return;\n\n    const now = performance.now();\n    const dt  = (now - lastT) / 1000;\n    tx = e.clientX - startX;\n    ty = e.clientY - startY;\n\n    // simple low-pass filtered velocity estimate for spring kick\n    if (dt > 0) {\n      const instVx = (e.clientX - lastPx) / dt;\n      const instVy = (e.clientY - lastPy) / dt;\n      vx = 0.8 * vx + 0.2 * instVx;\n      vy = 0.8 * vy + 0.2 * instVy;\n    }\n    lastPx = e.clientX;\n    lastPy = e.clientY;\n    lastT  = now;\n\n    setTransform();\n  };\n\n  const onPointerUp = (e) => {\n    if (!dragging) return;\n    dragging = false;\n    icon.classList.remove('dragging');\n    icon.releasePointerCapture?.(e.pointerId);\n    animateBack(); // start spring home\n  };\n\n  function animateBack() {\n    let prev = performance.now();\n    function step(now) {\n      const dt = Math.min((now - prev) / 1000, 0.032); // clamp dt for stability\n      prev = now;\n\n      // Hooke's law: F = -k*x - c*v (mass=1)\n      const ax = -STIFFNESS * tx - DAMPING * vx;\n      const ay = -STIFFNESS * ty - DAMPING * vy;\n\n      vx += ax * dt;\n      vy += ay * dt;\n      tx += vx * dt;\n      ty += vy * dt;\n\n      setTransform();\n\n      const nearOrigin = Math.hypot(tx, ty) < EPS_POS;\n      const slowEnough = Math.hypot(vx, vy) < EPS_VEL;\n\n      if (nearOrigin && slowEnough) {\n        // snap exactly home to avoid subpixel fuzz\n        tx = ty = vx = vy = 0;\n        setTransform();\n        return;\n      }\n      // If user grabbed again, stop the spring.\n      if (dragging) return;\n\n      requestAnimationFrame(step);\n    }\n    requestAnimationFrame(step);\n  }\n\n  // Keep it floating above other content while dragging (no layout changes)\n  icon.style.zIndex = (parseInt(getComputedStyle(icon).zIndex) || 1).toString();\n\n  // Bind events\n  icon.addEventListener('pointerdown', onPointerDown);\n  window.addEventListener('pointermove', onPointerMove, { passive: true });\n  window.addEventListener('pointerup', onPointerUp);\n  window.addEventListener('pointercancel', onPointerUp);\n})();\n</script>"
-        }
-      ],
-      [
-        "mHiCSAXPy5z80Dj6Z1Z45",
-        {
-          "id": "mHiCSAXPy5z80Dj6Z1Z45",
-          "instanceId": "Z6vKSEz7uPCrs2zN-xMFn",
           "name": "executeScriptOnCanvas",
           "type": "boolean",
           "value": true
@@ -87268,6 +88242,516 @@
           "type": "asset",
           "value": "1e0e3d7d03a171402a3c667ebdc288c29417b5203deaaf86d3afb81c4a47fa50"
         }
+      ],
+      [
+        "DAAsCEX3OTMLExAruuy0X",
+        {
+          "id": "DAAsCEX3OTMLExAruuy0X",
+          "instanceId": "vfDTy2bZzKJg14hB0N36J",
+          "name": "src",
+          "type": "asset",
+          "value": "d0bae7d9f1233f81c6995d344596e2ad807cba98cd3d8af1906f2d9eb2efdd1b"
+        }
+      ],
+      [
+        "OWfRDkHy7CbQR2xYwPl2G",
+        {
+          "id": "OWfRDkHy7CbQR2xYwPl2G",
+          "instanceId": "vfDTy2bZzKJg14hB0N36J",
+          "name": "alt",
+          "type": "asset",
+          "value": "d0bae7d9f1233f81c6995d344596e2ad807cba98cd3d8af1906f2d9eb2efdd1b"
+        }
+      ],
+      [
+        "Pjo5OFo0gjFztBsovQ4Y8",
+        {
+          "id": "Pjo5OFo0gjFztBsovQ4Y8",
+          "instanceId": "vfDTy2bZzKJg14hB0N36J",
+          "name": "loading",
+          "type": "string",
+          "value": "lazy"
+        }
+      ],
+      [
+        "KDuMkhJaFMpGsOfZKc7nu",
+        {
+          "id": "KDuMkhJaFMpGsOfZKc7nu",
+          "instanceId": "rSDH3-mmLVCZemXNujEQR",
+          "name": "src",
+          "type": "asset",
+          "value": "976a523718abffc56a312f6c3a077f96a85bf09e7c876d4e3c0aa785dc52e10e"
+        }
+      ],
+      [
+        "vWvibIB9tbiZj7XWdNFFW",
+        {
+          "id": "vWvibIB9tbiZj7XWdNFFW",
+          "instanceId": "rSDH3-mmLVCZemXNujEQR",
+          "name": "alt",
+          "type": "asset",
+          "value": "976a523718abffc56a312f6c3a077f96a85bf09e7c876d4e3c0aa785dc52e10e"
+        }
+      ],
+      [
+        "7tESTbLlFZH24uh8Hnih7",
+        {
+          "id": "7tESTbLlFZH24uh8Hnih7",
+          "instanceId": "rSDH3-mmLVCZemXNujEQR",
+          "name": "loading",
+          "type": "string",
+          "value": "lazy"
+        }
+      ],
+      [
+        "SDeJJA0YOBwWifde41hM3",
+        {
+          "id": "SDeJJA0YOBwWifde41hM3",
+          "instanceId": "dj020Uoac5gSpigrWBmA_",
+          "name": "src",
+          "type": "asset",
+          "value": "86c5e183628dcccaaa6bcfba4e202ff8668e3f83acad24244d5dd4f040f95d81"
+        }
+      ],
+      [
+        "uOe2lvoV3sbQCuUaJuaI7",
+        {
+          "id": "uOe2lvoV3sbQCuUaJuaI7",
+          "instanceId": "dj020Uoac5gSpigrWBmA_",
+          "name": "alt",
+          "type": "asset",
+          "value": "86c5e183628dcccaaa6bcfba4e202ff8668e3f83acad24244d5dd4f040f95d81"
+        }
+      ],
+      [
+        "lI6GFVkP8_cc9xs2H7sr_",
+        {
+          "id": "lI6GFVkP8_cc9xs2H7sr_",
+          "instanceId": "dj020Uoac5gSpigrWBmA_",
+          "name": "loading",
+          "type": "string",
+          "value": "lazy"
+        }
+      ],
+      [
+        "7h5PtaYmo8HdOrnIMOhNG",
+        {
+          "id": "7h5PtaYmo8HdOrnIMOhNG",
+          "instanceId": "Y7lBOnnBZAleVIiRjpgGU",
+          "name": "src",
+          "type": "asset",
+          "value": "afd50622b288b6b37b6f97b854c5f179199dfcd5df917739c83c2f3048446c87"
+        }
+      ],
+      [
+        "HVdvr7RATOErMEzg4tGJi",
+        {
+          "id": "HVdvr7RATOErMEzg4tGJi",
+          "instanceId": "Y7lBOnnBZAleVIiRjpgGU",
+          "name": "alt",
+          "type": "asset",
+          "value": "afd50622b288b6b37b6f97b854c5f179199dfcd5df917739c83c2f3048446c87"
+        }
+      ],
+      [
+        "xMcidUf_H_M5SFODwBuHh",
+        {
+          "id": "xMcidUf_H_M5SFODwBuHh",
+          "instanceId": "Y7lBOnnBZAleVIiRjpgGU",
+          "name": "loading",
+          "type": "string",
+          "value": "lazy"
+        }
+      ],
+      [
+        "VhLGMbij8d1wHZbUkJE2Y",
+        {
+          "id": "VhLGMbij8d1wHZbUkJE2Y",
+          "instanceId": "Y7lBOnnBZAleVIiRjpgGU",
+          "name": "width",
+          "type": "asset",
+          "value": "afd50622b288b6b37b6f97b854c5f179199dfcd5df917739c83c2f3048446c87"
+        }
+      ],
+      [
+        "2TFXOsdkOgY77rCdLXYeW",
+        {
+          "id": "2TFXOsdkOgY77rCdLXYeW",
+          "instanceId": "Y7lBOnnBZAleVIiRjpgGU",
+          "name": "height",
+          "type": "asset",
+          "value": "afd50622b288b6b37b6f97b854c5f179199dfcd5df917739c83c2f3048446c87"
+        }
+      ],
+      [
+        "euhpXEEuL5gZY5gWt551Y",
+        {
+          "id": "euhpXEEuL5gZY5gWt551Y",
+          "instanceId": "dj020Uoac5gSpigrWBmA_",
+          "name": "width",
+          "type": "asset",
+          "value": "86c5e183628dcccaaa6bcfba4e202ff8668e3f83acad24244d5dd4f040f95d81"
+        }
+      ],
+      [
+        "cLhNwQJTFhVzspXqHGPW8",
+        {
+          "id": "cLhNwQJTFhVzspXqHGPW8",
+          "instanceId": "dj020Uoac5gSpigrWBmA_",
+          "name": "height",
+          "type": "asset",
+          "value": "86c5e183628dcccaaa6bcfba4e202ff8668e3f83acad24244d5dd4f040f95d81"
+        }
+      ],
+      [
+        "u5pWr1q1WEQ5SLgJO-ps1",
+        {
+          "id": "u5pWr1q1WEQ5SLgJO-ps1",
+          "instanceId": "b7eaHo_yXMynEie2HIy0a",
+          "name": "data-ws-show",
+          "type": "boolean",
+          "value": true
+        }
+      ],
+      [
+        "DQvOpIzo5DcIRZplEtW6A",
+        {
+          "id": "DQvOpIzo5DcIRZplEtW6A",
+          "instanceId": "q5gnA49q9wArjYyD2Om6r",
+          "name": "data-ws-show",
+          "type": "boolean",
+          "value": true
+        }
+      ],
+      [
+        "mOCzNDnmz_63B0RxoZTBl",
+        {
+          "id": "mOCzNDnmz_63B0RxoZTBl",
+          "instanceId": "H6EvZdHT41nDZZN3pNKzK",
+          "name": "data-ws-show",
+          "type": "boolean",
+          "value": true
+        }
+      ],
+      [
+        "avWDPuqDNoNYS3SVdBgvF",
+        {
+          "id": "avWDPuqDNoNYS3SVdBgvF",
+          "instanceId": "IJdSYpuAfw8YH8iWGf0mL",
+          "name": "src",
+          "type": "string",
+          "value": "https://student.dtu.dk/-/media/subsites/studieordninger/general-engineering/ge-ects-fordeling.png"
+        }
+      ],
+      [
+        "P-0evlHwdNs-sxbm6TQ3L",
+        {
+          "id": "P-0evlHwdNs-sxbm6TQ3L",
+          "instanceId": "IJdSYpuAfw8YH8iWGf0mL",
+          "name": "optimize",
+          "type": "boolean",
+          "value": false
+        }
+      ],
+      [
+        "Q_6PGMGlSucA66pVtPK_d",
+        {
+          "id": "Q_6PGMGlSucA66pVtPK_d",
+          "instanceId": "IJdSYpuAfw8YH8iWGf0mL",
+          "name": "loading",
+          "type": "string",
+          "value": "lazy"
+        }
+      ],
+      [
+        "woQD3FP33pCOEQFP8J2BU",
+        {
+          "id": "woQD3FP33pCOEQFP8J2BU",
+          "instanceId": "klNYlmuRZgXURM6DH5ttE",
+          "name": "src",
+          "type": "string",
+          "value": "https://student.dtu.dk/-/media/subsites/studieordninger/general-engineering/ge-ects-fordeling.png"
+        }
+      ],
+      [
+        "WncBp418cTHd14QaM9IVG",
+        {
+          "id": "WncBp418cTHd14QaM9IVG",
+          "instanceId": "klNYlmuRZgXURM6DH5ttE",
+          "name": "optimize",
+          "type": "boolean",
+          "value": false
+        }
+      ],
+      [
+        "8bYQqiUemSLQSVrPrFNzQ",
+        {
+          "id": "8bYQqiUemSLQSVrPrFNzQ",
+          "instanceId": "klNYlmuRZgXURM6DH5ttE",
+          "name": "loading",
+          "type": "string",
+          "value": "lazy"
+        }
+      ],
+      [
+        "KHlHW6EO7RKeFNN8XBljj",
+        {
+          "id": "KHlHW6EO7RKeFNN8XBljj",
+          "instanceId": "pxw7esairbJAyKUtZe8ZY",
+          "name": "code",
+          "type": "string",
+          "value": "<style>\n  /* Optional quality-of-life styles */\n  #menu-icon {\n    touch-action: none;   /* allow smooth touch drag */\n    will-change: transform;\n    \n    user-select: none;    /* avoid text selection while dragging */\n    -moz-user-select: none;\n    -webkit-user-select: none;\n    -ms-user-select: none;\n  }\n  #menu-icon.dragging { cursor: grabbing; }\n</style>\n\n<script>\n(() => {\n  const icon = document.getElementById('menu-icon');\n  if (!icon) return;\n\n  // position is managed purely via transform so layout doesn't shift\n  let pointerID = null;\n  let tx = 0, ty = 0;               // current translation\n  let vx = 0, vy = 0;               // current velocity (px/s)\n  let dragging = false;\n  let startX = 0, startY = 0;       // pointer-down position\n  let lastPx = 0, lastPy = 0;       // last pointer position (for velocity)\n  let lastT = 0;                    // last timestamp\n\n  // Spring params: tweak for feel\n  const STIFFNESS = 300;   // spring constant (higher = snappier)\n  const DAMPING   = 15;   // damping (lower = bouncier)\n  const EPS_POS   = 0.5;  // stop threshold (position, px)\n  const EPS_VEL   = 0.5;  // stop threshold (velocity, px/s)\n\n  const originalHref = icon.href;\n\n  \n  const setTransform = () => {\n    icon.style.transform = `translate(${tx}px, ${ty}px)`;\n  };\n\n  const onPointerDown = (e) => {\n    curPointerID = e.pointerId;\n    startX = e.clientX - tx;\n    startY = e.clientY - ty;\n\n    lastPx = e.clientX;\n    lastPy = e.clientY;\n    lastT  = performance.now();\n    vx = 0; vy = 0; // reset; we'll accumulate movement velocity\n  }\n  \n  const onDragStart = (e) => {\n    e.preventDefault();\n    icon.removeAttribute('href');\n    dragging = true;\n    icon.classList.add('dragging');\n    icon.setPointerCapture?.(curPointerId);\n  };\n\n  const onPointerMove = (e) => {\n    if (!dragging) return;\n\n    const now = performance.now();\n    const dt  = (now - lastT) / 1000;\n    tx = e.clientX - startX;\n    ty = e.clientY - startY;\n\n    // simple low-pass filtered velocity estimate for spring kick\n    if (dt > 0) {\n      const instVx = (e.clientX - lastPx) / dt;\n      const instVy = (e.clientY - lastPy) / dt;\n      vx = 0.8 * vx + 0.2 * instVx;\n      vy = 0.8 * vy + 0.2 * instVy;\n    }\n    lastPx = e.clientX;\n    lastPy = e.clientY;\n    lastT  = now;\n\n    setTransform();\n  };\n\n  const onPointerUp = (e) => {\n    if (!dragging) return;\n    e.preventDefault();\n    e.stopPropagation()\n    e.stopImmediatePropagation();\n    dragging = false;\n    icon.classList.remove('dragging');\n    icon.releasePointerCapture?.(e.pointerId);\n    animateBack(); // start spring home\n    return;\n  };\n\n  function animateBack() {\n    let prev = performance.now();\n    function step(now) {\n      const dt = Math.min((now - prev) / 1000, 0.032); // clamp dt for stability\n      prev = now;\n\n      // Hooke's law: F = -k*x - c*v (mass=1)\n      const ax = -STIFFNESS * tx - DAMPING * vx;\n      const ay = -STIFFNESS * ty - DAMPING * vy;\n\n      vx += ax * dt;\n      vy += ay * dt;\n      tx += vx * dt;\n      ty += vy * dt;\n\n      setTransform();\n\n      const nearOrigin = Math.hypot(tx, ty) < EPS_POS;\n      const slowEnough = Math.hypot(vx, vy) < EPS_VEL;\n\n      if (nearOrigin && slowEnough) {\n        // snap exactly home to avoid subpixel fuzz\n        tx = ty = vx = vy = 0;\n        setTransform();\n        icon.setAttribute('href', originalHref);\n        return;\n      }\n      // If user grabbed again, stop the spring.\n      if (dragging) return;\n\n      requestAnimationFrame(step);\n    }\n    requestAnimationFrame(step);\n  }\n\n  // Keep it floating above other content while dragging (no layout changes)\n  icon.style.zIndex = (parseInt(getComputedStyle(icon).zIndex) || 1).toString();\n\n  // Bind events\n  icon.addEventListener('dragstart', onDragStart);\n  icon.addEventListener('pointerdown', onPointerDown);\n  window.addEventListener('pointermove', onPointerMove, { passive: true });\n  window.addEventListener('pointerup', onPointerUp);\n  window.addEventListener('pointercancel', onPointerUp);\n})();\n</script>"
+        }
+      ],
+      [
+        "pkGCWEUM1nfWB5a-k8MSR",
+        {
+          "id": "pkGCWEUM1nfWB5a-k8MSR",
+          "instanceId": "pxw7esairbJAyKUtZe8ZY",
+          "name": "executeScriptOnCanvas",
+          "type": "boolean",
+          "value": true
+        }
+      ],
+      [
+        "MOXd_izTJG1IKaBiU_PfE",
+        {
+          "id": "MOXd_izTJG1IKaBiU_PfE",
+          "instanceId": "0dpbPe1gXvQ11Z8KqHDJG",
+          "name": "id",
+          "type": "string",
+          "value": "menu-icon"
+        }
+      ],
+      [
+        "thxJJ3ysk662Eyurqp3s3",
+        {
+          "id": "thxJJ3ysk662Eyurqp3s3",
+          "instanceId": "0dpbPe1gXvQ11Z8KqHDJG",
+          "name": "target",
+          "type": "string",
+          "value": "_self"
+        }
+      ],
+      [
+        "90QMN2HVPdDnCf_t925A8",
+        {
+          "id": "90QMN2HVPdDnCf_t925A8",
+          "instanceId": "UXYw-4b7F8INvp4Rsq1Kd",
+          "name": "id",
+          "type": "string",
+          "value": "menu-icon"
+        }
+      ],
+      [
+        "-fCuIXTlkQARedJFqxz7Y",
+        {
+          "id": "-fCuIXTlkQARedJFqxz7Y",
+          "instanceId": "UXYw-4b7F8INvp4Rsq1Kd",
+          "name": "target",
+          "type": "string",
+          "value": "_self"
+        }
+      ],
+      [
+        "yj1NjeYp6yz1UF-JYtFz_",
+        {
+          "id": "yj1NjeYp6yz1UF-JYtFz_",
+          "instanceId": "1ILs3FwH0s5ggpI_j271L",
+          "name": "target",
+          "type": "string",
+          "value": "_self"
+        }
+      ],
+      [
+        "zuiIOJI9B2Y5SYU50q3kK",
+        {
+          "id": "zuiIOJI9B2Y5SYU50q3kK",
+          "instanceId": "1ILs3FwH0s5ggpI_j271L",
+          "name": "id",
+          "type": "string",
+          "value": "menu-icon"
+        }
+      ],
+      [
+        "KvP-2RbXLgvHzuFlMH01d",
+        {
+          "id": "KvP-2RbXLgvHzuFlMH01d",
+          "instanceId": "jur7gkeb5USqqGBdh7dLH",
+          "name": "target",
+          "type": "string",
+          "value": "_self"
+        }
+      ],
+      [
+        "LNyI2E8IMMoISPKZZEaMT",
+        {
+          "id": "LNyI2E8IMMoISPKZZEaMT",
+          "instanceId": "jur7gkeb5USqqGBdh7dLH",
+          "name": "id",
+          "type": "string",
+          "value": "menu-icon"
+        }
+      ],
+      [
+        "U6K-974uFGFuvIy-A5Da5",
+        {
+          "id": "U6K-974uFGFuvIy-A5Da5",
+          "instanceId": "n1ALfHObqGjdI2cU8UxZx",
+          "name": "target",
+          "type": "string",
+          "value": "_self"
+        }
+      ],
+      [
+        "3MIdjdVGxz2bMAMai86Xe",
+        {
+          "id": "3MIdjdVGxz2bMAMai86Xe",
+          "instanceId": "n1ALfHObqGjdI2cU8UxZx",
+          "name": "id",
+          "type": "string",
+          "value": "menu-icon"
+        }
+      ],
+      [
+        "0c3bFjCnY1Ir0Q2DxV_h4",
+        {
+          "id": "0c3bFjCnY1Ir0Q2DxV_h4",
+          "instanceId": "_HKcfnZBc7x6s6oC4ui-G",
+          "name": "target",
+          "type": "string",
+          "value": "_self"
+        }
+      ],
+      [
+        "3vZu2Dm8h7YXDUDTzpRQT",
+        {
+          "id": "3vZu2Dm8h7YXDUDTzpRQT",
+          "instanceId": "_HKcfnZBc7x6s6oC4ui-G",
+          "name": "id",
+          "type": "string",
+          "value": "menu-icon"
+        }
+      ],
+      [
+        "fnyyFtFLXh6CHK1feRrrV",
+        {
+          "id": "fnyyFtFLXh6CHK1feRrrV",
+          "instanceId": "k8ph0iGJlFz5oL4KSNOIi",
+          "name": "code",
+          "type": "string",
+          "value": "<style>\n  /* Optional quality-of-life styles */\n  #menu-icon {\n    cursor: grab;\n    touch-action: none;   /* allow smooth touch drag */\n    will-change: transform;\n    \n    uuser-drag: none;\n    -webkit-uuser-drag: none;\n    -moz-uuser-drag: none;\n    user-select: none;    /* avoid text selection while dragging */\n    -moz-user-select: none;\n    -webkit-user-select: none;\n    -ms-user-select: none;\n  }\n  #menu-icon.dragging { cursor: grabbing; }\n</style>\n\n<script>\n(() => {\n  const icon = document.getElementById('menu-icon');\n  if (!icon) return;\n\n  // position is managed purely via transform so layout doesn't shift\n  let pointerID = null;\n  let tx = 0, ty = 0;               // current translation\n  let vx = 0, vy = 0;               // current velocity (px/s)\n  let dragging = false;\n  let startX = 0, startY = 0;       // pointer-down position\n  let lastPx = 0, lastPy = 0;       // last pointer position (for velocity)\n  let lastT = 0;                    // last timestamp\n\n  // Spring params: tweak for feel\n  const STIFFNESS = 300;   // spring constant (higher = snappier)\n  const DAMPING   = 15;   // damping (lower = bouncier)\n  const EPS_POS   = 0.5;  // stop threshold (position, px)\n  const EPS_VEL   = 0.5;  // stop threshold (velocity, px/s)\n\n  const originalHref = icon.href;\n\n  \n  const setTransform = () => {\n    icon.style.transform = `translate(${tx}px, ${ty}px)`;\n  };\n\n  const onPointerDown = (e) => {\n    curPointerID = e.pointerId;\n    startX = e.clientX - tx;\n    startY = e.clientY - ty;\n\n    lastPx = e.clientX;\n    lastPy = e.clientY;\n    lastT  = performance.now();\n    vx = 0; vy = 0; // reset; we'll accumulate movement velocity\n  }\n  \n  const onDragStart = (e) => {\n    e.preventDefault();\n    icon.removeAttribute('href');\n    dragging = true;\n    icon.classList.add('dragging');\n    icon.setPointerCapture?.(curPointerId);\n  };\n\n  const onPointerMove = (e) => {\n    if (!dragging) return;\n\n    const now = performance.now();\n    const dt  = (now - lastT) / 1000;\n    tx = e.clientX - startX;\n    ty = e.clientY - startY;\n\n    // simple low-pass filtered velocity estimate for spring kick\n    if (dt > 0) {\n      const instVx = (e.clientX - lastPx) / dt;\n      const instVy = (e.clientY - lastPy) / dt;\n      vx = 0.8 * vx + 0.2 * instVx;\n      vy = 0.8 * vy + 0.2 * instVy;\n    }\n    lastPx = e.clientX;\n    lastPy = e.clientY;\n    lastT  = now;\n\n    setTransform();\n  };\n\n  const onPointerUp = (e) => {\n    if (!dragging) return;\n    e.preventDefault();\n    e.stopPropagation()\n    e.stopImmediatePropagation();\n    dragging = false;\n    icon.classList.remove('dragging');\n    icon.releasePointerCapture?.(e.pointerId);\n    animateBack(); // start spring home\n    return;\n  };\n\n  function animateBack() {\n    let prev = performance.now();\n    function step(now) {\n      const dt = Math.min((now - prev) / 1000, 0.032); // clamp dt for stability\n      prev = now;\n\n      // Hooke's law: F = -k*x - c*v (mass=1)\n      const ax = -STIFFNESS * tx - DAMPING * vx;\n      const ay = -STIFFNESS * ty - DAMPING * vy;\n\n      vx += ax * dt;\n      vy += ay * dt;\n      tx += vx * dt;\n      ty += vy * dt;\n\n      setTransform();\n\n      const nearOrigin = Math.hypot(tx, ty) < EPS_POS;\n      const slowEnough = Math.hypot(vx, vy) < EPS_VEL;\n\n      if (nearOrigin && slowEnough) {\n        // snap exactly home to avoid subpixel fuzz\n        tx = ty = vx = vy = 0;\n        setTransform();\n        icon.setAttribute('href', originalHref);\n        return;\n      }\n      // If user grabbed again, stop the spring.\n      if (dragging) return;\n\n      requestAnimationFrame(step);\n    }\n    requestAnimationFrame(step);\n  }\n\n  // Keep it floating above other content while dragging (no layout changes)\n  icon.style.zIndex = (parseInt(getComputedStyle(icon).zIndex) || 1).toString();\n\n  // Bind events\n  icon.addEventListener('dragstart', onDragStart);\n  icon.addEventListener('pointerdown', onPointerDown);\n  window.addEventListener('pointermove', onPointerMove, { passive: true });\n  window.addEventListener('pointerup', onPointerUp);\n  window.addEventListener('pointercancel', onPointerUp);\n})();\n</script>"
+        }
+      ],
+      [
+        "kTl0J7zUjvG9RROLMes5G",
+        {
+          "id": "kTl0J7zUjvG9RROLMes5G",
+          "instanceId": "k8ph0iGJlFz5oL4KSNOIi",
+          "name": "executeScriptOnCanvas",
+          "type": "boolean",
+          "value": true
+        }
+      ],
+      [
+        "uzyIT58cn_1f4jdDGjYFE",
+        {
+          "id": "uzyIT58cn_1f4jdDGjYFE",
+          "instanceId": "i2d3CuCZS-uo-mGQWUYdA",
+          "name": "code",
+          "type": "string",
+          "value": "<style>\n  /* Optional quality-of-life styles */\n  #menu-icon {\n    cursor: grab;\n    touch-action: none;   /* allow smooth touch drag */\n    will-change: transform;\n    \n    uuser-drag: none;\n    -webkit-uuser-drag: none;\n    -moz-uuser-drag: none;\n    user-select: none;    /* avoid text selection while dragging */\n    -moz-user-select: none;\n    -webkit-user-select: none;\n    -ms-user-select: none;\n  }\n  #menu-icon.dragging { cursor: grabbing; }\n</style>\n\n<script>\n(() => {\n  const icon = document.getElementById('menu-icon');\n  if (!icon) return;\n\n  // position is managed purely via transform so layout doesn't shift\n  let pointerID = null;\n  let tx = 0, ty = 0;               // current translation\n  let vx = 0, vy = 0;               // current velocity (px/s)\n  let dragging = false;\n  let startX = 0, startY = 0;       // pointer-down position\n  let lastPx = 0, lastPy = 0;       // last pointer position (for velocity)\n  let lastT = 0;                    // last timestamp\n\n  // Spring params: tweak for feel\n  const STIFFNESS = 300;   // spring constant (higher = snappier)\n  const DAMPING   = 15;   // damping (lower = bouncier)\n  const EPS_POS   = 0.5;  // stop threshold (position, px)\n  const EPS_VEL   = 0.5;  // stop threshold (velocity, px/s)\n\n  const originalHref = icon.href;\n\n  \n  const setTransform = () => {\n    icon.style.transform = `translate(${tx}px, ${ty}px)`;\n  };\n\n  const onPointerDown = (e) => {\n    curPointerID = e.pointerId;\n    startX = e.clientX - tx;\n    startY = e.clientY - ty;\n\n    lastPx = e.clientX;\n    lastPy = e.clientY;\n    lastT  = performance.now();\n    vx = 0; vy = 0; // reset; we'll accumulate movement velocity\n  }\n  \n  const onDragStart = (e) => {\n    e.preventDefault();\n    icon.removeAttribute('href');\n    dragging = true;\n    icon.classList.add('dragging');\n    icon.setPointerCapture?.(curPointerId);\n  };\n\n  const onPointerMove = (e) => {\n    if (!dragging) return;\n\n    const now = performance.now();\n    const dt  = (now - lastT) / 1000;\n    tx = e.clientX - startX;\n    ty = e.clientY - startY;\n\n    // simple low-pass filtered velocity estimate for spring kick\n    if (dt > 0) {\n      const instVx = (e.clientX - lastPx) / dt;\n      const instVy = (e.clientY - lastPy) / dt;\n      vx = 0.8 * vx + 0.2 * instVx;\n      vy = 0.8 * vy + 0.2 * instVy;\n    }\n    lastPx = e.clientX;\n    lastPy = e.clientY;\n    lastT  = now;\n\n    setTransform();\n  };\n\n  const onPointerUp = (e) => {\n    if (!dragging) return;\n    e.preventDefault();\n    e.stopPropagation()\n    e.stopImmediatePropagation();\n    dragging = false;\n    icon.classList.remove('dragging');\n    icon.releasePointerCapture?.(e.pointerId);\n    animateBack(); // start spring home\n    return;\n  };\n\n  function animateBack() {\n    let prev = performance.now();\n    function step(now) {\n      const dt = Math.min((now - prev) / 1000, 0.032); // clamp dt for stability\n      prev = now;\n\n      // Hooke's law: F = -k*x - c*v (mass=1)\n      const ax = -STIFFNESS * tx - DAMPING * vx;\n      const ay = -STIFFNESS * ty - DAMPING * vy;\n\n      vx += ax * dt;\n      vy += ay * dt;\n      tx += vx * dt;\n      ty += vy * dt;\n\n      setTransform();\n\n      const nearOrigin = Math.hypot(tx, ty) < EPS_POS;\n      const slowEnough = Math.hypot(vx, vy) < EPS_VEL;\n\n      if (nearOrigin && slowEnough) {\n        // snap exactly home to avoid subpixel fuzz\n        tx = ty = vx = vy = 0;\n        setTransform();\n        icon.setAttribute('href', originalHref);\n        return;\n      }\n      // If user grabbed again, stop the spring.\n      if (dragging) return;\n\n      requestAnimationFrame(step);\n    }\n    requestAnimationFrame(step);\n  }\n\n  // Keep it floating above other content while dragging (no layout changes)\n  icon.style.zIndex = (parseInt(getComputedStyle(icon).zIndex) || 1).toString();\n\n  // Bind events\n  icon.addEventListener('dragstart', onDragStart);\n  icon.addEventListener('pointerdown', onPointerDown);\n  window.addEventListener('pointermove', onPointerMove, { passive: true });\n  window.addEventListener('pointerup', onPointerUp);\n  window.addEventListener('pointercancel', onPointerUp);\n})();\n</script>"
+        }
+      ],
+      [
+        "vwzuAtJZP-US_UvFhfw8t",
+        {
+          "id": "vwzuAtJZP-US_UvFhfw8t",
+          "instanceId": "i2d3CuCZS-uo-mGQWUYdA",
+          "name": "executeScriptOnCanvas",
+          "type": "boolean",
+          "value": true
+        }
+      ],
+      [
+        "JdlI_QOnKFWUFxPByQZrf",
+        {
+          "id": "JdlI_QOnKFWUFxPByQZrf",
+          "instanceId": "lYr7bqIila5GH928DPJP9",
+          "name": "code",
+          "type": "string",
+          "value": "<style>\n  /* Optional quality-of-life styles */\n  #menu-icon {\n    cursor: grab;\n    touch-action: none;   /* allow smooth touch drag */\n    will-change: transform;\n    \n    uuser-drag: none;\n    -webkit-uuser-drag: none;\n    -moz-uuser-drag: none;\n    user-select: none;    /* avoid text selection while dragging */\n    -moz-user-select: none;\n    -webkit-user-select: none;\n    -ms-user-select: none;\n  }\n  #menu-icon.dragging { cursor: grabbing; }\n</style>\n\n<script>\n(() => {\n  const icon = document.getElementById('menu-icon');\n  if (!icon) return;\n\n  // position is managed purely via transform so layout doesn't shift\n  let pointerID = null;\n  let tx = 0, ty = 0;               // current translation\n  let vx = 0, vy = 0;               // current velocity (px/s)\n  let dragging = false;\n  let startX = 0, startY = 0;       // pointer-down position\n  let lastPx = 0, lastPy = 0;       // last pointer position (for velocity)\n  let lastT = 0;                    // last timestamp\n\n  // Spring params: tweak for feel\n  const STIFFNESS = 300;   // spring constant (higher = snappier)\n  const DAMPING   = 15;   // damping (lower = bouncier)\n  const EPS_POS   = 0.5;  // stop threshold (position, px)\n  const EPS_VEL   = 0.5;  // stop threshold (velocity, px/s)\n\n  const originalHref = icon.href;\n\n  \n  const setTransform = () => {\n    icon.style.transform = `translate(${tx}px, ${ty}px)`;\n  };\n\n  const onPointerDown = (e) => {\n    curPointerID = e.pointerId;\n    startX = e.clientX - tx;\n    startY = e.clientY - ty;\n\n    lastPx = e.clientX;\n    lastPy = e.clientY;\n    lastT  = performance.now();\n    vx = 0; vy = 0; // reset; we'll accumulate movement velocity\n  }\n  \n  const onDragStart = (e) => {\n    e.preventDefault();\n    icon.removeAttribute('href');\n    dragging = true;\n    icon.classList.add('dragging');\n    icon.setPointerCapture?.(curPointerId);\n  };\n\n  const onPointerMove = (e) => {\n    if (!dragging) return;\n\n    const now = performance.now();\n    const dt  = (now - lastT) / 1000;\n    tx = e.clientX - startX;\n    ty = e.clientY - startY;\n\n    // simple low-pass filtered velocity estimate for spring kick\n    if (dt > 0) {\n      const instVx = (e.clientX - lastPx) / dt;\n      const instVy = (e.clientY - lastPy) / dt;\n      vx = 0.8 * vx + 0.2 * instVx;\n      vy = 0.8 * vy + 0.2 * instVy;\n    }\n    lastPx = e.clientX;\n    lastPy = e.clientY;\n    lastT  = now;\n\n    setTransform();\n  };\n\n  const onPointerUp = (e) => {\n    if (!dragging) return;\n    e.preventDefault();\n    e.stopPropagation()\n    e.stopImmediatePropagation();\n    dragging = false;\n    icon.classList.remove('dragging');\n    icon.releasePointerCapture?.(e.pointerId);\n    animateBack(); // start spring home\n    return;\n  };\n\n  function animateBack() {\n    let prev = performance.now();\n    function step(now) {\n      const dt = Math.min((now - prev) / 1000, 0.032); // clamp dt for stability\n      prev = now;\n\n      // Hooke's law: F = -k*x - c*v (mass=1)\n      const ax = -STIFFNESS * tx - DAMPING * vx;\n      const ay = -STIFFNESS * ty - DAMPING * vy;\n\n      vx += ax * dt;\n      vy += ay * dt;\n      tx += vx * dt;\n      ty += vy * dt;\n\n      setTransform();\n\n      const nearOrigin = Math.hypot(tx, ty) < EPS_POS;\n      const slowEnough = Math.hypot(vx, vy) < EPS_VEL;\n\n      if (nearOrigin && slowEnough) {\n        // snap exactly home to avoid subpixel fuzz\n        tx = ty = vx = vy = 0;\n        setTransform();\n        icon.setAttribute('href', originalHref);\n        return;\n      }\n      // If user grabbed again, stop the spring.\n      if (dragging) return;\n\n      requestAnimationFrame(step);\n    }\n    requestAnimationFrame(step);\n  }\n\n  // Keep it floating above other content while dragging (no layout changes)\n  icon.style.zIndex = (parseInt(getComputedStyle(icon).zIndex) || 1).toString();\n\n  // Bind events\n  icon.addEventListener('dragstart', onDragStart);\n  icon.addEventListener('pointerdown', onPointerDown);\n  window.addEventListener('pointermove', onPointerMove, { passive: true });\n  window.addEventListener('pointerup', onPointerUp);\n  window.addEventListener('pointercancel', onPointerUp);\n})();\n</script>"
+        }
+      ],
+      [
+        "JFcMLjjLuGkZ-LhJa-SPB",
+        {
+          "id": "JFcMLjjLuGkZ-LhJa-SPB",
+          "instanceId": "lYr7bqIila5GH928DPJP9",
+          "name": "executeScriptOnCanvas",
+          "type": "boolean",
+          "value": true
+        }
+      ],
+      [
+        "rFr83G2nzEcPIdNvSqpw3",
+        {
+          "id": "rFr83G2nzEcPIdNvSqpw3",
+          "instanceId": "mXoC1qeVkyUfU6bUMyNCc",
+          "name": "code",
+          "type": "string",
+          "value": "<style>\n  /* Optional quality-of-life styles */\n  #menu-icon {\n    cursor: grab;\n    touch-action: none;   /* allow smooth touch drag */\n    will-change: transform;\n    \n    uuser-drag: none;\n    -webkit-uuser-drag: none;\n    -moz-uuser-drag: none;\n    user-select: none;    /* avoid text selection while dragging */\n    -moz-user-select: none;\n    -webkit-user-select: none;\n    -ms-user-select: none;\n  }\n  #menu-icon.dragging { cursor: grabbing; }\n</style>\n\n<script>\n(() => {\n  const icon = document.getElementById('menu-icon');\n  if (!icon) return;\n\n  // position is managed purely via transform so layout doesn't shift\n  let pointerID = null;\n  let tx = 0, ty = 0;               // current translation\n  let vx = 0, vy = 0;               // current velocity (px/s)\n  let dragging = false;\n  let startX = 0, startY = 0;       // pointer-down position\n  let lastPx = 0, lastPy = 0;       // last pointer position (for velocity)\n  let lastT = 0;                    // last timestamp\n\n  // Spring params: tweak for feel\n  const STIFFNESS = 300;   // spring constant (higher = snappier)\n  const DAMPING   = 15;   // damping (lower = bouncier)\n  const EPS_POS   = 0.5;  // stop threshold (position, px)\n  const EPS_VEL   = 0.5;  // stop threshold (velocity, px/s)\n\n  const originalHref = icon.href;\n\n  \n  const setTransform = () => {\n    icon.style.transform = `translate(${tx}px, ${ty}px)`;\n  };\n\n  const onPointerDown = (e) => {\n    curPointerID = e.pointerId;\n    startX = e.clientX - tx;\n    startY = e.clientY - ty;\n\n    lastPx = e.clientX;\n    lastPy = e.clientY;\n    lastT  = performance.now();\n    vx = 0; vy = 0; // reset; we'll accumulate movement velocity\n  }\n  \n  const onDragStart = (e) => {\n    e.preventDefault();\n    icon.removeAttribute('href');\n    dragging = true;\n    icon.classList.add('dragging');\n    icon.setPointerCapture?.(curPointerId);\n  };\n\n  const onPointerMove = (e) => {\n    if (!dragging) return;\n\n    const now = performance.now();\n    const dt  = (now - lastT) / 1000;\n    tx = e.clientX - startX;\n    ty = e.clientY - startY;\n\n    // simple low-pass filtered velocity estimate for spring kick\n    if (dt > 0) {\n      const instVx = (e.clientX - lastPx) / dt;\n      const instVy = (e.clientY - lastPy) / dt;\n      vx = 0.8 * vx + 0.2 * instVx;\n      vy = 0.8 * vy + 0.2 * instVy;\n    }\n    lastPx = e.clientX;\n    lastPy = e.clientY;\n    lastT  = now;\n\n    setTransform();\n  };\n\n  const onPointerUp = (e) => {\n    if (!dragging) return;\n    e.preventDefault();\n    e.stopPropagation()\n    e.stopImmediatePropagation();\n    dragging = false;\n    icon.classList.remove('dragging');\n    icon.releasePointerCapture?.(e.pointerId);\n    animateBack(); // start spring home\n    return;\n  };\n\n  function animateBack() {\n    let prev = performance.now();\n    function step(now) {\n      const dt = Math.min((now - prev) / 1000, 0.032); // clamp dt for stability\n      prev = now;\n\n      // Hooke's law: F = -k*x - c*v (mass=1)\n      const ax = -STIFFNESS * tx - DAMPING * vx;\n      const ay = -STIFFNESS * ty - DAMPING * vy;\n\n      vx += ax * dt;\n      vy += ay * dt;\n      tx += vx * dt;\n      ty += vy * dt;\n\n      setTransform();\n\n      const nearOrigin = Math.hypot(tx, ty) < EPS_POS;\n      const slowEnough = Math.hypot(vx, vy) < EPS_VEL;\n\n      if (nearOrigin && slowEnough) {\n        // snap exactly home to avoid subpixel fuzz\n        tx = ty = vx = vy = 0;\n        setTransform();\n        icon.setAttribute('href', originalHref);\n        return;\n      }\n      // If user grabbed again, stop the spring.\n      if (dragging) return;\n\n      requestAnimationFrame(step);\n    }\n    requestAnimationFrame(step);\n  }\n\n  // Keep it floating above other content while dragging (no layout changes)\n  icon.style.zIndex = (parseInt(getComputedStyle(icon).zIndex) || 1).toString();\n\n  // Bind events\n  icon.addEventListener('dragstart', onDragStart);\n  icon.addEventListener('pointerdown', onPointerDown);\n  window.addEventListener('pointermove', onPointerMove, { passive: true });\n  window.addEventListener('pointerup', onPointerUp);\n  window.addEventListener('pointercancel', onPointerUp);\n})();\n</script>"
+        }
+      ],
+      [
+        "7ZQjWtOj5adrDBgrBm7V-",
+        {
+          "id": "7ZQjWtOj5adrDBgrBm7V-",
+          "instanceId": "mXoC1qeVkyUfU6bUMyNCc",
+          "name": "executeScriptOnCanvas",
+          "type": "boolean",
+          "value": true
+        }
+      ],
+      [
+        "E56joFESv6DKOo-ot-F_G",
+        {
+          "id": "E56joFESv6DKOo-ot-F_G",
+          "instanceId": "GIHI1t_axUfAXJMkQT95T",
+          "name": "code",
+          "type": "string",
+          "value": "<style>\n  /* Optional quality-of-life styles */\n  #menu-icon {\n    cursor: grab;\n    touch-action: none;   /* allow smooth touch drag */\n    will-change: transform;\n    \n    uuser-drag: none;\n    -webkit-uuser-drag: none;\n    -moz-uuser-drag: none;\n    user-select: none;    /* avoid text selection while dragging */\n    -moz-user-select: none;\n    -webkit-user-select: none;\n    -ms-user-select: none;\n  }\n  #menu-icon.dragging { cursor: grabbing; }\n</style>\n\n<script>\n(() => {\n  const icon = document.getElementById('menu-icon');\n  if (!icon) return;\n\n  // position is managed purely via transform so layout doesn't shift\n  let pointerID = null;\n  let tx = 0, ty = 0;               // current translation\n  let vx = 0, vy = 0;               // current velocity (px/s)\n  let dragging = false;\n  let startX = 0, startY = 0;       // pointer-down position\n  let lastPx = 0, lastPy = 0;       // last pointer position (for velocity)\n  let lastT = 0;                    // last timestamp\n\n  // Spring params: tweak for feel\n  const STIFFNESS = 300;   // spring constant (higher = snappier)\n  const DAMPING   = 15;   // damping (lower = bouncier)\n  const EPS_POS   = 0.5;  // stop threshold (position, px)\n  const EPS_VEL   = 0.5;  // stop threshold (velocity, px/s)\n\n  const originalHref = icon.href;\n\n  \n  const setTransform = () => {\n    icon.style.transform = `translate(${tx}px, ${ty}px)`;\n  };\n\n  const onPointerDown = (e) => {\n    curPointerID = e.pointerId;\n    startX = e.clientX - tx;\n    startY = e.clientY - ty;\n\n    lastPx = e.clientX;\n    lastPy = e.clientY;\n    lastT  = performance.now();\n    vx = 0; vy = 0; // reset; we'll accumulate movement velocity\n  }\n  \n  const onDragStart = (e) => {\n    e.preventDefault();\n    icon.removeAttribute('href');\n    dragging = true;\n    icon.classList.add('dragging');\n    icon.setPointerCapture?.(curPointerId);\n  };\n\n  const onPointerMove = (e) => {\n    if (!dragging) return;\n\n    const now = performance.now();\n    const dt  = (now - lastT) / 1000;\n    tx = e.clientX - startX;\n    ty = e.clientY - startY;\n\n    // simple low-pass filtered velocity estimate for spring kick\n    if (dt > 0) {\n      const instVx = (e.clientX - lastPx) / dt;\n      const instVy = (e.clientY - lastPy) / dt;\n      vx = 0.8 * vx + 0.2 * instVx;\n      vy = 0.8 * vy + 0.2 * instVy;\n    }\n    lastPx = e.clientX;\n    lastPy = e.clientY;\n    lastT  = now;\n\n    setTransform();\n  };\n\n  const onPointerUp = (e) => {\n    if (!dragging) return;\n    e.preventDefault();\n    e.stopPropagation()\n    e.stopImmediatePropagation();\n    dragging = false;\n    icon.classList.remove('dragging');\n    icon.releasePointerCapture?.(e.pointerId);\n    animateBack(); // start spring home\n    return;\n  };\n\n  function animateBack() {\n    let prev = performance.now();\n    function step(now) {\n      const dt = Math.min((now - prev) / 1000, 0.032); // clamp dt for stability\n      prev = now;\n\n      // Hooke's law: F = -k*x - c*v (mass=1)\n      const ax = -STIFFNESS * tx - DAMPING * vx;\n      const ay = -STIFFNESS * ty - DAMPING * vy;\n\n      vx += ax * dt;\n      vy += ay * dt;\n      tx += vx * dt;\n      ty += vy * dt;\n\n      setTransform();\n\n      const nearOrigin = Math.hypot(tx, ty) < EPS_POS;\n      const slowEnough = Math.hypot(vx, vy) < EPS_VEL;\n\n      if (nearOrigin && slowEnough) {\n        // snap exactly home to avoid subpixel fuzz\n        tx = ty = vx = vy = 0;\n        setTransform();\n        icon.setAttribute('href', originalHref);\n        return;\n      }\n      // If user grabbed again, stop the spring.\n      if (dragging) return;\n\n      requestAnimationFrame(step);\n    }\n    requestAnimationFrame(step);\n  }\n\n  // Keep it floating above other content while dragging (no layout changes)\n  icon.style.zIndex = (parseInt(getComputedStyle(icon).zIndex) || 1).toString();\n\n  // Bind events\n  icon.addEventListener('dragstart', onDragStart);\n  icon.addEventListener('pointerdown', onPointerDown);\n  window.addEventListener('pointermove', onPointerMove, { passive: true });\n  window.addEventListener('pointerup', onPointerUp);\n  window.addEventListener('pointercancel', onPointerUp);\n})();\n</script>"
+        }
+      ],
+      [
+        "C9XlpvIo3hoXVAo7OQncO",
+        {
+          "id": "C9XlpvIo3hoXVAo7OQncO",
+          "instanceId": "GIHI1t_axUfAXJMkQT95T",
+          "name": "executeScriptOnCanvas",
+          "type": "boolean",
+          "value": true
+        }
+      ],
+      [
+        "0iWzRwbPVNaoNOBLrCsoh",
+        {
+          "id": "0iWzRwbPVNaoNOBLrCsoh",
+          "instanceId": "7zcsqfR5rhmDpZuovxIoS",
+          "name": "code",
+          "type": "string",
+          "value": "<style>\n  /* Optional quality-of-life styles */\n  #menu-icon {\n    cursor: grab;\n    touch-action: none;   /* allow smooth touch drag */\n    will-change: transform;\n    \n    uuser-drag: none;\n    -webkit-uuser-drag: none;\n    -moz-uuser-drag: none;\n    user-select: none;    /* avoid text selection while dragging */\n    -moz-user-select: none;\n    -webkit-user-select: none;\n    -ms-user-select: none;\n  }\n  #menu-icon.dragging { cursor: grabbing; }\n</style>\n\n<script>\n(() => {\n  const icon = document.getElementById('menu-icon');\n  if (!icon) return;\n\n  // position is managed purely via transform so layout doesn't shift\n  let pointerID = null;\n  let tx = 0, ty = 0;               // current translation\n  let vx = 0, vy = 0;               // current velocity (px/s)\n  let dragging = false;\n  let startX = 0, startY = 0;       // pointer-down position\n  let lastPx = 0, lastPy = 0;       // last pointer position (for velocity)\n  let lastT = 0;                    // last timestamp\n\n  // Spring params: tweak for feel\n  const STIFFNESS = 300;   // spring constant (higher = snappier)\n  const DAMPING   = 15;   // damping (lower = bouncier)\n  const EPS_POS   = 0.5;  // stop threshold (position, px)\n  const EPS_VEL   = 0.5;  // stop threshold (velocity, px/s)\n\n  const originalHref = icon.href;\n\n  \n  const setTransform = () => {\n    icon.style.transform = `translate(${tx}px, ${ty}px)`;\n  };\n\n  const onPointerDown = (e) => {\n    curPointerID = e.pointerId;\n    startX = e.clientX - tx;\n    startY = e.clientY - ty;\n\n    lastPx = e.clientX;\n    lastPy = e.clientY;\n    lastT  = performance.now();\n    vx = 0; vy = 0; // reset; we'll accumulate movement velocity\n  }\n  \n  const onDragStart = (e) => {\n    e.preventDefault();\n    icon.removeAttribute('href');\n    dragging = true;\n    icon.classList.add('dragging');\n    icon.setPointerCapture?.(curPointerId);\n  };\n\n  const onPointerMove = (e) => {\n    if (!dragging) return;\n\n    const now = performance.now();\n    const dt  = (now - lastT) / 1000;\n    tx = e.clientX - startX;\n    ty = e.clientY - startY;\n\n    // simple low-pass filtered velocity estimate for spring kick\n    if (dt > 0) {\n      const instVx = (e.clientX - lastPx) / dt;\n      const instVy = (e.clientY - lastPy) / dt;\n      vx = 0.8 * vx + 0.2 * instVx;\n      vy = 0.8 * vy + 0.2 * instVy;\n    }\n    lastPx = e.clientX;\n    lastPy = e.clientY;\n    lastT  = now;\n\n    setTransform();\n  };\n\n  const onPointerUp = (e) => {\n    if (!dragging) return;\n    e.preventDefault();\n    e.stopPropagation()\n    e.stopImmediatePropagation();\n    dragging = false;\n    icon.classList.remove('dragging');\n    icon.releasePointerCapture?.(e.pointerId);\n    animateBack(); // start spring home\n    return;\n  };\n\n  function animateBack() {\n    let prev = performance.now();\n    function step(now) {\n      const dt = Math.min((now - prev) / 1000, 0.032); // clamp dt for stability\n      prev = now;\n\n      // Hooke's law: F = -k*x - c*v (mass=1)\n      const ax = -STIFFNESS * tx - DAMPING * vx;\n      const ay = -STIFFNESS * ty - DAMPING * vy;\n\n      vx += ax * dt;\n      vy += ay * dt;\n      tx += vx * dt;\n      ty += vy * dt;\n\n      setTransform();\n\n      const nearOrigin = Math.hypot(tx, ty) < EPS_POS;\n      const slowEnough = Math.hypot(vx, vy) < EPS_VEL;\n\n      if (nearOrigin && slowEnough) {\n        // snap exactly home to avoid subpixel fuzz\n        tx = ty = vx = vy = 0;\n        setTransform();\n        icon.setAttribute('href', originalHref);\n        return;\n      }\n      // If user grabbed again, stop the spring.\n      if (dragging) return;\n\n      requestAnimationFrame(step);\n    }\n    requestAnimationFrame(step);\n  }\n\n  // Keep it floating above other content while dragging (no layout changes)\n  icon.style.zIndex = (parseInt(getComputedStyle(icon).zIndex) || 1).toString();\n\n  // Bind events\n  icon.addEventListener('dragstart', onDragStart);\n  icon.addEventListener('pointerdown', onPointerDown);\n  window.addEventListener('pointermove', onPointerMove, { passive: true });\n  window.addEventListener('pointerup', onPointerUp);\n  window.addEventListener('pointercancel', onPointerUp);\n})();\n</script>"
+        }
+      ],
+      [
+        "1TJk3Q3Z767iXT3G2XV3f",
+        {
+          "id": "1TJk3Q3Z767iXT3G2XV3f",
+          "instanceId": "7zcsqfR5rhmDpZuovxIoS",
+          "name": "executeScriptOnCanvas",
+          "type": "boolean",
+          "value": true
+        }
       ]
     ],
     "dataSources": [],
@@ -87306,6 +88790,10 @@
             },
             {
               "type": "id",
+              "value": "QYA6FW5e-RzB_DTX8ptV2"
+            },
+            {
+              "type": "id",
               "value": "iCngEFmzikjPrqjuwOPBT"
             },
             {
@@ -87318,11 +88806,7 @@
             },
             {
               "type": "id",
-              "value": "Z6vKSEz7uPCrs2zN-xMFn"
-            },
-            {
-              "type": "id",
-              "value": "QYA6FW5e-RzB_DTX8ptV2"
+              "value": "k8ph0iGJlFz5oL4KSNOIi"
             }
           ]
         }
@@ -88232,6 +89716,10 @@
             {
               "type": "id",
               "value": "9DJIiwc-dbX039n2SYZLd"
+            },
+            {
+              "type": "id",
+              "value": "pxw7esairbJAyKUtZe8ZY"
             }
           ]
         }
@@ -88267,6 +89755,10 @@
             {
               "type": "id",
               "value": "MkczoN0eVLLEFtohoVYHj"
+            },
+            {
+              "type": "id",
+              "value": "i2d3CuCZS-uo-mGQWUYdA"
             }
           ]
         }
@@ -88297,11 +89789,19 @@
             },
             {
               "type": "id",
+              "value": "b7eaHo_yXMynEie2HIy0a"
+            },
+            {
+              "type": "id",
               "value": "q5gnA49q9wArjYyD2Om6r"
             },
             {
               "type": "id",
               "value": "KgJv2re0fg1yur0ID7-1D"
+            },
+            {
+              "type": "id",
+              "value": "klNYlmuRZgXURM6DH5ttE"
             },
             {
               "type": "id",
@@ -88322,6 +89822,10 @@
             {
               "type": "id",
               "value": "H6EvZdHT41nDZZN3pNKzK"
+            },
+            {
+              "type": "id",
+              "value": "mXoC1qeVkyUfU6bUMyNCc"
             }
           ]
         }
@@ -88365,6 +89869,10 @@
             {
               "type": "id",
               "value": "BbwHOJYcQezvu2t_yWpNj"
+            },
+            {
+              "type": "id",
+              "value": "7zcsqfR5rhmDpZuovxIoS"
             }
           ]
         }
@@ -93555,6 +95063,10 @@
             {
               "type": "id",
               "value": "p5YhssXse9QQ6K2CmjR5I"
+            },
+            {
+              "type": "id",
+              "value": "lYr7bqIila5GH928DPJP9"
             }
           ]
         }
@@ -94371,7 +95883,7 @@
           "children": [
             {
               "type": "text",
-              "value": "Academic & Social events \n"
+              "value": "Events 🎫  \n"
             }
           ]
         }
@@ -94401,7 +95913,7 @@
           "children": [
             {
               "type": "text",
-              "value": "The Website"
+              "value": "Website 🌐 "
             }
           ]
         }
@@ -94416,7 +95928,7 @@
           "children": [
             {
               "type": "text",
-              "value": "Partnerships and Career"
+              "value": "Career 💼 "
             }
           ]
         }
@@ -94431,7 +95943,7 @@
           "children": [
             {
               "type": "text",
-              "value": "Here you can find all the relevant knowledge about GE - without the fluff. We took all the hacks we wish we had, and put them in one place. You get our honest opinions on the four specialisations, worked past exams, revised notes from older students, formula booklets, a deadline calendar, and most importantly, an academically supportive community."
+              "value": "All the knowledge about GE – no fluff. We’ve bundled the hacks we wish we had into one place: honest takes on the four specialisations, past exams, revised notes, formula booklets, and a deadline calendar. Most importantly, it’s about sharing and supporting each other so no one has to study alone."
             }
           ]
         }
@@ -94446,7 +95958,7 @@
           "children": [
             {
               "type": "text",
-              "value": "We connect you with exciting companies, career tips, and real opportunities. Whether it’s exclusive events with industry professionals, company visits, or student jobs. We help you explore what’s out there. You’ll learn what companies are looking for, how to stand out, and what it’s actually like to work in different fields, all while building a network that could kickstart your career."
+              "value": "From company visits to career tips, we connect you with opportunities worth grabbing. You’ll meet industry professionals, hear what companies actually look for, and get a feel for different fields. Along the way, you build a network that could kickstart your career, while picking up the tools to stand out."
             }
           ]
         }
@@ -94633,26 +96145,15 @@
           "children": [
             {
               "type": "id",
-              "value": "-5qRRgwjeqAWFQ7Nyua0q"
+              "value": "PGaMJTUKY94nDbCOGvvMG"
+            },
+            {
+              "type": "id",
+              "value": "_DLVZ5xgJzFKcBIDnW_Jn"
             },
             {
               "type": "id",
               "value": "YH9VDvDaT9PVk68s4PrO6"
-            }
-          ]
-        }
-      ],
-      [
-        "-5qRRgwjeqAWFQ7Nyua0q",
-        {
-          "type": "instance",
-          "id": "-5qRRgwjeqAWFQ7Nyua0q",
-          "component": "ws:element",
-          "tag": "h2",
-          "children": [
-            {
-              "type": "text",
-              "value": "What is GE?"
             }
           ]
         }
@@ -94667,7 +96168,7 @@
           "children": [
             {
               "type": "text",
-              "value": "The Bachelor of Science in General Engineering at DTU is a three-year international programme that gives you a strong foundation in mathematics, physics, chemistry, and biotechnology. It teaches you to collaborate across disciplines and apply engineering skills to real-world challenges. Through practical design-build projects, you will develop problem-solving abilities and learn how to work effectively in diverse teams. Studying in an international environment with courses taught in English, you’ll gain the broad competences needed to become an innovative engineer ready to shape the future."
+              "value": "It's a three-year international programme that gives you a strong foundation in mathematics, physics, chemistry, and biotechnology. It teaches you to collaborate across disciplines and apply engineering skills to real-world challenges. Through practical design-build projects, you will develop problem-solving abilities and learn how to work effectively in diverse teams. Studying in an international environment with courses taught in English, you’ll gain the broad competences needed to become an innovative engineer ready to shape the future."
             }
           ]
         }
@@ -94702,7 +96203,7 @@
           "type": "instance",
           "id": "ub8047JLQ0uCiD45OIDOK",
           "component": "ws:element",
-          "tag": "h2",
+          "tag": "h3",
           "children": [
             {
               "type": "text",
@@ -94995,60 +96496,11 @@
           "children": [
             {
               "type": "id",
-              "value": "1tE3_9cqqBzdFjVRa8TRy"
+              "value": "qZVY2HOV37_ECLyvRwnwc"
             },
             {
               "type": "id",
-              "value": "o5OsmDba7_ukt3seIVcdO"
-            }
-          ]
-        }
-      ],
-      [
-        "1tE3_9cqqBzdFjVRa8TRy",
-        {
-          "type": "instance",
-          "id": "1tE3_9cqqBzdFjVRa8TRy",
-          "component": "ws:element",
-          "tag": "h2",
-          "children": [
-            {
-              "type": "text",
-              "value": "Polytechnical Foundations "
-            },
-            {
-              "type": "id",
-              "value": "GHQFlssBq4IXj2KnNxoeJ"
-            }
-          ]
-        }
-      ],
-      [
-        "GHQFlssBq4IXj2KnNxoeJ",
-        {
-          "type": "instance",
-          "id": "GHQFlssBq4IXj2KnNxoeJ",
-          "component": "ws:element",
-          "tag": "span",
-          "children": [
-            {
-              "type": "text",
-              "value": "The Core Stuff"
-            }
-          ]
-        }
-      ],
-      [
-        "o5OsmDba7_ukt3seIVcdO",
-        {
-          "type": "instance",
-          "id": "o5OsmDba7_ukt3seIVcdO",
-          "component": "ws:element",
-          "tag": "p",
-          "children": [
-            {
-              "type": "text",
-              "value": "The polytechnical foundation is basically all the main general subjects every GE student will have to take, which include Chemistry, Bioengineering, Physics, Programming, Statistics, and Mathematics. Some are more of a pain than others, but the main point is to bring all students to a general standard across all these base subjects. "
+              "value": "IJdSYpuAfw8YH8iWGf0mL"
             }
           ]
         }
@@ -95717,6 +97169,10 @@
             {
               "type": "id",
               "value": "xlh0bWdmY95N298rFf3Vk"
+            },
+            {
+              "type": "id",
+              "value": "GIHI1t_axUfAXJMkQT95T"
             }
           ]
         }
@@ -99958,16 +101414,6 @@
           "id": "_dQB3rQVmtk559TQt-sr-",
           "component": "HtmlEmbed",
           "label": "Note List",
-          "children": []
-        }
-      ],
-      [
-        "Z6vKSEz7uPCrs2zN-xMFn",
-        {
-          "type": "instance",
-          "id": "Z6vKSEz7uPCrs2zN-xMFn",
-          "component": "HtmlEmbed",
-          "label": "Logo Drag Script",
           "children": []
         }
       ],
@@ -104827,7 +106273,7 @@
           "children": [
             {
               "type": "text",
-              "value": "You might have already been to S-Huset (student house) for a beer or maybe for a sandwich at the café; if you have, you can thank PF for that. Unlike the 4 DTU-sponsored \"Friday Bars\" (Hegnet, Diamenten, Ether, Diagonalen) that are open from 14 to 21 on Fridays, S-Huset is independent and stays open till 1 on weekdays and 3 am on Fridays. It's a great bar that you can chill at from lunch time to late evening, playing pool, foosball, or ping pong with cheap beer! "
+              "value": "You might have already been to S-Huset (student house) for a beer or maybe for a sandwich at the café. If you have, you can thank PF for that. Unlike the 4 DTU-sponsored \"Friday Bars\" (Hegnet, Diamenten, Ether, Diagonalen) that are open from 14 to 21 on Fridays, S-Huset is independent and stays open till 1 on weekdays and 3 am on Fridays. It's a great bar that you can chill at from lunch time to late evening, playing pool, foosball, or ping pong with cheap beer! "
             }
           ]
         }
@@ -106781,6 +108227,298 @@
           "id": "20i9xQGam0egwaPvujFfw",
           "component": "Image",
           "label": "Icon",
+          "children": []
+        }
+      ],
+      [
+        "b7eaHo_yXMynEie2HIy0a",
+        {
+          "type": "instance",
+          "id": "b7eaHo_yXMynEie2HIy0a",
+          "component": "ws:element",
+          "tag": "div",
+          "label": "Specialisation icons",
+          "children": [
+            {
+              "type": "id",
+              "value": "vfDTy2bZzKJg14hB0N36J"
+            },
+            {
+              "type": "id",
+              "value": "rSDH3-mmLVCZemXNujEQR"
+            },
+            {
+              "type": "id",
+              "value": "Y7lBOnnBZAleVIiRjpgGU"
+            },
+            {
+              "type": "id",
+              "value": "dj020Uoac5gSpigrWBmA_"
+            }
+          ]
+        }
+      ],
+      [
+        "vfDTy2bZzKJg14hB0N36J",
+        {
+          "type": "instance",
+          "id": "vfDTy2bZzKJg14hB0N36J",
+          "component": "Image",
+          "children": []
+        }
+      ],
+      [
+        "rSDH3-mmLVCZemXNujEQR",
+        {
+          "type": "instance",
+          "id": "rSDH3-mmLVCZemXNujEQR",
+          "component": "Image",
+          "children": []
+        }
+      ],
+      [
+        "dj020Uoac5gSpigrWBmA_",
+        {
+          "type": "instance",
+          "id": "dj020Uoac5gSpigrWBmA_",
+          "component": "Image",
+          "children": []
+        }
+      ],
+      [
+        "Y7lBOnnBZAleVIiRjpgGU",
+        {
+          "type": "instance",
+          "id": "Y7lBOnnBZAleVIiRjpgGU",
+          "component": "Image",
+          "children": []
+        }
+      ],
+      [
+        "PGaMJTUKY94nDbCOGvvMG",
+        {
+          "type": "instance",
+          "id": "PGaMJTUKY94nDbCOGvvMG",
+          "component": "ws:element",
+          "tag": "p",
+          "children": [
+            {
+              "type": "text",
+              "value": "The Bachelor of Science in General Engineering at DTU"
+            }
+          ]
+        }
+      ],
+      [
+        "_DLVZ5xgJzFKcBIDnW_Jn",
+        {
+          "type": "instance",
+          "id": "_DLVZ5xgJzFKcBIDnW_Jn",
+          "component": "ws:element",
+          "tag": "p",
+          "children": [
+            {
+              "type": "text",
+              "value": "But we like to call it "
+            },
+            {
+              "type": "id",
+              "value": "XA3vIDtHWxvo8IO3joR16"
+            },
+            {
+              "type": "text",
+              "value": "."
+            }
+          ]
+        }
+      ],
+      [
+        "XA3vIDtHWxvo8IO3joR16",
+        {
+          "type": "instance",
+          "id": "XA3vIDtHWxvo8IO3joR16",
+          "component": "ws:element",
+          "tag": "b",
+          "children": [
+            {
+              "type": "text",
+              "value": "GE"
+            }
+          ]
+        }
+      ],
+      [
+        "qZVY2HOV37_ECLyvRwnwc",
+        {
+          "type": "instance",
+          "id": "qZVY2HOV37_ECLyvRwnwc",
+          "component": "ws:element",
+          "tag": "div",
+          "children": [
+            {
+              "type": "id",
+              "value": "CiHplYyN-6KdJjjwxZXf4"
+            },
+            {
+              "type": "id",
+              "value": "_2cYL2mOG6sXeoFnUn3Dv"
+            },
+            {
+              "type": "id",
+              "value": "cY1grpsLgs3IXfxLqzevl"
+            }
+          ]
+        }
+      ],
+      [
+        "_2cYL2mOG6sXeoFnUn3Dv",
+        {
+          "type": "instance",
+          "id": "_2cYL2mOG6sXeoFnUn3Dv",
+          "component": "ws:element",
+          "tag": "h3",
+          "children": [
+            {
+              "type": "text",
+              "value": "Polytechnical Foundations "
+            },
+            {
+              "type": "id",
+              "value": "6wsAVK-5piU69iGdkMKf3"
+            }
+          ]
+        }
+      ],
+      [
+        "6wsAVK-5piU69iGdkMKf3",
+        {
+          "type": "instance",
+          "id": "6wsAVK-5piU69iGdkMKf3",
+          "component": "ws:element",
+          "tag": "span",
+          "children": [
+            {
+              "type": "text",
+              "value": "The Core Stuff"
+            }
+          ]
+        }
+      ],
+      [
+        "cY1grpsLgs3IXfxLqzevl",
+        {
+          "type": "instance",
+          "id": "cY1grpsLgs3IXfxLqzevl",
+          "component": "ws:element",
+          "tag": "p",
+          "children": [
+            {
+              "type": "text",
+              "value": "The polytechnical foundation is basically all the main general subjects every GE student will have to take, which include Chemistry, Bioengineering, Physics, Programming, Statistics, and Mathematics. Some are more of a pain than others, but the main point is to bring all students to a general standard across all these base subjects. "
+            }
+          ]
+        }
+      ],
+      [
+        "IJdSYpuAfw8YH8iWGf0mL",
+        {
+          "type": "instance",
+          "id": "IJdSYpuAfw8YH8iWGf0mL",
+          "component": "Image",
+          "children": []
+        }
+      ],
+      [
+        "CiHplYyN-6KdJjjwxZXf4",
+        {
+          "type": "instance",
+          "id": "CiHplYyN-6KdJjjwxZXf4",
+          "component": "ws:element",
+          "tag": "h2",
+          "children": [
+            {
+              "type": "text",
+              "value": "Curriculum"
+            }
+          ]
+        }
+      ],
+      [
+        "klNYlmuRZgXURM6DH5ttE",
+        {
+          "type": "instance",
+          "id": "klNYlmuRZgXURM6DH5ttE",
+          "component": "Image",
+          "children": []
+        }
+      ],
+      [
+        "pxw7esairbJAyKUtZe8ZY",
+        {
+          "type": "instance",
+          "id": "pxw7esairbJAyKUtZe8ZY",
+          "component": "HtmlEmbed",
+          "label": "Logo Drag Script",
+          "children": []
+        }
+      ],
+      [
+        "k8ph0iGJlFz5oL4KSNOIi",
+        {
+          "type": "instance",
+          "id": "k8ph0iGJlFz5oL4KSNOIi",
+          "component": "HtmlEmbed",
+          "label": "Logo Drag Script",
+          "children": []
+        }
+      ],
+      [
+        "i2d3CuCZS-uo-mGQWUYdA",
+        {
+          "type": "instance",
+          "id": "i2d3CuCZS-uo-mGQWUYdA",
+          "component": "HtmlEmbed",
+          "label": "Logo Drag Script",
+          "children": []
+        }
+      ],
+      [
+        "lYr7bqIila5GH928DPJP9",
+        {
+          "type": "instance",
+          "id": "lYr7bqIila5GH928DPJP9",
+          "component": "HtmlEmbed",
+          "label": "Logo Drag Script",
+          "children": []
+        }
+      ],
+      [
+        "mXoC1qeVkyUfU6bUMyNCc",
+        {
+          "type": "instance",
+          "id": "mXoC1qeVkyUfU6bUMyNCc",
+          "component": "HtmlEmbed",
+          "label": "Logo Drag Script",
+          "children": []
+        }
+      ],
+      [
+        "GIHI1t_axUfAXJMkQT95T",
+        {
+          "type": "instance",
+          "id": "GIHI1t_axUfAXJMkQT95T",
+          "component": "HtmlEmbed",
+          "label": "Logo Drag Script",
+          "children": []
+        }
+      ],
+      [
+        "7zcsqfR5rhmDpZuovxIoS",
+        {
+          "type": "instance",
+          "id": "7zcsqfR5rhmDpZuovxIoS",
+          "component": "HtmlEmbed",
+          "label": "Logo Drag Script",
           "children": []
         }
       ]

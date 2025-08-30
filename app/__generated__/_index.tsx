@@ -11,7 +11,7 @@ import { Tooltip as Tooltip, TooltipTrigger as TooltipTrigger, TooltipContent as
 
       export const projectId = "94456f8c-a847-426a-aec8-16de390bd3eb";
 
-      export const lastPublished = "2025-08-29T01:41:00.015Z";
+      export const lastPublished = "2025-08-30T02:11:55.578Z";
 
       export const siteName = "GE Union";
 
@@ -68,7 +68,7 @@ src={"/assets/GE_Logo_-_Big_AQmTkCh-ue9Xfr1xXdV_k.svg"}
 width={492}
 height={684}
 id={"menu-icon"}
-className={`w-image c1g1752z c1l3m6tn cz7iu34 c40iywk codsd31 c16er72m c1qt5xo2 c1wjaqd0 cwdcrf1`} />
+className={`w-image c1g1752z c1l3m6tn cz7iu34 c40iywk codsd31 c16er72m c1qt5xo2 c1wjaqd0`} />
 <Box
 className={`w-box ci03eyw c5zf3td c1bdekej cy2vnym cgykfac c8chaf1 crymv6m ch588tu cd1c1x2 cgjpuuk co3wgvm cjdg5q7`}>
 <p
@@ -201,7 +201,7 @@ className={`w-element cyoo8jj c1k74xht`}>
 {"GE Union"}
 </h1>
 <Text
-className={`w-text cg3nt0s c74dsfz czgmbqe cyoo8jj c1wwlxnr cje5w08 c1k74xht cimns5a c1bck0pu c16hxlzn c1c73s0v c7u4ssh`}>
+className={`w-text cqawzgp c1s7gudn czgmbqe cyoo8jj c1wwlxnr cje5w08 c1k74xht cimns5a c1bck0pu cnurt1a c1wzvl6u c7u4ssh`}>
 {"Your "}
 <b
 className={`w-element`}>
@@ -342,7 +342,7 @@ src={"/assets/GE_Logo_-_Black_ELdGguoKnkmGIG7zpf438.svg"}
 width={498}
 height={618}
 alt={""}
-className={`w-image c1shgpg6 c16e72yc c14233kc c1w0yra6 cpq2gwm cbeiaob c1k74xht c19dg1ud`} />
+className={`w-image c1shgpg6 c7hwif1 c14233kc c1w0yra6 cpq2gwm cj7bt5u c1k74xht c19dg1ud`} />
 <h2
 className={`w-element`}>
 {"Who We Are"}
@@ -387,7 +387,7 @@ className={`w-element cwawr8f ci03eyw cn8b0jh cywh3a cu8ogtt c1qqrgor`}>
 src={"https://github.com/GE-Union/WebsiteContent/blob/main/images/reel-previews/reel1.png?raw=true"}
 optimize={false}
 loading={"lazy"}
-className={`w-image cd3toq c17nm8vt c1xymrvd c8yo8yx c1dohq8s c2z8j1e c1a9mgdi c117si4 c74spxi c1i89xtz c1k74xht c1wuzpx5`} />
+className={`w-image cd3toq c17nm8vt c1xymrvd c8yo8yx c1dohq8s c2z8j1e c1a9mgdi c117si4 c74spxi c1i89xtz c1k74xht c19dg1ud c1wuzpx5`} />
 </div>
 <div
 className={`w-element cwawr8f ci03eyw cu8ogtt cn8b0jh cywh3a cy6xfzs`}>
@@ -395,12 +395,12 @@ className={`w-element cwawr8f ci03eyw cu8ogtt cn8b0jh cywh3a cy6xfzs`}>
 src={"https://github.com/GE-Union/WebsiteContent/blob/main/images/reel-previews/reel2.png?raw=true"}
 loading={"lazy"}
 optimize={false}
-className={`w-image cd3toq c17nm8vt c1xymrvd c8yo8yx c1dohq8s c2z8j1e c1a9mgdi c117si4 c74spxi c1i89xtz c1k74xht c1wuzpx5`} />
+className={`w-image cd3toq c17nm8vt c1xymrvd c8yo8yx c1dohq8s c2z8j1e c1a9mgdi c117si4 c74spxi c1i89xtz c1k74xht c19dg1ud c1wuzpx5`} />
 <Image
 src={"https://github.com/GE-Union/WebsiteContent/blob/main/images/reel-previews/reel3.png?raw=true"}
 loading={"lazy"}
 optimize={false}
-className={`w-image cd3toq c17nm8vt c1xymrvd c8yo8yx c1dohq8s c2z8j1e c1a9mgdi c117si4 c74spxi c1i89xtz c1k74xht c1wuzpx5`} />
+className={`w-image cd3toq c17nm8vt c1xymrvd c8yo8yx c1dohq8s c2z8j1e c1a9mgdi c117si4 c74spxi c1i89xtz c1k74xht c19dg1ud c1wuzpx5`} />
 </div>
 <div
 className={`w-element cwawr8f ci03eyw cn8b0jh cywh3a cu8ogtt c1rvt1lv`}>
@@ -408,12 +408,12 @@ className={`w-element cwawr8f ci03eyw cn8b0jh cywh3a cu8ogtt c1rvt1lv`}>
 src={"https://github.com/GE-Union/WebsiteContent/blob/main/images/reel-previews/reel4.png?raw=true"}
 loading={"lazy"}
 optimize={false}
-className={`w-image cd3toq c17nm8vt c1xymrvd c8yo8yx c1dohq8s c2z8j1e c1a9mgdi c117si4 c74spxi c1i89xtz c1k74xht c1wuzpx5`} />
+className={`w-image cd3toq c17nm8vt c1xymrvd c8yo8yx c1dohq8s c2z8j1e c1a9mgdi c117si4 c74spxi c1i89xtz c1k74xht c19dg1ud c1wuzpx5`} />
 <Image
 src={"https://github.com/GE-Union/WebsiteContent/blob/main/images/reel-previews/reel5.png?raw=true"}
 loading={"lazy"}
 optimize={false}
-className={`w-image cd3toq c17nm8vt c1xymrvd c8yo8yx c1dohq8s c2z8j1e c1a9mgdi c117si4 c74spxi c1i89xtz c1k74xht c1wuzpx5`} />
+className={`w-image cd3toq c17nm8vt c1xymrvd c8yo8yx c1dohq8s c2z8j1e c1a9mgdi c117si4 c74spxi c1i89xtz c1k74xht c19dg1ud c1wuzpx5`} />
 </div>
 <div
 className={`w-element cwawr8f ci03eyw cu8ogtt cn8b0jh cywh3a cy6xfzs`}>
@@ -421,7 +421,7 @@ className={`w-element cwawr8f ci03eyw cu8ogtt cn8b0jh cywh3a cy6xfzs`}>
 src={"https://github.com/GE-Union/WebsiteContent/blob/main/images/reel-previews/reel6.png?raw=true"}
 optimize={false}
 loading={"lazy"}
-className={`w-image cd3toq c17nm8vt c1xymrvd c8yo8yx c1dohq8s c2z8j1e c1a9mgdi c117si4 c74spxi c1i89xtz c1k74xht c1wuzpx5`} />
+className={`w-image cd3toq c17nm8vt c1xymrvd c8yo8yx c1dohq8s c2z8j1e c1a9mgdi c117si4 c74spxi c1i89xtz c1k74xht c19dg1ud c1wuzpx5`} />
 </div>
 </Box>
 <Box
@@ -596,30 +596,6 @@ className={`w-image c1nfcmlw`} />
 </Link>
 </Box>
 </Box>
-<Link_1
-href={"https://webstudio.is/?via=badge"}
-target={"_blank"}
-className={`w-element cfyrpk4 c2gl1gx c1pd7k79 c1v4vkm5 c1bti4b5 c15392bw cmyjs62 czstdzv c13f4d8e c1ut9lo7 c1mz59p0 c1g0r0c1 cuhk95i c11qj1rn c1aq6eep c18zghtn cr2ujrk c7amdgj cqw36j6 c68ooh8 clgapjo c1q3df6t c1ho4waj c1ea0099 cuz3b7n`}>
-<HtmlEmbed
-code={"<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"currentColor\" viewBox=\"0 0 16 16\" width=\"100%\" height=\"100%\" style=\"display: block;\"><path fill-rule=\"evenodd\" d=\"m12.32 12.416 2.62-8.085a1.205 1.205 0 1 0-2.292-.746l-2.62 8.084a1.205 1.205 0 1 0 2.292.747Z\" clip-rule=\"evenodd\"/><path fill-rule=\"evenodd\" d=\"M8 7.624c.297 0 .517.175.704.394.207.243.373.545.514.866.634 1.44.753 3.241.753 3.241a1.206 1.206 0 0 0 1.285 1.122 1.207 1.207 0 0 0 1.12-1.287s-.16-2.25-.952-4.05C10.744 6.364 9.594 5.208 8 5.208c-1.594 0-2.744 1.156-3.424 2.7-.792 1.8-.951 4.05-.951 4.05a1.207 1.207 0 0 0 1.12 1.288 1.206 1.206 0 0 0 1.284-1.122s.119-1.8.753-3.24a3.52 3.52 0 0 1 .514-.867c.187-.22.406-.394.704-.394Z\" clip-rule=\"evenodd\"/><path fill-rule=\"evenodd\" d=\"M5.973 11.669 3.352 3.585a1.205 1.205 0 1 0-2.293.746l2.622 8.084a1.205 1.205 0 1 0 2.292-.746Z\" clip-rule=\"evenodd\"/></svg>"}
-className={`w-html-embed c6f08mx c58jkk8 c4bwhth c767uka`} />
-<div
-className={`w-element`}>
-{".Built with Webstudio"}
-</div>
-</Link_1>
-<HtmlEmbed
-code={"<script>\n  document.addEventListener('DOMContentLoaded', () => {\n    requestAnimationFrame(() => {\n      setTimeout(function() {\n          loadCalendar();\n      }, 500)\n    });\n  });\n\n  function loadCalendar() {\n    const today = new Date();\n        const currentYear = today.getFullYear();\n        const currentMonth = today.getMonth(); // 0-indexed\n        const currentDate = today.getDate();\n      \n        const monthNames = [\n          \"January\", \"February\", \"March\", \"April\", \"May\", \"June\",\n          \"July\", \"August\", \"September\", \"October\", \"November\", \"December\"\n        ];\n      \n        document.getElementById(\"monthHeader\").textContent = `${monthNames[currentMonth]} ${currentYear}`;\n      \n        const calendar = document.getElementById(\"calendar\");\n      \n        const daysOfWeek = [\"Mo\", \"Tu\", \"We\", \"Th\", \"Fr\", \"Sa\", \"Su\"];\n        daysOfWeek.forEach(day => {\n          const span = document.createElement(\"span\");\n          span.className = \"day\";\n          span.textContent = day;\n          calendar.appendChild(span);\n        });\n      \n        const firstDay = new Date(currentYear, currentMonth, 1);\n        const startDay = (firstDay.getDay() + 6) % 7;\n      \n        const daysInMonth = new Date(currentYear, currentMonth + 1, 0).getDate();\n        const daysInPrevMonth = new Date(currentYear, currentMonth, 0).getDate();\n      \n        for (let i = startDay - 1; i >= 0; i--) {\n          const btn = document.createElement(\"button\");\n          btn.className = \"date faded\";\n          btn.textContent = daysInPrevMonth - i;\n          calendar.appendChild(btn);\n        }\n      \n        for (let i = 1; i <= daysInMonth; i++) {\n          const btn = document.createElement(\"button\");\n          btn.className = \"date\";\n          btn.textContent = i;\n          if (i === currentDate) {\n            btn.classList.add(\"current-day\");\n          }\n          calendar.appendChild(btn);\n        }\n      \n        const totalCells = startDay + daysInMonth;\n        const nextDays = (7 - (totalCells % 7)) % 7;\n        for (let i = 1; i <= nextDays; i++) {\n          const btn = document.createElement(\"button\");\n          btn.className = \"date faded\";\n          btn.textContent = i;\n          calendar.appendChild(btn);\n        }\n\n        document.getElementById('mini-calendar-back').style.opacity = \"1\";\n  }\n  \n</script>"}
-executeScriptOnCanvas={true}
-className={`w-html-embed`} />
-<HtmlEmbed
-code={"<link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/flickity@2/dist/flickity.min.css\">\n  <style>\n    /* Each cell in the carousel */\n    .carousel-cell {\n      width: calc(450px * var(--img-scale));\n      margin-right: var(--gap1);\n      display: flex;\n      flex-direction: column; /* stack image + text vertically */\n      align-items: stretch;\n      opacity: 0.9;\n    }\n\n    .flickity-viewport {\n      overflow: visible !important;\n    } #carousel {\n      overflow-x: hidden !important;\n      overflow-y: visible !important;\n    }\n\n    /* Image styling to handle different aspect ratios */\n    .cell-content > img {\n      display: block;\n      position: relative;\n      width: 100%;\n      height: calc(300px * var(--img-scale));\n      object-fit: cover;\n      background: #eee;   /* fallback background */\n      overflow: hidden;\n      border-radius: var(--rad2);\n      transition: margin-top 0.5s;\n      z-index: 5;\n    }\n    \n    .carousel-cell .caption {\n      position: relative;\n      text-align: center;\n      transition: margin-top 0.5s;\n      margin-top: -30px;\n      z-index: 1;\n    }\n    .is-selected .caption {\n      margin-top: 5px;\n    }\n    .is-selected img {\n      margin-top: -5px;\n    }\n    .is-selected {\n      opacity: 1;\n    }\n  </style>\n\n  <!-- Flickity JS from jsDelivr -->\n  <script src=\"https://cdn.jsdelivr.net/npm/flickity@2/dist/flickity.pkgd.min.js\">\n    \n  </script>\n  <script>\n    document.addEventListener('DOMContentLoaded', () => {\n      setTimeout(function() {\n      var elem = document.getElementById('carousel');\n      var flkty = new Flickity(elem, {\n        wrapAround: true,\n        autoPlay: 3000,              // 3s between slides\n        pauseAutoPlayOnHover: true,  // stop when hovered\n        freeScroll: false,\n        prevNextButtons: true,\n        pageDots: false,\n        draggable: true,\n        selectedAttraction: 0.01,\nfriction: 0.15\n      });\n      }, 500)});\n  </script>"}
-executeScriptOnCanvas={true}
-className={`w-html-embed cgmpm3f`} />
-<HtmlEmbed
-code={"<style>\n  /* Optional quality-of-life styles */\n  #menu-icon {\n    cursor: grab;\n    touch-action: none;   /* allow smooth touch drag */\n    will-change: transform;\n    \n    user-drag: none;\n    -webkit-user-drag: none;\n    -moz-user-drag: none;\n    user-select: none;    /* avoid text selection while dragging */\n    -moz-user-select: none;\n    -webkit-user-select: none;\n    -ms-user-select: none;\n  }\n  #menu-icon.dragging { cursor: grabbing; }\n</style>\n\n<script>\n(() => {\n  const icon = document.getElementById('menu-icon');\n  if (!icon) return;\n\n  // Stop firefox sucking\n  icon.addEventListener('dragstart', e => e.preventDefault());\n\n\n  // position is managed purely via transform so layout doesn't shift\n  let tx = 0, ty = 0;               // current translation\n  let vx = 0, vy = 0;               // current velocity (px/s)\n  let dragging = false;\n  let startX = 0, startY = 0;       // pointer-down position\n  let lastPx = 0, lastPy = 0;       // last pointer position (for velocity)\n  let lastT = 0;                    // last timestamp\n\n  // Spring params: tweak for feel\n  const STIFFNESS = 300;   // spring constant (higher = snappier)\n  const DAMPING   = 15;   // damping (lower = bouncier)\n  const EPS_POS   = 0.5;  // stop threshold (position, px)\n  const EPS_VEL   = 0.5;  // stop threshold (velocity, px/s)\n\n  const setTransform = () => {\n    icon.style.transform = `translate(${tx}px, ${ty}px)`;\n  };\n\n  const onPointerDown = (e) => {\n    dragging = true;\n    icon.classList.add('dragging');\n    icon.setPointerCapture?.(e.pointerId);\n\n    startX = e.clientX - tx;\n    startY = e.clientY - ty;\n\n    lastPx = e.clientX;\n    lastPy = e.clientY;\n    lastT  = performance.now();\n    vx = 0; vy = 0; // reset; we'll accumulate movement velocity\n  };\n\n  const onPointerMove = (e) => {\n    if (!dragging) return;\n\n    const now = performance.now();\n    const dt  = (now - lastT) / 1000;\n    tx = e.clientX - startX;\n    ty = e.clientY - startY;\n\n    // simple low-pass filtered velocity estimate for spring kick\n    if (dt > 0) {\n      const instVx = (e.clientX - lastPx) / dt;\n      const instVy = (e.clientY - lastPy) / dt;\n      vx = 0.8 * vx + 0.2 * instVx;\n      vy = 0.8 * vy + 0.2 * instVy;\n    }\n    lastPx = e.clientX;\n    lastPy = e.clientY;\n    lastT  = now;\n\n    setTransform();\n  };\n\n  const onPointerUp = (e) => {\n    if (!dragging) return;\n    dragging = false;\n    icon.classList.remove('dragging');\n    icon.releasePointerCapture?.(e.pointerId);\n    animateBack(); // start spring home\n  };\n\n  function animateBack() {\n    let prev = performance.now();\n    function step(now) {\n      const dt = Math.min((now - prev) / 1000, 0.032); // clamp dt for stability\n      prev = now;\n\n      // Hooke's law: F = -k*x - c*v (mass=1)\n      const ax = -STIFFNESS * tx - DAMPING * vx;\n      const ay = -STIFFNESS * ty - DAMPING * vy;\n\n      vx += ax * dt;\n      vy += ay * dt;\n      tx += vx * dt;\n      ty += vy * dt;\n\n      setTransform();\n\n      const nearOrigin = Math.hypot(tx, ty) < EPS_POS;\n      const slowEnough = Math.hypot(vx, vy) < EPS_VEL;\n\n      if (nearOrigin && slowEnough) {\n        // snap exactly home to avoid subpixel fuzz\n        tx = ty = vx = vy = 0;\n        setTransform();\n        return;\n      }\n      // If user grabbed again, stop the spring.\n      if (dragging) return;\n\n      requestAnimationFrame(step);\n    }\n    requestAnimationFrame(step);\n  }\n\n  // Keep it floating above other content while dragging (no layout changes)\n  icon.style.zIndex = (parseInt(getComputedStyle(icon).zIndex) || 1).toString();\n\n  // Bind events\n  icon.addEventListener('pointerdown', onPointerDown);\n  window.addEventListener('pointermove', onPointerMove, { passive: true });\n  window.addEventListener('pointerup', onPointerUp);\n  window.addEventListener('pointercancel', onPointerUp);\n})();\n</script>"}
-executeScriptOnCanvas={true}
-className={`w-html-embed`} />
 <Box
 className={`w-box c9esr7v cm1ds2c c1fxgukz cd3toq c17nm8vt c1xymrvd c8yo8yx csaxvfs ce1jmtw c1m7qrvj c1o7c5y4 c1ndanu0 ${"icon-background"}`}>
 <div
@@ -629,7 +605,7 @@ src={"/assets/GEU_Icon_D3w8VZ53_-Z22xmyL4iB1.svg"}
 width={256}
 height={238}
 alt={""}
-className={`w-image c1l3m6tn ct616nu cmvyqw5 c1k74xht cc5htwv`} />
+className={`w-image c1l3m6tn ct616nu cmvyqw5 c1k74xht cz7iu34 c40iywk codsd31 c16er72m c1qt5xo2 cc5htwv c1noieei`} />
 <div
 className={`w-element ci03eyw c1is6v5c co8t7od c1nj86ny c74dsfz c1jwuvkp cezuxvu`}>
 <Link_1
@@ -682,6 +658,30 @@ className={`w-image`} />
 </div>
 </div>
 </Box>
+<Link_1
+href={"https://webstudio.is/?via=badge"}
+target={"_blank"}
+className={`w-element cfyrpk4 c2gl1gx c1pd7k79 c1v4vkm5 c1bti4b5 c15392bw cmyjs62 czstdzv c13f4d8e c1ut9lo7 c1mz59p0 c1g0r0c1 cuhk95i c11qj1rn c1aq6eep c18zghtn cr2ujrk c7amdgj cqw36j6 c68ooh8 clgapjo c1q3df6t c1ho4waj c1ea0099 cuz3b7n`}>
+<HtmlEmbed
+code={"<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"currentColor\" viewBox=\"0 0 16 16\" width=\"100%\" height=\"100%\" style=\"display: block;\"><path fill-rule=\"evenodd\" d=\"m12.32 12.416 2.62-8.085a1.205 1.205 0 1 0-2.292-.746l-2.62 8.084a1.205 1.205 0 1 0 2.292.747Z\" clip-rule=\"evenodd\"/><path fill-rule=\"evenodd\" d=\"M8 7.624c.297 0 .517.175.704.394.207.243.373.545.514.866.634 1.44.753 3.241.753 3.241a1.206 1.206 0 0 0 1.285 1.122 1.207 1.207 0 0 0 1.12-1.287s-.16-2.25-.952-4.05C10.744 6.364 9.594 5.208 8 5.208c-1.594 0-2.744 1.156-3.424 2.7-.792 1.8-.951 4.05-.951 4.05a1.207 1.207 0 0 0 1.12 1.288 1.206 1.206 0 0 0 1.284-1.122s.119-1.8.753-3.24a3.52 3.52 0 0 1 .514-.867c.187-.22.406-.394.704-.394Z\" clip-rule=\"evenodd\"/><path fill-rule=\"evenodd\" d=\"M5.973 11.669 3.352 3.585a1.205 1.205 0 1 0-2.293.746l2.622 8.084a1.205 1.205 0 1 0 2.292-.746Z\" clip-rule=\"evenodd\"/></svg>"}
+className={`w-html-embed c6f08mx c58jkk8 c4bwhth c767uka`} />
+<div
+className={`w-element`}>
+{".Built with Webstudio"}
+</div>
+</Link_1>
+<HtmlEmbed
+code={"<script>\n  document.addEventListener('DOMContentLoaded', () => {\n    requestAnimationFrame(() => {\n      setTimeout(function() {\n          loadCalendar();\n      }, 500)\n    });\n  });\n\n  function loadCalendar() {\n    const today = new Date();\n        const currentYear = today.getFullYear();\n        const currentMonth = today.getMonth(); // 0-indexed\n        const currentDate = today.getDate();\n      \n        const monthNames = [\n          \"January\", \"February\", \"March\", \"April\", \"May\", \"June\",\n          \"July\", \"August\", \"September\", \"October\", \"November\", \"December\"\n        ];\n      \n        document.getElementById(\"monthHeader\").textContent = `${monthNames[currentMonth]} ${currentYear}`;\n      \n        const calendar = document.getElementById(\"calendar\");\n      \n        const daysOfWeek = [\"Mo\", \"Tu\", \"We\", \"Th\", \"Fr\", \"Sa\", \"Su\"];\n        daysOfWeek.forEach(day => {\n          const span = document.createElement(\"span\");\n          span.className = \"day\";\n          span.textContent = day;\n          calendar.appendChild(span);\n        });\n      \n        const firstDay = new Date(currentYear, currentMonth, 1);\n        const startDay = (firstDay.getDay() + 6) % 7;\n      \n        const daysInMonth = new Date(currentYear, currentMonth + 1, 0).getDate();\n        const daysInPrevMonth = new Date(currentYear, currentMonth, 0).getDate();\n      \n        for (let i = startDay - 1; i >= 0; i--) {\n          const btn = document.createElement(\"button\");\n          btn.className = \"date faded\";\n          btn.textContent = daysInPrevMonth - i;\n          calendar.appendChild(btn);\n        }\n      \n        for (let i = 1; i <= daysInMonth; i++) {\n          const btn = document.createElement(\"button\");\n          btn.className = \"date\";\n          btn.textContent = i;\n          if (i === currentDate) {\n            btn.classList.add(\"current-day\");\n          }\n          calendar.appendChild(btn);\n        }\n      \n        const totalCells = startDay + daysInMonth;\n        const nextDays = (7 - (totalCells % 7)) % 7;\n        for (let i = 1; i <= nextDays; i++) {\n          const btn = document.createElement(\"button\");\n          btn.className = \"date faded\";\n          btn.textContent = i;\n          calendar.appendChild(btn);\n        }\n\n        document.getElementById('mini-calendar-back').style.opacity = \"1\";\n  }\n  \n</script>"}
+executeScriptOnCanvas={true}
+className={`w-html-embed`} />
+<HtmlEmbed
+code={"<link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/flickity@2/dist/flickity.min.css\">\n  <style>\n    /* Each cell in the carousel */\n    .carousel-cell {\n      width: calc(450px * var(--img-scale));\n      margin-right: var(--gap1);\n      display: flex;\n      flex-direction: column; /* stack image + text vertically */\n      align-items: stretch;\n      opacity: 0.9;\n    }\n\n    .flickity-viewport {\n      overflow: visible !important;\n    } #carousel {\n      overflow-x: hidden !important;\n      overflow-y: visible !important;\n    }\n\n    /* Image styling to handle different aspect ratios */\n    .cell-content > img {\n      display: block;\n      position: relative;\n      width: 100%;\n      height: calc(300px * var(--img-scale));\n      object-fit: cover;\n      background: #eee;   /* fallback background */\n      overflow: hidden;\n      border-radius: var(--rad2);\n      transition: margin-top 0.5s;\n      z-index: 5;\n    }\n    \n    .carousel-cell .caption {\n      position: relative;\n      text-align: center;\n      transition: margin-top 0.5s;\n      margin-top: -30px;\n      z-index: 1;\n    }\n    .is-selected .caption {\n      margin-top: 5px;\n    }\n    .is-selected img {\n      margin-top: -5px;\n    }\n    .is-selected {\n      opacity: 1;\n    }\n  </style>\n\n  <!-- Flickity JS from jsDelivr -->\n  <script src=\"https://cdn.jsdelivr.net/npm/flickity@2/dist/flickity.pkgd.min.js\">\n    \n  </script>\n  <script>\n    document.addEventListener('DOMContentLoaded', () => {\n      setTimeout(function() {\n      var elem = document.getElementById('carousel');\n      var flkty = new Flickity(elem, {\n        wrapAround: true,\n        autoPlay: 3000,              // 3s between slides\n        pauseAutoPlayOnHover: true,  // stop when hovered\n        freeScroll: false,\n        prevNextButtons: true,\n        pageDots: false,\n        draggable: true,\n        selectedAttraction: 0.01,\nfriction: 0.15\n      });\n      }, 500)});\n  </script>"}
+executeScriptOnCanvas={true}
+className={`w-html-embed cgmpm3f`} />
+<HtmlEmbed
+code={"<style>\n  /* Optional quality-of-life styles */\n  #menu-icon {\n    cursor: grab;\n    touch-action: none;   /* allow smooth touch drag */\n    will-change: transform;\n    \n    uuser-drag: none;\n    -webkit-uuser-drag: none;\n    -moz-uuser-drag: none;\n    user-select: none;    /* avoid text selection while dragging */\n    -moz-user-select: none;\n    -webkit-user-select: none;\n    -ms-user-select: none;\n  }\n  #menu-icon.dragging { cursor: grabbing; }\n</style>\n\n<script>\n(() => {\n  const icon = document.getElementById('menu-icon');\n  if (!icon) return;\n\n  // position is managed purely via transform so layout doesn't shift\n  let pointerID = null;\n  let tx = 0, ty = 0;               // current translation\n  let vx = 0, vy = 0;               // current velocity (px/s)\n  let dragging = false;\n  let startX = 0, startY = 0;       // pointer-down position\n  let lastPx = 0, lastPy = 0;       // last pointer position (for velocity)\n  let lastT = 0;                    // last timestamp\n\n  // Spring params: tweak for feel\n  const STIFFNESS = 300;   // spring constant (higher = snappier)\n  const DAMPING   = 15;   // damping (lower = bouncier)\n  const EPS_POS   = 0.5;  // stop threshold (position, px)\n  const EPS_VEL   = 0.5;  // stop threshold (velocity, px/s)\n\n  const originalHref = icon.href;\n\n  \n  const setTransform = () => {\n    icon.style.transform = `translate(${tx}px, ${ty}px)`;\n  };\n\n  const onPointerDown = (e) => {\n    curPointerID = e.pointerId;\n    startX = e.clientX - tx;\n    startY = e.clientY - ty;\n\n    lastPx = e.clientX;\n    lastPy = e.clientY;\n    lastT  = performance.now();\n    vx = 0; vy = 0; // reset; we'll accumulate movement velocity\n  }\n  \n  const onDragStart = (e) => {\n    e.preventDefault();\n    icon.removeAttribute('href');\n    dragging = true;\n    icon.classList.add('dragging');\n    icon.setPointerCapture?.(curPointerId);\n  };\n\n  const onPointerMove = (e) => {\n    if (!dragging) return;\n\n    const now = performance.now();\n    const dt  = (now - lastT) / 1000;\n    tx = e.clientX - startX;\n    ty = e.clientY - startY;\n\n    // simple low-pass filtered velocity estimate for spring kick\n    if (dt > 0) {\n      const instVx = (e.clientX - lastPx) / dt;\n      const instVy = (e.clientY - lastPy) / dt;\n      vx = 0.8 * vx + 0.2 * instVx;\n      vy = 0.8 * vy + 0.2 * instVy;\n    }\n    lastPx = e.clientX;\n    lastPy = e.clientY;\n    lastT  = now;\n\n    setTransform();\n  };\n\n  const onPointerUp = (e) => {\n    if (!dragging) return;\n    e.preventDefault();\n    e.stopPropagation()\n    e.stopImmediatePropagation();\n    dragging = false;\n    icon.classList.remove('dragging');\n    icon.releasePointerCapture?.(e.pointerId);\n    animateBack(); // start spring home\n    return;\n  };\n\n  function animateBack() {\n    let prev = performance.now();\n    function step(now) {\n      const dt = Math.min((now - prev) / 1000, 0.032); // clamp dt for stability\n      prev = now;\n\n      // Hooke's law: F = -k*x - c*v (mass=1)\n      const ax = -STIFFNESS * tx - DAMPING * vx;\n      const ay = -STIFFNESS * ty - DAMPING * vy;\n\n      vx += ax * dt;\n      vy += ay * dt;\n      tx += vx * dt;\n      ty += vy * dt;\n\n      setTransform();\n\n      const nearOrigin = Math.hypot(tx, ty) < EPS_POS;\n      const slowEnough = Math.hypot(vx, vy) < EPS_VEL;\n\n      if (nearOrigin && slowEnough) {\n        // snap exactly home to avoid subpixel fuzz\n        tx = ty = vx = vy = 0;\n        setTransform();\n        icon.setAttribute('href', originalHref);\n        return;\n      }\n      // If user grabbed again, stop the spring.\n      if (dragging) return;\n\n      requestAnimationFrame(step);\n    }\n    requestAnimationFrame(step);\n  }\n\n  // Keep it floating above other content while dragging (no layout changes)\n  icon.style.zIndex = (parseInt(getComputedStyle(icon).zIndex) || 1).toString();\n\n  // Bind events\n  icon.addEventListener('dragstart', onDragStart);\n  icon.addEventListener('pointerdown', onPointerDown);\n  window.addEventListener('pointermove', onPointerMove, { passive: true });\n  window.addEventListener('pointerup', onPointerUp);\n  window.addEventListener('pointercancel', onPointerUp);\n})();\n</script>"}
+executeScriptOnCanvas={true}
+className={`w-html-embed`} />
 </Body>
 }
 
