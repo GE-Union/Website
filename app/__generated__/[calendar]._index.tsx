@@ -11,7 +11,7 @@ import { Tooltip as Tooltip, TooltipTrigger as TooltipTrigger, TooltipContent as
 
       export const projectId = "94456f8c-a847-426a-aec8-16de390bd3eb";
 
-      export const lastPublished = "2025-08-30T02:11:55.578Z";
+      export const lastPublished = "2025-08-31T18:48:38.540Z";
 
       export const siteName = "GE Union";
 
@@ -37,7 +37,7 @@ code={"<style>\n@import url('https://fonts.googleapis.com/css2?family=Rubik:wght
 executeScriptOnCanvas={true}
 className={`w-html-embed`} />
 <HtmlEmbed
-code={"<script src=\"https://cdn.jsdelivr.net/npm/@fullcalendar/core@6.1.17/index.global.min.js\"></script>\n<script src=\"https://cdn.jsdelivr.net/npm/@fullcalendar/daygrid@6.1.17/index.global.min.js\"></script>\n<script src=\"https://cdn.jsdelivr.net/npm/@fullcalendar/google-calendar@6.1.17/index.global.min.js\"></script>\n\n<script>\ndocument.addEventListener('DOMContentLoaded', function() {\n  var calendarEl = document.getElementById('calendar');\n\n  var calendar = new FullCalendar.Calendar(calendarEl, {\n    headerToolbar: {\n        left: 'prev,next today',\n        center: 'title',\n        right: ''\n    },\n    dayMaxEvents: 3,\n    firstDay: 1,\n    contentHeight: 'auto',\n    googleCalendarApiKey: 'AIzaSyDBDJxCyN67h-VrQ53s9vm597mrLUiZgHM',\n    events: '23c6f451e6193a878c5affc55d18b050093a87075c0325964379924db8ee027a@group.calendar.google.com',\n\n    eventContent: function(arg) {\n        // only show the event title, no time or dot\n        return {\n          html: '<div class=\"fc-event-title\" style=\"font-weight:normal;\">'\n                  + arg.event.title +\n                '</div>'\n        };\n    },\n\n    eventClick: function(info) {\n      // Prevent default Google Calendar link\n      info.jsEvent.preventDefault();\n      \n      const event = info.event;\n      const popup = document.getElementById('event-popup');\n      const background = document.getElementById('event-popup-back');\n\n      var eLoc = event.extendedProps.location || '';\n      if (eLoc != '') eLoc = \"<span class='pop-loc-pin'>⚲</span> \" + eLoc;\n      \n      // Set the content\n      popup.innerHTML = `\n        <h2 class='event-pop-title'>${event.title}</h2>\n        <span class='event-pop-time'>${formatDate(event.start, event.end)}</span>\n        <p class='event-pop-loc'>${eLoc || ''}</p>\n        <p class='event-pop-desc'>${event.extendedProps.description || ''}</p>\n      `;\n      \n      // Position and show popup\n      background.style.display = 'flex';\n\n      background.onclick = function(){\n        const myself = document.getElementById('event-popup-back');\n        myself.style.display = 'none';\n      };\n      popup.onclick = function(e) {\n        e.stopPropagation(); // prevents the click from reaching background\n      };\n    },\n\n    eventDataTransform: function(event) {\n        event.url = \"\";\n        return event;\n    }\n    \n  });\n  calendar.render();\n});\n\n\n  function formatDate(startDate, endDate) {\n    console.log(startDate);\n    console.log(endDate);\n    \n    const locale = 'en-GB';\n    const msDay = 24 * 60 * 60 * 1000;\n  \n    const toMidnight = d => new Date(d.getFullYear(), d.getMonth(), d.getDate());\n    const isMidnight = d => d.getHours() === 0 && d.getMinutes() === 0 && d.getSeconds() === 0 && d.getMilliseconds() === 0;\n    const sameDay = (a, b) =>\n      a.getFullYear() === b.getFullYear() &&\n      a.getMonth() === b.getMonth() &&\n      a.getDate() === b.getDate();\n  \n    const daySuffix = d => {\n      if (d > 3 && d < 21) return 'th';\n      switch (d % 10) {\n        case 1: return 'st';\n        case 2: return 'nd';\n        case 3: return 'rd';\n        default: return 'th';\n      }\n    };\n  \n    // Build “Friday, 29th August” or “29th August”\n    const formatDay = (date, withWeekday = true) => {\n      const opts = withWeekday\n        ? { weekday: 'long', day: 'numeric', month: 'long' }\n        : { day: 'numeric', month: 'long' };\n  \n      // Use parts so we only suffix the day number, not times\n      const parts = new Intl.DateTimeFormat(locale, opts).formatToParts(date);\n      const dayNum = date.getDate();\n      const suffixed = `${dayNum}${daySuffix(dayNum)}`;\n  \n      return parts.map(p => {\n        if (p.type === 'day') return suffixed;\n        return p.value;\n      }).join('').replace(/\\s+/g, ' ').trim();\n    };\n  \n    const formatTimeHM = d =>\n      new Intl.DateTimeFormat(locale, { hour: '2-digit', minute: '2-digit' }).format(d);\n  \n    // Detect single-day all-day (supports ICS: end at 00:00 next day)\n    const isAllDaySingleDay = (start, end) => {\n      console.log('1');\n      if (!start) return false;\n      if (!end) return isMidnight(start); // best effort: no end & midnight start\n      if (sameDay(start, end)) {\n        \n      console.log('2');\n        // All-day if start 00:00 and end is 23:59:59.999-ish (rare) — allow generous check\n        return isMidnight(start) && !isMidnight(end) && end - start >= msDay - 60000;\n      }\n      // ICS typical: start 00:00 of day X, end 00:00 of day X+1 (exclusive)\n      console.log('we should be here');\n      console.log(isMidnight(start) && isMidnight(end) && (end - start === msDay));\n      return isMidnight(start) && isMidnight(end) && (end - start === msDay);\n    };\n  \n    // Count unique calendar days touched by the event.\n    // If end is exactly midnight, treat as exclusive (ICS) by shifting back a millisecond.\n    const uniqueDayCount = (start, end) => {\n      if (!end) return 1;\n      const s0 = toMidnight(start);\n      let e0 = toMidnight(end);\n      if (isMidnight(end) && end > start) {\n        e0 = new Date(e0.getTime() - 1); // previous day late night\n      }\n      const e = toMidnight(e0);\n      return Math.floor((e - s0) / msDay) + 1;\n    };\n  \n    const hasEnd = endDate instanceof Date && !isNaN(endDate);\n    const start = startDate;\n    const end = hasEnd ? endDate : null;\n  \n    // === CASES ===\n\n    // Single-day all-day event: \"Friday, 29th August\"\n    if (isAllDaySingleDay(start, end || start)) {\n      return `${formatDay(start, true)}`;\n    }\n    \n    // Any multi-day event (dates differ): \"29th August to 3rd September (N days)\"\n    if (end && !sameDay(start, end)) {\n      const span = `${formatDay(start, false)} to ${formatDay(end, false)}`;\n      const days = uniqueDayCount(start, end);\n      return `${span} (${days} ${days === 1 ? 'day' : 'days'})`;\n    }\n  \n    // Same-day with start & end times: \"Friday, 29th August at 16:00-20:30\"\n    if (end && sameDay(start, end)) {\n      const startT = formatTimeHM(start);\n      const endT = formatTimeHM(end);\n      if (startT !== endT) {\n        return `${formatDay(start, true)} at ${startT}-${endT}`;\n      }\n      // If times are identical, just show one time\n      return `${formatDay(start, true)} at ${startT}`;\n    }\n  \n    // No end time: \"Friday, 29th August at 16:00\"\n    return `${formatDay(start, true)} at ${formatTimeHM(start)}`;\n  }\n\n\n</script>\n\n<style>\n  .fc-button {\n    background-color: var(--back-red-1) !important;\n    border-color: var(--back-red-1) !important;\n    color: #fff !important; /* Optional: Ensures text is visible */\n  }\n  \n  .fc-button:hover {\n    background-color: var(--back-red-1) !important;\n    opacity: 0.9;\n  }\n  \n  /* Change event background colours */\n  .fc-event {\n    background-color: var(--back-red-1) !important;\n    border-color: var(--back-red-1) !important;\n    color: #fff !important;\n  }\n\n  .fc .fc-scrollgrid td {\n    border: 1px solid var(--back-grey-1);\n    border-radius: var(--rad2);\n  }\n\n  .fc .fc-scrollgrid, .fc .fc-col-header-cell, .fc .fc-scrollgrid th {\n    border: none !important;\n  }\n\n  /* Highlight today */\n  .fc .fc-day-today {\n    background-color: rgb(from var(--back-red-1) r g b / 0.17) !important;\n    border-radius: 0 !important;\n    box-shadow: 0 0 80px rgb(from var(--back-red-1) r g b / 0.1);\n  }\n  .fc-day-today .fc-daygrid-day-number{\n    font-weight: 600;\n  }\n\n    .fc .fc-daygrid-day-frame {\n    min-height: 110px;\n  }\n  .calendar-container {\n  overflow-x: auto;\n  width: 100%;\n}\n\n  /* Pading for events in day */\n  .fc-daygrid-day-top{\n    margin-bottom: -7px;\n  }\n  .fc-event-title{\n    margin: -1px 0 -1px 4px;\n  }\n  .fc-daygrid-day-events{\n    margin-bottom: 2px !important;\n  }\n\n  /* Popup Styles */\n  .event-pop-title {\n    margin: -30px 0 -15px 25px;\n    padding: 0;\n  }\n  .event-pop-time {\n    margin-left: -13px;\n    font-size: 18px;\n    opacity: 0.6;\n  }\n  .event-pop-desc {\n    margin: -30px 50px -20px 50px;\n  }\n  .event-pop-loc {\n    margin-left: 25px;\n    margin-top: -23px;\n    font-size: 18px;\n    opacity: 0.6;\n  }\n  .pop-loc-pin {\n    font-weight: 700;\n  }\n\n  /* Mobile: horizontally scroll the month grid, keep toolbar fixed */\n@media (max-width: 767px) {\n  /* Only the grid scrolls sideways */\n  #calendar .fc-view-harness {\n    overflow-x: auto;\n    overflow-y: hidden;\n    -webkit-overflow-scrolling: touch; /* iOS momentum */\n  }\n\n  /* Ensure the grid is wider than the screen so it can scroll */\n  #calendar .fc-scrollgrid {\n    min-width: 750px; /* e.g., ~128px per day * 7; tweak as you like */\n    margin-left: calc(2 * var(--gap1));\n    padding-right: calc(2 * var(--gap1));\n    \n    -ms-overflow-style: none;  /* Internet Explorer 10+ */\n    scrollbar-width: none;\n  }\n  .fc-header-toolbar {\n    margin: 0 calc(2 * var(--gap1));\n  }\n  #calendar .fc-scrollgrid::-webkit-scrollbar { \n    width: 0;\n    height: 0;\n  }\n\n  .fc-button {\n    padding: 2px 5px !important;\n  }\n  .fc-toolbar-title {\n    font-size: 25px !important;\n    padding-left: 10px;\n    text-align: center;\n  }\n}\n</style>"}
+code={"<script src=\"https://cdn.jsdelivr.net/npm/@fullcalendar/core@6.1.17/index.global.min.js\"></script>\n<script src=\"https://cdn.jsdelivr.net/npm/@fullcalendar/daygrid@6.1.17/index.global.min.js\"></script>\n<script src=\"https://cdn.jsdelivr.net/npm/@fullcalendar/google-calendar@6.1.17/index.global.min.js\"></script>\n\n<script>\ndocument.addEventListener('DOMContentLoaded', function() {\n  var calendarEl = document.getElementById('calendar');\n\n  var calendar = new FullCalendar.Calendar(calendarEl, {\n    headerToolbar: {\n        left: 'prev,next today',\n        center: 'title',\n        right: ''\n    },\n    dayMaxEvents: 3,\n    firstDay: 1,\n    contentHeight: 'auto',\n    googleCalendarApiKey: 'AIzaSyDBDJxCyN67h-VrQ53s9vm597mrLUiZgHM',\n    events: '23c6f451e6193a878c5affc55d18b050093a87075c0325964379924db8ee027a@group.calendar.google.com',\n\n    eventContent: function(arg) {\n        // only show the event title, no time or dot\n        return {\n          html: '<div class=\"fc-event-title\" style=\"font-weight:normal;\">'\n                  + arg.event.title +\n                '</div>'\n        };\n    },\n\n    eventClick: function(info) {\n      // Prevent default Google Calendar link\n      info.jsEvent.preventDefault();\n      \n      const event = info.event;\n      const elContent = document.getElementById('e-content');\n      const popup = document.getElementById('event-popup');\n      const background = document.getElementById('event-popup-back');\n\n      // Gather content\n      var [eDate, eTime] = formatDate(event.start, event.end);\n      var eLoc = event.extendedProps.location || '';\n      var eDesc = event.extendedProps.description || '';\n\n      // Set content values and visibility\n      document.getElementById('e-title').textContent = event.title;\n      document.getElementById('e-date').textContent = eDate;\n      if (eTime == '') {\n        document.getElementById('e-time-container').style.display = 'none';\n      } else {\n        document.getElementById('e-time-container').style.display = 'flex';\n        document.getElementById('e-time').textContent = eTime;\n      }\n      if (eLoc == '') {\n        document.getElementById('e-loc-container').style.display = 'none';\n      } else {\n        document.getElementById('e-loc-container').style.display = 'flex';\n        document.getElementById('e-loc').textContent = eLoc;\n      }\n      if (eDesc == '') {\n        document.getElementById('e-desc').style.display = 'none';\n        document.getElementById('e-line').style.display = 'none';\n      } else {\n        document.getElementById('e-desc').style.display = 'block';\n        document.getElementById('e-line').style.display = 'block';\n        document.getElementById('e-desc').innerHTML = eDesc;\n      }\n      // TODO Accent colour based on calendar + map\n      \n      \n      // Show popup\n      //background.style.display = 'flex';\n      background.style.opacity = 1;\n      background.style.pointerEvents = \"auto\";\n      popup.style.setProperty(\"--pop-scale\", 1);\n\n      \n      // Hide popup\n      background.addEventListener('click', (e) => {\n        if (e.target === background) {\n          //background.style.display = 'none';\n          background.style.opacity = 0;\n          background.style.pointerEvents = \"none\";\n          popup.style.setProperty(\"--pop-scale\", 0.9);\n        }\n      });\n      background.addEventListener('pointerdown', (e) => {\n        if (e.target === background) {\n          e.preventDefault();            // blocks the selection start\n        }\n      });\n\n      popup.onclick = function(e) {\n          e.stopPropagation(); // prevents the click from reaching background\n        };\n      },\n\n    eventDataTransform: function(event) {\n        event.url = \"\";\n        return event;\n    }\n    \n  });\n  calendar.render();\n});\n\n\n  function formatDate(startDate, endDate) {\n    \n    const locale = 'en-GB';\n    const msDay = 24 * 60 * 60 * 1000;\n  \n    const toMidnight = d => new Date(d.getFullYear(), d.getMonth(), d.getDate());\n    const isMidnight = d => d.getHours() === 0 && d.getMinutes() === 0 && d.getSeconds() === 0 && d.getMilliseconds() === 0;\n    const sameDay = (a, b) =>\n      a.getFullYear() === b.getFullYear() &&\n      a.getMonth() === b.getMonth() &&\n      a.getDate() === b.getDate();\n  \n    const daySuffix = d => {\n      if (d > 3 && d < 21) return 'th';\n      switch (d % 10) {\n        case 1: return 'st';\n        case 2: return 'nd';\n        case 3: return 'rd';\n        default: return 'th';\n      }\n    };\n  \n    // Build “Friday · 29th August” or “29th August”\n    const formatDay = (date, withWeekday = true) => {\n      const opts = withWeekday\n        ? { weekday: 'long', day: 'numeric', month: 'long' }\n        : { day: 'numeric', month: 'long' };\n    \n      const parts = new Intl.DateTimeFormat(locale, opts).formatToParts(date);\n      const dayNum = date.getDate();\n      const suffixed = `${dayNum}${daySuffix(dayNum)}`;\n    \n      let result = parts.map(p => (p.type === 'day' ? suffixed : p.value)).join('').trim();\n      if (withWeekday) result = result.replace(/^(\\w+),?\\s+/, '$1  ·  ');\n      \n      return result;\n    };\n  \n    const formatTimeHM = d =>\n      new Intl.DateTimeFormat(locale, { hour: '2-digit', minute: '2-digit' }).format(d);\n  \n    // Detect single-day all-day (supports ICS: end at 00:00 next day)\n    const isAllDaySingleDay = (start, end) => {\n      console.log('1');\n      if (!start) return false;\n      if (!end) return isMidnight(start); // best effort: no end & midnight start\n      if (sameDay(start, end)) {\n        \n      console.log('2');\n        // All-day if start 00:00 and end is 23:59:59.999-ish (rare) — allow generous check\n        return isMidnight(start) && !isMidnight(end) && end - start >= msDay - 60000;\n      }\n      // ICS typical: start 00:00 of day X, end 00:00 of day X+1 (exclusive)\n      console.log('we should be here');\n      console.log(isMidnight(start) && isMidnight(end) && (end - start === msDay));\n      return isMidnight(start) && isMidnight(end) && (end - start === msDay);\n    };\n  \n    // Count unique calendar days touched by the event.\n    // If end is exactly midnight, treat as exclusive (ICS) by shifting back a millisecond.\n    const uniqueDayCount = (start, end) => {\n      if (!end) return 1;\n      const s0 = toMidnight(start);\n      let e0 = toMidnight(end);\n      if (isMidnight(end) && end > start) {\n        e0 = new Date(e0.getTime() - 1); // previous day late night\n      }\n      const e = toMidnight(e0);\n      return Math.floor((e - s0) / msDay) + 1;\n    };\n  \n    const hasEnd = endDate instanceof Date && !isNaN(endDate);\n    const start = startDate;\n    const end = hasEnd ? endDate : null;\n  \n    // === CASES ===\n\n    // Single-day all-day event: \"Friday · 29th August\"\n    if (isAllDaySingleDay(start, end || start)) {\n      return [formatDay(start, true), ''];\n    }\n    \n    // Any multi-day event (dates differ): \"29th August - 3rd September | N days\"\n    if (end && !sameDay(start, end)) {\n      const span = `${formatDay(start, false)} - ${formatDay(end, false)}`;\n      const days = uniqueDayCount(start, end);\n      return [span,  `${days} ${days === 1 ? 'day' : 'days'}`];\n    }\n  \n    // Same-day with start & end times: \"Friday · 29th August | 16:00 - 20:30\"\n    if (end && sameDay(start, end)) {\n      const startT = formatTimeHM(start);\n      const endT = formatTimeHM(end);\n      if (startT !== endT) {\n        return [formatDay(start, true), `${startT} - ${endT}`];\n      }\n      // If times are identical, just show one time\n      return [formatDay(start, true), startT];\n    }\n  \n    // No end time: \"Friday · 29th August | 16:00\"\n    return [formatDay(start, true), formatTimeHM(start)];\n  }\n\n\n</script>\n\n<style>\n  /* Selection and cursor control */\n  .fc-daygrid-day-number {\n    user-select: none;\n  }\n  \n  .fc-button {\n    background-color: var(--back-red-1) !important;\n    border-color: var(--back-red-1) !important;\n    color: #fff !important; /* Optional: Ensures text is visible */\n  }\n  \n  .fc-button:hover {\n    background-color: var(--back-red-1) !important;\n    opacity: 0.9;\n  }\n  \n  /* Change event background colours */\n  .fc-event {\n    background-color: var(--back-red-1) !important;\n    border-color: var(--back-red-1) !important;\n    color: #fff !important;\n    cursor: pointer; /* click cursor */\n  }\n\n  .fc .fc-scrollgrid td {\n    border: 1px solid var(--back-grey-1);\n    border-radius: var(--rad2);\n  }\n\n  .fc .fc-scrollgrid, .fc .fc-col-header-cell, .fc .fc-scrollgrid th {\n    border: none !important;\n  }\n\n  /* Highlight today */\n  .fc .fc-day-today {\n    background-color: rgb(from var(--back-red-1) r g b / 0.17) !important;\n    border-radius: 0 !important;\n    box-shadow: 0 0 80px rgb(from var(--back-red-1) r g b / 0.1);\n  }\n  .fc-day-today .fc-daygrid-day-number{\n    font-weight: 600;\n  }\n\n    .fc .fc-daygrid-day-frame {\n    min-height: 110px;\n  }\n  .calendar-container {\n  overflow-x: auto;\n  width: 100%;\n}\n\n  /* Padding for events in day */\n  .fc-daygrid-day-top{\n    margin-bottom: -7px;\n  }\n  .fc-event-title{\n    margin: -1px 0 -1px 4px;\n  }\n  .fc-daygrid-day-events{\n    margin-bottom: 2px !important;\n  }\n\n  /* Popup Styles */\n  .event-pop-title {\n    margin: -30px 0 -15px 25px;\n    padding: 0;\n  }\n  .event-pop-time {\n    margin-left: -13px;\n    font-size: 18px;\n    opacity: 0.6;\n  }\n  .event-pop-desc {\n    margin: -30px 50px -20px 50px;\n  }\n  .event-pop-loc {\n    margin-left: 25px;\n    margin-top: -23px;\n    font-size: 18px;\n    opacity: 0.6;\n  }\n  .pop-loc-pin {\n    font-weight: 700;\n  }\n\n  /* Prevent darkening when event clicked */\n  .fc-event::before, .fc-event::after {\n  display: none !important;\n}\n\n  /* Mobile: horizontally scroll the month grid, keep toolbar fixed */\n@media (max-width: 767px) {\n  /* Only the grid scrolls sideways */\n  #calendar .fc-view-harness {\n    overflow-x: auto;\n    overflow-y: hidden;\n    -webkit-overflow-scrolling: touch; /* iOS momentum */\n  }\n\n  /* Ensure the grid is wider than the screen so it can scroll */\n  #calendar .fc-scrollgrid {\n    min-width: 750px; /* e.g., ~128px per day * 7; tweak as you like */\n    margin-left: calc(2 * var(--gap1));\n    padding-right: calc(2 * var(--gap1));\n    \n    -ms-overflow-style: none;  /* Internet Explorer 10+ */\n    scrollbar-width: none;\n  }\n  .fc-header-toolbar {\n    margin: 0 calc(2 * var(--gap1));\n  }\n  #calendar .fc-scrollgrid::-webkit-scrollbar { \n    width: 0;\n    height: 0;\n  }\n\n  .fc-button {\n    padding: 2px 5px !important;\n  }\n  .fc-toolbar-title {\n    font-size: 25px !important;\n    padding-left: 10px;\n    text-align: center;\n  }\n}\n</style>"}
 executeScriptOnCanvas={true}
 className={`w-html-embed`} />
 <Box
@@ -50,9 +50,11 @@ id={"menu-icon"}
 target={"_self"}
 className={`w-link cmvyqw5 cz7iu34 c40iywk codsd31 c16er72m c1qt5xo2 cqyp7hg c1moglug`}>
 <Image
-src={"/assets/GE_Logo_-_Big_AQmTkCh-ue9Xfr1xXdV_k.svg"}
+src={"/assets/GE_Logo_-_Big_kpMORCHYDLOpQbfBKYwZ7.svg"}
 width={492}
 height={684}
+loading={"eager"}
+alt={""}
 className={`w-image c1g1752z c1l3m6tn c1wjaqd0`} />
 </Link>
 <Box
@@ -155,7 +157,7 @@ className={`w-link c1sy2opm cr2ujrk c8l261o cy7nrqp c1ho4waj c1122adb c10pf28n c
 {"Dashboard"}
 </Link>
 <Link
-href={"/about-geu"}
+href={"/about-ge"}
 className={`w-link c1sy2opm cr2ujrk c8l261o cy7nrqp c1ho4waj c1122adb c10pf28n c1w0lkxn ch9rsc5 cz5lin5`}>
 {"About GE"}
 </Link>
@@ -201,10 +203,69 @@ className={`w-element c4eoysd c2z8j1e c1lmmney`} />
 </div>
 <div
 id={"event-popup-back"}
-className={`w-element c15392bw c1jg0tfs c9q7jzv c13w5hsy c1sm4x0m cgqm29d cj1xbu9 c1ehyscn cvuh4zx cu8ogtt c1v4vkm5 c1bti4b5 ce0cz3j c15ikqm`}>
+className={`w-element c15392bw c1jg0tfs c9q7jzv c13w5hsy c1sm4x0m cgqm29d cj1xbu9 c1ehyscn ci03eyw cu8ogtt c1v4vkm5 c1bti4b5 ce0cz3j c15ikqm c1myshmw crrwaeo c19dg1ud c1jubil0 can6fs5 cnypr8u c16er72m c1qt5xo2`}>
 <div
 id={"event-popup"}
-className={`w-element cxkmob3 cdjqerl cbeiaob c16e72yc cy3hgi9 ch5gnkm cdzo1k7 cd3toq c17nm8vt c1xymrvd c8yo8yx c58kvwj c1lz099s ce0cz3j cdmn2c9 c11tntzv cchdzqj c5k3a4h c1b02d7s`} />
+className={`w-element cdzo1k7 cd3toq c17nm8vt c1xymrvd c8yo8yx c58kvwj c1lz099s ce0cz3j clae1ht ci03eyw c1nj86ny c8nmv6p cwqnf9o cz7iu34 ctdzf0s codsd31 c16er72m c1qt5xo2 cdivoul c17ftq5c cuo3nhs`}>
+<div
+id={"e-content"}
+className={`w-element ck11ylk c767uka c60uzgv c1tdh0eb clxt11g csp87lc co7yhf8 catlkx8 c1apocds cm7li2w ce7gvak c1988d5w c1d6rcw0`}>
+<div
+className={`w-element ci03eyw catlkx8 clzcjgo`}>
+<div
+className={`w-element c1d1pidh c37w5vq c4qqqhz clkydg0 c4oa26n c1w9mrda c1xmjpce c5kcyvg`} />
+<h3
+id={"e-title"}
+className={`w-element ca2fle4 cbw7l1f cc02v1c c8py5un`}>
+{"Intro Party"}
+</h3>
+</div>
+<div
+className={`w-element ci03eyw catlkx8`}>
+<div
+className={`w-element c1d1pidh c1xi841l c4qqqhz clkydg0 c1ysnkib c1mxgw9p ceehkft c1k6l3pz c1xoiaui`} />
+<p
+id={"e-date"}
+className={`w-element c1vn0xiq ch7scue`}>
+{"Friday  ·  29 August 2025"}
+</p>
+</div>
+<div
+id={"e-time-container"}
+className={`w-element ci03eyw catlkx8`}>
+<div
+className={`w-element c1d1pidh c1xi841l c4qqqhz clkydg0 c1ysnkib c1mxgw9p ceehkft c1k6l3pz c1xoiaui`} />
+<p
+id={"e-time"}
+className={`w-element c1vn0xiq ch7scue`}>
+{"18:00–23:00"}
+</p>
+</div>
+<div
+id={"e-loc-container"}
+className={`w-element ci03eyw catlkx8`}>
+<div
+className={`w-element c1d1pidh c1xi841l c4qqqhz clkydg0 c1ysnkib c1mxgw9p ceehkft c1k6l3pz c1xoiaui`} />
+<p
+id={"e-loc"}
+className={`w-element c1vn0xiq ch7scue`}>
+{"DTU Building 101"}
+</p>
+</div>
+<hr
+id={"e-line"}
+className={`w-element cy8r131 cn1fibt cnwk8w7 c1jeji4x c10ybtws c4nflox c12zhvo c1dsvsvh c1xz83ly c12s4iry c1ixcxvm cct8mvq c14233kc`} />
+<div
+id={"e-desc"}
+className={`w-element`} />
+</div>
+<Image
+src={"/assets/GE_Logo_-_Big_kpMORCHYDLOpQbfBKYwZ7.svg"}
+width={492}
+height={684}
+alt={""}
+className={`w-image ct616nu c2dl84m c58kvwj c1w0yra6 ctd5fc5 c1h9ruvf c1sf1e8m c1l6bx4o c1mw7fdl c1k74xht c19dg1ud c1beph0k`} />
+</div>
 </div>
 <Box
 className={`w-box c9esr7v cm1ds2c c1fxgukz cd3toq c17nm8vt c1xymrvd c8yo8yx csaxvfs ce1jmtw c1m7qrvj c1o7c5y4 c1ndanu0 ${"icon-background"}`}>
@@ -214,7 +275,7 @@ className={`w-element ci03eyw c1nj86ny c4jnp6s c1l3m6tn c1w0yra6 cpq2gwm c1v4vkm
 href={"/"}
 className={`w-link cmvyqw5 cz7iu34 c40iywk codsd31 c16er72m c1qt5xo2 c1dohq8s c3gx87z cqyp7hg c1moglug`}>
 <Image
-src={"/assets/GEU_Icon_D3w8VZ53_-Z22xmyL4iB1.svg"}
+src={"/assets/GEU_Icon_1_qa8eLWu5EKj0C18RuAmQB.svg"}
 width={256}
 height={238}
 alt={""}
@@ -227,9 +288,9 @@ href={"https://www.instagram.com/ge.union/"}
 target={"_blank"}
 className={`w-element c1d1pidh cda4yqq c767uka c1l3m6tn cqb6n9z c8ao5vx c1tf1rtc c1erptst`}>
 <Image
-src={"/assets/icons8-instagram-100_Bv473-epGJTlb2PIIMZrK.png"}
-width={100}
-height={100}
+src={"/assets/soc-insta_3EK2yfeQrKO1VBcKS5CMG.svg"}
+width={417}
+height={417}
 alt={""}
 loading={"lazy"}
 className={`w-image`} />
@@ -239,9 +300,9 @@ href={"https://www.facebook.com/people/GE-Union/61573069635006/?_rdr"}
 target={"_blank"}
 className={`w-element c1d1pidh cda4yqq c767uka c1l3m6tn cqb6n9z c8ao5vx c1tf1rtc c1erptst`}>
 <Image
-src={"/assets/icons8-facebook-100_h1qyKfUPJkKqOQqUT8Zyf.png"}
-width={100}
-height={100}
+src={"/assets/soc-facebook_dRtaC2-32UMM-Zp4wCSDO.svg"}
+width={417}
+height={417}
 alt={""}
 loading={"lazy"}
 className={`w-image`} />
@@ -251,9 +312,9 @@ href={"https://www.linkedin.com/groups/10061020/"}
 target={"_blank"}
 className={`w-element c1d1pidh cda4yqq c767uka c1l3m6tn cqb6n9z c8ao5vx c1tf1rtc c1erptst`}>
 <Image
-src={"/assets/icons8-linkedin-100_32y9UEexB2a26klZGd2BD.png"}
-width={100}
-height={100}
+src={"/assets/soc-linkedin_JewsOzbBNtsSePfOyCp1_.svg"}
+width={417}
+height={417}
 alt={""}
 loading={"lazy"}
 className={`w-image`} />
@@ -262,9 +323,9 @@ className={`w-image`} />
 href={"https://www.reddit.com/r/DTU/"}
 className={`w-element c1d1pidh cda4yqq c767uka c1l3m6tn cqb6n9z c8ao5vx c1tf1rtc c1erptst`}>
 <Image
-src={"/assets/icons8-reddit-100_Q4RTsOhheuWPPCcLZd7_J.png"}
-width={100}
-height={100}
+src={"/assets/soc-reddit_YIY3q3bmqs_8zl81uxYxk.svg"}
+width={417}
+height={417}
 alt={""}
 loading={"lazy"}
 className={`w-image`} />

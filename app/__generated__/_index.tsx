@@ -11,7 +11,7 @@ import { Tooltip as Tooltip, TooltipTrigger as TooltipTrigger, TooltipContent as
 
       export const projectId = "94456f8c-a847-426a-aec8-16de390bd3eb";
 
-      export const lastPublished = "2025-08-30T02:11:55.578Z";
+      export const lastPublished = "2025-08-31T18:48:38.540Z";
 
       export const siteName = "GE Union";
 
@@ -52,9 +52,9 @@ import { Tooltip as Tooltip, TooltipTrigger as TooltipTrigger, TooltipContent as
 
       const Page = (_props: { system: any; }) => {
 return <Body
-className={`w-body cdzo1k7 c1lzvaoj cm1ds2c c1qux398 c13w5hsy`}>
+className={`w-body cdzo1k7 c1lzvaoj cm1ds2c c1qux398`}>
 <HtmlEmbed
-code={"<style>\n@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300..900&display=swap');\n@import url('https://api.fontshare.com/v2/css?f[]=tanker@400&amp;display=swap');\n  \n  h1{\n    font-family: 'Tanker';\n    font-weight: 500;\n    font-size: 5em;\n    color: var(--background);\n    line-height: 1;\n    margin: 0;\n  }\n  h2{\n    font-weight: 600;\n    font-size: 36px;\n    line-height: 1;\n    margin: 0;\n  }\n  p{\n    margin: 0;\n  }\n  \n  .icon-background{\n    background-color: var(--back-red-1);\n    z-index: 1;\n    overflow: hidden;\n    position: relative;\n  }\n  .icon-background::before{\n    content: \"\";\n    position: absolute;\n    width: 200%; height: 200%;\n    top: -50%; left: -50%;\n    background-image: url('/assets/icon-background_RyiWP8CNKOfskpwMp_P8Y.svg?width=1080&quality=80&format=auto');\n    background-size: 200px 115.4734411085px;\n    background-repeat: repeat;\n    animation: scrollBg 20s linear infinite;\n    z-index: -1;\n    opacity: var(--icon-background-opacity, 3%); mix-blend-mode: luminosity;\n    filter: blur(2px)\n  }\n  \n  .home-top::after{\n    position: absolute;\n    content: \"\";\n    width: 100%;\n    height: 250px;\n    background: linear-gradient(180deg, hsl(from var(--back-red-1) h s l / 0.65) 15%, hsl(from var(--back-red-1) h s l / 0) 100%);\n    z-index: -1;\n  }\n\n  @keyframes scrollBg {\n      0% {\n        background-position: 0 0;\n      }\n      100% {\n        background-position: -200px 115.4734411085px;\n      }\n    }\n\n  .home-top-card:hover .home-top-card-title-icon{\n    width: 38px;\n    padding-left: 3px;\n  }\n\n  @media only screen and (max-width: 767px) {\n    h1{\n      font-size: 4em;\n    }\n    h2{\n      font-size: 32px;\n    }\n  }\n</style>"}
+code={"<style>\n@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300..900&display=swap');\n@import url('https://api.fontshare.com/v2/css?f[]=tanker@400&amp;display=swap');\n  \n  h1{\n    font-family: 'Tanker';\n    font-weight: 500;\n    font-size: 5em;\n    color: var(--background);\n    line-height: 1;\n    margin: 0;\n  }\n  h2{\n    font-weight: 600;\n    font-size: 36px;\n    line-height: 1;\n    margin: 0;\n  }\n  p{\n    margin: 0;\n  }\n  \n  .icon-background{\n    background-color: var(--back-red-1);\n    z-index: 1;\n    overflow: hidden;\n    position: relative;\n  }\n  .icon-background::before{\n    content: \"\";\n    position: absolute;\n    width: 200%; height: 200%;\n    top: -50%; left: -50%;\n    background-image: url('/assets/icon-background.svg?width=1080&quality=80&format=auto');\n    background-size: 200px 115.4734411085px;\n    background-repeat: repeat;\n    animation: scrollBg 20s linear infinite;\n    z-index: -1;\n    opacity: var(--icon-background-opacity, 3%); mix-blend-mode: luminosity;\n    filter: blur(2px)\n  }\n  \n  .home-top::after{\n    position: absolute;\n    content: \"\";\n    width: 100%;\n    height: 250px;\n    background: linear-gradient(180deg, hsl(from var(--back-red-1) h s l / 0.65) 15%, hsl(from var(--back-red-1) h s l / 0) 100%);\n    z-index: -1;\n  }\n\n  @keyframes scrollBg {\n      0% {\n        background-position: 0 0;\n      }\n      100% {\n        background-position: -200px 115.4734411085px;\n      }\n    }\n\n  .home-top-card:hover .home-top-card-title-icon{\n    width: 38px;\n    padding-left: 3px;\n  }\n\n  @media only screen and (max-width: 767px) {\n    h1{\n      font-size: 4em;\n    }\n    h2{\n      font-size: 32px;\n    }\n  }\n</style>"}
 executeScriptOnCanvas={true}
 className={`w-html-embed`} />
 <Box
@@ -64,10 +64,12 @@ className={`w-box c1vu5acx cd3toq c17nm8vt c1xymrvd c8yo8yx c1duce4z ci03eyw cu8
 <Box
 className={`w-box c19h37rc ci03eyw c1nj86ny c1mz59p0 c13f4d8e c1122adb cx911xm c4qqqhz c2z8j1e c19dc97m`}>
 <Image
-src={"/assets/GE_Logo_-_Big_AQmTkCh-ue9Xfr1xXdV_k.svg"}
+src={"/assets/GE_Logo_-_Big_kpMORCHYDLOpQbfBKYwZ7.svg"}
 width={492}
 height={684}
 id={"menu-icon"}
+loading={"eager"}
+alt={""}
 className={`w-image c1g1752z c1l3m6tn cz7iu34 c40iywk codsd31 c16er72m c1qt5xo2 c1wjaqd0`} />
 <Box
 className={`w-box ci03eyw c5zf3td c1bdekej cy2vnym cgykfac c8chaf1 crymv6m ch588tu cd1c1x2 cgjpuuk co3wgvm cjdg5q7`}>
@@ -168,7 +170,7 @@ className={`w-link c1sy2opm cr2ujrk c8l261o cy7nrqp c1ho4waj c1122adb c10pf28n c
 {"Dashboard"}
 </Link>
 <Link
-href={"/about-geu"}
+href={"/about-ge"}
 className={`w-link c1sy2opm cr2ujrk c8l261o cy7nrqp c1ho4waj c1122adb c10pf28n c1w0lkxn ch9rsc5 cz5lin5`}>
 {"About GE"}
 </Link>
@@ -223,11 +225,12 @@ className={`w-text c1lt64h c12zdnex c7amdgj c1k74xht c1nx261z c7tuxro`}>
 {"Calendar"}
 </Text>
 <Image
-src={"/assets/Arrow_H1ljlBGfuft_TMCdE7Zb5.svg"}
+src={"/assets/Arrow_exgLm9zGXPhywmuQ3p_EH.svg"}
 width={25}
 height={24}
 loading={"eager"}
-className={`w-image c1mngz4m c1rwubzf c1tmykg6 c40iywk codsd31 c16er72m c1qt5xo2 cpt3wp3 c1k74xht cgykxgu crl8cro ${"home-top-card-title-icon"}`} />
+alt={""}
+className={`w-image c1mngz4m c1rwubzf c1tmykg6 c40iywk codsd31 c16er72m c1qt5xo2 cpt3wp3 c1k74xht cqb6n9z cgykxgu crl8cro ${"home-top-card-title-icon"}`} />
 </div>
 <Box
 className={`w-box ck11ylk c767uka c1dohq8s ci03eyw c1nj86ny c1v4vkm5 c1l3m6tn c11gzzxy cc356ws`}>
@@ -248,9 +251,11 @@ className={`w-text-1 cgjpuuk`}>
 <div
 className={`w-element c1t205vl c1mngz4m cvuh4zx c14e6dcj c638992 ccyo9a2 c6piima`}>
 <Image
-src={"/assets/Calendar_Icon_JBq83QCbGJiotNNmNumnQ.svg"}
+src={"/assets/Calendar_Icon_1_2rlppxPEMsMggoOracfjS.svg"}
 width={650}
 height={570}
+alt={""}
+loading={"eager"}
 className={`w-image cnkevhm c1oqdnpz cpc2g7h c1kppqxz c1w0yra6 c1lxqyue c1bblaxa co345il c1k74xht c19dg1ud c1lzvaoj ck7n286 c1sfn1pe c5frzz4 c1s1n1bm c13qonci`} />
 </div>
 <Box
@@ -278,20 +283,23 @@ className={`w-text c1lt64h c12zdnex c7amdgj c1k74xht c1nx261z c7tuxro`}>
 {"Course Bank"}
 </Text>
 <Image
-src={"/assets/Arrow_H1ljlBGfuft_TMCdE7Zb5.svg"}
+src={"/assets/Arrow_exgLm9zGXPhywmuQ3p_EH.svg"}
 width={25}
 height={24}
 loading={"eager"}
-className={`w-image c1mngz4m c1rwubzf c1tmykg6 c40iywk codsd31 c16er72m c1qt5xo2 cpt3wp3 c1k74xht cgykxgu crl8cro ${"home-top-card-title-icon"}`} />
+alt={""}
+className={`w-image c1mngz4m c1rwubzf c1tmykg6 c40iywk codsd31 c16er72m c1qt5xo2 cpt3wp3 c1k74xht cqb6n9z cgykxgu crl8cro ${"home-top-card-title-icon"}`} />
 </div>
 <div
 className={`w-element ck11ylk c767uka c1dohq8s`}>
 <div
 className={`w-element c1t205vl`}>
 <Image
-src={"/assets/Vault_Icon_b47VgS0N6eONtPMryR-cd.svg"}
+src={"/assets/Vault_Icon_1_y3-Uf_XAxhW8jRs7hTaGK.svg"}
 width={650}
 height={570}
+alt={""}
+loading={"eager"}
 className={`w-image cnkevhm c1oqdnpz cpc2g7h c1kppqxz c1w0yra6 c1lxqyue c1bblaxa co345il c1k74xht c19dg1ud ck7n286`} />
 </div>
 <p
@@ -310,20 +318,23 @@ className={`w-text c1lt64h c12zdnex c7amdgj c1k74xht c1nx261z c7tuxro`}>
 {"Dashboard"}
 </Text>
 <Image
-src={"/assets/Arrow_H1ljlBGfuft_TMCdE7Zb5.svg"}
+src={"/assets/Arrow_exgLm9zGXPhywmuQ3p_EH.svg"}
 width={25}
 height={24}
 loading={"eager"}
-className={`w-image c1mngz4m c1rwubzf c1tmykg6 c40iywk codsd31 c16er72m c1qt5xo2 cpt3wp3 c1k74xht cgykxgu crl8cro ${"home-top-card-title-icon"}`} />
+alt={""}
+className={`w-image c1mngz4m c1rwubzf c1tmykg6 c40iywk codsd31 c16er72m c1qt5xo2 cpt3wp3 c1k74xht cqb6n9z cgykxgu crl8cro ${"home-top-card-title-icon"}`} />
 </div>
 <div
 className={`w-element ck11ylk c767uka c1dohq8s`}>
 <div
 className={`w-element c1t205vl`}>
 <Image
-src={"/assets/About_GE_Icon_nX97REgvEFTexDZ2ZYnYa.svg"}
+src={"/assets/Dashboard_Icon_k45_yb5c9JX1J1yx7hrVU.svg"}
 width={650}
 height={570}
+alt={""}
+loading={"eager"}
 className={`w-image cnkevhm c1oqdnpz cpc2g7h c1kppqxz c1w0yra6 c1lxqyue c1bblaxa co345il c1k74xht c19dg1ud ck7n286`} />
 </div>
 <p
@@ -338,11 +349,11 @@ className={`w-element cy7nrqp c8l261o cdhy4s8 c5sx8jk c1wauoq4 c1w0yra6 cpq2gwm 
 <Box
 className={`w-box ci03eyw cu8ogtt c1g95588 c3brmnq cqaj6f4 c16lfnyl c1v4vkm5`}>
 <Image
-src={"/assets/GE_Logo_-_Black_ELdGguoKnkmGIG7zpf438.svg"}
+src={"/assets/GE_Logo_-_Small_rkpu_74a2VYBJut58034f.svg"}
 width={498}
 height={618}
 alt={""}
-className={`w-image c1shgpg6 c7hwif1 c14233kc c1w0yra6 cpq2gwm cj7bt5u c1k74xht c19dg1ud`} />
+className={`w-image c1shgpg6 c7hwif1 cbbmghh c1w0yra6 cpq2gwm cj7bt5u c1k74xht c19dg1ud`} />
 <h2
 className={`w-element`}>
 {"Who We Are"}
@@ -366,10 +377,11 @@ className={`w-text`}>
 {"Learn more"}
 </Text>
 <Image
-src={"/assets/Arrow_H1ljlBGfuft_TMCdE7Zb5.svg"}
+src={"/assets/Arrow_exgLm9zGXPhywmuQ3p_EH.svg"}
 width={25}
 height={24}
-className={`w-image c1nfcmlw`} />
+alt={""}
+className={`w-image c1nfcmlw cqb6n9z`} />
 </Link>
 </Box>
 <HtmlEmbed
@@ -446,10 +458,11 @@ className={`w-text`}>
 {"See on Instagram"}
 </Text>
 <Image
-src={"/assets/Arrow_H1ljlBGfuft_TMCdE7Zb5.svg"}
+src={"/assets/Arrow_exgLm9zGXPhywmuQ3p_EH.svg"}
 width={25}
 height={24}
-className={`w-image c1nfcmlw`} />
+alt={""}
+className={`w-image c1nfcmlw cqb6n9z`} />
 </Link>
 </Box>
 <Box
@@ -474,10 +487,11 @@ className={`w-text`}>
 {"LinkedIn Network"}
 </Text>
 <Image
-src={"/assets/Arrow_H1ljlBGfuft_TMCdE7Zb5.svg"}
+src={"/assets/Arrow_exgLm9zGXPhywmuQ3p_EH.svg"}
 width={25}
 height={24}
-className={`w-image c1nfcmlw`} />
+alt={""}
+className={`w-image c1nfcmlw cqb6n9z`} />
 </Link>
 </Box>
 <Box
@@ -502,10 +516,11 @@ className={`w-text`}>
 {"See on Reddit"}
 </Text>
 <Image
-src={"/assets/Arrow_H1ljlBGfuft_TMCdE7Zb5.svg"}
+src={"/assets/Arrow_exgLm9zGXPhywmuQ3p_EH.svg"}
 width={25}
 height={24}
-className={`w-image c1nfcmlw`} />
+alt={""}
+className={`w-image c1nfcmlw cqb6n9z`} />
 </Link>
 </Box>
 <Box
@@ -530,10 +545,11 @@ className={`w-text`}>
 {"See on Facebook"}
 </Text>
 <Image
-src={"/assets/Arrow_H1ljlBGfuft_TMCdE7Zb5.svg"}
+src={"/assets/Arrow_exgLm9zGXPhywmuQ3p_EH.svg"}
 width={25}
 height={24}
-className={`w-image c1nfcmlw`} />
+alt={""}
+className={`w-image c1nfcmlw cqb6n9z`} />
 </Link>
 </Box>
 <Box
@@ -555,11 +571,12 @@ className={`w-element c58kvwj csvbhp4 cbajjfw cz4wxbc cm1ds2c c1fxgukz`}>
 <div
 className={`w-element c58kvwj csvbhp4 c1dxr8ri c10dz52c czctaki c1v1s9us ce1ywqb c1hackn6 c15j8t4a c1vmh594 c19raxa1 cvcrnuz`} />
 <Image
-src={"/assets/envelope-letter-1_54WdrB-vdhWtpZNklaRdT.svg"}
+src={"/assets/envelope-letter_1_FjptV312KJ_D9btjKlFpn.svg"}
 width={512}
 height={512}
 alt={""}
 id={"mail-hover-letter"}
+loading={"lazy"}
 className={`w-image cc39ds7 c1w0yra6 cpq2gwm cje7rrh c1iwmpjl cnkevhm ceiem4c c19dg1ud c1k74xht`} />
 <HtmlEmbed
 code={"<style>\n  #mail-hover-letter {\n    transition: translate 0.4s, rotate 0.4s, scale 0.4s, opacity 0.4s;\n  }\n  a:hover #mail-hover-letter{\n    translate: 0 -52px;\n    rotate: 6deg;\n    scale: 1.2;\n    opacity: 0.15;\n  }\n</style>"}
@@ -589,10 +606,11 @@ className={`w-text`}>
 {"Send Email"}
 </Text>
 <Image
-src={"/assets/Arrow_H1ljlBGfuft_TMCdE7Zb5.svg"}
+src={"/assets/Arrow_exgLm9zGXPhywmuQ3p_EH.svg"}
 width={25}
 height={24}
-className={`w-image c1nfcmlw`} />
+alt={""}
+className={`w-image c1nfcmlw cqb6n9z`} />
 </Link>
 </Box>
 </Box>
@@ -601,7 +619,7 @@ className={`w-box c9esr7v cm1ds2c c1fxgukz cd3toq c17nm8vt c1xymrvd c8yo8yx csax
 <div
 className={`w-element ci03eyw c1nj86ny c4jnp6s c1l3m6tn c1w0yra6 cpq2gwm c1v4vkm5 c16pnwu4 cypyahl cs11lv9 c1njbxf1`}>
 <Image
-src={"/assets/GEU_Icon_D3w8VZ53_-Z22xmyL4iB1.svg"}
+src={"/assets/GEU_Icon_1_qa8eLWu5EKj0C18RuAmQB.svg"}
 width={256}
 height={238}
 alt={""}
@@ -613,9 +631,9 @@ href={"https://www.instagram.com/ge.union/"}
 target={"_blank"}
 className={`w-element c1d1pidh cda4yqq c767uka c1l3m6tn cqb6n9z c8ao5vx c1tf1rtc c1erptst`}>
 <Image
-src={"/assets/icons8-instagram-100_Bv473-epGJTlb2PIIMZrK.png"}
-width={100}
-height={100}
+src={"/assets/soc-insta_3EK2yfeQrKO1VBcKS5CMG.svg"}
+width={417}
+height={417}
 alt={""}
 loading={"lazy"}
 className={`w-image`} />
@@ -625,9 +643,9 @@ href={"https://www.facebook.com/people/GE-Union/61573069635006/?_rdr"}
 target={"_blank"}
 className={`w-element c1d1pidh cda4yqq c767uka c1l3m6tn cqb6n9z c8ao5vx c1tf1rtc c1erptst`}>
 <Image
-src={"/assets/icons8-facebook-100_h1qyKfUPJkKqOQqUT8Zyf.png"}
-width={100}
-height={100}
+src={"/assets/soc-facebook_dRtaC2-32UMM-Zp4wCSDO.svg"}
+width={417}
+height={417}
 alt={""}
 loading={"lazy"}
 className={`w-image`} />
@@ -637,9 +655,9 @@ href={"https://www.linkedin.com/groups/10061020/"}
 target={"_blank"}
 className={`w-element c1d1pidh cda4yqq c767uka c1l3m6tn cqb6n9z c8ao5vx c1tf1rtc c1erptst`}>
 <Image
-src={"/assets/icons8-linkedin-100_32y9UEexB2a26klZGd2BD.png"}
-width={100}
-height={100}
+src={"/assets/soc-linkedin_JewsOzbBNtsSePfOyCp1_.svg"}
+width={417}
+height={417}
 alt={""}
 loading={"lazy"}
 className={`w-image`} />
@@ -648,9 +666,9 @@ className={`w-image`} />
 href={"https://www.reddit.com/r/DTU/"}
 className={`w-element c1d1pidh cda4yqq c767uka c1l3m6tn cqb6n9z c8ao5vx c1tf1rtc c1erptst`}>
 <Image
-src={"/assets/icons8-reddit-100_Q4RTsOhheuWPPCcLZd7_J.png"}
-width={100}
-height={100}
+src={"/assets/soc-reddit_YIY3q3bmqs_8zl81uxYxk.svg"}
+width={417}
+height={417}
 alt={""}
 loading={"lazy"}
 className={`w-image`} />

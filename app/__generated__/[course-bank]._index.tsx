@@ -11,7 +11,7 @@ import { Tabs as Tabs, TabsList as TabsList, TabsTrigger as TabsTrigger, TabsCon
 
       export const projectId = "94456f8c-a847-426a-aec8-16de390bd3eb";
 
-      export const lastPublished = "2025-08-30T02:11:55.578Z";
+      export const lastPublished = "2025-08-31T18:48:38.540Z";
 
       export const siteName = "GE Union";
 
@@ -37,7 +37,7 @@ code={"<style>\n@import url('https://fonts.googleapis.com/css2?family=Rubik:wght
 executeScriptOnCanvas={true}
 className={`w-html-embed`} />
 <HtmlEmbed
-code={"<script>\n  // 1) Configuration\n  if (typeof window.JSON_URL === 'undefined') {\n    window.JSON_URL = \"https://raw.githubusercontent.com/GE-Union/CourseBank/main/structure.json\";\n  }\n  if (typeof window.CACHE_KEY === 'undefined') {\n    window.CACHE_KEY = \"coursebank_structure_cache\";\n  }\n  if (typeof window.CACHE_TTL === 'undefined') {\n    window.CACHE_TTL = 90 * 60 * 1000; // 90 min\n  }\n  if (typeof window.EXT_COLORS === 'undefined') {\n    window.EXT_COLORS = {\n      PDF: \"#D32F2F\",\n      IPYNB: \"#F37C2F\",\n      ZIP: \"#595959\",\n      DOCX: \"#2A5699\",\n      XLSX: \"#1D6F42\",\n      PPTX: \"#D24726\",\n      TXT: \"#616161\",\n    };\n  }\n\n\n\n\n\n\n\n\n\n\n\n\n  // Utility: fetch a file from GitHub RAW and return a Blob with a guessed MIME\n  async function fetchGitHubBlob(pathInRepo) {\n    const owner  = \"GE-Union\";\n    const repo   = \"CourseBank\";\n    const branch = \"main\";\n\n    const url = `https://raw.githubusercontent.com/GE-Union/CourseBank/main/${pathInRepo}`;\n    const res = await fetch(url); // CORS must be allowed by GitHub (usually is on raw.githubusercontent.com)\n    if (!res.ok) throw new Error(`Failed to fetch: ${res.status} ${res.statusText}`);\n\n    const ext = (pathInRepo.split(\".\").pop() || \"\").toLowerCase();\n    const buf = await res.arrayBuffer();\n\n    // Minimal MIME mapping\n    const mimeByExt = {\n      pdf: \"application/pdf\",\n      ipynb: \"application/json\",    // notebooks are JSON; download will use filename anyway\n      txt: \"text/plain\",\n      json: \"application/json\",\n      png: \"image/png\",\n      jpg: \"image/jpeg\",\n      jpeg: \"image/jpeg\",\n      svg: \"image/svg+xml\",\n      html: \"text/html\",\n      csv: \"text/csv\"\n    };\n    const type = mimeByExt[ext] || (res.headers.get(\"content-type\") || \"application/octet-stream\");\n    return new Blob([buf], { type });\n  }\n\n  // Open PDF inline in a new tab using the browser’s viewer\n  async function openPdfInline(pathInRepo) {\n    // Open a tab immediately to avoid popup blockers\n    const win = window.open(\"\", \"_blank\");\n    try {\n      const blob = await fetchGitHubBlob(pathInRepo);\n      const url = URL.createObjectURL(blob);\n      win.location = url;\n\n      // Optional: revoke after the new tab finishes loading\n      // (can't reliably know, so do a delayed revoke)\n      setTimeout(() => URL.revokeObjectURL(url), 60_000);\n    } catch (err) {\n      if (win) win.close();\n      console.error(err);\n      alert(\"Could not open PDF.\");\n    }\n  }\n\n  // Force download (works for .ipynb and anything else you want to download)\n  async function downloadFile(pathInRepo) {\n    try {\n      const blob = await fetchGitHubBlob(pathInRepo);\n      const url = URL.createObjectURL(blob);\n      const a = document.createElement(\"a\");\n      a.href = url;\n      a.download = decodeURIComponent(pathInRepo.split(\"/\").pop() || \"file\");\n      document.body.appendChild(a);\n      a.click();\n      a.remove();\n      setTimeout(() => URL.revokeObjectURL(url), 10_000);\n    } catch (err) {\n      console.error(err);\n      alert(\"Could not download file.\");\n    }\n  }\n\n  // wiring for anchors\n  function wireDownloadLink(a, pathInRepo) {\n    const lower = pathInRepo.toLowerCase();\n    if (lower.endsWith(\".pdf\")) {\n      a.href = \"#\";\n      a.onclick = (e) => { e.preventDefault(); openPdfInline(pathInRepo); };\n      a.target = \"_blank\";\n      a.rel = \"noopener\";\n    } else if (lower.endsWith(\".ipynb\")) {\n      a.href = \"#\";\n      a.onclick = (e) => { e.preventDefault(); downloadFile(pathInRepo); };\n      a.removeAttribute(\"target\");\n    } else {\n      // default: point directly to RAW\n      a.href = `https://raw.githubusercontent.com/GE-Union/CourseBank/main/${encodeURI(pathInRepo)}`;\n    }\n  }\n\n\n\n\n\n\n\n\n\n\n\n  \n\n  \n  // 3) Helpers\n  async function fetchStructure() {\n    // try cache\n    const raw = localStorage.getItem(CACHE_KEY);\n    if (false) {\n      const { ts, data } = JSON.parse(raw);\n      if (Date.now() - ts < CACHE_TTL) {\n        return data;\n      }\n    }\n    // otherwise re-fetch\n    const res = await fetch(JSON_URL, { cache: \"no-store\" });\n    if (!res.ok) throw new Error(\"Failed to load structure.json\");\n    const data = await res.json();\n    localStorage.setItem(\n      CACHE_KEY,\n      JSON.stringify({ ts: Date.now(), data }),\n    );\n    return data;\n  }\n  \n  function getFolderData(structure, folderPath) {\n    const parts = folderPath.split(\"/\");\n    let cur = structure;\n    for (const p of parts) {\n      if (!(p in cur)) return null;\n      cur = cur[p];\n    }\n    return Array.isArray(cur) ? cur : null;\n  }\n  \n  function makeFileLink(folder, file) {\n    const container = document.createElement(\"div\");\n    container.className = \"custom-file-link\";\n  \n    // split name & author\n    const [rawName, rawAuth] = file.split(\"-a-\");\n    const filename = (rawName || file).replace(/_/g, \" \");\n    const author = rawAuth\n      ? rawAuth.replace(/_/g, \" \").replace(/\\.[^/.]+$/, \"\")\n      : \"Unknown\";\n  \n    const ext = file.split(\".\").pop().toUpperCase();\n  \n    const fullPath = `${folder}/${file}`;\n    const encodedPath = fullPath\n      .split('/')\n      .map(seg => encodeURIComponent(seg))\n      .join('/');\n  \n    const a = document.createElement('a');\n    /*if (['PDF'].includes(ext)) {\n      a.target = '_blank';\n      a.href = `https://raw.githubusercontent.com/GE-Union/CourseBank/main/${encodedPath}`;\n    } else {\n      a.setAttribute('download', \"\");\n      a.href = `https://raw.githubusercontent.com/GE-Union/CourseBank/main/${encodedPath}`; // direct download\n      //a.href = `https://geunion.dk/coursebank/${encodedPath}`;  // proxy script\n    }*/\n    wireDownloadLink(a, encodedPath);\n    a.style.display = 'flex';\n    a.style.alignItems = 'center';\n    a.style.width = '100%';\n    a.style.lineHeight = \"1.2\";\n  \n    // icon\n    const icon = document.createElement(\"div\");\n    icon.className = \"file-icon\";\n    const img = document.createElement(\"img\");\n    img.src =\n      \"https://raw.githubusercontent.com/GE-Union/CourseBank/main/res/file-icon.svg\";\n    img.alt = \"File Icon\";\n    icon.appendChild(img);\n  \n    const badge = document.createElement(\"div\");\n    badge.className = \"extension-badge\";\n    badge.textContent = ext;\n    badge.style.backgroundColor =\n      EXT_COLORS[ext] || \"var(--global-palette2,#1e73be)\";\n    icon.appendChild(badge);\n  \n    // details\n    const details = document.createElement(\"div\");\n    details.className = \"file-details\";\n    details.innerHTML = `<strong>${filename}</strong><span>${author}</span>`;\n  \n    // assemble\n    a.appendChild(icon);\n    a.appendChild(details);\n    container.appendChild(a);\n    return container;\n  }\n  \n  async function initFileLists() {\n    const holders = document.querySelectorAll(\".file-list\");\n    console.log(holders);\n    if (!holders.length) return;\n  \n    try {\n      const structure = await fetchStructure();\n      holders.forEach((holder) => {\n        const folder = holder.dataset.folder;\n        holder.innerHTML = \"\"; // clear “Loading…”\n        const files = getFolderData(structure, folder);\n        if (!files) {\n          holder.textContent = \"No notes found\";\n          return;\n        }\n        files.forEach((f) => holder.appendChild(makeFileLink(folder, f)));\n        console.log(`Populated ${folder}`);\n      });\n    } catch (err) {\n      console.error(err);\n      holders.forEach((holder) => {\n        holder.textContent = \"Unable to load course structure.\";\n      });\n    }\n  }\n  \n  document.addEventListener('DOMContentLoaded', () => {\n    requestAnimationFrame(() => {\n      setTimeout(function() {initFileLists();}, 500)\n    });\n  });\n</script>"}
+code={"<script>\n  // 1) Configuration\n  if (typeof window.JSON_URL === 'undefined') {\n    window.JSON_URL = \"https://raw.githubusercontent.com/GE-Union/CourseBank/main/structure.json\";\n  }\n  if (typeof window.CACHE_KEY === 'undefined') {\n    window.CACHE_KEY = \"coursebank_structure_cache\";\n  }\n  if (typeof window.CACHE_TTL === 'undefined') {\n    window.CACHE_TTL = 90 * 60 * 1000; // 90 min\n  }\n  if (typeof window.EXT_COLORS === 'undefined') {\n    window.EXT_COLORS = {\n      PDF: \"#D32F2F\",\n      IPYNB: \"#F37C2F\",\n      ZIP: \"#595959\",\n      DOCX: \"#2A5699\",\n      XLSX: \"#1D6F42\",\n      PPTX: \"#D24726\",\n      TXT: \"#616161\",\n    };\n  }\n\n\n\n\n\n\n\n\n\n\n\n\n  // Utility: fetch a file from GitHub RAW and return a Blob with a guessed MIME\n  async function fetchGitHubBlob(pathInRepo) {\n\n    const url = `https://raw.githubusercontent.com/GE-Union/CourseBank/main/${pathInRepo}`;\n    const res = await fetch(url); // CORS must be allowed by GitHub (usually is on raw.githubusercontent.com)\n    if (!res.ok) throw new Error(`Failed to fetch: ${res.status} ${res.statusText}`);\n\n    const ext = (pathInRepo.split(\".\").pop() || \"\").toLowerCase();\n    const buf = await res.arrayBuffer();\n\n    // Minimal MIME mapping\n    const mimeByExt = {\n      pdf: \"application/pdf\",\n      ipynb: \"application/json\",    // notebooks are JSON; download will use filename anyway\n      txt: \"text/plain\",\n      json: \"application/json\",\n      png: \"image/png\",\n      jpg: \"image/jpeg\",\n      jpeg: \"image/jpeg\",\n      svg: \"image/svg+xml\",\n      html: \"text/html\",\n      csv: \"text/csv\"\n    };\n    const type = mimeByExt[ext] || (res.headers.get(\"content-type\") || \"application/octet-stream\");\n    return new Blob([buf], { type });\n  }\n\n  // Open PDF inline in a new tab using the browser’s viewer\n  async function openPdfInline(pathInRepo) {\n    // Open a tab immediately to avoid popup blockers\n    const win = window.open(\"\", \"_blank\");\n    try {\n      const blob = await fetchGitHubBlob(pathInRepo);\n      const url = URL.createObjectURL(blob);\n      win.location = url;\n\n      // revoke after the new tab finishes loading\n      // (can't reliably know, so do a delayed revoke)\n      setTimeout(() => URL.revokeObjectURL(url), 60_000);\n    } catch (err) {\n      if (win) win.close();\n      console.error(err);\n      alert(\"Could not open PDF.\");\n    }\n  }\n\n  // Force download (works for .ipynb and anything else you want to download)\n  async function downloadFile(pathInRepo) {\n    try {\n      const blob = await fetchGitHubBlob(pathInRepo);\n      const url = URL.createObjectURL(blob);\n      const a = document.createElement(\"a\");\n      a.href = url;\n      a.download = decodeURIComponent(pathInRepo.split(\"/\").pop() || \"file\");\n      document.body.appendChild(a);\n      a.click();\n      a.remove();\n      setTimeout(() => URL.revokeObjectURL(url), 10_000);\n    } catch (err) {\n      console.error(err);\n      alert(\"Could not download file.\");\n    }\n  }\n\n  // wiring for anchors\n  function wireDownloadLink(a, pathInRepo) {\n    const lower = pathInRepo.toLowerCase();\n    if (lower.endsWith(\".pdf\")) {\n      a.href = \"#\";\n      a.onclick = (e) => { e.preventDefault(); openPdfInline(pathInRepo); };\n      a.target = \"_blank\";\n      a.rel = \"noopener\";\n    } else if (lower.endsWith(\".ipynb\")) {\n      a.href = \"#\";\n      a.onclick = (e) => { e.preventDefault(); downloadFile(pathInRepo); };\n      a.removeAttribute(\"target\");\n    } else {\n      // default: point directly to RAW\n      a.href = `https://raw.githubusercontent.com/GE-Union/CourseBank/main/${encodeURI(pathInRepo)}`;\n    }\n  }\n\n\n\n\n\n\n\n\n\n\n  \n\n  \n  // 3) Helpers\n  async function fetchStructure() {\n    // try cache\n    const raw = localStorage.getItem(CACHE_KEY);\n    if (false) {\n      const { ts, data } = JSON.parse(raw);\n      if (Date.now() - ts < CACHE_TTL) {\n        return data;\n      }\n    }\n    // otherwise re-fetch\n    const res = await fetch(JSON_URL, { cache: \"no-store\" });\n    if (!res.ok) throw new Error(\"Failed to load structure.json\");\n    const data = await res.json();\n    localStorage.setItem(\n      CACHE_KEY,\n      JSON.stringify({ ts: Date.now(), data }),\n    );\n    return data;\n  }\n  \n  function getFolderData(structure, folderPath) {\n    const parts = folderPath.split(\"/\");\n    let cur = structure;\n    for (const p of parts) {\n      if (!(p in cur)) return null;\n      cur = cur[p];\n    }\n    return Array.isArray(cur) ? cur : null;\n  }\n  \n  function makeFileLink(folder, file) {\n    const container = document.createElement(\"div\");\n    container.className = \"custom-file-link\";\n  \n    // split name & author\n    const [rawName, rawAuth] = file.split(\"-a-\");\n    const filename = (rawName || file).replace(/_/g, \" \");\n    const author = rawAuth\n      ? rawAuth.replace(/_/g, \" \").replace(/\\.[^/.]+$/, \"\")\n      : \"Unknown\";\n  \n    const ext = file.split(\".\").pop().toUpperCase();\n  \n    const fullPath = `${folder}/${file}`;\n    const encodedPath = fullPath\n      .split('/')\n      .map(seg => encodeURIComponent(seg))\n      .join('/');\n  \n    const a = document.createElement('a');\n    /*if (['PDF'].includes(ext)) {\n      a.target = '_blank';\n      a.href = `https://raw.githubusercontent.com/GE-Union/CourseBank/main/${encodedPath}`;\n    } else {\n      a.setAttribute('download', \"\");\n      a.href = `https://raw.githubusercontent.com/GE-Union/CourseBank/main/${encodedPath}`; // direct download\n      //a.href = `https://geunion.dk/coursebank/${encodedPath}`;  // proxy script\n    }*/\n    wireDownloadLink(a, encodedPath);\n    a.style.display = 'flex';\n    a.style.alignItems = 'center';\n    a.style.width = '100%';\n    a.style.lineHeight = \"1.2\";\n  \n    // icon\n    const icon = document.createElement(\"div\");\n    icon.className = \"file-icon\";\n    const img = document.createElement(\"img\");\n    img.src =\n      \"https://raw.githubusercontent.com/GE-Union/CourseBank/main/res/file-icon.svg\";\n    img.alt = \"File Icon\";\n    icon.appendChild(img);\n  \n    const badge = document.createElement(\"div\");\n    badge.className = \"extension-badge\";\n    badge.textContent = ext;\n    badge.style.backgroundColor =\n      EXT_COLORS[ext] || \"var(--global-palette2,#1e73be)\";\n    icon.appendChild(badge);\n  \n    // details\n    const details = document.createElement(\"div\");\n    details.className = \"file-details\";\n    details.innerHTML = `<strong>${filename}</strong><span>${author}</span>`;\n  \n    // assemble\n    a.appendChild(icon);\n    a.appendChild(details);\n    container.appendChild(a);\n    return container;\n  }\n  \n  async function initFileLists() {\n    const holders = document.querySelectorAll(\".file-list\");\n    console.log(holders);\n    if (!holders.length) return;\n  \n    try {\n      const structure = await fetchStructure();\n      holders.forEach((holder) => {\n        const folder = holder.dataset.folder;\n        holder.innerHTML = \"\"; // clear “Loading…”\n        const files = getFolderData(structure, folder);\n        if (!files) {\n          holder.textContent = \"No notes found\";\n          return;\n        }\n        files.forEach((f) => holder.appendChild(makeFileLink(folder, f)));\n        console.log(`Populated ${folder}`);\n      });\n    } catch (err) {\n      console.error(err);\n      holders.forEach((holder) => {\n        holder.textContent = \"Unable to load course structure.\";\n      });\n    }\n  }\n  \n  document.addEventListener('DOMContentLoaded', () => {\n    requestAnimationFrame(() => {\n      setTimeout(function() {initFileLists();}, 500)\n    });\n  });\n</script>"}
 executeScriptOnCanvas={true}
 className={`w-html-embed`} />
 <HtmlEmbed
@@ -53,9 +53,11 @@ id={"menu-icon"}
 target={"_self"}
 className={`w-link cmvyqw5 cz7iu34 c40iywk codsd31 c16er72m c1qt5xo2 cqyp7hg c1moglug`}>
 <Image
-src={"/assets/GE_Logo_-_Big_AQmTkCh-ue9Xfr1xXdV_k.svg"}
+src={"/assets/GE_Logo_-_Big_kpMORCHYDLOpQbfBKYwZ7.svg"}
 width={492}
 height={684}
+loading={"eager"}
+alt={""}
 className={`w-image c1g1752z c1l3m6tn c1wjaqd0`} />
 </Link>
 <Box
@@ -158,7 +160,7 @@ className={`w-link c1sy2opm cr2ujrk c8l261o cy7nrqp c1ho4waj c1122adb c10pf28n c
 {"Dashboard"}
 </Link>
 <Link
-href={"/about-geu"}
+href={"/about-ge"}
 className={`w-link c1sy2opm cr2ujrk c8l261o cy7nrqp c1ho4waj c1122adb c10pf28n c1w0lkxn ch9rsc5 cz5lin5`}>
 {"About GE"}
 </Link>
@@ -2271,10 +2273,11 @@ className={`w-text`}>
 {"Studocu"}
 </Text>
 <Image
-src={"/assets/Arrow_H1ljlBGfuft_TMCdE7Zb5.svg"}
+src={"/assets/Arrow_exgLm9zGXPhywmuQ3p_EH.svg"}
 width={25}
 height={24}
-className={`w-image c1nfcmlw`} />
+alt={""}
+className={`w-image c1nfcmlw cqb6n9z`} />
 </Link>
 </div>
 <div
@@ -2292,10 +2295,11 @@ className={`w-text`}>
 {"Here"}
 </Text>
 <Image
-src={"/assets/Arrow_H1ljlBGfuft_TMCdE7Zb5.svg"}
+src={"/assets/Arrow_exgLm9zGXPhywmuQ3p_EH.svg"}
 width={25}
 height={24}
-className={`w-image c1nfcmlw`} />
+alt={""}
+className={`w-image c1nfcmlw cqb6n9z`} />
 </Link>
 </div>
 </div>
@@ -2308,7 +2312,7 @@ className={`w-element ci03eyw c1nj86ny c4jnp6s c1l3m6tn c1w0yra6 cpq2gwm c1v4vkm
 href={"/"}
 className={`w-link cmvyqw5 cz7iu34 c40iywk codsd31 c16er72m c1qt5xo2 c1dohq8s c3gx87z cqyp7hg c1moglug`}>
 <Image
-src={"/assets/GEU_Icon_D3w8VZ53_-Z22xmyL4iB1.svg"}
+src={"/assets/GEU_Icon_1_qa8eLWu5EKj0C18RuAmQB.svg"}
 width={256}
 height={238}
 alt={""}
@@ -2321,9 +2325,9 @@ href={"https://www.instagram.com/ge.union/"}
 target={"_blank"}
 className={`w-element c1d1pidh cda4yqq c767uka c1l3m6tn cqb6n9z c8ao5vx c1tf1rtc c1erptst`}>
 <Image
-src={"/assets/icons8-instagram-100_Bv473-epGJTlb2PIIMZrK.png"}
-width={100}
-height={100}
+src={"/assets/soc-insta_3EK2yfeQrKO1VBcKS5CMG.svg"}
+width={417}
+height={417}
 alt={""}
 loading={"lazy"}
 className={`w-image`} />
@@ -2333,9 +2337,9 @@ href={"https://www.facebook.com/people/GE-Union/61573069635006/?_rdr"}
 target={"_blank"}
 className={`w-element c1d1pidh cda4yqq c767uka c1l3m6tn cqb6n9z c8ao5vx c1tf1rtc c1erptst`}>
 <Image
-src={"/assets/icons8-facebook-100_h1qyKfUPJkKqOQqUT8Zyf.png"}
-width={100}
-height={100}
+src={"/assets/soc-facebook_dRtaC2-32UMM-Zp4wCSDO.svg"}
+width={417}
+height={417}
 alt={""}
 loading={"lazy"}
 className={`w-image`} />
@@ -2345,9 +2349,9 @@ href={"https://www.linkedin.com/groups/10061020/"}
 target={"_blank"}
 className={`w-element c1d1pidh cda4yqq c767uka c1l3m6tn cqb6n9z c8ao5vx c1tf1rtc c1erptst`}>
 <Image
-src={"/assets/icons8-linkedin-100_32y9UEexB2a26klZGd2BD.png"}
-width={100}
-height={100}
+src={"/assets/soc-linkedin_JewsOzbBNtsSePfOyCp1_.svg"}
+width={417}
+height={417}
 alt={""}
 loading={"lazy"}
 className={`w-image`} />
@@ -2356,9 +2360,9 @@ className={`w-image`} />
 href={"https://www.reddit.com/r/DTU/"}
 className={`w-element c1d1pidh cda4yqq c767uka c1l3m6tn cqb6n9z c8ao5vx c1tf1rtc c1erptst`}>
 <Image
-src={"/assets/icons8-reddit-100_Q4RTsOhheuWPPCcLZd7_J.png"}
-width={100}
-height={100}
+src={"/assets/soc-reddit_YIY3q3bmqs_8zl81uxYxk.svg"}
+width={417}
+height={417}
 alt={""}
 loading={"lazy"}
 className={`w-image`} />

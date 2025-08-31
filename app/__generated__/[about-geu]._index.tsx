@@ -11,7 +11,7 @@ import { Tooltip as Tooltip, TooltipTrigger as TooltipTrigger, TooltipContent as
 
       export const projectId = "94456f8c-a847-426a-aec8-16de390bd3eb";
 
-      export const lastPublished = "2025-08-30T02:11:55.578Z";
+      export const lastPublished = "2025-08-31T18:48:38.540Z";
 
       export const siteName = "GE Union";
 
@@ -46,9 +46,11 @@ target={"_self"}
 id={"menu-icon"}
 className={`w-link cmvyqw5 cz7iu34 c40iywk codsd31 c16er72m c1qt5xo2 cqyp7hg c1moglug`}>
 <Image
-src={"/assets/GE_Logo_-_Big_AQmTkCh-ue9Xfr1xXdV_k.svg"}
+src={"/assets/GE_Logo_-_Big_kpMORCHYDLOpQbfBKYwZ7.svg"}
 width={492}
 height={684}
+loading={"eager"}
+alt={""}
 className={`w-image c1g1752z c1l3m6tn c1wjaqd0`} />
 </Link_1>
 <Box
@@ -151,7 +153,7 @@ className={`w-link c1sy2opm cr2ujrk c8l261o cy7nrqp c1ho4waj c1122adb c10pf28n c
 {"Dashboard"}
 </Link_1>
 <Link_1
-href={"/about-geu"}
+href={"/about-ge"}
 className={`w-link c1sy2opm cr2ujrk c8l261o cy7nrqp c1ho4waj c1122adb c10pf28n c1w0lkxn ch9rsc5 cz5lin5`}>
 {"About GE"}
 </Link_1>
@@ -255,11 +257,11 @@ className={`w-element`}>
 </div>
 </div>
 <Image
-src={"/assets/GE_Logo_-_Black_ELdGguoKnkmGIG7zpf438.svg"}
+src={"/assets/GE_Logo_-_Small_rkpu_74a2VYBJut58034f.svg"}
 width={498}
 height={618}
 alt={""}
-className={`w-image c1shgpg6 c7hwif1 c14233kc c1w0yra6 cpq2gwm cj7bt5u c1k74xht c19dg1ud`} />
+className={`w-image c1shgpg6 c7hwif1 cbbmghh c1w0yra6 cpq2gwm cj7bt5u c1k74xht c19dg1ud`} />
 <div
 className={`w-element cyoo8jj cxa4mkp cy2vnym`}>
 <h2
@@ -306,11 +308,11 @@ className={`w-element`}>
 </div>
 </div>
 <Image
-src={"/assets/GE_Logo_-_Black_ELdGguoKnkmGIG7zpf438.svg"}
+src={"/assets/GE_Logo_-_Small_rkpu_74a2VYBJut58034f.svg"}
 width={498}
 height={618}
 alt={""}
-className={`w-image c1shgpg6 c7hwif1 c14233kc c1w0yra6 cpq2gwm cj7bt5u c1k74xht c19dg1ud`} />
+className={`w-image c1shgpg6 c7hwif1 cbbmghh c1w0yra6 cpq2gwm cj7bt5u c1k74xht c19dg1ud`} />
 <div
 className={`w-element cyoo8jj cxa4mkp cy2vnym c4jdyrv`}>
 <h2
@@ -349,7 +351,7 @@ className={`w-element ci03eyw c1nj86ny c4jnp6s c1l3m6tn c1w0yra6 cpq2gwm c1v4vkm
 href={"/"}
 className={`w-link cmvyqw5 cz7iu34 c40iywk codsd31 c16er72m c1qt5xo2 c1dohq8s c3gx87z cqyp7hg c1moglug`}>
 <Image
-src={"/assets/GEU_Icon_D3w8VZ53_-Z22xmyL4iB1.svg"}
+src={"/assets/GEU_Icon_1_qa8eLWu5EKj0C18RuAmQB.svg"}
 width={256}
 height={238}
 alt={""}
@@ -362,9 +364,9 @@ href={"https://www.instagram.com/ge.union/"}
 target={"_blank"}
 className={`w-element c1d1pidh cda4yqq c767uka c1l3m6tn cqb6n9z c8ao5vx c1tf1rtc c1erptst`}>
 <Image
-src={"/assets/icons8-instagram-100_Bv473-epGJTlb2PIIMZrK.png"}
-width={100}
-height={100}
+src={"/assets/soc-insta_3EK2yfeQrKO1VBcKS5CMG.svg"}
+width={417}
+height={417}
 alt={""}
 loading={"lazy"}
 className={`w-image`} />
@@ -374,9 +376,9 @@ href={"https://www.facebook.com/people/GE-Union/61573069635006/?_rdr"}
 target={"_blank"}
 className={`w-element c1d1pidh cda4yqq c767uka c1l3m6tn cqb6n9z c8ao5vx c1tf1rtc c1erptst`}>
 <Image
-src={"/assets/icons8-facebook-100_h1qyKfUPJkKqOQqUT8Zyf.png"}
-width={100}
-height={100}
+src={"/assets/soc-facebook_dRtaC2-32UMM-Zp4wCSDO.svg"}
+width={417}
+height={417}
 alt={""}
 loading={"lazy"}
 className={`w-image`} />
@@ -386,9 +388,9 @@ href={"https://www.linkedin.com/groups/10061020/"}
 target={"_blank"}
 className={`w-element c1d1pidh cda4yqq c767uka c1l3m6tn cqb6n9z c8ao5vx c1tf1rtc c1erptst`}>
 <Image
-src={"/assets/icons8-linkedin-100_32y9UEexB2a26klZGd2BD.png"}
-width={100}
-height={100}
+src={"/assets/soc-linkedin_JewsOzbBNtsSePfOyCp1_.svg"}
+width={417}
+height={417}
 alt={""}
 loading={"lazy"}
 className={`w-image`} />
@@ -397,9 +399,9 @@ className={`w-image`} />
 href={"https://www.reddit.com/r/DTU/"}
 className={`w-element c1d1pidh cda4yqq c767uka c1l3m6tn cqb6n9z c8ao5vx c1tf1rtc c1erptst`}>
 <Image
-src={"/assets/icons8-reddit-100_Q4RTsOhheuWPPCcLZd7_J.png"}
-width={100}
-height={100}
+src={"/assets/soc-reddit_YIY3q3bmqs_8zl81uxYxk.svg"}
+width={417}
+height={417}
 alt={""}
 loading={"lazy"}
 className={`w-image`} />
