@@ -1349,16 +1349,12 @@
   .cj1xbu9 {
     translate: -50% -50% 0px
   }
-  .ce0cz3j {
-    -webkit-user-select: all;
-    user-select: all
-  }
   .c15ikqm {
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px)
   }
-  .c1myshmw {
-    padding-bottom: 10%
+  .c1vvb0gl {
+    padding-bottom: 6vh
   }
   .can6fs5 {
     transition-duration: 100ms
@@ -1968,8 +1964,11 @@
   .cm7li2w {
     --width-map: 400px
   }
-  .ce7gvak {
-    --width-no-map: 600px
+  .c903noh {
+    --width-no-map: clamp(600px, 60vw, 900px)
+  }
+  .c1jyaiat {
+    max-height: 70vh
   }
   .c1k97h03 {
     width: 300px
@@ -2272,6 +2271,9 @@
   }
   .c1sucy14 {
     min-width: 400px
+  }
+  .c1fgwlgc {
+    --width-no-map: 80vw
   }
 }
 @media all and (max-width: 767px) {
