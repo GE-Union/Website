@@ -11,7 +11,7 @@ import { Tooltip as Tooltip, TooltipTrigger as TooltipTrigger, TooltipContent as
 
       export const projectId = "94456f8c-a847-426a-aec8-16de390bd3eb";
 
-      export const lastPublished = "2025-09-03T17:23:07.929Z";
+      export const lastPublished = "2025-09-11T14:34:02.646Z";
 
       export const siteName = "GE Union";
 
@@ -389,6 +389,44 @@ code={"<div class=\"carousel-cell\">\n  <div class=\"cell-content\">\n    <img s
 executeScriptOnCanvas={true}
 id={"carousel"}
 className={`w-html-embed c6f08mx cgmpm3f csljhnv c19f83kh c1duohc3 c1w0yra6 cpq2gwm c13w5hsy cm1ds2c c1vhywez c1122adb c197srfe cn4tmju c14xcs5y c144cj3d cux2glt c1m8g7bv`} />
+<div
+className={`w-element cyoo8jj cxa4mkp cy2vnym c4jdyrv`}>
+<Box
+className={`w-box ci03eyw cu8ogtt c1g95588 c3brmnq cqaj6f4 c16lfnyl c1v4vkm5`}>
+<h2
+className={`w-element`}>
+{"Want to join?"}
+</h2>
+<p
+className={`w-element c1km7ytz cwfxmkq cyoo8jj cvqaoy8 c1q98tuy c19a8u9t`}>
+{"GEU is always looking for new people to join our team "}
+<span
+className={`w-element c1vn0xiq`}>
+{"(especially first years)"}
+</span>
+{", so if you like what we do and want to help, or maybe want to use this as a safe space to gain experience, don't hesitate to send in an application! Whether you are interested in IT, event planning, marketing, social media, or contact with industry, we have a team that you will fit right into "}
+<span
+className={`w-element c1vn0xiq`}>
+{"(all while making sure to have lots of fun)"}
+</span>
+{". So what are you waiting for??"}
+</p>
+<Link
+href={"https://docs.google.com/forms/d/e/1FAIpQLScu14PgRWRO-iJ6uEs9s8lNS5QsuPb0HNvI8OY9KIkB9he5VQ/viewform?usp=header"}
+className={`w-link c10pf28n c6775s7 ct2w13i c1kmtbg4 c341g64 c11h9c5s c17hd63g cnrv5xy c1ho4waj czgmbqe c8l261o cr2ujrk ci03eyw c1pd7k79 c2gl1gx cda4yqq c767uka c1x65yvk cv1qn8j c1jon836 co5x0w6 c5sx8jk c1122adb c1bti4b5 cz7iu34 c40iywk codsd31 c16er72m c1qt5xo2 c1swt08u c1582rzp cpyan2s`}>
+<Text
+className={`w-text`}>
+{"Submit your application "}
+</Text>
+<Image
+src={"/assets/Arrow_exgLm9zGXPhywmuQ3p_EH.svg"}
+width={25}
+height={24}
+alt={""}
+className={`w-image c1nfcmlw cqb6n9z`} />
+</Link>
+</Box>
+</div>
 <Box
 className={`w-box c3q79or cqlg791 cd3toq c17nm8vt c1xymrvd c8yo8yx c1n9f9m4 ci03eyw cu8ogtt ccjedbp c1z0fjz8 c9py6bs czpkcbu cz85z79 cl4abvr cnkevhm c8nmv6p cwqnf9o c1v4vkm5 c3zzp20 ckpfi68 cy3m4bk c16o2wqc cwwztsj`}>
 <Box

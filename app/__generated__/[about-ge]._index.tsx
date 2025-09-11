@@ -11,7 +11,7 @@ import { Tooltip as Tooltip, TooltipTrigger as TooltipTrigger, TooltipContent as
 
       export const projectId = "94456f8c-a847-426a-aec8-16de390bd3eb";
 
-      export const lastPublished = "2025-09-03T17:23:07.929Z";
+      export const lastPublished = "2025-09-11T14:34:02.646Z";
 
       export const siteName = "GE Union";
 
