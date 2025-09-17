@@ -913,9 +913,6 @@
   .cy2b8wa {
     box-shadow: -1px -2px 3px 0px rgba(0, 0, 0, 0.15) inset, 1px 2px 3px 0px rgba(255, 255, 255, 0.2) inset, 0px 5px 27px 0px rgba(0, 0, 0, 0.17)
   }
-  .c1o3ocm4 {
-    height: 270px
-  }
   .c1q7at0i {
     width: 540px
   }
@@ -996,15 +993,6 @@
   }
   .c1qpyqes {
     align-items: stretch
-  }
-  .c1km7ytz {
-    margin-left: 80px
-  }
-  .cwfxmkq {
-    margin-right: 80px
-  }
-  .c1f0lefa {
-    max-width: 800px
   }
   .c7wcowi {
     max-width: 900px
@@ -1466,9 +1454,6 @@
   }
   .c4jdyrv {
     margin-bottom: 140px
-  }
-  .c1yvvb7j {
-    max-width: 680.65px
   }
   .cj7bt5u {
     margin-top: 60px
@@ -2054,6 +2039,36 @@
   .c14233kc {
     opacity: 0.4
   }
+  .c1swt08u {
+    margin-top: 10px
+  }
+  .c1km7ytz {
+    margin-left: 80px
+  }
+  .cwfxmkq {
+    margin-right: 80px
+  }
+  .cvqaoy8 {
+    max-width: 850px
+  }
+  .csmduke {
+    font-size: 30px
+  }
+  .c1u2ouk0 {
+    padding-left: 40px
+  }
+  .cgqd6mv {
+    padding-right: 40px
+  }
+  .c16etzib {
+    color: var(--front-red-1)
+  }
+  .c1eeu0y3 {
+    box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.1)
+  }
+  .c1f0lefa {
+    max-width: 800px
+  }
 }
 @media all and (max-width: 991px) {
   :root {
@@ -2331,12 +2346,6 @@
   .chjepeg {
     width: 420px
   }
-  .c1q98tuy {
-    margin-left: 50px
-  }
-  .c19a8u9t {
-    margin-right: 50px
-  }
   .cycv0tm {
     display: none
   }
@@ -2525,6 +2534,18 @@
   }
   .c1988d5w {
     --width-no-map: 78vw
+  }
+  .c5dvuwy {
+    margin-left: 30px
+  }
+  .crwgjbx {
+    margin-right: 30px
+  }
+  .c1q98tuy {
+    margin-left: 50px
+  }
+  .c19a8u9t {
+    margin-right: 50px
   }
 }
 @media all and (max-width: 479px) {
@@ -2779,5 +2800,14 @@
   }
   .c1beph0k {
     right: -101px
+  }
+  .c1j13thr {
+    margin-left: 10px
+  }
+  .clafu7i {
+    margin-right: 10px
+  }
+  .ctivlq9 {
+    font-size: 32px
   }
 }

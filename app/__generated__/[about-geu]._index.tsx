@@ -11,7 +11,7 @@ import { Tooltip as Tooltip, TooltipTrigger as TooltipTrigger, TooltipContent as
 
       export const projectId = "94456f8c-a847-426a-aec8-16de390bd3eb";
 
-      export const lastPublished = "2025-09-03T17:23:07.929Z";
+      export const lastPublished = "2025-09-17T21:48:33.307Z";
 
       export const siteName = "GE Union";
 
@@ -40,7 +40,7 @@ className={`w-html-embed`} />
 className={`w-box cck00sw cd3toq c17nm8vt c1xymrvd c8yo8yx ci03eyw cu8ogtt cm1ds2c c1fxgukz c3q79or c1fhonxu cqlg791 cji7xkv c40iywk codsd31 c16er72m c1qt5xo2 c1uz2t7q c4psa79 c1ldi832 ${"icon-background home-top"}`}>
 <Box
 className={`w-box c19h37rc ci03eyw c1nj86ny c1mz59p0 c13f4d8e c1122adb cx911xm c4qqqhz c2z8j1e c19dc97m`}>
-<Link_1
+<Link
 href={"/"}
 target={"_self"}
 id={"menu-icon"}
@@ -52,15 +52,15 @@ height={684}
 loading={"eager"}
 alt={""}
 className={`w-image c1g1752z c1l3m6tn c1wjaqd0`} />
-</Link_1>
+</Link>
 <Box
 className={`w-box ci03eyw c5zf3td c1bdekej cy2vnym cgykfac c8chaf1 crymv6m ch588tu cd1c1x2 cgjpuuk co3wgvm cjdg5q7`}>
-<Link_1
+<Link
 href={"/"}
 className={`w-link c4qqqhz c1l00ka2 c8l261o c1ozmz5d c1ho4waj c1k74xht c1122adb ch9rsc5 c10pf28n c1w0lkxn c1et34yr c1tj415q cycv0tm`}>
 {"Home"}
-</Link_1>
-<Link_1
+</Link>
+<Link
 href={"/course-bank"}
 className={`w-link c4qqqhz c1l00ka2 c8l261o c1ozmz5d c1ho4waj c1k74xht c1122adb ch9rsc5 c10pf28n c1w0lkxn c1et34yr c1tj415q`}>
 <span
@@ -68,12 +68,12 @@ className={`w-element cycv0tm`}>
 {"Course "}
 </span>
 {"Bank"}
-</Link_1>
-<Link_1
+</Link>
+<Link
 href={"/calendar"}
 className={`w-link c4qqqhz c1l00ka2 c8l261o c1ozmz5d c1ho4waj c1k74xht c1122adb ch9rsc5 c10pf28n c1w0lkxn c1et34yr c1tj415q`}>
 {"Calendar"}
-</Link_1>
+</Link>
 <Tooltip
 delayDuration={0}>
 <TooltipTrigger>
@@ -84,21 +84,21 @@ className={`w-element c4qqqhz c1l00ka2 c8l261o c1ozmz5d c1ho4waj c1k74xht c1122a
 </TooltipTrigger>
 <TooltipContent
 className={`w-tooltip-content c5mlbae cm1ds2c c1fxgukz cdzo1k7 c1lp7lun c3ryv7d c1t11c95 c1kz25wt c1jbi97f crebcbz cfjpsss ci03eyw cu8ogtt c4bgnbx cj82r57 c14a5ioc cm4j335`}>
-<Link_1
+<Link
 href={"/about-ge"}
 className={`w-link c4qqqhz c1l00ka2 c8l261o c1ozmz5d c1ho4waj c1k74xht c1122adb ch9rsc5 c10pf28n c1w0lkxn cz5lin5 c1tj415q`}>
 {"General Engineering"}
-</Link_1>
-<Link
+</Link>
+<Link_1
 href={"/about-dtu"}
 className={`w-element c4qqqhz c1l00ka2 c8l261o c1ozmz5d c1ho4waj c1k74xht cz03vb2 cqo7rnh cz5lin5 c1tj415q`}>
 {"DTU"}
-</Link>
-<Link_1
+</Link_1>
+<Link
 href={"/about-geu"}
 className={`w-link c4qqqhz c1l00ka2 c8l261o c8qj03j c1ho4waj c1k74xht c1122adb ch9rsc5 c10pf28n c1w0lkxn cz5lin5 c1tj415q`}>
 {"GE Union"}
-</Link_1>
+</Link>
 </TooltipContent>
 </Tooltip>
 </Box>
@@ -132,41 +132,41 @@ className={`w-element`}>
 </Box>
 <Box
 className={`w-box ci03eyw c1rb689p c1hbxsx0 cy2vnym cgykfac cu8ogtt cfx1lak c12zhvo c8chaf1 crymv6m cjdg5q7`}>
-<Link_1
+<Link
 href={"/"}
 className={`w-link c1sy2opm cr2ujrk c8l261o cy7nrqp c1ho4waj c1122adb c10pf28n c1w0lkxn ch9rsc5 cz5lin5`}>
 {"Home"}
-</Link_1>
-<Link_1
+</Link>
+<Link
 href={"/course-bank"}
 className={`w-link c1sy2opm cr2ujrk c8l261o cy7nrqp c1ho4waj c1122adb c10pf28n c1w0lkxn ch9rsc5 cz5lin5`}>
 {"Course Bank"}
-</Link_1>
-<Link_1
+</Link>
+<Link
 href={"/calendar"}
 className={`w-link c1sy2opm cr2ujrk c8l261o cy7nrqp c1ho4waj c1122adb c10pf28n c1w0lkxn ch9rsc5 cz5lin5`}>
 {"Calendar"}
-</Link_1>
-<Link_1
+</Link>
+<Link
 href={"/introduction"}
 className={`w-link c1sy2opm cr2ujrk c8l261o cy7nrqp c1ho4waj c1122adb c10pf28n c1w0lkxn ch9rsc5 cz5lin5`}>
 {"Dashboard"}
-</Link_1>
-<Link_1
+</Link>
+<Link
 href={"/about-ge"}
 className={`w-link c1sy2opm cr2ujrk c8l261o cy7nrqp c1ho4waj c1122adb c10pf28n c1w0lkxn ch9rsc5 cz5lin5`}>
 {"About GE"}
-</Link_1>
-<Link_1
+</Link>
+<Link
 href={"/about-dtu"}
 className={`w-link c1sy2opm cr2ujrk c8l261o cy7nrqp c1ho4waj c1122adb c10pf28n c1w0lkxn ch9rsc5 cz5lin5`}>
 {"About DTU"}
-</Link_1>
-<Link_1
+</Link>
+<Link
 href={"/about-geu"}
 className={`w-link c1sy2opm cr2ujrk c8l261o cy7nrqp c1ho4waj c1122adb c10pf28n c1w0lkxn ch9rsc5 cz5lin5`}>
 {"About GE Union"}
-</Link_1>
+</Link>
 </Box>
 </Box>
 <DialogClose
@@ -314,40 +314,45 @@ height={618}
 alt={""}
 className={`w-image c1shgpg6 c7hwif1 cbbmghh c1w0yra6 cpq2gwm cj7bt5u c1k74xht c19dg1ud`} />
 <div
-className={`w-element cyoo8jj cxa4mkp cy2vnym c4jdyrv`}>
+className={`w-element cyoo8jj cxa4mkp cy2vnym c4jdyrv ci03eyw cu8ogtt c1v4vkm5 c1dgy9if cqaj6f4 c16lfnyl`}>
 <h2
 className={`w-element`}>
 {"Want to Join?"}
 </h2>
 <p
-className={`w-element c1yvvb7j c1w0yra6 cpq2gwm`}>
-{"GEU is now yours! You have the responsibility (and opportunity !) of building "}
-<b
-className={`w-element`}>
-{"your"}
-</b>
-{" community. So, stay updated on events and opportunities on our "}
-<Link
-href={"https://geunion.dk/"}
-target={"_blank"}
-className={`w-element`}>
-{"website"}
-</Link>
-{" and "}
-<Link
-href={"https://www.instagram.com/ge.union/"}
-target={"_blank"}
-className={`w-element`}>
-{"Instagram"}
-</Link>
-{" and join the team! More information will be provided on how to join GE Union during the start of the semester."}
+className={`w-element c1km7ytz cwfxmkq cyoo8jj cvqaoy8 c5dvuwy crwgjbx c1j13thr clafu7i`}>
+{"GEU is always looking for new people to join our team "}
+<span
+className={`w-element c1vn0xiq`}>
+{"(especially first years)"}
+</span>
+{", so if you like what we do and want to help, or maybe want to use this as a safe space to gain experience, don't hesitate to send in an application! Whether you are interested in IT, event planning, marketing, social media, or contact with industry, we have a team that you will fit right into "}
+<span
+className={`w-element c1vn0xiq`}>
+{"(all while making sure to have lots of fun)"}
+</span>
+{". So what are you waiting for??"}
 </p>
+<Link
+href={"https://docs.google.com/forms/d/e/1FAIpQLScu14PgRWRO-iJ6uEs9s8lNS5QsuPb0HNvI8OY9KIkB9he5VQ/viewform?usp=header"}
+className={`w-link c10pf28n c6775s7 ct2w13i c1kmtbg4 c341g64 c11h9c5s c17hd63g cnrv5xy c1ho4waj czgmbqe c8l261o cr2ujrk ci03eyw c1pd7k79 c2gl1gx cda4yqq c767uka c1x65yvk cv1qn8j c1jon836 co5x0w6 c5sx8jk c1122adb c1bti4b5 cz7iu34 c40iywk codsd31 c16er72m c1qt5xo2 c1swt08u cmvyqw5 c1582rzp cpyan2s`}>
+<Text
+className={`w-text`}>
+{"Submit your application "}
+</Text>
+<Image
+src={"/assets/Arrow_exgLm9zGXPhywmuQ3p_EH.svg"}
+width={25}
+height={24}
+alt={""}
+className={`w-image c1nfcmlw cqb6n9z`} />
+</Link>
 </div>
 <Box
 className={`w-box c9esr7v cm1ds2c c1fxgukz cd3toq c17nm8vt c1xymrvd c8yo8yx csaxvfs ce1jmtw c1m7qrvj c1o7c5y4 c1ndanu0 ${"icon-background"}`}>
 <div
 className={`w-element ci03eyw c1nj86ny c4jnp6s c1l3m6tn c1w0yra6 cpq2gwm c1v4vkm5 c16pnwu4 cypyahl cs11lv9 c1njbxf1`}>
-<Link_1
+<Link
 href={"/"}
 className={`w-link cmvyqw5 cz7iu34 c40iywk codsd31 c16er72m c1qt5xo2 c1dohq8s c3gx87z cqyp7hg c1moglug`}>
 <Image
@@ -356,10 +361,10 @@ width={256}
 height={238}
 alt={""}
 className={`w-image c1l3m6tn ct616nu cmvyqw5 cqw0qi cc5htwv`} />
-</Link_1>
+</Link>
 <div
 className={`w-element ci03eyw c1is6v5c co8t7od c1nj86ny c74dsfz c1jwuvkp cezuxvu`}>
-<Link
+<Link_1
 href={"https://www.instagram.com/ge.union/"}
 target={"_blank"}
 className={`w-element c1d1pidh cda4yqq c767uka c1l3m6tn cqb6n9z c8ao5vx c1tf1rtc c1erptst`}>
@@ -370,8 +375,8 @@ height={417}
 alt={""}
 loading={"lazy"}
 className={`w-image`} />
-</Link>
-<Link
+</Link_1>
+<Link_1
 href={"https://www.facebook.com/people/GE-Union/61573069635006/?_rdr"}
 target={"_blank"}
 className={`w-element c1d1pidh cda4yqq c767uka c1l3m6tn cqb6n9z c8ao5vx c1tf1rtc c1erptst`}>
@@ -382,8 +387,8 @@ height={417}
 alt={""}
 loading={"lazy"}
 className={`w-image`} />
-</Link>
-<Link
+</Link_1>
+<Link_1
 href={"https://www.linkedin.com/groups/10061020/"}
 target={"_blank"}
 className={`w-element c1d1pidh cda4yqq c767uka c1l3m6tn cqb6n9z c8ao5vx c1tf1rtc c1erptst`}>
@@ -394,8 +399,8 @@ height={417}
 alt={""}
 loading={"lazy"}
 className={`w-image`} />
-</Link>
-<Link
+</Link_1>
+<Link_1
 href={"https://www.reddit.com/r/DTU/"}
 className={`w-element c1d1pidh cda4yqq c767uka c1l3m6tn cqb6n9z c8ao5vx c1tf1rtc c1erptst`}>
 <Image
@@ -405,7 +410,7 @@ height={417}
 alt={""}
 loading={"lazy"}
 className={`w-image`} />
-</Link>
+</Link_1>
 </div>
 </div>
 </Box>

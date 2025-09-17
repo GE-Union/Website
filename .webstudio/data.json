@@ -1,10 +1,10 @@
 {
   "build": {
-    "id": "cdb8569b-0481-4088-a760-a93e396f4f9b",
+    "id": "37a63694-2bef-4d0d-bfc6-a197dc415b8b",
     "projectId": "94456f8c-a847-426a-aec8-16de390bd3eb",
-    "version": 13334,
-    "createdAt": "2025-09-03T17:23:07.929+00:00",
-    "updatedAt": "2025-09-03T17:23:07.929+00:00",
+    "version": 13672,
+    "createdAt": "2025-09-17T21:48:33.307+00:00",
+    "updatedAt": "2025-09-17T21:48:33.307+00:00",
     "pages": {
       "meta": {
         "siteName": "GE Union",
@@ -5307,9 +5307,8 @@
           "styleSourceId": "ViiI6VUxI158ikWdZak4g",
           "property": "height",
           "value": {
-            "type": "unit",
-            "unit": "px",
-            "value": 270
+            "type": "keyword",
+            "value": "fit-content"
           }
         }
       ],
@@ -7478,44 +7477,6 @@
         }
       ],
       [
-        "zHTWpsFIdrrD5z4kfX60O:2EiFMEG40PBm9_fkelqpo:marginLeft:",
-        {
-          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
-          "styleSourceId": "zHTWpsFIdrrD5z4kfX60O",
-          "property": "marginLeft",
-          "value": {
-            "type": "unit",
-            "unit": "px",
-            "value": 80
-          }
-        }
-      ],
-      [
-        "zHTWpsFIdrrD5z4kfX60O:2EiFMEG40PBm9_fkelqpo:marginRight:",
-        {
-          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
-          "styleSourceId": "zHTWpsFIdrrD5z4kfX60O",
-          "property": "marginRight",
-          "value": {
-            "type": "unit",
-            "unit": "px",
-            "value": 80
-          }
-        }
-      ],
-      [
-        "zHTWpsFIdrrD5z4kfX60O:2EiFMEG40PBm9_fkelqpo:textAlign:",
-        {
-          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
-          "styleSourceId": "zHTWpsFIdrrD5z4kfX60O",
-          "property": "textAlign",
-          "value": {
-            "type": "keyword",
-            "value": "center"
-          }
-        }
-      ],
-      [
         "qqWBMSw7ZyJGwxPR4186C:2EiFMEG40PBm9_fkelqpo:color:",
         {
           "breakpointId": "2EiFMEG40PBm9_fkelqpo",
@@ -7554,19 +7515,6 @@
         }
       ],
       [
-        "zHTWpsFIdrrD5z4kfX60O:2EiFMEG40PBm9_fkelqpo:maxWidth:",
-        {
-          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
-          "styleSourceId": "zHTWpsFIdrrD5z4kfX60O",
-          "property": "maxWidth",
-          "value": {
-            "type": "unit",
-            "unit": "px",
-            "value": 800
-          }
-        }
-      ],
-      [
         "qqWBMSw7ZyJGwxPR4186C:Uvcw_OJqyPoLioZzUbP1x:fontSize:",
         {
           "breakpointId": "Uvcw_OJqyPoLioZzUbP1x",
@@ -7576,32 +7524,6 @@
             "type": "unit",
             "unit": "px",
             "value": 18
-          }
-        }
-      ],
-      [
-        "zHTWpsFIdrrD5z4kfX60O:Uvcw_OJqyPoLioZzUbP1x:marginLeft:",
-        {
-          "breakpointId": "Uvcw_OJqyPoLioZzUbP1x",
-          "styleSourceId": "zHTWpsFIdrrD5z4kfX60O",
-          "property": "marginLeft",
-          "value": {
-            "type": "unit",
-            "unit": "px",
-            "value": 50
-          }
-        }
-      ],
-      [
-        "zHTWpsFIdrrD5z4kfX60O:Uvcw_OJqyPoLioZzUbP1x:marginRight:",
-        {
-          "breakpointId": "Uvcw_OJqyPoLioZzUbP1x",
-          "styleSourceId": "zHTWpsFIdrrD5z4kfX60O",
-          "property": "marginRight",
-          "value": {
-            "type": "unit",
-            "unit": "px",
-            "value": 50
           }
         }
       ],
@@ -24101,43 +24023,6 @@
             "type": "unit",
             "unit": "px",
             "value": 20
-          }
-        }
-      ],
-      [
-        "sPNqouJ7R-SYkxG9iShAf:2EiFMEG40PBm9_fkelqpo:maxWidth:",
-        {
-          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
-          "styleSourceId": "sPNqouJ7R-SYkxG9iShAf",
-          "property": "maxWidth",
-          "value": {
-            "type": "unit",
-            "unit": "px",
-            "value": 680.65
-          }
-        }
-      ],
-      [
-        "sPNqouJ7R-SYkxG9iShAf:2EiFMEG40PBm9_fkelqpo:marginLeft:",
-        {
-          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
-          "styleSourceId": "sPNqouJ7R-SYkxG9iShAf",
-          "property": "marginLeft",
-          "value": {
-            "type": "keyword",
-            "value": "auto"
-          }
-        }
-      ],
-      [
-        "sPNqouJ7R-SYkxG9iShAf:2EiFMEG40PBm9_fkelqpo:marginRight:",
-        {
-          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
-          "styleSourceId": "sPNqouJ7R-SYkxG9iShAf",
-          "property": "marginRight",
-          "value": {
-            "type": "keyword",
-            "value": "auto"
           }
         }
       ],
@@ -68158,6 +68043,869 @@
             "value": 70
           }
         }
+      ],
+      [
+        "nkT8NvWpsMB56xtJBp4oB:2EiFMEG40PBm9_fkelqpo:textAlign:",
+        {
+          "styleSourceId": "nkT8NvWpsMB56xtJBp4oB",
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "property": "textAlign",
+          "value": {
+            "type": "keyword",
+            "value": "center"
+          }
+        }
+      ],
+      [
+        "nkT8NvWpsMB56xtJBp4oB:2EiFMEG40PBm9_fkelqpo:marginLeft:",
+        {
+          "styleSourceId": "nkT8NvWpsMB56xtJBp4oB",
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "property": "marginLeft",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 20
+          }
+        }
+      ],
+      [
+        "nkT8NvWpsMB56xtJBp4oB:2EiFMEG40PBm9_fkelqpo:marginRight:",
+        {
+          "styleSourceId": "nkT8NvWpsMB56xtJBp4oB",
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "property": "marginRight",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 20
+          }
+        }
+      ],
+      [
+        "nkT8NvWpsMB56xtJBp4oB:2EiFMEG40PBm9_fkelqpo:marginBottom:",
+        {
+          "styleSourceId": "nkT8NvWpsMB56xtJBp4oB",
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "property": "marginBottom",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 140
+          }
+        }
+      ],
+      [
+        "5O_rmLtuIs9Mcf1QO2wK9:2EiFMEG40PBm9_fkelqpo:width:",
+        {
+          "styleSourceId": "5O_rmLtuIs9Mcf1QO2wK9",
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "property": "width",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 21.5
+          }
+        }
+      ],
+      [
+        "5O_rmLtuIs9Mcf1QO2wK9:2EiFMEG40PBm9_fkelqpo:objectFit:",
+        {
+          "styleSourceId": "5O_rmLtuIs9Mcf1QO2wK9",
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "property": "objectFit",
+          "value": {
+            "type": "keyword",
+            "value": "contain"
+          }
+        }
+      ],
+      [
+        "v8ViKTVdIc4z96MpWwGOM:2EiFMEG40PBm9_fkelqpo:marginTop:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "v8ViKTVdIc4z96MpWwGOM",
+          "property": "marginTop",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 10
+          }
+        }
+      ],
+      [
+        "v8ViKTVdIc4z96MpWwGOM:2EiFMEG40PBm9_fkelqpo:width:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "v8ViKTVdIc4z96MpWwGOM",
+          "property": "width",
+          "value": {
+            "type": "keyword",
+            "value": "fit-content"
+          }
+        }
+      ],
+      [
+        "bOhoQ7z3tlXOAEJu3DaXb:2EiFMEG40PBm9_fkelqpo:display:",
+        {
+          "styleSourceId": "bOhoQ7z3tlXOAEJu3DaXb",
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "property": "display",
+          "value": {
+            "type": "keyword",
+            "value": "flex"
+          }
+        }
+      ],
+      [
+        "bOhoQ7z3tlXOAEJu3DaXb:2EiFMEG40PBm9_fkelqpo:flexDirection:",
+        {
+          "styleSourceId": "bOhoQ7z3tlXOAEJu3DaXb",
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "property": "flexDirection",
+          "value": {
+            "type": "keyword",
+            "value": "column"
+          }
+        }
+      ],
+      [
+        "bOhoQ7z3tlXOAEJu3DaXb:2EiFMEG40PBm9_fkelqpo:paddingTop:",
+        {
+          "styleSourceId": "bOhoQ7z3tlXOAEJu3DaXb",
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "property": "paddingTop",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 25
+          }
+        }
+      ],
+      [
+        "bOhoQ7z3tlXOAEJu3DaXb:2EiFMEG40PBm9_fkelqpo:paddingBottom:",
+        {
+          "styleSourceId": "bOhoQ7z3tlXOAEJu3DaXb",
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "property": "paddingBottom",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 20
+          }
+        }
+      ],
+      [
+        "bOhoQ7z3tlXOAEJu3DaXb:2EiFMEG40PBm9_fkelqpo:columnGap:",
+        {
+          "styleSourceId": "bOhoQ7z3tlXOAEJu3DaXb",
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "property": "columnGap",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 20
+          }
+        }
+      ],
+      [
+        "bOhoQ7z3tlXOAEJu3DaXb:2EiFMEG40PBm9_fkelqpo:rowGap:",
+        {
+          "styleSourceId": "bOhoQ7z3tlXOAEJu3DaXb",
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "property": "rowGap",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 20
+          }
+        }
+      ],
+      [
+        "bOhoQ7z3tlXOAEJu3DaXb:2EiFMEG40PBm9_fkelqpo:alignItems:",
+        {
+          "styleSourceId": "bOhoQ7z3tlXOAEJu3DaXb",
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "property": "alignItems",
+          "value": {
+            "type": "keyword",
+            "value": "center"
+          }
+        }
+      ],
+      [
+        "dzfkYMPDgMwxRDEI7je0T:2EiFMEG40PBm9_fkelqpo:width:",
+        {
+          "styleSourceId": "dzfkYMPDgMwxRDEI7je0T",
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "property": "width",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 21.5
+          }
+        }
+      ],
+      [
+        "h0zcPQIr8ZiWVRJnRbDS2:2EiFMEG40PBm9_fkelqpo:marginLeft:",
+        {
+          "styleSourceId": "h0zcPQIr8ZiWVRJnRbDS2",
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "property": "marginLeft",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 80
+          }
+        }
+      ],
+      [
+        "h0zcPQIr8ZiWVRJnRbDS2:2EiFMEG40PBm9_fkelqpo:marginRight:",
+        {
+          "styleSourceId": "h0zcPQIr8ZiWVRJnRbDS2",
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "property": "marginRight",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 80
+          }
+        }
+      ],
+      [
+        "h0zcPQIr8ZiWVRJnRbDS2:2EiFMEG40PBm9_fkelqpo:textAlign:",
+        {
+          "styleSourceId": "h0zcPQIr8ZiWVRJnRbDS2",
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "property": "textAlign",
+          "value": {
+            "type": "keyword",
+            "value": "center"
+          }
+        }
+      ],
+      [
+        "h0zcPQIr8ZiWVRJnRbDS2:2EiFMEG40PBm9_fkelqpo:maxWidth:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "h0zcPQIr8ZiWVRJnRbDS2",
+          "property": "maxWidth",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 850
+          }
+        }
+      ],
+      [
+        "h0zcPQIr8ZiWVRJnRbDS2:Uvcw_OJqyPoLioZzUbP1x:marginLeft:",
+        {
+          "breakpointId": "Uvcw_OJqyPoLioZzUbP1x",
+          "styleSourceId": "h0zcPQIr8ZiWVRJnRbDS2",
+          "property": "marginLeft",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 30
+          }
+        }
+      ],
+      [
+        "h0zcPQIr8ZiWVRJnRbDS2:Uvcw_OJqyPoLioZzUbP1x:marginRight:",
+        {
+          "breakpointId": "Uvcw_OJqyPoLioZzUbP1x",
+          "styleSourceId": "h0zcPQIr8ZiWVRJnRbDS2",
+          "property": "marginRight",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 30
+          }
+        }
+      ],
+      [
+        "dzfkYMPDgMwxRDEI7je0T:2EiFMEG40PBm9_fkelqpo:objectFit:",
+        {
+          "styleSourceId": "dzfkYMPDgMwxRDEI7je0T",
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "property": "objectFit",
+          "value": {
+            "type": "keyword",
+            "value": "contain"
+          }
+        }
+      ],
+      [
+        "Gxglc2RE_KA0XIkBHd6bm:2EiFMEG40PBm9_fkelqpo:marginTop:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "Gxglc2RE_KA0XIkBHd6bm",
+          "property": "marginTop",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 10
+          }
+        }
+      ],
+      [
+        "N_ebqholzD7ng3abzYVqf:2EiFMEG40PBm9_fkelqpo:color:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "N_ebqholzD7ng3abzYVqf",
+          "property": "color",
+          "value": {
+            "type": "var",
+            "value": "front-3"
+          }
+        }
+      ],
+      [
+        "4bzm41vFhKKj4s42ytFLn:2EiFMEG40PBm9_fkelqpo:color:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "4bzm41vFhKKj4s42ytFLn",
+          "property": "color",
+          "value": {
+            "type": "var",
+            "value": "front-3"
+          }
+        }
+      ],
+      [
+        "H2tTBTJVufoHO5_i9uzDM:2EiFMEG40PBm9_fkelqpo:marginLeft:",
+        {
+          "styleSourceId": "H2tTBTJVufoHO5_i9uzDM",
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "property": "marginLeft",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 80
+          }
+        }
+      ],
+      [
+        "H2tTBTJVufoHO5_i9uzDM:2EiFMEG40PBm9_fkelqpo:marginRight:",
+        {
+          "styleSourceId": "H2tTBTJVufoHO5_i9uzDM",
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "property": "marginRight",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 80
+          }
+        }
+      ],
+      [
+        "H2tTBTJVufoHO5_i9uzDM:2EiFMEG40PBm9_fkelqpo:textAlign:",
+        {
+          "styleSourceId": "H2tTBTJVufoHO5_i9uzDM",
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "property": "textAlign",
+          "value": {
+            "type": "keyword",
+            "value": "center"
+          }
+        }
+      ],
+      [
+        "H2tTBTJVufoHO5_i9uzDM:2EiFMEG40PBm9_fkelqpo:maxWidth:",
+        {
+          "styleSourceId": "H2tTBTJVufoHO5_i9uzDM",
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "property": "maxWidth",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 850
+          }
+        }
+      ],
+      [
+        "H2tTBTJVufoHO5_i9uzDM:Uvcw_OJqyPoLioZzUbP1x:marginLeft:",
+        {
+          "breakpointId": "Uvcw_OJqyPoLioZzUbP1x",
+          "styleSourceId": "H2tTBTJVufoHO5_i9uzDM",
+          "property": "marginLeft",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 30
+          }
+        }
+      ],
+      [
+        "H2tTBTJVufoHO5_i9uzDM:Uvcw_OJqyPoLioZzUbP1x:marginRight:",
+        {
+          "breakpointId": "Uvcw_OJqyPoLioZzUbP1x",
+          "styleSourceId": "H2tTBTJVufoHO5_i9uzDM",
+          "property": "marginRight",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 30
+          }
+        }
+      ],
+      [
+        "3Sh7AQ_zEcLlQALLnBAhK:2EiFMEG40PBm9_fkelqpo:color:",
+        {
+          "styleSourceId": "3Sh7AQ_zEcLlQALLnBAhK",
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "property": "color",
+          "value": {
+            "type": "var",
+            "value": "front-3"
+          }
+        }
+      ],
+      [
+        "AadZyPve7ea97pBwIJmU_:2EiFMEG40PBm9_fkelqpo:color:",
+        {
+          "styleSourceId": "AadZyPve7ea97pBwIJmU_",
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "property": "color",
+          "value": {
+            "type": "var",
+            "value": "front-3"
+          }
+        }
+      ],
+      [
+        "TRQyXMf8W3GUq5Dyho_lI:2EiFMEG40PBm9_fkelqpo:display:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "TRQyXMf8W3GUq5Dyho_lI",
+          "property": "display",
+          "value": {
+            "type": "keyword",
+            "value": "flex"
+          }
+        }
+      ],
+      [
+        "TRQyXMf8W3GUq5Dyho_lI:2EiFMEG40PBm9_fkelqpo:flexDirection:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "TRQyXMf8W3GUq5Dyho_lI",
+          "property": "flexDirection",
+          "value": {
+            "type": "keyword",
+            "value": "column"
+          }
+        }
+      ],
+      [
+        "TRQyXMf8W3GUq5Dyho_lI:2EiFMEG40PBm9_fkelqpo:alignItems:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "TRQyXMf8W3GUq5Dyho_lI",
+          "property": "alignItems",
+          "value": {
+            "type": "keyword",
+            "value": "center"
+          }
+        }
+      ],
+      [
+        "TRQyXMf8W3GUq5Dyho_lI:2EiFMEG40PBm9_fkelqpo:justifyContent:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "TRQyXMf8W3GUq5Dyho_lI",
+          "property": "justifyContent",
+          "value": {
+            "type": "keyword",
+            "value": "start"
+          }
+        }
+      ],
+      [
+        "TRQyXMf8W3GUq5Dyho_lI:2EiFMEG40PBm9_fkelqpo:columnGap:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "TRQyXMf8W3GUq5Dyho_lI",
+          "property": "columnGap",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 20
+          }
+        }
+      ],
+      [
+        "TRQyXMf8W3GUq5Dyho_lI:2EiFMEG40PBm9_fkelqpo:rowGap:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "TRQyXMf8W3GUq5Dyho_lI",
+          "property": "rowGap",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 20
+          }
+        }
+      ],
+      [
+        "h0zcPQIr8ZiWVRJnRbDS2:eCbcXJaLEKSKcnbAPzNF0:marginLeft:",
+        {
+          "breakpointId": "eCbcXJaLEKSKcnbAPzNF0",
+          "styleSourceId": "h0zcPQIr8ZiWVRJnRbDS2",
+          "property": "marginLeft",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 10
+          }
+        }
+      ],
+      [
+        "h0zcPQIr8ZiWVRJnRbDS2:eCbcXJaLEKSKcnbAPzNF0:marginRight:",
+        {
+          "breakpointId": "eCbcXJaLEKSKcnbAPzNF0",
+          "styleSourceId": "h0zcPQIr8ZiWVRJnRbDS2",
+          "property": "marginRight",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 10
+          }
+        }
+      ],
+      [
+        "H2tTBTJVufoHO5_i9uzDM:eCbcXJaLEKSKcnbAPzNF0:marginLeft:",
+        {
+          "breakpointId": "eCbcXJaLEKSKcnbAPzNF0",
+          "styleSourceId": "H2tTBTJVufoHO5_i9uzDM",
+          "property": "marginLeft",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 10
+          }
+        }
+      ],
+      [
+        "H2tTBTJVufoHO5_i9uzDM:eCbcXJaLEKSKcnbAPzNF0:marginRight:",
+        {
+          "breakpointId": "eCbcXJaLEKSKcnbAPzNF0",
+          "styleSourceId": "H2tTBTJVufoHO5_i9uzDM",
+          "property": "marginRight",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 10
+          }
+        }
+      ],
+      [
+        "cgoV5zmm7n8sNCukQovHB:2EiFMEG40PBm9_fkelqpo:display:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "cgoV5zmm7n8sNCukQovHB",
+          "property": "display",
+          "value": {
+            "type": "keyword",
+            "value": "block"
+          }
+        }
+      ],
+      [
+        "cgoV5zmm7n8sNCukQovHB:2EiFMEG40PBm9_fkelqpo:textAlign:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "cgoV5zmm7n8sNCukQovHB",
+          "property": "textAlign",
+          "value": {
+            "type": "keyword",
+            "value": "center"
+          }
+        }
+      ],
+      [
+        "cgoV5zmm7n8sNCukQovHB:2EiFMEG40PBm9_fkelqpo:marginTop:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "cgoV5zmm7n8sNCukQovHB",
+          "property": "marginTop",
+          "value": {
+            "type": "unit",
+            "unit": "em",
+            "value": 1.5
+          }
+        }
+      ],
+      [
+        "B4cRn_01eLD3ayTIbyJ1r:2EiFMEG40PBm9_fkelqpo:fontSize:",
+        {
+          "styleSourceId": "B4cRn_01eLD3ayTIbyJ1r",
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "property": "fontSize",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 30
+          }
+        }
+      ],
+      [
+        "nO91xQN0f-U2VtH2VtALM:2EiFMEG40PBm9_fkelqpo:color:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "nO91xQN0f-U2VtH2VtALM",
+          "property": "color",
+          "value": {
+            "type": "var",
+            "value": "front-red-1"
+          }
+        }
+      ],
+      [
+        "nO91xQN0f-U2VtH2VtALM:2EiFMEG40PBm9_fkelqpo:backgroundColor:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "nO91xQN0f-U2VtH2VtALM",
+          "property": "backgroundColor",
+          "value": {
+            "type": "var",
+            "value": "background"
+          }
+        }
+      ],
+      [
+        "nO91xQN0f-U2VtH2VtALM:2EiFMEG40PBm9_fkelqpo:width:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "nO91xQN0f-U2VtH2VtALM",
+          "property": "width",
+          "value": {
+            "type": "keyword",
+            "value": "fit-content"
+          }
+        }
+      ],
+      [
+        "nO91xQN0f-U2VtH2VtALM:2EiFMEG40PBm9_fkelqpo:marginLeft:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "nO91xQN0f-U2VtH2VtALM",
+          "property": "marginLeft",
+          "value": {
+            "type": "keyword",
+            "value": "auto"
+          }
+        }
+      ],
+      [
+        "nO91xQN0f-U2VtH2VtALM:2EiFMEG40PBm9_fkelqpo:marginRight:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "nO91xQN0f-U2VtH2VtALM",
+          "property": "marginRight",
+          "value": {
+            "type": "keyword",
+            "value": "auto"
+          }
+        }
+      ],
+      [
+        "nO91xQN0f-U2VtH2VtALM:2EiFMEG40PBm9_fkelqpo:paddingLeft:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "nO91xQN0f-U2VtH2VtALM",
+          "property": "paddingLeft",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 40
+          }
+        }
+      ],
+      [
+        "nO91xQN0f-U2VtH2VtALM:2EiFMEG40PBm9_fkelqpo:paddingRight:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "nO91xQN0f-U2VtH2VtALM",
+          "property": "paddingRight",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 40
+          }
+        }
+      ],
+      [
+        "zHTWpsFIdrrD5z4kfX60O:2EiFMEG40PBm9_fkelqpo:marginLeft:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "zHTWpsFIdrrD5z4kfX60O",
+          "property": "marginLeft",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 80
+          }
+        }
+      ],
+      [
+        "zHTWpsFIdrrD5z4kfX60O:2EiFMEG40PBm9_fkelqpo:marginRight:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "zHTWpsFIdrrD5z4kfX60O",
+          "property": "marginRight",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 80
+          }
+        }
+      ],
+      [
+        "zHTWpsFIdrrD5z4kfX60O:2EiFMEG40PBm9_fkelqpo:textAlign:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "zHTWpsFIdrrD5z4kfX60O",
+          "property": "textAlign",
+          "value": {
+            "type": "keyword",
+            "value": "center"
+          }
+        }
+      ],
+      [
+        "zHTWpsFIdrrD5z4kfX60O:2EiFMEG40PBm9_fkelqpo:maxWidth:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "zHTWpsFIdrrD5z4kfX60O",
+          "property": "maxWidth",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 800
+          }
+        }
+      ],
+      [
+        "zHTWpsFIdrrD5z4kfX60O:Uvcw_OJqyPoLioZzUbP1x:marginLeft:",
+        {
+          "breakpointId": "Uvcw_OJqyPoLioZzUbP1x",
+          "styleSourceId": "zHTWpsFIdrrD5z4kfX60O",
+          "property": "marginLeft",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 50
+          }
+        }
+      ],
+      [
+        "zHTWpsFIdrrD5z4kfX60O:Uvcw_OJqyPoLioZzUbP1x:marginRight:",
+        {
+          "breakpointId": "Uvcw_OJqyPoLioZzUbP1x",
+          "styleSourceId": "zHTWpsFIdrrD5z4kfX60O",
+          "property": "marginRight",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 50
+          }
+        }
+      ],
+      [
+        "4TaKHAtWzMwz4VEhYDEo9:2EiFMEG40PBm9_fkelqpo:textAlign:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "4TaKHAtWzMwz4VEhYDEo9",
+          "property": "textAlign",
+          "value": {
+            "type": "keyword",
+            "value": "center"
+          }
+        }
+      ],
+      [
+        "4TaKHAtWzMwz4VEhYDEo9:2EiFMEG40PBm9_fkelqpo:marginTop:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "4TaKHAtWzMwz4VEhYDEo9",
+          "property": "marginTop",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 20
+          }
+        }
+      ],
+      [
+        "4TaKHAtWzMwz4VEhYDEo9:2EiFMEG40PBm9_fkelqpo:marginBottom:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "4TaKHAtWzMwz4VEhYDEo9",
+          "property": "marginBottom",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 20
+          }
+        }
+      ],
+      [
+        "nO91xQN0f-U2VtH2VtALM:2EiFMEG40PBm9_fkelqpo:marginBottom:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "nO91xQN0f-U2VtH2VtALM",
+          "property": "marginBottom",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 20
+          }
+        }
+      ],
+      [
+        "nO91xQN0f-U2VtH2VtALM:2EiFMEG40PBm9_fkelqpo:boxShadow:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "nO91xQN0f-U2VtH2VtALM",
+          "property": "boxShadow",
+          "value": {
+            "type": "layers",
+            "value": [
+              {
+                "type": "shadow",
+                "position": "outset",
+                "offsetX": {
+                  "type": "unit",
+                  "unit": "px",
+                  "value": 0
+                },
+                "offsetY": {
+                  "type": "unit",
+                  "unit": "px",
+                  "value": 2
+                },
+                "blur": {
+                  "type": "unit",
+                  "unit": "px",
+                  "value": 20
+                },
+                "spread": {
+                  "type": "unit",
+                  "unit": "px",
+                  "value": 0
+                },
+                "color": {
+                  "type": "rgb",
+                  "alpha": 0.1,
+                  "r": 0,
+                  "g": 0,
+                  "b": 0
+                }
+              }
+            ]
+          }
+        }
       ]
     ],
     "styleSources": [
@@ -68617,13 +69365,6 @@
         }
       ],
       [
-        "OMDwYk9ZTP_gI_61LjPTf",
-        {
-          "type": "local",
-          "id": "OMDwYk9ZTP_gI_61LjPTf"
-        }
-      ],
-      [
         "gmAa4Md89qiKZQMAWEUZ-",
         {
           "type": "local",
@@ -68729,13 +69470,6 @@
           "type": "token",
           "id": "SjyMXm1ggstnf3kUf1Tiz",
           "name": "sidebar-page"
-        }
-      ],
-      [
-        "zHTWpsFIdrrD5z4kfX60O",
-        {
-          "type": "local",
-          "id": "zHTWpsFIdrrD5z4kfX60O"
         }
       ],
       [
@@ -70209,13 +70943,6 @@
         {
           "type": "local",
           "id": "TRQyXMf8W3GUq5Dyho_lI"
-        }
-      ],
-      [
-        "sPNqouJ7R-SYkxG9iShAf",
-        {
-          "type": "local",
-          "id": "sPNqouJ7R-SYkxG9iShAf"
         }
       ],
       [
@@ -73543,6 +74270,125 @@
           "type": "local",
           "id": "H-eVPo1-fToRa8gSqRNaL"
         }
+      ],
+      [
+        "nkT8NvWpsMB56xtJBp4oB",
+        {
+          "type": "local",
+          "id": "nkT8NvWpsMB56xtJBp4oB"
+        }
+      ],
+      [
+        "v8ViKTVdIc4z96MpWwGOM",
+        {
+          "type": "local",
+          "id": "v8ViKTVdIc4z96MpWwGOM"
+        }
+      ],
+      [
+        "5O_rmLtuIs9Mcf1QO2wK9",
+        {
+          "type": "local",
+          "id": "5O_rmLtuIs9Mcf1QO2wK9"
+        }
+      ],
+      [
+        "bOhoQ7z3tlXOAEJu3DaXb",
+        {
+          "type": "local",
+          "id": "bOhoQ7z3tlXOAEJu3DaXb"
+        }
+      ],
+      [
+        "h0zcPQIr8ZiWVRJnRbDS2",
+        {
+          "type": "local",
+          "id": "h0zcPQIr8ZiWVRJnRbDS2"
+        }
+      ],
+      [
+        "Gxglc2RE_KA0XIkBHd6bm",
+        {
+          "type": "local",
+          "id": "Gxglc2RE_KA0XIkBHd6bm"
+        }
+      ],
+      [
+        "dzfkYMPDgMwxRDEI7je0T",
+        {
+          "type": "local",
+          "id": "dzfkYMPDgMwxRDEI7je0T"
+        }
+      ],
+      [
+        "N_ebqholzD7ng3abzYVqf",
+        {
+          "type": "local",
+          "id": "N_ebqholzD7ng3abzYVqf"
+        }
+      ],
+      [
+        "4bzm41vFhKKj4s42ytFLn",
+        {
+          "type": "local",
+          "id": "4bzm41vFhKKj4s42ytFLn"
+        }
+      ],
+      [
+        "H2tTBTJVufoHO5_i9uzDM",
+        {
+          "type": "local",
+          "id": "H2tTBTJVufoHO5_i9uzDM"
+        }
+      ],
+      [
+        "3Sh7AQ_zEcLlQALLnBAhK",
+        {
+          "type": "local",
+          "id": "3Sh7AQ_zEcLlQALLnBAhK"
+        }
+      ],
+      [
+        "AadZyPve7ea97pBwIJmU_",
+        {
+          "type": "local",
+          "id": "AadZyPve7ea97pBwIJmU_"
+        }
+      ],
+      [
+        "OMDwYk9ZTP_gI_61LjPTf",
+        {
+          "type": "local",
+          "id": "OMDwYk9ZTP_gI_61LjPTf"
+        }
+      ],
+      [
+        "B4cRn_01eLD3ayTIbyJ1r",
+        {
+          "type": "local",
+          "id": "B4cRn_01eLD3ayTIbyJ1r"
+        }
+      ],
+      [
+        "nO91xQN0f-U2VtH2VtALM",
+        {
+          "type": "local",
+          "id": "nO91xQN0f-U2VtH2VtALM"
+        }
+      ],
+      [
+        "zHTWpsFIdrrD5z4kfX60O",
+        {
+          "type": "local",
+          "id": "zHTWpsFIdrrD5z4kfX60O"
+        }
+      ],
+      [
+        "4TaKHAtWzMwz4VEhYDEo9",
+        {
+          "type": "local",
+          "id": "4TaKHAtWzMwz4VEhYDEo9"
+        }
       ]
     ],
     "styleSourceSelections": [
@@ -74077,15 +74923,6 @@
         }
       ],
       [
-        "HzoGz1cO4F_sgAQlowXRW",
-        {
-          "instanceId": "HzoGz1cO4F_sgAQlowXRW",
-          "values": [
-            "OMDwYk9ZTP_gI_61LjPTf"
-          ]
-        }
-      ],
-      [
         "fA38kGlBnqHbcZFOHPanA",
         {
           "instanceId": "fA38kGlBnqHbcZFOHPanA",
@@ -74184,15 +75021,6 @@
           "instanceId": "dji3scPmyvf99Fcnj4IV3",
           "values": [
             "Ckc-jFGLwthJsw1sy3PAn"
-          ]
-        }
-      ],
-      [
-        "1rV3e_Karp8KfjYG0ygo7",
-        {
-          "instanceId": "1rV3e_Karp8KfjYG0ygo7",
-          "values": [
-            "zHTWpsFIdrrD5z4kfX60O"
           ]
         }
       ],
@@ -76640,15 +77468,6 @@
           "instanceId": "5mQhzExVQXFvtKvRT-ix1",
           "values": [
             "TRQyXMf8W3GUq5Dyho_lI"
-          ]
-        }
-      ],
-      [
-        "pVIs8Qa4pgQVfQkp71_Sx",
-        {
-          "instanceId": "pVIs8Qa4pgQVfQkp71_Sx",
-          "values": [
-            "sPNqouJ7R-SYkxG9iShAf"
           ]
         }
       ],
@@ -82151,6 +82970,163 @@
           "instanceId": "ug1Tby08gcR0iZ3xloSE5",
           "values": []
         }
+      ],
+      [
+        "s-5vm3y7YuphO-v30RDC4",
+        {
+          "instanceId": "s-5vm3y7YuphO-v30RDC4",
+          "values": [
+            "nkT8NvWpsMB56xtJBp4oB"
+          ]
+        }
+      ],
+      [
+        "_iDRnhY0lkg6li_rYmhdE",
+        {
+          "instanceId": "_iDRnhY0lkg6li_rYmhdE",
+          "values": [
+            "SumJn3KS-U3VMJ-t7C_Ja",
+            "v8ViKTVdIc4z96MpWwGOM"
+          ]
+        }
+      ],
+      [
+        "pxnIrGxKYVQKGItdLCW4U",
+        {
+          "instanceId": "pxnIrGxKYVQKGItdLCW4U",
+          "values": [
+            "5O_rmLtuIs9Mcf1QO2wK9"
+          ]
+        }
+      ],
+      [
+        "t7n-UIELB66XWJmDgofSx",
+        {
+          "instanceId": "t7n-UIELB66XWJmDgofSx",
+          "values": [
+            "bOhoQ7z3tlXOAEJu3DaXb"
+          ]
+        }
+      ],
+      [
+        "h7mA3rRzYnd04549bX8Bl",
+        {
+          "instanceId": "h7mA3rRzYnd04549bX8Bl",
+          "values": [
+            "h0zcPQIr8ZiWVRJnRbDS2"
+          ]
+        }
+      ],
+      [
+        "i_H_ZC83LZ9rsE76wBZFN",
+        {
+          "instanceId": "i_H_ZC83LZ9rsE76wBZFN",
+          "values": [
+            "SumJn3KS-U3VMJ-t7C_Ja",
+            "Gxglc2RE_KA0XIkBHd6bm"
+          ]
+        }
+      ],
+      [
+        "hNzUmfxY-e_tO2Xj-sr8V",
+        {
+          "instanceId": "hNzUmfxY-e_tO2Xj-sr8V",
+          "values": [
+            "dzfkYMPDgMwxRDEI7je0T"
+          ]
+        }
+      ],
+      [
+        "jlDUrx6e5MM4mzjGnYFhS",
+        {
+          "instanceId": "jlDUrx6e5MM4mzjGnYFhS",
+          "values": [
+            "N_ebqholzD7ng3abzYVqf"
+          ]
+        }
+      ],
+      [
+        "jlZVJC5klDPOU9JIaaKba",
+        {
+          "instanceId": "jlZVJC5klDPOU9JIaaKba",
+          "values": [
+            "4bzm41vFhKKj4s42ytFLn"
+          ]
+        }
+      ],
+      [
+        "zMGbdg3h1sq2izmELiuAQ",
+        {
+          "instanceId": "zMGbdg3h1sq2izmELiuAQ",
+          "values": [
+            "H2tTBTJVufoHO5_i9uzDM"
+          ]
+        }
+      ],
+      [
+        "TpjYD_pfY5P9G02GAx7AQ",
+        {
+          "instanceId": "TpjYD_pfY5P9G02GAx7AQ",
+          "values": [
+            "3Sh7AQ_zEcLlQALLnBAhK"
+          ]
+        }
+      ],
+      [
+        "qPyLlO-Pbeu7kET0mpFaw",
+        {
+          "instanceId": "qPyLlO-Pbeu7kET0mpFaw",
+          "values": [
+            "AadZyPve7ea97pBwIJmU_"
+          ]
+        }
+      ],
+      [
+        "HzoGz1cO4F_sgAQlowXRW",
+        {
+          "instanceId": "HzoGz1cO4F_sgAQlowXRW",
+          "values": [
+            "OMDwYk9ZTP_gI_61LjPTf"
+          ]
+        }
+      ],
+      [
+        "mfXdsiMX7NIYJ0xoovKc_",
+        {
+          "instanceId": "mfXdsiMX7NIYJ0xoovKc_",
+          "values": [
+            "cgoV5zmm7n8sNCukQovHB",
+            "B4cRn_01eLD3ayTIbyJ1r"
+          ]
+        }
+      ],
+      [
+        "ICDWUq0YaPN1Jxu3VD90v",
+        {
+          "instanceId": "ICDWUq0YaPN1Jxu3VD90v",
+          "values": [
+            "SumJn3KS-U3VMJ-t7C_Ja",
+            "nO91xQN0f-U2VtH2VtALM"
+          ]
+        }
+      ],
+      [
+        "1rV3e_Karp8KfjYG0ygo7",
+        {
+          "instanceId": "1rV3e_Karp8KfjYG0ygo7",
+          "values": [
+            "zHTWpsFIdrrD5z4kfX60O"
+          ]
+        }
+      ],
+      [
+        "qlQpJeHtaTjkMjcaDgkM6",
+        {
+          "instanceId": "qlQpJeHtaTjkMjcaDgkM6",
+          "values": [
+            "4TaKHAtWzMwz4VEhYDEo9"
+          ]
+        }
       ]
     ],
     "props": [
@@ -82342,36 +83318,6 @@
           "name": "class",
           "type": "string",
           "value": "icon-background home-top"
-        }
-      ],
-      [
-        "VJJ9062NdfbdhkR7t5lZE",
-        {
-          "id": "VJJ9062NdfbdhkR7t5lZE",
-          "instanceId": "HzoGz1cO4F_sgAQlowXRW",
-          "name": "code",
-          "type": "string",
-          "value": "<style>\n@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300..900&display=swap');\n@import url('https://api.fontshare.com/v2/css?f[]=tanker@400&amp;display=swap');\n  \n  h1{\n    font-family: 'Tanker';\n    font-weight: 500;\n    font-size: 5em;\n    color: var(--background);\n    line-height: 1;\n    margin: 0;\n  }\n  h2{\n    font-weight: 600;\n    font-size: 36px;\n    line-height: 1;\n    margin: 0;\n  }\n  p{\n    margin: 0;\n  }\n  \n  .icon-background{\n    background-color: var(--back-red-1);\n    z-index: 1;\n    overflow: hidden;\n    position: relative;\n  }\n  .icon-background::before{\n    content: \"\";\n    position: absolute;\n    width: 200%; height: 200%;\n    top: -50%; left: -50%;\n    background-image: url('/assets/icon-background_orTDw4lIQEfSgOgF0DBVy.svg?width=1080&quality=80&format=auto');\n    background-size: 200px 115.4734411085px;\n    background-repeat: repeat;\n    animation: scrollBg 20s linear infinite;\n    z-index: -1;\n    opacity: var(--icon-background-opacity, 3%); mix-blend-mode: luminosity;\n    filter: blur(2px)\n  }\n  \n  .home-top::after{\n    position: absolute;\n    content: \"\";\n    width: 100%;\n    height: 250px;\n    background: linear-gradient(180deg, hsl(from var(--back-red-1) h s l / 0.65) 15%, hsl(from var(--back-red-1) h s l / 0) 100%);\n    z-index: -1;\n  }\n\n  @keyframes scrollBg {\n      0% {\n        background-position: 0 0;\n      }\n      100% {\n        background-position: -200px 115.4734411085px;\n      }\n    }\n\n  .home-top-card:hover .home-top-card-title-icon{\n    width: 38px;\n    padding-left: 3px;\n  }\n\n  @media only screen and (max-width: 767px) {\n    h1{\n      font-size: 4em;\n    }\n    h2{\n      font-size: 32px;\n    }\n  }\n</style>"
-        }
-      ],
-      [
-        "R2bpubrCF_tYJTAau89si",
-        {
-          "id": "R2bpubrCF_tYJTAau89si",
-          "instanceId": "HzoGz1cO4F_sgAQlowXRW",
-          "name": "executeScriptOnCanvas",
-          "type": "boolean",
-          "value": true
-        }
-      ],
-      [
-        "gYxeKZeoKuXCxSZ1yJAnH",
-        {
-          "id": "gYxeKZeoKuXCxSZ1yJAnH",
-          "instanceId": "HzoGz1cO4F_sgAQlowXRW",
-          "name": "data-ws-show",
-          "type": "boolean",
-          "value": true
         }
       ],
       [
@@ -82761,7 +83707,7 @@
           "instanceId": "zpUESo2XOMKwHnxPXG6Bm",
           "name": "href",
           "type": "string",
-          "value": "https://www.linkedin.com/groups/10061020/"
+          "value": "https://www.linkedin.com/company/ge-union"
         }
       ],
       [
@@ -83841,7 +84787,7 @@
           "instanceId": "fA38kGlBnqHbcZFOHPanA",
           "name": "data-ws-show",
           "type": "boolean",
-          "value": false
+          "value": true
         }
       ],
       [
@@ -84152,46 +85098,6 @@
           "name": "class",
           "type": "string",
           "value": "icon-background\n"
-        }
-      ],
-      [
-        "Eo16-0jXYNDZsnFi-379g",
-        {
-          "id": "Eo16-0jXYNDZsnFi-379g",
-          "instanceId": "E4rfqGIRyaMerY0pr0sJG",
-          "name": "href",
-          "type": "string",
-          "value": "https://geunion.dk/"
-        }
-      ],
-      [
-        "k3Rx58zWo39eOBEDVR5Gf",
-        {
-          "id": "k3Rx58zWo39eOBEDVR5Gf",
-          "instanceId": "E4rfqGIRyaMerY0pr0sJG",
-          "name": "target",
-          "type": "string",
-          "value": "_blank"
-        }
-      ],
-      [
-        "-OtSTEBo1QE4in7rFUFH8",
-        {
-          "id": "-OtSTEBo1QE4in7rFUFH8",
-          "instanceId": "qJij7HgEzsD6YV7GRk_b1",
-          "name": "href",
-          "type": "string",
-          "value": "https://www.instagram.com/ge.union/"
-        }
-      ],
-      [
-        "3UzCyNCuNDuseLZ2_04dt",
-        {
-          "id": "3UzCyNCuNDuseLZ2_04dt",
-          "instanceId": "qJij7HgEzsD6YV7GRk_b1",
-          "name": "target",
-          "type": "string",
-          "value": "_blank"
         }
       ],
       [
@@ -89051,7 +89957,7 @@
           "instanceId": "hXzvUdzZrJqQOzQ9dAVXB",
           "name": "code",
           "type": "string",
-          "value": "<script src=\"https://cdn.jsdelivr.net/npm/@fullcalendar/core@6.1.19/index.global.min.js\"></script>\n<script src=\"https://cdn.jsdelivr.net/npm/@fullcalendar/daygrid@6.1.19/index.global.min.js\"></script>\n<script src=\"https://cdn.jsdelivr.net/npm/@fullcalendar/google-calendar@6.1.19/index.global.min.js\"></script>\n\n<script>\ndocument.addEventListener('DOMContentLoaded', function() {\n  var calendarEl = document.getElementById('calendar');\n\n  var calendar = new FullCalendar.Calendar(calendarEl, {\n    headerToolbar: {\n        left: 'prev,next today',\n        center: 'title',\n        right: ''\n    },\n    dayMaxEvents: 3,\n    firstDay: 1,\n    contentHeight: 'auto',\n    googleCalendarApiKey: 'AIzaSyDBDJxCyN67h-VrQ53s9vm597mrLUiZgHM',\n    events: '23c6f451e6193a878c5affc55d18b050093a87075c0325964379924db8ee027a@group.calendar.google.com',\n\n    eventContent: function(arg) {\n        // only show the event title, no time or dot\n        return {\n          html: '<div class=\"fc-event-title\" style=\"font-weight:normal;\">'\n                  + arg.event.title +\n                '</div>'\n        };\n    },\n\n    eventDataTransform: function(eventData) {\n      let transData = {...eventData};\n      // Handle events past midnight (until 5am)\n      if (eventData.end) {\n        let start = new Date(eventData.start);\n        let end = new Date(eventData.end);\n        // Save original end time\n        transData.extendedProps = {...eventData.extendedProps, realEnd: end};\n\n        let startDay = new Date(start);\n        startDay.setHours(0,0,0,0);\n        let endDay = new Date(end);\n        endDay.setHours(0,0,0,0);\n        console.log(eventData.title);\n        console.log((endDay-startDay)/(1000*60*60*24));\n        console.log(end.getHours());\n        if ((endDay-startDay)/(1000*60*60*24) === 1 && end.getHours() < 5) {\n          let adjusted = new Date(start);\n          adjusted.setHours(23,59,59,999);\n          transData.end = adjusted;\n        }\n      }\n      transData.url = \"\";\n      return transData;\n    },\n\n    eventDidMount: function(info) {\n      info.el.setAttribute(\"title\", info.event.title);\n    },\n\n    eventClick: function(info) {\n      // Prevent default Google Calendar link\n      info.jsEvent.preventDefault();\n      \n      const event = info.event;\n      const elContent = document.getElementById('e-content');\n      const popup = document.getElementById('event-popup');\n      const background = document.getElementById('event-popup-back');\n\n      // Gather content\n      var [eDate, eTime] = formatDate(event.start, event.extendedProps.realEnd);\n      var eLoc = event.extendedProps.location || '';\n      var eDesc = event.extendedProps.description || '';\n\n      // Set content values and visibility\n      document.getElementById('e-title').textContent = event.title;\n      document.getElementById('e-date').textContent = eDate;\n      if (eTime == '') {\n        document.getElementById('e-time-container').style.display = 'none';\n      } else {\n        document.getElementById('e-time-container').style.display = 'flex';\n        document.getElementById('e-time').textContent = eTime;\n      }\n      if (eLoc == '') {\n        document.getElementById('e-loc-container').style.display = 'none';\n      } else {\n        document.getElementById('e-loc-container').style.display = 'flex';\n        document.getElementById('e-loc').textContent = eLoc;\n      }\n      if (eDesc == '') {\n        document.getElementById('e-desc').style.display = 'none';\n        document.getElementById('e-line').style.display = 'none';\n      } else {\n        document.getElementById('e-desc').style.display = 'block';\n        document.getElementById('e-line').style.display = 'block';\n        document.getElementById('e-desc').innerHTML = eDesc;\n      }\n      // TODO Accent colour based on calendar + map\n      \n      \n      // Show popup\n      //background.style.display = 'flex';\n      background.style.opacity = 1;\n      background.style.pointerEvents = \"auto\";\n      popup.style.setProperty(\"--pop-scale\", 1);\n\n      \n      // Hide popup\n      background.addEventListener('click', (e) => {\n        if (e.target === background) {\n          //background.style.display = 'none';\n          background.style.opacity = 0;\n          background.style.pointerEvents = \"none\";\n          popup.style.setProperty(\"--pop-scale\", 0.9);\n        }\n      });\n      background.addEventListener('pointerdown', (e) => {\n        if (e.target === background) {\n          e.preventDefault();            // blocks the selection start\n        }\n      });\n\n      popup.onclick = function(e) {\n          e.stopPropagation(); // prevents the click from reaching background\n        };\n      }\n    \n  });\n  calendar.render();\n});\n\n\n  function formatDate(startDate, endDate) {\n    \n    const locale = 'en-GB';\n    const msDay = 24 * 60 * 60 * 1000;\n  \n    const toMidnight = d => new Date(d.getFullYear(), d.getMonth(), d.getDate());\n    const isMidnight = d => d.getHours() === 0 && d.getMinutes() === 0 && d.getSeconds() === 0 && d.getMilliseconds() === 0;\n    const sameDay = (a, b) => {\n      const sameDate =\n        a.getFullYear() === b.getFullYear() &&\n        a.getMonth() === b.getMonth() &&\n        a.getDate() === b.getDate();\n    \n      const nextDayBefore5am =\n        b.getFullYear() === a.getFullYear() &&\n        b.getMonth() === a.getMonth() &&\n        b.getDate() === a.getDate() + 1 &&\n        b.getHours() < 5;\n    \n      return sameDate || nextDayBefore5am;\n    };\n  \n    const daySuffix = d => {\n      if (d > 3 && d < 21) return 'th';\n      switch (d % 10) {\n        case 1: return 'st';\n        case 2: return 'nd';\n        case 3: return 'rd';\n        default: return 'th';\n      }\n    };\n  \n    // Build “Friday · 29th August” or “29th August”\n    const formatDay = (date, withWeekday = true) => {\n      const opts = withWeekday\n        ? { weekday: 'long', day: 'numeric', month: 'long' }\n        : { day: 'numeric', month: 'long' };\n    \n      const parts = new Intl.DateTimeFormat(locale, opts).formatToParts(date);\n      const dayNum = date.getDate();\n      const suffixed = `${dayNum}${daySuffix(dayNum)}`;\n    \n      let result = parts.map(p => (p.type === 'day' ? suffixed : p.value)).join('').trim();\n      if (withWeekday) result = result.replace(/^(\\w+),?\\s+/, '$1  ·  ');\n      \n      return result;\n    };\n  \n    const formatTimeHM = d =>\n      new Intl.DateTimeFormat(locale, { hour: '2-digit', minute: '2-digit' }).format(d);\n  \n    // Detect single-day all-day (supports ICS: end at 00:00 next day)\n    const isAllDaySingleDay = (start, end) => {\n      console.log('1');\n      if (!start) return false;\n      if (!end) return isMidnight(start); // best effort: no end & midnight start\n      if (sameDay(start, end)) {\n        \n      console.log('2');\n        // All-day if start 00:00 and end is 23:59:59.999-ish (rare) — allow generous check\n        return isMidnight(start) && !isMidnight(end) && end - start >= msDay - 60000;\n      }\n      // ICS typical: start 00:00 of day X, end 00:00 of day X+1 (exclusive)\n      console.log('we should be here');\n      console.log(isMidnight(start) && isMidnight(end) && (end - start === msDay));\n      return isMidnight(start) && isMidnight(end) && (end - start === msDay);\n    };\n  \n    // Count unique calendar days touched by the event.\n    // If end is exactly midnight, treat as exclusive (ICS) by shifting back a millisecond.\n    const uniqueDayCount = (start, end) => {\n      if (!end) return 1;\n      const s0 = toMidnight(start);\n      let e0 = toMidnight(end);\n      if (isMidnight(end) && end > start) {\n        e0 = new Date(e0.getTime() - 1); // previous day late night\n      }\n      const e = toMidnight(e0);\n      return Math.floor((e - s0) / msDay) + 1;\n    };\n  \n    const hasEnd = endDate instanceof Date && !isNaN(endDate);\n    const start = startDate;\n    const end = hasEnd ? endDate : null;\n  \n    // === CASES ===\n\n    // Single-day all-day event: \"Friday · 29th August\"\n    if (isAllDaySingleDay(start, end || start)) {\n      return [formatDay(start, true), ''];\n    }\n    \n    // Any multi-day event (dates differ): \"29th August - 3rd September | N days\"\n    if (end && !sameDay(start, end)) {\n      const span = `${formatDay(start, false)} - ${formatDay(end, false)}`;\n      const days = uniqueDayCount(start, end);\n      return [span,  `${days} ${days === 1 ? 'day' : 'days'}`];\n    }\n  \n    // Same-day with start & end times: \"Friday · 29th August | 16:00 - 20:30\"\n    if (end && sameDay(start, end)) {\n      const startT = formatTimeHM(start);\n      const endT = formatTimeHM(end);\n      if (startT !== endT) {\n        const moon = end.getHours() < 5 ? ' 🌙' : '';\n        return [formatDay(start, true), `${startT} - ${endT}${moon}`];\n      }\n      // If times are identical, just show one time\n      return [formatDay(start, true), startT];\n    }\n  \n    // No end time: \"Friday · 29th August | 16:00\"\n    return [formatDay(start, true), formatTimeHM(start)];\n  }\n\n\n</script>\n\n<style>\n  /* Selection and cursor control */\n  .fc-daygrid-day-number {\n    user-select: none;\n  }\n  \n  .fc-button {\n    background-color: var(--back-red-1) !important;\n    border-color: var(--back-red-1) !important;\n    color: #fff !important; /* Optional: Ensures text is visible */\n  }\n  \n  .fc-button:hover {\n    background-color: var(--back-red-1) !important;\n    opacity: 0.9;\n  }\n  \n  /* Change event background colours */\n  .fc-event {\n    background-color: var(--back-red-1) !important;\n    border-color: var(--back-red-1) !important;\n    color: #fff !important;\n    cursor: pointer; /* click cursor */\n  }\n\n  .fc .fc-scrollgrid td {\n    border: 1px solid var(--back-grey-1);\n    border-radius: var(--rad2);\n  }\n\n  .fc .fc-scrollgrid, .fc .fc-col-header-cell, .fc .fc-scrollgrid th {\n    border: none !important;\n  }\n\n  /* Highlight today */\n  .fc .fc-day-today {\n    background-color: rgb(from var(--back-red-1) r g b / 0.17) !important;\n    border-radius: 0 !important;\n    box-shadow: 0 0 80px rgb(from var(--back-red-1) r g b / 0.1);\n  }\n  .fc-day-today .fc-daygrid-day-number{\n    font-weight: 600;\n  }\n\n    .fc .fc-daygrid-day-frame {\n    min-height: 110px;\n  }\n  .calendar-container {\n  overflow-x: auto;\n  width: 100%;\n}\n\n  /* Padding for events in day */\n  .fc-daygrid-day-top{\n    margin-bottom: -7px;\n  }\n  .fc-event-title{\n    margin: -1px 0 -1px 4px;\n  }\n  .fc-daygrid-day-events{\n    margin-bottom: 2px !important;\n  }\n\n  /* Popup Styles */\n  .event-pop-title {\n    margin: -30px 0 -15px 25px;\n    padding: 0;\n  }\n  .event-pop-time {\n    margin-left: -13px;\n    font-size: 18px;\n    opacity: 0.6;\n  }\n  .event-pop-desc {\n    margin: -30px 50px -20px 50px;\n  }\n  .event-pop-loc {\n    margin-left: 25px;\n    margin-top: -23px;\n    font-size: 18px;\n    opacity: 0.6;\n  }\n  .pop-loc-pin {\n    font-weight: 700;\n  }\n\n  /* Prevent darkening when event clicked */\n  .fc-event::before, .fc-event::after {\n  display: none !important;\n}\n\n  /* Mobile: horizontally scroll the month grid, keep toolbar fixed */\n@media (max-width: 767px) {\n  /* Only the grid scrolls sideways */\n  #calendar .fc-view-harness {\n    overflow-x: auto;\n    overflow-y: hidden;\n    -webkit-overflow-scrolling: touch; /* iOS momentum */\n  }\n\n  /* Ensure the grid is wider than the screen so it can scroll */\n  #calendar .fc-scrollgrid {\n    min-width: 750px; /* e.g., ~128px per day * 7; tweak as you like */\n    margin-left: calc(2 * var(--gap1));\n    padding-right: calc(2 * var(--gap1));\n    \n    -ms-overflow-style: none;  /* Internet Explorer 10+ */\n    scrollbar-width: none;\n  }\n  .fc-header-toolbar {\n    margin: 0 calc(2 * var(--gap1));\n  }\n  #calendar .fc-scrollgrid::-webkit-scrollbar { \n    width: 0;\n    height: 0;\n  }\n\n  .fc-button {\n    padding: 2px 5px !important;\n  }\n  .fc-toolbar-title {\n    font-size: 25px !important;\n    padding-left: 10px;\n    text-align: center;\n  }\n}\n</style>"
+          "value": "<script src=\"https://cdn.jsdelivr.net/npm/@fullcalendar/core@6.1.19/index.global.min.js\"></script>\n<script src=\"https://cdn.jsdelivr.net/npm/@fullcalendar/daygrid@6.1.19/index.global.min.js\"></script>\n<script src=\"https://cdn.jsdelivr.net/npm/@fullcalendar/google-calendar@6.1.19/index.global.min.js\"></script>\n\n<script>\ndocument.addEventListener('DOMContentLoaded', function() {\n  var calendarEl = document.getElementById('calendar');\n\n  var calendar = new FullCalendar.Calendar(calendarEl, {\n    headerToolbar: {\n        left: 'prev,next today',\n        center: 'title',\n        right: ''\n    },\n    dayMaxEvents: 3,\n    firstDay: 1,\n    contentHeight: 'auto',\n    googleCalendarApiKey: 'AIzaSyDBDJxCyN67h-VrQ53s9vm597mrLUiZgHM',\n    events: '23c6f451e6193a878c5affc55d18b050093a87075c0325964379924db8ee027a@group.calendar.google.com',\n\n    eventContent: function(arg) {\n        // only show the event title, no time or dot\n        return {\n          html: '<div class=\"fc-event-title\" style=\"font-weight:normal;\">'\n                  + arg.event.title +\n                '</div>'\n        };\n    },\n\n    eventDataTransform: function(eventData) {\n      let transData = {...eventData};\n      // Handle events past midnight (until 5am)\n      if (eventData.end) {\n        let start = new Date(eventData.start);\n        let end = new Date(eventData.end);\n        // Save original end time\n        transData.extendedProps = {...eventData.extendedProps, realEnd: end};\n\n        let startDay = new Date(start);\n        startDay.setHours(0,0,0,0);\n        let endDay = new Date(end);\n        endDay.setHours(0,0,0,0);\n        console.log(eventData.title);\n        console.log((endDay-startDay)/(1000*60*60*24));\n        console.log(end.getHours());\n        if ((endDay-startDay)/(1000*60*60*24) === 1 && end.getHours() < 5) {\n          let adjusted = new Date(start);\n          adjusted.setHours(23,59,59,999);\n          transData.end = adjusted;\n        }\n      }\n      transData.url = \"\";\n      return transData;\n    },\n\n    eventDidMount: function(info) {\n      info.el.setAttribute(\"title\", info.event.title);\n    },\n\n    eventClick: function(info) {\n      // Prevent default Google Calendar link\n      info.jsEvent.preventDefault();\n      \n      const event = info.event;\n      const elContent = document.getElementById('e-content');\n      const popup = document.getElementById('event-popup');\n      const background = document.getElementById('event-popup-back');\n\n      // Gather content\n      var [eDate, eTime] = formatDate(event.start, event.extendedProps.realEnd);\n      var eLoc = event.extendedProps.location || '';\n      var eDesc = event.extendedProps.description || '';\n\n      // Set content values and visibility\n      document.getElementById('e-title').textContent = event.title;\n      document.getElementById('e-date').textContent = eDate;\n      if (eTime == '') {\n        document.getElementById('e-time-container').style.display = 'none';\n      } else {\n        document.getElementById('e-time-container').style.display = 'flex';\n        document.getElementById('e-time').textContent = eTime;\n      }\n      if (eLoc == '') {\n        document.getElementById('e-loc-container').style.display = 'none';\n      } else {\n        document.getElementById('e-loc-container').style.display = 'flex';\n        document.getElementById('e-loc').textContent = eLoc;\n      }\n      if (eDesc == '') {\n        document.getElementById('e-desc').style.display = 'none';\n        document.getElementById('e-line').style.display = 'none';\n      } else {\n        document.getElementById('e-desc').style.display = 'block';\n        document.getElementById('e-line').style.display = 'block';\n        document.getElementById('e-desc').innerHTML = eDesc;\n      }\n      // TODO Accent colour based on calendar + map\n      \n      \n      // Show popup\n      //background.style.display = 'flex';\n      background.style.opacity = 1;\n      background.style.pointerEvents = \"auto\";\n      popup.style.setProperty(\"--pop-scale\", 1);\n\n      \n      // Hide popup\n      background.addEventListener('click', (e) => {\n        if (e.target === background) {\n          //background.style.display = 'none';\n          background.style.opacity = 0;\n          background.style.pointerEvents = \"none\";\n          popup.style.setProperty(\"--pop-scale\", 0.9);\n        }\n      });\n      background.addEventListener('pointerdown', (e) => {\n        if (e.target === background) {\n          e.preventDefault();            // blocks the selection start\n        }\n      });\n\n      popup.onclick = function(e) {\n          e.stopPropagation(); // prevents the click from reaching background\n        };\n      }\n    \n  });\n  calendar.render();\n});\n\n\n  function formatDate(startDate, endDate) {\n    \n    const locale = 'en-GB';\n    const msDay = 24 * 60 * 60 * 1000;\n  \n    const toMidnight = d => new Date(d.getFullYear(), d.getMonth(), d.getDate());\n    const isMidnight = d => d.getHours() === 0 && d.getMinutes() === 0 && d.getSeconds() === 0 && d.getMilliseconds() === 0;\n    const sameDay = (a, b) => {\n      const sameDate =\n        a.getFullYear() === b.getFullYear() &&\n        a.getMonth() === b.getMonth() &&\n        a.getDate() === b.getDate();\n    \n      const nextDayBefore5am =\n        b.getFullYear() === a.getFullYear() &&\n        b.getMonth() === a.getMonth() &&\n        b.getDate() === a.getDate() + 1 &&\n        b.getHours() < 5;\n    \n      return sameDate || nextDayBefore5am;\n    };\n  \n    const daySuffix = d => {\n      if (d > 3 && d < 21) return 'th';\n      switch (d % 10) {\n        case 1: return 'st';\n        case 2: return 'nd';\n        case 3: return 'rd';\n        default: return 'th';\n      }\n    };\n  \n    // Build “Friday · 29th August” or “29th August”\n    const formatDay = (date, withWeekday = true) => {\n      const opts = withWeekday\n        ? { weekday: 'long', day: 'numeric', month: 'long' }\n        : { day: 'numeric', month: 'long' };\n    \n      const parts = new Intl.DateTimeFormat(locale, opts).formatToParts(date);\n      const dayNum = date.getDate();\n      const suffixed = `${dayNum}${daySuffix(dayNum)}`;\n    \n      let result = parts.map(p => (p.type === 'day' ? suffixed : p.value)).join('').trim();\n      if (withWeekday) result = result.replace(/^(\\w+),?\\s+/, '$1  ·  ');\n      \n      return result;\n    };\n  \n    const formatTimeHM = d =>\n      new Intl.DateTimeFormat(locale, { hour: '2-digit', minute: '2-digit' }).format(d);\n  \n    // Detect single-day all-day (supports ICS: end at 00:00 next day)\n    const isAllDaySingleDay = (start, end) => {\n      console.log('1');\n      if (!start) return false;\n      if (!end) return isMidnight(start); // best effort: no end & midnight start\n      if (sameDay(start, end)) {\n        \n      console.log('2');\n        // All-day if start 00:00 and end is 23:59:59.999-ish (rare) — allow generous check\n        return isMidnight(start) && !isMidnight(end) && end - start >= msDay - 60000;\n      }\n      // ICS typical: start 00:00 of day X, end 00:00 of day X+1 (exclusive)\n      console.log('we should be here');\n      console.log(isMidnight(start) && isMidnight(end) && (end - start === msDay));\n      return isMidnight(start) && isMidnight(end) && (end - start === msDay);\n    };\n  \n    // Count unique calendar days touched by the event.\n    // If end is exactly midnight, treat as exclusive (ICS) by shifting back a millisecond.\n    const uniqueDayCount = (start, end) => {\n      if (!end) return 1;\n      const s0 = toMidnight(start);\n      let e0 = toMidnight(end);\n      if (isMidnight(end) && end > start) {\n        e0 = new Date(e0.getTime() - 1); // previous day late night\n      }\n      const e = toMidnight(e0);\n      return Math.floor((e - s0) / msDay) + 1;\n    };\n  \n    const hasEnd = endDate instanceof Date && !isNaN(endDate);\n    const start = startDate;\n    const end = hasEnd ? endDate : null;\n  \n    // === CASES ===\n\n    // Single-day all-day event: \"Friday · 29th August\"\n    if (isAllDaySingleDay(start, end || start)) {\n      return [formatDay(start, true), ''];\n    }\n    \n    // Any multi-day event (dates differ): \"29th August - 3rd September | N days\"\n    if (end && !sameDay(start, end)) {\n      const span = `${formatDay(start, false)} - ${formatDay(end, false)}`;\n      const days = uniqueDayCount(start, end);\n      return [span,  `${days} ${days === 1 ? 'day' : 'days'}`];\n    }\n  \n    // Same-day with start & end times: \"Friday · 29th August | 16:00 - 20:30\"\n    if (end && sameDay(start, end)) {\n      const startT = formatTimeHM(start);\n      const endT = formatTimeHM(end);\n      if (startT !== endT) {\n        const moon = end.getHours() < 5 ? ' 🌙' : '';\n        return [formatDay(start, true), `${startT} - ${endT}${moon}`];\n      }\n      // If times are identical, just show one time\n      return [formatDay(start, true), startT];\n    }\n  \n    // No end time: \"Friday · 29th August | 16:00\"\n    return [formatDay(start, true), formatTimeHM(start)];\n  }\n\n\n</script>\n\n<style>\n  /* Selection and cursor control */\n  .fc-daygrid-day-number {\n    user-select: none;\n  }\n  \n  .fc-button {\n    background-color: var(--back-red-1) !important;\n    border-color: var(--back-red-1) !important;\n    color: #fff !important; /* Optional: Ensures text is visible */\n  }\n  \n  .fc-button:hover {\n    background-color: var(--back-red-1) !important;\n    opacity: 0.9;\n  }\n  \n  /* Change event background colours */\n  .fc-event {\n    background-color: var(--back-red-1) !important;\n    border-color: var(--back-red-1) !important;\n    color: #fff !important;\n    cursor: pointer; /* click cursor */\n  }\n\n  .fc .fc-scrollgrid td {\n    border: 1px solid var(--back-grey-1);\n    border-radius: var(--rad2);\n  }\n\n  .fc .fc-scrollgrid, .fc .fc-col-header-cell, .fc .fc-scrollgrid th {\n    border: none !important;\n  }\n\n  /* Highlight today */\n  .fc .fc-day-today {\n    background-color: rgb(from var(--back-red-1) r g b / 0.17) !important;\n    border-radius: 0 !important;\n    box-shadow: 0 0 80px rgb(from var(--back-red-1) r g b / 0.1);\n  }\n  .fc-day-today .fc-daygrid-day-number{\n    font-weight: 600;\n  }\n\n    .fc .fc-daygrid-day-frame {\n    min-height: 110px;\n  }\n  .calendar-container {\n  overflow-x: auto;\n  width: 100%;\n}\n\n  /* Padding for events in day */\n  .fc-daygrid-day-top{\n    margin-bottom: -7px;\n  }\n  .fc-event-title{\n    margin: -1px 0 -1px 4px;\n  }\n  .fc-daygrid-day-events{\n    margin-bottom: 2px !important;\n  }\n\n  /* Popup Styles */\n  .event-pop-title {\n    margin: -30px 0 -15px 25px;\n    padding: 0;\n  }\n  .event-pop-time {\n    margin-left: -13px;\n    font-size: 18px;\n    opacity: 0.6;\n  }\n  .event-pop-desc {\n    margin: -30px 50px -20px 50px;\n  }\n  .event-pop-loc {\n    margin-left: 25px;\n    margin-top: -23px;\n    font-size: 18px;\n    opacity: 0.6;\n  }\n  .pop-loc-pin {\n    font-weight: 700;\n  }\n\n  /* Prevent darkening when event clicked */\n  .fc-event::before, .fc-event::after {\n  display: none !important;\n}\n\n  /* Mobile: horizontally scroll the month grid, keep toolbar fixed */\n@media (max-width: 767px) {\n  \n  /* Only the grid scrolls sideways */\n  #calendar .fc-view-harness {\n    overflow-x: auto;\n    overflow-y: hidden;\n    -webkit-overflow-scrolling: touch; /* iOS momentum */\n  }\n\n  /* Ensure the grid is wider than the screen so it can scroll */\n  #calendar .fc-scrollgrid {\n    min-width: 600px;\n    margin-left: calc(2 * var(--gap1));\n    padding-right: calc(2 * var(--gap1));\n    \n    -ms-overflow-style: none;  /* Internet Explorer 10+ */\n    scrollbar-width: none;\n  }\n  .fc-header-toolbar {\n    margin: 0 calc(2 * var(--gap1));\n  }\n  #calendar .fc-scrollgrid::-webkit-scrollbar { \n    width: 0;\n    height: 0;\n  }\n\n  /* Grid sizing */\n  #calendar .fc-scrollgrid{\n    font-size: 0.7em;\n  }\n  .fc .fc-daygrid-day-frame {\n    min-height: 75px;\n  }\n  .fc{\n    width: 700px\n  }\n  \n  /* Toolbar sizing */\n  .fc-button {\n    padding: 0 4px !important;\n  }\n  .fc-button * {\n    font-size: 20px !important;\n  }\n  .fc-toolbar-title {\n    font-size: 18px !important;\n    padding-left: 10px;\n    text-align: center;\n  }\n  \n}\n</style>"
         }
       ],
       [
@@ -91253,6 +92159,239 @@
           "type": "boolean",
           "value": false
         }
+      ],
+      [
+        "MKOj_wVINn8AApPMz053y",
+        {
+          "id": "MKOj_wVINn8AApPMz053y",
+          "instanceId": "4FP59c0h0UDsd6BYP0cys",
+          "name": "href",
+          "type": "string",
+          "value": "https://geunion.dk/"
+        }
+      ],
+      [
+        "g_8xZin9hwuJY3weYIHfU",
+        {
+          "id": "g_8xZin9hwuJY3weYIHfU",
+          "instanceId": "4FP59c0h0UDsd6BYP0cys",
+          "name": "target",
+          "type": "string",
+          "value": "_blank"
+        }
+      ],
+      [
+        "fp7QlApUMpC4FaXaXFx0N",
+        {
+          "id": "fp7QlApUMpC4FaXaXFx0N",
+          "instanceId": "K4VTI084UIt0UufhHx7Kg",
+          "name": "href",
+          "type": "string",
+          "value": "https://www.instagram.com/ge.union/"
+        }
+      ],
+      [
+        "LjPIDxMIbxupc1xde82UK",
+        {
+          "id": "LjPIDxMIbxupc1xde82UK",
+          "instanceId": "K4VTI084UIt0UufhHx7Kg",
+          "name": "target",
+          "type": "string",
+          "value": "_blank"
+        }
+      ],
+      [
+        "IPT_uRGOC5aO9rPCGEC8z",
+        {
+          "id": "IPT_uRGOC5aO9rPCGEC8z",
+          "instanceId": "pxnIrGxKYVQKGItdLCW4U",
+          "name": "src",
+          "type": "asset",
+          "value": "49a39abbf85bc91490337c561c18f4155deab689c43010959e1eb6dff1afb81f"
+        }
+      ],
+      [
+        "2m4RiLkBsmZVB0fQ3v4TH",
+        {
+          "id": "2m4RiLkBsmZVB0fQ3v4TH",
+          "instanceId": "pxnIrGxKYVQKGItdLCW4U",
+          "name": "width",
+          "type": "asset",
+          "value": "49a39abbf85bc91490337c561c18f4155deab689c43010959e1eb6dff1afb81f"
+        }
+      ],
+      [
+        "atUmV7etwjlYRiHUqh2jv",
+        {
+          "id": "atUmV7etwjlYRiHUqh2jv",
+          "instanceId": "pxnIrGxKYVQKGItdLCW4U",
+          "name": "height",
+          "type": "asset",
+          "value": "49a39abbf85bc91490337c561c18f4155deab689c43010959e1eb6dff1afb81f"
+        }
+      ],
+      [
+        "JY_Kkdd2Y_4YcDXz3XqsD",
+        {
+          "id": "JY_Kkdd2Y_4YcDXz3XqsD",
+          "instanceId": "_iDRnhY0lkg6li_rYmhdE",
+          "name": "href",
+          "type": "string",
+          "value": "https://docs.google.com/forms/d/e/1FAIpQLScu14PgRWRO-iJ6uEs9s8lNS5QsuPb0HNvI8OY9KIkB9he5VQ/viewform?usp=header"
+        }
+      ],
+      [
+        "2BRPBXC7wJq3o2PrvFY_m",
+        {
+          "id": "2BRPBXC7wJq3o2PrvFY_m",
+          "instanceId": "pxnIrGxKYVQKGItdLCW4U",
+          "name": "alt",
+          "type": "asset",
+          "value": "49a39abbf85bc91490337c561c18f4155deab689c43010959e1eb6dff1afb81f"
+        }
+      ],
+      [
+        "fmnpQlSmGgGHHpwzLuxtZ",
+        {
+          "id": "fmnpQlSmGgGHHpwzLuxtZ",
+          "instanceId": "hNzUmfxY-e_tO2Xj-sr8V",
+          "name": "src",
+          "type": "asset",
+          "value": "49a39abbf85bc91490337c561c18f4155deab689c43010959e1eb6dff1afb81f"
+        }
+      ],
+      [
+        "6AORcWyQQZvkX0k2XJezH",
+        {
+          "id": "6AORcWyQQZvkX0k2XJezH",
+          "instanceId": "hNzUmfxY-e_tO2Xj-sr8V",
+          "name": "width",
+          "type": "asset",
+          "value": "49a39abbf85bc91490337c561c18f4155deab689c43010959e1eb6dff1afb81f"
+        }
+      ],
+      [
+        "6IwX3nXRdzVAMA9mykvBh",
+        {
+          "id": "6IwX3nXRdzVAMA9mykvBh",
+          "instanceId": "hNzUmfxY-e_tO2Xj-sr8V",
+          "name": "height",
+          "type": "asset",
+          "value": "49a39abbf85bc91490337c561c18f4155deab689c43010959e1eb6dff1afb81f"
+        }
+      ],
+      [
+        "G8PC6DXP1ULsa_0s3IbXb",
+        {
+          "id": "G8PC6DXP1ULsa_0s3IbXb",
+          "instanceId": "i_H_ZC83LZ9rsE76wBZFN",
+          "name": "href",
+          "type": "string",
+          "value": "https://docs.google.com/forms/d/e/1FAIpQLScu14PgRWRO-iJ6uEs9s8lNS5QsuPb0HNvI8OY9KIkB9he5VQ/viewform?usp=header"
+        }
+      ],
+      [
+        "MY-DqsERHp0B-CFCRCzCI",
+        {
+          "id": "MY-DqsERHp0B-CFCRCzCI",
+          "instanceId": "t7n-UIELB66XWJmDgofSx",
+          "name": "data-ws-show",
+          "type": "boolean",
+          "value": true
+        }
+      ],
+      [
+        "HU6PP3KdnRrU77jIIeqvh",
+        {
+          "id": "HU6PP3KdnRrU77jIIeqvh",
+          "instanceId": "hNzUmfxY-e_tO2Xj-sr8V",
+          "name": "alt",
+          "type": "asset",
+          "value": "49a39abbf85bc91490337c561c18f4155deab689c43010959e1eb6dff1afb81f"
+        }
+      ],
+      [
+        "VJJ9062NdfbdhkR7t5lZE",
+        {
+          "id": "VJJ9062NdfbdhkR7t5lZE",
+          "instanceId": "HzoGz1cO4F_sgAQlowXRW",
+          "name": "code",
+          "type": "string",
+          "value": "<style>\n@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300..900&display=swap');\n@import url('https://api.fontshare.com/v2/css?f[]=tanker@400&amp;display=swap');\n  \n  h1{\n    font-family: 'Tanker';\n    font-weight: 500;\n    font-size: 5em;\n    color: var(--background);\n    line-height: 1;\n    margin: 0;\n  }\n  h2{\n    font-weight: 600;\n    font-size: 36px;\n    line-height: 1;\n    margin: 0;\n  }\n  p{\n    margin: 0;\n  }\n  \n  .icon-background{\n    background-color: var(--back-red-1);\n    z-index: 1;\n    overflow: hidden;\n    position: relative;\n  }\n  .icon-background::before{\n    content: \"\";\n    position: absolute;\n    width: 200%; height: 200%;\n    top: -50%; left: -50%;\n    background-image: url('/assets/icon-background_orTDw4lIQEfSgOgF0DBVy.svg?width=1080&quality=80&format=auto');\n    background-size: 200px 115.4734411085px;\n    background-repeat: repeat;\n    animation: scrollBg 20s linear infinite;\n    z-index: -1;\n    opacity: var(--icon-background-opacity, 3%); mix-blend-mode: luminosity;\n    filter: blur(2px)\n  }\n  \n  .home-top::after{\n    position: absolute;\n    content: \"\";\n    width: 100%;\n    height: 250px;\n    background: linear-gradient(180deg, hsl(from var(--back-red-1) h s l / 0.65) 15%, hsl(from var(--back-red-1) h s l / 0) 100%);\n    z-index: -1;\n  }\n\n  @keyframes scrollBg {\n      0% {\n        background-position: 0 0;\n      }\n      100% {\n        background-position: -200px 115.4734411085px;\n      }\n    }\n\n  .home-top-card:hover .home-top-card-title-icon{\n    width: 38px;\n    padding-left: 3px;\n  }\n\n  @media only screen and (max-width: 767px) {\n    h1{\n      font-size: 4em;\n    }\n    h2{\n      font-size: 32px;\n    }\n  }\n</style>"
+        }
+      ],
+      [
+        "R2bpubrCF_tYJTAau89si",
+        {
+          "id": "R2bpubrCF_tYJTAau89si",
+          "instanceId": "HzoGz1cO4F_sgAQlowXRW",
+          "name": "executeScriptOnCanvas",
+          "type": "boolean",
+          "value": true
+        }
+      ],
+      [
+        "gYxeKZeoKuXCxSZ1yJAnH",
+        {
+          "id": "gYxeKZeoKuXCxSZ1yJAnH",
+          "instanceId": "HzoGz1cO4F_sgAQlowXRW",
+          "name": "data-ws-show",
+          "type": "boolean",
+          "value": true
+        }
+      ],
+      [
+        "OqyD6trALzQIvIBTWm_wj",
+        {
+          "id": "OqyD6trALzQIvIBTWm_wj",
+          "instanceId": "HlVMLDyRhysfmN_tR2rsP",
+          "name": "code",
+          "type": "string",
+          "value": "<div class=\"ticketbutler-iframe\"\n     data-type=\"EVENT\"\n     data-domain=\"billetfix.dk\"\n     data-slug=\"international-theme-party\">\n</div>\n<script type=\"text/javascript\" src=\"https://cdn.ticketbutler.io/event-embedder/index.js\"></script>"
+        }
+      ],
+      [
+        "0BgTTUoIzy4iX9cZnEeWw",
+        {
+          "id": "0BgTTUoIzy4iX9cZnEeWw",
+          "instanceId": "HlVMLDyRhysfmN_tR2rsP",
+          "name": "executeScriptOnCanvas",
+          "type": "boolean",
+          "value": true
+        }
+      ],
+      [
+        "e1wAws4z5nIkidnpv96e1",
+        {
+          "id": "e1wAws4z5nIkidnpv96e1",
+          "instanceId": "HlVMLDyRhysfmN_tR2rsP",
+          "name": "clientOnly",
+          "type": "boolean",
+          "value": false
+        }
+      ],
+      [
+        "BnHK3GlZjxWfM8unUMPcc",
+        {
+          "id": "BnHK3GlZjxWfM8unUMPcc",
+          "instanceId": "mfXdsiMX7NIYJ0xoovKc_",
+          "name": "id",
+          "type": "string",
+          "value": "int-part-tickets"
+        }
+      ],
+      [
+        "-EAknQ7PcdHmGirp7rhgs",
+        {
+          "id": "-EAknQ7PcdHmGirp7rhgs",
+          "instanceId": "ICDWUq0YaPN1Jxu3VD90v",
+          "name": "href",
+          "type": "page",
+          "value": {
+            "pageId": "isd0YpZ-kbEABFC9BLDTS",
+            "instanceId": "mfXdsiMX7NIYJ0xoovKc_"
+          }
+        }
       ]
     ],
     "dataSources": [],
@@ -91284,6 +92423,10 @@
             {
               "type": "id",
               "value": "lYUiMaH6SA7SN9LOobH1O"
+            },
+            {
+              "type": "id",
+              "value": "s-5vm3y7YuphO-v30RDC4"
             },
             {
               "type": "id",
@@ -91973,16 +93116,6 @@
         }
       ],
       [
-        "HzoGz1cO4F_sgAQlowXRW",
-        {
-          "type": "instance",
-          "id": "HzoGz1cO4F_sgAQlowXRW",
-          "component": "HtmlEmbed",
-          "label": "Root Style",
-          "children": []
-        }
-      ],
-      [
         "-iUJYIyDb5jvMkBJz9r2G",
         {
           "type": "instance",
@@ -92252,6 +93385,10 @@
             {
               "type": "id",
               "value": "hJ_NQcqXC6bHb8htaF3SP"
+            },
+            {
+              "type": "id",
+              "value": "KlaMRVy6AFmFFcCqHYiON"
             },
             {
               "type": "id",
@@ -92600,7 +93737,16 @@
           "id": "Wp9ItDtkfpflbkUWFemem",
           "component": "ws:element",
           "tag": "div",
-          "children": []
+          "children": [
+            {
+              "type": "id",
+              "value": "qlQpJeHtaTjkMjcaDgkM6"
+            },
+            {
+              "type": "id",
+              "value": "ICDWUq0YaPN1Jxu3VD90v"
+            }
+          ]
         }
       ],
       [
@@ -92634,48 +93780,6 @@
             {
               "type": "text",
               "value": "GE Union"
-            }
-          ]
-        }
-      ],
-      [
-        "i6v25gfBznCdLDQo8uoKS",
-        {
-          "type": "instance",
-          "id": "i6v25gfBznCdLDQo8uoKS",
-          "component": "ws:element",
-          "tag": "h2",
-          "children": [
-            {
-              "type": "text",
-              "value": "Who We Are"
-            }
-          ]
-        }
-      ],
-      [
-        "1rV3e_Karp8KfjYG0ygo7",
-        {
-          "type": "instance",
-          "id": "1rV3e_Karp8KfjYG0ygo7",
-          "component": "ws:element",
-          "tag": "p",
-          "children": [
-            {
-              "type": "text",
-              "value": "GE Union is the student organization for General Engineering at DTU."
-            },
-            {
-              "type": "text",
-              "value": "\n"
-            },
-            {
-              "type": "text",
-              "value": "We bring students together through social events, academic support, and career opportunities."
-            },
-            {
-              "type": "text",
-              "value": "\n"
             }
           ]
         }
@@ -98544,7 +99648,11 @@
             },
             {
               "type": "id",
-              "value": "pVIs8Qa4pgQVfQkp71_Sx"
+              "value": "zMGbdg3h1sq2izmELiuAQ"
+            },
+            {
+              "type": "id",
+              "value": "_iDRnhY0lkg6li_rYmhdE"
             }
           ]
         }
@@ -98560,90 +99668,6 @@
             {
               "type": "text",
               "value": "Want to Join?"
-            }
-          ]
-        }
-      ],
-      [
-        "pVIs8Qa4pgQVfQkp71_Sx",
-        {
-          "type": "instance",
-          "id": "pVIs8Qa4pgQVfQkp71_Sx",
-          "component": "ws:element",
-          "tag": "p",
-          "children": [
-            {
-              "type": "text",
-              "value": "GEU is now yours! You have the responsibility (and opportunity !) of building "
-            },
-            {
-              "type": "id",
-              "value": "lmeNTib1_gkWHbRU6naWI"
-            },
-            {
-              "type": "text",
-              "value": " community. So, stay updated on events and opportunities on our "
-            },
-            {
-              "type": "id",
-              "value": "E4rfqGIRyaMerY0pr0sJG"
-            },
-            {
-              "type": "text",
-              "value": " and "
-            },
-            {
-              "type": "id",
-              "value": "qJij7HgEzsD6YV7GRk_b1"
-            },
-            {
-              "type": "text",
-              "value": " and join the team! More information will be provided on how to join GE Union during the start of the semester."
-            }
-          ]
-        }
-      ],
-      [
-        "E4rfqGIRyaMerY0pr0sJG",
-        {
-          "type": "instance",
-          "id": "E4rfqGIRyaMerY0pr0sJG",
-          "component": "ws:element",
-          "tag": "a",
-          "children": [
-            {
-              "type": "text",
-              "value": "website"
-            }
-          ]
-        }
-      ],
-      [
-        "qJij7HgEzsD6YV7GRk_b1",
-        {
-          "type": "instance",
-          "id": "qJij7HgEzsD6YV7GRk_b1",
-          "component": "ws:element",
-          "tag": "a",
-          "children": [
-            {
-              "type": "text",
-              "value": "Instagram"
-            }
-          ]
-        }
-      ],
-      [
-        "lmeNTib1_gkWHbRU6naWI",
-        {
-          "type": "instance",
-          "id": "lmeNTib1_gkWHbRU6naWI",
-          "component": "ws:element",
-          "tag": "b",
-          "children": [
-            {
-              "type": "text",
-              "value": "your"
             }
           ]
         }
@@ -111278,6 +112302,447 @@
           "id": "ug1Tby08gcR0iZ3xloSE5",
           "component": "Image",
           "children": []
+        }
+      ],
+      [
+        "s-5vm3y7YuphO-v30RDC4",
+        {
+          "type": "instance",
+          "id": "s-5vm3y7YuphO-v30RDC4",
+          "component": "ws:element",
+          "tag": "div",
+          "children": [
+            {
+              "type": "id",
+              "value": "t7n-UIELB66XWJmDgofSx"
+            }
+          ]
+        }
+      ],
+      [
+        "_iDRnhY0lkg6li_rYmhdE",
+        {
+          "type": "instance",
+          "id": "_iDRnhY0lkg6li_rYmhdE",
+          "component": "Link",
+          "children": [
+            {
+              "type": "id",
+              "value": "JEUxAgiM4cfnlt-BYkNOg"
+            },
+            {
+              "type": "id",
+              "value": "pxnIrGxKYVQKGItdLCW4U"
+            }
+          ]
+        }
+      ],
+      [
+        "JEUxAgiM4cfnlt-BYkNOg",
+        {
+          "type": "instance",
+          "id": "JEUxAgiM4cfnlt-BYkNOg",
+          "component": "Text",
+          "children": [
+            {
+              "type": "text",
+              "value": "Submit your application "
+            }
+          ]
+        }
+      ],
+      [
+        "pxnIrGxKYVQKGItdLCW4U",
+        {
+          "type": "instance",
+          "id": "pxnIrGxKYVQKGItdLCW4U",
+          "component": "Image",
+          "children": []
+        }
+      ],
+      [
+        "t7n-UIELB66XWJmDgofSx",
+        {
+          "type": "instance",
+          "id": "t7n-UIELB66XWJmDgofSx",
+          "component": "Box",
+          "children": [
+            {
+              "type": "id",
+              "value": "5I-2AbU24MHVLVfu2iGSc"
+            },
+            {
+              "type": "id",
+              "value": "h7mA3rRzYnd04549bX8Bl"
+            },
+            {
+              "type": "id",
+              "value": "i_H_ZC83LZ9rsE76wBZFN"
+            }
+          ]
+        }
+      ],
+      [
+        "5I-2AbU24MHVLVfu2iGSc",
+        {
+          "type": "instance",
+          "id": "5I-2AbU24MHVLVfu2iGSc",
+          "component": "ws:element",
+          "tag": "h2",
+          "children": [
+            {
+              "type": "text",
+              "value": "Want to join?"
+            }
+          ]
+        }
+      ],
+      [
+        "h7mA3rRzYnd04549bX8Bl",
+        {
+          "type": "instance",
+          "id": "h7mA3rRzYnd04549bX8Bl",
+          "component": "ws:element",
+          "tag": "p",
+          "children": [
+            {
+              "type": "text",
+              "value": "GEU is always looking for new people to join our team "
+            },
+            {
+              "type": "id",
+              "value": "jlDUrx6e5MM4mzjGnYFhS"
+            },
+            {
+              "type": "text",
+              "value": ", so if you like what we do and want to help, or maybe want to use this as a safe space to gain experience, don't hesitate to send in an application! Whether you are interested in IT, event planning, marketing, social media, or contact with industry, we have a team that you will fit right into "
+            },
+            {
+              "type": "id",
+              "value": "jlZVJC5klDPOU9JIaaKba"
+            },
+            {
+              "type": "text",
+              "value": ". So what are you waiting for??"
+            }
+          ]
+        }
+      ],
+      [
+        "i_H_ZC83LZ9rsE76wBZFN",
+        {
+          "type": "instance",
+          "id": "i_H_ZC83LZ9rsE76wBZFN",
+          "component": "Link",
+          "children": [
+            {
+              "type": "id",
+              "value": "z_-KLOSBokJNbFV058dQm"
+            },
+            {
+              "type": "id",
+              "value": "hNzUmfxY-e_tO2Xj-sr8V"
+            }
+          ]
+        }
+      ],
+      [
+        "z_-KLOSBokJNbFV058dQm",
+        {
+          "type": "instance",
+          "id": "z_-KLOSBokJNbFV058dQm",
+          "component": "Text",
+          "children": [
+            {
+              "type": "text",
+              "value": "Submit your application "
+            }
+          ]
+        }
+      ],
+      [
+        "hNzUmfxY-e_tO2Xj-sr8V",
+        {
+          "type": "instance",
+          "id": "hNzUmfxY-e_tO2Xj-sr8V",
+          "component": "Image",
+          "children": []
+        }
+      ],
+      [
+        "jlDUrx6e5MM4mzjGnYFhS",
+        {
+          "type": "instance",
+          "id": "jlDUrx6e5MM4mzjGnYFhS",
+          "component": "ws:element",
+          "tag": "span",
+          "children": [
+            {
+              "type": "text",
+              "value": "(especially first years)"
+            }
+          ]
+        }
+      ],
+      [
+        "jlZVJC5klDPOU9JIaaKba",
+        {
+          "type": "instance",
+          "id": "jlZVJC5klDPOU9JIaaKba",
+          "component": "ws:element",
+          "tag": "span",
+          "children": [
+            {
+              "type": "text",
+              "value": "(all while making sure to have lots of fun)"
+            }
+          ]
+        }
+      ],
+      [
+        "zMGbdg3h1sq2izmELiuAQ",
+        {
+          "type": "instance",
+          "id": "zMGbdg3h1sq2izmELiuAQ",
+          "component": "ws:element",
+          "tag": "p",
+          "children": [
+            {
+              "type": "text",
+              "value": "GEU is always looking for new people to join our team "
+            },
+            {
+              "type": "id",
+              "value": "TpjYD_pfY5P9G02GAx7AQ"
+            },
+            {
+              "type": "text",
+              "value": ", so if you like what we do and want to help, or maybe want to use this as a safe space to gain experience, don't hesitate to send in an application! Whether you are interested in IT, event planning, marketing, social media, or contact with industry, we have a team that you will fit right into "
+            },
+            {
+              "type": "id",
+              "value": "qPyLlO-Pbeu7kET0mpFaw"
+            },
+            {
+              "type": "text",
+              "value": ". So what are you waiting for??"
+            }
+          ]
+        }
+      ],
+      [
+        "TpjYD_pfY5P9G02GAx7AQ",
+        {
+          "type": "instance",
+          "id": "TpjYD_pfY5P9G02GAx7AQ",
+          "component": "ws:element",
+          "tag": "span",
+          "children": [
+            {
+              "type": "text",
+              "value": "(especially first years)"
+            }
+          ]
+        }
+      ],
+      [
+        "qPyLlO-Pbeu7kET0mpFaw",
+        {
+          "type": "instance",
+          "id": "qPyLlO-Pbeu7kET0mpFaw",
+          "component": "ws:element",
+          "tag": "span",
+          "children": [
+            {
+              "type": "text",
+              "value": "(all while making sure to have lots of fun)"
+            }
+          ]
+        }
+      ],
+      [
+        "HzoGz1cO4F_sgAQlowXRW",
+        {
+          "type": "instance",
+          "id": "HzoGz1cO4F_sgAQlowXRW",
+          "component": "HtmlEmbed",
+          "label": "Root Style",
+          "children": []
+        }
+      ],
+      [
+        "KlaMRVy6AFmFFcCqHYiON",
+        {
+          "type": "instance",
+          "id": "KlaMRVy6AFmFFcCqHYiON",
+          "component": "ws:element",
+          "tag": "div",
+          "label": "billet",
+          "children": [
+            {
+              "type": "id",
+              "value": "mfXdsiMX7NIYJ0xoovKc_"
+            },
+            {
+              "type": "id",
+              "value": "HlVMLDyRhysfmN_tR2rsP"
+            }
+          ]
+        }
+      ],
+      [
+        "mfXdsiMX7NIYJ0xoovKc_",
+        {
+          "type": "instance",
+          "id": "mfXdsiMX7NIYJ0xoovKc_",
+          "component": "ws:element",
+          "tag": "h2",
+          "children": [
+            {
+              "type": "text",
+              "value": "By a ticket for the "
+            },
+            {
+              "type": "id",
+              "value": "pvAAJ4RZp_0COToY_9UbX"
+            },
+            {
+              "type": "text",
+              "value": " here!"
+            }
+          ]
+        }
+      ],
+      [
+        "HlVMLDyRhysfmN_tR2rsP",
+        {
+          "type": "instance",
+          "id": "HlVMLDyRhysfmN_tR2rsP",
+          "component": "HtmlEmbed",
+          "children": []
+        }
+      ],
+      [
+        "pvAAJ4RZp_0COToY_9UbX",
+        {
+          "type": "instance",
+          "id": "pvAAJ4RZp_0COToY_9UbX",
+          "component": "ws:element",
+          "tag": "b",
+          "children": [
+            {
+              "type": "text",
+              "value": "International party"
+            }
+          ]
+        }
+      ],
+      [
+        "ICDWUq0YaPN1Jxu3VD90v",
+        {
+          "type": "instance",
+          "id": "ICDWUq0YaPN1Jxu3VD90v",
+          "component": "Link",
+          "children": [
+            {
+              "type": "id",
+              "value": "HEYpCm2oaeQNVjTMcXsG5"
+            }
+          ]
+        }
+      ],
+      [
+        "HEYpCm2oaeQNVjTMcXsG5",
+        {
+          "type": "instance",
+          "id": "HEYpCm2oaeQNVjTMcXsG5",
+          "component": "Text",
+          "children": [
+            {
+              "type": "text",
+              "value": "Buy Ticket"
+            }
+          ]
+        }
+      ],
+      [
+        "qlQpJeHtaTjkMjcaDgkM6",
+        {
+          "type": "instance",
+          "id": "qlQpJeHtaTjkMjcaDgkM6",
+          "component": "ws:element",
+          "tag": "p",
+          "children": [
+            {
+              "type": "text",
+              "value": "Buy tickets for the "
+            },
+            {
+              "type": "id",
+              "value": "EBd9frVm5WBzqtNDRf_61"
+            },
+            {
+              "type": "text",
+              "value": "!"
+            }
+          ]
+        }
+      ],
+      [
+        "1rV3e_Karp8KfjYG0ygo7",
+        {
+          "type": "instance",
+          "id": "1rV3e_Karp8KfjYG0ygo7",
+          "component": "ws:element",
+          "tag": "p",
+          "children": [
+            {
+              "type": "text",
+              "value": "GE Union is the student organization for General Engineering at DTU."
+            },
+            {
+              "type": "text",
+              "value": "\n"
+            },
+            {
+              "type": "text",
+              "value": "We bring students together through social events, academic support, and career opportunities."
+            },
+            {
+              "type": "text",
+              "value": "\n"
+            }
+          ]
+        }
+      ],
+      [
+        "i6v25gfBznCdLDQo8uoKS",
+        {
+          "type": "instance",
+          "id": "i6v25gfBznCdLDQo8uoKS",
+          "component": "ws:element",
+          "tag": "h2",
+          "children": [
+            {
+              "type": "text",
+              "value": "Who We Are"
+            }
+          ]
+        }
+      ],
+      [
+        "EBd9frVm5WBzqtNDRf_61",
+        {
+          "type": "instance",
+          "id": "EBd9frVm5WBzqtNDRf_61",
+          "component": "ws:element",
+          "tag": "b",
+          "children": [
+            {
+              "type": "text",
+              "value": "International Theme Party"
+            }
+          ]
         }
       ]
     ],
