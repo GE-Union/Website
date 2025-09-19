@@ -11,7 +11,7 @@ import { Tooltip as Tooltip, TooltipTrigger as TooltipTrigger, TooltipContent as
 
       export const projectId = "94456f8c-a847-426a-aec8-16de390bd3eb";
 
-      export const lastPublished = "2025-09-17T21:48:33.307Z";
+      export const lastPublished = "2025-09-19T23:07:52.280Z";
 
       export const siteName = "GE Union";
 
@@ -201,7 +201,7 @@ className={`w-text cqawzgp c1s7gudn czgmbqe cyoo8jj c1wwlxnr cje5w08 c1k74xht c1
 <div
 className={`w-element ci03eyw c1rwubzf c1log017 c1nj86ny cpq2gwm c1w0yra6 cj7bt5u c19dg1ud cbbmghh c1k74xht c9au2ch cyuvfar c1wjiq3p c19dst95 c18fbvuf c1x3epop`}>
 <Image
-src={"/assets/S-Energy-Icon_1_l_ehl9l9wBIuE34ATzvBV.svg"}
+src={"/assets/S-Advanced-Icon_1_WAQFozAAYDN85UOJBjcGw.svg"}
 alt={""}
 loading={"eager"}
 width={4167}

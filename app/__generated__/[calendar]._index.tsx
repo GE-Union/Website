@@ -11,7 +11,7 @@ import { Tooltip as Tooltip, TooltipTrigger as TooltipTrigger, TooltipContent as
 
       export const projectId = "94456f8c-a847-426a-aec8-16de390bd3eb";
 
-      export const lastPublished = "2025-09-17T21:48:33.307Z";
+      export const lastPublished = "2025-09-19T23:07:52.280Z";
 
       export const siteName = "GE Union";
 
@@ -272,13 +272,17 @@ className={`w-element`}>
 <h2
 id={"int-part-tickets"}
 className={`w-element c1l00ka2 csmduke c2z8j1e c8qj03j c6f08mx cyoo8jj c14xzzjo ctivlq9`}>
-{"By a ticket for the "}
+{"Buy a ticket for the "}
 <b
 className={`w-element`}>
 {"International party"}
 </b>
 {" here!"}
 </h2>
+<p
+className={`w-element cyoo8jj`}>
+{"(reload if it doesn't show)"}
+</p>
 <HtmlEmbed
 code={"<div class=\"ticketbutler-iframe\"\n     data-type=\"EVENT\"\n     data-domain=\"billetfix.dk\"\n     data-slug=\"international-theme-party\">\n</div>\n<script type=\"text/javascript\" src=\"https://cdn.ticketbutler.io/event-embedder/index.js\"></script>"}
 executeScriptOnCanvas={true}

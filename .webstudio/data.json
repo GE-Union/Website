@@ -1,10 +1,10 @@
 {
   "build": {
-    "id": "37a63694-2bef-4d0d-bfc6-a197dc415b8b",
+    "id": "ffd872d5-2cee-45d4-afee-3eb20b4eb326",
     "projectId": "94456f8c-a847-426a-aec8-16de390bd3eb",
-    "version": 13672,
-    "createdAt": "2025-09-17T21:48:33.307+00:00",
-    "updatedAt": "2025-09-17T21:48:33.307+00:00",
+    "version": 13704,
+    "createdAt": "2025-09-19T23:07:52.28+00:00",
+    "updatedAt": "2025-09-19T23:07:52.28+00:00",
     "pages": {
       "meta": {
         "siteName": "GE Union",
@@ -8574,44 +8574,6 @@
             "type": "unit",
             "unit": "px",
             "value": 10
-          }
-        }
-      ],
-      [
-        "goLqVURtUBTEFCR-lNhbl:2EiFMEG40PBm9_fkelqpo:textAlign:",
-        {
-          "styleSourceId": "goLqVURtUBTEFCR-lNhbl",
-          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
-          "property": "textAlign",
-          "value": {
-            "type": "keyword",
-            "value": "center"
-          }
-        }
-      ],
-      [
-        "goLqVURtUBTEFCR-lNhbl:eCbcXJaLEKSKcnbAPzNF0:marginLeft:",
-        {
-          "styleSourceId": "goLqVURtUBTEFCR-lNhbl",
-          "breakpointId": "eCbcXJaLEKSKcnbAPzNF0",
-          "property": "marginLeft",
-          "value": {
-            "type": "unit",
-            "unit": "px",
-            "value": 20
-          }
-        }
-      ],
-      [
-        "goLqVURtUBTEFCR-lNhbl:eCbcXJaLEKSKcnbAPzNF0:marginRight:",
-        {
-          "styleSourceId": "goLqVURtUBTEFCR-lNhbl",
-          "breakpointId": "eCbcXJaLEKSKcnbAPzNF0",
-          "property": "marginRight",
-          "value": {
-            "type": "unit",
-            "unit": "px",
-            "value": 20
           }
         }
       ],
@@ -63568,19 +63530,6 @@
         }
       ],
       [
-        "goLqVURtUBTEFCR-lNhbl:2EiFMEG40PBm9_fkelqpo:userSelect:",
-        {
-          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
-          "styleSourceId": "goLqVURtUBTEFCR-lNhbl",
-          "property": "userSelect",
-          "value": {
-            "type": "keyword",
-            "value": "none"
-          },
-          "listed": true
-        }
-      ],
-      [
         "u6XM1dU7SrBH8n3UqU6NT:2EiFMEG40PBm9_fkelqpo:userSelect:",
         {
           "breakpointId": "2EiFMEG40PBm9_fkelqpo",
@@ -68906,6 +68855,69 @@
             ]
           }
         }
+      ],
+      [
+        "goLqVURtUBTEFCR-lNhbl:2EiFMEG40PBm9_fkelqpo:textAlign:",
+        {
+          "styleSourceId": "goLqVURtUBTEFCR-lNhbl",
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "property": "textAlign",
+          "value": {
+            "type": "keyword",
+            "value": "center"
+          }
+        }
+      ],
+      [
+        "goLqVURtUBTEFCR-lNhbl:eCbcXJaLEKSKcnbAPzNF0:marginLeft:",
+        {
+          "styleSourceId": "goLqVURtUBTEFCR-lNhbl",
+          "breakpointId": "eCbcXJaLEKSKcnbAPzNF0",
+          "property": "marginLeft",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 20
+          }
+        }
+      ],
+      [
+        "goLqVURtUBTEFCR-lNhbl:eCbcXJaLEKSKcnbAPzNF0:marginRight:",
+        {
+          "styleSourceId": "goLqVURtUBTEFCR-lNhbl",
+          "breakpointId": "eCbcXJaLEKSKcnbAPzNF0",
+          "property": "marginRight",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 20
+          }
+        }
+      ],
+      [
+        "goLqVURtUBTEFCR-lNhbl:2EiFMEG40PBm9_fkelqpo:userSelect:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "goLqVURtUBTEFCR-lNhbl",
+          "property": "userSelect",
+          "value": {
+            "type": "keyword",
+            "value": "none"
+          },
+          "listed": true
+        }
+      ],
+      [
+        "4GghTp-hXYq8leYc7BfKs:2EiFMEG40PBm9_fkelqpo:textAlign:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "4GghTp-hXYq8leYc7BfKs",
+          "property": "textAlign",
+          "value": {
+            "type": "keyword",
+            "value": "center"
+          }
+        }
       ]
     ],
     "styleSources": [
@@ -69519,13 +69531,6 @@
         {
           "type": "local",
           "id": "rKEvYJZil_nzAJmZlpDGZ"
-        }
-      ],
-      [
-        "goLqVURtUBTEFCR-lNhbl",
-        {
-          "type": "local",
-          "id": "goLqVURtUBTEFCR-lNhbl"
         }
       ],
       [
@@ -74389,6 +74394,20 @@
           "type": "local",
           "id": "4TaKHAtWzMwz4VEhYDEo9"
         }
+      ],
+      [
+        "goLqVURtUBTEFCR-lNhbl",
+        {
+          "type": "local",
+          "id": "goLqVURtUBTEFCR-lNhbl"
+        }
+      ],
+      [
+        "4GghTp-hXYq8leYc7BfKs",
+        {
+          "type": "local",
+          "id": "4GghTp-hXYq8leYc7BfKs"
+        }
       ]
     ],
     "styleSourceSelections": [
@@ -75131,15 +75150,6 @@
           "instanceId": "OA32fnMEBLPQxdVsDhmsY",
           "values": [
             "rKEvYJZil_nzAJmZlpDGZ"
-          ]
-        }
-      ],
-      [
-        "5ypRUGqEypObnbryn9TBq",
-        {
-          "instanceId": "5ypRUGqEypObnbryn9TBq",
-          "values": [
-            "goLqVURtUBTEFCR-lNhbl"
           ]
         }
       ],
@@ -83127,6 +83137,24 @@
             "4TaKHAtWzMwz4VEhYDEo9"
           ]
         }
+      ],
+      [
+        "5ypRUGqEypObnbryn9TBq",
+        {
+          "instanceId": "5ypRUGqEypObnbryn9TBq",
+          "values": [
+            "goLqVURtUBTEFCR-lNhbl"
+          ]
+        }
+      ],
+      [
+        "byV4JO57Qm19o9b-AFE_L",
+        {
+          "instanceId": "byV4JO57Qm19o9b-AFE_L",
+          "values": [
+            "4GghTp-hXYq8leYc7BfKs"
+          ]
+        }
       ]
     ],
     "props": [
@@ -89267,7 +89295,7 @@
           "instanceId": "vfDTy2bZzKJg14hB0N36J",
           "name": "src",
           "type": "asset",
-          "value": "0ad3f13d85be012ed422666648d6424118fee4b17b3bd5cc238d58ffbb42c8a1"
+          "value": "ebc8d2d08dd7d795f146601ea1d8f2cb678277bc26ac0e7843fc3535f1282539"
         }
       ],
       [
@@ -89277,7 +89305,7 @@
           "instanceId": "vfDTy2bZzKJg14hB0N36J",
           "name": "alt",
           "type": "asset",
-          "value": "0ad3f13d85be012ed422666648d6424118fee4b17b3bd5cc238d58ffbb42c8a1"
+          "value": "ebc8d2d08dd7d795f146601ea1d8f2cb678277bc26ac0e7843fc3535f1282539"
         }
       ],
       [
@@ -90117,7 +90145,7 @@
           "instanceId": "vfDTy2bZzKJg14hB0N36J",
           "name": "width",
           "type": "asset",
-          "value": "0ad3f13d85be012ed422666648d6424118fee4b17b3bd5cc238d58ffbb42c8a1"
+          "value": "ebc8d2d08dd7d795f146601ea1d8f2cb678277bc26ac0e7843fc3535f1282539"
         }
       ],
       [
@@ -90127,7 +90155,7 @@
           "instanceId": "vfDTy2bZzKJg14hB0N36J",
           "name": "height",
           "type": "asset",
-          "value": "0ad3f13d85be012ed422666648d6424118fee4b17b3bd5cc238d58ffbb42c8a1"
+          "value": "ebc8d2d08dd7d795f146601ea1d8f2cb678277bc26ac0e7843fc3535f1282539"
         }
       ],
       [
@@ -94067,21 +94095,6 @@
             {
               "type": "id",
               "value": "hiW-vOULDIwApxweZNUFt"
-            }
-          ]
-        }
-      ],
-      [
-        "5ypRUGqEypObnbryn9TBq",
-        {
-          "type": "instance",
-          "id": "5ypRUGqEypObnbryn9TBq",
-          "component": "ws:element",
-          "tag": "h1",
-          "children": [
-            {
-              "type": "text",
-              "value": "Calendar"
             }
           ]
         }
@@ -112585,6 +112598,10 @@
             },
             {
               "type": "id",
+              "value": "byV4JO57Qm19o9b-AFE_L"
+            },
+            {
+              "type": "id",
               "value": "HlVMLDyRhysfmN_tR2rsP"
             }
           ]
@@ -112600,7 +112617,7 @@
           "children": [
             {
               "type": "text",
-              "value": "By a ticket for the "
+              "value": "Buy a ticket for the "
             },
             {
               "type": "id",
@@ -112741,6 +112758,36 @@
             {
               "type": "text",
               "value": "International Theme Party"
+            }
+          ]
+        }
+      ],
+      [
+        "5ypRUGqEypObnbryn9TBq",
+        {
+          "type": "instance",
+          "id": "5ypRUGqEypObnbryn9TBq",
+          "component": "ws:element",
+          "tag": "h1",
+          "children": [
+            {
+              "type": "text",
+              "value": "Calendar"
+            }
+          ]
+        }
+      ],
+      [
+        "byV4JO57Qm19o9b-AFE_L",
+        {
+          "type": "instance",
+          "id": "byV4JO57Qm19o9b-AFE_L",
+          "component": "ws:element",
+          "tag": "p",
+          "children": [
+            {
+              "type": "text",
+              "value": "(reload if it doesn't show)"
             }
           ]
         }
