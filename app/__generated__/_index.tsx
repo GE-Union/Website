@@ -11,7 +11,7 @@ import { Tooltip as Tooltip, TooltipTrigger as TooltipTrigger, TooltipContent as
 
       export const projectId = "94456f8c-a847-426a-aec8-16de390bd3eb";
 
-      export const lastPublished = "2025-08-31T20:27:23.776Z";
+      export const lastPublished = "2025-09-25T12:49:25.411Z";
 
       export const siteName = "GE Union";
 
@@ -346,6 +346,61 @@ className={`w-element cy7nrqp c8l261o cdhy4s8 c5sx8jk c1wauoq4 c1w0yra6 cpq2gwm 
 </Box>
 </Box>
 </Box>
+<div
+className={`w-element ci03eyw cu8ogtt c1v4vkm5 ciu9gta c8l261o c1wmsojl c3brmnq`}>
+<div
+className={`w-element cy2b8wa cd3toq c17nm8vt c1xymrvd c8yo8yx c5sx8jk c1q7at0i cjpac5y c1tmykg6 c156xldz codsd31 c16er72m c1qt5xo2 ci03eyw cu8ogtt c1m4ybgm c183x3a4 cs4zrmt chjepeg ct6fd0n c19raolx ct5uc8i ${"icon-background\n"}`}>
+<div
+className={`w-element c1o49hcl ci03eyw c1dgy9if c1a10q77 c1v4vkm5 c6d6cak c5dclxw c7tvdys cgiudld c1xj8ubg`}>
+<div
+className={`w-element cx80e38 c9iyznh c1xsuntc cez05na cr2fx1c c1ydphkn cpy5f0q c119ibn4 cqmovsy`} />
+<h2
+className={`w-element cx80e38 c9iyznh c1lt64h c1jzivuf chpvhw5 c125l1v1 c1k74xht`}>
+{"Coming Up"}
+</h2>
+</div>
+<div
+className={`w-element ck11ylk c767uka cxn45mh c134tzij c11cmzdu`}>
+<p
+className={`w-element cyoo8jj c12zhvo c1dsvsvh`}>
+{"Buy tickets for the "}
+<b
+className={`w-element`}>
+{"International Theme Party"}
+</b>
+{"!"}
+</p>
+<Link
+href={"https://billetfix.dk/e/international-theme-party/"}
+className={`w-link c10pf28n c1u2ouk0 cgqd6mv cdzo1k7 c341g64 c11h9c5s c17hd63g cnrv5xy c1ho4waj c16etzib c8l261o cr2ujrk ci03eyw c1pd7k79 c2gl1gx cda4yqq c767uka c1x65yvk cv1qn8j c1jon836 co5x0w6 c5sx8jk c1122adb c1bti4b5 cz7iu34 c40iywk codsd31 c16er72m c1qt5xo2 cmvyqw5 c1w0yra6 cpq2gwm c1dsvsvh c1eeu0y3 c1582rzp cpyan2s`}>
+<Text
+className={`w-text`}>
+{"Buy Ticket on Site"}
+</Text>
+</Link>
+</div>
+</div>
+</div>
+<div
+className={`w-element`}>
+<p
+className={`w-element cyoo8jj c1f0lefa c1w0yra6 cpq2gwm c1q98tuy c19a8u9t`}>
+{"... or buy one right "}
+<b
+className={`w-element`}>
+{"here"}
+</b>
+{"!"}
+{""}
+<br />
+{""}
+</p>
+<HtmlEmbed
+code={"<div class=\"ticketbutler-iframe\"\n     data-type=\"EVENT\"\n     data-domain=\"billetfix.dk\"\n     data-slug=\"international-theme-party\">\n</div>\n<script type=\"text/javascript\" src=\"https://cdn.ticketbutler.io/event-embedder/index.js\"></script>\n\n<script>\n(function(){\n  // Manual re-initialisation of Ticketbutler embeds\n  function reloadTicketbutler() {\n    // Remove the \"loaded\" attribute so the embed code will process them again\n    document.querySelectorAll('.ticketbutler-iframe[loaded]')\n      .forEach(function(el){ el.removeAttribute('loaded'); });\n\n    // Allow the internal init function to run again\n    window.ticketbutlerEventEmbedderLoaded = false;\n\n    // Dispatch a fake readystatechange to trigger its listener\n    var ev = document.createEvent('Event');\n    ev.initEvent('readystatechange', true, true);\n    document.readyState === 'complete'\n      ? document.dispatchEvent(ev)\n      : console.warn('[Ticketbutler] Document not complete, cannot retrigger');\n  }\n\n  // Retry a few times on load just in case\n  if (document.readyState === 'complete') {\n    setTimeout(reloadTicketbutler, 1000);\n    setTimeout(reloadTicketbutler, 3000);\n  } else {\n    window.addEventListener('load', function(){\n      setTimeout(reloadTicketbutler, 1000);\n      setTimeout(reloadTicketbutler, 3000);\n    });\n  }\n\n  // Optional manual button (if present)\n  var btn = document.getElementById('reload-ticketbutler');\n  if (btn) btn.addEventListener('click', reloadTicketbutler);\n\n  // Expose for console/manual debugging\n  window.reloadTicketbutler = reloadTicketbutler;\n})();\n</script>\n"}
+executeScriptOnCanvas={true}
+clientOnly={false}
+className={`w-html-embed`} />
+</div>
 <Box
 className={`w-box ci03eyw cu8ogtt c1g95588 c3brmnq cqaj6f4 c16lfnyl c1v4vkm5`}>
 <Image
@@ -389,6 +444,44 @@ code={"<div class=\"carousel-cell\">\n  <div class=\"cell-content\">\n    <img s
 executeScriptOnCanvas={true}
 id={"carousel"}
 className={`w-html-embed c6f08mx cgmpm3f csljhnv c19f83kh c1duohc3 c1w0yra6 cpq2gwm c13w5hsy cm1ds2c c1vhywez c1122adb c197srfe cn4tmju c14xcs5y c144cj3d cux2glt c1m8g7bv`} />
+<div
+className={`w-element cyoo8jj cxa4mkp cy2vnym c4jdyrv`}>
+<Box
+className={`w-box ci03eyw cu8ogtt c1g95588 c3brmnq cqaj6f4 c16lfnyl c1v4vkm5`}>
+<h2
+className={`w-element`}>
+{"Want to join?"}
+</h2>
+<p
+className={`w-element c1km7ytz cwfxmkq cyoo8jj cvqaoy8 c5dvuwy crwgjbx c1j13thr clafu7i`}>
+{"GEU is always looking for new people to join our team "}
+<span
+className={`w-element c1vn0xiq`}>
+{"(especially first years)"}
+</span>
+{", so if you like what we do and want to help, or maybe want to use this as a safe space to gain experience, don't hesitate to send in an application! Whether you are interested in IT, event planning, marketing, social media, or contact with industry, we have a team that you will fit right into "}
+<span
+className={`w-element c1vn0xiq`}>
+{"(all while making sure to have lots of fun)"}
+</span>
+{". So what are you waiting for??"}
+</p>
+<Link
+href={"https://docs.google.com/forms/d/e/1FAIpQLScu14PgRWRO-iJ6uEs9s8lNS5QsuPb0HNvI8OY9KIkB9he5VQ/viewform?usp=header"}
+className={`w-link c10pf28n c6775s7 ct2w13i c1kmtbg4 c341g64 c11h9c5s c17hd63g cnrv5xy c1ho4waj czgmbqe c8l261o cr2ujrk ci03eyw c1pd7k79 c2gl1gx cda4yqq c767uka c1x65yvk cv1qn8j c1jon836 co5x0w6 c5sx8jk c1122adb c1bti4b5 cz7iu34 c40iywk codsd31 c16er72m c1qt5xo2 c1swt08u c1582rzp cpyan2s`}>
+<Text
+className={`w-text`}>
+{"Submit your application "}
+</Text>
+<Image
+src={"/assets/Arrow_exgLm9zGXPhywmuQ3p_EH.svg"}
+width={25}
+height={24}
+alt={""}
+className={`w-image c1nfcmlw cqb6n9z`} />
+</Link>
+</Box>
+</div>
 <Box
 className={`w-box c3q79or cqlg791 cd3toq c17nm8vt c1xymrvd c8yo8yx c1n9f9m4 ci03eyw cu8ogtt ccjedbp c1z0fjz8 c9py6bs czpkcbu cz85z79 cl4abvr cnkevhm c8nmv6p cwqnf9o c1v4vkm5 c3zzp20 ckpfi68 cy3m4bk c16o2wqc cwwztsj`}>
 <Box
@@ -479,7 +572,7 @@ className={`w-element c7wcowi c2z8j1e cmndei7 c3q79or c8qj03j`}>
 </p>
 </Box>
 <Link
-href={"https://www.linkedin.com/groups/10061020/"}
+href={"https://www.linkedin.com/company/ge-union"}
 target={"_blank"}
 className={`w-link c10pf28n c6775s7 ct2w13i c1kmtbg4 c341g64 c11h9c5s c17hd63g cnrv5xy c1ho4waj czgmbqe c8l261o cr2ujrk ci03eyw c1pd7k79 c2gl1gx cda4yqq c767uka c1x65yvk cv1qn8j c1jon836 co5x0w6 c5sx8jk c1122adb c1bti4b5 cz7iu34 c40iywk codsd31 c16er72m c1qt5xo2 c1984dmv c1582rzp cpyan2s`}>
 <Text

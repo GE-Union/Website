@@ -1,10 +1,10 @@
 {
   "build": {
-    "id": "8be1533c-146d-4103-9e26-551c5773f23c",
+    "id": "ecc1d848-5a9a-412e-8ad2-c38b53c103a1",
     "projectId": "94456f8c-a847-426a-aec8-16de390bd3eb",
-    "version": 12953,
-    "createdAt": "2025-08-31T20:27:23.776+00:00",
-    "updatedAt": "2025-08-31T20:27:23.776+00:00",
+    "version": 13880,
+    "createdAt": "2025-09-25T12:49:25.411+00:00",
+    "updatedAt": "2025-09-25T12:49:25.411+00:00",
     "pages": {
       "meta": {
         "siteName": "GE Union",
@@ -5253,80 +5253,6 @@
         }
       ],
       [
-        "ViiI6VUxI158ikWdZak4g:2EiFMEG40PBm9_fkelqpo:borderTopLeftRadius:",
-        {
-          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
-          "styleSourceId": "ViiI6VUxI158ikWdZak4g",
-          "property": "borderTopLeftRadius",
-          "value": {
-            "type": "var",
-            "value": "rad1"
-          }
-        }
-      ],
-      [
-        "ViiI6VUxI158ikWdZak4g:2EiFMEG40PBm9_fkelqpo:borderTopRightRadius:",
-        {
-          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
-          "styleSourceId": "ViiI6VUxI158ikWdZak4g",
-          "property": "borderTopRightRadius",
-          "value": {
-            "type": "var",
-            "value": "rad1"
-          }
-        }
-      ],
-      [
-        "ViiI6VUxI158ikWdZak4g:2EiFMEG40PBm9_fkelqpo:borderBottomLeftRadius:",
-        {
-          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
-          "styleSourceId": "ViiI6VUxI158ikWdZak4g",
-          "property": "borderBottomLeftRadius",
-          "value": {
-            "type": "var",
-            "value": "rad1"
-          }
-        }
-      ],
-      [
-        "ViiI6VUxI158ikWdZak4g:2EiFMEG40PBm9_fkelqpo:borderBottomRightRadius:",
-        {
-          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
-          "styleSourceId": "ViiI6VUxI158ikWdZak4g",
-          "property": "borderBottomRightRadius",
-          "value": {
-            "type": "var",
-            "value": "rad1"
-          }
-        }
-      ],
-      [
-        "ViiI6VUxI158ikWdZak4g:2EiFMEG40PBm9_fkelqpo:height:",
-        {
-          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
-          "styleSourceId": "ViiI6VUxI158ikWdZak4g",
-          "property": "height",
-          "value": {
-            "type": "unit",
-            "unit": "px",
-            "value": 270
-          }
-        }
-      ],
-      [
-        "ViiI6VUxI158ikWdZak4g:2EiFMEG40PBm9_fkelqpo:width:",
-        {
-          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
-          "styleSourceId": "ViiI6VUxI158ikWdZak4g",
-          "property": "width",
-          "value": {
-            "type": "unit",
-            "unit": "px",
-            "value": 540
-          }
-        }
-      ],
-      [
         "2I3A-u1UaWNZGtnR6Qe_L:2EiFMEG40PBm9_fkelqpo:--icon-background-opacity:",
         {
           "breakpointId": "2EiFMEG40PBm9_fkelqpo",
@@ -5447,244 +5373,6 @@
         }
       ],
       [
-        "nToaZacc0FIZaj0M9vFow:2EiFMEG40PBm9_fkelqpo:height:",
-        {
-          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
-          "styleSourceId": "nToaZacc0FIZaj0M9vFow",
-          "property": "height",
-          "value": {
-            "type": "unit",
-            "unit": "px",
-            "value": 50
-          }
-        }
-      ],
-      [
-        "nToaZacc0FIZaj0M9vFow:2EiFMEG40PBm9_fkelqpo:display:",
-        {
-          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
-          "styleSourceId": "nToaZacc0FIZaj0M9vFow",
-          "property": "display",
-          "value": {
-            "type": "keyword",
-            "value": "flex"
-          }
-        }
-      ],
-      [
-        "nToaZacc0FIZaj0M9vFow:2EiFMEG40PBm9_fkelqpo:justifyContent:",
-        {
-          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
-          "styleSourceId": "nToaZacc0FIZaj0M9vFow",
-          "property": "justifyContent",
-          "value": {
-            "type": "keyword",
-            "value": "start"
-          }
-        }
-      ],
-      [
-        "lEIQEi9OLK-g6jbrSAPLc:2EiFMEG40PBm9_fkelqpo:backgroundColor:",
-        {
-          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
-          "styleSourceId": "lEIQEi9OLK-g6jbrSAPLc",
-          "property": "backgroundColor",
-          "value": {
-            "type": "rgb",
-            "r": 247,
-            "g": 247,
-            "b": 247,
-            "alpha": 1
-          }
-        }
-      ],
-      [
-        "nToaZacc0FIZaj0M9vFow:2EiFMEG40PBm9_fkelqpo:paddingLeft:",
-        {
-          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
-          "styleSourceId": "nToaZacc0FIZaj0M9vFow",
-          "property": "paddingLeft",
-          "value": {
-            "type": "unit",
-            "unit": "px",
-            "value": 18
-          }
-        }
-      ],
-      [
-        "lEIQEi9OLK-g6jbrSAPLc:2EiFMEG40PBm9_fkelqpo:width:",
-        {
-          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
-          "styleSourceId": "lEIQEi9OLK-g6jbrSAPLc",
-          "property": "width",
-          "value": {
-            "type": "unit",
-            "unit": "px",
-            "value": 14
-          }
-        }
-      ],
-      [
-        "lEIQEi9OLK-g6jbrSAPLc:2EiFMEG40PBm9_fkelqpo:height:",
-        {
-          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
-          "styleSourceId": "lEIQEi9OLK-g6jbrSAPLc",
-          "property": "height",
-          "value": {
-            "type": "unit",
-            "unit": "px",
-            "value": 14
-          }
-        }
-      ],
-      [
-        "nToaZacc0FIZaj0M9vFow:2EiFMEG40PBm9_fkelqpo:alignItems:",
-        {
-          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
-          "styleSourceId": "nToaZacc0FIZaj0M9vFow",
-          "property": "alignItems",
-          "value": {
-            "type": "keyword",
-            "value": "center"
-          }
-        }
-      ],
-      [
-        "lEIQEi9OLK-g6jbrSAPLc:2EiFMEG40PBm9_fkelqpo:borderTopLeftRadius:",
-        {
-          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
-          "styleSourceId": "lEIQEi9OLK-g6jbrSAPLc",
-          "property": "borderTopLeftRadius",
-          "value": {
-            "type": "unit",
-            "unit": "%",
-            "value": 100
-          }
-        }
-      ],
-      [
-        "lEIQEi9OLK-g6jbrSAPLc:2EiFMEG40PBm9_fkelqpo:borderTopRightRadius:",
-        {
-          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
-          "styleSourceId": "lEIQEi9OLK-g6jbrSAPLc",
-          "property": "borderTopRightRadius",
-          "value": {
-            "type": "unit",
-            "unit": "%",
-            "value": 100
-          }
-        }
-      ],
-      [
-        "lEIQEi9OLK-g6jbrSAPLc:2EiFMEG40PBm9_fkelqpo:borderBottomLeftRadius:",
-        {
-          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
-          "styleSourceId": "lEIQEi9OLK-g6jbrSAPLc",
-          "property": "borderBottomLeftRadius",
-          "value": {
-            "type": "unit",
-            "unit": "%",
-            "value": 100
-          }
-        }
-      ],
-      [
-        "lEIQEi9OLK-g6jbrSAPLc:2EiFMEG40PBm9_fkelqpo:borderBottomRightRadius:",
-        {
-          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
-          "styleSourceId": "lEIQEi9OLK-g6jbrSAPLc",
-          "property": "borderBottomRightRadius",
-          "value": {
-            "type": "unit",
-            "unit": "%",
-            "value": 100
-          }
-        }
-      ],
-      [
-        "nToaZacc0FIZaj0M9vFow:2EiFMEG40PBm9_fkelqpo:marginLeft:",
-        {
-          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
-          "styleSourceId": "nToaZacc0FIZaj0M9vFow",
-          "property": "marginLeft",
-          "value": {
-            "type": "unit",
-            "unit": "px",
-            "value": 6
-          }
-        }
-      ],
-      [
-        "nToaZacc0FIZaj0M9vFow:2EiFMEG40PBm9_fkelqpo:marginTop:",
-        {
-          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
-          "styleSourceId": "nToaZacc0FIZaj0M9vFow",
-          "property": "marginTop",
-          "value": {
-            "type": "unit",
-            "unit": "px",
-            "value": 6
-          }
-        }
-      ],
-      [
-        "nToaZacc0FIZaj0M9vFow:2EiFMEG40PBm9_fkelqpo:marginRight:",
-        {
-          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
-          "styleSourceId": "nToaZacc0FIZaj0M9vFow",
-          "property": "marginRight",
-          "value": {
-            "type": "unit",
-            "unit": "px",
-            "value": 6
-          }
-        }
-      ],
-      [
-        "nToaZacc0FIZaj0M9vFow:2EiFMEG40PBm9_fkelqpo:columnGap:",
-        {
-          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
-          "styleSourceId": "nToaZacc0FIZaj0M9vFow",
-          "property": "columnGap",
-          "value": {
-            "type": "unit",
-            "unit": "px",
-            "value": 16
-          }
-        }
-      ],
-      [
-        "nToaZacc0FIZaj0M9vFow:2EiFMEG40PBm9_fkelqpo:rowGap:",
-        {
-          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
-          "styleSourceId": "nToaZacc0FIZaj0M9vFow",
-          "property": "rowGap",
-          "value": {
-            "type": "unit",
-            "unit": "px",
-            "value": 16
-          }
-        }
-      ],
-      [
-        "X1zclmTO8Zq-pzVSFt1V0:2EiFMEG40PBm9_fkelqpo:fontFamily:",
-        {
-          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
-          "styleSourceId": "X1zclmTO8Zq-pzVSFt1V0",
-          "property": "fontFamily",
-          "value": {
-            "type": "fontFamily",
-            "value": [
-              "Tanker",
-              "Rubik",
-              "Arial",
-              "Roboto",
-              "sans-serif"
-            ]
-          }
-        }
-      ],
-      [
         "gmAa4Md89qiKZQMAWEUZ-:2EiFMEG40PBm9_fkelqpo:fontSize:",
         {
           "breakpointId": "2EiFMEG40PBm9_fkelqpo",
@@ -5706,44 +5394,6 @@
           "value": {
             "type": "var",
             "value": "background"
-          }
-        }
-      ],
-      [
-        "X1zclmTO8Zq-pzVSFt1V0:2EiFMEG40PBm9_fkelqpo:fontSize:",
-        {
-          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
-          "styleSourceId": "X1zclmTO8Zq-pzVSFt1V0",
-          "property": "fontSize",
-          "value": {
-            "type": "unit",
-            "unit": "em",
-            "value": 1.6
-          }
-        }
-      ],
-      [
-        "X1zclmTO8Zq-pzVSFt1V0:2EiFMEG40PBm9_fkelqpo:fontWeight:",
-        {
-          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
-          "styleSourceId": "X1zclmTO8Zq-pzVSFt1V0",
-          "property": "fontWeight",
-          "value": {
-            "type": "keyword",
-            "value": "400"
-          }
-        }
-      ],
-      [
-        "X1zclmTO8Zq-pzVSFt1V0:2EiFMEG40PBm9_fkelqpo:letterSpacing:",
-        {
-          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
-          "styleSourceId": "X1zclmTO8Zq-pzVSFt1V0",
-          "property": "letterSpacing",
-          "value": {
-            "type": "unit",
-            "value": 0.03,
-            "unit": "em"
           }
         }
       ],
@@ -5832,441 +5482,6 @@
             "g": 247,
             "b": 247,
             "alpha": 1
-          }
-        }
-      ],
-      [
-        "ViiI6VUxI158ikWdZak4g:2EiFMEG40PBm9_fkelqpo:transform:",
-        {
-          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
-          "styleSourceId": "ViiI6VUxI158ikWdZak4g",
-          "property": "transform",
-          "value": {
-            "type": "tuple",
-            "value": [
-              {
-                "type": "function",
-                "args": {
-                  "type": "layers",
-                  "value": [
-                    {
-                      "type": "unit",
-                      "unit": "deg",
-                      "value": 0
-                    }
-                  ]
-                },
-                "name": "rotateX"
-              },
-              {
-                "type": "function",
-                "args": {
-                  "type": "layers",
-                  "value": [
-                    {
-                      "type": "unit",
-                      "unit": "deg",
-                      "value": 0
-                    }
-                  ]
-                },
-                "name": "rotateY"
-              },
-              {
-                "type": "function",
-                "name": "rotateZ",
-                "args": {
-                  "type": "layers",
-                  "value": [
-                    {
-                      "type": "unit",
-                      "unit": "deg",
-                      "value": 0.7
-                    }
-                  ]
-                }
-              }
-            ]
-          }
-        }
-      ],
-      [
-        "ViiI6VUxI158ikWdZak4g:2EiFMEG40PBm9_fkelqpo:boxShadow:",
-        {
-          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
-          "styleSourceId": "ViiI6VUxI158ikWdZak4g",
-          "property": "boxShadow",
-          "value": {
-            "type": "layers",
-            "value": [
-              {
-                "type": "shadow",
-                "position": "inset",
-                "offsetX": {
-                  "type": "unit",
-                  "unit": "px",
-                  "value": -1
-                },
-                "offsetY": {
-                  "type": "unit",
-                  "unit": "px",
-                  "value": -2
-                },
-                "blur": {
-                  "type": "unit",
-                  "unit": "px",
-                  "value": 3
-                },
-                "spread": {
-                  "type": "unit",
-                  "unit": "px",
-                  "value": 0
-                },
-                "color": {
-                  "type": "rgb",
-                  "alpha": 0.15,
-                  "r": 0,
-                  "g": 0,
-                  "b": 0
-                }
-              },
-              {
-                "type": "shadow",
-                "position": "inset",
-                "offsetX": {
-                  "type": "unit",
-                  "unit": "px",
-                  "value": 1
-                },
-                "offsetY": {
-                  "type": "unit",
-                  "unit": "px",
-                  "value": 2
-                },
-                "blur": {
-                  "type": "unit",
-                  "unit": "px",
-                  "value": 3
-                },
-                "spread": {
-                  "type": "unit",
-                  "unit": "px",
-                  "value": 0
-                },
-                "color": {
-                  "type": "rgb",
-                  "alpha": 0.2,
-                  "r": 255,
-                  "g": 255,
-                  "b": 255
-                }
-              },
-              {
-                "type": "shadow",
-                "position": "outset",
-                "offsetX": {
-                  "type": "unit",
-                  "unit": "px",
-                  "value": 0
-                },
-                "offsetY": {
-                  "type": "unit",
-                  "unit": "px",
-                  "value": 5
-                },
-                "blur": {
-                  "type": "unit",
-                  "unit": "px",
-                  "value": 27
-                },
-                "spread": {
-                  "type": "unit",
-                  "unit": "px",
-                  "value": 0
-                },
-                "color": {
-                  "type": "rgb",
-                  "alpha": 0.17,
-                  "r": 0,
-                  "g": 0,
-                  "b": 0
-                }
-              }
-            ]
-          }
-        }
-      ],
-      [
-        "ViiI6VUxI158ikWdZak4g:2EiFMEG40PBm9_fkelqpo:scale::hover",
-        {
-          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
-          "styleSourceId": "ViiI6VUxI158ikWdZak4g",
-          "state": ":hover",
-          "property": "scale",
-          "value": {
-            "type": "tuple",
-            "value": [
-              {
-                "type": "unit",
-                "unit": "%",
-                "value": 104
-              },
-              {
-                "type": "unit",
-                "unit": "%",
-                "value": 104
-              },
-              {
-                "type": "unit",
-                "unit": "%",
-                "value": 100
-              }
-            ]
-          }
-        }
-      ],
-      [
-        "ViiI6VUxI158ikWdZak4g:2EiFMEG40PBm9_fkelqpo:transitionProperty:",
-        {
-          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
-          "styleSourceId": "ViiI6VUxI158ikWdZak4g",
-          "property": "transitionProperty",
-          "value": {
-            "type": "layers",
-            "value": [
-              {
-                "type": "unparsed",
-                "value": "all"
-              }
-            ]
-          }
-        }
-      ],
-      [
-        "ViiI6VUxI158ikWdZak4g:2EiFMEG40PBm9_fkelqpo:transitionDuration:",
-        {
-          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
-          "styleSourceId": "ViiI6VUxI158ikWdZak4g",
-          "property": "transitionDuration",
-          "value": {
-            "type": "layers",
-            "value": [
-              {
-                "type": "unit",
-                "unit": "ms",
-                "value": 350
-              }
-            ]
-          }
-        }
-      ],
-      [
-        "ViiI6VUxI158ikWdZak4g:2EiFMEG40PBm9_fkelqpo:transitionTimingFunction:",
-        {
-          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
-          "styleSourceId": "ViiI6VUxI158ikWdZak4g",
-          "property": "transitionTimingFunction",
-          "value": {
-            "type": "layers",
-            "value": [
-              {
-                "type": "keyword",
-                "value": "ease"
-              }
-            ]
-          }
-        }
-      ],
-      [
-        "ViiI6VUxI158ikWdZak4g:2EiFMEG40PBm9_fkelqpo:transitionDelay:",
-        {
-          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
-          "styleSourceId": "ViiI6VUxI158ikWdZak4g",
-          "property": "transitionDelay",
-          "value": {
-            "type": "layers",
-            "value": [
-              {
-                "type": "unit",
-                "unit": "ms",
-                "value": 0
-              }
-            ]
-          }
-        }
-      ],
-      [
-        "ViiI6VUxI158ikWdZak4g:2EiFMEG40PBm9_fkelqpo:transitionBehavior:",
-        {
-          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
-          "styleSourceId": "ViiI6VUxI158ikWdZak4g",
-          "property": "transitionBehavior",
-          "value": {
-            "type": "layers",
-            "value": [
-              {
-                "type": "keyword",
-                "value": "normal"
-              }
-            ]
-          }
-        }
-      ],
-      [
-        "ViiI6VUxI158ikWdZak4g:2EiFMEG40PBm9_fkelqpo:transform::hover",
-        {
-          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
-          "styleSourceId": "ViiI6VUxI158ikWdZak4g",
-          "state": ":hover",
-          "property": "transform",
-          "value": {
-            "type": "tuple",
-            "value": [
-              {
-                "type": "function",
-                "args": {
-                  "type": "layers",
-                  "value": [
-                    {
-                      "type": "unit",
-                      "unit": "deg",
-                      "value": 0
-                    }
-                  ]
-                },
-                "name": "rotateX"
-              },
-              {
-                "type": "function",
-                "args": {
-                  "type": "layers",
-                  "value": [
-                    {
-                      "type": "unit",
-                      "unit": "deg",
-                      "value": 0
-                    }
-                  ]
-                },
-                "name": "rotateY"
-              },
-              {
-                "type": "function",
-                "name": "rotateZ",
-                "args": {
-                  "type": "layers",
-                  "value": [
-                    {
-                      "type": "unit",
-                      "unit": "deg",
-                      "value": -0.5
-                    }
-                  ]
-                }
-              }
-            ]
-          }
-        }
-      ],
-      [
-        "X1zclmTO8Zq-pzVSFt1V0:2EiFMEG40PBm9_fkelqpo:userSelect:",
-        {
-          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
-          "styleSourceId": "X1zclmTO8Zq-pzVSFt1V0",
-          "property": "userSelect",
-          "value": {
-            "type": "keyword",
-            "value": "none"
-          },
-          "listed": true
-        }
-      ],
-      [
-        "ViiI6VUxI158ikWdZak4g:2EiFMEG40PBm9_fkelqpo:display:",
-        {
-          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
-          "styleSourceId": "ViiI6VUxI158ikWdZak4g",
-          "property": "display",
-          "value": {
-            "type": "keyword",
-            "value": "flex"
-          }
-        }
-      ],
-      [
-        "ViiI6VUxI158ikWdZak4g:2EiFMEG40PBm9_fkelqpo:flexDirection:",
-        {
-          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
-          "styleSourceId": "ViiI6VUxI158ikWdZak4g",
-          "property": "flexDirection",
-          "value": {
-            "type": "keyword",
-            "value": "column"
-          }
-        }
-      ],
-      [
-        "MKWv9jv2xIWbf4O1yZfsH:2EiFMEG40PBm9_fkelqpo:flexGrow:",
-        {
-          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
-          "styleSourceId": "MKWv9jv2xIWbf4O1yZfsH",
-          "property": "flexGrow",
-          "value": {
-            "type": "unit",
-            "value": 1,
-            "unit": "number"
-          }
-        }
-      ],
-      [
-        "MKWv9jv2xIWbf4O1yZfsH:2EiFMEG40PBm9_fkelqpo:flexShrink:",
-        {
-          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
-          "styleSourceId": "MKWv9jv2xIWbf4O1yZfsH",
-          "property": "flexShrink",
-          "value": {
-            "type": "unit",
-            "value": 0,
-            "unit": "number"
-          }
-        }
-      ],
-      [
-        "MKWv9jv2xIWbf4O1yZfsH:2EiFMEG40PBm9_fkelqpo:marginLeft:",
-        {
-          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
-          "styleSourceId": "MKWv9jv2xIWbf4O1yZfsH",
-          "property": "marginLeft",
-          "value": {
-            "type": "unit",
-            "unit": "px",
-            "value": 10
-          }
-        }
-      ],
-      [
-        "MKWv9jv2xIWbf4O1yZfsH:2EiFMEG40PBm9_fkelqpo:marginBottom:",
-        {
-          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
-          "styleSourceId": "MKWv9jv2xIWbf4O1yZfsH",
-          "property": "marginBottom",
-          "value": {
-            "type": "unit",
-            "unit": "px",
-            "value": 10
-          }
-        }
-      ],
-      [
-        "MKWv9jv2xIWbf4O1yZfsH:2EiFMEG40PBm9_fkelqpo:marginRight:",
-        {
-          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
-          "styleSourceId": "MKWv9jv2xIWbf4O1yZfsH",
-          "property": "marginRight",
-          "value": {
-            "type": "unit",
-            "unit": "px",
-            "value": 10
           }
         }
       ],
@@ -6411,19 +5626,6 @@
             "value": 20
           },
           "listed": true
-        }
-      ],
-      [
-        "ViiI6VUxI158ikWdZak4g:Uvcw_OJqyPoLioZzUbP1x:width:",
-        {
-          "breakpointId": "Uvcw_OJqyPoLioZzUbP1x",
-          "styleSourceId": "ViiI6VUxI158ikWdZak4g",
-          "property": "width",
-          "value": {
-            "type": "unit",
-            "unit": "px",
-            "value": 420
-          }
         }
       ],
       [
@@ -7125,45 +6327,6 @@
         }
       ],
       [
-        "ViiI6VUxI158ikWdZak4g:eCbcXJaLEKSKcnbAPzNF0:width:",
-        {
-          "breakpointId": "eCbcXJaLEKSKcnbAPzNF0",
-          "styleSourceId": "ViiI6VUxI158ikWdZak4g",
-          "property": "width",
-          "value": {
-            "type": "unit",
-            "unit": "px",
-            "value": 330
-          }
-        }
-      ],
-      [
-        "ViiI6VUxI158ikWdZak4g:eCbcXJaLEKSKcnbAPzNF0:height:",
-        {
-          "breakpointId": "eCbcXJaLEKSKcnbAPzNF0",
-          "styleSourceId": "ViiI6VUxI158ikWdZak4g",
-          "property": "height",
-          "value": {
-            "type": "unit",
-            "unit": "px",
-            "value": 219
-          }
-        }
-      ],
-      [
-        "ViiI6VUxI158ikWdZak4g:eCbcXJaLEKSKcnbAPzNF0:maxWidth:",
-        {
-          "breakpointId": "eCbcXJaLEKSKcnbAPzNF0",
-          "styleSourceId": "ViiI6VUxI158ikWdZak4g",
-          "property": "maxWidth",
-          "value": {
-            "type": "unit",
-            "unit": "vw",
-            "value": 90
-          }
-        }
-      ],
-      [
         "2I3A-u1UaWNZGtnR6Qe_L:2EiFMEG40PBm9_fkelqpo:transitionProperty:",
         {
           "breakpointId": "2EiFMEG40PBm9_fkelqpo",
@@ -7478,44 +6641,6 @@
         }
       ],
       [
-        "zHTWpsFIdrrD5z4kfX60O:2EiFMEG40PBm9_fkelqpo:marginLeft:",
-        {
-          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
-          "styleSourceId": "zHTWpsFIdrrD5z4kfX60O",
-          "property": "marginLeft",
-          "value": {
-            "type": "unit",
-            "unit": "px",
-            "value": 80
-          }
-        }
-      ],
-      [
-        "zHTWpsFIdrrD5z4kfX60O:2EiFMEG40PBm9_fkelqpo:marginRight:",
-        {
-          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
-          "styleSourceId": "zHTWpsFIdrrD5z4kfX60O",
-          "property": "marginRight",
-          "value": {
-            "type": "unit",
-            "unit": "px",
-            "value": 80
-          }
-        }
-      ],
-      [
-        "zHTWpsFIdrrD5z4kfX60O:2EiFMEG40PBm9_fkelqpo:textAlign:",
-        {
-          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
-          "styleSourceId": "zHTWpsFIdrrD5z4kfX60O",
-          "property": "textAlign",
-          "value": {
-            "type": "keyword",
-            "value": "center"
-          }
-        }
-      ],
-      [
         "qqWBMSw7ZyJGwxPR4186C:2EiFMEG40PBm9_fkelqpo:color:",
         {
           "breakpointId": "2EiFMEG40PBm9_fkelqpo",
@@ -7554,19 +6679,6 @@
         }
       ],
       [
-        "zHTWpsFIdrrD5z4kfX60O:2EiFMEG40PBm9_fkelqpo:maxWidth:",
-        {
-          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
-          "styleSourceId": "zHTWpsFIdrrD5z4kfX60O",
-          "property": "maxWidth",
-          "value": {
-            "type": "unit",
-            "unit": "px",
-            "value": 800
-          }
-        }
-      ],
-      [
         "qqWBMSw7ZyJGwxPR4186C:Uvcw_OJqyPoLioZzUbP1x:fontSize:",
         {
           "breakpointId": "Uvcw_OJqyPoLioZzUbP1x",
@@ -7576,32 +6688,6 @@
             "type": "unit",
             "unit": "px",
             "value": 18
-          }
-        }
-      ],
-      [
-        "zHTWpsFIdrrD5z4kfX60O:Uvcw_OJqyPoLioZzUbP1x:marginLeft:",
-        {
-          "breakpointId": "Uvcw_OJqyPoLioZzUbP1x",
-          "styleSourceId": "zHTWpsFIdrrD5z4kfX60O",
-          "property": "marginLeft",
-          "value": {
-            "type": "unit",
-            "unit": "px",
-            "value": 50
-          }
-        }
-      ],
-      [
-        "zHTWpsFIdrrD5z4kfX60O:Uvcw_OJqyPoLioZzUbP1x:marginRight:",
-        {
-          "breakpointId": "Uvcw_OJqyPoLioZzUbP1x",
-          "styleSourceId": "zHTWpsFIdrrD5z4kfX60O",
-          "property": "marginRight",
-          "value": {
-            "type": "unit",
-            "unit": "px",
-            "value": 50
           }
         }
       ],
@@ -8652,44 +7738,6 @@
             "type": "unit",
             "unit": "px",
             "value": 10
-          }
-        }
-      ],
-      [
-        "goLqVURtUBTEFCR-lNhbl:2EiFMEG40PBm9_fkelqpo:textAlign:",
-        {
-          "styleSourceId": "goLqVURtUBTEFCR-lNhbl",
-          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
-          "property": "textAlign",
-          "value": {
-            "type": "keyword",
-            "value": "center"
-          }
-        }
-      ],
-      [
-        "goLqVURtUBTEFCR-lNhbl:eCbcXJaLEKSKcnbAPzNF0:marginLeft:",
-        {
-          "styleSourceId": "goLqVURtUBTEFCR-lNhbl",
-          "breakpointId": "eCbcXJaLEKSKcnbAPzNF0",
-          "property": "marginLeft",
-          "value": {
-            "type": "unit",
-            "unit": "px",
-            "value": 20
-          }
-        }
-      ],
-      [
-        "goLqVURtUBTEFCR-lNhbl:eCbcXJaLEKSKcnbAPzNF0:marginRight:",
-        {
-          "styleSourceId": "goLqVURtUBTEFCR-lNhbl",
-          "breakpointId": "eCbcXJaLEKSKcnbAPzNF0",
-          "property": "marginRight",
-          "value": {
-            "type": "unit",
-            "unit": "px",
-            "value": 20
           }
         }
       ],
@@ -21989,19 +21037,6 @@
         }
       ],
       [
-        "bnAFX4v8BFgzVPDzaZ_4Y:2EiFMEG40PBm9_fkelqpo:userSelect:",
-        {
-          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
-          "styleSourceId": "bnAFX4v8BFgzVPDzaZ_4Y",
-          "property": "userSelect",
-          "value": {
-            "type": "keyword",
-            "value": "all"
-          },
-          "listed": true
-        }
-      ],
-      [
         "bnAFX4v8BFgzVPDzaZ_4Y:2EiFMEG40PBm9_fkelqpo:backdropFilter:",
         {
           "breakpointId": "2EiFMEG40PBm9_fkelqpo",
@@ -24114,43 +23149,6 @@
             "type": "unit",
             "unit": "px",
             "value": 20
-          }
-        }
-      ],
-      [
-        "sPNqouJ7R-SYkxG9iShAf:2EiFMEG40PBm9_fkelqpo:maxWidth:",
-        {
-          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
-          "styleSourceId": "sPNqouJ7R-SYkxG9iShAf",
-          "property": "maxWidth",
-          "value": {
-            "type": "unit",
-            "unit": "px",
-            "value": 680.65
-          }
-        }
-      ],
-      [
-        "sPNqouJ7R-SYkxG9iShAf:2EiFMEG40PBm9_fkelqpo:marginLeft:",
-        {
-          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
-          "styleSourceId": "sPNqouJ7R-SYkxG9iShAf",
-          "property": "marginLeft",
-          "value": {
-            "type": "keyword",
-            "value": "auto"
-          }
-        }
-      ],
-      [
-        "sPNqouJ7R-SYkxG9iShAf:2EiFMEG40PBm9_fkelqpo:marginRight:",
-        {
-          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
-          "styleSourceId": "sPNqouJ7R-SYkxG9iShAf",
-          "property": "marginRight",
-          "value": {
-            "type": "keyword",
-            "value": "auto"
           }
         }
       ],
@@ -60086,19 +59084,6 @@
         }
       ],
       [
-        "rh_5SNk--HtdVzJM_BrY3:2EiFMEG40PBm9_fkelqpo:userSelect:",
-        {
-          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
-          "styleSourceId": "rh_5SNk--HtdVzJM_BrY3",
-          "property": "userSelect",
-          "value": {
-            "type": "keyword",
-            "value": "all"
-          },
-          "listed": true
-        }
-      ],
-      [
         "9iVXr6KF099LseaNfx7B2:2EiFMEG40PBm9_fkelqpo:width:",
         {
           "breakpointId": "2EiFMEG40PBm9_fkelqpo",
@@ -63709,19 +62694,6 @@
         }
       ],
       [
-        "goLqVURtUBTEFCR-lNhbl:2EiFMEG40PBm9_fkelqpo:userSelect:",
-        {
-          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
-          "styleSourceId": "goLqVURtUBTEFCR-lNhbl",
-          "property": "userSelect",
-          "value": {
-            "type": "keyword",
-            "value": "none"
-          },
-          "listed": true
-        }
-      ],
-      [
         "u6XM1dU7SrBH8n3UqU6NT:2EiFMEG40PBm9_fkelqpo:userSelect:",
         {
           "breakpointId": "2EiFMEG40PBm9_fkelqpo",
@@ -65821,8 +64793,8 @@
           "property": "flexShrink",
           "value": {
             "type": "unit",
-            "value": 0,
-            "unit": "number"
+            "unit": "number",
+            "value": 1
           }
         }
       ],
@@ -67164,9 +66136,8 @@
           "styleSourceId": "qIXi3Me2N8wWw2PnD97H3",
           "property": "--width-no-map",
           "value": {
-            "type": "unit",
-            "unit": "px",
-            "value": 600
+            "type": "unparsed",
+            "value": "clamp(600px, 60vw, 900px)"
           },
           "listed": true
         }
@@ -67193,8 +66164,8 @@
           "property": "paddingBottom",
           "value": {
             "type": "unit",
-            "unit": "%",
-            "value": 10
+            "unit": "vh",
+            "value": 6
           }
         }
       ],
@@ -68145,6 +67116,1960 @@
             "value": 42.5
           }
         }
+      ],
+      [
+        "qIXi3Me2N8wWw2PnD97H3:xOnFYyuZv5VkMeeKDLyiu:--width-no-map:",
+        {
+          "breakpointId": "xOnFYyuZv5VkMeeKDLyiu",
+          "styleSourceId": "qIXi3Me2N8wWw2PnD97H3",
+          "property": "--width-no-map",
+          "value": {
+            "type": "unit",
+            "unit": "vw",
+            "value": 80
+          },
+          "listed": true
+        }
+      ],
+      [
+        "qIXi3Me2N8wWw2PnD97H3:2EiFMEG40PBm9_fkelqpo:overflowY:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "qIXi3Me2N8wWw2PnD97H3",
+          "property": "overflowY",
+          "value": {
+            "type": "keyword",
+            "value": "auto"
+          },
+          "listed": true
+        }
+      ],
+      [
+        "qIXi3Me2N8wWw2PnD97H3:2EiFMEG40PBm9_fkelqpo:maxHeight:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "qIXi3Me2N8wWw2PnD97H3",
+          "property": "maxHeight",
+          "value": {
+            "type": "unit",
+            "unit": "vh",
+            "value": 70
+          }
+        }
+      ],
+      [
+        "nkT8NvWpsMB56xtJBp4oB:2EiFMEG40PBm9_fkelqpo:textAlign:",
+        {
+          "styleSourceId": "nkT8NvWpsMB56xtJBp4oB",
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "property": "textAlign",
+          "value": {
+            "type": "keyword",
+            "value": "center"
+          }
+        }
+      ],
+      [
+        "nkT8NvWpsMB56xtJBp4oB:2EiFMEG40PBm9_fkelqpo:marginLeft:",
+        {
+          "styleSourceId": "nkT8NvWpsMB56xtJBp4oB",
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "property": "marginLeft",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 20
+          }
+        }
+      ],
+      [
+        "nkT8NvWpsMB56xtJBp4oB:2EiFMEG40PBm9_fkelqpo:marginRight:",
+        {
+          "styleSourceId": "nkT8NvWpsMB56xtJBp4oB",
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "property": "marginRight",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 20
+          }
+        }
+      ],
+      [
+        "nkT8NvWpsMB56xtJBp4oB:2EiFMEG40PBm9_fkelqpo:marginBottom:",
+        {
+          "styleSourceId": "nkT8NvWpsMB56xtJBp4oB",
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "property": "marginBottom",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 140
+          }
+        }
+      ],
+      [
+        "5O_rmLtuIs9Mcf1QO2wK9:2EiFMEG40PBm9_fkelqpo:width:",
+        {
+          "styleSourceId": "5O_rmLtuIs9Mcf1QO2wK9",
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "property": "width",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 21.5
+          }
+        }
+      ],
+      [
+        "5O_rmLtuIs9Mcf1QO2wK9:2EiFMEG40PBm9_fkelqpo:objectFit:",
+        {
+          "styleSourceId": "5O_rmLtuIs9Mcf1QO2wK9",
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "property": "objectFit",
+          "value": {
+            "type": "keyword",
+            "value": "contain"
+          }
+        }
+      ],
+      [
+        "v8ViKTVdIc4z96MpWwGOM:2EiFMEG40PBm9_fkelqpo:marginTop:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "v8ViKTVdIc4z96MpWwGOM",
+          "property": "marginTop",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 10
+          }
+        }
+      ],
+      [
+        "v8ViKTVdIc4z96MpWwGOM:2EiFMEG40PBm9_fkelqpo:width:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "v8ViKTVdIc4z96MpWwGOM",
+          "property": "width",
+          "value": {
+            "type": "keyword",
+            "value": "fit-content"
+          }
+        }
+      ],
+      [
+        "bOhoQ7z3tlXOAEJu3DaXb:2EiFMEG40PBm9_fkelqpo:display:",
+        {
+          "styleSourceId": "bOhoQ7z3tlXOAEJu3DaXb",
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "property": "display",
+          "value": {
+            "type": "keyword",
+            "value": "flex"
+          }
+        }
+      ],
+      [
+        "bOhoQ7z3tlXOAEJu3DaXb:2EiFMEG40PBm9_fkelqpo:flexDirection:",
+        {
+          "styleSourceId": "bOhoQ7z3tlXOAEJu3DaXb",
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "property": "flexDirection",
+          "value": {
+            "type": "keyword",
+            "value": "column"
+          }
+        }
+      ],
+      [
+        "bOhoQ7z3tlXOAEJu3DaXb:2EiFMEG40PBm9_fkelqpo:paddingTop:",
+        {
+          "styleSourceId": "bOhoQ7z3tlXOAEJu3DaXb",
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "property": "paddingTop",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 25
+          }
+        }
+      ],
+      [
+        "bOhoQ7z3tlXOAEJu3DaXb:2EiFMEG40PBm9_fkelqpo:paddingBottom:",
+        {
+          "styleSourceId": "bOhoQ7z3tlXOAEJu3DaXb",
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "property": "paddingBottom",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 20
+          }
+        }
+      ],
+      [
+        "bOhoQ7z3tlXOAEJu3DaXb:2EiFMEG40PBm9_fkelqpo:columnGap:",
+        {
+          "styleSourceId": "bOhoQ7z3tlXOAEJu3DaXb",
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "property": "columnGap",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 20
+          }
+        }
+      ],
+      [
+        "bOhoQ7z3tlXOAEJu3DaXb:2EiFMEG40PBm9_fkelqpo:rowGap:",
+        {
+          "styleSourceId": "bOhoQ7z3tlXOAEJu3DaXb",
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "property": "rowGap",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 20
+          }
+        }
+      ],
+      [
+        "bOhoQ7z3tlXOAEJu3DaXb:2EiFMEG40PBm9_fkelqpo:alignItems:",
+        {
+          "styleSourceId": "bOhoQ7z3tlXOAEJu3DaXb",
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "property": "alignItems",
+          "value": {
+            "type": "keyword",
+            "value": "center"
+          }
+        }
+      ],
+      [
+        "dzfkYMPDgMwxRDEI7je0T:2EiFMEG40PBm9_fkelqpo:width:",
+        {
+          "styleSourceId": "dzfkYMPDgMwxRDEI7je0T",
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "property": "width",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 21.5
+          }
+        }
+      ],
+      [
+        "h0zcPQIr8ZiWVRJnRbDS2:2EiFMEG40PBm9_fkelqpo:marginLeft:",
+        {
+          "styleSourceId": "h0zcPQIr8ZiWVRJnRbDS2",
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "property": "marginLeft",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 80
+          }
+        }
+      ],
+      [
+        "h0zcPQIr8ZiWVRJnRbDS2:2EiFMEG40PBm9_fkelqpo:marginRight:",
+        {
+          "styleSourceId": "h0zcPQIr8ZiWVRJnRbDS2",
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "property": "marginRight",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 80
+          }
+        }
+      ],
+      [
+        "h0zcPQIr8ZiWVRJnRbDS2:2EiFMEG40PBm9_fkelqpo:textAlign:",
+        {
+          "styleSourceId": "h0zcPQIr8ZiWVRJnRbDS2",
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "property": "textAlign",
+          "value": {
+            "type": "keyword",
+            "value": "center"
+          }
+        }
+      ],
+      [
+        "h0zcPQIr8ZiWVRJnRbDS2:2EiFMEG40PBm9_fkelqpo:maxWidth:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "h0zcPQIr8ZiWVRJnRbDS2",
+          "property": "maxWidth",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 850
+          }
+        }
+      ],
+      [
+        "h0zcPQIr8ZiWVRJnRbDS2:Uvcw_OJqyPoLioZzUbP1x:marginLeft:",
+        {
+          "breakpointId": "Uvcw_OJqyPoLioZzUbP1x",
+          "styleSourceId": "h0zcPQIr8ZiWVRJnRbDS2",
+          "property": "marginLeft",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 30
+          }
+        }
+      ],
+      [
+        "h0zcPQIr8ZiWVRJnRbDS2:Uvcw_OJqyPoLioZzUbP1x:marginRight:",
+        {
+          "breakpointId": "Uvcw_OJqyPoLioZzUbP1x",
+          "styleSourceId": "h0zcPQIr8ZiWVRJnRbDS2",
+          "property": "marginRight",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 30
+          }
+        }
+      ],
+      [
+        "dzfkYMPDgMwxRDEI7je0T:2EiFMEG40PBm9_fkelqpo:objectFit:",
+        {
+          "styleSourceId": "dzfkYMPDgMwxRDEI7je0T",
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "property": "objectFit",
+          "value": {
+            "type": "keyword",
+            "value": "contain"
+          }
+        }
+      ],
+      [
+        "Gxglc2RE_KA0XIkBHd6bm:2EiFMEG40PBm9_fkelqpo:marginTop:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "Gxglc2RE_KA0XIkBHd6bm",
+          "property": "marginTop",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 10
+          }
+        }
+      ],
+      [
+        "N_ebqholzD7ng3abzYVqf:2EiFMEG40PBm9_fkelqpo:color:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "N_ebqholzD7ng3abzYVqf",
+          "property": "color",
+          "value": {
+            "type": "var",
+            "value": "front-3"
+          }
+        }
+      ],
+      [
+        "4bzm41vFhKKj4s42ytFLn:2EiFMEG40PBm9_fkelqpo:color:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "4bzm41vFhKKj4s42ytFLn",
+          "property": "color",
+          "value": {
+            "type": "var",
+            "value": "front-3"
+          }
+        }
+      ],
+      [
+        "H2tTBTJVufoHO5_i9uzDM:2EiFMEG40PBm9_fkelqpo:marginLeft:",
+        {
+          "styleSourceId": "H2tTBTJVufoHO5_i9uzDM",
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "property": "marginLeft",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 80
+          }
+        }
+      ],
+      [
+        "H2tTBTJVufoHO5_i9uzDM:2EiFMEG40PBm9_fkelqpo:marginRight:",
+        {
+          "styleSourceId": "H2tTBTJVufoHO5_i9uzDM",
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "property": "marginRight",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 80
+          }
+        }
+      ],
+      [
+        "H2tTBTJVufoHO5_i9uzDM:2EiFMEG40PBm9_fkelqpo:textAlign:",
+        {
+          "styleSourceId": "H2tTBTJVufoHO5_i9uzDM",
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "property": "textAlign",
+          "value": {
+            "type": "keyword",
+            "value": "center"
+          }
+        }
+      ],
+      [
+        "H2tTBTJVufoHO5_i9uzDM:2EiFMEG40PBm9_fkelqpo:maxWidth:",
+        {
+          "styleSourceId": "H2tTBTJVufoHO5_i9uzDM",
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "property": "maxWidth",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 850
+          }
+        }
+      ],
+      [
+        "H2tTBTJVufoHO5_i9uzDM:Uvcw_OJqyPoLioZzUbP1x:marginLeft:",
+        {
+          "breakpointId": "Uvcw_OJqyPoLioZzUbP1x",
+          "styleSourceId": "H2tTBTJVufoHO5_i9uzDM",
+          "property": "marginLeft",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 30
+          }
+        }
+      ],
+      [
+        "H2tTBTJVufoHO5_i9uzDM:Uvcw_OJqyPoLioZzUbP1x:marginRight:",
+        {
+          "breakpointId": "Uvcw_OJqyPoLioZzUbP1x",
+          "styleSourceId": "H2tTBTJVufoHO5_i9uzDM",
+          "property": "marginRight",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 30
+          }
+        }
+      ],
+      [
+        "3Sh7AQ_zEcLlQALLnBAhK:2EiFMEG40PBm9_fkelqpo:color:",
+        {
+          "styleSourceId": "3Sh7AQ_zEcLlQALLnBAhK",
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "property": "color",
+          "value": {
+            "type": "var",
+            "value": "front-3"
+          }
+        }
+      ],
+      [
+        "AadZyPve7ea97pBwIJmU_:2EiFMEG40PBm9_fkelqpo:color:",
+        {
+          "styleSourceId": "AadZyPve7ea97pBwIJmU_",
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "property": "color",
+          "value": {
+            "type": "var",
+            "value": "front-3"
+          }
+        }
+      ],
+      [
+        "TRQyXMf8W3GUq5Dyho_lI:2EiFMEG40PBm9_fkelqpo:display:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "TRQyXMf8W3GUq5Dyho_lI",
+          "property": "display",
+          "value": {
+            "type": "keyword",
+            "value": "flex"
+          }
+        }
+      ],
+      [
+        "TRQyXMf8W3GUq5Dyho_lI:2EiFMEG40PBm9_fkelqpo:flexDirection:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "TRQyXMf8W3GUq5Dyho_lI",
+          "property": "flexDirection",
+          "value": {
+            "type": "keyword",
+            "value": "column"
+          }
+        }
+      ],
+      [
+        "TRQyXMf8W3GUq5Dyho_lI:2EiFMEG40PBm9_fkelqpo:alignItems:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "TRQyXMf8W3GUq5Dyho_lI",
+          "property": "alignItems",
+          "value": {
+            "type": "keyword",
+            "value": "center"
+          }
+        }
+      ],
+      [
+        "TRQyXMf8W3GUq5Dyho_lI:2EiFMEG40PBm9_fkelqpo:justifyContent:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "TRQyXMf8W3GUq5Dyho_lI",
+          "property": "justifyContent",
+          "value": {
+            "type": "keyword",
+            "value": "start"
+          }
+        }
+      ],
+      [
+        "TRQyXMf8W3GUq5Dyho_lI:2EiFMEG40PBm9_fkelqpo:columnGap:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "TRQyXMf8W3GUq5Dyho_lI",
+          "property": "columnGap",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 20
+          }
+        }
+      ],
+      [
+        "TRQyXMf8W3GUq5Dyho_lI:2EiFMEG40PBm9_fkelqpo:rowGap:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "TRQyXMf8W3GUq5Dyho_lI",
+          "property": "rowGap",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 20
+          }
+        }
+      ],
+      [
+        "h0zcPQIr8ZiWVRJnRbDS2:eCbcXJaLEKSKcnbAPzNF0:marginLeft:",
+        {
+          "breakpointId": "eCbcXJaLEKSKcnbAPzNF0",
+          "styleSourceId": "h0zcPQIr8ZiWVRJnRbDS2",
+          "property": "marginLeft",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 10
+          }
+        }
+      ],
+      [
+        "h0zcPQIr8ZiWVRJnRbDS2:eCbcXJaLEKSKcnbAPzNF0:marginRight:",
+        {
+          "breakpointId": "eCbcXJaLEKSKcnbAPzNF0",
+          "styleSourceId": "h0zcPQIr8ZiWVRJnRbDS2",
+          "property": "marginRight",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 10
+          }
+        }
+      ],
+      [
+        "H2tTBTJVufoHO5_i9uzDM:eCbcXJaLEKSKcnbAPzNF0:marginLeft:",
+        {
+          "breakpointId": "eCbcXJaLEKSKcnbAPzNF0",
+          "styleSourceId": "H2tTBTJVufoHO5_i9uzDM",
+          "property": "marginLeft",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 10
+          }
+        }
+      ],
+      [
+        "H2tTBTJVufoHO5_i9uzDM:eCbcXJaLEKSKcnbAPzNF0:marginRight:",
+        {
+          "breakpointId": "eCbcXJaLEKSKcnbAPzNF0",
+          "styleSourceId": "H2tTBTJVufoHO5_i9uzDM",
+          "property": "marginRight",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 10
+          }
+        }
+      ],
+      [
+        "cgoV5zmm7n8sNCukQovHB:2EiFMEG40PBm9_fkelqpo:display:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "cgoV5zmm7n8sNCukQovHB",
+          "property": "display",
+          "value": {
+            "type": "keyword",
+            "value": "block"
+          }
+        }
+      ],
+      [
+        "cgoV5zmm7n8sNCukQovHB:2EiFMEG40PBm9_fkelqpo:textAlign:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "cgoV5zmm7n8sNCukQovHB",
+          "property": "textAlign",
+          "value": {
+            "type": "keyword",
+            "value": "center"
+          }
+        }
+      ],
+      [
+        "cgoV5zmm7n8sNCukQovHB:2EiFMEG40PBm9_fkelqpo:marginTop:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "cgoV5zmm7n8sNCukQovHB",
+          "property": "marginTop",
+          "value": {
+            "type": "unit",
+            "unit": "em",
+            "value": 1.5
+          }
+        }
+      ],
+      [
+        "zHTWpsFIdrrD5z4kfX60O:2EiFMEG40PBm9_fkelqpo:marginLeft:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "zHTWpsFIdrrD5z4kfX60O",
+          "property": "marginLeft",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 80
+          }
+        }
+      ],
+      [
+        "zHTWpsFIdrrD5z4kfX60O:2EiFMEG40PBm9_fkelqpo:marginRight:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "zHTWpsFIdrrD5z4kfX60O",
+          "property": "marginRight",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 80
+          }
+        }
+      ],
+      [
+        "zHTWpsFIdrrD5z4kfX60O:2EiFMEG40PBm9_fkelqpo:textAlign:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "zHTWpsFIdrrD5z4kfX60O",
+          "property": "textAlign",
+          "value": {
+            "type": "keyword",
+            "value": "center"
+          }
+        }
+      ],
+      [
+        "zHTWpsFIdrrD5z4kfX60O:2EiFMEG40PBm9_fkelqpo:maxWidth:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "zHTWpsFIdrrD5z4kfX60O",
+          "property": "maxWidth",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 800
+          }
+        }
+      ],
+      [
+        "zHTWpsFIdrrD5z4kfX60O:Uvcw_OJqyPoLioZzUbP1x:marginLeft:",
+        {
+          "breakpointId": "Uvcw_OJqyPoLioZzUbP1x",
+          "styleSourceId": "zHTWpsFIdrrD5z4kfX60O",
+          "property": "marginLeft",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 50
+          }
+        }
+      ],
+      [
+        "zHTWpsFIdrrD5z4kfX60O:Uvcw_OJqyPoLioZzUbP1x:marginRight:",
+        {
+          "breakpointId": "Uvcw_OJqyPoLioZzUbP1x",
+          "styleSourceId": "zHTWpsFIdrrD5z4kfX60O",
+          "property": "marginRight",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 50
+          }
+        }
+      ],
+      [
+        "goLqVURtUBTEFCR-lNhbl:2EiFMEG40PBm9_fkelqpo:textAlign:",
+        {
+          "styleSourceId": "goLqVURtUBTEFCR-lNhbl",
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "property": "textAlign",
+          "value": {
+            "type": "keyword",
+            "value": "center"
+          }
+        }
+      ],
+      [
+        "goLqVURtUBTEFCR-lNhbl:eCbcXJaLEKSKcnbAPzNF0:marginLeft:",
+        {
+          "styleSourceId": "goLqVURtUBTEFCR-lNhbl",
+          "breakpointId": "eCbcXJaLEKSKcnbAPzNF0",
+          "property": "marginLeft",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 20
+          }
+        }
+      ],
+      [
+        "goLqVURtUBTEFCR-lNhbl:eCbcXJaLEKSKcnbAPzNF0:marginRight:",
+        {
+          "styleSourceId": "goLqVURtUBTEFCR-lNhbl",
+          "breakpointId": "eCbcXJaLEKSKcnbAPzNF0",
+          "property": "marginRight",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 20
+          }
+        }
+      ],
+      [
+        "goLqVURtUBTEFCR-lNhbl:2EiFMEG40PBm9_fkelqpo:userSelect:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "goLqVURtUBTEFCR-lNhbl",
+          "property": "userSelect",
+          "value": {
+            "type": "keyword",
+            "value": "none"
+          },
+          "listed": true
+        }
+      ],
+      [
+        "7vx9Ga3AJX25ZBMNAIDfT:2EiFMEG40PBm9_fkelqpo:borderTopLeftRadius:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "7vx9Ga3AJX25ZBMNAIDfT",
+          "property": "borderTopLeftRadius",
+          "value": {
+            "type": "var",
+            "value": "rad1"
+          }
+        }
+      ],
+      [
+        "7vx9Ga3AJX25ZBMNAIDfT:2EiFMEG40PBm9_fkelqpo:borderTopRightRadius:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "7vx9Ga3AJX25ZBMNAIDfT",
+          "property": "borderTopRightRadius",
+          "value": {
+            "type": "var",
+            "value": "rad1"
+          }
+        }
+      ],
+      [
+        "7vx9Ga3AJX25ZBMNAIDfT:2EiFMEG40PBm9_fkelqpo:borderBottomLeftRadius:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "7vx9Ga3AJX25ZBMNAIDfT",
+          "property": "borderBottomLeftRadius",
+          "value": {
+            "type": "var",
+            "value": "rad1"
+          }
+        }
+      ],
+      [
+        "7vx9Ga3AJX25ZBMNAIDfT:2EiFMEG40PBm9_fkelqpo:borderBottomRightRadius:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "7vx9Ga3AJX25ZBMNAIDfT",
+          "property": "borderBottomRightRadius",
+          "value": {
+            "type": "var",
+            "value": "rad1"
+          }
+        }
+      ],
+      [
+        "7vx9Ga3AJX25ZBMNAIDfT:2EiFMEG40PBm9_fkelqpo:height:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "7vx9Ga3AJX25ZBMNAIDfT",
+          "property": "height",
+          "value": {
+            "type": "keyword",
+            "value": "fit-content"
+          }
+        }
+      ],
+      [
+        "7vx9Ga3AJX25ZBMNAIDfT:2EiFMEG40PBm9_fkelqpo:width:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "7vx9Ga3AJX25ZBMNAIDfT",
+          "property": "width",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 540
+          }
+        }
+      ],
+      [
+        "ydyxxT3v6t91D8q6cXfGu:2EiFMEG40PBm9_fkelqpo:height:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "ydyxxT3v6t91D8q6cXfGu",
+          "property": "height",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 50
+          }
+        }
+      ],
+      [
+        "ydyxxT3v6t91D8q6cXfGu:2EiFMEG40PBm9_fkelqpo:display:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "ydyxxT3v6t91D8q6cXfGu",
+          "property": "display",
+          "value": {
+            "type": "keyword",
+            "value": "flex"
+          }
+        }
+      ],
+      [
+        "ydyxxT3v6t91D8q6cXfGu:2EiFMEG40PBm9_fkelqpo:justifyContent:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "ydyxxT3v6t91D8q6cXfGu",
+          "property": "justifyContent",
+          "value": {
+            "type": "keyword",
+            "value": "start"
+          }
+        }
+      ],
+      [
+        "MXSpPwc5Vpc3N2hBpJN_R:2EiFMEG40PBm9_fkelqpo:backgroundColor:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "MXSpPwc5Vpc3N2hBpJN_R",
+          "property": "backgroundColor",
+          "value": {
+            "type": "rgb",
+            "r": 247,
+            "g": 247,
+            "b": 247,
+            "alpha": 1
+          }
+        }
+      ],
+      [
+        "ydyxxT3v6t91D8q6cXfGu:2EiFMEG40PBm9_fkelqpo:paddingLeft:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "ydyxxT3v6t91D8q6cXfGu",
+          "property": "paddingLeft",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 18
+          }
+        }
+      ],
+      [
+        "MXSpPwc5Vpc3N2hBpJN_R:2EiFMEG40PBm9_fkelqpo:width:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "MXSpPwc5Vpc3N2hBpJN_R",
+          "property": "width",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 14
+          }
+        }
+      ],
+      [
+        "MXSpPwc5Vpc3N2hBpJN_R:2EiFMEG40PBm9_fkelqpo:height:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "MXSpPwc5Vpc3N2hBpJN_R",
+          "property": "height",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 14
+          }
+        }
+      ],
+      [
+        "ydyxxT3v6t91D8q6cXfGu:2EiFMEG40PBm9_fkelqpo:alignItems:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "ydyxxT3v6t91D8q6cXfGu",
+          "property": "alignItems",
+          "value": {
+            "type": "keyword",
+            "value": "center"
+          }
+        }
+      ],
+      [
+        "MXSpPwc5Vpc3N2hBpJN_R:2EiFMEG40PBm9_fkelqpo:borderTopLeftRadius:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "MXSpPwc5Vpc3N2hBpJN_R",
+          "property": "borderTopLeftRadius",
+          "value": {
+            "type": "unit",
+            "unit": "%",
+            "value": 100
+          }
+        }
+      ],
+      [
+        "MXSpPwc5Vpc3N2hBpJN_R:2EiFMEG40PBm9_fkelqpo:borderTopRightRadius:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "MXSpPwc5Vpc3N2hBpJN_R",
+          "property": "borderTopRightRadius",
+          "value": {
+            "type": "unit",
+            "unit": "%",
+            "value": 100
+          }
+        }
+      ],
+      [
+        "MXSpPwc5Vpc3N2hBpJN_R:2EiFMEG40PBm9_fkelqpo:borderBottomLeftRadius:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "MXSpPwc5Vpc3N2hBpJN_R",
+          "property": "borderBottomLeftRadius",
+          "value": {
+            "type": "unit",
+            "unit": "%",
+            "value": 100
+          }
+        }
+      ],
+      [
+        "MXSpPwc5Vpc3N2hBpJN_R:2EiFMEG40PBm9_fkelqpo:borderBottomRightRadius:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "MXSpPwc5Vpc3N2hBpJN_R",
+          "property": "borderBottomRightRadius",
+          "value": {
+            "type": "unit",
+            "unit": "%",
+            "value": 100
+          }
+        }
+      ],
+      [
+        "ydyxxT3v6t91D8q6cXfGu:2EiFMEG40PBm9_fkelqpo:marginLeft:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "ydyxxT3v6t91D8q6cXfGu",
+          "property": "marginLeft",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 6
+          }
+        }
+      ],
+      [
+        "ydyxxT3v6t91D8q6cXfGu:2EiFMEG40PBm9_fkelqpo:marginTop:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "ydyxxT3v6t91D8q6cXfGu",
+          "property": "marginTop",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 6
+          }
+        }
+      ],
+      [
+        "ydyxxT3v6t91D8q6cXfGu:2EiFMEG40PBm9_fkelqpo:marginRight:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "ydyxxT3v6t91D8q6cXfGu",
+          "property": "marginRight",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 6
+          }
+        }
+      ],
+      [
+        "ydyxxT3v6t91D8q6cXfGu:2EiFMEG40PBm9_fkelqpo:columnGap:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "ydyxxT3v6t91D8q6cXfGu",
+          "property": "columnGap",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 16
+          }
+        }
+      ],
+      [
+        "ydyxxT3v6t91D8q6cXfGu:2EiFMEG40PBm9_fkelqpo:rowGap:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "ydyxxT3v6t91D8q6cXfGu",
+          "property": "rowGap",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 16
+          }
+        }
+      ],
+      [
+        "tSjxTe5wEBC7mr3N63J-y:2EiFMEG40PBm9_fkelqpo:fontFamily:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "tSjxTe5wEBC7mr3N63J-y",
+          "property": "fontFamily",
+          "value": {
+            "type": "fontFamily",
+            "value": [
+              "Tanker",
+              "Rubik",
+              "Arial",
+              "Roboto",
+              "sans-serif"
+            ]
+          }
+        }
+      ],
+      [
+        "tSjxTe5wEBC7mr3N63J-y:2EiFMEG40PBm9_fkelqpo:fontSize:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "tSjxTe5wEBC7mr3N63J-y",
+          "property": "fontSize",
+          "value": {
+            "type": "unit",
+            "unit": "em",
+            "value": 1.6
+          }
+        }
+      ],
+      [
+        "tSjxTe5wEBC7mr3N63J-y:2EiFMEG40PBm9_fkelqpo:fontWeight:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "tSjxTe5wEBC7mr3N63J-y",
+          "property": "fontWeight",
+          "value": {
+            "type": "keyword",
+            "value": "400"
+          }
+        }
+      ],
+      [
+        "tSjxTe5wEBC7mr3N63J-y:2EiFMEG40PBm9_fkelqpo:letterSpacing:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "tSjxTe5wEBC7mr3N63J-y",
+          "property": "letterSpacing",
+          "value": {
+            "type": "unit",
+            "value": 0.03,
+            "unit": "em"
+          }
+        }
+      ],
+      [
+        "7vx9Ga3AJX25ZBMNAIDfT:2EiFMEG40PBm9_fkelqpo:transform:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "7vx9Ga3AJX25ZBMNAIDfT",
+          "property": "transform",
+          "value": {
+            "type": "tuple",
+            "value": [
+              {
+                "type": "function",
+                "args": {
+                  "type": "layers",
+                  "value": [
+                    {
+                      "type": "unit",
+                      "unit": "deg",
+                      "value": 0
+                    }
+                  ]
+                },
+                "name": "rotateX"
+              },
+              {
+                "type": "function",
+                "args": {
+                  "type": "layers",
+                  "value": [
+                    {
+                      "type": "unit",
+                      "unit": "deg",
+                      "value": 0
+                    }
+                  ]
+                },
+                "name": "rotateY"
+              },
+              {
+                "type": "function",
+                "name": "rotateZ",
+                "args": {
+                  "type": "layers",
+                  "value": [
+                    {
+                      "type": "unit",
+                      "unit": "deg",
+                      "value": 0.7
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      ],
+      [
+        "7vx9Ga3AJX25ZBMNAIDfT:2EiFMEG40PBm9_fkelqpo:boxShadow:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "7vx9Ga3AJX25ZBMNAIDfT",
+          "property": "boxShadow",
+          "value": {
+            "type": "layers",
+            "value": [
+              {
+                "type": "shadow",
+                "position": "inset",
+                "offsetX": {
+                  "type": "unit",
+                  "unit": "px",
+                  "value": -1
+                },
+                "offsetY": {
+                  "type": "unit",
+                  "unit": "px",
+                  "value": -2
+                },
+                "blur": {
+                  "type": "unit",
+                  "unit": "px",
+                  "value": 3
+                },
+                "spread": {
+                  "type": "unit",
+                  "unit": "px",
+                  "value": 0
+                },
+                "color": {
+                  "type": "rgb",
+                  "alpha": 0.15,
+                  "r": 0,
+                  "g": 0,
+                  "b": 0
+                }
+              },
+              {
+                "type": "shadow",
+                "position": "inset",
+                "offsetX": {
+                  "type": "unit",
+                  "unit": "px",
+                  "value": 1
+                },
+                "offsetY": {
+                  "type": "unit",
+                  "unit": "px",
+                  "value": 2
+                },
+                "blur": {
+                  "type": "unit",
+                  "unit": "px",
+                  "value": 3
+                },
+                "spread": {
+                  "type": "unit",
+                  "unit": "px",
+                  "value": 0
+                },
+                "color": {
+                  "type": "rgb",
+                  "alpha": 0.2,
+                  "r": 255,
+                  "g": 255,
+                  "b": 255
+                }
+              },
+              {
+                "type": "shadow",
+                "position": "outset",
+                "offsetX": {
+                  "type": "unit",
+                  "unit": "px",
+                  "value": 0
+                },
+                "offsetY": {
+                  "type": "unit",
+                  "unit": "px",
+                  "value": 5
+                },
+                "blur": {
+                  "type": "unit",
+                  "unit": "px",
+                  "value": 27
+                },
+                "spread": {
+                  "type": "unit",
+                  "unit": "px",
+                  "value": 0
+                },
+                "color": {
+                  "type": "rgb",
+                  "alpha": 0.17,
+                  "r": 0,
+                  "g": 0,
+                  "b": 0
+                }
+              }
+            ]
+          }
+        }
+      ],
+      [
+        "7vx9Ga3AJX25ZBMNAIDfT:2EiFMEG40PBm9_fkelqpo:scale::hover",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "7vx9Ga3AJX25ZBMNAIDfT",
+          "state": ":hover",
+          "property": "scale",
+          "value": {
+            "type": "tuple",
+            "value": [
+              {
+                "type": "unit",
+                "unit": "%",
+                "value": 104
+              },
+              {
+                "type": "unit",
+                "unit": "%",
+                "value": 104
+              },
+              {
+                "type": "unit",
+                "unit": "%",
+                "value": 100
+              }
+            ]
+          }
+        }
+      ],
+      [
+        "7vx9Ga3AJX25ZBMNAIDfT:2EiFMEG40PBm9_fkelqpo:transitionProperty:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "7vx9Ga3AJX25ZBMNAIDfT",
+          "property": "transitionProperty",
+          "value": {
+            "type": "layers",
+            "value": [
+              {
+                "type": "unparsed",
+                "value": "all"
+              }
+            ]
+          }
+        }
+      ],
+      [
+        "7vx9Ga3AJX25ZBMNAIDfT:2EiFMEG40PBm9_fkelqpo:transitionDuration:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "7vx9Ga3AJX25ZBMNAIDfT",
+          "property": "transitionDuration",
+          "value": {
+            "type": "layers",
+            "value": [
+              {
+                "type": "unit",
+                "unit": "ms",
+                "value": 350
+              }
+            ]
+          }
+        }
+      ],
+      [
+        "7vx9Ga3AJX25ZBMNAIDfT:2EiFMEG40PBm9_fkelqpo:transitionTimingFunction:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "7vx9Ga3AJX25ZBMNAIDfT",
+          "property": "transitionTimingFunction",
+          "value": {
+            "type": "layers",
+            "value": [
+              {
+                "type": "keyword",
+                "value": "ease"
+              }
+            ]
+          }
+        }
+      ],
+      [
+        "7vx9Ga3AJX25ZBMNAIDfT:2EiFMEG40PBm9_fkelqpo:transitionDelay:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "7vx9Ga3AJX25ZBMNAIDfT",
+          "property": "transitionDelay",
+          "value": {
+            "type": "layers",
+            "value": [
+              {
+                "type": "unit",
+                "unit": "ms",
+                "value": 0
+              }
+            ]
+          }
+        }
+      ],
+      [
+        "7vx9Ga3AJX25ZBMNAIDfT:2EiFMEG40PBm9_fkelqpo:transitionBehavior:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "7vx9Ga3AJX25ZBMNAIDfT",
+          "property": "transitionBehavior",
+          "value": {
+            "type": "layers",
+            "value": [
+              {
+                "type": "keyword",
+                "value": "normal"
+              }
+            ]
+          }
+        }
+      ],
+      [
+        "7vx9Ga3AJX25ZBMNAIDfT:2EiFMEG40PBm9_fkelqpo:transform::hover",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "7vx9Ga3AJX25ZBMNAIDfT",
+          "state": ":hover",
+          "property": "transform",
+          "value": {
+            "type": "tuple",
+            "value": [
+              {
+                "type": "function",
+                "args": {
+                  "type": "layers",
+                  "value": [
+                    {
+                      "type": "unit",
+                      "unit": "deg",
+                      "value": 0
+                    }
+                  ]
+                },
+                "name": "rotateX"
+              },
+              {
+                "type": "function",
+                "args": {
+                  "type": "layers",
+                  "value": [
+                    {
+                      "type": "unit",
+                      "unit": "deg",
+                      "value": 0
+                    }
+                  ]
+                },
+                "name": "rotateY"
+              },
+              {
+                "type": "function",
+                "name": "rotateZ",
+                "args": {
+                  "type": "layers",
+                  "value": [
+                    {
+                      "type": "unit",
+                      "unit": "deg",
+                      "value": -0.5
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      ],
+      [
+        "tSjxTe5wEBC7mr3N63J-y:2EiFMEG40PBm9_fkelqpo:userSelect:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "tSjxTe5wEBC7mr3N63J-y",
+          "property": "userSelect",
+          "value": {
+            "type": "keyword",
+            "value": "none"
+          },
+          "listed": true
+        }
+      ],
+      [
+        "7vx9Ga3AJX25ZBMNAIDfT:2EiFMEG40PBm9_fkelqpo:display:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "7vx9Ga3AJX25ZBMNAIDfT",
+          "property": "display",
+          "value": {
+            "type": "keyword",
+            "value": "flex"
+          }
+        }
+      ],
+      [
+        "7vx9Ga3AJX25ZBMNAIDfT:2EiFMEG40PBm9_fkelqpo:flexDirection:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "7vx9Ga3AJX25ZBMNAIDfT",
+          "property": "flexDirection",
+          "value": {
+            "type": "keyword",
+            "value": "column"
+          }
+        }
+      ],
+      [
+        "Zz9xXwH1XRBN22sxcTOPg:2EiFMEG40PBm9_fkelqpo:flexGrow:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "Zz9xXwH1XRBN22sxcTOPg",
+          "property": "flexGrow",
+          "value": {
+            "type": "unit",
+            "value": 1,
+            "unit": "number"
+          }
+        }
+      ],
+      [
+        "Zz9xXwH1XRBN22sxcTOPg:2EiFMEG40PBm9_fkelqpo:flexShrink:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "Zz9xXwH1XRBN22sxcTOPg",
+          "property": "flexShrink",
+          "value": {
+            "type": "unit",
+            "value": 0,
+            "unit": "number"
+          }
+        }
+      ],
+      [
+        "Zz9xXwH1XRBN22sxcTOPg:2EiFMEG40PBm9_fkelqpo:marginLeft:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "Zz9xXwH1XRBN22sxcTOPg",
+          "property": "marginLeft",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 10
+          }
+        }
+      ],
+      [
+        "Zz9xXwH1XRBN22sxcTOPg:2EiFMEG40PBm9_fkelqpo:marginBottom:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "Zz9xXwH1XRBN22sxcTOPg",
+          "property": "marginBottom",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 10
+          }
+        }
+      ],
+      [
+        "Zz9xXwH1XRBN22sxcTOPg:2EiFMEG40PBm9_fkelqpo:marginRight:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "Zz9xXwH1XRBN22sxcTOPg",
+          "property": "marginRight",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 10
+          }
+        }
+      ],
+      [
+        "7vx9Ga3AJX25ZBMNAIDfT:Uvcw_OJqyPoLioZzUbP1x:width:",
+        {
+          "breakpointId": "Uvcw_OJqyPoLioZzUbP1x",
+          "styleSourceId": "7vx9Ga3AJX25ZBMNAIDfT",
+          "property": "width",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 420
+          }
+        }
+      ],
+      [
+        "7vx9Ga3AJX25ZBMNAIDfT:eCbcXJaLEKSKcnbAPzNF0:width:",
+        {
+          "breakpointId": "eCbcXJaLEKSKcnbAPzNF0",
+          "styleSourceId": "7vx9Ga3AJX25ZBMNAIDfT",
+          "property": "width",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 330
+          }
+        }
+      ],
+      [
+        "7vx9Ga3AJX25ZBMNAIDfT:eCbcXJaLEKSKcnbAPzNF0:height:",
+        {
+          "breakpointId": "eCbcXJaLEKSKcnbAPzNF0",
+          "styleSourceId": "7vx9Ga3AJX25ZBMNAIDfT",
+          "property": "height",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 219
+          }
+        }
+      ],
+      [
+        "7vx9Ga3AJX25ZBMNAIDfT:eCbcXJaLEKSKcnbAPzNF0:maxWidth:",
+        {
+          "breakpointId": "eCbcXJaLEKSKcnbAPzNF0",
+          "styleSourceId": "7vx9Ga3AJX25ZBMNAIDfT",
+          "property": "maxWidth",
+          "value": {
+            "type": "unit",
+            "unit": "vw",
+            "value": 90
+          }
+        }
+      ],
+      [
+        "jeBWInbwIu4U8xS04xewx:2EiFMEG40PBm9_fkelqpo:color:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "jeBWInbwIu4U8xS04xewx",
+          "property": "color",
+          "value": {
+            "type": "var",
+            "value": "front-red-1"
+          }
+        }
+      ],
+      [
+        "jeBWInbwIu4U8xS04xewx:2EiFMEG40PBm9_fkelqpo:backgroundColor:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "jeBWInbwIu4U8xS04xewx",
+          "property": "backgroundColor",
+          "value": {
+            "type": "var",
+            "value": "background"
+          }
+        }
+      ],
+      [
+        "jeBWInbwIu4U8xS04xewx:2EiFMEG40PBm9_fkelqpo:width:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "jeBWInbwIu4U8xS04xewx",
+          "property": "width",
+          "value": {
+            "type": "keyword",
+            "value": "fit-content"
+          }
+        }
+      ],
+      [
+        "jeBWInbwIu4U8xS04xewx:2EiFMEG40PBm9_fkelqpo:marginLeft:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "jeBWInbwIu4U8xS04xewx",
+          "property": "marginLeft",
+          "value": {
+            "type": "keyword",
+            "value": "auto"
+          }
+        }
+      ],
+      [
+        "jeBWInbwIu4U8xS04xewx:2EiFMEG40PBm9_fkelqpo:marginRight:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "jeBWInbwIu4U8xS04xewx",
+          "property": "marginRight",
+          "value": {
+            "type": "keyword",
+            "value": "auto"
+          }
+        }
+      ],
+      [
+        "jeBWInbwIu4U8xS04xewx:2EiFMEG40PBm9_fkelqpo:paddingLeft:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "jeBWInbwIu4U8xS04xewx",
+          "property": "paddingLeft",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 40
+          }
+        }
+      ],
+      [
+        "jeBWInbwIu4U8xS04xewx:2EiFMEG40PBm9_fkelqpo:paddingRight:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "jeBWInbwIu4U8xS04xewx",
+          "property": "paddingRight",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 40
+          }
+        }
+      ],
+      [
+        "2S-XSeuFhlzvWaFMXSFvs:2EiFMEG40PBm9_fkelqpo:textAlign:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "2S-XSeuFhlzvWaFMXSFvs",
+          "property": "textAlign",
+          "value": {
+            "type": "keyword",
+            "value": "center"
+          }
+        }
+      ],
+      [
+        "2S-XSeuFhlzvWaFMXSFvs:2EiFMEG40PBm9_fkelqpo:marginTop:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "2S-XSeuFhlzvWaFMXSFvs",
+          "property": "marginTop",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 20
+          }
+        }
+      ],
+      [
+        "2S-XSeuFhlzvWaFMXSFvs:2EiFMEG40PBm9_fkelqpo:marginBottom:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "2S-XSeuFhlzvWaFMXSFvs",
+          "property": "marginBottom",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 20
+          }
+        }
+      ],
+      [
+        "jeBWInbwIu4U8xS04xewx:2EiFMEG40PBm9_fkelqpo:marginBottom:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "jeBWInbwIu4U8xS04xewx",
+          "property": "marginBottom",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 20
+          }
+        }
+      ],
+      [
+        "jeBWInbwIu4U8xS04xewx:2EiFMEG40PBm9_fkelqpo:boxShadow:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "jeBWInbwIu4U8xS04xewx",
+          "property": "boxShadow",
+          "value": {
+            "type": "layers",
+            "value": [
+              {
+                "type": "shadow",
+                "position": "outset",
+                "offsetX": {
+                  "type": "unit",
+                  "unit": "px",
+                  "value": 0
+                },
+                "offsetY": {
+                  "type": "unit",
+                  "unit": "px",
+                  "value": 2
+                },
+                "blur": {
+                  "type": "unit",
+                  "unit": "px",
+                  "value": 20
+                },
+                "spread": {
+                  "type": "unit",
+                  "unit": "px",
+                  "value": 0
+                },
+                "color": {
+                  "type": "rgb",
+                  "alpha": 0.1,
+                  "r": 0,
+                  "g": 0,
+                  "b": 0
+                }
+              }
+            ]
+          }
+        }
+      ],
+      [
+        "7vx9Ga3AJX25ZBMNAIDfT:2EiFMEG40PBm9_fkelqpo:marginLeft:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "7vx9Ga3AJX25ZBMNAIDfT",
+          "property": "marginLeft",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 0
+          }
+        }
+      ],
+      [
+        "B4cRn_01eLD3ayTIbyJ1r:2EiFMEG40PBm9_fkelqpo:fontSize:",
+        {
+          "styleSourceId": "B4cRn_01eLD3ayTIbyJ1r",
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "property": "fontSize",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 30
+          }
+        }
+      ],
+      [
+        "t0XOYF9gcZb8H9wDApJr6:2EiFMEG40PBm9_fkelqpo:fontWeight:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "t0XOYF9gcZb8H9wDApJr6",
+          "property": "fontWeight",
+          "value": {
+            "type": "keyword",
+            "value": "800"
+          }
+        }
+      ],
+      [
+        "hDGHectXgWtGv5ZTcWmyk:2EiFMEG40PBm9_fkelqpo:marginBottom:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "hDGHectXgWtGv5ZTcWmyk",
+          "property": "marginBottom",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 50
+          }
+        }
+      ],
+      [
+        "1BxkstoA7-2T1z7vqYNLS:2EiFMEG40PBm9_fkelqpo:textAlign:",
+        {
+          "styleSourceId": "1BxkstoA7-2T1z7vqYNLS",
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "property": "textAlign",
+          "value": {
+            "type": "keyword",
+            "value": "center"
+          }
+        }
+      ],
+      [
+        "1BxkstoA7-2T1z7vqYNLS:2EiFMEG40PBm9_fkelqpo:maxWidth:",
+        {
+          "styleSourceId": "1BxkstoA7-2T1z7vqYNLS",
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "property": "maxWidth",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 800
+          }
+        }
+      ],
+      [
+        "1BxkstoA7-2T1z7vqYNLS:Uvcw_OJqyPoLioZzUbP1x:marginLeft:",
+        {
+          "styleSourceId": "1BxkstoA7-2T1z7vqYNLS",
+          "breakpointId": "Uvcw_OJqyPoLioZzUbP1x",
+          "property": "marginLeft",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 50
+          }
+        }
+      ],
+      [
+        "1BxkstoA7-2T1z7vqYNLS:Uvcw_OJqyPoLioZzUbP1x:marginRight:",
+        {
+          "styleSourceId": "1BxkstoA7-2T1z7vqYNLS",
+          "breakpointId": "Uvcw_OJqyPoLioZzUbP1x",
+          "property": "marginRight",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 50
+          }
+        }
+      ],
+      [
+        "1BxkstoA7-2T1z7vqYNLS:2EiFMEG40PBm9_fkelqpo:marginLeft:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "1BxkstoA7-2T1z7vqYNLS",
+          "property": "marginLeft",
+          "value": {
+            "type": "keyword",
+            "value": "auto"
+          }
+        }
+      ],
+      [
+        "1BxkstoA7-2T1z7vqYNLS:2EiFMEG40PBm9_fkelqpo:marginRight:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "1BxkstoA7-2T1z7vqYNLS",
+          "property": "marginRight",
+          "value": {
+            "type": "keyword",
+            "value": "auto"
+          }
+        }
+      ],
+      [
+        "B4cRn_01eLD3ayTIbyJ1r:2EiFMEG40PBm9_fkelqpo:marginLeft:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "B4cRn_01eLD3ayTIbyJ1r",
+          "property": "marginLeft",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 20
+          }
+        }
+      ],
+      [
+        "B4cRn_01eLD3ayTIbyJ1r:2EiFMEG40PBm9_fkelqpo:marginRight:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "B4cRn_01eLD3ayTIbyJ1r",
+          "property": "marginRight",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 20
+          }
+        }
+      ],
+      [
+        "B4cRn_01eLD3ayTIbyJ1r:2EiFMEG40PBm9_fkelqpo:width:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "B4cRn_01eLD3ayTIbyJ1r",
+          "property": "width",
+          "value": {
+            "type": "keyword",
+            "value": "auto"
+          }
+        }
+      ],
+      [
+        "B4cRn_01eLD3ayTIbyJ1r:eCbcXJaLEKSKcnbAPzNF0:fontSize:",
+        {
+          "breakpointId": "eCbcXJaLEKSKcnbAPzNF0",
+          "styleSourceId": "B4cRn_01eLD3ayTIbyJ1r",
+          "property": "fontSize",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 25
+          }
+        }
       ]
     ],
     "styleSources": [
@@ -68604,24 +69529,10 @@
         }
       ],
       [
-        "OMDwYk9ZTP_gI_61LjPTf",
-        {
-          "type": "local",
-          "id": "OMDwYk9ZTP_gI_61LjPTf"
-        }
-      ],
-      [
         "gmAa4Md89qiKZQMAWEUZ-",
         {
           "type": "local",
           "id": "gmAa4Md89qiKZQMAWEUZ-"
-        }
-      ],
-      [
-        "ViiI6VUxI158ikWdZak4g",
-        {
-          "type": "local",
-          "id": "ViiI6VUxI158ikWdZak4g"
         }
       ],
       [
@@ -68633,39 +69544,11 @@
         }
       ],
       [
-        "nToaZacc0FIZaj0M9vFow",
-        {
-          "type": "local",
-          "id": "nToaZacc0FIZaj0M9vFow"
-        }
-      ],
-      [
-        "lEIQEi9OLK-g6jbrSAPLc",
-        {
-          "type": "local",
-          "id": "lEIQEi9OLK-g6jbrSAPLc"
-        }
-      ],
-      [
-        "X1zclmTO8Zq-pzVSFt1V0",
-        {
-          "type": "local",
-          "id": "X1zclmTO8Zq-pzVSFt1V0"
-        }
-      ],
-      [
         "hHtHUBab5grRz5ac7ppjt",
         {
           "type": "token",
           "id": "hHtHUBab5grRz5ac7ppjt",
           "name": "3d-card-hole"
-        }
-      ],
-      [
-        "MKWv9jv2xIWbf4O1yZfsH",
-        {
-          "type": "local",
-          "id": "MKWv9jv2xIWbf4O1yZfsH"
         }
       ],
       [
@@ -68719,13 +69602,6 @@
         }
       ],
       [
-        "zHTWpsFIdrrD5z4kfX60O",
-        {
-          "type": "local",
-          "id": "zHTWpsFIdrrD5z4kfX60O"
-        }
-      ],
-      [
         "Xkw_3hfp7nuRJg91tsF_x",
         {
           "type": "local",
@@ -68772,13 +69648,6 @@
         {
           "type": "local",
           "id": "rKEvYJZil_nzAJmZlpDGZ"
-        }
-      ],
-      [
-        "goLqVURtUBTEFCR-lNhbl",
-        {
-          "type": "local",
-          "id": "goLqVURtUBTEFCR-lNhbl"
         }
       ],
       [
@@ -70196,13 +71065,6 @@
         {
           "type": "local",
           "id": "TRQyXMf8W3GUq5Dyho_lI"
-        }
-      ],
-      [
-        "sPNqouJ7R-SYkxG9iShAf",
-        {
-          "type": "local",
-          "id": "sPNqouJ7R-SYkxG9iShAf"
         }
       ],
       [
@@ -73530,6 +74392,202 @@
           "type": "local",
           "id": "H-eVPo1-fToRa8gSqRNaL"
         }
+      ],
+      [
+        "nkT8NvWpsMB56xtJBp4oB",
+        {
+          "type": "local",
+          "id": "nkT8NvWpsMB56xtJBp4oB"
+        }
+      ],
+      [
+        "v8ViKTVdIc4z96MpWwGOM",
+        {
+          "type": "local",
+          "id": "v8ViKTVdIc4z96MpWwGOM"
+        }
+      ],
+      [
+        "5O_rmLtuIs9Mcf1QO2wK9",
+        {
+          "type": "local",
+          "id": "5O_rmLtuIs9Mcf1QO2wK9"
+        }
+      ],
+      [
+        "bOhoQ7z3tlXOAEJu3DaXb",
+        {
+          "type": "local",
+          "id": "bOhoQ7z3tlXOAEJu3DaXb"
+        }
+      ],
+      [
+        "h0zcPQIr8ZiWVRJnRbDS2",
+        {
+          "type": "local",
+          "id": "h0zcPQIr8ZiWVRJnRbDS2"
+        }
+      ],
+      [
+        "Gxglc2RE_KA0XIkBHd6bm",
+        {
+          "type": "local",
+          "id": "Gxglc2RE_KA0XIkBHd6bm"
+        }
+      ],
+      [
+        "dzfkYMPDgMwxRDEI7je0T",
+        {
+          "type": "local",
+          "id": "dzfkYMPDgMwxRDEI7je0T"
+        }
+      ],
+      [
+        "N_ebqholzD7ng3abzYVqf",
+        {
+          "type": "local",
+          "id": "N_ebqholzD7ng3abzYVqf"
+        }
+      ],
+      [
+        "4bzm41vFhKKj4s42ytFLn",
+        {
+          "type": "local",
+          "id": "4bzm41vFhKKj4s42ytFLn"
+        }
+      ],
+      [
+        "H2tTBTJVufoHO5_i9uzDM",
+        {
+          "type": "local",
+          "id": "H2tTBTJVufoHO5_i9uzDM"
+        }
+      ],
+      [
+        "3Sh7AQ_zEcLlQALLnBAhK",
+        {
+          "type": "local",
+          "id": "3Sh7AQ_zEcLlQALLnBAhK"
+        }
+      ],
+      [
+        "AadZyPve7ea97pBwIJmU_",
+        {
+          "type": "local",
+          "id": "AadZyPve7ea97pBwIJmU_"
+        }
+      ],
+      [
+        "OMDwYk9ZTP_gI_61LjPTf",
+        {
+          "type": "local",
+          "id": "OMDwYk9ZTP_gI_61LjPTf"
+        }
+      ],
+      [
+        "zHTWpsFIdrrD5z4kfX60O",
+        {
+          "type": "local",
+          "id": "zHTWpsFIdrrD5z4kfX60O"
+        }
+      ],
+      [
+        "goLqVURtUBTEFCR-lNhbl",
+        {
+          "type": "local",
+          "id": "goLqVURtUBTEFCR-lNhbl"
+        }
+      ],
+      [
+        "7vx9Ga3AJX25ZBMNAIDfT",
+        {
+          "type": "local",
+          "id": "7vx9Ga3AJX25ZBMNAIDfT"
+        }
+      ],
+      [
+        "ydyxxT3v6t91D8q6cXfGu",
+        {
+          "type": "local",
+          "id": "ydyxxT3v6t91D8q6cXfGu"
+        }
+      ],
+      [
+        "MXSpPwc5Vpc3N2hBpJN_R",
+        {
+          "type": "local",
+          "id": "MXSpPwc5Vpc3N2hBpJN_R"
+        }
+      ],
+      [
+        "tSjxTe5wEBC7mr3N63J-y",
+        {
+          "type": "local",
+          "id": "tSjxTe5wEBC7mr3N63J-y"
+        }
+      ],
+      [
+        "Zz9xXwH1XRBN22sxcTOPg",
+        {
+          "type": "local",
+          "id": "Zz9xXwH1XRBN22sxcTOPg"
+        }
+      ],
+      [
+        "2S-XSeuFhlzvWaFMXSFvs",
+        {
+          "type": "local",
+          "id": "2S-XSeuFhlzvWaFMXSFvs"
+        }
+      ],
+      [
+        "jeBWInbwIu4U8xS04xewx",
+        {
+          "type": "local",
+          "id": "jeBWInbwIu4U8xS04xewx"
+        }
+      ],
+      [
+        "B4cRn_01eLD3ayTIbyJ1r",
+        {
+          "type": "local",
+          "id": "B4cRn_01eLD3ayTIbyJ1r"
+        }
+      ],
+      [
+        "t0XOYF9gcZb8H9wDApJr6",
+        {
+          "type": "local",
+          "id": "t0XOYF9gcZb8H9wDApJr6"
+        }
+      ],
+      [
+        "hDGHectXgWtGv5ZTcWmyk",
+        {
+          "type": "local",
+          "id": "hDGHectXgWtGv5ZTcWmyk"
+        }
+      ],
+      [
+        "8vb0moNmBtpmlvq7E2C5_",
+        {
+          "type": "local",
+          "id": "8vb0moNmBtpmlvq7E2C5_"
+        }
+      ],
+      [
+        "1BxkstoA7-2T1z7vqYNLS",
+        {
+          "type": "local",
+          "id": "1BxkstoA7-2T1z7vqYNLS"
+        }
+      ],
+      [
+        "SFoXgDrMuapelE4QByztO",
+        {
+          "type": "local",
+          "id": "SFoXgDrMuapelE4QByztO"
+        }
       ]
     ],
     "styleSourceSelections": [
@@ -74064,68 +75122,11 @@
         }
       ],
       [
-        "HzoGz1cO4F_sgAQlowXRW",
-        {
-          "instanceId": "HzoGz1cO4F_sgAQlowXRW",
-          "values": [
-            "OMDwYk9ZTP_gI_61LjPTf"
-          ]
-        }
-      ],
-      [
         "fA38kGlBnqHbcZFOHPanA",
         {
           "instanceId": "fA38kGlBnqHbcZFOHPanA",
           "values": [
             "gmAa4Md89qiKZQMAWEUZ-"
-          ]
-        }
-      ],
-      [
-        "mWD2YdO1uiiwYAK8arcoI",
-        {
-          "instanceId": "mWD2YdO1uiiwYAK8arcoI",
-          "values": [
-            "778S5q0h53oCmylrlruit",
-            "ViiI6VUxI158ikWdZak4g"
-          ]
-        }
-      ],
-      [
-        "i9bymrHol--dUNSRD9XwH",
-        {
-          "instanceId": "i9bymrHol--dUNSRD9XwH",
-          "values": [
-            "nToaZacc0FIZaj0M9vFow"
-          ]
-        }
-      ],
-      [
-        "NnidQ0XxCKWsTFjIU7rVB",
-        {
-          "instanceId": "NnidQ0XxCKWsTFjIU7rVB",
-          "values": [
-            "hHtHUBab5grRz5ac7ppjt",
-            "lEIQEi9OLK-g6jbrSAPLc"
-          ]
-        }
-      ],
-      [
-        "XQHlmpQbR-gXk63lyMRLs",
-        {
-          "instanceId": "XQHlmpQbR-gXk63lyMRLs",
-          "values": [
-            "hHtHUBab5grRz5ac7ppjt",
-            "X1zclmTO8Zq-pzVSFt1V0"
-          ]
-        }
-      ],
-      [
-        "Wp9ItDtkfpflbkUWFemem",
-        {
-          "instanceId": "Wp9ItDtkfpflbkUWFemem",
-          "values": [
-            "MKWv9jv2xIWbf4O1yZfsH"
           ]
         }
       ],
@@ -74171,15 +75172,6 @@
           "instanceId": "dji3scPmyvf99Fcnj4IV3",
           "values": [
             "Ckc-jFGLwthJsw1sy3PAn"
-          ]
-        }
-      ],
-      [
-        "1rV3e_Karp8KfjYG0ygo7",
-        {
-          "instanceId": "1rV3e_Karp8KfjYG0ygo7",
-          "values": [
-            "zHTWpsFIdrrD5z4kfX60O"
           ]
         }
       ],
@@ -74290,15 +75282,6 @@
           "instanceId": "OA32fnMEBLPQxdVsDhmsY",
           "values": [
             "rKEvYJZil_nzAJmZlpDGZ"
-          ]
-        }
-      ],
-      [
-        "5ypRUGqEypObnbryn9TBq",
-        {
-          "instanceId": "5ypRUGqEypObnbryn9TBq",
-          "values": [
-            "goLqVURtUBTEFCR-lNhbl"
           ]
         }
       ],
@@ -76627,15 +77610,6 @@
           "instanceId": "5mQhzExVQXFvtKvRT-ix1",
           "values": [
             "TRQyXMf8W3GUq5Dyho_lI"
-          ]
-        }
-      ],
-      [
-        "pVIs8Qa4pgQVfQkp71_Sx",
-        {
-          "instanceId": "pVIs8Qa4pgQVfQkp71_Sx",
-          "values": [
-            "sPNqouJ7R-SYkxG9iShAf"
           ]
         }
       ],
@@ -81432,15 +82406,6 @@
         }
       ],
       [
-        "20i9xQGam0egwaPvujFfw",
-        {
-          "instanceId": "20i9xQGam0egwaPvujFfw",
-          "values": [
-            "-YMqcGI-X7vuJSbS3FuvQ"
-          ]
-        }
-      ],
-      [
         "b7eaHo_yXMynEie2HIy0a",
         {
           "instanceId": "b7eaHo_yXMynEie2HIy0a",
@@ -82138,6 +83103,283 @@
           "instanceId": "ug1Tby08gcR0iZ3xloSE5",
           "values": []
         }
+      ],
+      [
+        "s-5vm3y7YuphO-v30RDC4",
+        {
+          "instanceId": "s-5vm3y7YuphO-v30RDC4",
+          "values": [
+            "nkT8NvWpsMB56xtJBp4oB"
+          ]
+        }
+      ],
+      [
+        "_iDRnhY0lkg6li_rYmhdE",
+        {
+          "instanceId": "_iDRnhY0lkg6li_rYmhdE",
+          "values": [
+            "SumJn3KS-U3VMJ-t7C_Ja",
+            "v8ViKTVdIc4z96MpWwGOM"
+          ]
+        }
+      ],
+      [
+        "pxnIrGxKYVQKGItdLCW4U",
+        {
+          "instanceId": "pxnIrGxKYVQKGItdLCW4U",
+          "values": [
+            "5O_rmLtuIs9Mcf1QO2wK9"
+          ]
+        }
+      ],
+      [
+        "t7n-UIELB66XWJmDgofSx",
+        {
+          "instanceId": "t7n-UIELB66XWJmDgofSx",
+          "values": [
+            "bOhoQ7z3tlXOAEJu3DaXb"
+          ]
+        }
+      ],
+      [
+        "h7mA3rRzYnd04549bX8Bl",
+        {
+          "instanceId": "h7mA3rRzYnd04549bX8Bl",
+          "values": [
+            "h0zcPQIr8ZiWVRJnRbDS2"
+          ]
+        }
+      ],
+      [
+        "i_H_ZC83LZ9rsE76wBZFN",
+        {
+          "instanceId": "i_H_ZC83LZ9rsE76wBZFN",
+          "values": [
+            "SumJn3KS-U3VMJ-t7C_Ja",
+            "Gxglc2RE_KA0XIkBHd6bm"
+          ]
+        }
+      ],
+      [
+        "hNzUmfxY-e_tO2Xj-sr8V",
+        {
+          "instanceId": "hNzUmfxY-e_tO2Xj-sr8V",
+          "values": [
+            "dzfkYMPDgMwxRDEI7je0T"
+          ]
+        }
+      ],
+      [
+        "jlDUrx6e5MM4mzjGnYFhS",
+        {
+          "instanceId": "jlDUrx6e5MM4mzjGnYFhS",
+          "values": [
+            "N_ebqholzD7ng3abzYVqf"
+          ]
+        }
+      ],
+      [
+        "jlZVJC5klDPOU9JIaaKba",
+        {
+          "instanceId": "jlZVJC5klDPOU9JIaaKba",
+          "values": [
+            "4bzm41vFhKKj4s42ytFLn"
+          ]
+        }
+      ],
+      [
+        "zMGbdg3h1sq2izmELiuAQ",
+        {
+          "instanceId": "zMGbdg3h1sq2izmELiuAQ",
+          "values": [
+            "H2tTBTJVufoHO5_i9uzDM"
+          ]
+        }
+      ],
+      [
+        "TpjYD_pfY5P9G02GAx7AQ",
+        {
+          "instanceId": "TpjYD_pfY5P9G02GAx7AQ",
+          "values": [
+            "3Sh7AQ_zEcLlQALLnBAhK"
+          ]
+        }
+      ],
+      [
+        "qPyLlO-Pbeu7kET0mpFaw",
+        {
+          "instanceId": "qPyLlO-Pbeu7kET0mpFaw",
+          "values": [
+            "AadZyPve7ea97pBwIJmU_"
+          ]
+        }
+      ],
+      [
+        "HzoGz1cO4F_sgAQlowXRW",
+        {
+          "instanceId": "HzoGz1cO4F_sgAQlowXRW",
+          "values": [
+            "OMDwYk9ZTP_gI_61LjPTf"
+          ]
+        }
+      ],
+      [
+        "1rV3e_Karp8KfjYG0ygo7",
+        {
+          "instanceId": "1rV3e_Karp8KfjYG0ygo7",
+          "values": [
+            "zHTWpsFIdrrD5z4kfX60O"
+          ]
+        }
+      ],
+      [
+        "5ypRUGqEypObnbryn9TBq",
+        {
+          "instanceId": "5ypRUGqEypObnbryn9TBq",
+          "values": [
+            "goLqVURtUBTEFCR-lNhbl"
+          ]
+        }
+      ],
+      [
+        "FZW9MIoXDtizWZL34X4vw",
+        {
+          "instanceId": "FZW9MIoXDtizWZL34X4vw",
+          "values": [
+            "778S5q0h53oCmylrlruit",
+            "7vx9Ga3AJX25ZBMNAIDfT"
+          ]
+        }
+      ],
+      [
+        "EQMlshc-Lj-0PH6QDJXYn",
+        {
+          "instanceId": "EQMlshc-Lj-0PH6QDJXYn",
+          "values": [
+            "ydyxxT3v6t91D8q6cXfGu"
+          ]
+        }
+      ],
+      [
+        "Cu0iHSmEYsXETmihuua6d",
+        {
+          "instanceId": "Cu0iHSmEYsXETmihuua6d",
+          "values": [
+            "hHtHUBab5grRz5ac7ppjt",
+            "MXSpPwc5Vpc3N2hBpJN_R"
+          ]
+        }
+      ],
+      [
+        "k8USm_Y7xe2gjkv-cRr9A",
+        {
+          "instanceId": "k8USm_Y7xe2gjkv-cRr9A",
+          "values": [
+            "hHtHUBab5grRz5ac7ppjt",
+            "tSjxTe5wEBC7mr3N63J-y"
+          ]
+        }
+      ],
+      [
+        "fJhaokT1CMx2gsp13SDFZ",
+        {
+          "instanceId": "fJhaokT1CMx2gsp13SDFZ",
+          "values": [
+            "Zz9xXwH1XRBN22sxcTOPg"
+          ]
+        }
+      ],
+      [
+        "0sfsJ9UT3CYbjqGLGWiVj",
+        {
+          "instanceId": "0sfsJ9UT3CYbjqGLGWiVj",
+          "values": [
+            "2S-XSeuFhlzvWaFMXSFvs"
+          ]
+        }
+      ],
+      [
+        "anB_GmbV2HfOGPPB5YXaN",
+        {
+          "instanceId": "anB_GmbV2HfOGPPB5YXaN",
+          "values": [
+            "SumJn3KS-U3VMJ-t7C_Ja",
+            "jeBWInbwIu4U8xS04xewx"
+          ]
+        }
+      ],
+      [
+        "mfXdsiMX7NIYJ0xoovKc_",
+        {
+          "instanceId": "mfXdsiMX7NIYJ0xoovKc_",
+          "values": [
+            "cgoV5zmm7n8sNCukQovHB",
+            "B4cRn_01eLD3ayTIbyJ1r"
+          ]
+        }
+      ],
+      [
+        "pvAAJ4RZp_0COToY_9UbX",
+        {
+          "instanceId": "pvAAJ4RZp_0COToY_9UbX",
+          "values": [
+            "t0XOYF9gcZb8H9wDApJr6"
+          ]
+        }
+      ],
+      [
+        "lsCV5VJWkT75bla1Vi2CH",
+        {
+          "instanceId": "lsCV5VJWkT75bla1Vi2CH",
+          "values": [
+            "-YMqcGI-X7vuJSbS3FuvQ"
+          ]
+        }
+      ],
+      [
+        "KlaMRVy6AFmFFcCqHYiON",
+        {
+          "instanceId": "KlaMRVy6AFmFFcCqHYiON",
+          "values": [
+            "hDGHectXgWtGv5ZTcWmyk"
+          ]
+        }
+      ],
+      [
+        "lvYVCqeV5W9s639t_8bNL",
+        {
+          "instanceId": "lvYVCqeV5W9s639t_8bNL",
+          "values": [
+            "8vb0moNmBtpmlvq7E2C5_"
+          ]
+        }
+      ],
+      [
+        "20i9xQGam0egwaPvujFfw",
+        {
+          "instanceId": "20i9xQGam0egwaPvujFfw",
+          "values": [
+            "-YMqcGI-X7vuJSbS3FuvQ"
+          ]
+        }
+      ],
+      [
+        "9K_I_o21NW27VhtbNaOQz",
+        {
+          "instanceId": "9K_I_o21NW27VhtbNaOQz",
+          "values": [
+            "1BxkstoA7-2T1z7vqYNLS"
+          ]
+        }
+      ],
+      [
+        "7iZeLlCblToOZQJUWN7qr",
+        {
+          "instanceId": "7iZeLlCblToOZQJUWN7qr",
+          "values": [
+            "SFoXgDrMuapelE4QByztO"
+          ]
+        }
       ]
     ],
     "props": [
@@ -82329,36 +83571,6 @@
           "name": "class",
           "type": "string",
           "value": "icon-background home-top"
-        }
-      ],
-      [
-        "VJJ9062NdfbdhkR7t5lZE",
-        {
-          "id": "VJJ9062NdfbdhkR7t5lZE",
-          "instanceId": "HzoGz1cO4F_sgAQlowXRW",
-          "name": "code",
-          "type": "string",
-          "value": "<style>\n@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300..900&display=swap');\n@import url('https://api.fontshare.com/v2/css?f[]=tanker@400&amp;display=swap');\n  \n  h1{\n    font-family: 'Tanker';\n    font-weight: 500;\n    font-size: 5em;\n    color: var(--background);\n    line-height: 1;\n    margin: 0;\n  }\n  h2{\n    font-weight: 600;\n    font-size: 36px;\n    line-height: 1;\n    margin: 0;\n  }\n  p{\n    margin: 0;\n  }\n  \n  .icon-background{\n    background-color: var(--back-red-1);\n    z-index: 1;\n    overflow: hidden;\n    position: relative;\n  }\n  .icon-background::before{\n    content: \"\";\n    position: absolute;\n    width: 200%; height: 200%;\n    top: -50%; left: -50%;\n    background-image: url('/assets/icon-background_orTDw4lIQEfSgOgF0DBVy.svg?width=1080&quality=80&format=auto');\n    background-size: 200px 115.4734411085px;\n    background-repeat: repeat;\n    animation: scrollBg 20s linear infinite;\n    z-index: -1;\n    opacity: var(--icon-background-opacity, 3%); mix-blend-mode: luminosity;\n    filter: blur(2px)\n  }\n  \n  .home-top::after{\n    position: absolute;\n    content: \"\";\n    width: 100%;\n    height: 250px;\n    background: linear-gradient(180deg, hsl(from var(--back-red-1) h s l / 0.65) 15%, hsl(from var(--back-red-1) h s l / 0) 100%);\n    z-index: -1;\n  }\n\n  @keyframes scrollBg {\n      0% {\n        background-position: 0 0;\n      }\n      100% {\n        background-position: -200px 115.4734411085px;\n      }\n    }\n\n  .home-top-card:hover .home-top-card-title-icon{\n    width: 38px;\n    padding-left: 3px;\n  }\n\n  @media only screen and (max-width: 767px) {\n    h1{\n      font-size: 4em;\n    }\n    h2{\n      font-size: 32px;\n    }\n  }\n</style>"
-        }
-      ],
-      [
-        "R2bpubrCF_tYJTAau89si",
-        {
-          "id": "R2bpubrCF_tYJTAau89si",
-          "instanceId": "HzoGz1cO4F_sgAQlowXRW",
-          "name": "executeScriptOnCanvas",
-          "type": "boolean",
-          "value": true
-        }
-      ],
-      [
-        "gYxeKZeoKuXCxSZ1yJAnH",
-        {
-          "id": "gYxeKZeoKuXCxSZ1yJAnH",
-          "instanceId": "HzoGz1cO4F_sgAQlowXRW",
-          "name": "data-ws-show",
-          "type": "boolean",
-          "value": true
         }
       ],
       [
@@ -82702,16 +83914,6 @@
         }
       ],
       [
-        "J0nNdy7fgHnI0iek-r-D7",
-        {
-          "id": "J0nNdy7fgHnI0iek-r-D7",
-          "instanceId": "mWD2YdO1uiiwYAK8arcoI",
-          "name": "class",
-          "type": "string",
-          "value": "icon-background\n"
-        }
-      ],
-      [
         "SS_r3xjn0RaDiJrEebfPL",
         {
           "id": "SS_r3xjn0RaDiJrEebfPL",
@@ -82748,7 +83950,7 @@
           "instanceId": "zpUESo2XOMKwHnxPXG6Bm",
           "name": "href",
           "type": "string",
-          "value": "https://www.linkedin.com/groups/10061020/"
+          "value": "https://www.linkedin.com/company/ge-union"
         }
       ],
       [
@@ -82808,7 +84010,7 @@
           "instanceId": "O2wr5EP9IcjVbWwvjWrE3",
           "name": "code",
           "type": "string",
-          "value": "<script>\n  // 1) Configuration\n  if (typeof window.JSON_URL === 'undefined') {\n    window.JSON_URL = \"https://raw.githubusercontent.com/GE-Union/CourseBank/main/structure.json\";\n  }\n  if (typeof window.CACHE_KEY === 'undefined') {\n    window.CACHE_KEY = \"coursebank_structure_cache\";\n  }\n  if (typeof window.CACHE_TTL === 'undefined') {\n    window.CACHE_TTL = 90 * 60 * 1000; // 90 min\n  }\n  if (typeof window.EXT_COLORS === 'undefined') {\n    window.EXT_COLORS = {\n      PDF: \"#D32F2F\",\n      IPYNB: \"#F37C2F\",\n      ZIP: \"#595959\",\n      DOCX: \"#2A5699\",\n      XLSX: \"#1D6F42\",\n      PPTX: \"#D24726\",\n      TXT: \"#616161\",\n    };\n  }\n\n\n\n\n\n\n\n\n\n\n\n\n  // Utility: fetch a file from GitHub RAW and return a Blob with a guessed MIME\n  async function fetchGitHubBlob(pathInRepo) {\n\n    const url = `https://raw.githubusercontent.com/GE-Union/CourseBank/main/${pathInRepo}`;\n    const res = await fetch(url); // CORS must be allowed by GitHub (usually is on raw.githubusercontent.com)\n    if (!res.ok) throw new Error(`Failed to fetch: ${res.status} ${res.statusText}`);\n\n    const ext = (pathInRepo.split(\".\").pop() || \"\").toLowerCase();\n    const buf = await res.arrayBuffer();\n\n    // Minimal MIME mapping\n    const mimeByExt = {\n      pdf: \"application/pdf\",\n      ipynb: \"application/json\",    // notebooks are JSON; download will use filename anyway\n      txt: \"text/plain\",\n      json: \"application/json\",\n      png: \"image/png\",\n      jpg: \"image/jpeg\",\n      jpeg: \"image/jpeg\",\n      svg: \"image/svg+xml\",\n      html: \"text/html\",\n      csv: \"text/csv\"\n    };\n    const type = mimeByExt[ext] || (res.headers.get(\"content-type\") || \"application/octet-stream\");\n    return new Blob([buf], { type });\n  }\n\n  // Open PDF inline in a new tab using the browser’s viewer\n  async function openPdfInline(pathInRepo) {\n    // Open a tab immediately to avoid popup blockers\n    const win = window.open(\"\", \"_blank\");\n    try {\n      const blob = await fetchGitHubBlob(pathInRepo);\n      const url = URL.createObjectURL(blob);\n      win.location = url;\n\n      // revoke after the new tab finishes loading\n      // (can't reliably know, so do a delayed revoke)\n      setTimeout(() => URL.revokeObjectURL(url), 60_000);\n    } catch (err) {\n      if (win) win.close();\n      console.error(err);\n      alert(\"Could not open PDF.\");\n    }\n  }\n\n  // Force download (works for .ipynb and anything else you want to download)\n  async function downloadFile(pathInRepo) {\n    try {\n      const blob = await fetchGitHubBlob(pathInRepo);\n      const url = URL.createObjectURL(blob);\n      const a = document.createElement(\"a\");\n      a.href = url;\n      a.download = decodeURIComponent(pathInRepo.split(\"/\").pop() || \"file\");\n      document.body.appendChild(a);\n      a.click();\n      a.remove();\n      setTimeout(() => URL.revokeObjectURL(url), 10_000);\n    } catch (err) {\n      console.error(err);\n      alert(\"Could not download file.\");\n    }\n  }\n\n  // wiring for anchors\n  function wireDownloadLink(a, pathInRepo) {\n    const lower = pathInRepo.toLowerCase();\n    if (lower.endsWith(\".pdf\")) {\n      a.href = \"#\";\n      a.onclick = (e) => { e.preventDefault(); openPdfInline(pathInRepo); };\n      a.target = \"_blank\";\n      a.rel = \"noopener\";\n    } else if (lower.endsWith(\".ipynb\")) {\n      a.href = \"#\";\n      a.onclick = (e) => { e.preventDefault(); downloadFile(pathInRepo); };\n      a.removeAttribute(\"target\");\n    } else {\n      // default: point directly to RAW\n      a.href = `https://raw.githubusercontent.com/GE-Union/CourseBank/main/${encodeURI(pathInRepo)}`;\n    }\n  }\n\n\n\n\n\n\n\n\n\n\n  \n\n  \n  // 3) Helpers\n  async function fetchStructure() {\n    // try cache\n    const raw = localStorage.getItem(CACHE_KEY);\n    if (false) {\n      const { ts, data } = JSON.parse(raw);\n      if (Date.now() - ts < CACHE_TTL) {\n        return data;\n      }\n    }\n    // otherwise re-fetch\n    const res = await fetch(JSON_URL, { cache: \"no-store\" });\n    if (!res.ok) throw new Error(\"Failed to load structure.json\");\n    const data = await res.json();\n    localStorage.setItem(\n      CACHE_KEY,\n      JSON.stringify({ ts: Date.now(), data }),\n    );\n    return data;\n  }\n  \n  function getFolderData(structure, folderPath) {\n    const parts = folderPath.split(\"/\");\n    let cur = structure;\n    for (const p of parts) {\n      if (!(p in cur)) return null;\n      cur = cur[p];\n    }\n    return Array.isArray(cur) ? cur : null;\n  }\n  \n  function makeFileLink(folder, file) {\n    const container = document.createElement(\"div\");\n    container.className = \"custom-file-link\";\n  \n    // split name & author\n    const [rawName, rawAuth] = file.split(\"-a-\");\n    const filename = (rawName || file).replace(/_/g, \" \");\n    const author = rawAuth\n      ? rawAuth.replace(/_/g, \" \").replace(/\\.[^/.]+$/, \"\")\n      : \"Unknown\";\n  \n    const ext = file.split(\".\").pop().toUpperCase();\n  \n    const fullPath = `${folder}/${file}`;\n    const encodedPath = fullPath\n      .split('/')\n      .map(seg => encodeURIComponent(seg))\n      .join('/');\n  \n    const a = document.createElement('a');\n    /*if (['PDF'].includes(ext)) {\n      a.target = '_blank';\n      a.href = `https://raw.githubusercontent.com/GE-Union/CourseBank/main/${encodedPath}`;\n    } else {\n      a.setAttribute('download', \"\");\n      a.href = `https://raw.githubusercontent.com/GE-Union/CourseBank/main/${encodedPath}`; // direct download\n      //a.href = `https://geunion.dk/coursebank/${encodedPath}`;  // proxy script\n    }*/\n    wireDownloadLink(a, encodedPath);\n    a.style.display = 'flex';\n    a.style.alignItems = 'center';\n    a.style.width = '100%';\n    a.style.lineHeight = \"1.2\";\n  \n    // icon\n    const icon = document.createElement(\"div\");\n    icon.className = \"file-icon\";\n    const img = document.createElement(\"img\");\n    img.src =\n      \"https://raw.githubusercontent.com/GE-Union/CourseBank/main/res/file-icon.svg\";\n    img.alt = \"File Icon\";\n    icon.appendChild(img);\n  \n    const badge = document.createElement(\"div\");\n    badge.className = \"extension-badge\";\n    badge.textContent = ext;\n    badge.style.backgroundColor =\n      EXT_COLORS[ext] || \"var(--global-palette2,#1e73be)\";\n    icon.appendChild(badge);\n  \n    // details\n    const details = document.createElement(\"div\");\n    details.className = \"file-details\";\n    details.innerHTML = `<strong>${filename}</strong><span>${author}</span>`;\n  \n    // assemble\n    a.appendChild(icon);\n    a.appendChild(details);\n    container.appendChild(a);\n    return container;\n  }\n  \n  async function initFileLists() {\n    const holders = document.querySelectorAll(\".file-list\");\n    console.log(holders);\n    if (!holders.length) return;\n  \n    try {\n      const structure = await fetchStructure();\n      holders.forEach((holder) => {\n        const folder = holder.dataset.folder;\n        holder.innerHTML = \"\"; // clear “Loading…”\n        const files = getFolderData(structure, folder);\n        if (!files) {\n          holder.textContent = \"No notes found\";\n          return;\n        }\n        files.forEach((f) => holder.appendChild(makeFileLink(folder, f)));\n        console.log(`Populated ${folder}`);\n      });\n    } catch (err) {\n      console.error(err);\n      holders.forEach((holder) => {\n        holder.textContent = \"Unable to load course structure.\";\n      });\n    }\n  }\n  \n  document.addEventListener('DOMContentLoaded', () => {\n    requestAnimationFrame(() => {\n      setTimeout(function() {initFileLists();}, 500)\n    });\n  });\n</script>"
+          "value": "<script>\n  // 1) Configuration\n  if (typeof window.JSON_URL === 'undefined') {\n    window.JSON_URL = \"https://raw.githubusercontent.com/GE-Union/CourseBank/main/structure.json\";\n  }\n  if (typeof window.CACHE_KEY === 'undefined') {\n    window.CACHE_KEY = \"coursebank_structure_cache\";\n  }\n  if (typeof window.CACHE_TTL === 'undefined') {\n    window.CACHE_TTL = 90 * 60 * 1000 * 0; // 90 min\n  }\n  if (typeof window.EXT_COLORS === 'undefined') {\n    window.EXT_COLORS = {\n      PDF: \"#D32F2F\",\n      IPYNB: \"#F37C2F\",\n      ZIP: \"#595959\",\n      DOCX: \"#2A5699\",\n      XLSX: \"#1D6F42\",\n      PPTX: \"#D24726\",\n      TXT: \"#616161\",\n    };\n  }\n\n\n\n\n\n\n\n\n\n\n\n\n  // Utility: fetch a file from GitHub RAW and return a Blob with a guessed MIME\n  async function fetchGitHubBlob(pathInRepo) {\n\n    const url = `https://raw.githubusercontent.com/GE-Union/CourseBank/main/${pathInRepo}`;\n    const res = await fetch(url); // CORS must be allowed by GitHub (usually is on raw.githubusercontent.com)\n    if (!res.ok) throw new Error(`Failed to fetch: ${res.status} ${res.statusText}`);\n\n    const ext = (pathInRepo.split(\".\").pop() || \"\").toLowerCase();\n    const buf = await res.arrayBuffer();\n\n    // Minimal MIME mapping\n    const mimeByExt = {\n      pdf: \"application/pdf\",\n      ipynb: \"application/json\",    // notebooks are JSON; download will use filename anyway\n      txt: \"text/plain\",\n      json: \"application/json\",\n      png: \"image/png\",\n      jpg: \"image/jpeg\",\n      jpeg: \"image/jpeg\",\n      svg: \"image/svg+xml\",\n      html: \"text/html\",\n      csv: \"text/csv\"\n    };\n    const type = mimeByExt[ext] || (res.headers.get(\"content-type\") || \"application/octet-stream\");\n    return new Blob([buf], { type });\n  }\n\n  // Open PDF inline in a new tab using the browser’s viewer\n  async function openPdfInline(pathInRepo) {\n    // Open a tab immediately to avoid popup blockers\n    const win = window.open(\"\", \"_blank\");\n    try {\n      const blob = await fetchGitHubBlob(pathInRepo);\n      const url = URL.createObjectURL(blob);\n      win.location = url;\n\n      // revoke after the new tab finishes loading\n      // (can't reliably know, so do a delayed revoke)\n      setTimeout(() => URL.revokeObjectURL(url), 60_000);\n    } catch (err) {\n      if (win) win.close();\n      console.error(err);\n      alert(\"Could not open PDF.\");\n    }\n  }\n\n  // Force download (works for .ipynb and anything else you want to download)\n  async function downloadFile(pathInRepo) {\n    try {\n      const blob = await fetchGitHubBlob(pathInRepo);\n      const url = URL.createObjectURL(blob);\n      const a = document.createElement(\"a\");\n      a.href = url;\n      a.download = decodeURIComponent(pathInRepo.split(\"/\").pop() || \"file\");\n      document.body.appendChild(a);\n      a.click();\n      a.remove();\n      setTimeout(() => URL.revokeObjectURL(url), 10_000);\n    } catch (err) {\n      console.error(err);\n      alert(\"Could not download file.\");\n    }\n  }\n\n  // wiring for anchors\n  function wireDownloadLink(a, pathInRepo) {\n    const lower = pathInRepo.toLowerCase();\n    if (lower.endsWith(\".pdf\")) {\n      a.href = \"#\";\n      a.onclick = (e) => { e.preventDefault(); openPdfInline(pathInRepo); };\n      a.target = \"_blank\";\n      a.rel = \"noopener\";\n    } else if (lower.endsWith(\".ipynb\")) {\n      a.href = \"#\";\n      a.onclick = (e) => { e.preventDefault(); downloadFile(pathInRepo); };\n      a.removeAttribute(\"target\");\n    } else {\n      // default: point directly to RAW\n      a.href = `https://raw.githubusercontent.com/GE-Union/CourseBank/main/${encodeURI(pathInRepo)}`;\n    }\n  }\n\n\n\n\n\n\n\n\n\n\n  \n\n  \n  // 3) Helpers\n  async function fetchStructure() {\n    // try cache\n    const raw = localStorage.getItem(CACHE_KEY);\n    if (false) {\n      const { ts, data } = JSON.parse(raw);\n      if (Date.now() - ts < CACHE_TTL) {\n        return data;\n      }\n    }\n    // otherwise re-fetch\n    const res = await fetch(JSON_URL, { cache: \"no-store\" });\n    if (!res.ok) throw new Error(\"Failed to load structure.json\");\n    const data = await res.json();\n    localStorage.setItem(\n      CACHE_KEY,\n      JSON.stringify({ ts: Date.now(), data }),\n    );\n    return data;\n  }\n  \n  function getFolderData(structure, folderPath) {\n    const parts = folderPath.split(\"/\");\n    let cur = structure;\n    for (const p of parts) {\n      if (!(p in cur)) return null;\n      cur = cur[p];\n    }\n    return Array.isArray(cur) ? cur : null;\n  }\n  \n  function makeFileLink(folder, file) {\n    const container = document.createElement(\"div\");\n    container.className = \"custom-file-link\";\n  \n    // split name & author\n    const [rawName, rawAuth] = file.split(\"-a-\");\n    const filename = (rawName || file).replace(/_/g, \" \");\n    const author = rawAuth\n      ? rawAuth.replace(/_/g, \" \").replace(/\\.[^/.]+$/, \"\")\n      : \"Unknown\";\n  \n    const ext = file.split(\".\").pop().toUpperCase();\n  \n    const fullPath = `${folder}/${file}`;\n    const encodedPath = fullPath\n      .split('/')\n      .map(seg => encodeURIComponent(seg))\n      .join('/');\n  \n    const a = document.createElement('a');\n    /*if (['PDF'].includes(ext)) {\n      a.target = '_blank';\n      a.href = `https://raw.githubusercontent.com/GE-Union/CourseBank/main/${encodedPath}`;\n    } else {\n      a.setAttribute('download', \"\");\n      a.href = `https://raw.githubusercontent.com/GE-Union/CourseBank/main/${encodedPath}`; // direct download\n      //a.href = `https://geunion.dk/coursebank/${encodedPath}`;  // proxy script\n    }*/\n    wireDownloadLink(a, encodedPath);\n    a.style.display = 'flex';\n    a.style.alignItems = 'center';\n    a.style.width = '100%';\n    a.style.lineHeight = \"1.2\";\n  \n    // icon\n    const icon = document.createElement(\"div\");\n    icon.className = \"file-icon\";\n    const img = document.createElement(\"img\");\n    img.src =\n      \"https://raw.githubusercontent.com/GE-Union/CourseBank/main/res/file-icon.svg\";\n    img.alt = \"File Icon\";\n    icon.appendChild(img);\n  \n    const badge = document.createElement(\"div\");\n    badge.className = \"extension-badge\";\n    badge.textContent = ext;\n    badge.style.backgroundColor =\n      EXT_COLORS[ext] || \"var(--global-palette2,#1e73be)\";\n    icon.appendChild(badge);\n  \n    // details\n    const details = document.createElement(\"div\");\n    details.className = \"file-details\";\n    details.innerHTML = `<strong>${filename}</strong><span>${author}</span>`;\n  \n    // assemble\n    a.appendChild(icon);\n    a.appendChild(details);\n    container.appendChild(a);\n    return container;\n  }\n  \n  async function initFileLists() {\n    const holders = document.querySelectorAll(\".file-list\");\n    console.log(holders);\n    if (!holders.length) return;\n  \n    try {\n      const structure = await fetchStructure();\n      holders.forEach((holder) => {\n        const folder = holder.dataset.folder;\n        holder.innerHTML = \"\"; // clear “Loading…”\n        const files = getFolderData(structure, folder);\n        if (!files) {\n          holder.textContent = \"No notes found\";\n          return;\n        }\n        files.forEach((f) => holder.appendChild(makeFileLink(folder, f)));\n        console.log(`Populated ${folder}`);\n      });\n    } catch (err) {\n      console.error(err);\n      holders.forEach((holder) => {\n        holder.textContent = \"Unable to load course structure.\";\n      });\n    }\n  }\n  \n  document.addEventListener('DOMContentLoaded', () => {\n    requestAnimationFrame(() => {\n      setTimeout(function() {initFileLists();}, 500)\n    });\n  });\n</script>"
         }
       ],
       [
@@ -82828,7 +84030,7 @@
           "instanceId": "SAU7Fm9Nbq3v5vYp-fGYZ",
           "name": "code",
           "type": "string",
-          "value": "<style>\n.file-list{\n  display: flex;\n  flex-wrap: wrap;\n  max-width: 850px\n}\n  \n.custom-file-link {\n  margin: 1em 0;\n  display: flex;\n  align-items: center;\n  max-width: 500px;\n  min-width: 300px;\n  transition: transform 0.1s;\n  height: 40px;\n  width: 50%;\n  flex-shrink: 0; flex-grow: 1;\n}\n.custom-file-link > a {\n  text-decoration: none;\n}\n\n.custom-file-link:hover {\n  transform: translateX(5px);\n  cursor: pointer;\n}.custom-file-link:hover .file-details strong {\n  color: var(--front-red-1) !important;\n}\n\n.file-icon {\n  margin-right: 10px;\n  width: 36px;\n  height: 36px;\n  position: relative;\n}\n\n.file-icon img {\n  width: 100%;\n  height: 100%;\n  object-fit: contain;\n  flex-shrink: 0;\n}\n\n.extension-badge {\n  position: absolute;\n  top: 0;\n  left: 0;\n  color: white;\n  font-size: 10px;\n  font-weight: 500;\n  padding: 1px 2px;\n  border-radius: 2px;\n  margin-top: 13.5px;\n  margin-left: 1px;\n  pointer-events: none;\n}\n\n.file-details {\n  display: flex;\n  flex-direction: column;\n  width: calc(100% - 58px);\n}\n\n.file-details strong {\n  font-size: 1em;\n  font-weight: 500;\n  color: var(--front-1);\n  white-space: nowrap;\n  text-overflow: ellipsis;\n  overflow: hidden;\n}\n\n.file-details span {\n  font-size: 0.8em;\n  color: var(--front-3);\n  white-space: nowrap;\n  text-overflow: ellipsis;\n  overflow: hidden;\n}\n</style>"
+          "value": "<style>\n.file-list{\n  display: flex;\n  flex-wrap: wrap;\n  max-width: 850px\n}\n  \n.custom-file-link {\n  margin: 1em 0;\n  display: flex;\n  align-items: center;\n  max-width: 500px;\n  min-width: 300px;\n  transition: transform 0.1s;\n  height: 40px;\n  width: 50%;\n  flex-shrink: 0; flex-grow: 1;\n}\n.custom-file-link > a {\n  text-decoration: none;\n}\n\n.custom-file-link:hover {\n  transform: translateX(5px);\n  cursor: pointer;\n}.custom-file-link:hover .file-details strong {\n  color: var(--front-red-1) !important;\n}\n\n.file-icon {\n  margin-right: 10px;\n  width: 36px;\n  height: 36px;\n  position: relative;\n}\n\n.file-icon img {\n  width: 100%;\n  height: 100%;\n  object-fit: contain;\n  flex-shrink: 0;\n}\n\n.extension-badge {\n  position: absolute;\n  top: 0;\n  left: 0;\n  color: white;\n  font-size: 10px;\n  font-weight: 500;\n  padding: 1px 2px;\n  border-radius: 2px;\n  margin-top: 14px;\n  margin-left: 1px;\n  pointer-events: none;\n}\n\n.file-details {\n  display: flex;\n  flex-direction: column;\n  width: calc(100% - 58px);\n}\n\n.file-details strong {\n  font-size: 1em;\n  font-weight: 500;\n  color: var(--front-1);\n  white-space: nowrap;\n  text-overflow: ellipsis;\n  overflow: hidden;\n}\n\n.file-details span {\n  font-size: 0.8em;\n  color: var(--front-3);\n  white-space: nowrap;\n  text-overflow: ellipsis;\n  overflow: hidden;\n}\n</style>"
         }
       ],
       [
@@ -83828,7 +85030,7 @@
           "instanceId": "fA38kGlBnqHbcZFOHPanA",
           "name": "data-ws-show",
           "type": "boolean",
-          "value": false
+          "value": true
         }
       ],
       [
@@ -84139,46 +85341,6 @@
           "name": "class",
           "type": "string",
           "value": "icon-background\n"
-        }
-      ],
-      [
-        "Eo16-0jXYNDZsnFi-379g",
-        {
-          "id": "Eo16-0jXYNDZsnFi-379g",
-          "instanceId": "E4rfqGIRyaMerY0pr0sJG",
-          "name": "href",
-          "type": "string",
-          "value": "https://geunion.dk/"
-        }
-      ],
-      [
-        "k3Rx58zWo39eOBEDVR5Gf",
-        {
-          "id": "k3Rx58zWo39eOBEDVR5Gf",
-          "instanceId": "E4rfqGIRyaMerY0pr0sJG",
-          "name": "target",
-          "type": "string",
-          "value": "_blank"
-        }
-      ],
-      [
-        "-OtSTEBo1QE4in7rFUFH8",
-        {
-          "id": "-OtSTEBo1QE4in7rFUFH8",
-          "instanceId": "qJij7HgEzsD6YV7GRk_b1",
-          "name": "href",
-          "type": "string",
-          "value": "https://www.instagram.com/ge.union/"
-        }
-      ],
-      [
-        "3UzCyNCuNDuseLZ2_04dt",
-        {
-          "id": "3UzCyNCuNDuseLZ2_04dt",
-          "instanceId": "qJij7HgEzsD6YV7GRk_b1",
-          "name": "target",
-          "type": "string",
-          "value": "_blank"
         }
       ],
       [
@@ -88302,53 +89464,13 @@
         }
       ],
       [
-        "sSjGxeiN5Igm3WPyeABDU",
-        {
-          "id": "sSjGxeiN5Igm3WPyeABDU",
-          "instanceId": "20i9xQGam0egwaPvujFfw",
-          "name": "src",
-          "type": "asset",
-          "value": "1c62c9af3f77689c58f5f455a1290cc353053783a23a99159dbe2519d3f835f2"
-        }
-      ],
-      [
-        "Iwo5IteLffF8ssUjqjjZf",
-        {
-          "id": "Iwo5IteLffF8ssUjqjjZf",
-          "instanceId": "20i9xQGam0egwaPvujFfw",
-          "name": "width",
-          "type": "asset",
-          "value": "1c62c9af3f77689c58f5f455a1290cc353053783a23a99159dbe2519d3f835f2"
-        }
-      ],
-      [
-        "8YjNNFwTGTuUrDr4ax8eK",
-        {
-          "id": "8YjNNFwTGTuUrDr4ax8eK",
-          "instanceId": "20i9xQGam0egwaPvujFfw",
-          "name": "height",
-          "type": "asset",
-          "value": "1c62c9af3f77689c58f5f455a1290cc353053783a23a99159dbe2519d3f835f2"
-        }
-      ],
-      [
-        "tQrtL3UmHFw8hld-t1W4O",
-        {
-          "id": "tQrtL3UmHFw8hld-t1W4O",
-          "instanceId": "20i9xQGam0egwaPvujFfw",
-          "name": "alt",
-          "type": "asset",
-          "value": "1c62c9af3f77689c58f5f455a1290cc353053783a23a99159dbe2519d3f835f2"
-        }
-      ],
-      [
         "DAAsCEX3OTMLExAruuy0X",
         {
           "id": "DAAsCEX3OTMLExAruuy0X",
           "instanceId": "vfDTy2bZzKJg14hB0N36J",
           "name": "src",
           "type": "asset",
-          "value": "0ad3f13d85be012ed422666648d6424118fee4b17b3bd5cc238d58ffbb42c8a1"
+          "value": "ebc8d2d08dd7d795f146601ea1d8f2cb678277bc26ac0e7843fc3535f1282539"
         }
       ],
       [
@@ -88358,7 +89480,7 @@
           "instanceId": "vfDTy2bZzKJg14hB0N36J",
           "name": "alt",
           "type": "asset",
-          "value": "0ad3f13d85be012ed422666648d6424118fee4b17b3bd5cc238d58ffbb42c8a1"
+          "value": "ebc8d2d08dd7d795f146601ea1d8f2cb678277bc26ac0e7843fc3535f1282539"
         }
       ],
       [
@@ -89038,7 +90160,7 @@
           "instanceId": "hXzvUdzZrJqQOzQ9dAVXB",
           "name": "code",
           "type": "string",
-          "value": "<script src=\"https://cdn.jsdelivr.net/npm/@fullcalendar/core@6.1.17/index.global.min.js\"></script>\n<script src=\"https://cdn.jsdelivr.net/npm/@fullcalendar/daygrid@6.1.17/index.global.min.js\"></script>\n<script src=\"https://cdn.jsdelivr.net/npm/@fullcalendar/google-calendar@6.1.17/index.global.min.js\"></script>\n\n<script>\ndocument.addEventListener('DOMContentLoaded', function() {\n  var calendarEl = document.getElementById('calendar');\n\n  var calendar = new FullCalendar.Calendar(calendarEl, {\n    headerToolbar: {\n        left: 'prev,next today',\n        center: 'title',\n        right: ''\n    },\n    dayMaxEvents: 3,\n    firstDay: 1,\n    contentHeight: 'auto',\n    googleCalendarApiKey: 'AIzaSyDBDJxCyN67h-VrQ53s9vm597mrLUiZgHM',\n    events: '23c6f451e6193a878c5affc55d18b050093a87075c0325964379924db8ee027a@group.calendar.google.com',\n\n    eventContent: function(arg) {\n        // only show the event title, no time or dot\n        return {\n          html: '<div class=\"fc-event-title\" style=\"font-weight:normal;\">'\n                  + arg.event.title +\n                '</div>'\n        };\n    },\n\n    eventClick: function(info) {\n      // Prevent default Google Calendar link\n      info.jsEvent.preventDefault();\n      \n      const event = info.event;\n      const elContent = document.getElementById('e-content');\n      const popup = document.getElementById('event-popup');\n      const background = document.getElementById('event-popup-back');\n\n      // Gather content\n      var [eDate, eTime] = formatDate(event.start, event.end);\n      var eLoc = event.extendedProps.location || '';\n      var eDesc = event.extendedProps.description || '';\n\n      // Set content values and visibility\n      document.getElementById('e-title').textContent = event.title;\n      document.getElementById('e-date').textContent = eDate;\n      if (eTime == '') {\n        document.getElementById('e-time-container').style.display = 'none';\n      } else {\n        document.getElementById('e-time-container').style.display = 'flex';\n        document.getElementById('e-time').textContent = eTime;\n      }\n      if (eLoc == '') {\n        document.getElementById('e-loc-container').style.display = 'none';\n      } else {\n        document.getElementById('e-loc-container').style.display = 'flex';\n        document.getElementById('e-loc').textContent = eLoc;\n      }\n      if (eDesc == '') {\n        document.getElementById('e-desc').style.display = 'none';\n        document.getElementById('e-line').style.display = 'none';\n      } else {\n        document.getElementById('e-desc').style.display = 'block';\n        document.getElementById('e-line').style.display = 'block';\n        document.getElementById('e-desc').innerHTML = eDesc;\n      }\n      // TODO Accent colour based on calendar + map\n      \n      \n      // Show popup\n      //background.style.display = 'flex';\n      background.style.opacity = 1;\n      background.style.pointerEvents = \"auto\";\n      popup.style.setProperty(\"--pop-scale\", 1);\n\n      \n      // Hide popup\n      background.addEventListener('click', (e) => {\n        if (e.target === background) {\n          //background.style.display = 'none';\n          background.style.opacity = 0;\n          background.style.pointerEvents = \"none\";\n          popup.style.setProperty(\"--pop-scale\", 0.9);\n        }\n      });\n      background.addEventListener('pointerdown', (e) => {\n        if (e.target === background) {\n          e.preventDefault();            // blocks the selection start\n        }\n      });\n\n      popup.onclick = function(e) {\n          e.stopPropagation(); // prevents the click from reaching background\n        };\n      },\n\n    eventDataTransform: function(event) {\n        event.url = \"\";\n        return event;\n    }\n    \n  });\n  calendar.render();\n});\n\n\n  function formatDate(startDate, endDate) {\n    \n    const locale = 'en-GB';\n    const msDay = 24 * 60 * 60 * 1000;\n  \n    const toMidnight = d => new Date(d.getFullYear(), d.getMonth(), d.getDate());\n    const isMidnight = d => d.getHours() === 0 && d.getMinutes() === 0 && d.getSeconds() === 0 && d.getMilliseconds() === 0;\n    const sameDay = (a, b) =>\n      a.getFullYear() === b.getFullYear() &&\n      a.getMonth() === b.getMonth() &&\n      a.getDate() === b.getDate();\n  \n    const daySuffix = d => {\n      if (d > 3 && d < 21) return 'th';\n      switch (d % 10) {\n        case 1: return 'st';\n        case 2: return 'nd';\n        case 3: return 'rd';\n        default: return 'th';\n      }\n    };\n  \n    // Build “Friday · 29th August” or “29th August”\n    const formatDay = (date, withWeekday = true) => {\n      const opts = withWeekday\n        ? { weekday: 'long', day: 'numeric', month: 'long' }\n        : { day: 'numeric', month: 'long' };\n    \n      const parts = new Intl.DateTimeFormat(locale, opts).formatToParts(date);\n      const dayNum = date.getDate();\n      const suffixed = `${dayNum}${daySuffix(dayNum)}`;\n    \n      let result = parts.map(p => (p.type === 'day' ? suffixed : p.value)).join('').trim();\n      if (withWeekday) result = result.replace(/^(\\w+),?\\s+/, '$1  ·  ');\n      \n      return result;\n    };\n  \n    const formatTimeHM = d =>\n      new Intl.DateTimeFormat(locale, { hour: '2-digit', minute: '2-digit' }).format(d);\n  \n    // Detect single-day all-day (supports ICS: end at 00:00 next day)\n    const isAllDaySingleDay = (start, end) => {\n      console.log('1');\n      if (!start) return false;\n      if (!end) return isMidnight(start); // best effort: no end & midnight start\n      if (sameDay(start, end)) {\n        \n      console.log('2');\n        // All-day if start 00:00 and end is 23:59:59.999-ish (rare) — allow generous check\n        return isMidnight(start) && !isMidnight(end) && end - start >= msDay - 60000;\n      }\n      // ICS typical: start 00:00 of day X, end 00:00 of day X+1 (exclusive)\n      console.log('we should be here');\n      console.log(isMidnight(start) && isMidnight(end) && (end - start === msDay));\n      return isMidnight(start) && isMidnight(end) && (end - start === msDay);\n    };\n  \n    // Count unique calendar days touched by the event.\n    // If end is exactly midnight, treat as exclusive (ICS) by shifting back a millisecond.\n    const uniqueDayCount = (start, end) => {\n      if (!end) return 1;\n      const s0 = toMidnight(start);\n      let e0 = toMidnight(end);\n      if (isMidnight(end) && end > start) {\n        e0 = new Date(e0.getTime() - 1); // previous day late night\n      }\n      const e = toMidnight(e0);\n      return Math.floor((e - s0) / msDay) + 1;\n    };\n  \n    const hasEnd = endDate instanceof Date && !isNaN(endDate);\n    const start = startDate;\n    const end = hasEnd ? endDate : null;\n  \n    // === CASES ===\n\n    // Single-day all-day event: \"Friday · 29th August\"\n    if (isAllDaySingleDay(start, end || start)) {\n      return [formatDay(start, true), ''];\n    }\n    \n    // Any multi-day event (dates differ): \"29th August - 3rd September | N days\"\n    if (end && !sameDay(start, end)) {\n      const span = `${formatDay(start, false)} - ${formatDay(end, false)}`;\n      const days = uniqueDayCount(start, end);\n      return [span,  `${days} ${days === 1 ? 'day' : 'days'}`];\n    }\n  \n    // Same-day with start & end times: \"Friday · 29th August | 16:00 - 20:30\"\n    if (end && sameDay(start, end)) {\n      const startT = formatTimeHM(start);\n      const endT = formatTimeHM(end);\n      if (startT !== endT) {\n        return [formatDay(start, true), `${startT} - ${endT}`];\n      }\n      // If times are identical, just show one time\n      return [formatDay(start, true), startT];\n    }\n  \n    // No end time: \"Friday · 29th August | 16:00\"\n    return [formatDay(start, true), formatTimeHM(start)];\n  }\n\n\n</script>\n\n<style>\n  /* Selection and cursor control */\n  .fc-daygrid-day-number {\n    user-select: none;\n  }\n  \n  .fc-button {\n    background-color: var(--back-red-1) !important;\n    border-color: var(--back-red-1) !important;\n    color: #fff !important; /* Optional: Ensures text is visible */\n  }\n  \n  .fc-button:hover {\n    background-color: var(--back-red-1) !important;\n    opacity: 0.9;\n  }\n  \n  /* Change event background colours */\n  .fc-event {\n    background-color: var(--back-red-1) !important;\n    border-color: var(--back-red-1) !important;\n    color: #fff !important;\n    cursor: pointer; /* click cursor */\n  }\n\n  .fc .fc-scrollgrid td {\n    border: 1px solid var(--back-grey-1);\n    border-radius: var(--rad2);\n  }\n\n  .fc .fc-scrollgrid, .fc .fc-col-header-cell, .fc .fc-scrollgrid th {\n    border: none !important;\n  }\n\n  /* Highlight today */\n  .fc .fc-day-today {\n    background-color: rgb(from var(--back-red-1) r g b / 0.17) !important;\n    border-radius: 0 !important;\n    box-shadow: 0 0 80px rgb(from var(--back-red-1) r g b / 0.1);\n  }\n  .fc-day-today .fc-daygrid-day-number{\n    font-weight: 600;\n  }\n\n    .fc .fc-daygrid-day-frame {\n    min-height: 110px;\n  }\n  .calendar-container {\n  overflow-x: auto;\n  width: 100%;\n}\n\n  /* Padding for events in day */\n  .fc-daygrid-day-top{\n    margin-bottom: -7px;\n  }\n  .fc-event-title{\n    margin: -1px 0 -1px 4px;\n  }\n  .fc-daygrid-day-events{\n    margin-bottom: 2px !important;\n  }\n\n  /* Popup Styles */\n  .event-pop-title {\n    margin: -30px 0 -15px 25px;\n    padding: 0;\n  }\n  .event-pop-time {\n    margin-left: -13px;\n    font-size: 18px;\n    opacity: 0.6;\n  }\n  .event-pop-desc {\n    margin: -30px 50px -20px 50px;\n  }\n  .event-pop-loc {\n    margin-left: 25px;\n    margin-top: -23px;\n    font-size: 18px;\n    opacity: 0.6;\n  }\n  .pop-loc-pin {\n    font-weight: 700;\n  }\n\n  /* Prevent darkening when event clicked */\n  .fc-event::before, .fc-event::after {\n  display: none !important;\n}\n\n  /* Mobile: horizontally scroll the month grid, keep toolbar fixed */\n@media (max-width: 767px) {\n  /* Only the grid scrolls sideways */\n  #calendar .fc-view-harness {\n    overflow-x: auto;\n    overflow-y: hidden;\n    -webkit-overflow-scrolling: touch; /* iOS momentum */\n  }\n\n  /* Ensure the grid is wider than the screen so it can scroll */\n  #calendar .fc-scrollgrid {\n    min-width: 750px; /* e.g., ~128px per day * 7; tweak as you like */\n    margin-left: calc(2 * var(--gap1));\n    padding-right: calc(2 * var(--gap1));\n    \n    -ms-overflow-style: none;  /* Internet Explorer 10+ */\n    scrollbar-width: none;\n  }\n  .fc-header-toolbar {\n    margin: 0 calc(2 * var(--gap1));\n  }\n  #calendar .fc-scrollgrid::-webkit-scrollbar { \n    width: 0;\n    height: 0;\n  }\n\n  .fc-button {\n    padding: 2px 5px !important;\n  }\n  .fc-toolbar-title {\n    font-size: 25px !important;\n    padding-left: 10px;\n    text-align: center;\n  }\n}\n</style>"
+          "value": "<script src=\"https://cdn.jsdelivr.net/npm/@fullcalendar/core@6.1.19/index.global.min.js\"></script>\n<script src=\"https://cdn.jsdelivr.net/npm/@fullcalendar/daygrid@6.1.19/index.global.min.js\"></script>\n<script src=\"https://cdn.jsdelivr.net/npm/@fullcalendar/google-calendar@6.1.19/index.global.min.js\"></script>\n\n<script>\ndocument.addEventListener('DOMContentLoaded', function() {\n  var calendarEl = document.getElementById('calendar');\n\n  var calendar = new FullCalendar.Calendar(calendarEl, {\n    headerToolbar: {\n        left: 'prev,next today',\n        center: 'title',\n        right: ''\n    },\n    dayMaxEvents: 3,\n    firstDay: 1,\n    contentHeight: 'auto',\n    googleCalendarApiKey: 'AIzaSyDBDJxCyN67h-VrQ53s9vm597mrLUiZgHM',\n    events: '23c6f451e6193a878c5affc55d18b050093a87075c0325964379924db8ee027a@group.calendar.google.com',\n\n    eventContent: function(arg) {\n        // only show the event title, no time or dot\n        return {\n          html: '<div class=\"fc-event-title\" style=\"font-weight:normal;\">'\n                  + arg.event.title +\n                '</div>'\n        };\n    },\n\n    eventDataTransform: function(eventData) {\n      let transData = {...eventData};\n      // Handle events past midnight (until 5am)\n      if (eventData.end) {\n        let start = new Date(eventData.start);\n        let end = new Date(eventData.end);\n        // Save original end time\n        transData.extendedProps = {...eventData.extendedProps, realEnd: end};\n\n        let startDay = new Date(start);\n        startDay.setHours(0,0,0,0);\n        let endDay = new Date(end);\n        endDay.setHours(0,0,0,0);\n        if ((endDay-startDay)/(1000*60*60*24) === 1 && end.getHours() < 5) {\n          let adjusted = new Date(start);\n          adjusted.setHours(23,59,59,999);\n          transData.end = adjusted;\n        }\n      }\n      transData.url = \"\";\n      return transData;\n    },\n\n    eventDidMount: function(info) {\n      info.el.setAttribute(\"title\", info.event.title);\n    },\n\n    eventClick: function(info) {\n      // Prevent default Google Calendar link\n      info.jsEvent.preventDefault();\n      \n      const event = info.event;\n      const elContent = document.getElementById('e-content');\n      const popup = document.getElementById('event-popup');\n      const background = document.getElementById('event-popup-back');\n\n      // Gather content\n      var [eDate, eTime] = formatDate(event.start, event.extendedProps.realEnd);\n      var eLoc = event.extendedProps.location || '';\n      var eDesc = event.extendedProps.description || '';\n\n      // Set content values and visibility\n      document.getElementById('e-title').textContent = event.title;\n      document.getElementById('e-date').textContent = eDate;\n      if (eTime == '') {\n        document.getElementById('e-time-container').style.display = 'none';\n      } else {\n        document.getElementById('e-time-container').style.display = 'flex';\n        document.getElementById('e-time').textContent = eTime;\n      }\n      if (eLoc == '') {\n        document.getElementById('e-loc-container').style.display = 'none';\n      } else {\n        document.getElementById('e-loc-container').style.display = 'flex';\n        document.getElementById('e-loc').textContent = eLoc;\n      }\n      if (eDesc == '') {\n        document.getElementById('e-desc').style.display = 'none';\n        document.getElementById('e-line').style.display = 'none';\n      } else {\n        document.getElementById('e-desc').style.display = 'block';\n        document.getElementById('e-line').style.display = 'block';\n        document.getElementById('e-desc').innerHTML = eDesc;\n      }\n      // TODO Accent colour based on calendar + map\n      \n      \n      // Show popup\n      //background.style.display = 'flex';\n      background.style.opacity = 1;\n      background.style.pointerEvents = \"auto\";\n      popup.style.setProperty(\"--pop-scale\", 1);\n\n      \n      // Hide popup\n      background.addEventListener('click', (e) => {\n        if (e.target === background) {\n          //background.style.display = 'none';\n          background.style.opacity = 0;\n          background.style.pointerEvents = \"none\";\n          popup.style.setProperty(\"--pop-scale\", 0.9);\n        }\n      });\n      background.addEventListener('pointerdown', (e) => {\n        if (e.target === background) {\n          e.preventDefault();            // blocks the selection start\n        }\n      });\n\n      popup.onclick = function(e) {\n          e.stopPropagation(); // prevents the click from reaching background\n        };\n      }\n    \n  });\n  calendar.render();\n});\n\n\n  function formatDate(startDate, endDate) {\n    \n    const locale = 'en-GB';\n    const msDay = 24 * 60 * 60 * 1000;\n  \n    const toMidnight = d => new Date(d.getFullYear(), d.getMonth(), d.getDate());\n    const isMidnight = d => d.getHours() === 0 && d.getMinutes() === 0 && d.getSeconds() === 0 && d.getMilliseconds() === 0;\n    const sameDay = (a, b) => {\n      const sameDate =\n        a.getFullYear() === b.getFullYear() &&\n        a.getMonth() === b.getMonth() &&\n        a.getDate() === b.getDate();\n    \n      const nextDayBefore5am =\n        b.getFullYear() === a.getFullYear() &&\n        b.getMonth() === a.getMonth() &&\n        b.getDate() === a.getDate() + 1 &&\n        b.getHours() < 5;\n    \n      return sameDate || nextDayBefore5am;\n    };\n  \n    const daySuffix = d => {\n      if (d > 3 && d < 21) return 'th';\n      switch (d % 10) {\n        case 1: return 'st';\n        case 2: return 'nd';\n        case 3: return 'rd';\n        default: return 'th';\n      }\n    };\n  \n    // Build “Friday · 29th August” or “29th August”\n    const formatDay = (date, withWeekday = true) => {\n      const opts = withWeekday\n        ? { weekday: 'long', day: 'numeric', month: 'long' }\n        : { day: 'numeric', month: 'long' };\n    \n      const parts = new Intl.DateTimeFormat(locale, opts).formatToParts(date);\n      const dayNum = date.getDate();\n      const suffixed = `${dayNum}${daySuffix(dayNum)}`;\n    \n      let result = parts.map(p => (p.type === 'day' ? suffixed : p.value)).join('').trim();\n      if (withWeekday) result = result.replace(/^(\\w+),?\\s+/, '$1  ·  ');\n      \n      return result;\n    };\n  \n    const formatTimeHM = d =>\n      new Intl.DateTimeFormat(locale, { hour: '2-digit', minute: '2-digit' }).format(d);\n  \n    // Detect single-day all-day (supports ICS: end at 00:00 next day)\n    const isAllDaySingleDay = (start, end) => {\n      if (!start) return false;\n      if (!end) return isMidnight(start); // best effort: no end & midnight start\n      if (sameDay(start, end)) {\n        \n        // All-day if start 00:00 and end is 23:59:59.999-ish (rare) — allow generous check\n        return isMidnight(start) && !isMidnight(end) && end - start >= msDay - 60000;\n      }\n      // ICS typical: start 00:00 of day X, end 00:00 of day X+1 (exclusive)\n      return isMidnight(start) && isMidnight(end) && (end - start === msDay);\n    };\n  \n    // Count unique calendar days touched by the event.\n    // If end is exactly midnight, treat as exclusive (ICS) by shifting back a millisecond.\n    const uniqueDayCount = (start, end) => {\n      if (!end) return 1;\n      const s0 = toMidnight(start);\n      let e0 = toMidnight(end);\n      if (isMidnight(end) && end > start) {\n        e0 = new Date(e0.getTime() - 1); // previous day late night\n      }\n      const e = toMidnight(e0);\n      return Math.floor((e - s0) / msDay) + 1;\n    };\n  \n    const hasEnd = endDate instanceof Date && !isNaN(endDate);\n    const start = startDate;\n    const end = hasEnd ? endDate : null;\n  \n    // === CASES ===\n\n    // Single-day all-day event: \"Friday · 29th August\"\n    if (isAllDaySingleDay(start, end || start)) {\n      return [formatDay(start, true), ''];\n    }\n    \n    // Any multi-day event (dates differ): \"29th August - 3rd September | N days\"\n    if (end && !sameDay(start, end)) {\n      const span = `${formatDay(start, false)} - ${formatDay(end, false)}`;\n      const days = uniqueDayCount(start, end);\n      return [span,  `${days} ${days === 1 ? 'day' : 'days'}`];\n    }\n  \n    // Same-day with start & end times: \"Friday · 29th August | 16:00 - 20:30\"\n    if (end && sameDay(start, end)) {\n      const startT = formatTimeHM(start);\n      const endT = formatTimeHM(end);\n      if (startT !== endT) {\n        const moon = end.getHours() < 5 ? ' 🌙' : '';\n        return [formatDay(start, true), `${startT} - ${endT}${moon}`];\n      }\n      // If times are identical, just show one time\n      return [formatDay(start, true), startT];\n    }\n  \n    // No end time: \"Friday · 29th August | 16:00\"\n    return [formatDay(start, true), formatTimeHM(start)];\n  }\n\n\n</script>\n\n<style>\n  /* Selection and cursor control */\n  .fc-daygrid-day-number {\n    user-select: none;\n  }\n  \n  .fc-button {\n    background-color: var(--back-red-1) !important;\n    border-color: var(--back-red-1) !important;\n    color: #fff !important; /* Optional: Ensures text is visible */\n  }\n  \n  .fc-button:hover {\n    background-color: var(--back-red-1) !important;\n    opacity: 0.9;\n  }\n  \n  /* Change event background colours */\n  .fc-event {\n    background-color: var(--back-red-1) !important;\n    border-color: var(--back-red-1) !important;\n    color: #fff !important;\n    cursor: pointer; /* click cursor */\n  }\n\n  .fc .fc-scrollgrid td {\n    border: 1px solid var(--back-grey-1);\n    border-radius: var(--rad2);\n  }\n\n  .fc .fc-scrollgrid, .fc .fc-col-header-cell, .fc .fc-scrollgrid th {\n    border: none !important;\n  }\n\n  /* Highlight today */\n  .fc .fc-day-today {\n    background-color: rgb(from var(--back-red-1) r g b / 0.17) !important;\n    border-radius: 0 !important;\n    box-shadow: 0 0 80px rgb(from var(--back-red-1) r g b / 0.1);\n  }\n  .fc-day-today .fc-daygrid-day-number{\n    font-weight: 600;\n  }\n\n    .fc .fc-daygrid-day-frame {\n    min-height: 110px;\n  }\n  .calendar-container {\n  overflow-x: auto;\n  width: 100%;\n}\n\n  /* Padding for events in day */\n  .fc-daygrid-day-top{\n    margin-bottom: -7px;\n  }\n  .fc-event-title{\n    margin: -1px 0 -1px 4px;\n  }\n  .fc-daygrid-day-events{\n    margin-bottom: 2px !important;\n  }\n\n  /* Popup Styles */\n  .event-pop-title {\n    margin: -30px 0 -15px 25px;\n    padding: 0;\n  }\n  .event-pop-time {\n    margin-left: -13px;\n    font-size: 18px;\n    opacity: 0.6;\n  }\n  .event-pop-desc {\n    margin: -30px 50px -20px 50px;\n  }\n  .event-pop-loc {\n    margin-left: 25px;\n    margin-top: -23px;\n    font-size: 18px;\n    opacity: 0.6;\n  }\n  .pop-loc-pin {\n    font-weight: 700;\n  }\n\n  /* Prevent darkening when event clicked */\n  .fc-event::before, .fc-event::after {\n  display: none !important;\n}\n\n  /* Mobile: horizontally scroll the month grid, keep toolbar fixed */\n@media (max-width: 767px) {\n  \n  /* Only the grid scrolls sideways */\n  #calendar .fc-view-harness {\n    overflow-x: auto;\n    overflow-y: hidden;\n    -webkit-overflow-scrolling: touch; /* iOS momentum */\n  }\n\n  /* Ensure the grid is wider than the screen so it can scroll */\n  #calendar .fc-scrollgrid {\n    min-width: 600px;\n    margin-left: calc(2 * var(--gap1));\n    padding-right: calc(2 * var(--gap1));\n    \n    -ms-overflow-style: none;  /* Internet Explorer 10+ */\n    scrollbar-width: none;\n  }\n  .fc-header-toolbar {\n    margin: 0 calc(2 * var(--gap1));\n  }\n  #calendar .fc-scrollgrid::-webkit-scrollbar { \n    width: 0;\n    height: 0;\n  }\n\n  /* Grid sizing */\n  #calendar .fc-scrollgrid{\n    font-size: 0.7em;\n  }\n  .fc .fc-daygrid-day-frame {\n    min-height: 75px;\n  }\n  .fc{\n    width: 700px\n  }\n  \n  /* Toolbar sizing */\n  .fc-button {\n    padding: 0 4px !important;\n  }\n  .fc-button * {\n    font-size: 20px !important;\n  }\n  .fc-toolbar-title {\n    font-size: 18px !important;\n    padding-left: 10px;\n    text-align: center;\n  }\n  \n}\n</style>"
         }
       ],
       [
@@ -89198,7 +90320,7 @@
           "instanceId": "vfDTy2bZzKJg14hB0N36J",
           "name": "width",
           "type": "asset",
-          "value": "0ad3f13d85be012ed422666648d6424118fee4b17b3bd5cc238d58ffbb42c8a1"
+          "value": "ebc8d2d08dd7d795f146601ea1d8f2cb678277bc26ac0e7843fc3535f1282539"
         }
       ],
       [
@@ -89208,7 +90330,7 @@
           "instanceId": "vfDTy2bZzKJg14hB0N36J",
           "name": "height",
           "type": "asset",
-          "value": "0ad3f13d85be012ed422666648d6424118fee4b17b3bd5cc238d58ffbb42c8a1"
+          "value": "ebc8d2d08dd7d795f146601ea1d8f2cb678277bc26ac0e7843fc3535f1282539"
         }
       ],
       [
@@ -91240,6 +92362,356 @@
           "type": "boolean",
           "value": false
         }
+      ],
+      [
+        "MKOj_wVINn8AApPMz053y",
+        {
+          "id": "MKOj_wVINn8AApPMz053y",
+          "instanceId": "4FP59c0h0UDsd6BYP0cys",
+          "name": "href",
+          "type": "string",
+          "value": "https://geunion.dk/"
+        }
+      ],
+      [
+        "g_8xZin9hwuJY3weYIHfU",
+        {
+          "id": "g_8xZin9hwuJY3weYIHfU",
+          "instanceId": "4FP59c0h0UDsd6BYP0cys",
+          "name": "target",
+          "type": "string",
+          "value": "_blank"
+        }
+      ],
+      [
+        "fp7QlApUMpC4FaXaXFx0N",
+        {
+          "id": "fp7QlApUMpC4FaXaXFx0N",
+          "instanceId": "K4VTI084UIt0UufhHx7Kg",
+          "name": "href",
+          "type": "string",
+          "value": "https://www.instagram.com/ge.union/"
+        }
+      ],
+      [
+        "LjPIDxMIbxupc1xde82UK",
+        {
+          "id": "LjPIDxMIbxupc1xde82UK",
+          "instanceId": "K4VTI084UIt0UufhHx7Kg",
+          "name": "target",
+          "type": "string",
+          "value": "_blank"
+        }
+      ],
+      [
+        "IPT_uRGOC5aO9rPCGEC8z",
+        {
+          "id": "IPT_uRGOC5aO9rPCGEC8z",
+          "instanceId": "pxnIrGxKYVQKGItdLCW4U",
+          "name": "src",
+          "type": "asset",
+          "value": "49a39abbf85bc91490337c561c18f4155deab689c43010959e1eb6dff1afb81f"
+        }
+      ],
+      [
+        "2m4RiLkBsmZVB0fQ3v4TH",
+        {
+          "id": "2m4RiLkBsmZVB0fQ3v4TH",
+          "instanceId": "pxnIrGxKYVQKGItdLCW4U",
+          "name": "width",
+          "type": "asset",
+          "value": "49a39abbf85bc91490337c561c18f4155deab689c43010959e1eb6dff1afb81f"
+        }
+      ],
+      [
+        "atUmV7etwjlYRiHUqh2jv",
+        {
+          "id": "atUmV7etwjlYRiHUqh2jv",
+          "instanceId": "pxnIrGxKYVQKGItdLCW4U",
+          "name": "height",
+          "type": "asset",
+          "value": "49a39abbf85bc91490337c561c18f4155deab689c43010959e1eb6dff1afb81f"
+        }
+      ],
+      [
+        "JY_Kkdd2Y_4YcDXz3XqsD",
+        {
+          "id": "JY_Kkdd2Y_4YcDXz3XqsD",
+          "instanceId": "_iDRnhY0lkg6li_rYmhdE",
+          "name": "href",
+          "type": "string",
+          "value": "https://docs.google.com/forms/d/e/1FAIpQLScu14PgRWRO-iJ6uEs9s8lNS5QsuPb0HNvI8OY9KIkB9he5VQ/viewform?usp=header"
+        }
+      ],
+      [
+        "2BRPBXC7wJq3o2PrvFY_m",
+        {
+          "id": "2BRPBXC7wJq3o2PrvFY_m",
+          "instanceId": "pxnIrGxKYVQKGItdLCW4U",
+          "name": "alt",
+          "type": "asset",
+          "value": "49a39abbf85bc91490337c561c18f4155deab689c43010959e1eb6dff1afb81f"
+        }
+      ],
+      [
+        "fmnpQlSmGgGHHpwzLuxtZ",
+        {
+          "id": "fmnpQlSmGgGHHpwzLuxtZ",
+          "instanceId": "hNzUmfxY-e_tO2Xj-sr8V",
+          "name": "src",
+          "type": "asset",
+          "value": "49a39abbf85bc91490337c561c18f4155deab689c43010959e1eb6dff1afb81f"
+        }
+      ],
+      [
+        "6AORcWyQQZvkX0k2XJezH",
+        {
+          "id": "6AORcWyQQZvkX0k2XJezH",
+          "instanceId": "hNzUmfxY-e_tO2Xj-sr8V",
+          "name": "width",
+          "type": "asset",
+          "value": "49a39abbf85bc91490337c561c18f4155deab689c43010959e1eb6dff1afb81f"
+        }
+      ],
+      [
+        "6IwX3nXRdzVAMA9mykvBh",
+        {
+          "id": "6IwX3nXRdzVAMA9mykvBh",
+          "instanceId": "hNzUmfxY-e_tO2Xj-sr8V",
+          "name": "height",
+          "type": "asset",
+          "value": "49a39abbf85bc91490337c561c18f4155deab689c43010959e1eb6dff1afb81f"
+        }
+      ],
+      [
+        "G8PC6DXP1ULsa_0s3IbXb",
+        {
+          "id": "G8PC6DXP1ULsa_0s3IbXb",
+          "instanceId": "i_H_ZC83LZ9rsE76wBZFN",
+          "name": "href",
+          "type": "string",
+          "value": "https://docs.google.com/forms/d/e/1FAIpQLScu14PgRWRO-iJ6uEs9s8lNS5QsuPb0HNvI8OY9KIkB9he5VQ/viewform?usp=header"
+        }
+      ],
+      [
+        "MY-DqsERHp0B-CFCRCzCI",
+        {
+          "id": "MY-DqsERHp0B-CFCRCzCI",
+          "instanceId": "t7n-UIELB66XWJmDgofSx",
+          "name": "data-ws-show",
+          "type": "boolean",
+          "value": true
+        }
+      ],
+      [
+        "HU6PP3KdnRrU77jIIeqvh",
+        {
+          "id": "HU6PP3KdnRrU77jIIeqvh",
+          "instanceId": "hNzUmfxY-e_tO2Xj-sr8V",
+          "name": "alt",
+          "type": "asset",
+          "value": "49a39abbf85bc91490337c561c18f4155deab689c43010959e1eb6dff1afb81f"
+        }
+      ],
+      [
+        "VJJ9062NdfbdhkR7t5lZE",
+        {
+          "id": "VJJ9062NdfbdhkR7t5lZE",
+          "instanceId": "HzoGz1cO4F_sgAQlowXRW",
+          "name": "code",
+          "type": "string",
+          "value": "<style>\n@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300..900&display=swap');\n@import url('https://api.fontshare.com/v2/css?f[]=tanker@400&amp;display=swap');\n  \n  h1{\n    font-family: 'Tanker';\n    font-weight: 500;\n    font-size: 5em;\n    color: var(--background);\n    line-height: 1;\n    margin: 0;\n  }\n  h2{\n    font-weight: 600;\n    font-size: 36px;\n    line-height: 1;\n    margin: 0;\n  }\n  p{\n    margin: 0;\n  }\n  \n  .icon-background{\n    background-color: var(--back-red-1);\n    z-index: 1;\n    overflow: hidden;\n    position: relative;\n  }\n  .icon-background::before{\n    content: \"\";\n    position: absolute;\n    width: 200%; height: 200%;\n    top: -50%; left: -50%;\n    background-image: url('/assets/icon-background_orTDw4lIQEfSgOgF0DBVy.svg?width=1080&quality=80&format=auto');\n    background-size: 200px 115.4734411085px;\n    background-repeat: repeat;\n    animation: scrollBg 20s linear infinite;\n    z-index: -1;\n    opacity: var(--icon-background-opacity, 3%); mix-blend-mode: luminosity;\n    filter: blur(2px)\n  }\n  \n  .home-top::after{\n    position: absolute;\n    content: \"\";\n    width: 100%;\n    height: 250px;\n    background: linear-gradient(180deg, hsl(from var(--back-red-1) h s l / 0.65) 15%, hsl(from var(--back-red-1) h s l / 0) 100%);\n    z-index: -1;\n  }\n\n  @keyframes scrollBg {\n      0% {\n        background-position: 0 0;\n      }\n      100% {\n        background-position: -200px 115.4734411085px;\n      }\n    }\n\n  .home-top-card:hover .home-top-card-title-icon{\n    width: 38px;\n    padding-left: 3px;\n  }\n\n  @media only screen and (max-width: 767px) {\n    h1{\n      font-size: 4em;\n    }\n    h2{\n      font-size: 32px;\n    }\n  }\n</style>"
+        }
+      ],
+      [
+        "R2bpubrCF_tYJTAau89si",
+        {
+          "id": "R2bpubrCF_tYJTAau89si",
+          "instanceId": "HzoGz1cO4F_sgAQlowXRW",
+          "name": "executeScriptOnCanvas",
+          "type": "boolean",
+          "value": true
+        }
+      ],
+      [
+        "gYxeKZeoKuXCxSZ1yJAnH",
+        {
+          "id": "gYxeKZeoKuXCxSZ1yJAnH",
+          "instanceId": "HzoGz1cO4F_sgAQlowXRW",
+          "name": "data-ws-show",
+          "type": "boolean",
+          "value": true
+        }
+      ],
+      [
+        "qqk0edfMOBPmqdfogf0qm",
+        {
+          "id": "qqk0edfMOBPmqdfogf0qm",
+          "instanceId": "FZW9MIoXDtizWZL34X4vw",
+          "name": "class",
+          "type": "string",
+          "value": "icon-background\n"
+        }
+      ],
+      [
+        "CFT6uU_RUKGczjethJMgl",
+        {
+          "id": "CFT6uU_RUKGczjethJMgl",
+          "instanceId": "anB_GmbV2HfOGPPB5YXaN",
+          "name": "href",
+          "type": "string",
+          "value": "https://billetfix.dk/e/international-theme-party/"
+        }
+      ],
+      [
+        "OqyD6trALzQIvIBTWm_wj",
+        {
+          "id": "OqyD6trALzQIvIBTWm_wj",
+          "instanceId": "HlVMLDyRhysfmN_tR2rsP",
+          "name": "code",
+          "type": "string",
+          "value": "<div class=\"ticketbutler-iframe\"\n     data-type=\"EVENT\"\n     data-domain=\"billetfix.dk\"\n     data-slug=\"international-theme-party\">\n</div>\n<script type=\"text/javascript\" src=\"https://cdn.ticketbutler.io/event-embedder/index.js\"></script>\n\n<script>\n(function(){\n  // Manual re-initialisation of Ticketbutler embeds\n  function reloadTicketbutler() {\n    // Remove the \"loaded\" attribute so the embed code will process them again\n    document.querySelectorAll('.ticketbutler-iframe[loaded]')\n      .forEach(function(el){ el.removeAttribute('loaded'); });\n\n    // Allow the internal init function to run again\n    window.ticketbutlerEventEmbedderLoaded = false;\n\n    // Dispatch a fake readystatechange to trigger its listener\n    var ev = document.createEvent('Event');\n    ev.initEvent('readystatechange', true, true);\n    document.readyState === 'complete'\n      ? document.dispatchEvent(ev)\n      : console.warn('[Ticketbutler] Document not complete, cannot retrigger');\n  }\n\n  // Retry a few times on load just in case\n  if (document.readyState === 'complete') {\n    setTimeout(reloadTicketbutler, 1000);\n    setTimeout(reloadTicketbutler, 3000);\n  } else {\n    window.addEventListener('load', function(){\n      setTimeout(reloadTicketbutler, 1000);\n      setTimeout(reloadTicketbutler, 3000);\n    });\n  }\n\n  // Optional manual button (if present)\n  var btn = document.getElementById('reload-ticketbutler');\n  if (btn) btn.addEventListener('click', reloadTicketbutler);\n\n  // Expose for console/manual debugging\n  window.reloadTicketbutler = reloadTicketbutler;\n})();\n</script>\n"
+        }
+      ],
+      [
+        "0BgTTUoIzy4iX9cZnEeWw",
+        {
+          "id": "0BgTTUoIzy4iX9cZnEeWw",
+          "instanceId": "HlVMLDyRhysfmN_tR2rsP",
+          "name": "executeScriptOnCanvas",
+          "type": "boolean",
+          "value": true
+        }
+      ],
+      [
+        "e1wAws4z5nIkidnpv96e1",
+        {
+          "id": "e1wAws4z5nIkidnpv96e1",
+          "instanceId": "HlVMLDyRhysfmN_tR2rsP",
+          "name": "clientOnly",
+          "type": "boolean",
+          "value": false
+        }
+      ],
+      [
+        "BnHK3GlZjxWfM8unUMPcc",
+        {
+          "id": "BnHK3GlZjxWfM8unUMPcc",
+          "instanceId": "mfXdsiMX7NIYJ0xoovKc_",
+          "name": "id",
+          "type": "string",
+          "value": "int-part-tickets"
+        }
+      ],
+      [
+        "am90z4H3ULnFjufRPAcOG",
+        {
+          "id": "am90z4H3ULnFjufRPAcOG",
+          "instanceId": "lsCV5VJWkT75bla1Vi2CH",
+          "name": "src",
+          "type": "asset",
+          "value": "1c62c9af3f77689c58f5f455a1290cc353053783a23a99159dbe2519d3f835f2"
+        }
+      ],
+      [
+        "pCJS4V7mdOlgCa52qgNB4",
+        {
+          "id": "pCJS4V7mdOlgCa52qgNB4",
+          "instanceId": "lsCV5VJWkT75bla1Vi2CH",
+          "name": "width",
+          "type": "asset",
+          "value": "1c62c9af3f77689c58f5f455a1290cc353053783a23a99159dbe2519d3f835f2"
+        }
+      ],
+      [
+        "JMdhSR9zTsSAfO1SItFgk",
+        {
+          "id": "JMdhSR9zTsSAfO1SItFgk",
+          "instanceId": "lsCV5VJWkT75bla1Vi2CH",
+          "name": "height",
+          "type": "asset",
+          "value": "1c62c9af3f77689c58f5f455a1290cc353053783a23a99159dbe2519d3f835f2"
+        }
+      ],
+      [
+        "i6n-DTx4aALKDSTQ0eNue",
+        {
+          "id": "i6n-DTx4aALKDSTQ0eNue",
+          "instanceId": "lsCV5VJWkT75bla1Vi2CH",
+          "name": "alt",
+          "type": "asset",
+          "value": "1c62c9af3f77689c58f5f455a1290cc353053783a23a99159dbe2519d3f835f2"
+        }
+      ],
+      [
+        "MHoYe1GCzJJCIL6q0PGxI",
+        {
+          "id": "MHoYe1GCzJJCIL6q0PGxI",
+          "instanceId": "7iZeLlCblToOZQJUWN7qr",
+          "name": "code",
+          "type": "string",
+          "value": "<div class=\"ticketbutler-iframe\"\n     data-type=\"EVENT\"\n     data-domain=\"billetfix.dk\"\n     data-slug=\"international-theme-party\">\n</div>\n<script type=\"text/javascript\" src=\"https://cdn.ticketbutler.io/event-embedder/index.js\"></script>\n\n<script>\n(function(){\n  // Manual re-initialisation of Ticketbutler embeds\n  function reloadTicketbutler() {\n    // Remove the \"loaded\" attribute so the embed code will process them again\n    document.querySelectorAll('.ticketbutler-iframe[loaded]')\n      .forEach(function(el){ el.removeAttribute('loaded'); });\n\n    // Allow the internal init function to run again\n    window.ticketbutlerEventEmbedderLoaded = false;\n\n    // Dispatch a fake readystatechange to trigger its listener\n    var ev = document.createEvent('Event');\n    ev.initEvent('readystatechange', true, true);\n    document.readyState === 'complete'\n      ? document.dispatchEvent(ev)\n      : console.warn('[Ticketbutler] Document not complete, cannot retrigger');\n  }\n\n  // Retry a few times on load just in case\n  if (document.readyState === 'complete') {\n    setTimeout(reloadTicketbutler, 1000);\n    setTimeout(reloadTicketbutler, 3000);\n  } else {\n    window.addEventListener('load', function(){\n      setTimeout(reloadTicketbutler, 1000);\n      setTimeout(reloadTicketbutler, 3000);\n    });\n  }\n\n  // Optional manual button (if present)\n  var btn = document.getElementById('reload-ticketbutler');\n  if (btn) btn.addEventListener('click', reloadTicketbutler);\n\n  // Expose for console/manual debugging\n  window.reloadTicketbutler = reloadTicketbutler;\n})();\n</script>\n"
+        }
+      ],
+      [
+        "IJ17IeKzAtbrVC_k-Nnxr",
+        {
+          "id": "IJ17IeKzAtbrVC_k-Nnxr",
+          "instanceId": "7iZeLlCblToOZQJUWN7qr",
+          "name": "executeScriptOnCanvas",
+          "type": "boolean",
+          "value": true
+        }
+      ],
+      [
+        "k_RwJPPXJezTQx22nRmbb",
+        {
+          "id": "k_RwJPPXJezTQx22nRmbb",
+          "instanceId": "7iZeLlCblToOZQJUWN7qr",
+          "name": "clientOnly",
+          "type": "boolean",
+          "value": false
+        }
+      ],
+      [
+        "sSjGxeiN5Igm3WPyeABDU",
+        {
+          "id": "sSjGxeiN5Igm3WPyeABDU",
+          "instanceId": "20i9xQGam0egwaPvujFfw",
+          "name": "src",
+          "type": "asset",
+          "value": "1c62c9af3f77689c58f5f455a1290cc353053783a23a99159dbe2519d3f835f2"
+        }
+      ],
+      [
+        "Iwo5IteLffF8ssUjqjjZf",
+        {
+          "id": "Iwo5IteLffF8ssUjqjjZf",
+          "instanceId": "20i9xQGam0egwaPvujFfw",
+          "name": "width",
+          "type": "asset",
+          "value": "1c62c9af3f77689c58f5f455a1290cc353053783a23a99159dbe2519d3f835f2"
+        }
+      ],
+      [
+        "8YjNNFwTGTuUrDr4ax8eK",
+        {
+          "id": "8YjNNFwTGTuUrDr4ax8eK",
+          "instanceId": "20i9xQGam0egwaPvujFfw",
+          "name": "height",
+          "type": "asset",
+          "value": "1c62c9af3f77689c58f5f455a1290cc353053783a23a99159dbe2519d3f835f2"
+        }
+      ],
+      [
+        "tQrtL3UmHFw8hld-t1W4O",
+        {
+          "id": "tQrtL3UmHFw8hld-t1W4O",
+          "instanceId": "20i9xQGam0egwaPvujFfw",
+          "name": "alt",
+          "type": "asset",
+          "value": "1c62c9af3f77689c58f5f455a1290cc353053783a23a99159dbe2519d3f835f2"
+        }
       ]
     ],
     "dataSources": [],
@@ -91266,11 +92738,19 @@
             },
             {
               "type": "id",
+              "value": "lvYVCqeV5W9s639t_8bNL"
+            },
+            {
+              "type": "id",
               "value": "c5XZEhgJmhipvebGDdmok"
             },
             {
               "type": "id",
               "value": "lYUiMaH6SA7SN9LOobH1O"
+            },
+            {
+              "type": "id",
+              "value": "s-5vm3y7YuphO-v30RDC4"
             },
             {
               "type": "id",
@@ -91960,16 +93440,6 @@
         }
       ],
       [
-        "HzoGz1cO4F_sgAQlowXRW",
-        {
-          "type": "instance",
-          "id": "HzoGz1cO4F_sgAQlowXRW",
-          "component": "HtmlEmbed",
-          "label": "Root Style",
-          "children": []
-        }
-      ],
-      [
         "-iUJYIyDb5jvMkBJz9r2G",
         {
           "type": "instance",
@@ -92242,6 +93712,10 @@
             },
             {
               "type": "id",
+              "value": "KlaMRVy6AFmFFcCqHYiON"
+            },
+            {
+              "type": "id",
               "value": "MkczoN0eVLLEFtohoVYHj"
             },
             {
@@ -92511,83 +93985,9 @@
           "children": [
             {
               "type": "id",
-              "value": "mWD2YdO1uiiwYAK8arcoI"
+              "value": "FZW9MIoXDtizWZL34X4vw"
             }
           ]
-        }
-      ],
-      [
-        "mWD2YdO1uiiwYAK8arcoI",
-        {
-          "type": "instance",
-          "id": "mWD2YdO1uiiwYAK8arcoI",
-          "component": "ws:element",
-          "tag": "div",
-          "label": "Card",
-          "children": [
-            {
-              "type": "id",
-              "value": "i9bymrHol--dUNSRD9XwH"
-            },
-            {
-              "type": "id",
-              "value": "Wp9ItDtkfpflbkUWFemem"
-            }
-          ]
-        }
-      ],
-      [
-        "i9bymrHol--dUNSRD9XwH",
-        {
-          "type": "instance",
-          "id": "i9bymrHol--dUNSRD9XwH",
-          "component": "ws:element",
-          "tag": "div",
-          "children": [
-            {
-              "type": "id",
-              "value": "NnidQ0XxCKWsTFjIU7rVB"
-            },
-            {
-              "type": "id",
-              "value": "XQHlmpQbR-gXk63lyMRLs"
-            }
-          ]
-        }
-      ],
-      [
-        "NnidQ0XxCKWsTFjIU7rVB",
-        {
-          "type": "instance",
-          "id": "NnidQ0XxCKWsTFjIU7rVB",
-          "component": "ws:element",
-          "tag": "div",
-          "children": []
-        }
-      ],
-      [
-        "XQHlmpQbR-gXk63lyMRLs",
-        {
-          "type": "instance",
-          "id": "XQHlmpQbR-gXk63lyMRLs",
-          "component": "ws:element",
-          "tag": "h2",
-          "children": [
-            {
-              "type": "text",
-              "value": "Coming Up"
-            }
-          ]
-        }
-      ],
-      [
-        "Wp9ItDtkfpflbkUWFemem",
-        {
-          "type": "instance",
-          "id": "Wp9ItDtkfpflbkUWFemem",
-          "component": "ws:element",
-          "tag": "div",
-          "children": []
         }
       ],
       [
@@ -92621,48 +94021,6 @@
             {
               "type": "text",
               "value": "GE Union"
-            }
-          ]
-        }
-      ],
-      [
-        "i6v25gfBznCdLDQo8uoKS",
-        {
-          "type": "instance",
-          "id": "i6v25gfBznCdLDQo8uoKS",
-          "component": "ws:element",
-          "tag": "h2",
-          "children": [
-            {
-              "type": "text",
-              "value": "Who We Are"
-            }
-          ]
-        }
-      ],
-      [
-        "1rV3e_Karp8KfjYG0ygo7",
-        {
-          "type": "instance",
-          "id": "1rV3e_Karp8KfjYG0ygo7",
-          "component": "ws:element",
-          "tag": "p",
-          "children": [
-            {
-              "type": "text",
-              "value": "GE Union is the student organization for General Engineering at DTU."
-            },
-            {
-              "type": "text",
-              "value": "\n"
-            },
-            {
-              "type": "text",
-              "value": "We bring students together through social events, academic support, and career opportunities."
-            },
-            {
-              "type": "text",
-              "value": "\n"
             }
           ]
         }
@@ -92950,21 +94308,6 @@
             {
               "type": "id",
               "value": "hiW-vOULDIwApxweZNUFt"
-            }
-          ]
-        }
-      ],
-      [
-        "5ypRUGqEypObnbryn9TBq",
-        {
-          "type": "instance",
-          "id": "5ypRUGqEypObnbryn9TBq",
-          "component": "ws:element",
-          "tag": "h1",
-          "children": [
-            {
-              "type": "text",
-              "value": "Calendar"
             }
           ]
         }
@@ -98531,7 +99874,11 @@
             },
             {
               "type": "id",
-              "value": "pVIs8Qa4pgQVfQkp71_Sx"
+              "value": "zMGbdg3h1sq2izmELiuAQ"
+            },
+            {
+              "type": "id",
+              "value": "_iDRnhY0lkg6li_rYmhdE"
             }
           ]
         }
@@ -98547,90 +99894,6 @@
             {
               "type": "text",
               "value": "Want to Join?"
-            }
-          ]
-        }
-      ],
-      [
-        "pVIs8Qa4pgQVfQkp71_Sx",
-        {
-          "type": "instance",
-          "id": "pVIs8Qa4pgQVfQkp71_Sx",
-          "component": "ws:element",
-          "tag": "p",
-          "children": [
-            {
-              "type": "text",
-              "value": "GEU is now yours! You have the responsibility (and opportunity !) of building "
-            },
-            {
-              "type": "id",
-              "value": "lmeNTib1_gkWHbRU6naWI"
-            },
-            {
-              "type": "text",
-              "value": " community. So, stay updated on events and opportunities on our "
-            },
-            {
-              "type": "id",
-              "value": "E4rfqGIRyaMerY0pr0sJG"
-            },
-            {
-              "type": "text",
-              "value": " and "
-            },
-            {
-              "type": "id",
-              "value": "qJij7HgEzsD6YV7GRk_b1"
-            },
-            {
-              "type": "text",
-              "value": " and join the team! More information will be provided on how to join GE Union during the start of the semester."
-            }
-          ]
-        }
-      ],
-      [
-        "E4rfqGIRyaMerY0pr0sJG",
-        {
-          "type": "instance",
-          "id": "E4rfqGIRyaMerY0pr0sJG",
-          "component": "ws:element",
-          "tag": "a",
-          "children": [
-            {
-              "type": "text",
-              "value": "website"
-            }
-          ]
-        }
-      ],
-      [
-        "qJij7HgEzsD6YV7GRk_b1",
-        {
-          "type": "instance",
-          "id": "qJij7HgEzsD6YV7GRk_b1",
-          "component": "ws:element",
-          "tag": "a",
-          "children": [
-            {
-              "type": "text",
-              "value": "Instagram"
-            }
-          ]
-        }
-      ],
-      [
-        "lmeNTib1_gkWHbRU6naWI",
-        {
-          "type": "instance",
-          "id": "lmeNTib1_gkWHbRU6naWI",
-          "component": "ws:element",
-          "tag": "b",
-          "children": [
-            {
-              "type": "text",
-              "value": "your"
             }
           ]
         }
@@ -109960,16 +111223,6 @@
         }
       ],
       [
-        "20i9xQGam0egwaPvujFfw",
-        {
-          "type": "instance",
-          "id": "20i9xQGam0egwaPvujFfw",
-          "component": "Image",
-          "label": "Icon",
-          "children": []
-        }
-      ],
-      [
         "b7eaHo_yXMynEie2HIy0a",
         {
           "type": "instance",
@@ -111265,6 +112518,640 @@
           "id": "ug1Tby08gcR0iZ3xloSE5",
           "component": "Image",
           "children": []
+        }
+      ],
+      [
+        "s-5vm3y7YuphO-v30RDC4",
+        {
+          "type": "instance",
+          "id": "s-5vm3y7YuphO-v30RDC4",
+          "component": "ws:element",
+          "tag": "div",
+          "children": [
+            {
+              "type": "id",
+              "value": "t7n-UIELB66XWJmDgofSx"
+            }
+          ]
+        }
+      ],
+      [
+        "_iDRnhY0lkg6li_rYmhdE",
+        {
+          "type": "instance",
+          "id": "_iDRnhY0lkg6li_rYmhdE",
+          "component": "Link",
+          "children": [
+            {
+              "type": "id",
+              "value": "JEUxAgiM4cfnlt-BYkNOg"
+            },
+            {
+              "type": "id",
+              "value": "pxnIrGxKYVQKGItdLCW4U"
+            }
+          ]
+        }
+      ],
+      [
+        "JEUxAgiM4cfnlt-BYkNOg",
+        {
+          "type": "instance",
+          "id": "JEUxAgiM4cfnlt-BYkNOg",
+          "component": "Text",
+          "children": [
+            {
+              "type": "text",
+              "value": "Submit your application "
+            }
+          ]
+        }
+      ],
+      [
+        "pxnIrGxKYVQKGItdLCW4U",
+        {
+          "type": "instance",
+          "id": "pxnIrGxKYVQKGItdLCW4U",
+          "component": "Image",
+          "children": []
+        }
+      ],
+      [
+        "t7n-UIELB66XWJmDgofSx",
+        {
+          "type": "instance",
+          "id": "t7n-UIELB66XWJmDgofSx",
+          "component": "Box",
+          "children": [
+            {
+              "type": "id",
+              "value": "5I-2AbU24MHVLVfu2iGSc"
+            },
+            {
+              "type": "id",
+              "value": "h7mA3rRzYnd04549bX8Bl"
+            },
+            {
+              "type": "id",
+              "value": "i_H_ZC83LZ9rsE76wBZFN"
+            }
+          ]
+        }
+      ],
+      [
+        "5I-2AbU24MHVLVfu2iGSc",
+        {
+          "type": "instance",
+          "id": "5I-2AbU24MHVLVfu2iGSc",
+          "component": "ws:element",
+          "tag": "h2",
+          "children": [
+            {
+              "type": "text",
+              "value": "Want to join?"
+            }
+          ]
+        }
+      ],
+      [
+        "h7mA3rRzYnd04549bX8Bl",
+        {
+          "type": "instance",
+          "id": "h7mA3rRzYnd04549bX8Bl",
+          "component": "ws:element",
+          "tag": "p",
+          "children": [
+            {
+              "type": "text",
+              "value": "GEU is always looking for new people to join our team "
+            },
+            {
+              "type": "id",
+              "value": "jlDUrx6e5MM4mzjGnYFhS"
+            },
+            {
+              "type": "text",
+              "value": ", so if you like what we do and want to help, or maybe want to use this as a safe space to gain experience, don't hesitate to send in an application! Whether you are interested in IT, event planning, marketing, social media, or contact with industry, we have a team that you will fit right into "
+            },
+            {
+              "type": "id",
+              "value": "jlZVJC5klDPOU9JIaaKba"
+            },
+            {
+              "type": "text",
+              "value": ". So what are you waiting for??"
+            }
+          ]
+        }
+      ],
+      [
+        "i_H_ZC83LZ9rsE76wBZFN",
+        {
+          "type": "instance",
+          "id": "i_H_ZC83LZ9rsE76wBZFN",
+          "component": "Link",
+          "children": [
+            {
+              "type": "id",
+              "value": "z_-KLOSBokJNbFV058dQm"
+            },
+            {
+              "type": "id",
+              "value": "hNzUmfxY-e_tO2Xj-sr8V"
+            }
+          ]
+        }
+      ],
+      [
+        "z_-KLOSBokJNbFV058dQm",
+        {
+          "type": "instance",
+          "id": "z_-KLOSBokJNbFV058dQm",
+          "component": "Text",
+          "children": [
+            {
+              "type": "text",
+              "value": "Submit your application "
+            }
+          ]
+        }
+      ],
+      [
+        "hNzUmfxY-e_tO2Xj-sr8V",
+        {
+          "type": "instance",
+          "id": "hNzUmfxY-e_tO2Xj-sr8V",
+          "component": "Image",
+          "children": []
+        }
+      ],
+      [
+        "jlDUrx6e5MM4mzjGnYFhS",
+        {
+          "type": "instance",
+          "id": "jlDUrx6e5MM4mzjGnYFhS",
+          "component": "ws:element",
+          "tag": "span",
+          "children": [
+            {
+              "type": "text",
+              "value": "(especially first years)"
+            }
+          ]
+        }
+      ],
+      [
+        "jlZVJC5klDPOU9JIaaKba",
+        {
+          "type": "instance",
+          "id": "jlZVJC5klDPOU9JIaaKba",
+          "component": "ws:element",
+          "tag": "span",
+          "children": [
+            {
+              "type": "text",
+              "value": "(all while making sure to have lots of fun)"
+            }
+          ]
+        }
+      ],
+      [
+        "zMGbdg3h1sq2izmELiuAQ",
+        {
+          "type": "instance",
+          "id": "zMGbdg3h1sq2izmELiuAQ",
+          "component": "ws:element",
+          "tag": "p",
+          "children": [
+            {
+              "type": "text",
+              "value": "GEU is always looking for new people to join our team "
+            },
+            {
+              "type": "id",
+              "value": "TpjYD_pfY5P9G02GAx7AQ"
+            },
+            {
+              "type": "text",
+              "value": ", so if you like what we do and want to help, or maybe want to use this as a safe space to gain experience, don't hesitate to send in an application! Whether you are interested in IT, event planning, marketing, social media, or contact with industry, we have a team that you will fit right into "
+            },
+            {
+              "type": "id",
+              "value": "qPyLlO-Pbeu7kET0mpFaw"
+            },
+            {
+              "type": "text",
+              "value": ". So what are you waiting for??"
+            }
+          ]
+        }
+      ],
+      [
+        "TpjYD_pfY5P9G02GAx7AQ",
+        {
+          "type": "instance",
+          "id": "TpjYD_pfY5P9G02GAx7AQ",
+          "component": "ws:element",
+          "tag": "span",
+          "children": [
+            {
+              "type": "text",
+              "value": "(especially first years)"
+            }
+          ]
+        }
+      ],
+      [
+        "qPyLlO-Pbeu7kET0mpFaw",
+        {
+          "type": "instance",
+          "id": "qPyLlO-Pbeu7kET0mpFaw",
+          "component": "ws:element",
+          "tag": "span",
+          "children": [
+            {
+              "type": "text",
+              "value": "(all while making sure to have lots of fun)"
+            }
+          ]
+        }
+      ],
+      [
+        "HzoGz1cO4F_sgAQlowXRW",
+        {
+          "type": "instance",
+          "id": "HzoGz1cO4F_sgAQlowXRW",
+          "component": "HtmlEmbed",
+          "label": "Root Style",
+          "children": []
+        }
+      ],
+      [
+        "1rV3e_Karp8KfjYG0ygo7",
+        {
+          "type": "instance",
+          "id": "1rV3e_Karp8KfjYG0ygo7",
+          "component": "ws:element",
+          "tag": "p",
+          "children": [
+            {
+              "type": "text",
+              "value": "GE Union is the student organization for General Engineering at DTU."
+            },
+            {
+              "type": "text",
+              "value": "\n"
+            },
+            {
+              "type": "text",
+              "value": "We bring students together through social events, academic support, and career opportunities."
+            },
+            {
+              "type": "text",
+              "value": "\n"
+            }
+          ]
+        }
+      ],
+      [
+        "i6v25gfBznCdLDQo8uoKS",
+        {
+          "type": "instance",
+          "id": "i6v25gfBznCdLDQo8uoKS",
+          "component": "ws:element",
+          "tag": "h2",
+          "children": [
+            {
+              "type": "text",
+              "value": "Who We Are"
+            }
+          ]
+        }
+      ],
+      [
+        "5ypRUGqEypObnbryn9TBq",
+        {
+          "type": "instance",
+          "id": "5ypRUGqEypObnbryn9TBq",
+          "component": "ws:element",
+          "tag": "h1",
+          "children": [
+            {
+              "type": "text",
+              "value": "Calendar"
+            }
+          ]
+        }
+      ],
+      [
+        "FZW9MIoXDtizWZL34X4vw",
+        {
+          "type": "instance",
+          "id": "FZW9MIoXDtizWZL34X4vw",
+          "component": "ws:element",
+          "tag": "div",
+          "label": "Card",
+          "children": [
+            {
+              "type": "id",
+              "value": "EQMlshc-Lj-0PH6QDJXYn"
+            },
+            {
+              "type": "id",
+              "value": "fJhaokT1CMx2gsp13SDFZ"
+            }
+          ]
+        }
+      ],
+      [
+        "EQMlshc-Lj-0PH6QDJXYn",
+        {
+          "type": "instance",
+          "id": "EQMlshc-Lj-0PH6QDJXYn",
+          "component": "ws:element",
+          "tag": "div",
+          "children": [
+            {
+              "type": "id",
+              "value": "Cu0iHSmEYsXETmihuua6d"
+            },
+            {
+              "type": "id",
+              "value": "k8USm_Y7xe2gjkv-cRr9A"
+            }
+          ]
+        }
+      ],
+      [
+        "Cu0iHSmEYsXETmihuua6d",
+        {
+          "type": "instance",
+          "id": "Cu0iHSmEYsXETmihuua6d",
+          "component": "ws:element",
+          "tag": "div",
+          "children": []
+        }
+      ],
+      [
+        "k8USm_Y7xe2gjkv-cRr9A",
+        {
+          "type": "instance",
+          "id": "k8USm_Y7xe2gjkv-cRr9A",
+          "component": "ws:element",
+          "tag": "h2",
+          "children": [
+            {
+              "type": "text",
+              "value": "Coming Up"
+            }
+          ]
+        }
+      ],
+      [
+        "fJhaokT1CMx2gsp13SDFZ",
+        {
+          "type": "instance",
+          "id": "fJhaokT1CMx2gsp13SDFZ",
+          "component": "ws:element",
+          "tag": "div",
+          "children": [
+            {
+              "type": "id",
+              "value": "0sfsJ9UT3CYbjqGLGWiVj"
+            },
+            {
+              "type": "id",
+              "value": "anB_GmbV2HfOGPPB5YXaN"
+            }
+          ]
+        }
+      ],
+      [
+        "0sfsJ9UT3CYbjqGLGWiVj",
+        {
+          "type": "instance",
+          "id": "0sfsJ9UT3CYbjqGLGWiVj",
+          "component": "ws:element",
+          "tag": "p",
+          "children": [
+            {
+              "type": "text",
+              "value": "Buy tickets for the "
+            },
+            {
+              "type": "id",
+              "value": "ncxiBbXPMmL2P-gpcp-z_"
+            },
+            {
+              "type": "text",
+              "value": "!"
+            }
+          ]
+        }
+      ],
+      [
+        "ncxiBbXPMmL2P-gpcp-z_",
+        {
+          "type": "instance",
+          "id": "ncxiBbXPMmL2P-gpcp-z_",
+          "component": "ws:element",
+          "tag": "b",
+          "children": [
+            {
+              "type": "text",
+              "value": "International Theme Party"
+            }
+          ]
+        }
+      ],
+      [
+        "anB_GmbV2HfOGPPB5YXaN",
+        {
+          "type": "instance",
+          "id": "anB_GmbV2HfOGPPB5YXaN",
+          "component": "Link",
+          "children": [
+            {
+              "type": "id",
+              "value": "CvjySdtWWQCUDngzmN_74"
+            }
+          ]
+        }
+      ],
+      [
+        "CvjySdtWWQCUDngzmN_74",
+        {
+          "type": "instance",
+          "id": "CvjySdtWWQCUDngzmN_74",
+          "component": "Text",
+          "children": [
+            {
+              "type": "text",
+              "value": "Buy Ticket on Site"
+            }
+          ]
+        }
+      ],
+      [
+        "KlaMRVy6AFmFFcCqHYiON",
+        {
+          "type": "instance",
+          "id": "KlaMRVy6AFmFFcCqHYiON",
+          "component": "ws:element",
+          "tag": "div",
+          "label": "billet",
+          "children": [
+            {
+              "type": "id",
+              "value": "lsCV5VJWkT75bla1Vi2CH"
+            },
+            {
+              "type": "id",
+              "value": "mfXdsiMX7NIYJ0xoovKc_"
+            },
+            {
+              "type": "id",
+              "value": "HlVMLDyRhysfmN_tR2rsP"
+            }
+          ]
+        }
+      ],
+      [
+        "mfXdsiMX7NIYJ0xoovKc_",
+        {
+          "type": "instance",
+          "id": "mfXdsiMX7NIYJ0xoovKc_",
+          "component": "ws:element",
+          "tag": "h2",
+          "children": [
+            {
+              "type": "text",
+              "value": "Buy a ticket for the "
+            },
+            {
+              "type": "id",
+              "value": "pvAAJ4RZp_0COToY_9UbX"
+            },
+            {
+              "type": "text",
+              "value": " here!"
+            }
+          ]
+        }
+      ],
+      [
+        "pvAAJ4RZp_0COToY_9UbX",
+        {
+          "type": "instance",
+          "id": "pvAAJ4RZp_0COToY_9UbX",
+          "component": "ws:element",
+          "tag": "b",
+          "children": [
+            {
+              "type": "text",
+              "value": "International party"
+            }
+          ]
+        }
+      ],
+      [
+        "HlVMLDyRhysfmN_tR2rsP",
+        {
+          "type": "instance",
+          "id": "HlVMLDyRhysfmN_tR2rsP",
+          "component": "HtmlEmbed",
+          "children": []
+        }
+      ],
+      [
+        "lsCV5VJWkT75bla1Vi2CH",
+        {
+          "type": "instance",
+          "id": "lsCV5VJWkT75bla1Vi2CH",
+          "component": "Image",
+          "label": "Icon",
+          "children": []
+        }
+      ],
+      [
+        "lvYVCqeV5W9s639t_8bNL",
+        {
+          "type": "instance",
+          "id": "lvYVCqeV5W9s639t_8bNL",
+          "component": "ws:element",
+          "tag": "div",
+          "label": "billet",
+          "children": [
+            {
+              "type": "id",
+              "value": "9K_I_o21NW27VhtbNaOQz"
+            },
+            {
+              "type": "id",
+              "value": "7iZeLlCblToOZQJUWN7qr"
+            }
+          ]
+        }
+      ],
+      [
+        "7iZeLlCblToOZQJUWN7qr",
+        {
+          "type": "instance",
+          "id": "7iZeLlCblToOZQJUWN7qr",
+          "component": "HtmlEmbed",
+          "children": []
+        }
+      ],
+      [
+        "20i9xQGam0egwaPvujFfw",
+        {
+          "type": "instance",
+          "id": "20i9xQGam0egwaPvujFfw",
+          "component": "Image",
+          "label": "Icon",
+          "children": []
+        }
+      ],
+      [
+        "9K_I_o21NW27VhtbNaOQz",
+        {
+          "type": "instance",
+          "id": "9K_I_o21NW27VhtbNaOQz",
+          "component": "ws:element",
+          "tag": "p",
+          "children": [
+            {
+              "type": "text",
+              "value": "... or buy one right "
+            },
+            {
+              "type": "id",
+              "value": "BHvqCSMf_RmJ6dK8P9QR2"
+            },
+            {
+              "type": "text",
+              "value": "!"
+            },
+            {
+              "type": "text",
+              "value": "\n"
+            }
+          ]
+        }
+      ],
+      [
+        "BHvqCSMf_RmJ6dK8P9QR2",
+        {
+          "type": "instance",
+          "id": "BHvqCSMf_RmJ6dK8P9QR2",
+          "component": "ws:element",
+          "tag": "b",
+          "children": [
+            {
+              "type": "text",
+              "value": "here"
+            }
+          ]
         }
       ]
     ],

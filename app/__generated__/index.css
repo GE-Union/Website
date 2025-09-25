@@ -910,101 +910,8 @@
   .c1wmsojl {
     color: var(--background)
   }
-  .cy2b8wa {
-    box-shadow: -1px -2px 3px 0px rgba(0, 0, 0, 0.15) inset, 1px 2px 3px 0px rgba(255, 255, 255, 0.2) inset, 0px 5px 27px 0px rgba(0, 0, 0, 0.17)
-  }
-  .c1o3ocm4 {
-    height: 270px
-  }
-  .c1q7at0i {
-    width: 540px
-  }
-  .cjpac5y {
-    transform: rotateX(0deg) rotateY(0deg) rotateZ(0.7deg)
-  }
-  .c156xldz {
-    transition-duration: 350ms
-  }
-  .c183x3a4:hover {
-    scale: 104% 104% 100%
-  }
-  .cs4zrmt:hover {
-    transform: rotateX(0deg) rotateY(0deg) rotateZ(-0.5deg)
-  }
-  .c1o49hcl {
-    height: 50px
-  }
-  .c1dgy9if {
-    justify-content: start
-  }
-  .c1a10q77 {
-    padding-left: 18px
-  }
-  .c6d6cak {
-    margin-left: 6px
-  }
-  .c5dclxw {
-    margin-top: 6px
-  }
-  .c7tvdys {
-    margin-right: 6px
-  }
-  .cx80e38 {
-    filter: drop-shadow(-0.75px -1.5px 1.5px rgba(0, 0, 0, 0.15)) drop-shadow(0.75px 1.5px 1.5px rgba(255, 255, 255, 0.25))
-  }
-  .c9iyznh {
-    color: rgba(247, 247, 247, 1)
-  }
-  .c1xsuntc {
-    background-color: rgba(247, 247, 247, 1)
-  }
-  .cez05na {
-    width: 14px
-  }
-  .cr2fx1c {
-    height: 14px
-  }
-  .c1ydphkn {
-    border-top-left-radius: 100%
-  }
-  .cpy5f0q {
-    border-top-right-radius: 100%
-  }
-  .c119ibn4 {
-    border-bottom-left-radius: 100%
-  }
-  .cqmovsy {
-    border-bottom-right-radius: 100%
-  }
-  .c1jzivuf {
-    font-size: 1.6em
-  }
-  .chpvhw5 {
-    font-weight: 400
-  }
-  .c125l1v1 {
-    letter-spacing: 0.03em
-  }
-  .cxn45mh {
-    margin-left: 10px
-  }
-  .c134tzij {
-    margin-bottom: 10px
-  }
-  .c11cmzdu {
-    margin-right: 10px
-  }
   .c1qpyqes {
     align-items: stretch
-  }
-  .c1km7ytz {
-    margin-left: 80px
-  }
-  .cwfxmkq {
-    margin-right: 80px
-  }
-  .c1f0lefa {
-    max-width: 800px
   }
   .c7wcowi {
     max-width: 900px
@@ -1199,6 +1106,9 @@
   .cvuh4zx {
     display: none
   }
+  .chpvhw5 {
+    font-weight: 400
+  }
   .c1br4k3t {
     font-size: 17px
   }
@@ -1349,16 +1259,12 @@
   .cj1xbu9 {
     translate: -50% -50% 0px
   }
-  .ce0cz3j {
-    -webkit-user-select: all;
-    user-select: all
-  }
   .c15ikqm {
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px)
   }
-  .c1myshmw {
-    padding-bottom: 10%
+  .c1vvb0gl {
+    padding-bottom: 6vh
   }
   .can6fs5 {
     transition-duration: 100ms
@@ -1402,6 +1308,9 @@
   .ctslah9 {
     margin-right: calc(var(--gap1) * 3)
   }
+  .cy2b8wa {
+    box-shadow: -1px -2px 3px 0px rgba(0, 0, 0, 0.15) inset, 1px 2px 3px 0px rgba(255, 255, 255, 0.2) inset, 0px 5px 27px 0px rgba(0, 0, 0, 0.17)
+  }
   .cc96m4b {
     width: 500px
   }
@@ -1411,8 +1320,65 @@
   .c87opo9 {
     min-width: 500px
   }
+  .c1o49hcl {
+    height: 50px
+  }
+  .c1dgy9if {
+    justify-content: start
+  }
+  .c1a10q77 {
+    padding-left: 18px
+  }
+  .c6d6cak {
+    margin-left: 6px
+  }
+  .c5dclxw {
+    margin-top: 6px
+  }
+  .c7tvdys {
+    margin-right: 6px
+  }
+  .cx80e38 {
+    filter: drop-shadow(-0.75px -1.5px 1.5px rgba(0, 0, 0, 0.15)) drop-shadow(0.75px 1.5px 1.5px rgba(255, 255, 255, 0.25))
+  }
+  .c9iyznh {
+    color: rgba(247, 247, 247, 1)
+  }
+  .c1xsuntc {
+    background-color: rgba(247, 247, 247, 1)
+  }
+  .cez05na {
+    width: 14px
+  }
+  .cr2fx1c {
+    height: 14px
+  }
+  .c1ydphkn {
+    border-top-left-radius: 100%
+  }
+  .cpy5f0q {
+    border-top-right-radius: 100%
+  }
+  .c119ibn4 {
+    border-bottom-left-radius: 100%
+  }
+  .cqmovsy {
+    border-bottom-right-radius: 100%
+  }
+  .c1jzivuf {
+    font-size: 1.6em
+  }
+  .c125l1v1 {
+    letter-spacing: 0.03em
+  }
+  .cxn45mh {
+    margin-left: 10px
+  }
   .cvku5ok {
     margin-bottom: 24px
+  }
+  .c11cmzdu {
+    margin-right: 10px
   }
   .c1ubxcee {
     column-gap: min(3vw, 60px)
@@ -1470,9 +1436,6 @@
   }
   .c4jdyrv {
     margin-bottom: 140px
-  }
-  .c1yvvb7j {
-    max-width: 680.65px
   }
   .cj7bt5u {
     margin-top: 60px
@@ -1968,8 +1931,11 @@
   .cm7li2w {
     --width-map: 400px
   }
-  .ce7gvak {
-    --width-no-map: 600px
+  .c903noh {
+    --width-no-map: clamp(600px, 60vw, 900px)
+  }
+  .c1jyaiat {
+    max-height: 70vh
   }
   .c1k97h03 {
     width: 300px
@@ -2054,6 +2020,66 @@
   }
   .c14233kc {
     opacity: 0.4
+  }
+  .c1swt08u {
+    margin-top: 10px
+  }
+  .c1km7ytz {
+    margin-left: 80px
+  }
+  .cwfxmkq {
+    margin-right: 80px
+  }
+  .cvqaoy8 {
+    max-width: 850px
+  }
+  .c1f0lefa {
+    max-width: 800px
+  }
+  .c1q7at0i {
+    width: 540px
+  }
+  .cjpac5y {
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0.7deg)
+  }
+  .c156xldz {
+    transition-duration: 350ms
+  }
+  .c1m4ybgm {
+    margin-left: 0px
+  }
+  .c183x3a4:hover {
+    scale: 104% 104% 100%
+  }
+  .cs4zrmt:hover {
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(-0.5deg)
+  }
+  .c134tzij {
+    margin-bottom: 10px
+  }
+  .c1u2ouk0 {
+    padding-left: 40px
+  }
+  .cgqd6mv {
+    padding-right: 40px
+  }
+  .c16etzib {
+    color: var(--front-red-1)
+  }
+  .c1eeu0y3 {
+    box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.1)
+  }
+  .csmduke {
+    font-size: 30px
+  }
+  .c5r3npr {
+    width: auto
+  }
+  .c96o7df {
+    font-weight: 800
+  }
+  .c16e72yc {
+    margin-bottom: 50px
   }
 }
 @media all and (max-width: 991px) {
@@ -2273,6 +2299,9 @@
   .c1sucy14 {
     min-width: 400px
   }
+  .c1fgwlgc {
+    --width-no-map: 80vw
+  }
 }
 @media all and (max-width: 767px) {
   :root {
@@ -2325,15 +2354,6 @@
   }
   .c1nx261z {
     font-size: 45px
-  }
-  .chjepeg {
-    width: 420px
-  }
-  .c1q98tuy {
-    margin-left: 50px
-  }
-  .c19a8u9t {
-    margin-right: 50px
   }
   .cycv0tm {
     display: none
@@ -2524,6 +2544,21 @@
   .c1988d5w {
     --width-no-map: 78vw
   }
+  .c5dvuwy {
+    margin-left: 30px
+  }
+  .crwgjbx {
+    margin-right: 30px
+  }
+  .c1q98tuy {
+    margin-left: 50px
+  }
+  .c19a8u9t {
+    margin-right: 50px
+  }
+  .chjepeg {
+    width: 420px
+  }
 }
 @media all and (max-width: 479px) {
   :root {
@@ -2583,15 +2618,6 @@
   .crl8cro {
     padding-left: 3px
   }
-  .ct6fd0n {
-    width: 330px
-  }
-  .c19raolx {
-    height: 219px
-  }
-  .ct5uc8i {
-    max-width: 90vw
-  }
   .c1cshlcb {
     width: min-content
   }
@@ -2615,6 +2641,12 @@
   }
   .cgjpuuk {
     display: none
+  }
+  .ct6fd0n {
+    width: 330px
+  }
+  .c19raolx {
+    height: 219px
   }
   .c1ouh616 {
     min-width: 371px
@@ -2777,5 +2809,17 @@
   }
   .c1beph0k {
     right: -101px
+  }
+  .c1j13thr {
+    margin-left: 10px
+  }
+  .clafu7i {
+    margin-right: 10px
+  }
+  .ct5uc8i {
+    max-width: 90vw
+  }
+  .cicj15w {
+    font-size: 25px
   }
 }
