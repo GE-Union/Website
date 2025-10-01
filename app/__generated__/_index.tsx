@@ -11,7 +11,7 @@ import { Tooltip as Tooltip, TooltipTrigger as TooltipTrigger, TooltipContent as
 
       export const projectId = "94456f8c-a847-426a-aec8-16de390bd3eb";
 
-      export const lastPublished = "2025-09-19T23:07:52.280Z";
+      export const lastPublished = "2025-10-01T01:14:57.049Z";
 
       export const siteName = "GE Union";
 
@@ -57,8 +57,22 @@ className={`w-body cdzo1k7 c1lzvaoj cm1ds2c c1qux398`}>
 code={"<style>\n@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300..900&display=swap');\n@import url('https://api.fontshare.com/v2/css?f[]=tanker@400&amp;display=swap');\n  \n  h1{\n    font-family: 'Tanker';\n    font-weight: 500;\n    font-size: 5em;\n    color: var(--background);\n    line-height: 1;\n    margin: 0;\n  }\n  h2{\n    font-weight: 600;\n    font-size: 36px;\n    line-height: 1;\n    margin: 0;\n  }\n  p{\n    margin: 0;\n  }\n  \n  .icon-background{\n    background-color: var(--back-red-1);\n    z-index: 1;\n    overflow: hidden;\n    position: relative;\n  }\n  .icon-background::before{\n    content: \"\";\n    position: absolute;\n    width: 200%; height: 200%;\n    top: -50%; left: -50%;\n    background-image: url('/assets/icon-background_orTDw4lIQEfSgOgF0DBVy.svg?width=1080&quality=80&format=auto');\n    background-size: 200px 115.4734411085px;\n    background-repeat: repeat;\n    animation: scrollBg 20s linear infinite;\n    z-index: -1;\n    opacity: var(--icon-background-opacity, 3%); mix-blend-mode: luminosity;\n    filter: blur(2px)\n  }\n  \n  .home-top::after{\n    position: absolute;\n    content: \"\";\n    width: 100%;\n    height: 250px;\n    background: linear-gradient(180deg, hsl(from var(--back-red-1) h s l / 0.65) 15%, hsl(from var(--back-red-1) h s l / 0) 100%);\n    z-index: -1;\n  }\n\n  @keyframes scrollBg {\n      0% {\n        background-position: 0 0;\n      }\n      100% {\n        background-position: -200px 115.4734411085px;\n      }\n    }\n\n  .home-top-card:hover .home-top-card-title-icon{\n    width: 38px;\n    padding-left: 3px;\n  }\n\n  @media only screen and (max-width: 767px) {\n    h1{\n      font-size: 4em;\n    }\n    h2{\n      font-size: 32px;\n    }\n  }\n</style>"}
 executeScriptOnCanvas={true}
 className={`w-html-embed`} />
+<div
+className={`w-element c1rw57mb ${"announcement"}`}>
+<HtmlEmbed
+code={"\n  <style>\n    /* CSS goes here (see next section) */\n    .flag-banner {\n      width: 100%;\n      overflow: hidden;\n    }\n\n    .flag-track {\n      display: flex;\n      width: max-content;\n      animation: scrollFlags 50s linear infinite;\n    }\n\n    .flag-track img {\n      height: 24px;\n      width: auto;\n      margin: 0 10px;\n      flex-shrink: 0;\n    }\n\n    @keyframes scrollFlags {\n      0% {\n        transform: translateX(0);\n      }\n      100% {\n        transform: translateX(-33.33%);\n      }\n    }\n\n\n\n    .announcement {\n      opacity: 0;\n      height: 0;\n      overflow: hidden; /* hides content when height is 0 */\n      transition: opacity 0.5s ease, height 0.5s ease;\n    }\n    \n    .announcement.show {\n      opacity: 1;\n      height: 35px; /* target height */\n    }\n  </style>\n\n  <div class=\"flag-banner\">\n    <div class=\"flag-track\">\n      <!-- Flag set 1 -->\n      <img src=\"https://flagcdn.com/us.svg\" alt=\"USA\">\n      <img src=\"https://flagcdn.com/fr.svg\" alt=\"France\">\n      <img src=\"https://flagcdn.com/de.svg\" alt=\"Germany\">\n      <img src=\"https://flagcdn.com/jp.svg\" alt=\"Japan\">\n      <img src=\"https://flagcdn.com/it.svg\" alt=\"Italy\">\n      <img src=\"https://flagcdn.com/br.svg\" alt=\"Brazil\">\n      <img src=\"https://flagcdn.com/in.svg\" alt=\"India\">\n      <img src=\"https://flagcdn.com/cn.svg\" alt=\"China\">\n      <img src=\"https://flagcdn.com/au.svg\" alt=\"Australia\">\n      <img src=\"https://flagcdn.com/za.svg\" alt=\"South Africa\">\n      <img src=\"https://flagcdn.com/ca.svg\" alt=\"Canada\">\n      <img src=\"https://flagcdn.com/mx.svg\" alt=\"Mexico\">\n      <img src=\"https://flagcdn.com/kr.svg\" alt=\"South Korea\">\n      <img src=\"https://flagcdn.com/ar.svg\" alt=\"Argentina\">\n      <img src=\"https://flagcdn.com/ng.svg\" alt=\"Nigeria\">\n      <img src=\"https://flagcdn.com/ru.svg\" alt=\"Russia\">\n      <img src=\"https://flagcdn.com/es.svg\" alt=\"Spain\">\n      <img src=\"https://flagcdn.com/dk.svg\" alt=\"Denmark\">\n      <img src=\"https://flagcdn.com/se.svg\" alt=\"Sweden\">\n      <img src=\"https://flagcdn.com/no.svg\" alt=\"Norway\">\n      <img src=\"https://flagcdn.com/ch.svg\" alt=\"Switzerland\">\n      <img src=\"https://flagcdn.com/tr.svg\" alt=\"Turkey\">\n      <img src=\"https://flagcdn.com/nl.svg\" alt=\"Netherlands\">\n      <img src=\"https://flagcdn.com/pl.svg\" alt=\"Poland\">\n      <img src=\"https://flagcdn.com/sa.svg\" alt=\"Saudi Arabia\">\n      <img src=\"https://flagcdn.com/ae.svg\" alt=\"UAE\">\n      <img src=\"https://flagcdn.com/md.svg\" alt=\"Moldova\">\n      <img src=\"https://flagcdn.com/ee.svg\" alt=\"Estonia\">\n      <img src=\"https://flagcdn.com/ro.svg\" alt=\"Romania\">\n      <img src=\"https://flagcdn.com/fi.svg\" alt=\"Finland\">\n\n      <!-- Repeat to make it scroll smoothly -->\n      <img src=\"https://flagcdn.com/us.svg\" alt=\"USA\">\n      <img src=\"https://flagcdn.com/fr.svg\" alt=\"France\">\n      <img src=\"https://flagcdn.com/de.svg\" alt=\"Germany\">\n      <img src=\"https://flagcdn.com/jp.svg\" alt=\"Japan\">\n      <img src=\"https://flagcdn.com/it.svg\" alt=\"Italy\">\n      <img src=\"https://flagcdn.com/br.svg\" alt=\"Brazil\">\n      <img src=\"https://flagcdn.com/in.svg\" alt=\"India\">\n      <img src=\"https://flagcdn.com/cn.svg\" alt=\"China\">\n      <img src=\"https://flagcdn.com/au.svg\" alt=\"Australia\">\n      <img src=\"https://flagcdn.com/za.svg\" alt=\"South Africa\">\n      <img src=\"https://flagcdn.com/ca.svg\" alt=\"Canada\">\n      <img src=\"https://flagcdn.com/mx.svg\" alt=\"Mexico\">\n      <img src=\"https://flagcdn.com/kr.svg\" alt=\"South Korea\">\n      <img src=\"https://flagcdn.com/ar.svg\" alt=\"Argentina\">\n      <img src=\"https://flagcdn.com/ng.svg\" alt=\"Nigeria\">\n      <img src=\"https://flagcdn.com/ru.svg\" alt=\"Russia\">\n      <img src=\"https://flagcdn.com/es.svg\" alt=\"Spain\">\n      <img src=\"https://flagcdn.com/dk.svg\" alt=\"Denmark\">\n      <img src=\"https://flagcdn.com/se.svg\" alt=\"Sweden\">\n      <img src=\"https://flagcdn.com/no.svg\" alt=\"Norway\">\n      <img src=\"https://flagcdn.com/ch.svg\" alt=\"Switzerland\">\n      <img src=\"https://flagcdn.com/tr.svg\" alt=\"Turkey\">\n      <img src=\"https://flagcdn.com/nl.svg\" alt=\"Netherlands\">\n      <img src=\"https://flagcdn.com/pl.svg\" alt=\"Poland\">\n      <img src=\"https://flagcdn.com/sa.svg\" alt=\"Saudi Arabia\">\n      <img src=\"https://flagcdn.com/ae.svg\" alt=\"UAE\">\n      <img src=\"https://flagcdn.com/md.svg\" alt=\"Moldova\">\n      <img src=\"https://flagcdn.com/ee.svg\" alt=\"Estonia\">\n      <img src=\"https://flagcdn.com/ro.svg\" alt=\"Romania\">\n      <img src=\"https://flagcdn.com/fi.svg\" alt=\"Finland\">\n\n      \n      <img src=\"https://flagcdn.com/us.svg\" alt=\"USA\">\n      <img src=\"https://flagcdn.com/fr.svg\" alt=\"France\">\n      <img src=\"https://flagcdn.com/de.svg\" alt=\"Germany\">\n      <img src=\"https://flagcdn.com/jp.svg\" alt=\"Japan\">\n      <img src=\"https://flagcdn.com/it.svg\" alt=\"Italy\">\n      <img src=\"https://flagcdn.com/br.svg\" alt=\"Brazil\">\n      <img src=\"https://flagcdn.com/in.svg\" alt=\"India\">\n      <img src=\"https://flagcdn.com/cn.svg\" alt=\"China\">\n      <img src=\"https://flagcdn.com/au.svg\" alt=\"Australia\">\n      <img src=\"https://flagcdn.com/za.svg\" alt=\"South Africa\">\n      <img src=\"https://flagcdn.com/ca.svg\" alt=\"Canada\">\n      <img src=\"https://flagcdn.com/mx.svg\" alt=\"Mexico\">\n      <img src=\"https://flagcdn.com/kr.svg\" alt=\"South Korea\">\n      <img src=\"https://flagcdn.com/ar.svg\" alt=\"Argentina\">\n      <img src=\"https://flagcdn.com/ng.svg\" alt=\"Nigeria\">\n      <img src=\"https://flagcdn.com/ru.svg\" alt=\"Russia\">\n      <img src=\"https://flagcdn.com/es.svg\" alt=\"Spain\">\n      <img src=\"https://flagcdn.com/dk.svg\" alt=\"Denmark\">\n      <img src=\"https://flagcdn.com/se.svg\" alt=\"Sweden\">\n      <img src=\"https://flagcdn.com/no.svg\" alt=\"Norway\">\n      <img src=\"https://flagcdn.com/ch.svg\" alt=\"Switzerland\">\n      <img src=\"https://flagcdn.com/tr.svg\" alt=\"Turkey\">\n      <img src=\"https://flagcdn.com/nl.svg\" alt=\"Netherlands\">\n      <img src=\"https://flagcdn.com/pl.svg\" alt=\"Poland\">\n      <img src=\"https://flagcdn.com/sa.svg\" alt=\"Saudi Arabia\">\n      <img src=\"https://flagcdn.com/ae.svg\" alt=\"UAE\">\n      <img src=\"https://flagcdn.com/md.svg\" alt=\"Moldova\">\n      <img src=\"https://flagcdn.com/ee.svg\" alt=\"Estonia\">\n      <img src=\"https://flagcdn.com/ro.svg\" alt=\"Romania\">\n      <img src=\"https://flagcdn.com/fi.svg\" alt=\"Finland\">\n    </div>\n  </div>\n\n<script>\n  window.addEventListener('load', () => {\n    setTimeout(() => {\n      document.querySelector('.announcement').classList.add('show');\n    }, 2000); // 2000ms = 2 seconds\n  });\n</script>\n"}
+executeScriptOnCanvas={true}
+className={`w-html-embed c6f08mx c122ufuu c1g5w6k0`} />
+<div
+className={`w-element c1kiqiz9 c1w0yra6 cpq2gwm cnkevhm c11pjs82 c1q0o0li cdac6t7 clmhjgq c1v1s9us ce1ywqb c1hackn6 c15j8t4a c1vmh594 c8y10ob cvcrnuz cq6sqte c4dt4o5 c1udwu9n c1f5792k cc9hpgt`}>
+<h3
+className={`w-element cv1tgbo c1p9pcqb c15b6naz c1f4h6q9 c7pyo0d`}>
+{"GEU International Theme Party"}
+</h3>
+</div>
+</div>
 <Box
-className={`w-box c3q79or cqlg791 c1fhonxu ci03eyw cu8ogtt c1nj86ny c1hj4una c859cl6 c1sebhbp c1ptsxkm c1dix99q c1qvfclh c1igvbb7 c1frygxh cb4z2jo c88f0ss c1xzxpj4 cnva8sp c13m9ff cb9skoy cu2cy9t c1towtha cm98duv`}>
+className={`w-box c3q79or cqlg791 ci03eyw cu8ogtt c1nj86ny c1hj4una c859cl6 c1sebhbp c1ptsxkm c1dix99q c122ufuu c1qvfclh c1igvbb7 c1frygxh cb4z2jo c88f0ss c1xzxpj4 cnva8sp c13m9ff cb9skoy cu2cy9t c1towtha cm98duv`}>
 <Box
 className={`w-box c1vu5acx cd3toq c17nm8vt c1xymrvd c8yo8yx c1duce4z ci03eyw cu8ogtt c1171g5c cji7xkv c40iywk codsd31 c16er72m c1qt5xo2 cxh7lm9 ${"icon-background home-top"}`}>
 <Box
@@ -198,10 +212,13 @@ className={`w-html-embed`} />
 </Box>
 <Box
 className={`w-box cprdnmx ck11ylk c19haj7v ci03eyw cu8ogtt c1bti4b5 cgiudld c1xj8ubg cpr5h0z c16m1c5v c2i8l03`}>
-<h1
-className={`w-element cyoo8jj c1k74xht`}>
-{"GE Union"}
-</h1>
+<Image
+src={"/assets/Geu_MC_Light_sIdN5ncjE_g6nVcXx26yu.png"}
+width={1378}
+height={269}
+alt={""}
+loading={"eager"}
+className={`w-image c4qqqhz ca6s8em c7iz4wv c15qerz1 cs75d47 c1k74xht c1rl3o5v c1777lyd ${"mcpulse"}`} />
 <Text
 className={`w-text cqawzgp c1s7gudn czgmbqe cyoo8jj c1wwlxnr cje5w08 c1k74xht cimns5a c1bck0pu cnurt1a c1wzvl6u c7u4ssh`}>
 {"Your "}
@@ -349,7 +366,11 @@ className={`w-element cy7nrqp c8l261o cdhy4s8 c5sx8jk c1wauoq4 c1w0yra6 cpq2gwm 
 <div
 className={`w-element ci03eyw cu8ogtt c1v4vkm5 ciu9gta c8l261o c1wmsojl c3brmnq`}>
 <div
-className={`w-element cy2b8wa cd3toq c17nm8vt c1xymrvd c8yo8yx c5sx8jk c1q7at0i cjpac5y c1tmykg6 c156xldz codsd31 c16er72m c1qt5xo2 ci03eyw cu8ogtt c183x3a4 cs4zrmt chjepeg ct6fd0n c19raolx ct5uc8i ${"icon-background\n"}`}>
+id={"fetticanvas"}
+className={`w-element c58kvwj c2z8j1e c1sm4x0m ccn6m53`} />
+<div
+id={"upcome"}
+className={`w-element cy2b8wa cd3toq c17nm8vt c1xymrvd c8yo8yx c5sx8jk c1q7at0i cjpac5y c1tmykg6 c156xldz codsd31 c16er72m c1qt5xo2 ci03eyw cu8ogtt c1m4ybgm c183x3a4 cs4zrmt chjepeg ct6fd0n c3bdlbj ct5uc8i ${"icon-background\n"}`}>
 <div
 className={`w-element c1o49hcl ci03eyw c1dgy9if c1a10q77 c1v4vkm5 c6d6cak c5dclxw c7tvdys cgiudld c1xj8ubg`}>
 <div
@@ -362,24 +383,43 @@ className={`w-element cx80e38 c9iyznh c1lt64h c1jzivuf chpvhw5 c125l1v1 c1k74xht
 <div
 className={`w-element ck11ylk c767uka cxn45mh c134tzij c11cmzdu`}>
 <p
-className={`w-element cyoo8jj c12zhvo c1dsvsvh`}>
-{"Buy tickets for the "}
-<b
-className={`w-element`}>
-{"International Theme Party"}
-</b>
-{"!"}
+className={`w-element cyoo8jj c12zhvo c8ao5vx cr2ujrk`}>
+{"GE Union"}
 </p>
+<h2
+className={`w-element cyoo8jj c1dsvsvh c1pmampn c1swc3v8`}>
+{"International Theme Party"}
+</h2>
 <Link
-href={"/calendar#int-part-tickets"}
+href={"https://billetfix.dk/e/international-theme-party/"}
 className={`w-link c10pf28n c1u2ouk0 cgqd6mv cdzo1k7 c341g64 c11h9c5s c17hd63g cnrv5xy c1ho4waj c16etzib c8l261o cr2ujrk ci03eyw c1pd7k79 c2gl1gx cda4yqq c767uka c1x65yvk cv1qn8j c1jon836 co5x0w6 c5sx8jk c1122adb c1bti4b5 cz7iu34 c40iywk codsd31 c16er72m c1qt5xo2 cmvyqw5 c1w0yra6 cpq2gwm c1dsvsvh c1eeu0y3 c1582rzp cpyan2s`}>
 <Text
 className={`w-text`}>
-{"Buy Ticket"}
+{"Buy Ticket on Site"}
 </Text>
 </Link>
 </div>
 </div>
+</div>
+<div
+className={`w-element`}>
+<p
+className={`w-element cyoo8jj c1f0lefa c1w0yra6 cpq2gwm c1q98tuy c19a8u9t`}>
+{"... or buy one right "}
+<b
+className={`w-element`}>
+{"here"}
+</b>
+{"!"}
+{""}
+<br />
+{""}
+</p>
+<HtmlEmbed
+code={"<div class=\"ticketbutler-iframe\"\n     data-type=\"EVENT\"\n     data-domain=\"billetfix.dk\"\n     data-slug=\"international-theme-party\">\n</div>\n<script type=\"text/javascript\" src=\"https://cdn.ticketbutler.io/event-embedder/index.js\"></script>\n\n<script>\n(function(){\n  // Manual re-initialisation of Ticketbutler embeds\n  function reloadTicketbutler() {\n    document.querySelectorAll('.ticketbutler-iframe').forEach(function(el){\n      el.removeAttribute('loaded');     // remove the flag Ticketbutler uses\n      el.innerHTML = '';        // reset content so it looks fresh\n    });\n    \n    // Remove the \"loaded\" attribute so the embed code will process them again\n    document.querySelectorAll('.ticketbutler-iframe[loaded]')\n      .forEach(function(el){ el.removeAttribute('loaded'); el.innerHTML = 'Loading…'; });\n\n    // Allow the internal init function to run again\n    window.ticketbutlerEventEmbedderLoaded = false;\n\n    // Dispatch a fake readystatechange to trigger its listener\n    var ev = document.createEvent('Event');\n    ev.initEvent('readystatechange', true, true);\n    document.readyState === 'complete'\n      ? document.dispatchEvent(ev)\n      : console.warn('[Ticketbutler] Document not complete, cannot retrigger');\n  }\n\n  // Retry a few times on load just in case\n  if (document.readyState === 'complete') {\n    setTimeout(reloadTicketbutler, 1000);\n    setTimeout(reloadTicketbutler, 3000);\n  } else {\n    window.addEventListener('load', function(){\n      setTimeout(reloadTicketbutler, 1000);\n      setTimeout(reloadTicketbutler, 3000);\n    });\n  }\n\n  // Optional manual button (if present)\n  var btn = document.getElementById('reload-ticketbutler');\n  if (btn) btn.addEventListener('click', reloadTicketbutler);\n\n  // Expose for console/manual debugging\n  window.reloadTicketbutler = reloadTicketbutler;\n})();\n</script>\n"}
+executeScriptOnCanvas={true}
+clientOnly={false}
+className={`w-html-embed`} />
 </div>
 <Box
 className={`w-box ci03eyw cu8ogtt c1g95588 c3brmnq cqaj6f4 c16lfnyl c1v4vkm5`}>
@@ -771,6 +811,14 @@ executeScriptOnCanvas={true}
 className={`w-html-embed cgmpm3f`} />
 <HtmlEmbed
 code={"<style>\n  /* Optional quality-of-life styles */\n  #menu-icon {\n    cursor: grab;\n    touch-action: none;   /* allow smooth touch drag */\n    will-change: transform;\n    \n    uuser-drag: none;\n    -webkit-uuser-drag: none;\n    -moz-uuser-drag: none;\n    user-select: none;    /* avoid text selection while dragging */\n    -moz-user-select: none;\n    -webkit-user-select: none;\n    -ms-user-select: none;\n  }\n  #menu-icon.dragging { cursor: grabbing; }\n</style>\n\n<script>\n(() => {\n  const icon = document.getElementById('menu-icon');\n  if (!icon) return;\n\n  // position is managed purely via transform so layout doesn't shift\n  let pointerID = null;\n  let tx = 0, ty = 0;               // current translation\n  let vx = 0, vy = 0;               // current velocity (px/s)\n  let dragging = false;\n  let startX = 0, startY = 0;       // pointer-down position\n  let lastPx = 0, lastPy = 0;       // last pointer position (for velocity)\n  let lastT = 0;                    // last timestamp\n\n  // Spring params: tweak for feel\n  const STIFFNESS = 300;   // spring constant (higher = snappier)\n  const DAMPING   = 15;   // damping (lower = bouncier)\n  const EPS_POS   = 0.5;  // stop threshold (position, px)\n  const EPS_VEL   = 0.5;  // stop threshold (velocity, px/s)\n\n  const originalHref = icon.href;\n\n  \n  const setTransform = () => {\n    icon.style.transform = `translate(${tx}px, ${ty}px)`;\n  };\n\n  const onPointerDown = (e) => {\n    curPointerID = e.pointerId;\n    startX = e.clientX - tx;\n    startY = e.clientY - ty;\n\n    lastPx = e.clientX;\n    lastPy = e.clientY;\n    lastT  = performance.now();\n    vx = 0; vy = 0; // reset; we'll accumulate movement velocity\n  }\n  \n  const onDragStart = (e) => {\n    e.preventDefault();\n    icon.removeAttribute('href');\n    dragging = true;\n    icon.classList.add('dragging');\n    icon.setPointerCapture?.(curPointerId);\n  };\n\n  const onPointerMove = (e) => {\n    if (!dragging) return;\n\n    const now = performance.now();\n    const dt  = (now - lastT) / 1000;\n    tx = e.clientX - startX;\n    ty = e.clientY - startY;\n\n    // simple low-pass filtered velocity estimate for spring kick\n    if (dt > 0) {\n      const instVx = (e.clientX - lastPx) / dt;\n      const instVy = (e.clientY - lastPy) / dt;\n      vx = 0.8 * vx + 0.2 * instVx;\n      vy = 0.8 * vy + 0.2 * instVy;\n    }\n    lastPx = e.clientX;\n    lastPy = e.clientY;\n    lastT  = now;\n\n    setTransform();\n  };\n\n  const onPointerUp = (e) => {\n    if (!dragging) return;\n    e.preventDefault();\n    e.stopPropagation()\n    e.stopImmediatePropagation();\n    dragging = false;\n    icon.classList.remove('dragging');\n    icon.releasePointerCapture?.(e.pointerId);\n    animateBack(); // start spring home\n    return;\n  };\n\n  function animateBack() {\n    let prev = performance.now();\n    function step(now) {\n      const dt = Math.min((now - prev) / 1000, 0.032); // clamp dt for stability\n      prev = now;\n\n      // Hooke's law: F = -k*x - c*v (mass=1)\n      const ax = -STIFFNESS * tx - DAMPING * vx;\n      const ay = -STIFFNESS * ty - DAMPING * vy;\n\n      vx += ax * dt;\n      vy += ay * dt;\n      tx += vx * dt;\n      ty += vy * dt;\n\n      setTransform();\n\n      const nearOrigin = Math.hypot(tx, ty) < EPS_POS;\n      const slowEnough = Math.hypot(vx, vy) < EPS_VEL;\n\n      if (nearOrigin && slowEnough) {\n        // snap exactly home to avoid subpixel fuzz\n        tx = ty = vx = vy = 0;\n        setTransform();\n        icon.setAttribute('href', originalHref);\n        return;\n      }\n      // If user grabbed again, stop the spring.\n      if (dragging) return;\n\n      requestAnimationFrame(step);\n    }\n    requestAnimationFrame(step);\n  }\n\n  // Keep it floating above other content while dragging (no layout changes)\n  icon.style.zIndex = (parseInt(getComputedStyle(icon).zIndex) || 1).toString();\n\n  // Bind events\n  icon.addEventListener('dragstart', onDragStart);\n  icon.addEventListener('pointerdown', onPointerDown);\n  window.addEventListener('pointermove', onPointerMove, { passive: true });\n  window.addEventListener('pointerup', onPointerUp);\n  window.addEventListener('pointercancel', onPointerUp);\n})();\n</script>"}
+executeScriptOnCanvas={true}
+className={`w-html-embed`} />
+<HtmlEmbed
+code={"<script src=\"https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js\"></script>\n<script>\n\n  document.addEventListener('DOMContentLoaded', () => {\n    requestAnimationFrame(() => {\n      setTimeout(function() {\n          // Get DOM elements once\n          const canvas = document.getElementById(\"fetticanvas\");\n          const target = document.querySelector(\"#upcome\");\n          \n          // Ensure canvas and target exist\n          if (canvas && target) {\n            let confettiInstance = null;\n          \n            // Function to initialize and fire confetti\n            async function fireConfetti() {\n              if (!confettiInstance) {\n                confettiInstance = await confetti.create(canvas, { resize: true });\n              }\n          \n              const config = {\n                scalar: 2,\n                spread: 210,\n                particleCount: 40,\n                origin: { y: 0.25 },\n                startVelocity: 45,\n                shapes: [\"image\"],\n                shapeOptions: {\n                  image: {\n                    src: \"https://raw.githubusercontent.com/GE-Union/Website/refs/heads/main/public/assets/GE_Logo_-_Small_rkpu_74a2VYBJut58034f.svg\",\n                    replaceColor: true,\n                    width: 32,\n                    height: 40,\n                  },\n                },\n                colors: [\"#ff9a00\", \"#ff7400\", \"#ff4d00\"],\n              };\n          \n              confettiInstance(config);\n            }\n          \n            // Set up the IntersectionObserver\n            const observer = new IntersectionObserver(\n              (entries) => {\n                const entry = entries[0];\n                if (entry.isIntersecting) {\n                  fireConfetti();\n                } else {\n                  // Exited\n                }\n              },\n              { threshold: [0] }\n            );\n          \n            observer.observe(target);\n          } else {\n            console.warn(\"Canvas or target element not found.\");\n          }\n      }, 500)\n    });\n  });\n</script>"}
+executeScriptOnCanvas={true}
+className={`w-html-embed`} />
+<HtmlEmbed
+code={"<style>\n.mcpulse {\n  display: inline-block;\n  animation: pulseSize 2.5s infinite ease-in-out;\n  transform: scale(1);\n}\n\n.mcpulse.static {\n  animation: none;\n  transition: transform 0.2s ease-in-out;\n}\n\n@keyframes pulseSize {\n  0% {\n    transform: scale(1);\n  }\n  50% {\n    transform: scale(1.03);\n  }\n  100% {\n    transform: scale(1);\n  }\n}\n</style>\n\n<script>\n  document.querySelectorAll('.mcpulse').forEach(el => {\n    el.addEventListener('mouseenter', () => {\n      // Step 1: Get computed transform from animation\n      const computedStyle = window.getComputedStyle(el);\n      const transform = computedStyle.transform;\n\n      // Step 2: Stop animation and freeze current transform\n      el.style.transform = transform;\n      el.classList.add('static');\n\n      // Step 3: After a tiny delay, scale up smoothly\n      requestAnimationFrame(() => {\n        requestAnimationFrame(() => {\n          el.style.transform = 'scale(1.07)';\n        });\n      });\n    });\n\n    el.addEventListener('mouseleave', () => {\n      // Step 4: Scale back to original size\n      el.style.transform = 'scale(1)';\n\n      // Step 5: After transition ends, remove override and resume animation\n      el.addEventListener('transitionend', function handler() {\n        el.classList.remove('static');\n        el.style.transform = '';\n        el.removeEventListener('transitionend', handler);\n      });\n    });\n  });\n</script>\n\n"}
 executeScriptOnCanvas={true}
 className={`w-html-embed`} />
 </Body>
