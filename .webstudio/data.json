@@ -1,10 +1,10 @@
 {
   "build": {
-    "id": "bdb89e7a-ea37-4772-9902-8b964cc28c6b",
+    "id": "7c0015e5-58e2-4534-8334-101aaf01f8ad",
     "projectId": "94456f8c-a847-426a-aec8-16de390bd3eb",
-    "version": 14312,
-    "createdAt": "2025-10-01T01:14:57.049+00:00",
-    "updatedAt": "2025-10-01T01:14:57.049+00:00",
+    "version": 14327,
+    "createdAt": "2025-10-03T19:29:35.049+00:00",
+    "updatedAt": "2025-10-03T19:29:35.049+00:00",
     "pages": {
       "meta": {
         "siteName": "GE Union",
@@ -68702,92 +68702,6 @@
         }
       ],
       [
-        "jeBWInbwIu4U8xS04xewx:2EiFMEG40PBm9_fkelqpo:color:",
-        {
-          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
-          "styleSourceId": "jeBWInbwIu4U8xS04xewx",
-          "property": "color",
-          "value": {
-            "type": "var",
-            "value": "front-red-1"
-          }
-        }
-      ],
-      [
-        "jeBWInbwIu4U8xS04xewx:2EiFMEG40PBm9_fkelqpo:backgroundColor:",
-        {
-          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
-          "styleSourceId": "jeBWInbwIu4U8xS04xewx",
-          "property": "backgroundColor",
-          "value": {
-            "type": "var",
-            "value": "background"
-          }
-        }
-      ],
-      [
-        "jeBWInbwIu4U8xS04xewx:2EiFMEG40PBm9_fkelqpo:width:",
-        {
-          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
-          "styleSourceId": "jeBWInbwIu4U8xS04xewx",
-          "property": "width",
-          "value": {
-            "type": "keyword",
-            "value": "fit-content"
-          }
-        }
-      ],
-      [
-        "jeBWInbwIu4U8xS04xewx:2EiFMEG40PBm9_fkelqpo:marginLeft:",
-        {
-          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
-          "styleSourceId": "jeBWInbwIu4U8xS04xewx",
-          "property": "marginLeft",
-          "value": {
-            "type": "keyword",
-            "value": "auto"
-          }
-        }
-      ],
-      [
-        "jeBWInbwIu4U8xS04xewx:2EiFMEG40PBm9_fkelqpo:marginRight:",
-        {
-          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
-          "styleSourceId": "jeBWInbwIu4U8xS04xewx",
-          "property": "marginRight",
-          "value": {
-            "type": "keyword",
-            "value": "auto"
-          }
-        }
-      ],
-      [
-        "jeBWInbwIu4U8xS04xewx:2EiFMEG40PBm9_fkelqpo:paddingLeft:",
-        {
-          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
-          "styleSourceId": "jeBWInbwIu4U8xS04xewx",
-          "property": "paddingLeft",
-          "value": {
-            "type": "unit",
-            "unit": "px",
-            "value": 40
-          }
-        }
-      ],
-      [
-        "jeBWInbwIu4U8xS04xewx:2EiFMEG40PBm9_fkelqpo:paddingRight:",
-        {
-          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
-          "styleSourceId": "jeBWInbwIu4U8xS04xewx",
-          "property": "paddingRight",
-          "value": {
-            "type": "unit",
-            "unit": "px",
-            "value": 40
-          }
-        }
-      ],
-      [
         "2S-XSeuFhlzvWaFMXSFvs:2EiFMEG40PBm9_fkelqpo:textAlign:",
         {
           "breakpointId": "2EiFMEG40PBm9_fkelqpo",
@@ -68809,63 +68723,6 @@
             "type": "unit",
             "unit": "px",
             "value": 20
-          }
-        }
-      ],
-      [
-        "jeBWInbwIu4U8xS04xewx:2EiFMEG40PBm9_fkelqpo:marginBottom:",
-        {
-          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
-          "styleSourceId": "jeBWInbwIu4U8xS04xewx",
-          "property": "marginBottom",
-          "value": {
-            "type": "unit",
-            "unit": "px",
-            "value": 20
-          }
-        }
-      ],
-      [
-        "jeBWInbwIu4U8xS04xewx:2EiFMEG40PBm9_fkelqpo:boxShadow:",
-        {
-          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
-          "styleSourceId": "jeBWInbwIu4U8xS04xewx",
-          "property": "boxShadow",
-          "value": {
-            "type": "layers",
-            "value": [
-              {
-                "type": "shadow",
-                "position": "outset",
-                "offsetX": {
-                  "type": "unit",
-                  "unit": "px",
-                  "value": 0
-                },
-                "offsetY": {
-                  "type": "unit",
-                  "unit": "px",
-                  "value": 2
-                },
-                "blur": {
-                  "type": "unit",
-                  "unit": "px",
-                  "value": 20
-                },
-                "spread": {
-                  "type": "unit",
-                  "unit": "px",
-                  "value": 0
-                },
-                "color": {
-                  "type": "rgb",
-                  "alpha": 0.1,
-                  "r": 0,
-                  "g": 0,
-                  "b": 0
-                }
-              }
-            ]
           }
         }
       ],
@@ -68917,81 +68774,6 @@
             "type": "unit",
             "unit": "px",
             "value": 50
-          }
-        }
-      ],
-      [
-        "1BxkstoA7-2T1z7vqYNLS:2EiFMEG40PBm9_fkelqpo:textAlign:",
-        {
-          "styleSourceId": "1BxkstoA7-2T1z7vqYNLS",
-          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
-          "property": "textAlign",
-          "value": {
-            "type": "keyword",
-            "value": "center"
-          }
-        }
-      ],
-      [
-        "1BxkstoA7-2T1z7vqYNLS:2EiFMEG40PBm9_fkelqpo:maxWidth:",
-        {
-          "styleSourceId": "1BxkstoA7-2T1z7vqYNLS",
-          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
-          "property": "maxWidth",
-          "value": {
-            "type": "unit",
-            "unit": "px",
-            "value": 800
-          }
-        }
-      ],
-      [
-        "1BxkstoA7-2T1z7vqYNLS:Uvcw_OJqyPoLioZzUbP1x:marginLeft:",
-        {
-          "styleSourceId": "1BxkstoA7-2T1z7vqYNLS",
-          "breakpointId": "Uvcw_OJqyPoLioZzUbP1x",
-          "property": "marginLeft",
-          "value": {
-            "type": "unit",
-            "unit": "px",
-            "value": 50
-          }
-        }
-      ],
-      [
-        "1BxkstoA7-2T1z7vqYNLS:Uvcw_OJqyPoLioZzUbP1x:marginRight:",
-        {
-          "styleSourceId": "1BxkstoA7-2T1z7vqYNLS",
-          "breakpointId": "Uvcw_OJqyPoLioZzUbP1x",
-          "property": "marginRight",
-          "value": {
-            "type": "unit",
-            "unit": "px",
-            "value": 50
-          }
-        }
-      ],
-      [
-        "1BxkstoA7-2T1z7vqYNLS:2EiFMEG40PBm9_fkelqpo:marginLeft:",
-        {
-          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
-          "styleSourceId": "1BxkstoA7-2T1z7vqYNLS",
-          "property": "marginLeft",
-          "value": {
-            "type": "keyword",
-            "value": "auto"
-          }
-        }
-      ],
-      [
-        "1BxkstoA7-2T1z7vqYNLS:2EiFMEG40PBm9_fkelqpo:marginRight:",
-        {
-          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
-          "styleSourceId": "1BxkstoA7-2T1z7vqYNLS",
-          "property": "marginRight",
-          "value": {
-            "type": "keyword",
-            "value": "auto"
           }
         }
       ],
@@ -69189,13 +68971,13 @@
       [
         "2B7oNjEuu-aiAsr_io5nn:2EiFMEG40PBm9_fkelqpo:marginBottom:",
         {
-          "styleSourceId": "2B7oNjEuu-aiAsr_io5nn",
           "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "2B7oNjEuu-aiAsr_io5nn",
           "property": "marginBottom",
           "value": {
             "type": "unit",
             "unit": "px",
-            "value": 20
+            "value": 50
           }
         }
       ],
@@ -75200,13 +74982,6 @@
         }
       ],
       [
-        "jeBWInbwIu4U8xS04xewx",
-        {
-          "type": "local",
-          "id": "jeBWInbwIu4U8xS04xewx"
-        }
-      ],
-      [
         "B4cRn_01eLD3ayTIbyJ1r",
         {
           "type": "local",
@@ -75225,27 +75000,6 @@
         {
           "type": "local",
           "id": "hDGHectXgWtGv5ZTcWmyk"
-        }
-      ],
-      [
-        "8vb0moNmBtpmlvq7E2C5_",
-        {
-          "type": "local",
-          "id": "8vb0moNmBtpmlvq7E2C5_"
-        }
-      ],
-      [
-        "1BxkstoA7-2T1z7vqYNLS",
-        {
-          "type": "local",
-          "id": "1BxkstoA7-2T1z7vqYNLS"
-        }
-      ],
-      [
-        "SFoXgDrMuapelE4QByztO",
-        {
-          "type": "local",
-          "id": "SFoXgDrMuapelE4QByztO"
         }
       ],
       [
@@ -84007,16 +83761,6 @@
         }
       ],
       [
-        "anB_GmbV2HfOGPPB5YXaN",
-        {
-          "instanceId": "anB_GmbV2HfOGPPB5YXaN",
-          "values": [
-            "SumJn3KS-U3VMJ-t7C_Ja",
-            "jeBWInbwIu4U8xS04xewx"
-          ]
-        }
-      ],
-      [
         "mfXdsiMX7NIYJ0xoovKc_",
         {
           "instanceId": "mfXdsiMX7NIYJ0xoovKc_",
@@ -84054,38 +83798,11 @@
         }
       ],
       [
-        "lvYVCqeV5W9s639t_8bNL",
-        {
-          "instanceId": "lvYVCqeV5W9s639t_8bNL",
-          "values": [
-            "8vb0moNmBtpmlvq7E2C5_"
-          ]
-        }
-      ],
-      [
         "20i9xQGam0egwaPvujFfw",
         {
           "instanceId": "20i9xQGam0egwaPvujFfw",
           "values": [
             "-YMqcGI-X7vuJSbS3FuvQ"
-          ]
-        }
-      ],
-      [
-        "9K_I_o21NW27VhtbNaOQz",
-        {
-          "instanceId": "9K_I_o21NW27VhtbNaOQz",
-          "values": [
-            "1BxkstoA7-2T1z7vqYNLS"
-          ]
-        }
-      ],
-      [
-        "7iZeLlCblToOZQJUWN7qr",
-        {
-          "instanceId": "7iZeLlCblToOZQJUWN7qr",
-          "values": [
-            "SFoXgDrMuapelE4QByztO"
           ]
         }
       ],
@@ -93325,16 +93042,6 @@
         }
       ],
       [
-        "CFT6uU_RUKGczjethJMgl",
-        {
-          "id": "CFT6uU_RUKGczjethJMgl",
-          "instanceId": "anB_GmbV2HfOGPPB5YXaN",
-          "name": "href",
-          "type": "string",
-          "value": "https://billetfix.dk/e/international-theme-party/"
-        }
-      ],
-      [
         "OqyD6trALzQIvIBTWm_wj",
         {
           "id": "OqyD6trALzQIvIBTWm_wj",
@@ -93415,36 +93122,6 @@
         }
       ],
       [
-        "MHoYe1GCzJJCIL6q0PGxI",
-        {
-          "id": "MHoYe1GCzJJCIL6q0PGxI",
-          "instanceId": "7iZeLlCblToOZQJUWN7qr",
-          "name": "code",
-          "type": "string",
-          "value": "<div class=\"ticketbutler-iframe\"\n     data-type=\"EVENT\"\n     data-domain=\"billetfix.dk\"\n     data-slug=\"international-theme-party\">\n</div>\n<script type=\"text/javascript\" src=\"https://cdn.ticketbutler.io/event-embedder/index.js\"></script>\n\n<script>\n(function(){\n  // Manual re-initialisation of Ticketbutler embeds\n  function reloadTicketbutler() {\n    document.querySelectorAll('.ticketbutler-iframe').forEach(function(el){\n      el.removeAttribute('loaded');     // remove the flag Ticketbutler uses\n      el.innerHTML = '';        // reset content so it looks fresh\n    });\n    \n    // Remove the \"loaded\" attribute so the embed code will process them again\n    document.querySelectorAll('.ticketbutler-iframe[loaded]')\n      .forEach(function(el){ el.removeAttribute('loaded'); el.innerHTML = 'Loading…'; });\n\n    // Allow the internal init function to run again\n    window.ticketbutlerEventEmbedderLoaded = false;\n\n    // Dispatch a fake readystatechange to trigger its listener\n    var ev = document.createEvent('Event');\n    ev.initEvent('readystatechange', true, true);\n    document.readyState === 'complete'\n      ? document.dispatchEvent(ev)\n      : console.warn('[Ticketbutler] Document not complete, cannot retrigger');\n  }\n\n  // Retry a few times on load just in case\n  if (document.readyState === 'complete') {\n    setTimeout(reloadTicketbutler, 1000);\n    setTimeout(reloadTicketbutler, 3000);\n  } else {\n    window.addEventListener('load', function(){\n      setTimeout(reloadTicketbutler, 1000);\n      setTimeout(reloadTicketbutler, 3000);\n    });\n  }\n\n  // Optional manual button (if present)\n  var btn = document.getElementById('reload-ticketbutler');\n  if (btn) btn.addEventListener('click', reloadTicketbutler);\n\n  // Expose for console/manual debugging\n  window.reloadTicketbutler = reloadTicketbutler;\n})();\n</script>\n"
-        }
-      ],
-      [
-        "IJ17IeKzAtbrVC_k-Nnxr",
-        {
-          "id": "IJ17IeKzAtbrVC_k-Nnxr",
-          "instanceId": "7iZeLlCblToOZQJUWN7qr",
-          "name": "executeScriptOnCanvas",
-          "type": "boolean",
-          "value": true
-        }
-      ],
-      [
-        "k_RwJPPXJezTQx22nRmbb",
-        {
-          "id": "k_RwJPPXJezTQx22nRmbb",
-          "instanceId": "7iZeLlCblToOZQJUWN7qr",
-          "name": "clientOnly",
-          "type": "boolean",
-          "value": false
-        }
-      ],
-      [
         "sSjGxeiN5Igm3WPyeABDU",
         {
           "id": "sSjGxeiN5Igm3WPyeABDU",
@@ -93491,7 +93168,7 @@
           "instanceId": "Tfnj8TPVFL5ZUC-VujSf3",
           "name": "code",
           "type": "string",
-          "value": "<script src=\"https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js\"></script>\n<script>\n\n  document.addEventListener('DOMContentLoaded', () => {\n    requestAnimationFrame(() => {\n      setTimeout(function() {\n          // Get DOM elements once\n          const canvas = document.getElementById(\"fetticanvas\");\n          const target = document.querySelector(\"#upcome\");\n          \n          // Ensure canvas and target exist\n          if (canvas && target) {\n            let confettiInstance = null;\n          \n            // Function to initialize and fire confetti\n            async function fireConfetti() {\n              if (!confettiInstance) {\n                confettiInstance = await confetti.create(canvas, { resize: true });\n              }\n          \n              const config = {\n                scalar: 2,\n                spread: 210,\n                particleCount: 40,\n                origin: { y: 0.25 },\n                startVelocity: 45,\n                shapes: [\"image\"],\n                shapeOptions: {\n                  image: {\n                    src: \"https://raw.githubusercontent.com/GE-Union/Website/refs/heads/main/public/assets/GE_Logo_-_Small_rkpu_74a2VYBJut58034f.svg\",\n                    replaceColor: true,\n                    width: 32,\n                    height: 40,\n                  },\n                },\n                colors: [\"#ff9a00\", \"#ff7400\", \"#ff4d00\"],\n              };\n          \n              confettiInstance(config);\n            }\n          \n            // Set up the IntersectionObserver\n            const observer = new IntersectionObserver(\n              (entries) => {\n                const entry = entries[0];\n                if (entry.isIntersecting) {\n                  fireConfetti();\n                } else {\n                  // Exited\n                }\n              },\n              { threshold: [0] }\n            );\n          \n            observer.observe(target);\n          } else {\n            console.warn(\"Canvas or target element not found.\");\n          }\n      }, 500)\n    });\n  });\n</script>"
+          "value": "<script src=\"https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js\"></script>\n<script>\n\n  document.addEventListener('DOMContentLoaded', () => {\n    requestAnimationFrame(() => {\n      setTimeout(function() {\n          // Get DOM elements once\n          const canvas = document.getElementById(\"fetticanvas\");\n          const target = document.querySelector(\"#upcome\");\n          \n          // Ensure canvas and target exist\n          if (canvas && target) {\n            let confettiInstance = null;\n          \n            // Function to initialize and fire confetti\n            async function fireConfetti() {\n              if (!confettiInstance) {\n                confettiInstance = await confetti.create(canvas, { resize: true });\n              }\n          \n              const config = {\n                scalar: 7,\n                spread: 210,\n                particleCount: 300,\n                origin: { y: 0.25 },\n                startVelocity: 100,\n                shapes: [\"image\"],\n                shapeOptions: {\n                  image: {\n                    src: \"https://media.licdn.com/dms/image/v2/D4E03AQEQkEg05Pus7Q/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1725555499120?e=2147483647&v=beta&t=V8pQlNLfNGtnSgdx3Meq9xn15UEG8LtK0xR-kp0EChk\",\n                    replaceColor: true,\n                    width: 32,\n                    height: 40,\n                  },\n                },\n                colors: [\"#ff9a00\", \"#ff7400\", \"#ff4d00\"],\n              };\n          \n              confettiInstance(config);\n            }\n          \n            // Set up the IntersectionObserver\n            const observer = new IntersectionObserver(\n              (entries) => {\n                const entry = entries[0];\n                if (entry.isIntersecting) {\n                  fireConfetti();\n                } else {\n                  // Exited\n                }\n              },\n              { threshold: [0] }\n            );\n          \n            observer.observe(target);\n          } else {\n            console.warn(\"Canvas or target element not found.\");\n          }\n      }, 500)\n    });\n  });\n</script>"
         }
       ],
       [
@@ -93670,10 +93347,6 @@
             {
               "type": "id",
               "value": "fA38kGlBnqHbcZFOHPanA"
-            },
-            {
-              "type": "id",
-              "value": "lvYVCqeV5W9s639t_8bNL"
             },
             {
               "type": "id",
@@ -113853,7 +113526,7 @@
           "children": [
             {
               "type": "text",
-              "value": "Coming Up"
+              "value": "Happening now"
             }
           ]
         }
@@ -113873,10 +113546,6 @@
             {
               "type": "id",
               "value": "QlBjhn2wcyn495Fk7Xc6n"
-            },
-            {
-              "type": "id",
-              "value": "anB_GmbV2HfOGPPB5YXaN"
             }
           ]
         }
@@ -113892,34 +113561,6 @@
             {
               "type": "text",
               "value": "GE Union"
-            }
-          ]
-        }
-      ],
-      [
-        "anB_GmbV2HfOGPPB5YXaN",
-        {
-          "type": "instance",
-          "id": "anB_GmbV2HfOGPPB5YXaN",
-          "component": "Link",
-          "children": [
-            {
-              "type": "id",
-              "value": "CvjySdtWWQCUDngzmN_74"
-            }
-          ]
-        }
-      ],
-      [
-        "CvjySdtWWQCUDngzmN_74",
-        {
-          "type": "instance",
-          "id": "CvjySdtWWQCUDngzmN_74",
-          "component": "Text",
-          "children": [
-            {
-              "type": "text",
-              "value": "Buy Ticket on Site"
             }
           ]
         }
@@ -114006,35 +113647,6 @@
         }
       ],
       [
-        "lvYVCqeV5W9s639t_8bNL",
-        {
-          "type": "instance",
-          "id": "lvYVCqeV5W9s639t_8bNL",
-          "component": "ws:element",
-          "tag": "div",
-          "label": "billet",
-          "children": [
-            {
-              "type": "id",
-              "value": "9K_I_o21NW27VhtbNaOQz"
-            },
-            {
-              "type": "id",
-              "value": "7iZeLlCblToOZQJUWN7qr"
-            }
-          ]
-        }
-      ],
-      [
-        "7iZeLlCblToOZQJUWN7qr",
-        {
-          "type": "instance",
-          "id": "7iZeLlCblToOZQJUWN7qr",
-          "component": "HtmlEmbed",
-          "children": []
-        }
-      ],
-      [
         "20i9xQGam0egwaPvujFfw",
         {
           "type": "instance",
@@ -114042,48 +113654,6 @@
           "component": "Image",
           "label": "Icon",
           "children": []
-        }
-      ],
-      [
-        "9K_I_o21NW27VhtbNaOQz",
-        {
-          "type": "instance",
-          "id": "9K_I_o21NW27VhtbNaOQz",
-          "component": "ws:element",
-          "tag": "p",
-          "children": [
-            {
-              "type": "text",
-              "value": "... or buy one right "
-            },
-            {
-              "type": "id",
-              "value": "BHvqCSMf_RmJ6dK8P9QR2"
-            },
-            {
-              "type": "text",
-              "value": "!"
-            },
-            {
-              "type": "text",
-              "value": "\n"
-            }
-          ]
-        }
-      ],
-      [
-        "BHvqCSMf_RmJ6dK8P9QR2",
-        {
-          "type": "instance",
-          "id": "BHvqCSMf_RmJ6dK8P9QR2",
-          "component": "ws:element",
-          "tag": "b",
-          "children": [
-            {
-              "type": "text",
-              "value": "here"
-            }
-          ]
         }
       ],
       [

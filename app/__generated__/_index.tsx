@@ -11,7 +11,7 @@ import { Tooltip as Tooltip, TooltipTrigger as TooltipTrigger, TooltipContent as
 
       export const projectId = "94456f8c-a847-426a-aec8-16de390bd3eb";
 
-      export const lastPublished = "2025-10-01T01:14:57.049Z";
+      export const lastPublished = "2025-10-03T19:29:35.049Z";
 
       export const siteName = "GE Union";
 
@@ -377,7 +377,7 @@ className={`w-element c1o49hcl ci03eyw c1dgy9if c1a10q77 c1v4vkm5 c6d6cak c5dclx
 className={`w-element cx80e38 c9iyznh c1xsuntc cez05na cr2fx1c c1ydphkn cpy5f0q c119ibn4 cqmovsy`} />
 <h2
 className={`w-element cx80e38 c9iyznh c1lt64h c1jzivuf chpvhw5 c125l1v1 c1k74xht`}>
-{"Coming Up"}
+{"Happening now"}
 </h2>
 </div>
 <div
@@ -387,39 +387,11 @@ className={`w-element cyoo8jj c12zhvo c8ao5vx cr2ujrk`}>
 {"GE Union"}
 </p>
 <h2
-className={`w-element cyoo8jj c1dsvsvh c1pmampn c1swc3v8`}>
+className={`w-element cyoo8jj c16e72yc c1pmampn c1swc3v8`}>
 {"International Theme Party"}
 </h2>
-<Link
-href={"https://billetfix.dk/e/international-theme-party/"}
-className={`w-link c10pf28n c1u2ouk0 cgqd6mv cdzo1k7 c341g64 c11h9c5s c17hd63g cnrv5xy c1ho4waj c16etzib c8l261o cr2ujrk ci03eyw c1pd7k79 c2gl1gx cda4yqq c767uka c1x65yvk cv1qn8j c1jon836 co5x0w6 c5sx8jk c1122adb c1bti4b5 cz7iu34 c40iywk codsd31 c16er72m c1qt5xo2 cmvyqw5 c1w0yra6 cpq2gwm c1dsvsvh c1eeu0y3 c1582rzp cpyan2s`}>
-<Text
-className={`w-text`}>
-{"Buy Ticket on Site"}
-</Text>
-</Link>
 </div>
 </div>
-</div>
-<div
-className={`w-element`}>
-<p
-className={`w-element cyoo8jj c1f0lefa c1w0yra6 cpq2gwm c1q98tuy c19a8u9t`}>
-{"... or buy one right "}
-<b
-className={`w-element`}>
-{"here"}
-</b>
-{"!"}
-{""}
-<br />
-{""}
-</p>
-<HtmlEmbed
-code={"<div class=\"ticketbutler-iframe\"\n     data-type=\"EVENT\"\n     data-domain=\"billetfix.dk\"\n     data-slug=\"international-theme-party\">\n</div>\n<script type=\"text/javascript\" src=\"https://cdn.ticketbutler.io/event-embedder/index.js\"></script>\n\n<script>\n(function(){\n  // Manual re-initialisation of Ticketbutler embeds\n  function reloadTicketbutler() {\n    document.querySelectorAll('.ticketbutler-iframe').forEach(function(el){\n      el.removeAttribute('loaded');     // remove the flag Ticketbutler uses\n      el.innerHTML = '';        // reset content so it looks fresh\n    });\n    \n    // Remove the \"loaded\" attribute so the embed code will process them again\n    document.querySelectorAll('.ticketbutler-iframe[loaded]')\n      .forEach(function(el){ el.removeAttribute('loaded'); el.innerHTML = 'Loading…'; });\n\n    // Allow the internal init function to run again\n    window.ticketbutlerEventEmbedderLoaded = false;\n\n    // Dispatch a fake readystatechange to trigger its listener\n    var ev = document.createEvent('Event');\n    ev.initEvent('readystatechange', true, true);\n    document.readyState === 'complete'\n      ? document.dispatchEvent(ev)\n      : console.warn('[Ticketbutler] Document not complete, cannot retrigger');\n  }\n\n  // Retry a few times on load just in case\n  if (document.readyState === 'complete') {\n    setTimeout(reloadTicketbutler, 1000);\n    setTimeout(reloadTicketbutler, 3000);\n  } else {\n    window.addEventListener('load', function(){\n      setTimeout(reloadTicketbutler, 1000);\n      setTimeout(reloadTicketbutler, 3000);\n    });\n  }\n\n  // Optional manual button (if present)\n  var btn = document.getElementById('reload-ticketbutler');\n  if (btn) btn.addEventListener('click', reloadTicketbutler);\n\n  // Expose for console/manual debugging\n  window.reloadTicketbutler = reloadTicketbutler;\n})();\n</script>\n"}
-executeScriptOnCanvas={true}
-clientOnly={false}
-className={`w-html-embed`} />
 </div>
 <Box
 className={`w-box ci03eyw cu8ogtt c1g95588 c3brmnq cqaj6f4 c16lfnyl c1v4vkm5`}>
@@ -814,7 +786,7 @@ code={"<style>\n  /* Optional quality-of-life styles */\n  #menu-icon {\n    cur
 executeScriptOnCanvas={true}
 className={`w-html-embed`} />
 <HtmlEmbed
-code={"<script src=\"https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js\"></script>\n<script>\n\n  document.addEventListener('DOMContentLoaded', () => {\n    requestAnimationFrame(() => {\n      setTimeout(function() {\n          // Get DOM elements once\n          const canvas = document.getElementById(\"fetticanvas\");\n          const target = document.querySelector(\"#upcome\");\n          \n          // Ensure canvas and target exist\n          if (canvas && target) {\n            let confettiInstance = null;\n          \n            // Function to initialize and fire confetti\n            async function fireConfetti() {\n              if (!confettiInstance) {\n                confettiInstance = await confetti.create(canvas, { resize: true });\n              }\n          \n              const config = {\n                scalar: 2,\n                spread: 210,\n                particleCount: 40,\n                origin: { y: 0.25 },\n                startVelocity: 45,\n                shapes: [\"image\"],\n                shapeOptions: {\n                  image: {\n                    src: \"https://raw.githubusercontent.com/GE-Union/Website/refs/heads/main/public/assets/GE_Logo_-_Small_rkpu_74a2VYBJut58034f.svg\",\n                    replaceColor: true,\n                    width: 32,\n                    height: 40,\n                  },\n                },\n                colors: [\"#ff9a00\", \"#ff7400\", \"#ff4d00\"],\n              };\n          \n              confettiInstance(config);\n            }\n          \n            // Set up the IntersectionObserver\n            const observer = new IntersectionObserver(\n              (entries) => {\n                const entry = entries[0];\n                if (entry.isIntersecting) {\n                  fireConfetti();\n                } else {\n                  // Exited\n                }\n              },\n              { threshold: [0] }\n            );\n          \n            observer.observe(target);\n          } else {\n            console.warn(\"Canvas or target element not found.\");\n          }\n      }, 500)\n    });\n  });\n</script>"}
+code={"<script src=\"https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js\"></script>\n<script>\n\n  document.addEventListener('DOMContentLoaded', () => {\n    requestAnimationFrame(() => {\n      setTimeout(function() {\n          // Get DOM elements once\n          const canvas = document.getElementById(\"fetticanvas\");\n          const target = document.querySelector(\"#upcome\");\n          \n          // Ensure canvas and target exist\n          if (canvas && target) {\n            let confettiInstance = null;\n          \n            // Function to initialize and fire confetti\n            async function fireConfetti() {\n              if (!confettiInstance) {\n                confettiInstance = await confetti.create(canvas, { resize: true });\n              }\n          \n              const config = {\n                scalar: 7,\n                spread: 210,\n                particleCount: 300,\n                origin: { y: 0.25 },\n                startVelocity: 100,\n                shapes: [\"image\"],\n                shapeOptions: {\n                  image: {\n                    src: \"https://media.licdn.com/dms/image/v2/D4E03AQEQkEg05Pus7Q/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1725555499120?e=2147483647&v=beta&t=V8pQlNLfNGtnSgdx3Meq9xn15UEG8LtK0xR-kp0EChk\",\n                    replaceColor: true,\n                    width: 32,\n                    height: 40,\n                  },\n                },\n                colors: [\"#ff9a00\", \"#ff7400\", \"#ff4d00\"],\n              };\n          \n              confettiInstance(config);\n            }\n          \n            // Set up the IntersectionObserver\n            const observer = new IntersectionObserver(\n              (entries) => {\n                const entry = entries[0];\n                if (entry.isIntersecting) {\n                  fireConfetti();\n                } else {\n                  // Exited\n                }\n              },\n              { threshold: [0] }\n            );\n          \n            observer.observe(target);\n          } else {\n            console.warn(\"Canvas or target element not found.\");\n          }\n      }, 500)\n    });\n  });\n</script>"}
 executeScriptOnCanvas={true}
 className={`w-html-embed`} />
 <HtmlEmbed
