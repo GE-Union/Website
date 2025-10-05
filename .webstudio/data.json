@@ -1,10 +1,10 @@
 {
   "build": {
-    "id": "7c0015e5-58e2-4534-8334-101aaf01f8ad",
+    "id": "ddecf20f-8a3b-4022-857c-043139cc79c9",
     "projectId": "94456f8c-a847-426a-aec8-16de390bd3eb",
-    "version": 14327,
-    "createdAt": "2025-10-03T19:29:35.049+00:00",
-    "updatedAt": "2025-10-03T19:29:35.049+00:00",
+    "version": 14334,
+    "createdAt": "2025-10-05T20:46:34.702+00:00",
+    "updatedAt": "2025-10-05T20:46:34.702+00:00",
     "pages": {
       "meta": {
         "siteName": "GE Union",
@@ -68740,95 +68740,6 @@
         }
       ],
       [
-        "B4cRn_01eLD3ayTIbyJ1r:2EiFMEG40PBm9_fkelqpo:fontSize:",
-        {
-          "styleSourceId": "B4cRn_01eLD3ayTIbyJ1r",
-          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
-          "property": "fontSize",
-          "value": {
-            "type": "unit",
-            "unit": "px",
-            "value": 30
-          }
-        }
-      ],
-      [
-        "t0XOYF9gcZb8H9wDApJr6:2EiFMEG40PBm9_fkelqpo:fontWeight:",
-        {
-          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
-          "styleSourceId": "t0XOYF9gcZb8H9wDApJr6",
-          "property": "fontWeight",
-          "value": {
-            "type": "keyword",
-            "value": "800"
-          }
-        }
-      ],
-      [
-        "hDGHectXgWtGv5ZTcWmyk:2EiFMEG40PBm9_fkelqpo:marginBottom:",
-        {
-          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
-          "styleSourceId": "hDGHectXgWtGv5ZTcWmyk",
-          "property": "marginBottom",
-          "value": {
-            "type": "unit",
-            "unit": "px",
-            "value": 50
-          }
-        }
-      ],
-      [
-        "B4cRn_01eLD3ayTIbyJ1r:2EiFMEG40PBm9_fkelqpo:marginLeft:",
-        {
-          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
-          "styleSourceId": "B4cRn_01eLD3ayTIbyJ1r",
-          "property": "marginLeft",
-          "value": {
-            "type": "unit",
-            "unit": "px",
-            "value": 20
-          }
-        }
-      ],
-      [
-        "B4cRn_01eLD3ayTIbyJ1r:2EiFMEG40PBm9_fkelqpo:marginRight:",
-        {
-          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
-          "styleSourceId": "B4cRn_01eLD3ayTIbyJ1r",
-          "property": "marginRight",
-          "value": {
-            "type": "unit",
-            "unit": "px",
-            "value": 20
-          }
-        }
-      ],
-      [
-        "B4cRn_01eLD3ayTIbyJ1r:2EiFMEG40PBm9_fkelqpo:width:",
-        {
-          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
-          "styleSourceId": "B4cRn_01eLD3ayTIbyJ1r",
-          "property": "width",
-          "value": {
-            "type": "keyword",
-            "value": "auto"
-          }
-        }
-      ],
-      [
-        "B4cRn_01eLD3ayTIbyJ1r:eCbcXJaLEKSKcnbAPzNF0:fontSize:",
-        {
-          "breakpointId": "eCbcXJaLEKSKcnbAPzNF0",
-          "styleSourceId": "B4cRn_01eLD3ayTIbyJ1r",
-          "property": "fontSize",
-          "value": {
-            "type": "unit",
-            "unit": "px",
-            "value": 25
-          }
-        }
-      ],
-      [
         "tVyklERKPRjkU_07VqrFf:2EiFMEG40PBm9_fkelqpo:position:",
         {
           "breakpointId": "2EiFMEG40PBm9_fkelqpo",
@@ -69391,7 +69302,7 @@
           "property": "marginTop",
           "value": {
             "type": "var",
-            "value": "gap2"
+            "value": "gap1"
           }
         }
       ],
@@ -74979,27 +74890,6 @@
         {
           "type": "local",
           "id": "2S-XSeuFhlzvWaFMXSFvs"
-        }
-      ],
-      [
-        "B4cRn_01eLD3ayTIbyJ1r",
-        {
-          "type": "local",
-          "id": "B4cRn_01eLD3ayTIbyJ1r"
-        }
-      ],
-      [
-        "t0XOYF9gcZb8H9wDApJr6",
-        {
-          "type": "local",
-          "id": "t0XOYF9gcZb8H9wDApJr6"
-        }
-      ],
-      [
-        "hDGHectXgWtGv5ZTcWmyk",
-        {
-          "type": "local",
-          "id": "hDGHectXgWtGv5ZTcWmyk"
         }
       ],
       [
@@ -83761,43 +83651,6 @@
         }
       ],
       [
-        "mfXdsiMX7NIYJ0xoovKc_",
-        {
-          "instanceId": "mfXdsiMX7NIYJ0xoovKc_",
-          "values": [
-            "cgoV5zmm7n8sNCukQovHB",
-            "B4cRn_01eLD3ayTIbyJ1r"
-          ]
-        }
-      ],
-      [
-        "pvAAJ4RZp_0COToY_9UbX",
-        {
-          "instanceId": "pvAAJ4RZp_0COToY_9UbX",
-          "values": [
-            "t0XOYF9gcZb8H9wDApJr6"
-          ]
-        }
-      ],
-      [
-        "lsCV5VJWkT75bla1Vi2CH",
-        {
-          "instanceId": "lsCV5VJWkT75bla1Vi2CH",
-          "values": [
-            "-YMqcGI-X7vuJSbS3FuvQ"
-          ]
-        }
-      ],
-      [
-        "KlaMRVy6AFmFFcCqHYiON",
-        {
-          "instanceId": "KlaMRVy6AFmFFcCqHYiON",
-          "values": [
-            "hDGHectXgWtGv5ZTcWmyk"
-          ]
-        }
-      ],
-      [
         "20i9xQGam0egwaPvujFfw",
         {
           "instanceId": "20i9xQGam0egwaPvujFfw",
@@ -85518,7 +85371,7 @@
           "instanceId": "fA38kGlBnqHbcZFOHPanA",
           "name": "data-ws-show",
           "type": "boolean",
-          "value": true
+          "value": false
         }
       ],
       [
@@ -93042,86 +92895,6 @@
         }
       ],
       [
-        "OqyD6trALzQIvIBTWm_wj",
-        {
-          "id": "OqyD6trALzQIvIBTWm_wj",
-          "instanceId": "HlVMLDyRhysfmN_tR2rsP",
-          "name": "code",
-          "type": "string",
-          "value": "<div class=\"ticketbutler-iframe\"\n     data-type=\"EVENT\"\n     data-domain=\"billetfix.dk\"\n     data-slug=\"international-theme-party\">\n</div>\n<script type=\"text/javascript\" src=\"https://cdn.ticketbutler.io/event-embedder/index.js\"></script>\n\n<script>\n(function(){\n  // Manual re-initialisation of Ticketbutler embeds\n  function reloadTicketbutler() {\n    document.querySelectorAll('.ticketbutler-iframe').forEach(function(el){\n      el.removeAttribute('loaded');     // remove the flag Ticketbutler uses\n      el.innerHTML = '';        // reset content so it looks fresh\n    });\n    \n    // Remove the \"loaded\" attribute so the embed code will process them again\n    document.querySelectorAll('.ticketbutler-iframe[loaded]')\n      .forEach(function(el){ el.removeAttribute('loaded'); el.innerHTML = 'Loading…'; });\n\n    // Allow the internal init function to run again\n    window.ticketbutlerEventEmbedderLoaded = false;\n\n    // Dispatch a fake readystatechange to trigger its listener\n    var ev = document.createEvent('Event');\n    ev.initEvent('readystatechange', true, true);\n    document.readyState === 'complete'\n      ? document.dispatchEvent(ev)\n      : console.warn('[Ticketbutler] Document not complete, cannot retrigger');\n  }\n\n  // Retry a few times on load just in case\n  if (document.readyState === 'complete') {\n    setTimeout(reloadTicketbutler, 1000);\n    setTimeout(reloadTicketbutler, 3000);\n  } else {\n    window.addEventListener('load', function(){\n      setTimeout(reloadTicketbutler, 1000);\n      setTimeout(reloadTicketbutler, 3000);\n    });\n  }\n\n  // Optional manual button (if present)\n  var btn = document.getElementById('reload-ticketbutler');\n  if (btn) btn.addEventListener('click', reloadTicketbutler);\n\n  // Expose for console/manual debugging\n  window.reloadTicketbutler = reloadTicketbutler;\n})();\n</script>\n"
-        }
-      ],
-      [
-        "0BgTTUoIzy4iX9cZnEeWw",
-        {
-          "id": "0BgTTUoIzy4iX9cZnEeWw",
-          "instanceId": "HlVMLDyRhysfmN_tR2rsP",
-          "name": "executeScriptOnCanvas",
-          "type": "boolean",
-          "value": true
-        }
-      ],
-      [
-        "e1wAws4z5nIkidnpv96e1",
-        {
-          "id": "e1wAws4z5nIkidnpv96e1",
-          "instanceId": "HlVMLDyRhysfmN_tR2rsP",
-          "name": "clientOnly",
-          "type": "boolean",
-          "value": false
-        }
-      ],
-      [
-        "BnHK3GlZjxWfM8unUMPcc",
-        {
-          "id": "BnHK3GlZjxWfM8unUMPcc",
-          "instanceId": "mfXdsiMX7NIYJ0xoovKc_",
-          "name": "id",
-          "type": "string",
-          "value": "int-part-tickets"
-        }
-      ],
-      [
-        "am90z4H3ULnFjufRPAcOG",
-        {
-          "id": "am90z4H3ULnFjufRPAcOG",
-          "instanceId": "lsCV5VJWkT75bla1Vi2CH",
-          "name": "src",
-          "type": "asset",
-          "value": "1c62c9af3f77689c58f5f455a1290cc353053783a23a99159dbe2519d3f835f2"
-        }
-      ],
-      [
-        "pCJS4V7mdOlgCa52qgNB4",
-        {
-          "id": "pCJS4V7mdOlgCa52qgNB4",
-          "instanceId": "lsCV5VJWkT75bla1Vi2CH",
-          "name": "width",
-          "type": "asset",
-          "value": "1c62c9af3f77689c58f5f455a1290cc353053783a23a99159dbe2519d3f835f2"
-        }
-      ],
-      [
-        "JMdhSR9zTsSAfO1SItFgk",
-        {
-          "id": "JMdhSR9zTsSAfO1SItFgk",
-          "instanceId": "lsCV5VJWkT75bla1Vi2CH",
-          "name": "height",
-          "type": "asset",
-          "value": "1c62c9af3f77689c58f5f455a1290cc353053783a23a99159dbe2519d3f835f2"
-        }
-      ],
-      [
-        "i6n-DTx4aALKDSTQ0eNue",
-        {
-          "id": "i6n-DTx4aALKDSTQ0eNue",
-          "instanceId": "lsCV5VJWkT75bla1Vi2CH",
-          "name": "alt",
-          "type": "asset",
-          "value": "1c62c9af3f77689c58f5f455a1290cc353053783a23a99159dbe2519d3f835f2"
-        }
-      ],
-      [
         "sSjGxeiN5Igm3WPyeABDU",
         {
           "id": "sSjGxeiN5Igm3WPyeABDU",
@@ -93319,6 +93092,26 @@
           "name": "class",
           "type": "string",
           "value": "announcement"
+        }
+      ],
+      [
+        "63kkFP3oRHhbABH74utGx",
+        {
+          "id": "63kkFP3oRHhbABH74utGx",
+          "instanceId": "sLI7phah6xplfmUGwag3l",
+          "name": "data-ws-show",
+          "type": "boolean",
+          "value": false
+        }
+      ],
+      [
+        "TVWP2-CG1RL_YQlMtqVgX",
+        {
+          "id": "TVWP2-CG1RL_YQlMtqVgX",
+          "instanceId": "Tfnj8TPVFL5ZUC-VujSf3",
+          "name": "data-ws-show",
+          "type": "boolean",
+          "value": false
         }
       ]
     ],
@@ -94329,10 +94122,6 @@
             {
               "type": "id",
               "value": "hJ_NQcqXC6bHb8htaF3SP"
-            },
-            {
-              "type": "id",
-              "value": "KlaMRVy6AFmFFcCqHYiON"
             },
             {
               "type": "id",
@@ -113566,87 +113355,6 @@
         }
       ],
       [
-        "KlaMRVy6AFmFFcCqHYiON",
-        {
-          "type": "instance",
-          "id": "KlaMRVy6AFmFFcCqHYiON",
-          "component": "ws:element",
-          "tag": "div",
-          "label": "billet",
-          "children": [
-            {
-              "type": "id",
-              "value": "lsCV5VJWkT75bla1Vi2CH"
-            },
-            {
-              "type": "id",
-              "value": "mfXdsiMX7NIYJ0xoovKc_"
-            },
-            {
-              "type": "id",
-              "value": "HlVMLDyRhysfmN_tR2rsP"
-            }
-          ]
-        }
-      ],
-      [
-        "mfXdsiMX7NIYJ0xoovKc_",
-        {
-          "type": "instance",
-          "id": "mfXdsiMX7NIYJ0xoovKc_",
-          "component": "ws:element",
-          "tag": "h2",
-          "children": [
-            {
-              "type": "text",
-              "value": "Buy a ticket for the "
-            },
-            {
-              "type": "id",
-              "value": "pvAAJ4RZp_0COToY_9UbX"
-            },
-            {
-              "type": "text",
-              "value": " here!"
-            }
-          ]
-        }
-      ],
-      [
-        "pvAAJ4RZp_0COToY_9UbX",
-        {
-          "type": "instance",
-          "id": "pvAAJ4RZp_0COToY_9UbX",
-          "component": "ws:element",
-          "tag": "b",
-          "children": [
-            {
-              "type": "text",
-              "value": "International party"
-            }
-          ]
-        }
-      ],
-      [
-        "HlVMLDyRhysfmN_tR2rsP",
-        {
-          "type": "instance",
-          "id": "HlVMLDyRhysfmN_tR2rsP",
-          "component": "HtmlEmbed",
-          "children": []
-        }
-      ],
-      [
-        "lsCV5VJWkT75bla1Vi2CH",
-        {
-          "type": "instance",
-          "id": "lsCV5VJWkT75bla1Vi2CH",
-          "component": "Image",
-          "label": "Icon",
-          "children": []
-        }
-      ],
-      [
         "20i9xQGam0egwaPvujFfw",
         {
           "type": "instance",
@@ -113717,6 +113425,7 @@
           "id": "sLI7phah6xplfmUGwag3l",
           "component": "ws:element",
           "tag": "div",
+          "label": "Banner",
           "children": [
             {
               "type": "id",

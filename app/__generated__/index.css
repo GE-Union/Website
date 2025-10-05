@@ -357,8 +357,8 @@
   .c1dix99q {
     max-height: 950px
   }
-  .c122ufuu {
-    margin-top: var(--gap2)
+  .c1fhonxu {
+    margin-top: var(--gap1)
   }
   .c1vu5acx {
     height: var(--topheight)
@@ -867,9 +867,6 @@
   }
   .c1fxgukz {
     overflow-y: hidden
-  }
-  .c1fhonxu {
-    margin-top: var(--gap1)
   }
   .c65isya {
     margin-bottom: calc(calc(2 * var(--gap1)) + var(--topheight) + var(--bottomheight) - 100vh)
@@ -2060,18 +2057,6 @@
   .c134tzij {
     margin-bottom: 10px
   }
-  .csmduke {
-    font-size: 30px
-  }
-  .c5r3npr {
-    width: auto
-  }
-  .c96o7df {
-    font-weight: 800
-  }
-  .c16e72yc {
-    margin-bottom: 50px
-  }
   .ccn6m53 {
     margin-top: -10vh
   }
@@ -2086,6 +2071,12 @@
   }
   .cs75d47 {
     max-width: 80vh
+  }
+  .c16e72yc {
+    margin-bottom: 50px
+  }
+  .c122ufuu {
+    margin-top: var(--gap2)
   }
   .c1g5w6k0 {
     filter: blur(1px)
@@ -2869,9 +2860,6 @@
   }
   .ct5uc8i {
     max-width: 90vw
-  }
-  .cicj15w {
-    font-size: 25px
   }
   .c1swc3v8 {
     font-size: 1.81em
