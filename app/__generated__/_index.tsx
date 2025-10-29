@@ -11,7 +11,7 @@ import { Tooltip as Tooltip, TooltipTrigger as TooltipTrigger, TooltipContent as
 
       export const projectId = "94456f8c-a847-426a-aec8-16de390bd3eb";
 
-      export const lastPublished = "2025-10-05T20:46:34.702Z";
+      export const lastPublished = "2025-10-29T16:47:32.850Z";
 
       export const siteName = "GE Union";
 
@@ -198,13 +198,17 @@ className={`w-html-embed`} />
 </Box>
 <Box
 className={`w-box cprdnmx ck11ylk c19haj7v ci03eyw cu8ogtt c1bti4b5 cgiudld c1xj8ubg cpr5h0z c16m1c5v c2i8l03`}>
+<Link_1
+href={"/minecraft"}
+className={`w-element c6f08mx c15qerz1 c7iz4wv ca6s8em cs75d47 c4qqqhz c1rl3o5v c1777lyd`}>
 <Image
 src={"/assets/Geu_MC_Light_sIdN5ncjE_g6nVcXx26yu.png"}
 width={1378}
 height={269}
 alt={""}
 loading={"eager"}
-className={`w-image c4qqqhz ca6s8em c7iz4wv c15qerz1 cs75d47 c1k74xht c1rl3o5v c1777lyd ${"mcpulse"}`} />
+className={`w-image c4qqqhz ${"mcpulse"}`} />
+</Link_1>
 <Text
 className={`w-text cqawzgp c1s7gudn czgmbqe cyoo8jj c1wwlxnr cje5w08 c1k74xht cimns5a c1bck0pu cnurt1a c1wzvl6u c7u4ssh`}>
 {"Your "}
@@ -349,6 +353,50 @@ className={`w-element cy7nrqp c8l261o cdhy4s8 c5sx8jk c1wauoq4 c1w0yra6 cpq2gwm 
 </Box>
 </Box>
 </Box>
+<div
+className={`w-element ci03eyw cu8ogtt c1v4vkm5 ciu9gta c8l261o c1wmsojl c3brmnq`}>
+<div
+id={"fetticanvas"}
+className={`w-element c58kvwj c2z8j1e c1sm4x0m ccn6m53`} />
+<div
+id={"upcome"}
+className={`w-element cy2b8wa cd3toq c17nm8vt c1xymrvd c8yo8yx c5sx8jk c1q7at0i cjpac5y c1tmykg6 c156xldz codsd31 c16er72m c1qt5xo2 ci03eyw cu8ogtt c1m4ybgm c183x3a4 cs4zrmt chjepeg ct6fd0n c3bdlbj ct5uc8i ${"icon-background\n"}`}>
+<div
+className={`w-element c1o49hcl ci03eyw c1dgy9if c1a10q77 c1v4vkm5 c6d6cak c5dclxw c7tvdys cgiudld c1xj8ubg`}>
+<div
+className={`w-element cx80e38 c9iyznh c1xsuntc cez05na cr2fx1c c1ydphkn cpy5f0q c119ibn4 cqmovsy`} />
+<h2
+className={`w-element cx80e38 c9iyznh c1lt64h c1jzivuf chpvhw5 c125l1v1 c1k74xht`}>
+{"Upcoming"}
+</h2>
+</div>
+<div
+className={`w-element ck11ylk c767uka cxn45mh c134tzij c11cmzdu`}>
+<p
+className={`w-element cyoo8jj c12zhvo c8ao5vx cr2ujrk c11tcoly c14py9u3`}>
+{"GE Union"}
+</p>
+<h2
+className={`w-element cyoo8jj c1dsvsvh c8ao5ur cu7mlpt c1pmampn c1swc3v8`}>
+{"Minecraft Month"}
+</h2>
+<Link_1
+href={"/minecraft"}
+className={`w-element c6f08mx c1cn8p4x c1w0yra6 cpq2gwm c12zhvo ck08swj c1ho4waj c1dsvsvh`}>
+<div
+className={`w-element ${"mc-button"}`}>
+<p
+className={`w-element c2z8j1e c1cz5kzf cyoo8jj ${"mcbuttitle"}`}>
+{"See Details"}
+</p>
+</div>
+</Link_1>
+<HtmlEmbed
+code={"<style>\n@import url('https://fonts.cdnfonts.com/css/minecraftia');\n@import url('https://fonts.cdnfonts.com/css/minecraft-title');\n\n/* Minecraft Style Button */\n.mc-button {\n    font-family: minecraftia;\n\theight: var(--btn-size);\n\twidth: calc(var(--btn-size) * 10);\n\tcursor: pointer;\n\toverflow: hidden;\n\twhite-space: nowrap;\n\tuser-select: none;\n\n\tbackground: #999 url('https://i.ibb.co/rb2TWXL/bgbtn.png') center / cover;\n\timage-rendering: pixelated;\n\tborder: 2px solid #000;\n\t\n\t/* Mouse over */\n\t&:hover .mcbuttitle {\n\t\tbackground-color: rgba(100, 100, 255, .45);\n\t\ttext-shadow: 2px 2px #202013CC;\n\t\tcolor: #FFFFA0;\n\t}\n\t&:active .mcbuttitle {\n\t\tbox-shadow: inset -2px -4px #0004, inset 2px 2px #FFF5;\n\t}\n\t/* Button title */\n\t.mcbuttitle {\n\t\twidth: 100%; height: 100%;\n\t\tpadding-bottom: .3em;\n\t\t@include flex-center-hv;\n\t\t\n\t\tcolor: #DDD;\n\t\ttext-shadow: 2px 2px #000A;\n\t\tbox-shadow: inset -2px -4px #0006, inset 2px 2px #FFF7;\n\t}\n\t/* Others */\n\t&.full { width: 100%; height: 100%; }\n\t&.lang {\n\t\t& img { width: 26px; height: 26px;}\n\t\t& .mcbuttitle  { padding-bottom: 0; } }\n} \n</style>"}
+className={`w-html-embed`} />
+</div>
+</div>
+</div>
 <Box
 className={`w-box ci03eyw cu8ogtt c1g95588 c3brmnq cqaj6f4 c16lfnyl c1v4vkm5`}>
 <Image

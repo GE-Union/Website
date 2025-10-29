@@ -11,7 +11,7 @@ import { Tooltip as Tooltip, TooltipTrigger as TooltipTrigger, TooltipContent as
 
       export const projectId = "94456f8c-a847-426a-aec8-16de390bd3eb";
 
-      export const lastPublished = "2025-10-05T20:46:34.702Z";
+      export const lastPublished = "2025-10-29T16:47:32.850Z";
 
       export const siteName = "GE Union";
 
@@ -201,7 +201,7 @@ alt={""}
 className={`w-image c1x3epop cww5rzx cejbzap c3n0xi`} />
 </div>
 <div
-className={`w-element ccxbyd9 ctslah9 clrom7z c4qqqhz c1p34zf0 c1dsvsvh ci03eyw c7dq5yt c1erinc3 catlkx8 c1m3jn9j c17u97jl c1spep64 c1bcrpfp`}>
+className={`w-element c1w0yra6 cpq2gwm clrom7z c4qqqhz c1f0lefa c1dsvsvh ci03eyw c7dq5yt c1erinc3 catlkx8 c1nixf1k c17i4kqy c1hhefcr c6jvbv7 c17u97jl c1spep64 c1bcrpfp`}>
 <Image
 src={"/assets/DTU_Logo_1_ALJvp3KcUMX_sjnnzSbJS.svg"}
 width={468}
@@ -250,7 +250,7 @@ className={`w-element`}>
 </div>
 </div>
 <div
-className={`w-element ccxbyd9 ctslah9 clrom7z c4qqqhz c1p34zf0 c1dsvsvh c1m3jn9j`}>
+className={`w-element c1w0yra6 cpq2gwm clrom7z c4qqqhz c1f0lefa c1dsvsvh c1nixf1k c17i4kqy c1hhefcr c6jvbv7`}>
 <h2
 className={`w-element c10jlucd`}>
 {"What the hell is PF?"}
@@ -301,7 +301,7 @@ className={`w-element`}>
 </div>
 </div>
 <div
-className={`w-element ccxbyd9 ctslah9 clrom7z c4qqqhz c1p34zf0 c1duohc3 c1nixf1k`}>
+className={`w-element c1w0yra6 cpq2gwm clrom7z c4qqqhz c1f0lefa c1duohc3 c1nixf1k c17i4kqy c1hhefcr c6jvbv7`}>
 <div
 className={`w-element`}>
 <h2

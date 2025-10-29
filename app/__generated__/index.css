@@ -1440,8 +1440,8 @@
   .cj7bt5u {
     margin-top: 60px
   }
-  .c1p34zf0 {
-    max-width: 1350px
+  .c1f0lefa {
+    max-width: 800px
   }
   .c8py5un {
     margin-left: 0.5em
@@ -2033,9 +2033,6 @@
   .cvqaoy8 {
     max-width: 850px
   }
-  .c1f0lefa {
-    max-width: 800px
-  }
   .c1q7at0i {
     width: 540px
   }
@@ -2057,23 +2054,17 @@
   .c134tzij {
     margin-bottom: 10px
   }
+  .c11tcoly {
+    font-family: minecraftia, Rubik, Arial, Roboto, sans-serif
+  }
+  .c14py9u3 {
+    margin-bottom: 0.3em
+  }
   .ccn6m53 {
     margin-top: -10vh
   }
-  .ca6s8em {
-    width: 750px
-  }
-  .c7iz4wv {
-    padding-right: 21px
-  }
-  .c15qerz1 {
-    padding-left: 21px
-  }
-  .cs75d47 {
-    max-width: 80vh
-  }
-  .c16e72yc {
-    margin-bottom: 50px
+  .c8ao5ur {
+    font-family: "minecraft title", Rubik, Arial, Roboto, sans-serif
   }
   .c122ufuu {
     margin-top: var(--gap2)
@@ -2101,6 +2092,198 @@
   }
   .c1rw57mb {
     height: 35px
+  }
+  .c1c1nljs {
+    box-shadow: 6px 6px 0px 0px rgba(251, 248, 248, 0.35) inset, -6px -6px 0px 0px rgba(0, 0, 0, 0.13) inset
+  }
+  .cmz8li2 {
+    font-size: 18px
+  }
+  .c1hqjrr7:hover {
+    text-shadow: 2.5px 2.5px 0px rgba(0, 0, 0, 0.2)
+  }
+  .ct1jq01 {
+    box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.14) inset
+  }
+  .c7d32e2 {
+    outline: 5px solid var(--front-3)
+  }
+  .cbwlfln {
+    font-size: 4.5em
+  }
+  .c5f1dbc {
+    border-top-left-radius: 0px
+  }
+  .cnkzs50 {
+    border-top-right-radius: 0px
+  }
+  .chbqw1w {
+    border-bottom-left-radius: 0px
+  }
+  .c1ylpb7q {
+    border-bottom-right-radius: 0px
+  }
+  .cqp51h6 {
+    box-shadow: 6px 6px 0px 0px rgba(255, 255, 255, 0.2) inset, -6px -6px 0px 0px rgba(0, 0, 0, 0.14) inset
+  }
+  .cr9uasm {
+    background-color: rgba(231, 231, 231, 1)
+  }
+  .c1iphxzh {
+    background-image: url("https://static.planetminecraft.com/files/resource_media/screenshot/1236/pack_3530346.jpg")
+  }
+  .c1ixxl29 {
+    background-size: 80px auto
+  }
+  .c1hhrno2 {
+    width: 550px
+  }
+  .c1dbtj0a {
+    height: 230px
+  }
+  .c1ie7ree {
+    box-shadow: -6px -6px 0px 0px rgba(0, 0, 0, 0.6) inset
+  }
+  .cld634l {
+    background-position: 50% 50%
+  }
+  .c1u1zexl {
+    width: 150px
+  }
+  .ca40tb {
+    box-shadow: 0px 2px 17px 0px rgba(0, 0, 0, 0.4)
+  }
+  .c1g46emb {
+    border: 6px solid rgba(188, 188, 188, 1)
+  }
+  .ct7on7b {
+    box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.6) inset, 4px 4px 0px 0px rgba(0, 0, 0, 0.5)
+  }
+  .c11aly8t {
+    padding: 40px
+  }
+  .cnwmbet {
+    font-size: 27px
+  }
+  .c13opn8k:hover {
+    color: rgba(253, 249, 143, 1)
+  }
+  .c35rkun {
+    opacity: 0.7
+  }
+  .c1lb4b9w {
+    margin-bottom: 0px
+  }
+  .c1h5g7r3 {
+    font-size: 3em
+  }
+  .cazktie {
+    margin-top: 1.4em
+  }
+  .cy9rpio {
+    opacity: 1
+  }
+  .c1hhfflc {
+    width: 23px
+  }
+  .c1dyo3uz {
+    filter: invert(64.1%) drop-shadow(0px -4.5px 0px rgba(255, 255, 255, 0.55))
+  }
+  .c15qerz1 {
+    padding-left: 21px
+  }
+  .c7iz4wv {
+    padding-right: 21px
+  }
+  .ca6s8em {
+    width: 750px
+  }
+  .cs75d47 {
+    max-width: 80vh
+  }
+  .cerccex {
+    margin-top: 8px
+  }
+  .cwh659g {
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.11)
+  }
+  .c1ust0kw {
+    height: 1em
+  }
+  .c1t2goh6 {
+    width: 0.64em
+  }
+  .cvjxtgg {
+    opacity: 0.8
+  }
+  .c1e19mda {
+    margin-right: 2px
+  }
+  .c1p4o8mc {
+    margin-top: 3.5px
+  }
+  .c18t8i99 {
+    text-shadow: 1.5px 1.5px 0px rgba(0, 0, 0, 0.2)
+  }
+  .czaajis:hover {
+    color: var(--front-red-1)
+  }
+  .c1tta375:hover {
+    text-shadow: 1.5px 1.5px 0px rgba(98, 0, 0, 0.25)
+  }
+  .c10ziczw {
+    border-bottom: 1px solid rgba(226, 232, 240, 1)
+  }
+  .c1uqlbxg {
+    justify-content: between
+  }
+  .cfrthnz {
+    padding-right: 0
+  }
+  .c14k6nzi {
+    padding-left: 0
+  }
+  .c1kjz0sw {
+    padding-bottom: 0.3rem
+  }
+  .c1hs8b7k {
+    padding-top: 0.3rem
+  }
+  .c1u8r20w:hover {
+    text-decoration-line: underline
+  }
+  .cmt2x3l {
+    margin-right: 8px
+  }
+  .cgrn48i {
+    filter: invert(20%)
+  }
+  .c1ycv641 {
+    padding-left: 30px
+  }
+  .cak89in {
+    padding-top: 1rem
+  }
+  .cdj7twg {
+    border-top: 0px solid var(--front-3)
+  }
+  .c1o0ntyx {
+    border-right: 0px solid var(--front-3)
+  }
+  .clw24wx {
+    border-bottom: 0px solid var(--front-3)
+  }
+  .c1gnh8fz {
+    border-left: 3px solid var(--front-3)
+  }
+  .c1cn8p4x {
+    width: 250px
+  }
+  .c1cz5kzf {
+    line-height: 2rem
+  }
+  .czk4mnn {
+    margin-bottom: 1em
   }
 }
 @media all and (max-width: 991px) {
@@ -2236,6 +2419,15 @@
   .c1ai6gqv {
     font-size: 24px
   }
+  .c17i4kqy {
+    margin-left: 40px
+  }
+  .c1hhefcr {
+    margin-right: 40px
+  }
+  .c6jvbv7 {
+    max-width: none
+  }
   .cf92qlo {
     font-size: 0.72em
   }
@@ -2322,6 +2514,9 @@
   }
   .c1fgwlgc {
     --width-no-map: 80vw
+  }
+  .c1pu31ho {
+    font-size: 3.6em
   }
   .c1rl3o5v {
     width: 540px
@@ -2450,9 +2645,6 @@
   }
   .cwkfinq {
     margin-top: 20px
-  }
-  .c1m3jn9j {
-    margin-top: 80px
   }
   .c8chaf1 {
     column-gap: 13px
@@ -2583,9 +2775,6 @@
   .chjepeg {
     width: 420px
   }
-  .c1777lyd {
-    max-width: 100%
-  }
   .c1pmampn {
     font-size: 1.44em
   }
@@ -2597,6 +2786,39 @@
   }
   .c4dt4o5 {
     padding-left: 34px
+  }
+  .ca31dgg {
+    font-size: 2.5em
+  }
+  .c1ih5jst {
+    width: 226.6px
+  }
+  .cvn9nmc {
+    height: 42.5px
+  }
+  .ceogueq {
+    height: 180px
+  }
+  .cjpq878 {
+    width: 450px
+  }
+  .cj1ukl1 {
+    width: 120px
+  }
+  .cd5ot2b {
+    padding: 20px
+  }
+  .c1tiz6lo {
+    font-size: 25px
+  }
+  .c1p6r7jt {
+    margin-top: 50px
+  }
+  .c1777lyd {
+    max-width: 100%
+  }
+  .c4nxafs {
+    margin-top: 6px
   }
 }
 @media all and (max-width: 479px) {
@@ -2881,5 +3103,20 @@
   }
   .cc9hpgt {
     margin-top: -60px
+  }
+  .c1a3xarh {
+    height: 150px
+  }
+  .c7874j4 {
+    width: 380px
+  }
+  .c1q3wo66 {
+    padding: 10px
+  }
+  .ctuz1ay {
+    font-size: 2em
+  }
+  .c17qa5tp {
+    font-size: 15px
   }
 }

@@ -11,7 +11,7 @@ import { Tooltip as Tooltip, TooltipTrigger as TooltipTrigger, TooltipContent as
 
       export const projectId = "94456f8c-a847-426a-aec8-16de390bd3eb";
 
-      export const lastPublished = "2025-10-05T20:46:34.702Z";
+      export const lastPublished = "2025-10-29T16:47:32.850Z";
 
       export const siteName = "GE Union";
 
@@ -234,7 +234,7 @@ optimize={false}
 className={`w-image cqb6n9z c1fo9mp9 c1k3gxy3`} />
 </div>
 <div
-className={`w-element ccxbyd9 ctslah9 cj7bt5u c4qqqhz c1p34zf0 c1dsvsvh c1nixf1k`}>
+className={`w-element c1w0yra6 cpq2gwm cj7bt5u c4qqqhz c1f0lefa c1dsvsvh c1nixf1k c17i4kqy c1hhefcr c6jvbv7`}>
 <p
 className={`w-element cyoo8jj c1l00ka2 ca8r8od c1twkhmw c1pkzl4t csju6l8 c1q6vwwy c1iwy39r`}>
 {"The Bachelor of Science in General Engineering at DTU"}
@@ -254,7 +254,7 @@ className={`w-element`}>
 </p>
 </div>
 <div
-className={`w-element ccxbyd9 ctslah9 cj7bt5u c4qqqhz c1p34zf0 c1dsvsvh ci03eyw cs5vl0c c1s1dhpt c1m3jn9j`}>
+className={`w-element c1w0yra6 cpq2gwm cj7bt5u c4qqqhz c1f0lefa c1dsvsvh ci03eyw cs5vl0c c1s1dhpt c1nixf1k c17i4kqy c1hhefcr c6jvbv7`}>
 <div
 className={`w-element`}>
 <h2
@@ -286,7 +286,7 @@ optimize={false}
 loading={"lazy"}
 className={`w-image c1tpjvk7 c4qqqhz cvuh4zx ce30i2p c14e6dcj cri3ouj cr2180h cpgn581 c1sucy14 c1e7x5sb c1eiysop c1pv9cz1`} />
 <div
-className={`w-element ccxbyd9 ctslah9 c12zhvo c4qqqhz c1p34zf0 c1dsvsvh cwkfinq`}>
+className={`w-element c1w0yra6 cpq2gwm c12zhvo c4qqqhz c1f0lefa c1dsvsvh cwkfinq c17i4kqy c1hhefcr c6jvbv7`}>
 <h3
 className={`w-element`}>
 {"Specialisations "}
@@ -378,7 +378,7 @@ className={`w-element`}>
 </div>
 </div>
 <div
-className={`w-element ccxbyd9 ctslah9 clrom7z c4qqqhz c1p34zf0 c1duohc3 c1m3jn9j`}>
+className={`w-element c1w0yra6 cpq2gwm clrom7z c4qqqhz c1f0lefa c1duohc3 c1nixf1k c17i4kqy c1hhefcr c6jvbv7`}>
 <h2
 className={`w-element`}>
 {"DTU Course Analyzer"}
