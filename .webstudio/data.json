@@ -1,10 +1,10 @@
 {
   "build": {
-    "id": "574e90a7-b84f-42ca-ab18-aa70143f4ef2",
+    "id": "1f014ca0-da4d-4663-a069-9a08e99909d9",
     "projectId": "94456f8c-a847-426a-aec8-16de390bd3eb",
-    "version": 15571,
-    "createdAt": "2025-10-31T09:57:28.135+00:00",
-    "updatedAt": "2025-10-31T09:57:28.135+00:00",
+    "version": 15579,
+    "createdAt": "2025-11-18T18:36:08.441+00:00",
+    "updatedAt": "2025-11-18T18:36:08.441+00:00",
     "pages": {
       "meta": {
         "siteName": "GE Union",
@@ -97990,7 +97990,7 @@
           "instanceId": "UxQ1h-VHfjqAM1iuiGWw-",
           "name": "src",
           "type": "asset",
-          "value": "390650a516d5e3d61ec1d2f7995221f58da4b2ac9a7f35304a8039e613367773"
+          "value": "5094b02b91c1a0bbdf6a45a1728ecdbae5741cec199c0314af7a8e7ce2994e3e"
         }
       ],
       [
@@ -98000,7 +98000,7 @@
           "instanceId": "UxQ1h-VHfjqAM1iuiGWw-",
           "name": "width",
           "type": "asset",
-          "value": "390650a516d5e3d61ec1d2f7995221f58da4b2ac9a7f35304a8039e613367773"
+          "value": "5094b02b91c1a0bbdf6a45a1728ecdbae5741cec199c0314af7a8e7ce2994e3e"
         }
       ],
       [
@@ -98010,7 +98010,7 @@
           "instanceId": "UxQ1h-VHfjqAM1iuiGWw-",
           "name": "height",
           "type": "asset",
-          "value": "390650a516d5e3d61ec1d2f7995221f58da4b2ac9a7f35304a8039e613367773"
+          "value": "5094b02b91c1a0bbdf6a45a1728ecdbae5741cec199c0314af7a8e7ce2994e3e"
         }
       ],
       [
@@ -98210,7 +98210,7 @@
           "instanceId": "50xew7wYMsDGvGKtOtvs3",
           "name": "src",
           "type": "asset",
-          "value": "390650a516d5e3d61ec1d2f7995221f58da4b2ac9a7f35304a8039e613367773"
+          "value": "5094b02b91c1a0bbdf6a45a1728ecdbae5741cec199c0314af7a8e7ce2994e3e"
         }
       ],
       [
@@ -98220,7 +98220,7 @@
           "instanceId": "50xew7wYMsDGvGKtOtvs3",
           "name": "width",
           "type": "asset",
-          "value": "390650a516d5e3d61ec1d2f7995221f58da4b2ac9a7f35304a8039e613367773"
+          "value": "5094b02b91c1a0bbdf6a45a1728ecdbae5741cec199c0314af7a8e7ce2994e3e"
         }
       ],
       [
@@ -98230,7 +98230,7 @@
           "instanceId": "50xew7wYMsDGvGKtOtvs3",
           "name": "height",
           "type": "asset",
-          "value": "390650a516d5e3d61ec1d2f7995221f58da4b2ac9a7f35304a8039e613367773"
+          "value": "5094b02b91c1a0bbdf6a45a1728ecdbae5741cec199c0314af7a8e7ce2994e3e"
         }
       ],
       [
@@ -98430,7 +98430,7 @@
           "instanceId": "Ll-8LSx3Wc8g2yGrM1AE0",
           "name": "src",
           "type": "asset",
-          "value": "390650a516d5e3d61ec1d2f7995221f58da4b2ac9a7f35304a8039e613367773"
+          "value": "5094b02b91c1a0bbdf6a45a1728ecdbae5741cec199c0314af7a8e7ce2994e3e"
         }
       ],
       [
@@ -98440,7 +98440,7 @@
           "instanceId": "Ll-8LSx3Wc8g2yGrM1AE0",
           "name": "width",
           "type": "asset",
-          "value": "390650a516d5e3d61ec1d2f7995221f58da4b2ac9a7f35304a8039e613367773"
+          "value": "5094b02b91c1a0bbdf6a45a1728ecdbae5741cec199c0314af7a8e7ce2994e3e"
         }
       ],
       [
@@ -98450,7 +98450,7 @@
           "instanceId": "Ll-8LSx3Wc8g2yGrM1AE0",
           "name": "height",
           "type": "asset",
-          "value": "390650a516d5e3d61ec1d2f7995221f58da4b2ac9a7f35304a8039e613367773"
+          "value": "5094b02b91c1a0bbdf6a45a1728ecdbae5741cec199c0314af7a8e7ce2994e3e"
         }
       ],
       [
@@ -98650,7 +98650,7 @@
           "instanceId": "Hn3yhlpR2MdQyJvz9UvCB",
           "name": "src",
           "type": "asset",
-          "value": "390650a516d5e3d61ec1d2f7995221f58da4b2ac9a7f35304a8039e613367773"
+          "value": "5094b02b91c1a0bbdf6a45a1728ecdbae5741cec199c0314af7a8e7ce2994e3e"
         }
       ],
       [
@@ -98660,7 +98660,7 @@
           "instanceId": "Hn3yhlpR2MdQyJvz9UvCB",
           "name": "width",
           "type": "asset",
-          "value": "390650a516d5e3d61ec1d2f7995221f58da4b2ac9a7f35304a8039e613367773"
+          "value": "5094b02b91c1a0bbdf6a45a1728ecdbae5741cec199c0314af7a8e7ce2994e3e"
         }
       ],
       [
@@ -98670,7 +98670,7 @@
           "instanceId": "Hn3yhlpR2MdQyJvz9UvCB",
           "name": "height",
           "type": "asset",
-          "value": "390650a516d5e3d61ec1d2f7995221f58da4b2ac9a7f35304a8039e613367773"
+          "value": "5094b02b91c1a0bbdf6a45a1728ecdbae5741cec199c0314af7a8e7ce2994e3e"
         }
       ],
       [
@@ -98870,7 +98870,7 @@
           "instanceId": "5nisQphMaAFsI_GVt6GFH",
           "name": "src",
           "type": "asset",
-          "value": "390650a516d5e3d61ec1d2f7995221f58da4b2ac9a7f35304a8039e613367773"
+          "value": "5094b02b91c1a0bbdf6a45a1728ecdbae5741cec199c0314af7a8e7ce2994e3e"
         }
       ],
       [
@@ -98880,7 +98880,7 @@
           "instanceId": "5nisQphMaAFsI_GVt6GFH",
           "name": "width",
           "type": "asset",
-          "value": "390650a516d5e3d61ec1d2f7995221f58da4b2ac9a7f35304a8039e613367773"
+          "value": "5094b02b91c1a0bbdf6a45a1728ecdbae5741cec199c0314af7a8e7ce2994e3e"
         }
       ],
       [
@@ -98890,7 +98890,7 @@
           "instanceId": "5nisQphMaAFsI_GVt6GFH",
           "name": "height",
           "type": "asset",
-          "value": "390650a516d5e3d61ec1d2f7995221f58da4b2ac9a7f35304a8039e613367773"
+          "value": "5094b02b91c1a0bbdf6a45a1728ecdbae5741cec199c0314af7a8e7ce2994e3e"
         }
       ],
       [
@@ -99090,7 +99090,7 @@
           "instanceId": "EpiJXNo0kM_GYmIKu79TN",
           "name": "src",
           "type": "asset",
-          "value": "390650a516d5e3d61ec1d2f7995221f58da4b2ac9a7f35304a8039e613367773"
+          "value": "5094b02b91c1a0bbdf6a45a1728ecdbae5741cec199c0314af7a8e7ce2994e3e"
         }
       ],
       [
@@ -99100,7 +99100,7 @@
           "instanceId": "EpiJXNo0kM_GYmIKu79TN",
           "name": "width",
           "type": "asset",
-          "value": "390650a516d5e3d61ec1d2f7995221f58da4b2ac9a7f35304a8039e613367773"
+          "value": "5094b02b91c1a0bbdf6a45a1728ecdbae5741cec199c0314af7a8e7ce2994e3e"
         }
       ],
       [
@@ -99110,7 +99110,7 @@
           "instanceId": "EpiJXNo0kM_GYmIKu79TN",
           "name": "height",
           "type": "asset",
-          "value": "390650a516d5e3d61ec1d2f7995221f58da4b2ac9a7f35304a8039e613367773"
+          "value": "5094b02b91c1a0bbdf6a45a1728ecdbae5741cec199c0314af7a8e7ce2994e3e"
         }
       ],
       [
@@ -100390,7 +100390,7 @@
           "instanceId": "FUpJlM9x5VkrL0X_PEw5t",
           "name": "src",
           "type": "asset",
-          "value": "390650a516d5e3d61ec1d2f7995221f58da4b2ac9a7f35304a8039e613367773"
+          "value": "5094b02b91c1a0bbdf6a45a1728ecdbae5741cec199c0314af7a8e7ce2994e3e"
         }
       ],
       [
@@ -100400,7 +100400,7 @@
           "instanceId": "FUpJlM9x5VkrL0X_PEw5t",
           "name": "width",
           "type": "asset",
-          "value": "390650a516d5e3d61ec1d2f7995221f58da4b2ac9a7f35304a8039e613367773"
+          "value": "5094b02b91c1a0bbdf6a45a1728ecdbae5741cec199c0314af7a8e7ce2994e3e"
         }
       ],
       [
@@ -100410,7 +100410,7 @@
           "instanceId": "FUpJlM9x5VkrL0X_PEw5t",
           "name": "height",
           "type": "asset",
-          "value": "390650a516d5e3d61ec1d2f7995221f58da4b2ac9a7f35304a8039e613367773"
+          "value": "5094b02b91c1a0bbdf6a45a1728ecdbae5741cec199c0314af7a8e7ce2994e3e"
         }
       ],
       [
@@ -102640,7 +102640,7 @@
           "instanceId": "FUpJlM9x5VkrL0X_PEw5t",
           "name": "alt",
           "type": "asset",
-          "value": "390650a516d5e3d61ec1d2f7995221f58da4b2ac9a7f35304a8039e613367773"
+          "value": "5094b02b91c1a0bbdf6a45a1728ecdbae5741cec199c0314af7a8e7ce2994e3e"
         }
       ],
       [
@@ -102650,7 +102650,7 @@
           "instanceId": "UxQ1h-VHfjqAM1iuiGWw-",
           "name": "alt",
           "type": "asset",
-          "value": "390650a516d5e3d61ec1d2f7995221f58da4b2ac9a7f35304a8039e613367773"
+          "value": "5094b02b91c1a0bbdf6a45a1728ecdbae5741cec199c0314af7a8e7ce2994e3e"
         }
       ],
       [
@@ -102660,7 +102660,7 @@
           "instanceId": "50xew7wYMsDGvGKtOtvs3",
           "name": "alt",
           "type": "asset",
-          "value": "390650a516d5e3d61ec1d2f7995221f58da4b2ac9a7f35304a8039e613367773"
+          "value": "5094b02b91c1a0bbdf6a45a1728ecdbae5741cec199c0314af7a8e7ce2994e3e"
         }
       ],
       [
@@ -102670,7 +102670,7 @@
           "instanceId": "Ll-8LSx3Wc8g2yGrM1AE0",
           "name": "alt",
           "type": "asset",
-          "value": "390650a516d5e3d61ec1d2f7995221f58da4b2ac9a7f35304a8039e613367773"
+          "value": "5094b02b91c1a0bbdf6a45a1728ecdbae5741cec199c0314af7a8e7ce2994e3e"
         }
       ],
       [
@@ -102680,7 +102680,7 @@
           "instanceId": "Hn3yhlpR2MdQyJvz9UvCB",
           "name": "alt",
           "type": "asset",
-          "value": "390650a516d5e3d61ec1d2f7995221f58da4b2ac9a7f35304a8039e613367773"
+          "value": "5094b02b91c1a0bbdf6a45a1728ecdbae5741cec199c0314af7a8e7ce2994e3e"
         }
       ],
       [
@@ -102690,7 +102690,7 @@
           "instanceId": "5nisQphMaAFsI_GVt6GFH",
           "name": "alt",
           "type": "asset",
-          "value": "390650a516d5e3d61ec1d2f7995221f58da4b2ac9a7f35304a8039e613367773"
+          "value": "5094b02b91c1a0bbdf6a45a1728ecdbae5741cec199c0314af7a8e7ce2994e3e"
         }
       ],
       [
@@ -102700,7 +102700,7 @@
           "instanceId": "EpiJXNo0kM_GYmIKu79TN",
           "name": "alt",
           "type": "asset",
-          "value": "390650a516d5e3d61ec1d2f7995221f58da4b2ac9a7f35304a8039e613367773"
+          "value": "5094b02b91c1a0bbdf6a45a1728ecdbae5741cec199c0314af7a8e7ce2994e3e"
         }
       ],
       [
@@ -129751,19 +129751,6 @@
       "meta": {
         "width": 256,
         "height": 238
-      }
-    },
-    {
-      "id": "390650a516d5e3d61ec1d2f7995221f58da4b2ac9a7f35304a8039e613367773",
-      "name": "logo_GEU(2)_j-Y370XvYH082ggeHwJjA.png",
-      "projectId": "94456f8c-a847-426a-aec8-16de390bd3eb",
-      "size": 135600,
-      "type": "image",
-      "format": "png",
-      "createdAt": "2025-10-31T09:49:48.566+00:00",
-      "meta": {
-        "width": 799,
-        "height": 812
       }
     },
     {
