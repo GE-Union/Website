@@ -11,7 +11,7 @@ import { Tooltip as Tooltip, TooltipTrigger as TooltipTrigger, TooltipContent as
 
       export const projectId = "94456f8c-a847-426a-aec8-16de390bd3eb";
 
-      export const lastPublished = "2025-11-18T18:36:08.441Z";
+      export const lastPublished = "2025-11-20T11:28:23.239Z";
 
       export const siteName = "GE Union";
 
@@ -367,7 +367,7 @@ className={`w-element c1o49hcl ci03eyw c1dgy9if c1a10q77 c1v4vkm5 c6d6cak c5dclx
 className={`w-element cx80e38 c9iyznh c1xsuntc cez05na cr2fx1c c1ydphkn cpy5f0q c119ibn4 cqmovsy`} />
 <h2
 className={`w-element cx80e38 c9iyznh c1lt64h c1jzivuf chpvhw5 c125l1v1 c1k74xht`}>
-{"Upcoming"}
+{"Ongoing"}
 </h2>
 </div>
 <div
