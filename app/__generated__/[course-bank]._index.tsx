@@ -11,7 +11,7 @@ import { Tabs as Tabs, TabsList as TabsList, TabsTrigger as TabsTrigger, TabsCon
 
       export const projectId = "94456f8c-a847-426a-aec8-16de390bd3eb";
 
-      export const lastPublished = "2025-11-20T11:28:23.239Z";
+      export const lastPublished = "2025-12-19T14:58:02.252Z";
 
       export const siteName = "GE Union";
 
@@ -64,12 +64,12 @@ className={`w-image cy2rpkp c1l3m6tn c1vsv73g c1wjaqd0`} />
 className={`w-box ci03eyw c5zf3td c1bdekej cy2vnym cgykfac c8chaf1 crymv6m ch588tu cd1c1x2 cgjpuuk co3wgvm cjdg5q7`}>
 <Link
 href={"/"}
-className={`w-link c4qqqhz c1l00ka2 c8l261o c1ozmz5d c1ho4waj c1k74xht c1122adb ch9rsc5 c10pf28n c1w0lkxn c1et34yr c1tj415q cycv0tm`}>
+className={`w-link c4qqqhz c1l00ka2 c8l261o cp711zw c1ho4waj c1k74xht c1122adb ch9rsc5 c10pf28n c1w0lkxn cevhq7u c1tj415q cycv0tm`}>
 {"Home"}
 </Link>
 <Link
 href={"/course-bank"}
-className={`w-link c4qqqhz c1l00ka2 c8l261o c1wmsojl c1ho4waj c1k74xht c1122adb ch9rsc5 c10pf28n c1w0lkxn c1et34yr c1tj415q`}>
+className={`w-link c4qqqhz c1l00ka2 c8l261o c1wmsojl c1ho4waj c1k74xht c1122adb ch9rsc5 c10pf28n c1w0lkxn cevhq7u c1tj415q`}>
 <span
 className={`w-element cycv0tm`}>
 {"Course "}
@@ -78,32 +78,32 @@ className={`w-element cycv0tm`}>
 </Link>
 <Link
 href={"/calendar"}
-className={`w-link c4qqqhz c1l00ka2 c8l261o c1ozmz5d c1ho4waj c1k74xht c1122adb ch9rsc5 c10pf28n c1w0lkxn c1et34yr c1tj415q`}>
+className={`w-link c4qqqhz c1l00ka2 c8l261o cp711zw c1ho4waj c1k74xht c1122adb ch9rsc5 c10pf28n c1w0lkxn cevhq7u c1tj415q`}>
 {"Calendar"}
 </Link>
 <Tooltip
 delayDuration={0}>
 <TooltipTrigger>
 <div
-className={`w-element c4qqqhz c1l00ka2 c8l261o c1ozmz5d c1ho4waj c1k74xht c1122adb ch9rsc5 c10pf28n c1w0lkxn cbahl6h c1tj415q`}>
+className={`w-element c4qqqhz c1l00ka2 c8l261o cp711zw c1ho4waj c1k74xht c1122adb ch9rsc5 c10pf28n c1w0lkxn c1llv2ju c1tj415q`}>
 {"About"}
 </div>
 </TooltipTrigger>
 <TooltipContent
-className={`w-tooltip-content c5mlbae cm1ds2c c1fxgukz cdzo1k7 c1lp7lun c3ryv7d c1t11c95 c1kz25wt c1jbi97f crebcbz cfjpsss ci03eyw cu8ogtt c4bgnbx cj82r57 c14a5ioc cm4j335`}>
+className={`w-tooltip-content c5mlbae cm1ds2c c1fxgukz cdzo1k7 c1lp7lun c3ryv7d c1t11c95 c1kz25wt c1jbi97f crebcbz c1q4zcxv ci03eyw cu8ogtt c4bgnbx cj82r57 c14a5ioc cm4j335`}>
 <Link
 href={"/about-ge"}
-className={`w-link c4qqqhz c1l00ka2 c8l261o c1ozmz5d c1ho4waj c1k74xht c1122adb ch9rsc5 c10pf28n c1w0lkxn cz5lin5 c1tj415q`}>
+className={`w-link c4qqqhz c1l00ka2 c8l261o cp711zw c1ho4waj c1k74xht c1122adb ch9rsc5 c10pf28n c1w0lkxn cz5lin5 c1tj415q`}>
 {"General Engineering"}
 </Link>
 <Link_1
 href={"/about-dtu"}
-className={`w-element c4qqqhz c1l00ka2 c8l261o c1ozmz5d c1ho4waj c1k74xht cz03vb2 cqo7rnh cz5lin5 c1tj415q`}>
+className={`w-element c4qqqhz c1l00ka2 c8l261o cp711zw c1ho4waj c1k74xht cz03vb2 cqo7rnh cz5lin5 c1tj415q`}>
 {"DTU"}
 </Link_1>
 <Link
 href={"/about-geu"}
-className={`w-link c4qqqhz c1l00ka2 c8l261o c1ozmz5d c1ho4waj c1k74xht c1122adb ch9rsc5 c10pf28n c1w0lkxn cz5lin5 c1tj415q`}>
+className={`w-link c4qqqhz c1l00ka2 c8l261o cp711zw c1ho4waj c1k74xht c1122adb ch9rsc5 c10pf28n c1w0lkxn cz5lin5 c1tj415q`}>
 {"GE Union"}
 </Link>
 </TooltipContent>
@@ -120,9 +120,9 @@ className={`w-html-embed`} />
 </Button>
 </DialogTrigger>
 <DialogOverlay
-className={`w-dialog-overlay c15392bw c12qysi7 c1jkbqq5 ch8lzlo c13hlxg9 c5mlbae c17brv9o cvuh4zx cu8ogtt c8nmv6p cwqnf9o c1bm3fk1 c183bdo0`}>
+className={`w-dialog-overlay c15392bw c12qysi7 c1jkbqq5 ch8lzlo c13hlxg9 c5mlbae c1qqxt5d cvuh4zx cu8ogtt c8nmv6p cwqnf9o c1bm3fk1 c183bdo0`}>
 <DialogContent
-className={`w-dialog-content c5mlbae ci03eyw cu8ogtt c7na04l ctnx82u cngdgqi cs20kd cnkevhm cpq2gwm cql21mx ck11ylk c1a71d48 c18s1ywe c1log017 cyuvfar ctbdlr1 c1kek3tg c1s3e5c3 c1ort9jz cuvlntl c18vlwwr c17sz26a cng5oj6`}>
+className={`w-dialog-content c5mlbae ci03eyw cu8ogtt c7na04l ctnx82u cg4tsss c1e09nnv cnkevhm cpq2gwm cql21mx ck11ylk c1a71d48 c18s1ywe c1log017 cyuvfar cvy6q1l c1kek3tg c1s3e5c3 c1ort9jz cuvlntl c18vlwwr c17sz26a cng5oj6`}>
 <Box
 data-ws-tag="nav"
 className={`w-box c39ez8k`}>
@@ -177,7 +177,7 @@ className={`w-link c1sy2opm cr2ujrk c8l261o cy7nrqp c1ho4waj c1122adb c10pf28n c
 </Box>
 </Box>
 <DialogClose
-className={`w-close-button c58kvwj c9jo736 crviqmx c40fhby c1koy2kb cvrpl4x c1uib4vc ci03eyw c1v4vkm5 c1bti4b5 c1qsi9u3 c1s85o6f c7jkqej cy7nrqp cq3zzid cjdtlt6 cxudh90 c12m3onu`}>
+className={`w-close-button c58kvwj c9jo736 crviqmx c40fhby c1koy2kb cvrpl4x c1uib4vc ci03eyw c1v4vkm5 c1bti4b5 c1qsi9u3 c1s85o6f c7jkqej cy7nrqp cq3zzid cjdtlt6 cxudh90 c14y8ie2`}>
 <HtmlEmbed
 code={"<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 16 16\" width=\"100%\" height=\"100%\" style=\"display: block;\"><path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M12.5 3 3 12.5M3 3l9.5 9.5\"/></svg>"}
 className={`w-html-embed`} />
@@ -193,7 +193,7 @@ className={`w-element cyoo8jj c1k74xht cnurt1a c1wzvl6u`}>
 {"Course bank"}
 </h1>
 <Text
-className={`w-text cqawzgp c1s7gudn czgmbqe cyoo8jj c1wwlxnr cje5w08 c1k74xht c1bck0pu cnurt1a c1wzvl6u c7u4ssh`}>
+className={`w-text cqawzgp c1s7gudn c1vkmm90 cyoo8jj c1wwlxnr cje5w08 c1k74xht c1bck0pu cnurt1a c1wzvl6u c7u4ssh`}>
 {"Your GE hub for course info and notes."}
 </Text>
 </Box>
@@ -205,7 +205,7 @@ className={`w-tabs cu8ogtt c1v4vkm5 c3q79or cqlg791 cbeiaob ci03eyw`}>
 className={`w-tabs-list cfyrpk4 c1qpyqes c1bti4b5 cd3toq c17nm8vt c8yo8yx c1xymrvd c1n9f9m4 c1jbi97f c1lgzutd c1s5tu31 c1lvtt9b c12gpzk6 c1jsmjku c1cshlcb cde37yz ca1ntyv cwsyfmt cgmjq0a c1xmffmh c142qj80 c15igavi`}>
 <TabsTrigger
 data-ws-index="0"
-className={`w-tab-trigger cfyrpk4 c1v4vkm5 c1bti4b5 c1sm0mvf cbfwnla c3fz80x c6pfjtb c1lp7lun c3ryv7d c1t11c95 c1kz25wt cr2ujrk c1tmykg6 ctdzf0s c1efnbdc c14hahek c1qt5xo2 ck08swj cuz3b7n c5atcat c13yk87r c12m3onu cxbwblh co1yi26 c1vk95sq c4m1pwg c1al8gxi cws4pam cqp7jpc c1kvgv3n`}>
+className={`w-tab-trigger cfyrpk4 c1v4vkm5 c1bti4b5 c1sm0mvf cbfwnla c3fz80x c6pfjtb c1lp7lun c3ryv7d c1t11c95 c1kz25wt cr2ujrk c1tmykg6 ctdzf0s c1efnbdc c14hahek c1qt5xo2 ck08swj cuz3b7n c5atcat c13yk87r c14y8ie2 cxbwblh co1yi26 c1vk95sq c152v1c8 clljqx0 c13s8e34 c1aqe4zi c1kvgv3n`}>
 <span
 className={`w-element c426or5 cycv0tm ckiq6wr`}>
 {"Polytechnical "}
@@ -214,7 +214,7 @@ className={`w-element c426or5 cycv0tm ckiq6wr`}>
 </TabsTrigger>
 <TabsTrigger
 data-ws-index="1"
-className={`w-tab-trigger cfyrpk4 c1v4vkm5 c1bti4b5 c1sm0mvf cbfwnla c3fz80x c6pfjtb c1lp7lun c3ryv7d c1t11c95 c1kz25wt cr2ujrk c1tmykg6 ctdzf0s c1efnbdc c14hahek c1qt5xo2 ck08swj cuz3b7n c5atcat c13yk87r c12m3onu cxbwblh co1yi26 c1vk95sq c4m1pwg c1al8gxi cws4pam cqp7jpc c1kvgv3n`}>
+className={`w-tab-trigger cfyrpk4 c1v4vkm5 c1bti4b5 c1sm0mvf cbfwnla c3fz80x c6pfjtb c1lp7lun c3ryv7d c1t11c95 c1kz25wt cr2ujrk c1tmykg6 ctdzf0s c1efnbdc c14hahek c1qt5xo2 ck08swj cuz3b7n c5atcat c13yk87r c14y8ie2 cxbwblh co1yi26 c1vk95sq c152v1c8 clljqx0 c13s8e34 c1aqe4zi c1kvgv3n`}>
 {"Advanced"}
 <Span
 className={`w-text-1 cwti2ho cvuh4zx ckiq6wr`}>
@@ -223,7 +223,7 @@ className={`w-text-1 cwti2ho cvuh4zx ckiq6wr`}>
 </TabsTrigger>
 <TabsTrigger
 data-ws-index="2"
-className={`w-tab-trigger cfyrpk4 c1v4vkm5 c1bti4b5 c1sm0mvf cbfwnla c3fz80x c6pfjtb c1lp7lun c3ryv7d c1t11c95 c1kz25wt cr2ujrk c1tmykg6 ctdzf0s c1efnbdc c14hahek c1qt5xo2 ck08swj cuz3b7n c5atcat c13yk87r c12m3onu cxbwblh co1yi26 c1vk95sq c4m1pwg c1al8gxi cws4pam cqp7jpc c1kvgv3n`}>
+className={`w-tab-trigger cfyrpk4 c1v4vkm5 c1bti4b5 c1sm0mvf cbfwnla c3fz80x c6pfjtb c1lp7lun c3ryv7d c1t11c95 c1kz25wt cr2ujrk c1tmykg6 ctdzf0s c1efnbdc c14hahek c1qt5xo2 ck08swj cuz3b7n c5atcat c13yk87r c14y8ie2 cxbwblh co1yi26 c1vk95sq c152v1c8 clljqx0 c13s8e34 c1aqe4zi c1kvgv3n`}>
 {"Cyber"}
 <Span
 className={`w-text-1 cwti2ho cvuh4zx ckiq6wr`}>
@@ -232,7 +232,7 @@ className={`w-text-1 cwti2ho cvuh4zx ckiq6wr`}>
 </TabsTrigger>
 <TabsTrigger
 data-ws-index="3"
-className={`w-tab-trigger cfyrpk4 c1v4vkm5 c1bti4b5 c1sm0mvf cbfwnla c3fz80x c6pfjtb c1lp7lun c3ryv7d c1t11c95 c1kz25wt cr2ujrk c1tmykg6 ctdzf0s c1efnbdc c14hahek c1qt5xo2 ck08swj cuz3b7n c5atcat c13yk87r c12m3onu cxbwblh co1yi26 c1vk95sq c4m1pwg c1al8gxi cws4pam cqp7jpc c1kvgv3n`}>
+className={`w-tab-trigger cfyrpk4 c1v4vkm5 c1bti4b5 c1sm0mvf cbfwnla c3fz80x c6pfjtb c1lp7lun c3ryv7d c1t11c95 c1kz25wt cr2ujrk c1tmykg6 ctdzf0s c1efnbdc c14hahek c1qt5xo2 ck08swj cuz3b7n c5atcat c13yk87r c14y8ie2 cxbwblh co1yi26 c1vk95sq c152v1c8 clljqx0 c13s8e34 c1aqe4zi c1kvgv3n`}>
 {"Living"}
 <Span
 className={`w-text-1 cwti2ho cvuh4zx ckiq6wr`}>
@@ -241,7 +241,7 @@ className={`w-text-1 cwti2ho cvuh4zx ckiq6wr`}>
 </TabsTrigger>
 <TabsTrigger
 data-ws-index="4"
-className={`w-tab-trigger cfyrpk4 c1v4vkm5 c1bti4b5 c1sm0mvf cbfwnla c3fz80x c6pfjtb c1lp7lun c3ryv7d c1t11c95 c1kz25wt cr2ujrk c1tmykg6 ctdzf0s c1efnbdc c14hahek c1qt5xo2 ck08swj cuz3b7n c5atcat c13yk87r c12m3onu cxbwblh co1yi26 c1vk95sq c4m1pwg c1al8gxi cws4pam cqp7jpc c1kvgv3n`}>
+className={`w-tab-trigger cfyrpk4 c1v4vkm5 c1bti4b5 c1sm0mvf cbfwnla c3fz80x c6pfjtb c1lp7lun c3ryv7d c1t11c95 c1kz25wt cr2ujrk c1tmykg6 ctdzf0s c1efnbdc c14hahek c1qt5xo2 ck08swj cuz3b7n c5atcat c13yk87r c14y8ie2 cxbwblh co1yi26 c1vk95sq c152v1c8 clljqx0 c13s8e34 c1aqe4zi c1kvgv3n`}>
 {"Future"}
 <Span
 className={`w-text-1 cwti2ho cvuh4zx ckiq6wr`}>
@@ -2267,7 +2267,7 @@ className={`w-element ca2fle4 cc02v1c c5fuofq cuz3b7n`}>
 <Link
 href={"https://www.studocu.com/da/institution/danmarks-tekniske-universitet/2833"}
 target={"_blank"}
-className={`w-link c10pf28n c6775s7 ct2w13i c1kmtbg4 c341g64 c11h9c5s c17hd63g cnrv5xy c1ho4waj czgmbqe c8l261o cr2ujrk ci03eyw c1pd7k79 c2gl1gx cda4yqq c767uka c1x65yvk cv1qn8j c1jon836 co5x0w6 c5sx8jk c1122adb c1bti4b5 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c143l1dc cbazxvp c1ydztro cpyan2s c15o04ri`}>
+className={`w-link c10pf28n c6775s7 ct2w13i c1kmtbg4 c4u8rnv cxlc7u9 cqs9um0 c1ldtmq9 c1ho4waj c1vkmm90 c8l261o cr2ujrk ci03eyw c1pd7k79 c2gl1gx cda4yqq c767uka c1x65yvk cv1qn8j c1jon836 co5x0w6 c5sx8jk c1122adb c1bti4b5 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c143l1dc cbazxvp c1ydztro cpyan2s c15o04ri`}>
 <Text
 className={`w-text`}>
 {"Studocu"}
@@ -2289,7 +2289,7 @@ className={`w-element ca2fle4 cc02v1c c5fuofq cuz3b7n`}>
 <Link
 href={"https://docs.google.com/forms/d/e/1FAIpQLSfsAo2xfW8tSNVPVtKocAg1h23JNxV34xfJyf_n_9SxwNugzw/viewform"}
 target={"_blank"}
-className={`w-link c10pf28n c6775s7 ct2w13i c1kmtbg4 c341g64 c11h9c5s c17hd63g cnrv5xy c1ho4waj czgmbqe c8l261o cr2ujrk ci03eyw c1pd7k79 c2gl1gx cda4yqq c767uka c1x65yvk cv1qn8j c1jon836 co5x0w6 c5sx8jk c1122adb c1bti4b5 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c1bf26ov cbazxvp c1ydztro cpyan2s c15o04ri`}>
+className={`w-link c10pf28n c6775s7 ct2w13i c1kmtbg4 c4u8rnv cxlc7u9 cqs9um0 c1ldtmq9 c1ho4waj c1vkmm90 c8l261o cr2ujrk ci03eyw c1pd7k79 c2gl1gx cda4yqq c767uka c1x65yvk cv1qn8j c1jon836 co5x0w6 c5sx8jk c1122adb c1bti4b5 c1tmykg6 ctdzf0s codsd31 c16er72m c1qt5xo2 c1bf26ov cbazxvp c1ydztro cpyan2s c15o04ri`}>
 <Text
 className={`w-text`}>
 {"Here"}

@@ -11,7 +11,7 @@ import { Tooltip as Tooltip, TooltipTrigger as TooltipTrigger, TooltipContent as
 
       export const projectId = "94456f8c-a847-426a-aec8-16de390bd3eb";
 
-      export const lastPublished = "2025-11-20T11:28:23.239Z";
+      export const lastPublished = "2025-12-19T14:58:02.252Z";
 
       export const siteName = "GE Union";
 
@@ -31,13 +31,13 @@ import { Tooltip as Tooltip, TooltipTrigger as TooltipTrigger, TooltipContent as
 
       const Page = (_props: { system: any; }) => {
 return <Body
-className={`w-element c11tcoly cmz8li2 cr9uasm`}>
+className={`w-element c11tcoly cmz8li2 c1vvcj9z`}>
 <HtmlEmbed
 code={"<style>\n@import url('https://fonts.cdnfonts.com/css/minecrafter-alt');\n@import url('https://fonts.cdnfonts.com/css/minecraftia');\n@import url('https://fonts.cdnfonts.com/css/minecraft-title');\n  \n  h1{\n    font-family: 'Minecrafter Alt';\n    font-weight: 500;\n    font-size: 3.8em;\n    color: var(--background);\n    line-height: 1;\n    margin: 0;\n  }\n  h2{\n    font-family: 'Minecraft title';\n    font-weight: 100;\n    font-size: 36px;\n    line-height: 1;\n    margin: 0;\n    margin-bottom: 0.3em;\n  }\n  p{\n    margin: 0;\n  }\n  \n  .icon-background{\n    background-color: var(--back-red-1);\n    z-index: 1;\n    overflow: hidden;\n    position: relative;\n  }\n  .icon-background::before{\n    content: \"\";\n    position: absolute;\n    width: 200%; height: 200%;\n    top: -50%; left: -50%;\n    background-image: url('/assets/icon-background_orTDw4lIQEfSgOgF0DBVy.svg?width=1080&quality=80&format=auto');\n    background-size: 200px 115.4734411085px;\n    background-repeat: repeat;\n    animation: scrollBg 20s linear infinite;\n    z-index: -1;\n    opacity: var(--icon-background-opacity, 3%); mix-blend-mode: luminosity;\n    filter: blur(2px)\n  }\n  \n  .home-top::after{\n    position: absolute;\n    content: \"\";\n    width: 100%;\n    height: 250px;\n    background: linear-gradient(180deg, hsl(from var(--back-red-1) h s l / 0.65) 15%, hsl(from var(--back-red-1) h s l / 0) 100%);\n    z-index: -1;\n  }\n\n  @keyframes scrollBg {\n      0% {\n        background-position: 0 0;\n      }\n      100% {\n        background-position: -200px 115.4734411085px;\n      }\n    }\n\n  .home-top-card:hover .home-top-card-title-icon{\n    width: 38px;\n    padding-left: 3px;\n  }\n\n  @media only screen and (max-width: 767px) {\n    h1{\n      font-size: 4em;\n    }\n    h2{\n      font-size: 32px;\n    }\n  }\n\n\n\n\n/* Minecraft Style Button */\n.mc-button {\n\theight: var(--btn-size);\n\twidth: calc(var(--btn-size) * 10);\n\tcursor: pointer;\n\toverflow: hidden;\n\twhite-space: nowrap;\n\tuser-select: none;\n\n\tbackground: #999 url('https://i.ibb.co/rb2TWXL/bgbtn.png') center / cover;\n\timage-rendering: pixelated;\n\tborder: 2px solid #000;\n\t\n\t/* Mouse over */\n\t&:hover .mcbuttitle {\n\t\tbackground-color: rgba(100, 100, 255, .45);\n\t\ttext-shadow: 2px 2px #202013CC;\n\t\tcolor: #FFFFA0;\n\t}\n\t&:active .mcbuttitle {\n\t\tbox-shadow: inset -2px -4px #0004, inset 2px 2px #FFF5;\n\t}\n\t/* Button title */\n\t.mcbuttitle {\n\t\twidth: 100%; height: 100%;\n\t\tpadding-bottom: .3em;\n\t\t@include flex-center-hv;\n\t\t\n\t\tcolor: #DDD;\n\t\ttext-shadow: 2px 2px #000A;\n\t\tbox-shadow: inset -2px -4px #0006, inset 2px 2px #FFF7;\n\t}\n\t/* Others */\n\t&.full { width: 100%; height: 100%; }\n\t&.lang {\n\t\t& img { width: 26px; height: 26px;}\n\t\t& .mcbuttitle  { padding-bottom: 0; } }\n}\n\n  \n\n\n  .pixel-corners {\n  clip-path: polygon(\n    0px calc(100% - 24px),\n    6px calc(100% - 24px),\n    6px calc(100% - 12px),\n    12px calc(100% - 12px),\n    12px calc(100% - 6px),\n    24px calc(100% - 6px),\n    24px 100%,\n    calc(100% - 24px) 100%,\n    calc(100% - 24px) calc(100% - 6px),\n    calc(100% - 12px) calc(100% - 6px),\n    calc(100% - 12px) calc(100% - 12px),\n    calc(100% - 6px) calc(100% - 12px),\n    calc(100% - 6px) calc(100% - 24px),\n    100% calc(100% - 24px),\n    100% 24px,\n    calc(100% - 6px) 24px,\n    calc(100% - 6px) 12px,\n    calc(100% - 12px) 12px,\n    calc(100% - 12px) 6px,\n    calc(100% - 24px) 6px,\n    calc(100% - 24px) 0px,\n    24px 0px,\n    24px 6px,\n    12px 6px,\n    12px 12px,\n    6px 12px,\n    6px 24px,\n    0px 24px\n  );\n}\n</style>"}
 executeScriptOnCanvas={true}
 className={`w-html-embed`} />
 <Box
-className={`w-box cck00sw ci03eyw cu8ogtt cm1ds2c c1fxgukz c3q79or c1fhonxu cqlg791 cji7xkv c40iywk codsd31 c16er72m c1qt5xo2 c1c1nljs c1uz2t7q c4psa79 c1ldi832 ${"icon-background home-top pixel-corners"}`}>
+className={`w-box cck00sw ci03eyw cu8ogtt cm1ds2c c1fxgukz c3q79or c1fhonxu cqlg791 cji7xkv c40iywk codsd31 c16er72m c1qt5xo2 cgvspkw c1uz2t7q c4psa79 c1ldi832 ${"icon-background home-top pixel-corners"}`}>
 <Box
 className={`w-box c19h37rc ci03eyw c1nj86ny c1mz59p0 c13f4d8e c1122adb cx911xm c4qqqhz c2z8j1e c19dc97m`}>
 <Link
@@ -57,12 +57,12 @@ className={`w-image c2esyix c15yfdgq ct616nu c1uhp8e3 c1swt08u c1wjaqd0`} />
 className={`w-box ci03eyw c5zf3td c1bdekej cy2vnym cgykfac c8chaf1 crymv6m ch588tu cd1c1x2 cgjpuuk co3wgvm cjdg5q7`}>
 <Link
 href={"/"}
-className={`w-link c4qqqhz c1l00ka2 cmz8li2 c1ozmz5d c1ho4waj c1k74xht c1122adb ch9rsc5 c10pf28n c1w0lkxn c1et34yr c1hqjrr7 c1tj415q cycv0tm`}>
+className={`w-link c4qqqhz c1l00ka2 cmz8li2 cp711zw c1ho4waj c1k74xht c1122adb ch9rsc5 c10pf28n c1w0lkxn cevhq7u c1p8boon c1tj415q cycv0tm`}>
 {"Home"}
 </Link>
 <Link
 href={"/course-bank"}
-className={`w-link c4qqqhz c1l00ka2 cmz8li2 c1ozmz5d c1ho4waj c1k74xht c1122adb ch9rsc5 c10pf28n c1w0lkxn c1et34yr c1hqjrr7 c1tj415q`}>
+className={`w-link c4qqqhz c1l00ka2 cmz8li2 cp711zw c1ho4waj c1k74xht c1122adb ch9rsc5 c10pf28n c1w0lkxn cevhq7u c1p8boon c1tj415q`}>
 <span
 className={`w-element cycv0tm`}>
 {"Course "}
@@ -71,32 +71,32 @@ className={`w-element cycv0tm`}>
 </Link>
 <Link
 href={"/calendar"}
-className={`w-link c4qqqhz c1l00ka2 cmz8li2 c1ozmz5d c1ho4waj c1k74xht c1122adb ch9rsc5 c10pf28n c1w0lkxn c1et34yr c1hqjrr7 c1tj415q`}>
+className={`w-link c4qqqhz c1l00ka2 cmz8li2 cp711zw c1ho4waj c1k74xht c1122adb ch9rsc5 c10pf28n c1w0lkxn cevhq7u c1p8boon c1tj415q`}>
 {"Calendar"}
 </Link>
 <Tooltip
 delayDuration={0}>
 <TooltipTrigger>
 <div
-className={`w-element c4qqqhz c1l00ka2 cmz8li2 c1ozmz5d c1ho4waj c1k74xht c1122adb ch9rsc5 c10pf28n c1w0lkxn cbahl6h c1tj415q`}>
+className={`w-element c4qqqhz c1l00ka2 cmz8li2 cp711zw c1ho4waj c1k74xht c1122adb ch9rsc5 c10pf28n c1w0lkxn c1llv2ju c1tj415q`}>
 {"About"}
 </div>
 </TooltipTrigger>
 <TooltipContent
-className={`w-tooltip-content c5mlbae cm1ds2c c1fxgukz c1n9f9m4 c1lp7lun c3ryv7d c1t11c95 c1kz25wt c1jbi97f crebcbz cfjpsss ci03eyw cu8ogtt ct1jq01 c7d32e2`}>
+className={`w-tooltip-content c5mlbae cm1ds2c c1fxgukz c1n9f9m4 c1lp7lun c3ryv7d c1t11c95 c1kz25wt c1jbi97f crebcbz c1q4zcxv ci03eyw cu8ogtt c1nhrlfk c7d32e2`}>
 <Link
 href={"/about-ge"}
-className={`w-link c4qqqhz c1l00ka2 c8l261o c1ozmz5d c1ho4waj c1k74xht c1122adb ch9rsc5 c10pf28n c1w0lkxn cz5lin5 c1hqjrr7 c1tj415q`}>
+className={`w-link c4qqqhz c1l00ka2 c8l261o cp711zw c1ho4waj c1k74xht c1122adb ch9rsc5 c10pf28n c1w0lkxn cz5lin5 c1p8boon c1tj415q`}>
 {"General Engineering"}
 </Link>
 <Link_1
 href={"/about-dtu"}
-className={`w-element c4qqqhz c1l00ka2 c8l261o c1ozmz5d c1ho4waj c1k74xht cz03vb2 cqo7rnh cz5lin5 c1hqjrr7 c1tj415q`}>
+className={`w-element c4qqqhz c1l00ka2 c8l261o cp711zw c1ho4waj c1k74xht cz03vb2 cqo7rnh cz5lin5 c1p8boon c1tj415q`}>
 {"DTU"}
 </Link_1>
 <Link
 href={"/about-geu"}
-className={`w-link c4qqqhz c1l00ka2 c8l261o c1ozmz5d c1ho4waj c1k74xht c1122adb ch9rsc5 c10pf28n c1w0lkxn cz5lin5 c1hqjrr7 c1tj415q`}>
+className={`w-link c4qqqhz c1l00ka2 c8l261o cp711zw c1ho4waj c1k74xht c1122adb ch9rsc5 c10pf28n c1w0lkxn cz5lin5 c1p8boon c1tj415q`}>
 {"GE Union"}
 </Link>
 </TooltipContent>
@@ -113,9 +113,9 @@ className={`w-html-embed`} />
 </Button>
 </DialogTrigger>
 <DialogOverlay
-className={`w-dialog-overlay c15392bw c12qysi7 c1jkbqq5 ch8lzlo c13hlxg9 c5mlbae c17brv9o cvuh4zx cu8ogtt c8nmv6p cwqnf9o c1bm3fk1 c183bdo0`}>
+className={`w-dialog-overlay c15392bw c12qysi7 c1jkbqq5 ch8lzlo c13hlxg9 c5mlbae c1qqxt5d cvuh4zx cu8ogtt c8nmv6p cwqnf9o c1bm3fk1 c183bdo0`}>
 <DialogContent
-className={`w-dialog-content c5mlbae ci03eyw cu8ogtt c7na04l ctnx82u cngdgqi cs20kd cnkevhm cpq2gwm cql21mx ck11ylk c1a71d48 c18s1ywe c1log017 cyuvfar ctbdlr1 c1kek3tg c1s3e5c3 c1ort9jz cuvlntl c18vlwwr c17sz26a cng5oj6`}>
+className={`w-dialog-content c5mlbae ci03eyw cu8ogtt c7na04l ctnx82u cg4tsss c1e09nnv cnkevhm cpq2gwm cql21mx ck11ylk c1a71d48 c18s1ywe c1log017 cyuvfar cvy6q1l c1kek3tg c1s3e5c3 c1ort9jz cuvlntl c18vlwwr c17sz26a cng5oj6`}>
 <Box
 data-ws-tag="nav"
 className={`w-box c39ez8k`}>
@@ -170,7 +170,7 @@ className={`w-link c1sy2opm cr2ujrk c8l261o cy7nrqp c1ho4waj c1122adb c10pf28n c
 </Box>
 </Box>
 <DialogClose
-className={`w-close-button c58kvwj c9jo736 crviqmx c40fhby c1koy2kb cvrpl4x c1uib4vc ci03eyw c1v4vkm5 c1bti4b5 c1qsi9u3 c1s85o6f c7jkqej cy7nrqp cq3zzid cjdtlt6 cxudh90 c12m3onu`}>
+className={`w-close-button c58kvwj c9jo736 crviqmx c40fhby c1koy2kb cvrpl4x c1uib4vc ci03eyw c1v4vkm5 c1bti4b5 c1qsi9u3 c1s85o6f c7jkqej cy7nrqp cq3zzid cjdtlt6 cxudh90 c14y8ie2`}>
 <HtmlEmbed
 code={"<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 16 16\" width=\"100%\" height=\"100%\" style=\"display: block;\"><path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M12.5 3 3 12.5M3 3l9.5 9.5\"/></svg>"}
 className={`w-html-embed`} />
@@ -186,7 +186,7 @@ className={`w-element cyoo8jj c1k74xht cbwlfln cnurt1a c1wzvl6u ca31dgg c1pu31ho
 {"Minecraft month"}
 </h1>
 <Text
-className={`w-text cqawzgp c1s7gudn czgmbqe cyoo8jj c1wwlxnr cje5w08 c1k74xht c1bck0pu cnurt1a c1wzvl6u c7u4ssh`}>
+className={`w-text cqawzgp c1s7gudn c1vkmm90 cyoo8jj c1wwlxnr cje5w08 c1k74xht c1bck0pu cnurt1a c1wzvl6u c7u4ssh`}>
 {"Join the rest of GE for mining and crafting!"}
 </Text>
 </Box>
@@ -217,9 +217,9 @@ className={`w-element`}>
 <div
 className={`w-element c19f83kh c1lb4b9w c1p6r7jt`}>
 <div
-className={`w-element c1iphxzh c1ixxl29 ce1ywqb c1hackn6 c15j8t4a c1vmh594 c1hhrno2 c1dbtj0a c1w0yra6 cpq2gwm c1ie7ree cld634l ceogueq cjpq878 c1a3xarh c7874j4`}>
+className={`w-element c1iphxzh c1ixxl29 ce1ywqb c1hackn6 c15j8t4a c1vmh594 c1hhrno2 c1dbtj0a c1w0yra6 cpq2gwm c1jgxaxx cld634l ceogueq cjpq878 c1a3xarh c7874j4`}>
 <div
-className={`w-element ci03eyw c2z8j1e c1l3m6tn cqaj6f4 c16lfnyl ct7on7b cgqm29d c1wmsojl c1g46emb c11aly8t cd5ot2b c1q3wo66 ${""}`}>
+className={`w-element ci03eyw c2z8j1e c1l3m6tn cqaj6f4 c16lfnyl c1ia5qoa c2tyy68 c1wmsojl cc3ln9r c11aly8t cd5ot2b c1q3wo66 ${""}`}>
 <div
 className={`w-element c4qqqhz`}>
 <Image
@@ -228,7 +228,7 @@ width={512}
 height={512}
 alt={""}
 loading={"lazy"}
-className={`w-image c1u1zexl ca40tb c1g46emb cj1ukl1`} />
+className={`w-image c1u1zexl cmfqjub cc3ln9r cj1ukl1`} />
 </div>
 <div
 className={`w-element ck11ylk c767uka c4qqqhz`}>
@@ -237,7 +237,7 @@ className={`w-element ca31dgg ctuz1ay c1h5g7r3`}>
 {"GE Union"}
 </h1>
 <p
-className={`w-element cnwmbet c13opn8k c1tiz6lo c1pkzl4t`}>
+className={`w-element cnwmbet cy4bc70 c1tiz6lo c1pkzl4t`}>
 <span
 className={`w-element c35rkun c1k74xht`}>
 {"IP: "}
@@ -262,7 +262,7 @@ className={`w-element c1w0yra6 cpq2gwm cerccex c4qqqhz c7wcowi c1dsvsvh cyoo8jj 
 className={`w-element c1vn0xiq`}>
 {"Duration: "}
 <span
-className={`w-element c8qj03j cwh659g`}>
+className={`w-element c8qj03j cvr1qok`}>
 {"November 1st - 31st"}
 </span>
 </p>
@@ -379,7 +379,7 @@ src={"/assets/geu-logo-pixel_A2AuJTFOfuj8lUzQcoPbx.svg"}
 width={50}
 height={70}
 alt={""}
-className={`w-image c1shgpg6 c7hwif1 cy9rpio c1w0yra6 cpq2gwm cj7bt5u c1k74xht c19dg1ud c1hhfflc c1dyo3uz`} />
+className={`w-image c1shgpg6 c7hwif1 cy9rpio c1w0yra6 cpq2gwm cj7bt5u c1k74xht c19dg1ud c1hhfflc c1s3ajea`} />
 <div
 className={`w-element c1w0yra6 cpq2gwm c19f83kh c4qqqhz c1f0lefa c1kzw9o3 c1nixf1k c17i4kqy c1hhefcr c6jvbv7`}>
 <h2
@@ -427,7 +427,7 @@ className={`w-element`}>
 {""}
 {"5. Set the Address to "}
 <b
-className={`w-element c18t8i99 czaajis c1tta375`}>
+className={`w-element c1vjt93y czaajis c1m0eug5`}>
 {"mc.geunion.dk"}
 </b>
 {" and save"}
@@ -455,7 +455,7 @@ value={""}
 className={`w-accordion`}>
 <AccordionItem
 data-ws-index="0"
-className={`w-item c10ziczw`}>
+className={`w-item c17tdk57`}>
 <AccordionHeader
 className={`w-item-header ci03eyw cmz8li2`}>
 <AccordionTrigger
@@ -502,7 +502,7 @@ className={`w-element c2z8j1e c1cz5kzf cyoo8jj ${"mcbuttitle"}`}>
 </AccordionItem>
 <AccordionItem
 data-ws-index="1"
-className={`w-item c10ziczw`}>
+className={`w-item c17tdk57`}>
 <AccordionHeader
 className={`w-item-header ci03eyw cmz8li2`}>
 <AccordionTrigger
@@ -559,7 +559,7 @@ className={`w-element c2z8j1e c1cz5kzf cyoo8jj ${"mcbuttitle"}`}>
 </AccordionItem>
 <AccordionItem
 data-ws-index="2"
-className={`w-item c10ziczw`}>
+className={`w-item c17tdk57`}>
 <AccordionHeader
 className={`w-item-header ci03eyw cmz8li2`}>
 <AccordionTrigger
@@ -596,7 +596,7 @@ src={"/assets/geu-logo-pixel_A2AuJTFOfuj8lUzQcoPbx.svg"}
 width={50}
 height={70}
 alt={""}
-className={`w-image c1shgpg6 c7hwif1 cy9rpio c1w0yra6 cpq2gwm cj7bt5u c1k74xht c19dg1ud c1hhfflc c1dyo3uz`} />
+className={`w-image c1shgpg6 c7hwif1 cy9rpio c1w0yra6 cpq2gwm cj7bt5u c1k74xht c19dg1ud c1hhfflc c1s3ajea`} />
 <div
 className={`w-element c1w0yra6 cpq2gwm cj7bt5u c4qqqhz c1f0lefa c1kzw9o3 c1nixf1k c17i4kqy c1hhefcr c6jvbv7`}>
 <h2
@@ -662,7 +662,7 @@ className={`w-element`}>
 </p>
 </div>
 <Box
-className={`w-box c9esr7v cm1ds2c c1fxgukz c5f1dbc cnkzs50 chbqw1w c1ylpb7q cqp51h6 csaxvfs ce1jmtw c1m7qrvj c1o7c5y4 c1ndanu0 ${"icon-background pixel-corners"}`}>
+className={`w-box c9esr7v cm1ds2c c1fxgukz c5f1dbc cnkzs50 chbqw1w c1ylpb7q c1gjqhyn csaxvfs ce1jmtw c1m7qrvj c1o7c5y4 c1ndanu0 ${"icon-background pixel-corners"}`}>
 <div
 className={`w-element ci03eyw c1nj86ny c4jnp6s c1l3m6tn c1w0yra6 cpq2gwm c1v4vkm5 c16pnwu4 cypyahl cs11lv9 c1njbxf1`}>
 <Link

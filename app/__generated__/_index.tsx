@@ -11,7 +11,7 @@ import { Tooltip as Tooltip, TooltipTrigger as TooltipTrigger, TooltipContent as
 
       export const projectId = "94456f8c-a847-426a-aec8-16de390bd3eb";
 
-      export const lastPublished = "2025-11-20T11:28:23.239Z";
+      export const lastPublished = "2025-12-19T14:58:02.252Z";
 
       export const siteName = "GE Union";
 
@@ -74,12 +74,12 @@ className={`w-image c1l3m6tn cz7iu34 c40iywk codsd31 c16er72m c1qt5xo2 cy2rpkp c
 <Box
 className={`w-box ci03eyw c5zf3td c1bdekej cy2vnym cgykfac c8chaf1 crymv6m ch588tu cd1c1x2 cgjpuuk co3wgvm cjdg5q7`}>
 <p
-className={`w-element c4qqqhz c1l00ka2 c8l261o c1wmsojl c1ho4waj c1k74xht c1122adb ch9rsc5 c10pf28n c1w0lkxn c1p2ptee c1et34yr c1tj415q cycv0tm`}>
+className={`w-element c4qqqhz c1l00ka2 c8l261o c1wmsojl c1ho4waj c1k74xht c1122adb ch9rsc5 c10pf28n c1w0lkxn c1p2ptee cevhq7u c1tj415q cycv0tm`}>
 {"Home"}
 </p>
 <Link
 href={"/course-bank"}
-className={`w-link c4qqqhz c1l00ka2 c8l261o c1ozmz5d c1ho4waj c1k74xht c1122adb ch9rsc5 c10pf28n c1w0lkxn c1et34yr c1tj415q`}>
+className={`w-link c4qqqhz c1l00ka2 c8l261o cp711zw c1ho4waj c1k74xht c1122adb ch9rsc5 c10pf28n c1w0lkxn cevhq7u c1tj415q`}>
 <span
 className={`w-element cycv0tm`}>
 {"Course "}
@@ -88,32 +88,32 @@ className={`w-element cycv0tm`}>
 </Link>
 <Link
 href={"/calendar"}
-className={`w-link c4qqqhz c1l00ka2 c8l261o c1ozmz5d c1ho4waj c1k74xht c1122adb ch9rsc5 c10pf28n c1w0lkxn c1et34yr c1tj415q`}>
+className={`w-link c4qqqhz c1l00ka2 c8l261o cp711zw c1ho4waj c1k74xht c1122adb ch9rsc5 c10pf28n c1w0lkxn cevhq7u c1tj415q`}>
 {"Calendar"}
 </Link>
 <Tooltip
 delayDuration={0}>
 <TooltipTrigger>
 <div
-className={`w-element c4qqqhz c1l00ka2 c8l261o c1ozmz5d c1ho4waj c1k74xht c1122adb ch9rsc5 c10pf28n c1w0lkxn cbahl6h c1tj415q`}>
+className={`w-element c4qqqhz c1l00ka2 c8l261o cp711zw c1ho4waj c1k74xht c1122adb ch9rsc5 c10pf28n c1w0lkxn c1llv2ju c1tj415q`}>
 {"About"}
 </div>
 </TooltipTrigger>
 <TooltipContent
-className={`w-tooltip-content c5mlbae cm1ds2c c1fxgukz cdzo1k7 c1lp7lun c3ryv7d c1t11c95 c1kz25wt c1jbi97f crebcbz cfjpsss ci03eyw cu8ogtt c4bgnbx cj82r57 c14a5ioc cm4j335`}>
+className={`w-tooltip-content c5mlbae cm1ds2c c1fxgukz cdzo1k7 c1lp7lun c3ryv7d c1t11c95 c1kz25wt c1jbi97f crebcbz c1q4zcxv ci03eyw cu8ogtt c4bgnbx cj82r57 c14a5ioc cm4j335`}>
 <Link
 href={"/about-ge"}
-className={`w-link c4qqqhz c1l00ka2 c8l261o c1ozmz5d c1ho4waj c1k74xht c1122adb ch9rsc5 c10pf28n c1w0lkxn cz5lin5 c1tj415q`}>
+className={`w-link c4qqqhz c1l00ka2 c8l261o cp711zw c1ho4waj c1k74xht c1122adb ch9rsc5 c10pf28n c1w0lkxn cz5lin5 c1tj415q`}>
 {"General Engineering"}
 </Link>
 <Link_1
 href={"/about-dtu"}
-className={`w-element c4qqqhz c1l00ka2 c8l261o c1ozmz5d c1ho4waj c1k74xht cz03vb2 cqo7rnh cz5lin5 c1tj415q`}>
+className={`w-element c4qqqhz c1l00ka2 c8l261o cp711zw c1ho4waj c1k74xht cz03vb2 cqo7rnh cz5lin5 c1tj415q`}>
 {"DTU"}
 </Link_1>
 <Link
 href={"/about-geu"}
-className={`w-link c4qqqhz c1l00ka2 c8l261o c1ozmz5d c1ho4waj c1k74xht c1122adb ch9rsc5 c10pf28n c1w0lkxn cz5lin5 c1tj415q`}>
+className={`w-link c4qqqhz c1l00ka2 c8l261o cp711zw c1ho4waj c1k74xht c1122adb ch9rsc5 c10pf28n c1w0lkxn cz5lin5 c1tj415q`}>
 {"GE Union"}
 </Link>
 </TooltipContent>
@@ -130,9 +130,9 @@ className={`w-html-embed`} />
 </Button>
 </DialogTrigger>
 <DialogOverlay
-className={`w-dialog-overlay c15392bw c12qysi7 c1jkbqq5 ch8lzlo c13hlxg9 c5mlbae c17brv9o cvuh4zx cu8ogtt c8nmv6p cwqnf9o c1bm3fk1 c183bdo0`}>
+className={`w-dialog-overlay c15392bw c12qysi7 c1jkbqq5 ch8lzlo c13hlxg9 c5mlbae c1qqxt5d cvuh4zx cu8ogtt c8nmv6p cwqnf9o c1bm3fk1 c183bdo0`}>
 <DialogContent
-className={`w-dialog-content c5mlbae ci03eyw cu8ogtt c7na04l ctnx82u cngdgqi cs20kd cnkevhm cpq2gwm cql21mx ck11ylk c1a71d48 c18s1ywe c1log017 cyuvfar ctbdlr1 c1kek3tg c1s3e5c3 c1ort9jz cuvlntl c18vlwwr c17sz26a cng5oj6`}>
+className={`w-dialog-content c5mlbae ci03eyw cu8ogtt c7na04l ctnx82u cg4tsss c1e09nnv cnkevhm cpq2gwm cql21mx ck11ylk c1a71d48 c18s1ywe c1log017 cyuvfar cvy6q1l c1kek3tg c1s3e5c3 c1ort9jz cuvlntl c18vlwwr c17sz26a cng5oj6`}>
 <Box
 data-ws-tag="nav"
 className={`w-box c39ez8k`}>
@@ -187,7 +187,7 @@ className={`w-link c1sy2opm cr2ujrk c8l261o cy7nrqp c1ho4waj c1122adb c10pf28n c
 </Box>
 </Box>
 <DialogClose
-className={`w-close-button c58kvwj c9jo736 crviqmx c40fhby c1koy2kb cvrpl4x c1uib4vc ci03eyw c1v4vkm5 c1bti4b5 c1qsi9u3 c1s85o6f c7jkqej cy7nrqp cq3zzid cjdtlt6 cxudh90 c12m3onu`}>
+className={`w-close-button c58kvwj c9jo736 crviqmx c40fhby c1koy2kb cvrpl4x c1uib4vc ci03eyw c1v4vkm5 c1bti4b5 c1qsi9u3 c1s85o6f c7jkqej cy7nrqp cq3zzid cjdtlt6 cxudh90 c14y8ie2`}>
 <HtmlEmbed
 code={"<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" viewBox=\"0 0 16 16\" width=\"100%\" height=\"100%\" style=\"display: block;\"><path stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M12.5 3 3 12.5M3 3l9.5 9.5\"/></svg>"}
 className={`w-html-embed`} />
@@ -198,19 +198,12 @@ className={`w-html-embed`} />
 </Box>
 <Box
 className={`w-box cprdnmx ck11ylk c19haj7v ci03eyw cu8ogtt c1bti4b5 cgiudld c1xj8ubg cpr5h0z c16m1c5v c2i8l03`}>
-<Link_1
-href={"/minecraft"}
-className={`w-element c6f08mx c15qerz1 c7iz4wv ca6s8em cs75d47 c4qqqhz c1rl3o5v c1777lyd`}>
-<Image
-src={"/assets/Geu_MC_Light_sIdN5ncjE_g6nVcXx26yu.png"}
-width={1378}
-height={269}
-alt={""}
-loading={"eager"}
-className={`w-image c4qqqhz ${"mcpulse"}`} />
-</Link_1>
+<h1
+className={`w-element cyoo8jj c1k74xht`}>
+{"GE Union"}
+</h1>
 <Text
-className={`w-text cqawzgp c1s7gudn czgmbqe cyoo8jj c1wwlxnr cje5w08 c1k74xht cimns5a c1bck0pu cnurt1a c1wzvl6u c7u4ssh`}>
+className={`w-text cqawzgp c1s7gudn c1vkmm90 cyoo8jj c1wwlxnr cje5w08 c1k74xht cimns5a c1bck0pu cnurt1a c1wzvl6u c7u4ssh`}>
 {"Your "}
 <b
 className={`w-element`}>
@@ -269,7 +262,7 @@ className={`w-image cnkevhm c1oqdnpz cpc2g7h c1kppqxz c1w0yra6 c1lxqyue c1bblaxa
 className={`w-box ck11ylk c767uka c1dohq8s c102e7b2 cvu8o32 c1p5610w crsc1f9 c1c7zter c5xw8br cbg59jt`}>
 <Box
 id={"mini-calendar-back"}
-className={`w-box cwthfpg catlkx8 c12zhvo cxa4mkp ccoo3t2 cd3toq c17nm8vt c1xymrvd c8yo8yx cu8nwxp cfefvni c1jubil0 c18lspnc codsd31 c16er72m c1qt5xo2 crrwaeo`}>
+className={`w-box cwthfpg catlkx8 c12zhvo cxa4mkp c1wmj6c9 cd3toq c17nm8vt c1xymrvd c8yo8yx c8461de cfefvni c1jubil0 c18lspnc codsd31 c16er72m c1qt5xo2 crrwaeo`}>
 <HtmlEmbed
 code={"<style>\n  .calendar-container {\n    width: 100%;\n    padding: 20px;\n  }\n  .calendar-container * {\n    cursor: pointer;\n  }\n  .month-header {\n    text-align: center;\n    font-size: 1em;\n    margin-bottom: 10px;\n    font-weight: 600;\n  }\n  .datepicker-calendar {\n    display: grid;\n    grid-template-columns: repeat(7, 1fr);\n    gap: 7px;\n    text-align: center;\n  }\n  .day {\n    font-size: 0.9em;\n    font-weight: 600;\n  }\n  .date {\n    border: none;\n    border-radius: 10px;\n    aspect-ratio: 1;\n    background: hsl(from var(--back-grey-1) h s calc(l*0.99));\n    font-size: 23px;\n    font-weight: 600;\n    color: var(--front-3)\n  }\n  .faded {\n    opacity: 0.3;\n  }\n  .current-day {\n    background-color: var(--back-red-1);\n    color: white;\n    \n  }\n</style>\n\n<div class=\"calendar-container\">\n  <div class=\"month-header\" id=\"monthHeader\"></div>\n  <div class=\"datepicker-calendar\" id=\"calendar\"></div>\n</div>\n\n\n\n"}
 executeScriptOnCanvas={true}
@@ -360,40 +353,26 @@ id={"fetticanvas"}
 className={`w-element c58kvwj c2z8j1e c1sm4x0m ccn6m53`} />
 <div
 id={"upcome"}
-className={`w-element cy2b8wa cd3toq c17nm8vt c1xymrvd c8yo8yx c5sx8jk c1q7at0i cjpac5y c1tmykg6 c156xldz codsd31 c16er72m c1qt5xo2 ci03eyw cu8ogtt c1m4ybgm c183x3a4 cs4zrmt chjepeg ct6fd0n c3bdlbj ct5uc8i ${"icon-background\n"}`}>
+className={`w-element c1qr9q0f cd3toq c17nm8vt c1xymrvd c8yo8yx c5sx8jk c1q7at0i cjpac5y c1tmykg6 c156xldz codsd31 c16er72m c1qt5xo2 ci03eyw cu8ogtt c1m4ybgm c183x3a4 cs4zrmt chjepeg ct6fd0n c4psa79 ct5uc8i ${"icon-background\n"}`}>
 <div
 className={`w-element c1o49hcl ci03eyw c1dgy9if c1a10q77 c1v4vkm5 c6d6cak c5dclxw c7tvdys cgiudld c1xj8ubg`}>
 <div
-className={`w-element cx80e38 c9iyznh c1xsuntc cez05na cr2fx1c c1ydphkn cpy5f0q c119ibn4 cqmovsy`} />
+className={`w-element cd47swo c171icg6 cb762cb cez05na cr2fx1c c1ydphkn cpy5f0q c119ibn4 cqmovsy`} />
 <h2
-className={`w-element cx80e38 c9iyznh c1lt64h c1jzivuf chpvhw5 c125l1v1 c1k74xht`}>
-{"Ongoing"}
+className={`w-element cd47swo c171icg6 c1lt64h c1jzivuf chpvhw5 c125l1v1 c1k74xht`}>
+{"Upcoming"}
 </h2>
 </div>
 <div
-className={`w-element ck11ylk c767uka cxn45mh c134tzij c11cmzdu`}>
+className={`w-element ck11ylk c767uka cxn45mh c134tzij c11cmzdu c9evryh c1bnlscd`}>
 <p
-className={`w-element cyoo8jj c12zhvo c8ao5vx cr2ujrk c11tcoly c14py9u3`}>
-{"GE Union"}
+className={`w-element cyoo8jj c12zhvo c8ao5vx cr2ujrk c14py9u3`}>
+{"It's almost"}
 </p>
 <h2
-className={`w-element cyoo8jj c1dsvsvh c8ao5ur cu7mlpt c1pmampn c1swc3v8`}>
-{"Minecraft Month"}
+className={`w-element cyoo8jj c1dsvsvh ch4vurf c1hsf31 c4anq6i c1bfo1wi`}>
+{"Christmas!"}
 </h2>
-<Link_1
-href={"/minecraft"}
-className={`w-element c6f08mx c1cn8p4x c1w0yra6 cpq2gwm c12zhvo ck08swj c1ho4waj c1dsvsvh`}>
-<div
-className={`w-element ${"mc-button"}`}>
-<p
-className={`w-element c2z8j1e c1cz5kzf cyoo8jj ${"mcbuttitle"}`}>
-{"See Details"}
-</p>
-</div>
-</Link_1>
-<HtmlEmbed
-code={"<style>\n@import url('https://fonts.cdnfonts.com/css/minecraftia');\n@import url('https://fonts.cdnfonts.com/css/minecraft-title');\n\n/* Minecraft Style Button */\n.mc-button {\n    font-family: minecraftia;\n\theight: var(--btn-size);\n\twidth: calc(var(--btn-size) * 10);\n\tcursor: pointer;\n\toverflow: hidden;\n\twhite-space: nowrap;\n\tuser-select: none;\n\n\tbackground: #999 url('https://i.ibb.co/rb2TWXL/bgbtn.png') center / cover;\n\timage-rendering: pixelated;\n\tborder: 2px solid #000;\n\t\n\t/* Mouse over */\n\t&:hover .mcbuttitle {\n\t\tbackground-color: rgba(100, 100, 255, .45);\n\t\ttext-shadow: 2px 2px #202013CC;\n\t\tcolor: #FFFFA0;\n\t}\n\t&:active .mcbuttitle {\n\t\tbox-shadow: inset -2px -4px #0004, inset 2px 2px #FFF5;\n\t}\n\t/* Button title */\n\t.mcbuttitle {\n\t\twidth: 100%; height: 100%;\n\t\tpadding-bottom: .3em;\n\t\t@include flex-center-hv;\n\t\t\n\t\tcolor: #DDD;\n\t\ttext-shadow: 2px 2px #000A;\n\t\tbox-shadow: inset -2px -4px #0006, inset 2px 2px #FFF7;\n\t}\n\t/* Others */\n\t&.full { width: 100%; height: 100%; }\n\t&.lang {\n\t\t& img { width: 26px; height: 26px;}\n\t\t& .mcbuttitle  { padding-bottom: 0; } }\n} \n</style>"}
-className={`w-html-embed`} />
 </div>
 </div>
 </div>
@@ -422,7 +401,7 @@ className={`w-element c1km7ytz cwfxmkq cyoo8jj c1f0lefa c1q98tuy c19a8u9t`}>
 </p>
 <Link
 href={"/about-geu"}
-className={`w-link c10pf28n c6775s7 ct2w13i c1kmtbg4 c341g64 c11h9c5s c17hd63g cnrv5xy c1ho4waj czgmbqe c8l261o cr2ujrk ci03eyw c1pd7k79 c2gl1gx cda4yqq c767uka c1x65yvk cv1qn8j c1jon836 co5x0w6 c5sx8jk c1122adb c1bti4b5 cz7iu34 c40iywk codsd31 c16er72m c1qt5xo2 c1582rzp cpyan2s`}>
+className={`w-link c10pf28n c6775s7 ct2w13i c1kmtbg4 c4u8rnv cxlc7u9 cqs9um0 c1ldtmq9 c1ho4waj c1vkmm90 c8l261o cr2ujrk ci03eyw c1pd7k79 c2gl1gx cda4yqq c767uka c1x65yvk cv1qn8j c1jon836 co5x0w6 c5sx8jk c1122adb c1bti4b5 cz7iu34 c40iywk codsd31 c16er72m c1qt5xo2 c1582rzp cpyan2s`}>
 <Text
 className={`w-text`}>
 {"Learn more"}
@@ -464,7 +443,7 @@ className={`w-element c1vn0xiq`}>
 </p>
 <Link
 href={"https://docs.google.com/forms/d/e/1FAIpQLScu14PgRWRO-iJ6uEs9s8lNS5QsuPb0HNvI8OY9KIkB9he5VQ/viewform?usp=header"}
-className={`w-link c10pf28n c6775s7 ct2w13i c1kmtbg4 c341g64 c11h9c5s c17hd63g cnrv5xy c1ho4waj czgmbqe c8l261o cr2ujrk ci03eyw c1pd7k79 c2gl1gx cda4yqq c767uka c1x65yvk cv1qn8j c1jon836 co5x0w6 c5sx8jk c1122adb c1bti4b5 cz7iu34 c40iywk codsd31 c16er72m c1qt5xo2 c1swt08u c1582rzp cpyan2s`}>
+className={`w-link c10pf28n c6775s7 ct2w13i c1kmtbg4 c4u8rnv cxlc7u9 cqs9um0 c1ldtmq9 c1ho4waj c1vkmm90 c8l261o cr2ujrk ci03eyw c1pd7k79 c2gl1gx cda4yqq c767uka c1x65yvk cv1qn8j c1jon836 co5x0w6 c5sx8jk c1122adb c1bti4b5 cz7iu34 c40iywk codsd31 c16er72m c1qt5xo2 c1swt08u c1582rzp cpyan2s`}>
 <Text
 className={`w-text`}>
 {"Submit your application "}
@@ -541,7 +520,7 @@ className={`w-element c7wcowi c2z8j1e cmndei7 c3q79or c8qj03j`}>
 <Link
 href={"https://www.instagram.com/ge.union/"}
 target={"_blank"}
-className={`w-link c10pf28n c6775s7 ct2w13i c1kmtbg4 c341g64 c11h9c5s c17hd63g cnrv5xy c1ho4waj czgmbqe c8l261o cr2ujrk ci03eyw c1pd7k79 c2gl1gx cda4yqq c767uka c1x65yvk cv1qn8j c1jon836 co5x0w6 c5sx8jk c1122adb c1bti4b5 cz7iu34 c40iywk codsd31 c16er72m c1qt5xo2 c1984dmv c1582rzp cpyan2s`}>
+className={`w-link c10pf28n c6775s7 ct2w13i c1kmtbg4 c4u8rnv cxlc7u9 cqs9um0 c1ldtmq9 c1ho4waj c1vkmm90 c8l261o cr2ujrk ci03eyw c1pd7k79 c2gl1gx cda4yqq c767uka c1x65yvk cv1qn8j c1jon836 co5x0w6 c5sx8jk c1122adb c1bti4b5 cz7iu34 c40iywk codsd31 c16er72m c1qt5xo2 c1984dmv c1582rzp cpyan2s`}>
 <Text
 className={`w-text`}>
 {"See on Instagram"}
@@ -570,7 +549,7 @@ className={`w-element c7wcowi c2z8j1e cmndei7 c3q79or c8qj03j`}>
 <Link
 href={"https://www.linkedin.com/company/ge-union"}
 target={"_blank"}
-className={`w-link c10pf28n c6775s7 ct2w13i c1kmtbg4 c341g64 c11h9c5s c17hd63g cnrv5xy c1ho4waj czgmbqe c8l261o cr2ujrk ci03eyw c1pd7k79 c2gl1gx cda4yqq c767uka c1x65yvk cv1qn8j c1jon836 co5x0w6 c5sx8jk c1122adb c1bti4b5 cz7iu34 c40iywk codsd31 c16er72m c1qt5xo2 c1984dmv c1582rzp cpyan2s`}>
+className={`w-link c10pf28n c6775s7 ct2w13i c1kmtbg4 c4u8rnv cxlc7u9 cqs9um0 c1ldtmq9 c1ho4waj c1vkmm90 c8l261o cr2ujrk ci03eyw c1pd7k79 c2gl1gx cda4yqq c767uka c1x65yvk cv1qn8j c1jon836 co5x0w6 c5sx8jk c1122adb c1bti4b5 cz7iu34 c40iywk codsd31 c16er72m c1qt5xo2 c1984dmv c1582rzp cpyan2s`}>
 <Text
 className={`w-text`}>
 {"LinkedIn Network"}
@@ -599,7 +578,7 @@ className={`w-element c7wcowi c2z8j1e cmndei7 c3q79or c8qj03j`}>
 <Link
 href={"https://www.reddit.com/r/DTU/"}
 target={"_blank"}
-className={`w-link c10pf28n c6775s7 ct2w13i c1kmtbg4 c341g64 c11h9c5s c17hd63g cnrv5xy c1ho4waj czgmbqe c8l261o cr2ujrk ci03eyw c1pd7k79 c2gl1gx cda4yqq c767uka c1x65yvk cv1qn8j c1jon836 co5x0w6 c5sx8jk c1122adb c1bti4b5 cz7iu34 c40iywk codsd31 c16er72m c1qt5xo2 c1984dmv c1582rzp cpyan2s`}>
+className={`w-link c10pf28n c6775s7 ct2w13i c1kmtbg4 c4u8rnv cxlc7u9 cqs9um0 c1ldtmq9 c1ho4waj c1vkmm90 c8l261o cr2ujrk ci03eyw c1pd7k79 c2gl1gx cda4yqq c767uka c1x65yvk cv1qn8j c1jon836 co5x0w6 c5sx8jk c1122adb c1bti4b5 cz7iu34 c40iywk codsd31 c16er72m c1qt5xo2 c1984dmv c1582rzp cpyan2s`}>
 <Text
 className={`w-text`}>
 {"See on Reddit"}
@@ -628,7 +607,7 @@ className={`w-element c7wcowi c2z8j1e cmndei7 c3q79or c8qj03j`}>
 <Link
 href={"https://www.facebook.com/people/GE-Union/61573069635006/?_rdr"}
 target={"_blank"}
-className={`w-link c10pf28n c6775s7 ct2w13i c1kmtbg4 c341g64 c11h9c5s c17hd63g cnrv5xy c1ho4waj czgmbqe c8l261o cr2ujrk ci03eyw c1pd7k79 c2gl1gx cda4yqq c767uka c1x65yvk cv1qn8j c1jon836 co5x0w6 c5sx8jk c1122adb c1bti4b5 cz7iu34 c40iywk codsd31 c16er72m c1qt5xo2 c7xu66z c1582rzp cpyan2s`}>
+className={`w-link c10pf28n c6775s7 ct2w13i c1kmtbg4 c4u8rnv cxlc7u9 cqs9um0 c1ldtmq9 c1ho4waj c1vkmm90 c8l261o cr2ujrk ci03eyw c1pd7k79 c2gl1gx cda4yqq c767uka c1x65yvk cv1qn8j c1jon836 co5x0w6 c5sx8jk c1122adb c1bti4b5 cz7iu34 c40iywk codsd31 c16er72m c1qt5xo2 c7xu66z c1582rzp cpyan2s`}>
 <Text
 className={`w-text`}>
 {"See on Facebook"}
@@ -689,7 +668,7 @@ className={`w-element c7wcowi c2z8j1e cmndei7 c3q79or c8qj03j cvuh4zx cxxvcyz`}>
 <Link
 href={"mailto:geunion.dtu@gmail.com"}
 target={"_blank"}
-className={`w-link c10pf28n c6775s7 ct2w13i c1kmtbg4 c341g64 c11h9c5s c17hd63g cnrv5xy c1ho4waj czgmbqe c8l261o cr2ujrk cvuh4zx c1pd7k79 c2gl1gx cda4yqq c767uka c1x65yvk cv1qn8j c1jon836 co5x0w6 c5sx8jk c1122adb c1bti4b5 cz7iu34 c40iywk codsd31 c16er72m c1qt5xo2 c7xu66z c1582rzp cpyan2s c6t3p65`}>
+className={`w-link c10pf28n c6775s7 ct2w13i c1kmtbg4 c4u8rnv cxlc7u9 cqs9um0 c1ldtmq9 c1ho4waj c1vkmm90 c8l261o cr2ujrk cvuh4zx c1pd7k79 c2gl1gx cda4yqq c767uka c1x65yvk cv1qn8j c1jon836 co5x0w6 c5sx8jk c1122adb c1bti4b5 cz7iu34 c40iywk codsd31 c16er72m c1qt5xo2 c7xu66z c1582rzp cpyan2s c6t3p65`}>
 <Text
 className={`w-text`}>
 {"Send Email"}
@@ -768,7 +747,7 @@ className={`w-image`} />
 <Link_1
 href={"https://webstudio.is/?via=badge"}
 target={"_blank"}
-className={`w-element cfyrpk4 c2gl1gx c1pd7k79 c1v4vkm5 c1bti4b5 c15392bw cmyjs62 czstdzv c13f4d8e c1ut9lo7 c1mz59p0 c1g0r0c1 cuhk95i c11qj1rn c1aq6eep c18zghtn cr2ujrk c7amdgj cqw36j6 c68ooh8 clgapjo c1q3df6t c1ho4waj c1ea0099 cuz3b7n`}>
+className={`w-element cfyrpk4 c2gl1gx c1pd7k79 c1v4vkm5 c1bti4b5 c15392bw cmyjs62 czstdzv c13f4d8e c1ut9lo7 c1mz59p0 c1g0r0c1 cuhk95i cs5e15k c1aq6eep c18zghtn cr2ujrk c7amdgj cqw36j6 c68ooh8 clgapjo c1q3df6t c1ho4waj c1ea0099 cuz3b7n`}>
 <HtmlEmbed
 code={"<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"currentColor\" viewBox=\"0 0 16 16\" width=\"100%\" height=\"100%\" style=\"display: block;\"><path fill-rule=\"evenodd\" d=\"m12.32 12.416 2.62-8.085a1.205 1.205 0 1 0-2.292-.746l-2.62 8.084a1.205 1.205 0 1 0 2.292.747Z\" clip-rule=\"evenodd\"/><path fill-rule=\"evenodd\" d=\"M8 7.624c.297 0 .517.175.704.394.207.243.373.545.514.866.634 1.44.753 3.241.753 3.241a1.206 1.206 0 0 0 1.285 1.122 1.207 1.207 0 0 0 1.12-1.287s-.16-2.25-.952-4.05C10.744 6.364 9.594 5.208 8 5.208c-1.594 0-2.744 1.156-3.424 2.7-.792 1.8-.951 4.05-.951 4.05a1.207 1.207 0 0 0 1.12 1.288 1.206 1.206 0 0 0 1.284-1.122s.119-1.8.753-3.24a3.52 3.52 0 0 1 .514-.867c.187-.22.406-.394.704-.394Z\" clip-rule=\"evenodd\"/><path fill-rule=\"evenodd\" d=\"M5.973 11.669 3.352 3.585a1.205 1.205 0 1 0-2.293.746l2.622 8.084a1.205 1.205 0 1 0 2.292-.746Z\" clip-rule=\"evenodd\"/></svg>"}
 className={`w-html-embed c6f08mx c58jkk8 c4bwhth c767uka`} />
