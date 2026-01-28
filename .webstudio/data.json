@@ -1,10 +1,10 @@
 {
   "build": {
-    "id": "972cfd1d-dfb3-405e-a940-a526c8a4d438",
+    "id": "4da2aadb-b224-44ab-b305-0c177b68c631",
     "projectId": "94456f8c-a847-426a-aec8-16de390bd3eb",
-    "version": 15624,
-    "createdAt": "2025-12-19T14:58:02.252+00:00",
-    "updatedAt": "2025-12-19T14:58:02.252+00:00",
+    "version": 15626,
+    "createdAt": "2026-01-28T22:05:25.49+00:00",
+    "updatedAt": "2026-01-28T22:05:25.49+00:00",
     "pages": {
       "meta": {
         "siteName": "GE Union",
@@ -97548,7 +97548,7 @@
           "instanceId": "fA38kGlBnqHbcZFOHPanA",
           "name": "data-ws-show",
           "type": "boolean",
-          "value": true
+          "value": false
         }
       ],
       [
@@ -106469,6 +106469,16 @@
           "name": "data-ws-show",
           "type": "boolean",
           "value": true
+        }
+      ],
+      [
+        "Tr2TFZ-7chKBupVmbGrEl",
+        {
+          "id": "Tr2TFZ-7chKBupVmbGrEl",
+          "instanceId": "YEqRKPMIsRng7wkKcvVDQ",
+          "name": "data-ws-show",
+          "type": "boolean",
+          "value": false
         }
       ]
     ],

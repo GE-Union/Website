@@ -11,7 +11,7 @@ import { Tooltip as Tooltip, TooltipTrigger as TooltipTrigger, TooltipContent as
 
       export const projectId = "94456f8c-a847-426a-aec8-16de390bd3eb";
 
-      export const lastPublished = "2025-12-19T14:58:02.252Z";
+      export const lastPublished = "2026-01-28T22:05:25.490Z";
 
       export const siteName = "GE Union";
 
@@ -346,36 +346,6 @@ className={`w-element cy7nrqp c8l261o cdhy4s8 c5sx8jk c1wauoq4 c1w0yra6 cpq2gwm 
 </Box>
 </Box>
 </Box>
-<div
-className={`w-element ci03eyw cu8ogtt c1v4vkm5 ciu9gta c8l261o c1wmsojl c3brmnq`}>
-<div
-id={"fetticanvas"}
-className={`w-element c58kvwj c2z8j1e c1sm4x0m ccn6m53`} />
-<div
-id={"upcome"}
-className={`w-element c1qr9q0f cd3toq c17nm8vt c1xymrvd c8yo8yx c5sx8jk c1q7at0i cjpac5y c1tmykg6 c156xldz codsd31 c16er72m c1qt5xo2 ci03eyw cu8ogtt c1m4ybgm c183x3a4 cs4zrmt chjepeg ct6fd0n c4psa79 ct5uc8i ${"icon-background\n"}`}>
-<div
-className={`w-element c1o49hcl ci03eyw c1dgy9if c1a10q77 c1v4vkm5 c6d6cak c5dclxw c7tvdys cgiudld c1xj8ubg`}>
-<div
-className={`w-element cd47swo c171icg6 cb762cb cez05na cr2fx1c c1ydphkn cpy5f0q c119ibn4 cqmovsy`} />
-<h2
-className={`w-element cd47swo c171icg6 c1lt64h c1jzivuf chpvhw5 c125l1v1 c1k74xht`}>
-{"Upcoming"}
-</h2>
-</div>
-<div
-className={`w-element ck11ylk c767uka cxn45mh c134tzij c11cmzdu c9evryh c1bnlscd`}>
-<p
-className={`w-element cyoo8jj c12zhvo c8ao5vx cr2ujrk c14py9u3`}>
-{"It's almost"}
-</p>
-<h2
-className={`w-element cyoo8jj c1dsvsvh ch4vurf c1hsf31 c4anq6i c1bfo1wi`}>
-{"Christmas!"}
-</h2>
-</div>
-</div>
-</div>
 <Box
 className={`w-box ci03eyw cu8ogtt c1g95588 c3brmnq cqaj6f4 c16lfnyl c1v4vkm5`}>
 <Image
@@ -766,10 +736,6 @@ executeScriptOnCanvas={true}
 className={`w-html-embed cgmpm3f`} />
 <HtmlEmbed
 code={"<style>\n  /* Optional quality-of-life styles */\n  #menu-icon {\n    cursor: grab;\n    touch-action: none;   /* allow smooth touch drag */\n    will-change: transform;\n    \n    uuser-drag: none;\n    -webkit-uuser-drag: none;\n    -moz-uuser-drag: none;\n    user-select: none;    /* avoid text selection while dragging */\n    -moz-user-select: none;\n    -webkit-user-select: none;\n    -ms-user-select: none;\n  }\n  #menu-icon.dragging { cursor: grabbing; }\n</style>\n\n<script>\n(() => {\n  const icon = document.getElementById('menu-icon');\n  if (!icon) return;\n\n  // position is managed purely via transform so layout doesn't shift\n  let pointerID = null;\n  let tx = 0, ty = 0;               // current translation\n  let vx = 0, vy = 0;               // current velocity (px/s)\n  let dragging = false;\n  let startX = 0, startY = 0;       // pointer-down position\n  let lastPx = 0, lastPy = 0;       // last pointer position (for velocity)\n  let lastT = 0;                    // last timestamp\n\n  // Spring params: tweak for feel\n  const STIFFNESS = 300;   // spring constant (higher = snappier)\n  const DAMPING   = 15;   // damping (lower = bouncier)\n  const EPS_POS   = 0.5;  // stop threshold (position, px)\n  const EPS_VEL   = 0.5;  // stop threshold (velocity, px/s)\n\n  const originalHref = icon.href;\n\n  \n  const setTransform = () => {\n    icon.style.transform = `translate(${tx}px, ${ty}px)`;\n  };\n\n  const onPointerDown = (e) => {\n    curPointerID = e.pointerId;\n    startX = e.clientX - tx;\n    startY = e.clientY - ty;\n\n    lastPx = e.clientX;\n    lastPy = e.clientY;\n    lastT  = performance.now();\n    vx = 0; vy = 0; // reset; we'll accumulate movement velocity\n  }\n  \n  const onDragStart = (e) => {\n    e.preventDefault();\n    icon.removeAttribute('href');\n    dragging = true;\n    icon.classList.add('dragging');\n    icon.setPointerCapture?.(curPointerId);\n  };\n\n  const onPointerMove = (e) => {\n    if (!dragging) return;\n\n    const now = performance.now();\n    const dt  = (now - lastT) / 1000;\n    tx = e.clientX - startX;\n    ty = e.clientY - startY;\n\n    // simple low-pass filtered velocity estimate for spring kick\n    if (dt > 0) {\n      const instVx = (e.clientX - lastPx) / dt;\n      const instVy = (e.clientY - lastPy) / dt;\n      vx = 0.8 * vx + 0.2 * instVx;\n      vy = 0.8 * vy + 0.2 * instVy;\n    }\n    lastPx = e.clientX;\n    lastPy = e.clientY;\n    lastT  = now;\n\n    setTransform();\n  };\n\n  const onPointerUp = (e) => {\n    if (!dragging) return;\n    e.preventDefault();\n    e.stopPropagation()\n    e.stopImmediatePropagation();\n    dragging = false;\n    icon.classList.remove('dragging');\n    icon.releasePointerCapture?.(e.pointerId);\n    animateBack(); // start spring home\n    return;\n  };\n\n  function animateBack() {\n    let prev = performance.now();\n    function step(now) {\n      const dt = Math.min((now - prev) / 1000, 0.032); // clamp dt for stability\n      prev = now;\n\n      // Hooke's law: F = -k*x - c*v (mass=1)\n      const ax = -STIFFNESS * tx - DAMPING * vx;\n      const ay = -STIFFNESS * ty - DAMPING * vy;\n\n      vx += ax * dt;\n      vy += ay * dt;\n      tx += vx * dt;\n      ty += vy * dt;\n\n      setTransform();\n\n      const nearOrigin = Math.hypot(tx, ty) < EPS_POS;\n      const slowEnough = Math.hypot(vx, vy) < EPS_VEL;\n\n      if (nearOrigin && slowEnough) {\n        // snap exactly home to avoid subpixel fuzz\n        tx = ty = vx = vy = 0;\n        setTransform();\n        icon.setAttribute('href', originalHref);\n        return;\n      }\n      // If user grabbed again, stop the spring.\n      if (dragging) return;\n\n      requestAnimationFrame(step);\n    }\n    requestAnimationFrame(step);\n  }\n\n  // Keep it floating above other content while dragging (no layout changes)\n  icon.style.zIndex = (parseInt(getComputedStyle(icon).zIndex) || 1).toString();\n\n  // Bind events\n  icon.addEventListener('dragstart', onDragStart);\n  icon.addEventListener('pointerdown', onPointerDown);\n  window.addEventListener('pointermove', onPointerMove, { passive: true });\n  window.addEventListener('pointerup', onPointerUp);\n  window.addEventListener('pointercancel', onPointerUp);\n})();\n</script>"}
-executeScriptOnCanvas={true}
-className={`w-html-embed`} />
-<HtmlEmbed
-code={"<style>\n.mcpulse {\n  display: inline-block;\n  animation: pulseSize 2.5s infinite ease-in-out;\n  transform: scale(1);\n}\n\n.mcpulse.static {\n  animation: none;\n  transition: transform 0.2s ease-in-out;\n}\n\n@keyframes pulseSize {\n  0% {\n    transform: scale(1);\n  }\n  50% {\n    transform: scale(1.03);\n  }\n  100% {\n    transform: scale(1);\n  }\n}\n</style>\n\n<script>\n  document.querySelectorAll('.mcpulse').forEach(el => {\n    el.addEventListener('mouseenter', () => {\n      // Step 1: Get computed transform from animation\n      const computedStyle = window.getComputedStyle(el);\n      const transform = computedStyle.transform;\n\n      // Step 2: Stop animation and freeze current transform\n      el.style.transform = transform;\n      el.classList.add('static');\n\n      // Step 3: After a tiny delay, scale up smoothly\n      requestAnimationFrame(() => {\n        requestAnimationFrame(() => {\n          el.style.transform = 'scale(1.07)';\n        });\n      });\n    });\n\n    el.addEventListener('mouseleave', () => {\n      // Step 4: Scale back to original size\n      el.style.transform = 'scale(1)';\n\n      // Step 5: After transition ends, remove override and resume animation\n      el.addEventListener('transitionend', function handler() {\n        el.classList.remove('static');\n        el.style.transform = '';\n        el.removeEventListener('transitionend', handler);\n      });\n    });\n  });\n</script>\n\n"}
 executeScriptOnCanvas={true}
 className={`w-html-embed`} />
 </Body>
