@@ -11,7 +11,7 @@ import { Tabs as Tabs, TabsList as TabsList, TabsTrigger as TabsTrigger, TabsCon
 
       export const projectId = "94456f8c-a847-426a-aec8-16de390bd3eb";
 
-      export const lastPublished = "2026-01-28T22:05:25.490Z";
+      export const lastPublished = "2026-02-06T17:57:10.527Z";
 
       export const siteName = "GE Union";
 
@@ -194,7 +194,7 @@ className={`w-element cyoo8jj c1k74xht cnurt1a c1wzvl6u`}>
 </h1>
 <Text
 className={`w-text cqawzgp c1s7gudn c1vkmm90 cyoo8jj c1wwlxnr cje5w08 c1k74xht c1bck0pu cnurt1a c1wzvl6u c7u4ssh`}>
-{"Your GE hub for course info and notes."}
+{"Find your relevant courses and notes - from students for students!"}
 </Text>
 </Box>
 </Box>

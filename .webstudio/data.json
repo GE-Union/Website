@@ -1,10 +1,10 @@
 {
   "build": {
-    "id": "4da2aadb-b224-44ab-b305-0c177b68c631",
+    "id": "444831cf-df3a-4390-9c3b-42e5af281ff0",
     "projectId": "94456f8c-a847-426a-aec8-16de390bd3eb",
-    "version": 15626,
-    "createdAt": "2026-01-28T22:05:25.49+00:00",
-    "updatedAt": "2026-01-28T22:05:25.49+00:00",
+    "version": 15703,
+    "createdAt": "2026-02-06T17:57:10.527+00:00",
+    "updatedAt": "2026-02-06T17:57:10.527+00:00",
     "pages": {
       "meta": {
         "siteName": "GE Union",
@@ -79551,6 +79551,252 @@
             "unit": "number"
           }
         }
+      ],
+      [
+        "tx1U_okt9QWoqHvmxC3gZ:2EiFMEG40PBm9_fkelqpo:backgroundColor:",
+        {
+          "styleSourceId": "tx1U_okt9QWoqHvmxC3gZ",
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "property": "backgroundColor",
+          "value": {
+            "type": "var",
+            "value": "back-grey-1"
+          }
+        }
+      ],
+      [
+        "Jt-SnM3sxnjhQEeChORMB:2EiFMEG40PBm9_fkelqpo:--img-scale:",
+        {
+          "styleSourceId": "Jt-SnM3sxnjhQEeChORMB",
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "property": "--img-scale",
+          "value": {
+            "type": "unit",
+            "unit": "number",
+            "value": 1
+          },
+          "listed": true
+        }
+      ],
+      [
+        "8EJRSwHwdoRW36Eq7NkT2:2EiFMEG40PBm9_fkelqpo:display:",
+        {
+          "styleSourceId": "8EJRSwHwdoRW36Eq7NkT2",
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "property": "display",
+          "value": {
+            "type": "keyword",
+            "value": "block"
+          }
+        }
+      ],
+      [
+        "8EJRSwHwdoRW36Eq7NkT2:2EiFMEG40PBm9_fkelqpo:--img-scale:",
+        {
+          "styleSourceId": "8EJRSwHwdoRW36Eq7NkT2",
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "property": "--img-scale",
+          "value": {
+            "type": "unit",
+            "unit": "number",
+            "value": 1
+          },
+          "listed": true
+        }
+      ],
+      [
+        "8EJRSwHwdoRW36Eq7NkT2:Uvcw_OJqyPoLioZzUbP1x:--img-scale:",
+        {
+          "styleSourceId": "8EJRSwHwdoRW36Eq7NkT2",
+          "breakpointId": "Uvcw_OJqyPoLioZzUbP1x",
+          "property": "--img-scale",
+          "value": {
+            "type": "unit",
+            "unit": "number",
+            "value": 0.6
+          },
+          "listed": true
+        }
+      ],
+      [
+        "8EJRSwHwdoRW36Eq7NkT2:eCbcXJaLEKSKcnbAPzNF0:--img-scale:",
+        {
+          "styleSourceId": "8EJRSwHwdoRW36Eq7NkT2",
+          "breakpointId": "eCbcXJaLEKSKcnbAPzNF0",
+          "property": "--img-scale",
+          "value": {
+            "type": "unit",
+            "unit": "number",
+            "value": 0.5
+          },
+          "listed": true
+        }
+      ],
+      [
+        "8EJRSwHwdoRW36Eq7NkT2:2EiFMEG40PBm9_fkelqpo:maxWidth:",
+        {
+          "styleSourceId": "8EJRSwHwdoRW36Eq7NkT2",
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "property": "maxWidth",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 2317
+          }
+        }
+      ],
+      [
+        "8EJRSwHwdoRW36Eq7NkT2:2EiFMEG40PBm9_fkelqpo:marginTop:",
+        {
+          "styleSourceId": "8EJRSwHwdoRW36Eq7NkT2",
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "property": "marginTop",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 40
+          }
+        }
+      ],
+      [
+        "8EJRSwHwdoRW36Eq7NkT2:2EiFMEG40PBm9_fkelqpo:marginBottom:",
+        {
+          "styleSourceId": "8EJRSwHwdoRW36Eq7NkT2",
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "property": "marginBottom",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 100
+          }
+        }
+      ],
+      [
+        "8EJRSwHwdoRW36Eq7NkT2:2EiFMEG40PBm9_fkelqpo:marginLeft:",
+        {
+          "styleSourceId": "8EJRSwHwdoRW36Eq7NkT2",
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "property": "marginLeft",
+          "value": {
+            "type": "keyword",
+            "value": "auto"
+          }
+        }
+      ],
+      [
+        "8EJRSwHwdoRW36Eq7NkT2:2EiFMEG40PBm9_fkelqpo:marginRight:",
+        {
+          "styleSourceId": "8EJRSwHwdoRW36Eq7NkT2",
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "property": "marginRight",
+          "value": {
+            "type": "keyword",
+            "value": "auto"
+          }
+        }
+      ],
+      [
+        "8EJRSwHwdoRW36Eq7NkT2:2EiFMEG40PBm9_fkelqpo:width:",
+        {
+          "styleSourceId": "8EJRSwHwdoRW36Eq7NkT2",
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "property": "width",
+          "value": {
+            "type": "unit",
+            "unit": "vw",
+            "value": 100
+          }
+        }
+      ],
+      [
+        "8EJRSwHwdoRW36Eq7NkT2:2EiFMEG40PBm9_fkelqpo:overflowX:",
+        {
+          "styleSourceId": "8EJRSwHwdoRW36Eq7NkT2",
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "property": "overflowX",
+          "value": {
+            "type": "keyword",
+            "value": "hidden"
+          },
+          "listed": true
+        }
+      ],
+      [
+        "8EJRSwHwdoRW36Eq7NkT2:2EiFMEG40PBm9_fkelqpo:overflowY:",
+        {
+          "styleSourceId": "8EJRSwHwdoRW36Eq7NkT2",
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "property": "overflowY",
+          "value": {
+            "type": "keyword",
+            "value": "visible"
+          },
+          "listed": true
+        }
+      ],
+      [
+        "8EJRSwHwdoRW36Eq7NkT2:xOnFYyuZv5VkMeeKDLyiu:maxWidth:",
+        {
+          "styleSourceId": "8EJRSwHwdoRW36Eq7NkT2",
+          "breakpointId": "xOnFYyuZv5VkMeeKDLyiu",
+          "property": "maxWidth",
+          "value": {
+            "type": "unit",
+            "unit": "vw",
+            "value": 100
+          }
+        }
+      ],
+      [
+        "8EJRSwHwdoRW36Eq7NkT2:xOnFYyuZv5VkMeeKDLyiu:overflowX:",
+        {
+          "styleSourceId": "8EJRSwHwdoRW36Eq7NkT2",
+          "breakpointId": "xOnFYyuZv5VkMeeKDLyiu",
+          "property": "overflowX",
+          "value": {
+            "type": "keyword",
+            "value": "hidden"
+          }
+        }
+      ],
+      [
+        "8EJRSwHwdoRW36Eq7NkT2:xOnFYyuZv5VkMeeKDLyiu:overflowY:",
+        {
+          "styleSourceId": "8EJRSwHwdoRW36Eq7NkT2",
+          "breakpointId": "xOnFYyuZv5VkMeeKDLyiu",
+          "property": "overflowY",
+          "value": {
+            "type": "keyword",
+            "value": "visible"
+          },
+          "listed": true
+        }
+      ],
+      [
+        "8EJRSwHwdoRW36Eq7NkT2:2EiFMEG40PBm9_fkelqpo:paddingTop:",
+        {
+          "styleSourceId": "8EJRSwHwdoRW36Eq7NkT2",
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "property": "paddingTop",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 10
+          }
+        }
+      ],
+      [
+        "8EJRSwHwdoRW36Eq7NkT2:2EiFMEG40PBm9_fkelqpo:paddingBottom:",
+        {
+          "styleSourceId": "8EJRSwHwdoRW36Eq7NkT2",
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "property": "paddingBottom",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 30
+          }
+        }
       ]
     ],
     "styleSources": [
@@ -85937,6 +86183,27 @@
         {
           "type": "local",
           "id": "-NCjTqi6doa_7T-avlsLy"
+        }
+      ],
+      [
+        "tx1U_okt9QWoqHvmxC3gZ",
+        {
+          "type": "local",
+          "id": "tx1U_okt9QWoqHvmxC3gZ"
+        }
+      ],
+      [
+        "Jt-SnM3sxnjhQEeChORMB",
+        {
+          "type": "local",
+          "id": "Jt-SnM3sxnjhQEeChORMB"
+        }
+      ],
+      [
+        "8EJRSwHwdoRW36Eq7NkT2",
+        {
+          "type": "local",
+          "id": "8EJRSwHwdoRW36Eq7NkT2"
         }
       ]
     ],
@@ -95896,6 +96163,34 @@
           "instanceId": "BI_38gYHPHVDllzvvAu5M",
           "values": [
             "-NCjTqi6doa_7T-avlsLy"
+          ]
+        }
+      ],
+      [
+        "Zxgdcg9Ih7IXtBj1FvDB1",
+        {
+          "instanceId": "Zxgdcg9Ih7IXtBj1FvDB1",
+          "values": [
+            "xGgazSoamyI10ZSD_ZBZE",
+            "tx1U_okt9QWoqHvmxC3gZ"
+          ]
+        }
+      ],
+      [
+        "Gr0VoU9CdJ-dHZ1caaDes",
+        {
+          "instanceId": "Gr0VoU9CdJ-dHZ1caaDes",
+          "values": [
+            "Jt-SnM3sxnjhQEeChORMB"
+          ]
+        }
+      ],
+      [
+        "mvaufbC6foFQ1VnhOCXYt",
+        {
+          "instanceId": "mvaufbC6foFQ1VnhOCXYt",
+          "values": [
+            "8EJRSwHwdoRW36Eq7NkT2"
           ]
         }
       ]
@@ -106480,6 +106775,66 @@
           "type": "boolean",
           "value": false
         }
+      ],
+      [
+        "0jtrC_hRPOKuJog6WN62K",
+        {
+          "id": "0jtrC_hRPOKuJog6WN62K",
+          "instanceId": "Gr0VoU9CdJ-dHZ1caaDes",
+          "name": "code",
+          "type": "string",
+          "value": "<link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/flickity@2/dist/flickity.min.css\">\n  <style>\n    /* Each cell in the carousel */\n    .carousel-cell {\n      width: calc(450px * var(--img-scale));\n      margin-right: var(--gap1);\n      display: flex;\n      flex-direction: column; /* stack image + text vertically */\n      align-items: stretch;\n      opacity: 0.9;\n    }\n\n    .flickity-viewport {\n      overflow: visible !important;\n    } #carousel {\n      overflow-x: hidden !important;\n      overflow-y: visible !important;\n    }\n\n    /* Image styling to handle different aspect ratios */\n    .cell-content > img {\n      display: block;\n      position: relative;\n      width: 100%;\n      height: calc(300px * var(--img-scale));\n      object-fit: cover;\n      background: #eee;   /* fallback background */\n      overflow: hidden;\n      border-radius: var(--rad2);\n      transition: margin-top 0.5s;\n      z-index: 5;\n    }\n    \n    .carousel-cell .caption {\n      position: relative;\n      text-align: center;\n      transition: margin-top 0.5s;\n      margin-top: -30px;\n      z-index: 1;\n    }\n    .is-selected .caption {\n      margin-top: 5px;\n    }\n    .is-selected img {\n      margin-top: -5px;\n    }\n    .is-selected {\n      opacity: 1;\n    }\n  </style>\n\n  <!-- Flickity JS from jsDelivr -->\n  <script src=\"https://cdn.jsdelivr.net/npm/flickity@2/dist/flickity.pkgd.min.js\">\n    \n  </script>\n  <script>\n    document.addEventListener('DOMContentLoaded', () => {\n      setTimeout(function() {\n      var elem = document.getElementById('carousel');\n      var flkty = new Flickity(elem, {\n        wrapAround: true,\n        autoPlay: 3000,              // 3s between slides\n        pauseAutoPlayOnHover: true,  // stop when hovered\n        freeScroll: false,\n        prevNextButtons: true,\n        pageDots: false,\n        draggable: true,\n        selectedAttraction: 0.01,\nfriction: 0.15\n      });\n      }, 500)});\n  </script>"
+        }
+      ],
+      [
+        "jTWx9-w0meJd3olgSXQ38",
+        {
+          "id": "jTWx9-w0meJd3olgSXQ38",
+          "instanceId": "Gr0VoU9CdJ-dHZ1caaDes",
+          "name": "executeScriptOnCanvas",
+          "type": "boolean",
+          "value": true
+        }
+      ],
+      [
+        "mjIVli5c_oMhNwIAWEZQF",
+        {
+          "id": "mjIVli5c_oMhNwIAWEZQF",
+          "instanceId": "mvaufbC6foFQ1VnhOCXYt",
+          "name": "code",
+          "type": "string",
+          "value": "<div class=\"carousel-cell\">\n  <div class=\"cell-content\">\n    <img src=\"https://github.com/GE-Union/WebsiteContent/blob/main/images/home-carousel/Events.JPG?raw=true\" alt=\"\">\n    <div class=\"caption\">Event Team</div>\n  </div>\n</div>\n\n<div class=\"carousel-cell\">\n  <div class=\"cell-content\">\n    <img src=\"https://github.com/GE-Union/WebsiteContent/blob/main/images/home-carousel/Website.JPG?raw=true\" alt=\"\">\n    <div class=\"caption\">Website Team</div>\n  </div>\n</div>\n\n<div class=\"carousel-cell\">\n  <div class=\"cell-content\">\n    <img src=\"https://github.com/GE-Union/WebsiteContent/blob/main/images/home-carousel/Marketing.JPG?raw=true\" alt=\"\">\n    <div class=\"caption\">Marketing Team</div>\n  </div>\n</div>\n\n<div class=\"carousel-cell\">\n  <div class=\"cell-content\">\n    <img src=\"https://github.com/GE-Union/WebsiteContent/blob/main/images/home-carousel/Partnerships.JPG?raw=true\" alt=\"\">\n    <div class=\"caption\">Partnerships Team</div>\n  </div>\n</div>\n\n<div class=\"carousel-cell\">\n  <div class=\"cell-content\">\n    <img src=\"https://github.com/GE-Union/WebsiteContent/blob/main/images/home-carousel/Leadership.JPG?raw=true\" alt=\"\">\n    <div class=\"caption\">Leadership Team</div>\n  </div>\n</div>"
+        }
+      ],
+      [
+        "5iPPh5dbdyjcM9eOSYwQn",
+        {
+          "id": "5iPPh5dbdyjcM9eOSYwQn",
+          "instanceId": "mvaufbC6foFQ1VnhOCXYt",
+          "name": "executeScriptOnCanvas",
+          "type": "boolean",
+          "value": true
+        }
+      ],
+      [
+        "MIxgcq104ZxxpeFE7RGBP",
+        {
+          "id": "MIxgcq104ZxxpeFE7RGBP",
+          "instanceId": "mvaufbC6foFQ1VnhOCXYt",
+          "name": "id",
+          "type": "string",
+          "value": "carousel"
+        }
+      ],
+      [
+        "u6tSc4wa53lgkBlDnjtrx",
+        {
+          "id": "u6tSc4wa53lgkBlDnjtrx",
+          "instanceId": "mvaufbC6foFQ1VnhOCXYt",
+          "name": "data-ws-show",
+          "type": "boolean",
+          "value": true
+        }
       ]
     ],
     "dataSources": [],
@@ -107611,6 +107966,10 @@
             {
               "type": "id",
               "value": "7zcsqfR5rhmDpZuovxIoS"
+            },
+            {
+              "type": "id",
+              "value": "Gr0VoU9CdJ-dHZ1caaDes"
             }
           ]
         }
@@ -108050,7 +108409,7 @@
           "children": [
             {
               "type": "text",
-              "value": "Everything you need to know while you’re here"
+              "value": "Information about the Studyline and Future Opportunities"
             }
           ]
         }
@@ -108101,7 +108460,7 @@
           "children": [
             {
               "type": "text",
-              "value": "See calendar stuff with times and dates and stuff."
+              "value": "Find events, parties and meetings - both on and off campus."
             }
           ]
         }
@@ -108344,7 +108703,7 @@
           "children": [
             {
               "type": "text",
-              "value": "Your GE hub for course info and notes."
+              "value": "Find your relevant courses and notes - from students for students!"
             }
           ]
         }
@@ -112743,7 +113102,15 @@
           "children": [
             {
               "type": "text",
-              "value": "All the useful tidbits you'll need on a frequent basis"
+              "value": "Keep an overview of all the things important to "
+            },
+            {
+              "type": "id",
+              "value": "mu7LPB6NjPWDMxLO60yvX"
+            },
+            {
+              "type": "text",
+              "value": "GE journey!"
             }
           ]
         }
@@ -113398,6 +113765,10 @@
             {
               "type": "id",
               "value": "KDHA9YPy0v3wyqzsxeWID"
+            },
+            {
+              "type": "id",
+              "value": "mvaufbC6foFQ1VnhOCXYt"
             }
           ]
         }
@@ -113412,7 +113783,7 @@
           "children": [
             {
               "type": "text",
-              "value": "What We Do"
+              "value": "Our Teams"
             }
           ]
         }
@@ -113436,6 +113807,10 @@
             {
               "type": "id",
               "value": "BAOvEBl7nCwyKrylVEM6_"
+            },
+            {
+              "type": "id",
+              "value": "Zxgdcg9Ih7IXtBj1FvDB1"
             }
           ]
         }
@@ -113552,7 +113927,7 @@
           "children": [
             {
               "type": "text",
-              "value": "Career 💼 "
+              "value": "Marketing 📈"
             }
           ]
         }
@@ -113582,7 +113957,15 @@
           "children": [
             {
               "type": "text",
-              "value": "From company visits to career tips, we connect you with opportunities worth grabbing. You’ll meet industry professionals, hear what companies actually look for, and get a feel for different fields. Along the way, you build a network that could kickstart your career, while picking up the tools to stand out."
+              "value": "No good events without good marketing!"
+            },
+            {
+              "type": "text",
+              "value": "\n"
+            },
+            {
+              "type": "text",
+              "value": "Our creative minds of this team work hard to get the word out about any and all GE and GE Union related activities. Be that online with Instagram, LinkedIn and Facebook, or in person with flyers and the good 'ol word of mouth."
             }
           ]
         }
@@ -114792,7 +115175,7 @@
           "children": [
             {
               "type": "text",
-              "value": "What to know about the school itself"
+              "value": "Learn more about Europe's best technical university"
             }
           ]
         }
@@ -129834,6 +130217,90 @@
               "value": "Christmas!"
             }
           ]
+        }
+      ],
+      [
+        "mu7LPB6NjPWDMxLO60yvX",
+        {
+          "type": "instance",
+          "id": "mu7LPB6NjPWDMxLO60yvX",
+          "component": "ws:element",
+          "tag": "b",
+          "children": [
+            {
+              "type": "text",
+              "value": "YOUR "
+            }
+          ]
+        }
+      ],
+      [
+        "Zxgdcg9Ih7IXtBj1FvDB1",
+        {
+          "type": "instance",
+          "id": "Zxgdcg9Ih7IXtBj1FvDB1",
+          "component": "ws:element",
+          "tag": "div",
+          "children": [
+            {
+              "type": "id",
+              "value": "AvsRYCtAoqwpM-9W0z221"
+            },
+            {
+              "type": "id",
+              "value": "Udyvs7fv9BNYjJCS3PsLJ"
+            }
+          ]
+        }
+      ],
+      [
+        "AvsRYCtAoqwpM-9W0z221",
+        {
+          "type": "instance",
+          "id": "AvsRYCtAoqwpM-9W0z221",
+          "component": "ws:element",
+          "tag": "h3",
+          "children": [
+            {
+              "type": "text",
+              "value": "Partnerships💼 "
+            }
+          ]
+        }
+      ],
+      [
+        "Udyvs7fv9BNYjJCS3PsLJ",
+        {
+          "type": "instance",
+          "id": "Udyvs7fv9BNYjJCS3PsLJ",
+          "component": "ws:element",
+          "tag": "p",
+          "children": [
+            {
+              "type": "text",
+              "value": "From company visits to career tips, we connect you with opportunities worth grabbing. You’ll meet industry professionals, hear what companies actually look for, and get a feel for different fields. Along the way, you build a network that could kickstart your career, while picking up the tools to stand out."
+            }
+          ]
+        }
+      ],
+      [
+        "Gr0VoU9CdJ-dHZ1caaDes",
+        {
+          "type": "instance",
+          "id": "Gr0VoU9CdJ-dHZ1caaDes",
+          "component": "HtmlEmbed",
+          "label": "Image Carousel Script",
+          "children": []
+        }
+      ],
+      [
+        "mvaufbC6foFQ1VnhOCXYt",
+        {
+          "type": "instance",
+          "id": "mvaufbC6foFQ1VnhOCXYt",
+          "component": "HtmlEmbed",
+          "label": "Image Carousel",
+          "children": []
         }
       ]
     ],

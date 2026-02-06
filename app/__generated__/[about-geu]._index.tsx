@@ -11,7 +11,7 @@ import { Tooltip as Tooltip, TooltipTrigger as TooltipTrigger, TooltipContent as
 
       export const projectId = "94456f8c-a847-426a-aec8-16de390bd3eb";
 
-      export const lastPublished = "2026-01-28T22:05:25.490Z";
+      export const lastPublished = "2026-02-06T17:57:10.527Z";
 
       export const siteName = "GE Union";
 
@@ -266,7 +266,7 @@ className={`w-image c1shgpg6 c7hwif1 cbbmghh c1w0yra6 cpq2gwm cj7bt5u c1k74xht c
 className={`w-element cyoo8jj cxa4mkp cy2vnym`}>
 <h2
 className={`w-element`}>
-{"What We Do"}
+{"Our Teams"}
 </h2>
 <div
 className={`w-element ci03eyw c1vi0mt cqaj6f4 c16lfnyl c1bti4b5 cc4bk5j`}>
@@ -298,7 +298,22 @@ className={`w-element`}>
 className={`w-element c1o50h06 c1et1u9b ck11ylk c19haj7v c6775s7 ct2w13i c3brmnq cd3toq c17nm8vt c1xymrvd c8yo8yx c1io07hm c1n9f9m4 cqxegdb cgrcr0q`}>
 <h3
 className={`w-element`}>
-{"Career 💼 "}
+{"Marketing 📈"}
+</h3>
+<p
+className={`w-element`}>
+{"No good events without good marketing!"}
+{""}
+<br />
+{""}
+{"Our creative minds of this team work hard to get the word out about any and all GE and GE Union related activities. Be that online with Instagram, LinkedIn and Facebook, or in person with flyers and the good 'ol word of mouth."}
+</p>
+</div>
+<div
+className={`w-element c1o50h06 c1et1u9b ck11ylk c19haj7v c6775s7 ct2w13i c3brmnq cd3toq c17nm8vt c1xymrvd c8yo8yx c1io07hm c1n9f9m4 cqxegdb cgrcr0q`}>
+<h3
+className={`w-element`}>
+{"Partnerships💼 "}
 </h3>
 <p
 className={`w-element`}>
@@ -306,6 +321,11 @@ className={`w-element`}>
 </p>
 </div>
 </div>
+<HtmlEmbed
+code={"<div class=\"carousel-cell\">\n  <div class=\"cell-content\">\n    <img src=\"https://github.com/GE-Union/WebsiteContent/blob/main/images/home-carousel/Events.JPG?raw=true\" alt=\"\">\n    <div class=\"caption\">Event Team</div>\n  </div>\n</div>\n\n<div class=\"carousel-cell\">\n  <div class=\"cell-content\">\n    <img src=\"https://github.com/GE-Union/WebsiteContent/blob/main/images/home-carousel/Website.JPG?raw=true\" alt=\"\">\n    <div class=\"caption\">Website Team</div>\n  </div>\n</div>\n\n<div class=\"carousel-cell\">\n  <div class=\"cell-content\">\n    <img src=\"https://github.com/GE-Union/WebsiteContent/blob/main/images/home-carousel/Marketing.JPG?raw=true\" alt=\"\">\n    <div class=\"caption\">Marketing Team</div>\n  </div>\n</div>\n\n<div class=\"carousel-cell\">\n  <div class=\"cell-content\">\n    <img src=\"https://github.com/GE-Union/WebsiteContent/blob/main/images/home-carousel/Partnerships.JPG?raw=true\" alt=\"\">\n    <div class=\"caption\">Partnerships Team</div>\n  </div>\n</div>\n\n<div class=\"carousel-cell\">\n  <div class=\"cell-content\">\n    <img src=\"https://github.com/GE-Union/WebsiteContent/blob/main/images/home-carousel/Leadership.JPG?raw=true\" alt=\"\">\n    <div class=\"caption\">Leadership Team</div>\n  </div>\n</div>"}
+executeScriptOnCanvas={true}
+id={"carousel"}
+className={`w-html-embed c6f08mx cgmpm3f csljhnv c19f83kh c1duohc3 c1w0yra6 cpq2gwm c13w5hsy cm1ds2c c1vhywez c1122adb c197srfe cn4tmju c14xcs5y c144cj3d cux2glt c1m8g7bv`} />
 </div>
 <Image
 src={"/assets/GE_Logo_-_Small_rkpu_74a2VYBJut58034f.svg"}
@@ -418,6 +438,10 @@ className={`w-image`} />
 code={"<style>\n  /* Optional quality-of-life styles */\n  #menu-icon {\n    cursor: grab;\n    touch-action: none;   /* allow smooth touch drag */\n    will-change: transform;\n    \n    uuser-drag: none;\n    -webkit-uuser-drag: none;\n    -moz-uuser-drag: none;\n    user-select: none;    /* avoid text selection while dragging */\n    -moz-user-select: none;\n    -webkit-user-select: none;\n    -ms-user-select: none;\n  }\n  #menu-icon.dragging { cursor: grabbing; }\n</style>\n\n<script>\n(() => {\n  const icon = document.getElementById('menu-icon');\n  if (!icon) return;\n\n  // position is managed purely via transform so layout doesn't shift\n  let pointerID = null;\n  let tx = 0, ty = 0;               // current translation\n  let vx = 0, vy = 0;               // current velocity (px/s)\n  let dragging = false;\n  let startX = 0, startY = 0;       // pointer-down position\n  let lastPx = 0, lastPy = 0;       // last pointer position (for velocity)\n  let lastT = 0;                    // last timestamp\n\n  // Spring params: tweak for feel\n  const STIFFNESS = 300;   // spring constant (higher = snappier)\n  const DAMPING   = 15;   // damping (lower = bouncier)\n  const EPS_POS   = 0.5;  // stop threshold (position, px)\n  const EPS_VEL   = 0.5;  // stop threshold (velocity, px/s)\n\n  const originalHref = icon.href;\n\n  \n  const setTransform = () => {\n    icon.style.transform = `translate(${tx}px, ${ty}px)`;\n  };\n\n  const onPointerDown = (e) => {\n    curPointerID = e.pointerId;\n    startX = e.clientX - tx;\n    startY = e.clientY - ty;\n\n    lastPx = e.clientX;\n    lastPy = e.clientY;\n    lastT  = performance.now();\n    vx = 0; vy = 0; // reset; we'll accumulate movement velocity\n  }\n  \n  const onDragStart = (e) => {\n    e.preventDefault();\n    icon.removeAttribute('href');\n    dragging = true;\n    icon.classList.add('dragging');\n    icon.setPointerCapture?.(curPointerId);\n  };\n\n  const onPointerMove = (e) => {\n    if (!dragging) return;\n\n    const now = performance.now();\n    const dt  = (now - lastT) / 1000;\n    tx = e.clientX - startX;\n    ty = e.clientY - startY;\n\n    // simple low-pass filtered velocity estimate for spring kick\n    if (dt > 0) {\n      const instVx = (e.clientX - lastPx) / dt;\n      const instVy = (e.clientY - lastPy) / dt;\n      vx = 0.8 * vx + 0.2 * instVx;\n      vy = 0.8 * vy + 0.2 * instVy;\n    }\n    lastPx = e.clientX;\n    lastPy = e.clientY;\n    lastT  = now;\n\n    setTransform();\n  };\n\n  const onPointerUp = (e) => {\n    if (!dragging) return;\n    e.preventDefault();\n    e.stopPropagation()\n    e.stopImmediatePropagation();\n    dragging = false;\n    icon.classList.remove('dragging');\n    icon.releasePointerCapture?.(e.pointerId);\n    animateBack(); // start spring home\n    return;\n  };\n\n  function animateBack() {\n    let prev = performance.now();\n    function step(now) {\n      const dt = Math.min((now - prev) / 1000, 0.032); // clamp dt for stability\n      prev = now;\n\n      // Hooke's law: F = -k*x - c*v (mass=1)\n      const ax = -STIFFNESS * tx - DAMPING * vx;\n      const ay = -STIFFNESS * ty - DAMPING * vy;\n\n      vx += ax * dt;\n      vy += ay * dt;\n      tx += vx * dt;\n      ty += vy * dt;\n\n      setTransform();\n\n      const nearOrigin = Math.hypot(tx, ty) < EPS_POS;\n      const slowEnough = Math.hypot(vx, vy) < EPS_VEL;\n\n      if (nearOrigin && slowEnough) {\n        // snap exactly home to avoid subpixel fuzz\n        tx = ty = vx = vy = 0;\n        setTransform();\n        icon.setAttribute('href', originalHref);\n        return;\n      }\n      // If user grabbed again, stop the spring.\n      if (dragging) return;\n\n      requestAnimationFrame(step);\n    }\n    requestAnimationFrame(step);\n  }\n\n  // Keep it floating above other content while dragging (no layout changes)\n  icon.style.zIndex = (parseInt(getComputedStyle(icon).zIndex) || 1).toString();\n\n  // Bind events\n  icon.addEventListener('dragstart', onDragStart);\n  icon.addEventListener('pointerdown', onPointerDown);\n  window.addEventListener('pointermove', onPointerMove, { passive: true });\n  window.addEventListener('pointerup', onPointerUp);\n  window.addEventListener('pointercancel', onPointerUp);\n})();\n</script>"}
 executeScriptOnCanvas={true}
 className={`w-html-embed`} />
+<HtmlEmbed
+code={"<link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/flickity@2/dist/flickity.min.css\">\n  <style>\n    /* Each cell in the carousel */\n    .carousel-cell {\n      width: calc(450px * var(--img-scale));\n      margin-right: var(--gap1);\n      display: flex;\n      flex-direction: column; /* stack image + text vertically */\n      align-items: stretch;\n      opacity: 0.9;\n    }\n\n    .flickity-viewport {\n      overflow: visible !important;\n    } #carousel {\n      overflow-x: hidden !important;\n      overflow-y: visible !important;\n    }\n\n    /* Image styling to handle different aspect ratios */\n    .cell-content > img {\n      display: block;\n      position: relative;\n      width: 100%;\n      height: calc(300px * var(--img-scale));\n      object-fit: cover;\n      background: #eee;   /* fallback background */\n      overflow: hidden;\n      border-radius: var(--rad2);\n      transition: margin-top 0.5s;\n      z-index: 5;\n    }\n    \n    .carousel-cell .caption {\n      position: relative;\n      text-align: center;\n      transition: margin-top 0.5s;\n      margin-top: -30px;\n      z-index: 1;\n    }\n    .is-selected .caption {\n      margin-top: 5px;\n    }\n    .is-selected img {\n      margin-top: -5px;\n    }\n    .is-selected {\n      opacity: 1;\n    }\n  </style>\n\n  <!-- Flickity JS from jsDelivr -->\n  <script src=\"https://cdn.jsdelivr.net/npm/flickity@2/dist/flickity.pkgd.min.js\">\n    \n  </script>\n  <script>\n    document.addEventListener('DOMContentLoaded', () => {\n      setTimeout(function() {\n      var elem = document.getElementById('carousel');\n      var flkty = new Flickity(elem, {\n        wrapAround: true,\n        autoPlay: 3000,              // 3s between slides\n        pauseAutoPlayOnHover: true,  // stop when hovered\n        freeScroll: false,\n        prevNextButtons: true,\n        pageDots: false,\n        draggable: true,\n        selectedAttraction: 0.01,\nfriction: 0.15\n      });\n      }, 500)});\n  </script>"}
+executeScriptOnCanvas={true}
+className={`w-html-embed cgmpm3f`} />
 </Body>
 }
 
