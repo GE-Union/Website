@@ -1,5 +1,5 @@
 [build]
-command = "npm ci && node ./node_modules/.bin/react-router build"
+command = "react-router build"
 publish = "build/client"
 
 [dev]
