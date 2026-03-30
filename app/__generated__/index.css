@@ -335,8 +335,8 @@
   .c1dohq8s {
     align-self: stretch
   }
-  .cprdnmx {
-    margin-bottom: calc(var(--gap1) + var(--topheight) + var(--bottomheight) - 98vh)
+  .c1rysviw {
+    margin-bottom: calc(clamp(440px, var(--bottomheight), 550px) - calc(clamp(650px, 100vh, 950px) - var(--gap1) - max(var(--topheight), 300px)))
   }
   .c1bti4b5 {
     justify-content: center
@@ -362,8 +362,8 @@
   .c1wwlxnr {
     font-size: 1.3em
   }
-  .cje5w08 {
-    margin-bottom: 15px
+  .c134tzij {
+    margin-bottom: 10px
   }
   .c1k74xht {
     -webkit-user-select: none;
@@ -729,6 +729,9 @@
   .cjdez0h {
     margin-top: -10px
   }
+  .cje5w08 {
+    margin-bottom: 15px
+  }
   .c197jlyy {
     flex-wrap: nowrap
   }
@@ -764,6 +767,15 @@
   }
   .c1qpyqes {
     align-items: stretch
+  }
+  .c14jw6cd {
+    font-size: 7.5em
+  }
+  .ce2pvnh {
+    margin-bottom: -0.1em
+  }
+  .c11nu4he {
+    margin-top: -0.2em
   }
   .c7wcowi {
     max-width: 900px
@@ -1915,9 +1927,6 @@
   .cs4zrmt:hover {
     transform: rotateX(0deg) rotateY(0deg) rotateZ(-0.5deg)
   }
-  .c134tzij {
-    margin-bottom: 10px
-  }
   .c11tcoly {
     font-family: minecraftia, Rubik, Arial, Roboto, sans-serif
   }
@@ -2215,8 +2224,8 @@
   .c1vt7eqg {
     color: rgb(0 0 0 / 1)
   }
-  .c1ijsbx5 {
-    opacity: 20%
+  .c1cquuiq {
+    opacity: 15%
   }
 }
 @media all and (max-width: 991px) {
@@ -2294,6 +2303,9 @@
   }
   .cbg59jt {
     display: none
+  }
+  .ckjfwa2 {
+    font-size: 4.84em
   }
   .cyoabi7 {
     max-width: 100%
@@ -3088,8 +3100,8 @@
   .c1o3mmkz {
     height: 90px
   }
-  .c16v3gbn {
-    margin-left: calc(100% - 100px)
+  .csntl59 {
+    margin-left: calc(100% - 110px)
   }
   .c150g9r {
     margin-top: 48px

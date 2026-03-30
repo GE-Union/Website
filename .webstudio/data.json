@@ -1,10 +1,10 @@
 {
   "build": {
-    "id": "74393b45-d34a-4330-92f2-ab82142d9fe4",
+    "id": "5fbb6da5-7cb6-44b2-9e7a-622938e973aa",
     "projectId": "94456f8c-a847-426a-aec8-16de390bd3eb",
-    "version": 15959,
-    "createdAt": "2026-03-30T02:28:00.69+00:00",
-    "updatedAt": "2026-03-30T02:28:00.69+00:00",
+    "version": 16029,
+    "createdAt": "2026-03-30T03:30:11.454+00:00",
+    "updatedAt": "2026-03-30T03:30:11.454+00:00",
     "pages": {
       "meta": {
         "siteName": "GE Union",
@@ -1137,7 +1137,7 @@
           "property": "marginBottom",
           "value": {
             "type": "unparsed",
-            "value": "calc(var(--gap1) + var(--topheight) + var(--bottomheight) - 98vh)"
+            "value": "calc(clamp(440px, var(--bottomheight), 550px) - calc(clamp(650px, 100vh, 950px) - var(--gap1) - max(var(--topheight), 300px)))"
           }
         }
       ],
@@ -80168,7 +80168,7 @@
           "value": {
             "type": "unit",
             "unit": "%",
-            "value": 20
+            "value": 15
           },
           "listed": true
         }
@@ -80364,7 +80364,7 @@
           "property": "marginLeft",
           "value": {
             "type": "unparsed",
-            "value": "calc(100% - 100px)"
+            "value": "calc(100% - 110px)"
           }
         }
       ],
@@ -80405,6 +80405,71 @@
             "value": "none"
           },
           "listed": true
+        }
+      ],
+      [
+        "Ckc-jFGLwthJsw1sy3PAn:2EiFMEG40PBm9_fkelqpo:fontSize:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "Ckc-jFGLwthJsw1sy3PAn",
+          "property": "fontSize",
+          "value": {
+            "type": "unit",
+            "unit": "em",
+            "value": 7.5
+          }
+        }
+      ],
+      [
+        "Ckc-jFGLwthJsw1sy3PAn:xOnFYyuZv5VkMeeKDLyiu:fontSize:",
+        {
+          "breakpointId": "xOnFYyuZv5VkMeeKDLyiu",
+          "styleSourceId": "Ckc-jFGLwthJsw1sy3PAn",
+          "property": "fontSize",
+          "value": {
+            "type": "unit",
+            "unit": "em",
+            "value": 4.84
+          }
+        }
+      ],
+      [
+        "Ckc-jFGLwthJsw1sy3PAn:2EiFMEG40PBm9_fkelqpo:marginBottom:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "Ckc-jFGLwthJsw1sy3PAn",
+          "property": "marginBottom",
+          "value": {
+            "type": "unit",
+            "unit": "em",
+            "value": -0.1
+          }
+        }
+      ],
+      [
+        "Ckc-jFGLwthJsw1sy3PAn:2EiFMEG40PBm9_fkelqpo:marginTop:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "Ckc-jFGLwthJsw1sy3PAn",
+          "property": "marginTop",
+          "value": {
+            "type": "unit",
+            "unit": "em",
+            "value": -0.2
+          }
+        }
+      ],
+      [
+        "5ogovYx7scv1_8cQi5iXq:2EiFMEG40PBm9_fkelqpo:marginBottom:",
+        {
+          "breakpointId": "2EiFMEG40PBm9_fkelqpo",
+          "styleSourceId": "5ogovYx7scv1_8cQi5iXq",
+          "property": "marginBottom",
+          "value": {
+            "type": "unit",
+            "unit": "px",
+            "value": 10
+          }
         }
       ]
     ],
@@ -107432,8 +107497,8 @@
           "id": "_o5GrVqYoP8rNMJwCSWDj",
           "instanceId": "kuW5aCxFHNlLoJdXZf060",
           "name": "href",
-          "type": "page",
-          "value": "hSbT_IoAs8J4sfCGce19J"
+          "type": "string",
+          "value": "https://docs.google.com/forms/d/e/1FAIpQLSefojG-oABUsnxSqtGt3r1kjyg7OaNfOnJ22Yu0VEWQlh_jDw/viewform?usp=header"
         }
       ],
       [
@@ -107634,6 +107699,16 @@
           "name": "stroke-linejoin",
           "type": "string",
           "value": "round"
+        }
+      ],
+      [
+        "SNaaW_THdWRCIf14tsj2h",
+        {
+          "id": "SNaaW_THdWRCIf14tsj2h",
+          "instanceId": "kuW5aCxFHNlLoJdXZf060",
+          "name": "target",
+          "type": "string",
+          "value": "_blank"
         }
       ]
     ],
