@@ -45,11 +45,6 @@
     "width": 256,
     "height": 256
   },
-  "3a57f8e152de1aef680a8e326cdac2389df65276946e8d9ae958cce9fd1804c6": {
-    "url": "/cgi/image/logo_10s_Aniv_big_full_boy_JlnJrxGrg6FCXQy-eMXaa.png?format=raw",
-    "width": 900,
-    "height": 724
-  },
   "3f9ae9f52e58136feb5c9a58b121f02765c69210332f8c439e9457b2023f08c1": {
     "url": "/cgi/image/soc-linkedin_JewsOzbBNtsSePfOyCp1_.svg?format=raw",
     "width": 417,
