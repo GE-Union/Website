@@ -35,10 +35,20 @@
     "width": 256,
     "height": 238
   },
+  "38325e5614fdf2d554566b9ae68098ebba7539d72c15ba7cd965e52c35441659": {
+    "url": "/cgi/image/logo_10s_Aniv_maddness_VKUszqVCor11QcF6yzzrl.png?format=raw",
+    "width": 900,
+    "height": 724
+  },
   "3a1afb6b0c207e48f268e8301688d918a14c687541d92e3cd55e50ad3c02d765": {
     "url": "/cgi/image/Favicon_gtxnE_QXZldwugdMJXAuG.ico?format=raw",
     "width": 256,
     "height": 256
+  },
+  "3a57f8e152de1aef680a8e326cdac2389df65276946e8d9ae958cce9fd1804c6": {
+    "url": "/cgi/image/logo_10s_Aniv_big_full_boy_JlnJrxGrg6FCXQy-eMXaa.png?format=raw",
+    "width": 900,
+    "height": 724
   },
   "3f9ae9f52e58136feb5c9a58b121f02765c69210332f8c439e9457b2023f08c1": {
     "url": "/cgi/image/soc-linkedin_JewsOzbBNtsSePfOyCp1_.svg?format=raw",
@@ -64,6 +74,11 @@
     "url": "/cgi/image/Geu_MC_Light_sIdN5ncjE_g6nVcXx26yu.png?format=raw",
     "width": 1378,
     "height": 269
+  },
+  "7678c856038c824c8adc99056faf948c3fec24e88cb65135de3974c6504ab208": {
+    "url": "/cgi/image/logo_10s_Aniv_CB4igoIMkWpqPJQ-paAa8.png?format=raw",
+    "width": 815,
+    "height": 726
   },
   "7829e5c8889c625bbde990d3f3f50719837df2a49d1d509587cdb163135059dc": {
     "url": "/cgi/image/envelope-letter_1_FjptV312KJ_D9btjKlFpn.svg?format=raw",
@@ -104,6 +119,11 @@
     "url": "/cgi/image/soc-reddit_YIY3q3bmqs_8zl81uxYxk.svg?format=raw",
     "width": 417,
     "height": 417
+  },
+  "ab0c943f41ced12204fabc6de9f103429925d654f23c6b836e08dfc516ad3949": {
+    "url": "/cgi/image/logo_10s_Aniv_even_fatter_skeleton_fkHYaliN0eWQ-9shhAkOS.png?format=raw",
+    "width": 895,
+    "height": 708
   },
   "b36bc0be5e507da730582fe81aa2cb2d3ec2e65de1ed915481181746f863a439": {
     "url": "/cgi/image/Logo_Pixel_d728hgLJjfa_DK4_-SbRA.png?format=raw",
