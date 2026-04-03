@@ -11,7 +11,7 @@ import { Tooltip as Tooltip, TooltipTrigger as TooltipTrigger, TooltipContent as
 
       export const projectId = "94456f8c-a847-426a-aec8-16de390bd3eb";
 
-      export const lastPublished = "2026-03-30T03:30:11.454Z";
+      export const lastPublished = "2026-04-03T21:39:20.133Z";
 
       export const siteName = "GE Union";
 
@@ -53,12 +53,12 @@ target={"_self"}
 id={"menu-icon"}
 className={`w-link cmvyqw5 cz7iu34 c40iywk codsd31 c16er72m c1qt5xo2 cqyp7hg c1moglug`}>
 <Image
-src={"/assets/GE_Logo_-_Big_kpMORCHYDLOpQbfBKYwZ7.svg"}
-width={492}
-height={684}
+src={"/assets/logo_10s_Aniv_maddness_VKUszqVCor11QcF6yzzrl.png"}
+width={900}
+height={724}
 loading={"eager"}
 alt={""}
-className={`w-image cy2rpkp c1l3m6tn c1vsv73g c1wjaqd0`} />
+className={`w-image c1h357f1 c1evq1tl cxn45mh c15oj64s c1wjaqd0`} />
 </Link>
 <Box
 className={`w-box ci03eyw c5zf3td c1bdekej cy2vnym cgykfac c8chaf1 crymv6m ch588tu cd1c1x2 cgjpuuk co3wgvm cjdg5q7`}>
