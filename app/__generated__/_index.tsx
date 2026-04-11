@@ -11,7 +11,7 @@ import { Tooltip as Tooltip, TooltipTrigger as TooltipTrigger, TooltipContent as
 
       export const projectId = "94456f8c-a847-426a-aec8-16de390bd3eb";
 
-      export const lastPublished = "2026-04-03T21:39:20.133Z";
+      export const lastPublished = "2026-04-11T00:53:45.664Z";
 
       export const siteName = "GE Union";
 
@@ -346,68 +346,6 @@ className={`w-element cy7nrqp c8l261o cdhy4s8 c5sx8jk c1wauoq4 c1w0yra6 cpq2gwm 
 </Box>
 </Box>
 </Box>
-<div
-className={`w-element ci03eyw cu8ogtt c1v4vkm5 ciu9gta c8l261o c1wmsojl c3brmnq`}>
-<div
-id={"fetticanvas"}
-className={`w-element c58kvwj c2z8j1e c1sm4x0m ccn6m53`} />
-<div
-id={"upcome"}
-className={`w-element c1qr9q0f cd3toq c17nm8vt c1xymrvd c8yo8yx c5sx8jk czqblaq cjpac5y c1tmykg6 c156xldz codsd31 c16er72m c1qt5xo2 ci03eyw cu8ogtt c1m4ybgm c183x3a4 cs4zrmt chjepeg ct6fd0n c4psa79 ct5uc8i ${"icon-background\n"}`}>
-<div
-className={`w-element c1o49hcl ci03eyw c1dgy9if c1a10q77 c1v4vkm5 c6d6cak c5dclxw c7tvdys cgiudld c1xj8ubg`}>
-<div
-className={`w-element cd47swo c171icg6 cb762cb cez05na cr2fx1c c1ydphkn cpy5f0q c119ibn4 cqmovsy`} />
-<h2
-className={`w-element cd47swo c171icg6 c1lt64h c1jzivuf chpvhw5 c125l1v1 c1k74xht`}>
-{"Upcoming"}
-</h2>
-</div>
-<div
-className={`w-element ck11ylk c767uka cxn45mh c134tzij c11cmzdu c9evryh c1bnlscd`}>
-<svg
-width={"100%"}
-height={"100%"}
-viewBox={"0 0 24 24"}
-fill={"none"}
-xmlns={"http://www.w3.org/2000/svg"}
-className={`w-element c15bestr cc7cnye cjc9fpk cgiudld c1xj8ubg c58kvwj c1xn6287 c1je5o8o csab2v6 c1vfrlzk c1xr9s01 c1ri6i5u cr2ngcx c6cezs c1xk7yri c17sn8x7 c1ckzdhq c1o3mmkz csntl59 c150g9r`}>
-<path
-d={"M4 13.9999L5.57465 20.2985C5.61893 20.4756 5.64107 20.5642 5.66727 20.6415C5.92317 21.397 6.60352 21.9282 7.39852 21.9933C7.4799 21.9999 7.5712 21.9999 7.75379 21.9999C7.98244 21.9999 8.09677 21.9999 8.19308 21.9906C9.145 21.8982 9.89834 21.1449 9.99066 20.193C10 20.0967 10 19.9823 10 19.7537V5.49991M18.5 13.4999C20.433 13.4999 22 11.9329 22 9.99991C22 8.06691 20.433 6.49991 18.5 6.49991M10.25 5.49991H6.5C4.01472 5.49991 2 7.51463 2 9.99991C2 12.4852 4.01472 14.4999 6.5 14.4999H10.25C12.0164 14.4999 14.1772 15.4468 15.8443 16.3556C16.8168 16.8857 17.3031 17.1508 17.6216 17.1118C17.9169 17.0756 18.1402 16.943 18.3133 16.701C18.5 16.4401 18.5 15.9179 18.5 14.8736V5.1262C18.5 4.08191 18.5 3.55976 18.3133 3.2988C18.1402 3.05681 17.9169 2.92421 17.6216 2.88804C17.3031 2.84903 16.8168 3.11411 15.8443 3.64427C14.1772 4.55302 12.0164 5.49991 10.25 5.49991Z"}
-stroke={"currentColor"}
-strokeWidth={"2"}
-strokeLinecap={"round"}
-strokeLinejoin={"round"}
-className={`w-element c1vt7eqg c1cquuiq`} />
-</svg>
-<h2
-className={`w-element cyoo8jj c18c094p c96o7df c11gq5ov c1k74xht cvcuixl cqj8j7n`}>
-{"10"}
-<span
-className={`w-element c1k5dyzn cwu5uhe c8ao5vx`}>
-{"th"}
-</span>
-</h2>
-<h2
-className={`w-element cyoo8jj c12zhvo cy9rpio c14py9u3 ca39cxk c96o7df c1k74xht c50hmgv`}>
-{"Anniversary"}
-</h2>
-<p
-className={`w-element cxa4mkp cy2vnym cyoo8jj c1f0lefa c1q98tuy c19a8u9t c1mpzg9m c18r089p`}>
-{"Celebrate the first decade of General Engineering with us!"}
-</p>
-<Link
-href={"https://docs.google.com/forms/d/e/1FAIpQLSefojG-oABUsnxSqtGt3r1kjyg7OaNfOnJ22Yu0VEWQlh_jDw/viewform?usp=header"}
-target={"_blank"}
-className={`w-link c10pf28n c6775s7 ct2w13i cdzo1k7 c4u8rnv cxlc7u9 cqs9um0 c1ldtmq9 c1ho4waj c16etzib c8l261o c1l00ka2 ci03eyw c1pd7k79 c2gl1gx cda4yqq c767uka c1x65yvk cv1qn8j c1jon836 co5x0w6 c5sx8jk c1122adb c1bti4b5 cz7iu34 c40iywk codsd31 c16er72m c1qt5xo2 c1712sxp c1w0yra6 cpq2gwm c14wrn1u c12zhvo c1582rzp cpyan2s`}>
-<Text
-className={`w-text`}>
-{"Sign Up"}
-</Text>
-</Link>
-</div>
-</div>
-</div>
 <Box
 className={`w-box ci03eyw cu8ogtt c1g95588 c3brmnq cqaj6f4 c16lfnyl c1v4vkm5`}>
 <Image
