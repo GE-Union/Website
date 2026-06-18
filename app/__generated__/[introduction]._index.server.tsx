@@ -29,6 +29,7 @@ export const getResources = (_props: { system: System }) => {
     socialImageUrl: "",
     status: undefined,
     redirect: "",
+    content: undefined,
     custom: [
     ],
   };

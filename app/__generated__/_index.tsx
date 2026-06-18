@@ -3,15 +3,17 @@
 
 
       import { Fragment, useState } from "react";
-      import { useResource, useVariableState } from "@webstudio-is/react-sdk/runtime";
+      import { renderText, useResource, useVariableState } from "@webstudio-is/react-sdk/runtime";
       import { Body as Body, Link as Link, Link as Link_1 } from "@webstudio-is/sdk-components-react-router";
-import { Box as Box, Text as Text, Image as Image, HtmlEmbed as HtmlEmbed, Span as Span, Button as Button } from "@webstudio-is/sdk-components-react";
+import { Box as Box, Text as Text, Image as Image, HtmlEmbed as HtmlEmbed, Span as Span, Button as Button } from "@webstudio-is/sdk-components-react/components";
 import { Tooltip as Tooltip, TooltipTrigger as TooltipTrigger, TooltipContent as TooltipContent, Dialog as Dialog, DialogTrigger as DialogTrigger, DialogOverlay as DialogOverlay, DialogContent as DialogContent, DialogDescription as DialogDescription, DialogClose as DialogClose } from "@webstudio-is/sdk-components-react-radix";
 
 
       export const projectId = "94456f8c-a847-426a-aec8-16de390bd3eb";
 
-      export const lastPublished = "2026-04-11T00:53:45.664Z";
+      export const projectDomain = "geunion-new";
+
+      export const lastPublished = "2026-06-18T09:12:58.027Z";
 
       export const siteName = "GE Union";
 
@@ -64,13 +66,13 @@ className={`w-box c1vu5acx cd3toq c17nm8vt c1xymrvd c8yo8yx c1duce4z ci03eyw cu8
 <Box
 className={`w-box c19h37rc ci03eyw c1nj86ny c1mz59p0 c13f4d8e c1122adb cx911xm c4qqqhz c2z8j1e c19dc97m`}>
 <Image
-src={"/assets/logo_10s_Aniv_maddness_VKUszqVCor11QcF6yzzrl.png"}
+src={"/assets/GE_Logo_-_Big_kpMORCHYDLOpQbfBKYwZ7.svg"}
 id={"menu-icon"}
 loading={"eager"}
 alt={""}
-height={724}
-width={900}
-className={`w-image c1wjaqd0 cz7iu34 c40iywk codsd31 c16er72m c1qt5xo2 cxn45mh c1evq1tl c1h357f1 c15oj64s c1i9xazh cuz1n07`} />
+height={684}
+width={492}
+className={`w-image c1wjaqd0 cz7iu34 c40iywk codsd31 c16er72m c1qt5xo2 c1vsv73g c1l3m6tn cy2rpkp c1i9xazh cuz1n07`} />
 <Box
 className={`w-box ci03eyw c5zf3td c1bdekej cy2vnym cgykfac c8chaf1 crymv6m ch588tu cd1c1x2 cgjpuuk co3wgvm cjdg5q7`}>
 <p

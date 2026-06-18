@@ -3,15 +3,17 @@
 
 
       import { Fragment, useState } from "react";
-      import { useResource, useVariableState } from "@webstudio-is/react-sdk/runtime";
+      import { renderText, useResource, useVariableState } from "@webstudio-is/react-sdk/runtime";
       import { Body as Body, Link as Link, Link as Link_1 } from "@webstudio-is/sdk-components-react-router";
-import { HtmlEmbed as HtmlEmbed, Box as Box, Image as Image, Button as Button, Text as Text } from "@webstudio-is/sdk-components-react";
+import { HtmlEmbed as HtmlEmbed, Box as Box, Image as Image, Button as Button, Text as Text } from "@webstudio-is/sdk-components-react/components";
 import { Tooltip as Tooltip, TooltipTrigger as TooltipTrigger, TooltipContent as TooltipContent, Dialog as Dialog, DialogTrigger as DialogTrigger, DialogOverlay as DialogOverlay, DialogContent as DialogContent, DialogDescription as DialogDescription, DialogClose as DialogClose, Accordion as Accordion, AccordionItem as AccordionItem, AccordionHeader as AccordionHeader, AccordionTrigger as AccordionTrigger, AccordionContent as AccordionContent } from "@webstudio-is/sdk-components-react-radix";
 
 
       export const projectId = "94456f8c-a847-426a-aec8-16de390bd3eb";
 
-      export const lastPublished = "2026-04-11T00:53:45.664Z";
+      export const projectDomain = "geunion-new";
+
+      export const lastPublished = "2026-06-18T09:12:58.027Z";
 
       export const siteName = "GE Union";
 
