@@ -27,3 +27,4 @@ Thumbs.db
 # Note: reference/ (immutable legacy export), docs/, scripts/, and tests/ are
 # intentionally tracked — they are the migration's source of truth and CI inputs.
 /docs
+.DS_Store
