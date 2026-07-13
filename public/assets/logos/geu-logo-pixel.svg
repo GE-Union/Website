@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="50" height="70">
+  <path d="M20 0h10v10H20z" shape-rendering="crispEdges" style="fill:#000a;opacity:255"/>
+  <path d="M20 10h10v10H20zM10 20h10v10H10zM30 20h10v10H30zM20 30h10v10H20zM0 40h10v10H0z" shape-rendering="crispEdges" style="fill:#000;opacity:255"/>
+  <path d="M10 40h10v10H10zM30 40h10v10H30z" shape-rendering="crispEdges" style="fill:#000b;opacity:255"/>
+  <path d="M40 40h10v10H40zM10 50h10v10H10zM20 50h10v10H20zM30 50h10v10H30zM0 60h10v10H0zM40 60h10v10H40z" shape-rendering="crispEdges" style="fill:#000;opacity:255"/>
+</svg>

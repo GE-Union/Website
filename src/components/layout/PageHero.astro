@@ -1,0 +1,104 @@
+---
+/**
+ * The rounded red hero panel shared by all interior pages: header bar at
+ * the top, centered display title and subtitle below. 250px tall on
+ * desktop, 220px below 768px, content-sized below 480px.
+ *
+ * The home page builds its own taller hero in the page-reconstruction
+ * phase and uses SiteHeader directly.
+ */
+import SiteHeader from "./SiteHeader.astro";
+
+interface Props {
+  title: string;
+  /** Plain-text subtitle; use the "subtitle" slot instead for inline markup. */
+  subtitle?: string;
+  theme?: "default" | "minecraft";
+}
+
+const { title, subtitle, theme = "default" } = Astro.props;
+const hasSubtitle = subtitle !== undefined || Astro.slots.has("subtitle");
+---
+
+<header
+  class:list={[
+    "page-hero",
+    "icon-background",
+    "home-top",
+    { "pixel-corners": theme === "minecraft" },
+  ]}
+>
+  <SiteHeader theme={theme} />
+  <div class="hero-content">
+    <h1>{title}</h1>
+    {
+      hasSubtitle && (
+        <p class="hero-subtitle">{subtitle ?? <slot name="subtitle" />}</p>
+      )
+    }
+  </div>
+</header>
+
+<style>
+  .page-hero {
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    margin: var(--gap1) var(--gap1) 0;
+    border-radius: var(--rad1);
+    overflow: hidden;
+  }
+
+  .page-hero.pixel-corners {
+    border-radius: 0;
+    box-shadow:
+      6px 6px #fbf8f859 inset,
+      -6px -6px #00000021 inset;
+  }
+
+  .hero-content {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+    margin-top: -10px;
+    text-align: center;
+  }
+
+  .hero-subtitle {
+    color: #fff;
+    font-size: 1.3em;
+    margin: 0 35px 15px;
+  }
+
+  @media (max-width: 767px) {
+    .page-hero {
+      height: 220px;
+    }
+
+    .hero-subtitle {
+      font-size: 1.2em;
+    }
+  }
+
+  @media (max-width: 479px) {
+    .page-hero {
+      height: fit-content;
+      min-height: 250px;
+    }
+
+    .hero-content {
+      padding: 10px 0;
+    }
+
+    .hero-content h1 {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+
+    .hero-subtitle {
+      font-size: 1.1em;
+    }
+  }
+</style>

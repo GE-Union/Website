@@ -1,0 +1,17 @@
+---
+/**
+ * Centered content container used by every text page (legacy pattern:
+ * 800px max width, 100px top rhythm, 40px side margins below 992px).
+ * The class itself lives in utilities.css because later page work also
+ * applies it to raw elements.
+ */
+interface Props {
+  as?: "section" | "div";
+}
+
+const { as: Tag = "section" } = Astro.props;
+---
+
+<Tag class="content-section">
+  <slot />
+</Tag>

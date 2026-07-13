@@ -1,0 +1,89 @@
+---
+/**
+ * The rounded red footer panel on every page: inverted GEU icon linking
+ * Home on the left, social strip on the right. All legacy destinations
+ * kept; the "Built with Webstudio" badge is intentionally removed.
+ */
+import { localAssets } from "../../data/local-assets";
+import SocialLinks from "./SocialLinks.astro";
+---
+
+<footer class="site-footer icon-background">
+  <div class="footer-inner">
+    <a href="/" class="footer-logo">
+      <img
+        src={localAssets.geuIcon}
+        alt="GE Union — home"
+        width="256"
+        height="238"
+        loading="lazy"
+      />
+    </a>
+    <SocialLinks />
+  </div>
+</footer>
+
+<style>
+  .site-footer {
+    height: 200px;
+    margin: var(--gap1);
+    padding: 30px;
+    border-radius: var(--rad1);
+    overflow: hidden;
+  }
+
+  .footer-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+  }
+
+  .footer-logo {
+    display: block;
+    width: fit-content;
+    align-self: stretch;
+    transition: scale 0.2s ease;
+  }
+
+  .footer-logo:hover {
+    scale: 1.05;
+  }
+
+  .footer-logo img {
+    height: 100%;
+    width: auto;
+    aspect-ratio: 1.1;
+    filter: invert(100%);
+  }
+
+  @media (max-width: 991px) {
+    .footer-inner {
+      gap: 80px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .site-footer {
+      height: 160px;
+    }
+
+    .footer-inner {
+      gap: 33px;
+    }
+  }
+
+  @media (max-width: 479px) {
+    .site-footer {
+      height: 122px;
+      padding: 15px;
+    }
+
+    .footer-logo {
+      height: 78%;
+      align-self: center;
+    }
+  }
+</style>

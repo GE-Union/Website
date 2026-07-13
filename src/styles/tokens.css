@@ -1,0 +1,37 @@
+/*
+ * Design tokens, converted verbatim from the legacy Webstudio :root blocks
+ * (reference/legacy-export/assets/static/app_generated_index-*.css).
+ *
+ * Legacy breakpoints, kept as observed: max-width 479px / 767px / 991px.
+ * Page-scoped legacy variables (--topheight, --bottomheight, --width-map,
+ * --reel-*, --img-scale, --pop-scale) live with the page that owns them.
+ */
+
+:root {
+  /* spacing rhythm */
+  --gap1: 14px;
+  --gap2: 10px;
+
+  /* panel rounding */
+  --rad1: 18px;
+  --rad2: 8px;
+
+  /* palette */
+  --back-red-1: rgb(237 104 115);
+  --back-grey-1: rgb(233 233 233);
+  --back-grey-2: rgb(244 244 244);
+  --front-red-1: rgb(242 68 74);
+  --front-1: rgb(58 58 58);
+  --front-2: rgb(99 99 99);
+  --front-3: rgb(136 136 136);
+  --background: rgb(255 255 255);
+}
+
+@media (max-width: 479px) {
+  :root {
+    --gap1: 10px;
+    --gap2: 7px;
+    --rad1: 16px;
+    --rad2: 10px;
+  }
+}

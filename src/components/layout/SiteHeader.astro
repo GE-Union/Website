@@ -1,0 +1,97 @@
+---
+/**
+ * The 70px header bar that sits at the top of the hero panel on every
+ * page: draggable logo (a normal link Home), desktop navigation, and the
+ * burger + drawer below 480px.
+ */
+import { localAssets } from "../../data/local-assets";
+import MobileMenu from "../navigation/MobileMenu.astro";
+import PrimaryNavigation from "../navigation/PrimaryNavigation.astro";
+
+interface Props {
+  theme?: "default" | "minecraft";
+}
+
+const { theme = "default" } = Astro.props;
+const logo =
+  theme === "minecraft" ? localAssets.geuLogoPixel : localAssets.geLogoBig;
+---
+
+<div class="site-header">
+  <a
+    href="/"
+    id="menu-icon"
+    class:list={["logo-link", { minecraft: theme === "minecraft" }]}
+  >
+    <img
+      src={logo}
+      alt="GE Union — home"
+      width="492"
+      height="684"
+      loading="eager"
+    />
+  </a>
+  <PrimaryNavigation theme={theme} />
+  <MobileMenu />
+</div>
+
+<script>
+  import { initDraggableLogo } from "../../scripts/draggable-logo";
+
+  const icon = document.querySelector<HTMLAnchorElement>("#menu-icon");
+  if (icon) initDraggableLogo(icon);
+</script>
+
+<style>
+  .site-header {
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    width: 100%;
+    max-width: 1800px;
+    align-self: center;
+    padding: 10px 10px 0;
+  }
+
+  .logo-link {
+    width: fit-content;
+    cursor: grab;
+    touch-action: none; /* smooth touch drag */
+    will-change: transform;
+    user-select: none;
+  }
+
+  .logo-link.dragging {
+    cursor: grabbing;
+  }
+
+  .logo-link img {
+    width: 58px;
+    height: 100%;
+    margin-left: 5px;
+    -webkit-user-drag: none;
+  }
+
+  .logo-link.minecraft img {
+    width: 24px;
+    height: 34px;
+    margin-left: 15px;
+    margin-top: 10px;
+    filter: invert(100%);
+  }
+
+  @media (max-width: 479px) {
+    .site-header {
+      height: 60px;
+    }
+
+    .logo-link {
+      height: 78%;
+      align-self: center;
+    }
+
+    .logo-link img {
+      width: 50px;
+    }
+  }
+</style>

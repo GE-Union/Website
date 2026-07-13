@@ -1,0 +1,48 @@
+---
+/**
+ * Placeholder head-metadata component. Prompt 04 replaces the internals
+ * with the typed SEO matrix (canonical, Open Graph, Twitter, robots and
+ * sitemap decisions from one source of truth); the props interface below
+ * is the contract pages already code against.
+ *
+ * Robots defaults to the legacy site's restrictive value so nothing is
+ * accidentally indexable before the SEO phase makes explicit decisions.
+ */
+
+export interface SeoProps {
+  /** Page title, required — no page ships without one. */
+  title: string;
+  description?: string;
+  /** Path for the canonical URL, e.g. "/course-bank". */
+  canonicalPath?: string;
+  robots?: string;
+}
+
+type Props = SeoProps;
+
+const {
+  title,
+  description,
+  canonicalPath,
+  robots = "noindex, nofollow",
+} = Astro.props;
+
+const canonical = canonicalPath
+  ? new URL(canonicalPath, Astro.site).href
+  : undefined;
+---
+
+<title>{title}</title>
+<meta name="robots" content={robots} />
+{description && <meta name="description" content={description} />}
+{canonical && <link rel="canonical" href={canonical} />}
+{/* Legacy JSON-LD WebSite stub, carried as-is until the SEO phase. */}
+<script
+  is:inline
+  type="application/ld+json"
+  set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "GE Union",
+  })}
+/>

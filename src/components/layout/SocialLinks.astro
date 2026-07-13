@@ -1,0 +1,80 @@
+---
+/**
+ * The footer's social icon strip. Destinations and per-link new-tab
+ * behavior come from src/data/social-links.ts (all four are legacy
+ * destinations; the Webstudio badge is intentionally gone).
+ */
+import { socialLinks } from "../../data/social-links";
+---
+
+<ul class="social-links" role="list">
+  {
+    socialLinks.map((link) => (
+      <li>
+        <a
+          href={link.href}
+          target={link.newTab ? "_blank" : undefined}
+          rel={link.newTab ? "noopener noreferrer" : undefined}
+        >
+          <img
+            src={link.icon}
+            alt={link.name}
+            width="417"
+            height="417"
+            loading="lazy"
+          />
+        </a>
+      </li>
+    ))
+  }
+</ul>
+
+<style>
+  .social-links {
+    display: flex;
+    justify-content: space-between;
+    height: 49.5px;
+    width: 442.6px;
+    max-width: 100%;
+    margin: 0 50px 0 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .social-links li {
+    height: 100%;
+    aspect-ratio: 1;
+    flex: 0 0 auto;
+  }
+
+  .social-links a {
+    display: block;
+    height: 100%;
+  }
+
+  .social-links img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    opacity: 0.6;
+  }
+
+  .social-links a:hover img {
+    filter: invert(100%);
+    opacity: 0.95;
+  }
+
+  @media (max-width: 767px) {
+    .social-links {
+      margin-right: 20px;
+    }
+  }
+
+  @media (max-width: 479px) {
+    .social-links {
+      height: 42.5px;
+      width: auto;
+      gap: 10px;
+    }
+  }
+</style>

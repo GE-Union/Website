@@ -1,0 +1,55 @@
+---
+/**
+ * Reusable call-to-action link treatment, converted from the legacy
+ * "Learn more" button: red pill, white text, gentle hover scale, and an
+ * optional arrow glyph. It is an anchor because CTAs navigate.
+ */
+import { localAssets } from "../../data/local-assets";
+
+interface Props {
+  href: string;
+  /** Show the trailing arrow glyph (legacy "Learn more" style). */
+  arrow?: boolean;
+  /** Set for external links that should open in a new tab. */
+  newTab?: boolean;
+}
+
+const { href, arrow = false, newTab = false } = Astro.props;
+---
+
+<a
+  class="cta-link"
+  href={href}
+  target={newTab ? "_blank" : undefined}
+  rel={newTab ? "noopener noreferrer" : undefined}
+>
+  <slot />
+  {arrow && <img src={localAssets.arrow} alt="" width="25" height="24" />}
+</a>
+
+<style>
+  .cta-link {
+    display: inline-flex;
+    justify-content: center;
+    gap: 6px;
+    height: fit-content;
+    padding: 10px 20px;
+    background-color: var(--front-red-1);
+    border-radius: 12px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: scale 0.2s ease;
+  }
+
+  .cta-link:hover {
+    scale: 1.03;
+  }
+
+  @media (max-width: 767px) {
+    .cta-link {
+      font-size: 18px;
+    }
+  }
+</style>

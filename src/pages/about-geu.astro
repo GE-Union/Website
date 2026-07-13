@@ -1,0 +1,13 @@
+---
+// Temporary route shell; page sections arrive in prompt 06.
+import PageHero from "../components/layout/PageHero.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout seo={{ title: "About GE Union", canonicalPath: "/about-geu" }}>
+  <PageHero
+    slot="hero"
+    title="about GE Union"
+    subtitle="Who are we and why are we here?"
+  />
+</BaseLayout>

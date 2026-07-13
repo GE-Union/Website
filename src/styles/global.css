@@ -1,20 +1,136 @@
 /*
- * Global stylesheet entry point, imported once by the base layout (for now,
- * by the smoke page). Design tokens from the legacy export land in
- * tokens.css during the design-system phase; the single token below only
- * proves that custom properties flow through the build pipeline.
+ * Global stylesheet, imported once by BaseLayout.
+ *
+ * Font sources are the exact legacy URLs (docs/external-assets.md):
+ * Rubik for body text, Tanker for the display h1. The minecraft theme adds
+ * its own fonts in MinecraftLayout.
  */
 
-@import "./reset.css";
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300..900&display=swap");
+@import url("https://api.fontshare.com/v2/css?f[]=tanker@400&display=swap");
 
+@import "./reset.css";
+@import "./tokens.css";
+@import "./utilities.css";
+
+/* Legacy root typography: 20px Rubik, 1.4, --front-1; 18px below 768px. */
 :root {
-  --smoke-accent: #990000;
+  font-family: Rubik, Arial, Roboto, sans-serif;
+  font-size: 20px;
+  line-height: 1.4;
+  color: var(--front-1);
+}
+
+@media (max-width: 767px) {
+  :root {
+    font-size: 18px;
+  }
 }
 
 body {
-  font-family:
-    system-ui,
-    -apple-system,
-    sans-serif;
-  line-height: 1.5;
+  max-width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background-color: var(--background);
+}
+
+/* Base type scale from the shared legacy embed block (all 8 pages). */
+h1 {
+  font-family: Tanker, Rubik, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 5em;
+  color: var(--background);
+  line-height: 1;
+  margin: 0;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 1;
+  margin: 0 0 0.5em;
+}
+
+p {
+  margin: 0;
+}
+
+@media (max-width: 767px) {
+  h1 {
+    font-size: 4em;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+}
+
+/*
+ * Animated red panel background shared by the hero and footer (and by
+ * page sections in later phases). Ported from the legacy embed block.
+ */
+.icon-background {
+  background-color: var(--back-red-1);
+  z-index: 1;
+  overflow: hidden;
+  position: relative;
+}
+
+.icon-background::before {
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  top: -50%;
+  left: -50%;
+  background-image: url("/assets/icons/icon-background.svg");
+  background-size: 200px 115.4734411085px;
+  background-repeat: repeat;
+  animation: scroll-bg 20s linear infinite;
+  z-index: -1;
+  opacity: var(--icon-background-opacity, 3%);
+  mix-blend-mode: luminosity;
+  filter: blur(2px);
+}
+
+.home-top::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 250px;
+  background: linear-gradient(
+    180deg,
+    hsl(from var(--back-red-1) h s l / 0.65) 15%,
+    hsl(from var(--back-red-1) h s l / 0) 100%
+  );
+  z-index: -1;
+}
+
+@keyframes scroll-bg {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: -200px 115.4734411085px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .icon-background::before {
+    animation: none;
+  }
+}
+
+/*
+ * The legacy site relied on browser default focus outlines; keep a clearly
+ * visible ring that works on both the red panels and white content.
+ */
+:focus-visible {
+  outline: 3px solid var(--front-1);
+  outline-offset: 2px;
+}
+
+.icon-background :focus-visible {
+  outline-color: var(--background);
 }

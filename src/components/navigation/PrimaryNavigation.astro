@@ -1,0 +1,186 @@
+---
+/**
+ * Desktop navigation for the header bar. Every destination — including the
+ * three About pages — is a real anchor in the static HTML, fixing the
+ * legacy JS-only tooltip that made those routes unreachable without
+ * JavaScript. The About group is a disclosure button whose behavior lives
+ * in src/scripts/about-menu.ts.
+ *
+ * Sizing quirks preserved from legacy: links are 20px/600 with translucent
+ * black text that turns near-white on hover; below 768px they shrink to
+ * 15px, "Home" disappears (the logo covers it) and "Course Bank" shortens
+ * to "Bank". Below 480px the whole nav yields to the burger menu.
+ */
+import { aboutMenuLinks, primaryNavLinks } from "../../data/navigation";
+
+interface Props {
+  /** Minecraft pages use the body font at 18px instead of 20px Rubik. */
+  theme?: "default" | "minecraft";
+}
+
+const { theme = "default" } = Astro.props;
+const currentPath = Astro.url.pathname.replace(/\/$/, "") || "/";
+
+const isCurrent = (href: string) => (href === currentPath ? "page" : undefined);
+---
+
+<nav
+  class:list={["primary-nav", { minecraft: theme === "minecraft" }]}
+  aria-label="Main"
+>
+  <ul class="nav-list" role="list">
+    {
+      primaryNavLinks.map((link) => (
+        <li
+          class:list={[link.narrowViewport && `narrow-${link.narrowViewport}`]}
+        >
+          <a href={link.href} aria-current={isCurrent(link.href)}>
+            {link.narrowViewport === "shorten" ? (
+              <>
+                <span class="narrow-hidden">Course </span>Bank
+              </>
+            ) : (
+              link.label
+            )}
+          </a>
+        </li>
+      ))
+    }
+    <li class="about-menu" data-about-menu>
+      <button
+        type="button"
+        aria-expanded="false"
+        aria-controls="about-menu-list"
+      >
+        About
+      </button>
+      <ul class="about-menu-list" id="about-menu-list" role="list">
+        {
+          aboutMenuLinks.map((link) => (
+            <li>
+              <a href={link.href} aria-current={isCurrent(link.href)}>
+                {link.label}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+<script>
+  import { initAboutMenu } from "../../scripts/about-menu";
+
+  for (const group of document.querySelectorAll<HTMLElement>(
+    "[data-about-menu]",
+  )) {
+    initAboutMenu(group);
+  }
+</script>
+
+<style>
+  .primary-nav {
+    margin-right: 20px;
+  }
+
+  .nav-list {
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .nav-list a,
+  .about-menu > button {
+    display: inline-block;
+    font-weight: 600;
+    font-size: 20px;
+    color: #0000007a;
+    text-decoration: none;
+    user-select: none;
+    padding: 10px 5px;
+    background: none;
+    border: none;
+    font-family: inherit;
+    line-height: inherit;
+    cursor: pointer;
+  }
+
+  .minecraft .nav-list a,
+  .minecraft .about-menu > button {
+    font-size: 18px;
+    font-family: inherit;
+  }
+
+  .nav-list a:hover {
+    color: #ffffffe8;
+  }
+
+  /* Legacy quirk: the About trigger keeps its color on hover. */
+  .about-menu > button:hover {
+    color: #0000007a;
+  }
+
+  .about-menu {
+    position: relative;
+  }
+
+  /*
+   * Dropdown panel, styled like the legacy tooltip content. Right-aligned
+   * because About is the last nav item: the legacy Radix tooltip shifted
+   * itself away from the viewport edge, and a centered static panel would
+   * clip against it.
+   */
+  .about-menu-list {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    z-index: 50;
+    flex-direction: column;
+    background-color: var(--background);
+    border-radius: var(--rad2);
+    padding: 0.375rem 0.75rem;
+    margin: 0;
+    list-style: none;
+    box-shadow: 0 4px 12px #00000022;
+    white-space: nowrap;
+  }
+
+  .about-menu[data-open="true"] .about-menu-list {
+    display: flex;
+  }
+
+  .about-menu-list a:hover {
+    color: var(--front-1);
+  }
+
+  .about-menu-list a[aria-current="page"] {
+    color: var(--front-1);
+  }
+
+  @media (max-width: 767px) {
+    .nav-list {
+      gap: 13px;
+    }
+
+    .nav-list a,
+    .about-menu > button {
+      font-size: 15px;
+    }
+
+    .narrow-hide,
+    .narrow-hidden {
+      display: none;
+    }
+  }
+
+  /* Below 480px the burger menu replaces the inline nav entirely. */
+  @media (max-width: 479px) {
+    .primary-nav {
+      display: none;
+    }
+  }
+</style>
