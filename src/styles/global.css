@@ -1,0 +1,20 @@
+/*
+ * Global stylesheet entry point, imported once by the base layout (for now,
+ * by the smoke page). Design tokens from the legacy export land in
+ * tokens.css during the design-system phase; the single token below only
+ * proves that custom properties flow through the build pipeline.
+ */
+
+@import "./reset.css";
+
+:root {
+  --smoke-accent: #990000;
+}
+
+body {
+  font-family:
+    system-ui,
+    -apple-system,
+    sans-serif;
+  line-height: 1.5;
+}

@@ -1,4 +1,29 @@
+# Dependencies
+node_modules/
+
+# Build output and framework cache
+dist/
+.astro/
+
+# Test artifacts (baselines under tests/visual/reference/ ARE tracked)
+test-results/
+playwright-report/
+tests/visual/output/
+
+# Lighthouse reports
+reports/lighthouse/
+
+# Environment files (the Google Calendar key is public, but keep the habit)
+.env
+.env.*
+!.env.example
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Note: reference/ (immutable legacy export), docs/, scripts/, and tests/ are
+# intentionally tracked — they are the migration's source of truth and CI inputs.
 /docs
-/reference
-/scripts
-/tests

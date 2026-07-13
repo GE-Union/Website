@@ -1,0 +1,43 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  checks:
+    name: Deterministic checks, tests, build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      # format:check, lint, typecheck, unit tests, build, HTML validation,
+      # dist guard, internal link check — all deterministic, no network.
+      - name: Run deterministic checks and build
+        run: npm run check
+
+      - name: Install Playwright browser
+        run: npx playwright install --with-deps chromium
+
+      - name: End-to-end tests
+        run: npm run test:e2e
+
+      - name: Accessibility tests
+        run: npm run test:a11y
+
+      # Deliberately NOT run in CI:
+      # - test:visual   — screenshot baselines are rendered on macOS; Linux
+      #                   font rendering differs. Run locally.
+      # - check:assets  — probes third-party servers; network-dependent.
+      # - audit:lighthouse — scores vary with runner hardware.
+      # No deployment happens here.

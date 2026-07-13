@@ -1,0 +1,29 @@
+/*
+ * Minimal reset. Kept deliberately small: it only removes the browser
+ * defaults every page fights with. The full design system (tokens,
+ * typography, utilities) is built in the design-system phase.
+ */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+img,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}

@@ -1,0 +1,47 @@
+---
+// Temporary smoke page. It exists only to prove that the build pipeline,
+// strict TypeScript, and global CSS work end to end. The real home page
+// replaces this file in the page-reconstruction phase.
+import "../styles/global.css";
+
+const buildStamp: string = new Date().toISOString();
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta
+      name="description"
+      content="Temporary build-pipeline smoke page for the GE Union website rebuild."
+    />
+    <title>GE Union — build smoke page</title>
+  </head>
+  <body>
+    <main>
+      <h1>GE Union rebuild — smoke page</h1>
+      <p>
+        If this heading is styled and the box below is tinted, global CSS and
+        custom properties survived the build.
+      </p>
+      <p class="token-proof">Custom-property proof box.</p>
+      <p>Built at <time datetime={buildStamp}>{buildStamp}</time>.</p>
+    </main>
+  </body>
+</html>
+
+<style>
+  main {
+    max-width: 40rem;
+    margin: 4rem auto;
+    padding: 0 1rem;
+  }
+
+  .token-proof {
+    border: 2px solid var(--smoke-accent);
+    color: var(--smoke-accent);
+    padding: 0.5rem 1rem;
+  }
+</style>

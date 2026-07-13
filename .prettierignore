@@ -1,0 +1,17 @@
+# Never touch the immutable legacy export
+reference/
+
+# Generated / third-party
+node_modules/
+dist/
+.astro/
+package-lock.json
+test-results/
+playwright-report/
+reports/
+
+# Machine-generated audit inventory
+docs/page-inventory.json
+
+# Binary visual baselines
+tests/visual/reference/
