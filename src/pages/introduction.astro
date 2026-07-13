@@ -1,11 +1,12 @@
 ---
 // Temporary route shell; the "Coming soon" page arrives in prompt 09.
-// Stays noindex while it is only a placeholder (CLAUDE.md SEO rule).
+// Stays noindex in the SEO matrix while it is only a placeholder.
 import PageHero from "../components/layout/PageHero.astro";
+import { getPageSeo } from "../data/seo-matrix";
 import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
-<BaseLayout seo={{ title: "Dashboard", canonicalPath: "/introduction" }}>
+<BaseLayout seo={getPageSeo("/introduction")}>
   <PageHero slot="hero" title="Dashboard">
     <Fragment slot="subtitle">
       Keep an overview of all the things important to <b>YOUR </b>GE journey!

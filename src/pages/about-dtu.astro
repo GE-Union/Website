@@ -1,19 +1,13 @@
 ---
 // Temporary route shell; page sections arrive in prompt 06.
-// The title duplicates /about-ge's on the legacy site (audit finding);
-// the SEO matrix in prompt 04 owns any correction.
+// The title duplicates /about-ge's on the legacy site — preserved in the
+// SEO matrix and flagged in docs/content-review.md for the owners.
 import PageHero from "../components/layout/PageHero.astro";
+import { getPageSeo } from "../data/seo-matrix";
 import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
-<BaseLayout
-  seo={{
-    title: "About General Engineering",
-    description:
-      "Find anything you want to know about General Engineering: Structure, Specialisations, Life, etc.",
-    canonicalPath: "/about-dtu",
-  }}
->
+<BaseLayout seo={getPageSeo("/about-dtu")}>
   <PageHero
     slot="hero"
     title="about DTU"

@@ -1,17 +1,11 @@
 ---
 // Temporary route shell; page sections arrive in prompt 07.
 import PageHero from "../components/layout/PageHero.astro";
+import { getPageSeo } from "../data/seo-matrix";
 import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
-<BaseLayout
-  seo={{
-    title: "Course Bank",
-    description:
-      "Get notes, past papers, and details for all General Engineering  courses. Hand picked by students!",
-    canonicalPath: "/course-bank",
-  }}
->
+<BaseLayout seo={getPageSeo("/course-bank")}>
   <PageHero
     slot="hero"
     title="Course bank"

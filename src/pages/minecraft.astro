@@ -1,18 +1,13 @@
 ---
-// Temporary route shell; page sections arrive in prompt 09, and the
-// seasonal indexing decision belongs to the SEO matrix (prompt 04).
+// Temporary route shell; page sections arrive in prompt 09. The seasonal
+// indexing decision lives in the SEO matrix: noindex until the owner sets
+// siteConfig.minecraftEventActive (src/data/site.ts).
 import PageHero from "../components/layout/PageHero.astro";
+import { getPageSeo } from "../data/seo-matrix";
 import MinecraftLayout from "../layouts/MinecraftLayout.astro";
 ---
 
-<MinecraftLayout
-  seo={{
-    title: "Minecraft Month",
-    description:
-      "Join us for Minecraft Month for all of November. We welcome all of GE!",
-    canonicalPath: "/minecraft",
-  }}
->
+<MinecraftLayout seo={getPageSeo("/minecraft")}>
   <PageHero
     slot="hero"
     theme="minecraft"

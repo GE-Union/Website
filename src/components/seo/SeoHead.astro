@@ -1,48 +1,108 @@
 ---
 /**
- * Placeholder head-metadata component. Prompt 04 replaces the internals
- * with the typed SEO matrix (canonical, Open Graph, Twitter, robots and
- * sitemap decisions from one source of truth); the props interface below
- * is the contract pages already code against.
+ * Head metadata for every page, driven by the typed SEO matrix
+ * (src/data/seo-matrix.ts). Corrects the exported Webstudio defects:
+ * real canonical/og:url values instead of the `https://url` placeholder,
+ * explicit robots decisions instead of blanket "noindex, nofollow",
+ * absolute social images, and Twitter cards on `name=` attributes
+ * (the export used the non-standard `property=`).
  *
- * Robots defaults to the legacy site's restrictive value so nothing is
- * accidentally indexable before the SEO phase makes explicit decisions.
+ * JSON-LD carries only verified details: the site name, canonical
+ * origin, logo, and the organization's own public social profiles.
  */
+
+import { localAssets } from "../../data/local-assets";
+import {
+  organizationSameAs,
+  siteConfig,
+  toCanonicalUrl,
+} from "../../data/site";
 
 export interface SeoProps {
   /** Page title, required — no page ships without one. */
   title: string;
+  /** Per-page override of siteConfig.titleTemplate ("%s" = title). */
+  titleTemplate?: string;
   description?: string;
-  /** Path for the canonical URL, e.g. "/course-bank". */
+  /** Route path, e.g. "/course-bank". Omit (404 only) for no canonical. */
   canonicalPath?: string;
-  robots?: string;
+  /** Explicit robots decision — comes from the SEO matrix, never ad hoc. */
+  robots: { index: boolean; follow: boolean };
+  /** Absolute URL for og:image / twitter:image. */
+  socialImage?: string;
+  ogType?: string;
+  twitterCard?: "summary_large_image" | "summary";
+  /** Page language; BaseLayout puts this on <html lang>. */
+  lang?: string;
+  favicon?: string;
+  /** Page-specific JSON-LD objects, rendered after the site-wide ones. */
+  jsonLd?: readonly Record<string, unknown>[];
 }
 
 type Props = SeoProps;
 
 const {
   title,
+  titleTemplate = siteConfig.titleTemplate,
   description,
   canonicalPath,
-  robots = "noindex, nofollow",
+  robots,
+  socialImage = siteConfig.defaultSocialImage,
+  ogType = "website",
+  twitterCard = "summary_large_image",
+  favicon = localAssets.favicon,
+  jsonLd = [],
 } = Astro.props;
 
-const canonical = canonicalPath
-  ? new URL(canonicalPath, Astro.site).href
-  : undefined;
----
+const fullTitle = titleTemplate.replace("%s", title);
+const canonical = canonicalPath ? toCanonicalUrl(canonicalPath) : undefined;
+const robotsContent = [
+  robots.index ? "index" : "noindex",
+  robots.follow ? "follow" : "nofollow",
+].join(", ");
 
-<title>{title}</title>
-<meta name="robots" content={robots} />
-{description && <meta name="description" content={description} />}
-{canonical && <link rel="canonical" href={canonical} />}
-{/* Legacy JSON-LD WebSite stub, carried as-is until the SEO phase. */}
-<script
-  is:inline
-  type="application/ld+json"
-  set:html={JSON.stringify({
+const siteJsonLd: Record<string, unknown>[] = [
+  {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    name: "GE Union",
-  })}
-/>
+    name: siteConfig.name,
+    url: toCanonicalUrl("/"),
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: siteConfig.name,
+    url: toCanonicalUrl("/"),
+    logo: new URL(localAssets.geLogoBig, siteConfig.origin).href,
+    sameAs: organizationSameAs,
+  },
+];
+---
+
+<title>{fullTitle}</title>
+<meta name="robots" content={robotsContent} />
+{description && <meta name="description" content={description} />}
+{canonical && <link rel="canonical" href={canonical} />}
+<link rel="icon" href={favicon} />
+
+{canonical && <meta property="og:url" content={canonical} />}
+<meta property="og:title" content={fullTitle} />
+{description && <meta property="og:description" content={description} />}
+<meta property="og:type" content={ogType} />
+<meta property="og:site_name" content={siteConfig.name} />
+<meta property="og:image" content={socialImage} />
+
+<meta name="twitter:card" content={twitterCard} />
+<meta name="twitter:title" content={fullTitle} />
+{description && <meta name="twitter:description" content={description} />}
+<meta name="twitter:image" content={socialImage} />
+
+{
+  [...siteJsonLd, ...jsonLd].map((schema) => (
+    <script
+      is:inline
+      type="application/ld+json"
+      set:html={JSON.stringify(schema)}
+    />
+  ))
+}

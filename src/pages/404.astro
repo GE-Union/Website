@@ -1,0 +1,39 @@
+---
+// Custom 404. Astro emits this as dist/404.html.
+//
+// Deployment guidance — the host must serve 404.html with a REAL 404
+// status, not a 200 rewrite or a 302 to it ("soft 404"): GitHub Pages,
+// Netlify, and Cloudflare Pages pick up 404.html automatically; nginx
+// needs `error_page 404 /404.html;`. Verify with
+// `curl -sI https://geunion.dk/no-such-page | head -1` after cutover.
+//
+// noindex, no canonical, and excluded from the sitemap by the allowlist
+// filter in astro.config.mjs.
+import PageHero from "../components/layout/PageHero.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import CtaLink from "../components/ui/CtaLink.astro";
+---
+
+<BaseLayout
+  seo={{
+    title: "Page not found",
+    robots: { index: false, follow: true },
+  }}
+>
+  <PageHero
+    slot="hero"
+    title="Page not found"
+    subtitle="This page doesn't exist — it may have moved, or the link is wrong."
+  />
+  <section class="not-found">
+    <CtaLink href="/">Back to the home page</CtaLink>
+  </section>
+</BaseLayout>
+
+<style>
+  .not-found {
+    display: flex;
+    justify-content: center;
+    padding: 60px 20px;
+  }
+</style>

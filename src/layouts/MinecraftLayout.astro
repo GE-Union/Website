@@ -16,6 +16,7 @@ const { seo } = Astro.props;
 ---
 
 <BaseLayout seo={seo} theme="minecraft">
+  <slot name="head" slot="head" />
   <slot name="hero" slot="hero" />
   <slot />
 </BaseLayout>

@@ -1,12 +1,12 @@
 ---
 // Temporary route shell so navigation can be exercised end to end.
 // The real home page (custom tall hero, cards, carousel, mini calendar)
-// is reconstructed in prompt 05; robots stays restrictive until the SEO
-// matrix (prompt 04) makes explicit indexing decisions.
+// is reconstructed in prompt 05.
 import PageHero from "../components/layout/PageHero.astro";
+import { getPageSeo } from "../data/seo-matrix";
 import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
-<BaseLayout seo={{ title: "GE Union", canonicalPath: "/" }}>
+<BaseLayout seo={getPageSeo("/")}>
   <PageHero slot="hero" title="GE Union" />
 </BaseLayout>

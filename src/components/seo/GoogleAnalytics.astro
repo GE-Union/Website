@@ -1,0 +1,31 @@
+---
+/**
+ * Opt-in Google Analytics loader.
+ *
+ * The legacy site loaded GA4 (G-T1BFLB9XDL) unconditionally. The rebuild
+ * preserves the measurement ID in siteConfig.analytics but ships with
+ * `enabled: false`: this component renders nothing until the team has
+ * confirmed its privacy/consent approach and flips the flag in
+ * src/data/site.ts. See docs/seo-matrix.md, "Analytics opt-in".
+ */
+
+import { siteConfig } from "../../data/site";
+
+const { measurementId, enabled } = siteConfig.analytics;
+const gtagSrc = `https://www.googletagmanager.com/gtag/js?id=${measurementId}`;
+
+// Google's official snippet, as a string so it ships byte-identical.
+// gtag.js requires the real Arguments object on the dataLayer, so the
+// rest-parameter form must not be used here.
+const gtagBootstrap = `
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag("js", new Date());
+  gtag("config", "${measurementId}");
+`;
+---
+
+{enabled && <script async src={gtagSrc} is:inline />}
+{enabled && <script is:inline set:html={gtagBootstrap} />}

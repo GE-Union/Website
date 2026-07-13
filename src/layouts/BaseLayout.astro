@@ -3,13 +3,16 @@
  * Shared document shell for every page: head metadata (via SeoHead),
  * global styles, hero slot, main content, and footer.
  *
- * The GA4 tag and favicon are carried over from the legacy site so the
- * clone behaves identically in production analytics.
+ * Analytics deviation from the legacy site (prompt 04): GA4 is no longer
+ * loaded unconditionally — GoogleAnalytics renders nothing until the team
+ * opts in via siteConfig.analytics (src/data/site.ts).
  */
+import GoogleAnalytics from "../components/seo/GoogleAnalytics.astro";
 import SeoHead from "../components/seo/SeoHead.astro";
 import type { SeoProps } from "../components/seo/SeoHead.astro";
 import SiteFooter from "../components/layout/SiteFooter.astro";
 import { localAssets } from "../data/local-assets";
+import { siteConfig } from "../data/site";
 import "../styles/global.css";
 
 interface Props {
@@ -23,29 +26,14 @@ const headerLogo =
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang={seo.lang ?? siteConfig.language}>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" href={localAssets.favicon} />
     <link rel="preload" as="image" href={headerLogo} />
     <SeoHead {...seo} />
-    <!-- Legacy GA4 property, unchanged. -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-T1BFLB9XDL"
-      is:inline></script>
-    <script is:inline>
-      window.dataLayer = window.dataLayer || [];
-      // Google's official snippet: gtag.js requires the real Arguments
-      // object on the dataLayer, so rest parameters would break it.
-      function gtag() {
-        // eslint-disable-next-line prefer-rest-params
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-      gtag("config", "G-T1BFLB9XDL");
-    </script>
+    <GoogleAnalytics />
+    <slot name="head" />
   </head>
   <body class:list={[{ "theme-minecraft": theme === "minecraft" }]}>
     <slot name="hero" />

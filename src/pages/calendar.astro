@@ -1,17 +1,11 @@
 ---
 // Temporary route shell; the FullCalendar page arrives in prompt 08.
 import PageHero from "../components/layout/PageHero.astro";
+import { getPageSeo } from "../data/seo-matrix";
 import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
-<BaseLayout
-  seo={{
-    title: "Calendar",
-    description:
-      "See all upcoming events, periods, and deadlines all in one place.",
-    canonicalPath: "/calendar",
-  }}
->
+<BaseLayout seo={getPageSeo("/calendar")}>
   <PageHero
     slot="hero"
     title="Calendar"
