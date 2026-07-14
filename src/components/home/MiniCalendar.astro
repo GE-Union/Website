@@ -1,0 +1,49 @@
+<div
+  class="mini-calendar"
+  data-mini-calendar
+  aria-label="Current month calendar"
+>
+  <p class="month" data-calendar-month></p>
+  <div class="grid" data-calendar-grid></div>
+</div>
+
+<style>
+  .mini-calendar {
+    width: 100%;
+    padding: 16px;
+    border-radius: 16px;
+    background: rgb(244 244 244 / 0.82);
+  }
+  .month {
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: 600;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 7px;
+    text-align: center;
+  }
+  :global(.calendar-weekday) {
+    font-size: 0.72rem;
+    font-weight: 600;
+  }
+  :global(.calendar-date) {
+    display: grid;
+    place-items: center;
+    aspect-ratio: 1;
+    border-radius: 9px;
+    background: var(--back-grey-1);
+    color: var(--front-3);
+    font-size: 0.82rem;
+    font-weight: 600;
+  }
+  :global(.calendar-date.is-adjacent) {
+    opacity: 0.3;
+  }
+  :global(.calendar-date.is-today) {
+    background: var(--back-red-1);
+    color: #fff;
+  }
+</style>

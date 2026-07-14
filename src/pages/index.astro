@@ -1,12 +1,501 @@
 ---
-// Temporary route shell so navigation can be exercised end to end.
-// The real home page (custom tall hero, cards, carousel, mini calendar)
-// is reconstructed in prompt 05.
-import PageHero from "../components/layout/PageHero.astro";
+import HomeCarousel from "../components/home/HomeCarousel.astro";
+import MiniCalendar from "../components/home/MiniCalendar.astro";
+import SiteHeader from "../components/layout/SiteHeader.astro";
+import CtaLink from "../components/ui/CtaLink.astro";
+import { applicationUrl, homeReels } from "../data/home";
+import { localAssets } from "../data/local-assets";
 import { getPageSeo } from "../data/seo-matrix";
 import BaseLayout from "../layouts/BaseLayout.astro";
+
+const socialBlocks = [
+  {
+    title: "Instagram",
+    text: "Follow us on Instagram for job postings, epic events, memes, and all the GE vibes you need!",
+    label: "See on Instagram",
+    href: "https://www.instagram.com/ge.union/",
+  },
+  {
+    title: "LinkedIn",
+    text: "A community connecting students and graduates! This space helps with career support, job searches, industry insights, and student-relevant job postings from alumni.",
+    label: "LinkedIn Network",
+    href: "https://www.linkedin.com/company/ge-union",
+  },
+  {
+    title: "Reddit",
+    text: "We’re also active on the DTU subreddit! Look out for the GE flair, where we answer questions from future GE students about housing, finances, and student life at DTU.",
+    label: "See on Reddit",
+    href: "https://www.reddit.com/r/DTU/",
+  },
+  {
+    title: "Facebook",
+    text: "Follow us on Facebook for job postings, events, memes, and all the GE vibes you need!",
+    label: "See on Facebook",
+    href: "https://www.facebook.com/people/GE-Union/61573069635006/?_rdr",
+  },
+] as const;
 ---
 
 <BaseLayout seo={getPageSeo("/")}>
-  <PageHero slot="hero" title="GE Union" />
+  <header slot="hero" class="home-hero icon-background home-top">
+    <SiteHeader />
+    <div class="hero-copy">
+      <h1>GE Union</h1><p>
+        Your <strong>community hub</strong> at General Engineering!
+      </p>
+    </div>
+  </header>
+  <section class="feature-grid" aria-label="Student tools">
+    <a class="feature calendar-card" href="/calendar">
+      <h2>
+        Calendar <img src={localAssets.arrow} alt="" width="25" height="24" />
+      </h2>
+      <div class="calendar-body">
+        <p>
+          See all upcoming events, periods, and deadlines all in one place.<br
+          /><br /><span>Everything relevant for GE Students.</span>
+        </p><MiniCalendar /><img
+          class="feature-icon"
+          src={localAssets.calendar}
+          alt=""
+          width="650"
+          height="570"
+        />
+      </div>
+    </a>
+    <a class="feature course-card" href="/course-bank"
+      ><h2>
+        Course Bank <img
+          src={localAssets.arrow}
+          alt=""
+          width="25"
+          height="24"
+        />
+      </h2><p>See notes made by older students for your course!</p><img
+        class="feature-icon"
+        src={localAssets.vault}
+        alt=""
+        width="650"
+        height="570"
+      /></a
+    >
+    <a
+      class="feature dashboard-card"
+      href="/introduction"
+      aria-label="Open student introduction tools"
+      ><h2>
+        Dashboard <img src={localAssets.arrow} alt="" width="25" height="24" />
+      </h2><p>
+        All the relevant tools you will needs as a student studying General
+        Engineering
+      </p><img
+        class="feature-icon"
+        src={localAssets.dashboard}
+        alt=""
+        width="650"
+        height="570"
+      /></a
+    >
+  </section>
+  <section class="centered who-we-are">
+    <img src={localAssets.geLogoSmall} alt="" width="498" height="618" /><h2>
+      Who We Are
+    </h2>
+    <p>
+      GE Union is the student organization for General Engineering at DTU.<br
+      />We bring students together through social events, academic support, and
+      career opportunities.
+    </p>
+    <CtaLink href="/about-geu" arrow>Learn more</CtaLink>
+  </section>
+  <HomeCarousel />
+  <section class="centered join">
+    <h2>Want to join?</h2>
+    <p>
+      GEU is always looking for new people to join our team <span
+        >(especially first years)</span
+      >, so if you like what we do and want to help, or maybe want to use this
+      as a safe space to gain experience, don't hesitate to send in an
+      application! Whether you are interested in IT, event planning, marketing,
+      social media, or contact with industry, we have a team that you will fit
+      right into <span>(all while making sure to have lots of fun)</span>. So
+      what are you waiting for??
+    </p>
+    <CtaLink href={applicationUrl} arrow>Submit your application</CtaLink>
+  </section>
+  <section class="social-panel">
+    <div class="reels" aria-label="Instagram reel previews">
+      {
+        homeReels.map((reel) => (
+          <img
+            src={reel.src}
+            alt={reel.alt}
+            width="540"
+            height="960"
+            loading="lazy"
+          />
+        ))
+      }
+    </div>
+    <div class="social-content">
+      {
+        socialBlocks.map((block) => (
+          <article class="social-block">
+            <>
+              <div>
+                <>
+                  <h2>{block.title}</h2>
+                  <p>{block.text}</p>
+                </>
+              </div>
+              <CtaLink href={block.href} arrow newTab>
+                {block.label}
+              </CtaLink>
+            </>
+          </article>
+        ))
+      }
+      <article class="social-block contact">
+        <div>
+          <h2>Contact us</h2><p class="desktop-contact">
+            You can reach us with any questions at <a
+              href="mailto:geunion.dtu@gmail.com"
+              ><strong>geunion.dtu@gmail.com</strong></a
+            >
+          </p><p class="mobile-contact">
+            Send us an email with any questions or suggestions you have, or drop
+            us a message on Instagram.
+          </p>
+        </div><CtaLink href="mailto:geunion.dtu@gmail.com" arrow
+          >Send Email</CtaLink
+        >
+      </article>
+    </div>
+  </section>
 </BaseLayout>
+
+<script>
+  import { initMiniCalendar } from "../scripts/mini-calendar";
+  document
+    .querySelectorAll<HTMLElement>("[data-mini-calendar]")
+    .forEach((calendar) => initMiniCalendar(calendar));
+</script>
+
+<style>
+  .home-hero {
+    height: 700px;
+    margin: var(--gap1);
+    border-radius: var(--rad1);
+  }
+  .hero-copy {
+    display: grid;
+    place-items: center;
+    padding-top: 55px;
+    color: #fff;
+    text-align: center;
+  }
+  .hero-copy p {
+    font-size: 1.25rem;
+  }
+  .feature-grid {
+    position: relative;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: 1.55fr 1fr;
+    grid-template-rows: 255px 255px;
+    gap: var(--gap2);
+    width: min(1110px, calc(100% - 170px));
+    margin: -290px auto 75px;
+    padding: 8px;
+    border-radius: 16px;
+    background: #fff;
+  }
+  .feature {
+    position: relative;
+    overflow: hidden;
+    padding: 18px 26px;
+    border-radius: 8px;
+    background: var(--back-grey-1);
+    color: var(--front-1);
+    text-decoration: none;
+  }
+  .feature h2 {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    margin: 0;
+    font-family: Tanker, Rubik, sans-serif;
+    font-size: 2.15rem;
+    text-transform: uppercase;
+  }
+  .feature h2 img {
+    width: 0;
+    opacity: 0.65;
+    transition: width 0.2s;
+  }
+  .feature:hover h2 img,
+  .feature:focus-visible h2 img {
+    width: 25px;
+  }
+  .feature p {
+    position: relative;
+    z-index: 2;
+    align-self: center;
+    text-align: center;
+    line-height: 1.15;
+  }
+  .feature-icon {
+    position: absolute;
+    right: -8%;
+    bottom: -29%;
+    width: 64%;
+    height: auto;
+    opacity: 0.15;
+  }
+  .calendar-card {
+    grid-row: 1 / 3;
+  }
+  .calendar-body {
+    display: grid;
+    grid-template-columns: 34% 66%;
+    align-items: center;
+    height: calc(100% - 48px);
+  }
+  .calendar-body p {
+    padding-right: 18px;
+    text-align: left;
+  }
+  .calendar-body span {
+    color: var(--front-2);
+  }
+  .course-card,
+  .dashboard-card {
+    display: grid;
+    grid-template-rows: auto 1fr;
+  }
+  .centered {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: min(900px, calc(100% - 40px));
+    margin-inline: auto;
+    text-align: center;
+  }
+  .centered h2 {
+    margin-bottom: 22px;
+  }
+  .centered p {
+    margin-bottom: 24px;
+  }
+  .who-we-are {
+    margin-bottom: 20px;
+  }
+  .who-we-are > img {
+    width: 22px;
+    height: 28px;
+    margin-bottom: 55px;
+    opacity: 0.4;
+  }
+  .join {
+    margin-bottom: 150px;
+  }
+  .join span {
+    color: var(--front-3);
+  }
+  .social-panel {
+    position: relative;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(600px, 2.1fr);
+    min-height: 880px;
+    margin: var(--gap1);
+    overflow: hidden;
+    border-radius: var(--rad1);
+    background: var(--back-grey-1);
+  }
+  .reels {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 12px;
+    overflow: hidden;
+    opacity: 0.93;
+  }
+  .reels img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+  .reels img:nth-child(odd) {
+    translate: 0 -65px;
+  }
+  .social-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 52px;
+    padding: 65px 9%;
+    background: var(--back-grey-1);
+  }
+  .social-block {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    gap: 30px;
+  }
+  .social-block h2 {
+    margin-bottom: 14px;
+  }
+  .social-block p {
+    max-width: 680px;
+  }
+  .social-block :global(.cta-link) {
+    min-width: 215px;
+  }
+  .social-block a:not(.cta-link) {
+    color: inherit;
+    text-decoration: none;
+  }
+  .mobile-contact {
+    display: none;
+  }
+  @media (max-width: 991px) {
+    .home-hero {
+      height: 560px;
+    }
+    .feature-grid {
+      width: min(900px, calc(100% - 100px));
+      margin-top: -215px;
+    }
+    .calendar-body {
+      display: block;
+    }
+    .calendar-body :global(.mini-calendar) {
+      display: none;
+    }
+    .calendar-body p {
+      padding: 55px 9% 0;
+      text-align: center;
+    }
+    .social-panel {
+      grid-template-columns: 1fr;
+    }
+    .reels {
+      display: none;
+    }
+  }
+  @media (max-width: 767px) {
+    .home-hero {
+      height: 430px;
+    }
+    .hero-copy {
+      padding-top: 30px;
+    }
+    .feature-grid {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(3, 200px);
+      width: calc(100% - 32px);
+      margin-top: -155px;
+    }
+    .calendar-card {
+      grid-row: auto;
+    }
+    .calendar-body {
+      display: block;
+      height: auto;
+    }
+    .calendar-body :global(.mini-calendar) {
+      display: none;
+    }
+    .calendar-body p {
+      padding: 18px 12%;
+      text-align: center;
+    }
+    .calendar-body p span {
+      display: none;
+    }
+    .feature-icon {
+      right: -9%;
+      bottom: -70%;
+      width: 65%;
+    }
+    .course-card,
+    .dashboard-card {
+      grid-template-rows: auto 1fr;
+    }
+    .centered {
+      width: calc(100% - 55px);
+    }
+    .who-we-are {
+      margin-top: 35px;
+    }
+    .who-we-are > img {
+      margin-bottom: 60px;
+    }
+    .join {
+      margin-bottom: 105px;
+    }
+    .social-content {
+      gap: 58px;
+      padding: 65px 28px;
+    }
+    .social-block {
+      grid-template-columns: 1fr;
+      justify-items: center;
+      gap: 20px;
+    }
+    .social-block h2 {
+      text-align: left;
+    }
+    .social-block :global(.cta-link) {
+      min-width: auto;
+    }
+    .desktop-contact {
+      display: none;
+    }
+    .mobile-contact {
+      display: block;
+    }
+  }
+  @media (max-width: 479px) {
+    .home-hero {
+      height: 400px;
+    }
+    .hero-copy {
+      padding: 10px 22px 0;
+    }
+    .hero-copy h1 {
+      font-size: 3.45rem;
+    }
+    .hero-copy p {
+      font-size: 1rem;
+    }
+    .feature-grid {
+      grid-template-rows: repeat(3, 185px);
+      margin-top: -146px;
+    }
+    .feature {
+      padding: 14px;
+    }
+    .feature h2 {
+      font-size: 1.9rem;
+    }
+    .feature p {
+      font-size: 0.86rem;
+    }
+    .feature h2 img {
+      width: 21px;
+      opacity: 0.65;
+    }
+    .who-we-are p,
+    .join p {
+      font-size: 0.87rem;
+    }
+    .social-panel {
+      min-height: 0;
+    }
+  }
+</style>

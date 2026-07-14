@@ -13,6 +13,11 @@ export const localAssets = {
   geuIcon: "/assets/logos/geu-icon.svg",
   /** CTA arrow glyph (legacy Arrow_…). */
   arrow: "/assets/icons/arrow.svg",
+  calendar: "/assets/icons/calendar.svg",
+  vault: "/assets/icons/vault.svg",
+  dashboard: "/assets/icons/dashboard.svg",
+  geLogoSmall: "/assets/logos/ge-logo-small.svg",
+  envelope: "/assets/icons/envelope-letter.svg",
   /** Site favicon (legacy 270 KB .ico, kept for fidelity — revisit). */
   favicon: "/assets/favicon.ico",
 } as const;
