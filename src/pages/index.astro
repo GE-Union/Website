@@ -45,7 +45,7 @@ const socialBlocks = [
       </p>
     </div>
   </header>
-  <section class="feature-grid" aria-label="Student tools">
+  <section class="feature-grid">
     <a class="feature calendar-card" href="/calendar">
       <h2>
         Calendar <img src={localAssets.arrow} alt="" width="25" height="24" />
@@ -79,10 +79,7 @@ const socialBlocks = [
         height="570"
       /></a
     >
-    <a
-      class="feature dashboard-card"
-      href="/introduction"
-      aria-label="Open student introduction tools"
+    <a class="feature dashboard-card" href="/introduction"
       ><h2>
         Dashboard <img src={localAssets.arrow} alt="" width="25" height="24" />
       </h2><p>
@@ -124,7 +121,7 @@ const socialBlocks = [
     <CtaLink href={applicationUrl} arrow>Submit your application</CtaLink>
   </section>
   <section class="social-panel">
-    <div class="reels" aria-label="Instagram reel previews">
+    <section class="reels">
       {
         homeReels.map((reel) => (
           <img
@@ -136,7 +133,7 @@ const socialBlocks = [
           />
         ))
       }
-    </div>
+    </section>
     <div class="social-content">
       {
         socialBlocks.map((block) => (

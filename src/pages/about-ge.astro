@@ -1,8 +1,33 @@
 ---
-// Temporary route shell; page sections arrive in prompt 06.
 import PageHero from "../components/layout/PageHero.astro";
+import ContentSection from "../components/content/ContentSection.astro";
+import { dtuEctsChart } from "../data/external-assets";
+import { localAssets } from "../data/local-assets";
 import { getPageSeo } from "../data/seo-matrix";
 import BaseLayout from "../layouts/BaseLayout.astro";
+
+const specialisations = [
+  {
+    title: "Advanced Materials",
+    icon: localAssets.specialisationAdvanced,
+    text: "Focus on developing new sustainable and functional materials for manufacturing, nanotechnology, acoustics, and physics. This track prepares you to innovate in creating materials that will shape industries and future technologies.",
+  },
+  {
+    title: "Cyber Systems",
+    icon: localAssets.specialisationCyber,
+    text: "Dive into computers, artificial intelligence, data analytics, modelling, software and hardware development. This specialisation equips you to work with cutting-edge technologies in computing and digital systems.",
+  },
+  {
+    title: "Living Systems",
+    icon: localAssets.specialisationLiving,
+    text: "Explore engineering related to all living things including aquatic systems, medicine, healthcare, and food production. This specialisation connects biology, chemistry, and technology to create sustainable solutions that improve health and protect the environment.",
+  },
+  {
+    title: "Future Energy",
+    icon: localAssets.specialisationEnergy,
+    text: "Work on creating a sustainable world by developing renewable energy technologies such as wind and solar power, electrolysis, applied chemistry, and entrepreneurship. This specialisation focuses on the energy solutions of tomorrow.",
+  },
+];
 ---
 
 <BaseLayout seo={getPageSeo("/about-ge")}>
@@ -11,4 +36,149 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     title="about GE"
     subtitle="Information about the Studyline and Future Opportunities"
   />
+  <div class="icon-row" aria-hidden="true">
+    {specialisations.map((item) => <img src={item.icon} alt="" />)}
+  </div>
+  <ContentSection>
+    <div class="intro">
+      <p class="lead">The Bachelor of Science in General Engineering at DTU</p>
+      <p>But we like to call it <strong>GE</strong>.</p>
+    </div>
+    <p>
+      It's a three-year international programme that gives you a strong
+      foundation in mathematics, physics, chemistry, and biotechnology. It
+      teaches you to collaborate across disciplines and apply engineering skills
+      to real-world challenges. Through practical design-build projects, you
+      will develop problem-solving abilities and learn how to work effectively
+      in diverse teams. Studying in an international environment with courses
+      taught in English, you’ll gain the broad competences needed to become an
+      innovative engineer ready to shape the future.
+    </p>
+
+    <h2>Curriculum</h2>
+    <h3>Polytechnical Foundations <span>The Core Stuff</span></h3>
+    <p>
+      The polytechnical foundation is basically all the main general subjects
+      every GE student will have to take, which include Chemistry,
+      Bioengineering, Physics, Programming, Statistics, and Mathematics. Some
+      are more of a pain than others, but the main point is to bring all
+      students to a general standard across all these base subjects.
+    </p>
+    <img
+      class="curriculum"
+      src={dtuEctsChart}
+      alt="ECTS credit distribution across the General Engineering curriculum"
+      loading="lazy"
+    />
+
+    <h3>Specialisations <span>The Branches</span></h3>
+    <p>
+      After completing the core courses in General Engineering, you can choose
+      to specialise in one of four areas. Each specialisation builds on your
+      broad engineering foundation and prepares you for specific industries and
+      career paths:
+    </p>
+    <div class="cards">
+      {
+        specialisations.map((item) => (
+          <article>
+            <>
+              <img src={item.icon} alt="" />
+              <h3>{item.title}</h3>
+              <p>{item.text}</p>
+            </>
+          </article>
+        ))
+      }
+    </div>
+
+    <h2>DTU Course Analyzer</h2>
+    <p>
+      If you wish to learn more about different courses and what previous
+      students thought of them, you can check out <a
+        href="https://dtucourseanalyzer.pythonanywhere.com/"
+        >DTU Course Analyzer</a
+      >. It is a student made website that gives a lot of info about courses
+      like pass rate, average grades but most importantly student opinions on
+      lecturers :D (very important)
+    </p>
+  </ContentSection>
 </BaseLayout>
+
+<style>
+  .icon-row {
+    display: flex;
+    justify-content: center;
+    gap: 55px;
+    margin: 55px 0 -45px;
+  }
+  .icon-row img {
+    width: 28px;
+    height: 28px;
+    opacity: 0.3;
+  }
+  .intro {
+    text-align: center;
+    margin-bottom: 18px;
+  }
+  .lead {
+    font-weight: 700;
+    font-size: 1.15rem;
+  }
+  h2 {
+    margin-top: 70px;
+  }
+  h3 {
+    margin: 22px 0 20px;
+    font-size: 1.05rem;
+  }
+  h3 span {
+    color: #999;
+    margin-left: 10px;
+  }
+  a {
+    color: inherit;
+  }
+  .curriculum {
+    display: block;
+    width: min(100%, 650px);
+    margin: 30px auto;
+  }
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-top: 22px;
+  }
+  article {
+    position: relative;
+    min-height: 230px;
+    padding: 22px;
+    overflow: hidden;
+    border-radius: 16px;
+    background: #eee;
+  }
+  article img {
+    position: absolute;
+    right: 8px;
+    top: 12px;
+    width: 120px;
+    opacity: 0.1;
+  }
+  article h3,
+  article p {
+    position: relative;
+  }
+  @media (max-width: 600px) {
+    .cards {
+      grid-template-columns: 1fr;
+    }
+    .icon-row {
+      gap: 30px;
+    }
+    h3 span {
+      display: block;
+      margin: 5px 0 0;
+    }
+  }
+</style>

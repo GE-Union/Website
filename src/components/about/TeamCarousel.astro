@@ -1,0 +1,129 @@
+---
+import { carouselImages } from "../../data/external-assets";
+
+const teams = [
+  { name: "Event Team", src: carouselImages[6] },
+  { name: "Website Team", src: carouselImages[10] },
+  { name: "Marketing Team", src: carouselImages[8] },
+  { name: "Partnerships Team", src: carouselImages[9] },
+  { name: "Leadership Team", src: carouselImages[7] },
+];
+---
+
+<section
+  class="carousel"
+  aria-label="GE Union teams"
+  data-carousel
+  tabindex="0"
+>
+  <div class="viewport">
+    <div class="track" data-carousel-track>
+      {
+        teams.map((team, index) => (
+          <figure
+            class="slide"
+            data-carousel-slide
+            aria-hidden={index !== 0 ? "true" : undefined}
+          >
+            <img
+              src={team.src}
+              alt={`${team.name} group photo`}
+              width="900"
+              height="600"
+              loading="lazy"
+              draggable="false"
+            />
+            <figcaption>{team.name}</figcaption>
+          </figure>
+        ))
+      }
+    </div>
+  </div>
+  <button
+    class="control previous"
+    type="button"
+    aria-label="Previous team"
+    data-carousel-previous>‹</button
+  >
+  <button
+    class="control next"
+    type="button"
+    aria-label="Next team"
+    data-carousel-next>›</button
+  >
+  <p class="visually-hidden" aria-live="polite" data-carousel-status></p>
+</section>
+
+<script>
+  import { initCarousels } from "../../scripts/carousel";
+  initCarousels();
+</script>
+
+<style>
+  .carousel {
+    position: relative;
+    width: 100%;
+    margin: 38px 0 90px;
+    overflow: hidden;
+    touch-action: pan-y;
+  }
+  .viewport {
+    overflow: hidden;
+  }
+  .track {
+    display: flex;
+    gap: 14px;
+    transform: translateX(calc(-1 * var(--slide-index, 0) * (31vw + 14px)));
+    transition: transform 0.45s ease;
+  }
+  .slide {
+    flex: 0 0 31vw;
+    margin: 0;
+    text-align: center;
+  }
+  img {
+    width: 100%;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+    border-radius: 8px;
+    user-select: none;
+  }
+  figcaption {
+    margin-top: 3px;
+    font-size: 0.82rem;
+  }
+  .control {
+    position: absolute;
+    top: 42%;
+    display: grid;
+    place-items: center;
+    width: 38px;
+    height: 44px;
+    border: 0;
+    border-radius: 50%;
+    background: rgb(255 255 255 / 0.92);
+    color: var(--front-1);
+    font-size: 34px;
+    cursor: pointer;
+  }
+  .previous {
+    left: 8px;
+  }
+  .next {
+    right: 8px;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .track {
+      transition: none;
+    }
+  }
+  @media (max-width: 767px) {
+    .track {
+      gap: 8px;
+      transform: translateX(calc(-1 * var(--slide-index, 0) * (78vw + 8px)));
+    }
+    .slide {
+      flex-basis: 78vw;
+    }
+  }
+</style>

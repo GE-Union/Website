@@ -1,8 +1,8 @@
 ---
-// Temporary route shell; page sections arrive in prompt 06.
-// The title duplicates /about-ge's on the legacy site — preserved in the
-// SEO matrix and flagged in docs/content-review.md for the owners.
+import ContentSection from "../components/content/ContentSection.astro";
+import MediaTextSplit from "../components/content/MediaTextSplit.astro";
 import PageHero from "../components/layout/PageHero.astro";
+import { localAssets } from "../data/local-assets";
 import { getPageSeo } from "../data/seo-matrix";
 import BaseLayout from "../layouts/BaseLayout.astro";
 ---
@@ -13,4 +13,97 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     title="about DTU"
     subtitle="Learn more about Europe's best technical university"
   />
+  <ContentSection>
+    <MediaTextSplit>
+      <img
+        slot="media"
+        src={localAssets.dtuLogo}
+        alt="Technical University of Denmark logo"
+      />
+      <h2>What is DTU?</h2>
+      <p>
+        DTU is undoubtedly the best engineering university in europe (<a
+          href="https://engirank.eu/">click here for proof</a
+        >). Founded by H.C. Ørsted 1829 in, not only does it have great
+        facilities and amazing teachers (like Steeven), but DTU has been heavly
+        involved in inovations in fields such as Biotechnology, Materials
+        Science or even inventing the modern wind turbine (wow!). The main
+        campus situated in the north of Copenhagen in a rich city called Lyngby,
+        (if the public transports actually work), it is about a 40-50min
+        train/bus ride, 20min drive or about a 3h walk from the center.
+      </p>
+    </MediaTextSplit>
+
+    <section class="block">
+      <h2>What the hell is PF?</h2>
+      <MediaTextSplit reverse>
+        <img
+          slot="media"
+          src={localAssets.pfLogo}
+          alt="Polyteknisk Forening logo"
+        />
+        <p>
+          <a href="https://www.pf.dk/en">PF</a> is basically the mother of all DTU
+          student organisations. As a general rule, If an organisation is student-led,
+          it's surely somehow a part of PF (except for <a
+            href="https://nul-kryds.dk/">Nul-Kryds</a
+          > for some reason?). This is mainly because PF predates the Danish constitution
+          and is almost as old as DTU itself (founded in 1845). As a piece of DTU
+          admin lore, PF and Nul-kryds are the 2 only student oganisations that DTU
+          recognises and gives funding to. All other organisations need to receive
+          their funds from PF.
+        </p>
+      </MediaTextSplit>
+      <h3>S-Huset</h3>
+      <p>
+        You might have already been to S-Huset (student house) for a beer or
+        maybe for a sandwich at the café. If you have, you can thank PF for
+        that. Unlike the 4 DTU-sponsored "Friday Bars" (Hegnet, Diamenten,
+        Ether, Diagonalen) that are open from 14 to 21 on Fridays, S-Huset is
+        independent and stays open till 1 on weekdays and 3 am on Fridays. It's
+        a great bar that you can chill at from lunch time to late evening,
+        playing pool, foosball, or ping pong with cheap beer!
+      </p>
+    </section>
+
+    <section class="block">
+      <h2>What the hell is IDA?</h2>
+      <MediaTextSplit reverse>
+        <img slot="media" src={localAssets.idaLogo} alt="IDA logo" />
+        <p>
+          Simply put, IDA is a gift from god for DTU students; they're a trade
+          union, but they also offer free home insurance for STEM students in
+          Denmark. They are the people to talk to for everything regarding
+          grown-up stuff, such as CV &amp; career help, contracts &amp; legal
+          documents, salary negotiation, and they also organise plenty of
+          events, both professional and just fun. You can check out their
+          website here: <a href="https://english.ida.dk/">IDA english website</a
+          >
+        </p>
+      </MediaTextSplit>
+      <p>
+        Most importantly, make sure to apply for their free home insurance; it's
+        free and covers so much. After signing up (for free), you could spill
+        coffee on your laptop, and they'll pay for it. As I said, a gift from
+        god.
+      </p>
+    </section>
+  </ContentSection>
 </BaseLayout>
+
+<style>
+  .block {
+    margin-top: 100px;
+  }
+  h3 {
+    margin: 28px 0 20px;
+  }
+  a {
+    color: inherit;
+  }
+  @media (max-width: 767px) {
+    .block {
+      margin-top: 65px;
+    }
+  }
+</style>

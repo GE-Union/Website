@@ -1,8 +1,30 @@
 ---
-// Temporary route shell; page sections arrive in prompt 06.
+import TeamCarousel from "../components/about/TeamCarousel.astro";
+import ContentSection from "../components/content/ContentSection.astro";
 import PageHero from "../components/layout/PageHero.astro";
+import CtaLink from "../components/ui/CtaLink.astro";
+import { localAssets } from "../data/local-assets";
 import { getPageSeo } from "../data/seo-matrix";
 import BaseLayout from "../layouts/BaseLayout.astro";
+
+const teams = [
+  {
+    title: "Events 🎫",
+    text: "From Exam Brush-Up sessions to Grill Parties, we host all sorts of events to save your exams, help unwind, and help you bond across years. All events are designed to help us meet new people, open doors of opportunity, and build a strong social community.",
+  },
+  {
+    title: "Website 🌐",
+    text: "All the knowledge about GE – no fluff. We’ve bundled the hacks we wish we had into one place: honest takes on the four specialisations, past exams, revised notes, formula booklets, and a deadline calendar. Most importantly, it’s about sharing and supporting each other so no one has to study alone.",
+  },
+  {
+    title: "Marketing 📈",
+    text: "No good events without good marketing!\nOur creative minds of this team work hard to get the word out about any and all GE and GE Union related activities. Be that online with Instagram, LinkedIn and Facebook, or in person with flyers and the good 'ol word of mouth.",
+  },
+  {
+    title: "Partnerships💼",
+    text: "From company visits to career tips, we connect you with opportunities worth grabbing. You’ll meet industry professionals, hear what companies actually look for, and get a feel for different fields. Along the way, you build a network that could kickstart your career, while picking up the tools to stand out.",
+  },
+];
 ---
 
 <BaseLayout seo={getPageSeo("/about-geu")}>
@@ -11,4 +33,140 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     title="about GE Union"
     subtitle="Who are we and why are we here?"
   />
+  <ContentSection>
+    <div class="identity-row">
+      <section class="identity icon-background">
+        <h2>who we are</h2>
+        <p>GEU is a student-led community hub</p>
+        <strong>by GE students<br />for GE students</strong>
+      </section>
+      <section>
+        <h2>Our Goal</h2><p>
+          Our goal is to turn GE into one close, supportive community. We want
+          to create connections across all three years, helping you meet people
+          you wouldn’t normally meet, showing you the academic opportunities DTU
+          offers, and keeping you updated on all that is relevant for a GE
+          student. All in all, we want to better your social and academic life
+          as a student in GE.
+        </p>
+      </section>
+    </div>
+  </ContentSection>
+  <img class="divider" src={localAssets.geLogoSmall} alt="" />
+  <section class="teams-section">
+    <h2>Our Teams</h2>
+    <div class="team-cards">
+      {
+        teams.map((team) => (
+          <article>
+            <>
+              <h3>{team.title}</h3>
+              <p>{team.text}</p>
+            </>
+          </article>
+        ))
+      }
+    </div>
+    <TeamCarousel />
+  </section>
+  <img class="divider" src={localAssets.geLogoSmall} alt="" />
+  <ContentSection>
+    <section class="join">
+      <h2>Want to Join?</h2>
+      <p>
+        GEU is always looking for new people to join our team <span
+          >(especially first years)</span
+        >, so if you like what we do and want to help, or maybe want to use this
+        as a safe space to gain experience, don't hesitate to send in an
+        application! Whether you are interested in IT, event planning,
+        marketing, social media, or contact with industry, we have a team that
+        you will fit right into <span
+          >(all while making sure to have lots of fun)</span
+        >. So what are you waiting for??
+      </p>
+      <CtaLink
+        href="https://docs.google.com/forms/d/e/1FAIpQLScu14PgRWRO-iJ6uEs9s8lNS5QsuPb0HNvI8OY9KIkB9he5VQ/viewform?usp=header"
+        arrow>Submit your application</CtaLink
+      >
+    </section>
+  </ContentSection>
 </BaseLayout>
+
+<style>
+  .identity-row {
+    display: grid;
+    grid-template-columns: 1fr 1.4fr;
+    align-items: center;
+    gap: 45px;
+  }
+  .identity {
+    padding: 28px 34px;
+    border-radius: 16px;
+    color: white;
+    box-shadow: 7px 9px 20px #0002;
+  }
+  .identity h2 {
+    font-family: Tanker, Rubik, sans-serif;
+    text-transform: uppercase;
+  }
+  .identity p {
+    font-weight: 700;
+  }
+  .identity strong {
+    display: block;
+    font-family: Tanker, Rubik, sans-serif;
+    font-size: 2.5rem;
+    line-height: 1.1;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .divider {
+    width: 24px;
+    height: 32px;
+    margin: 50px auto;
+    opacity: 0.3;
+    object-fit: cover;
+    object-position: left;
+  }
+  .teams-section {
+    text-align: center;
+  }
+  .team-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+    padding: 0 20px;
+  }
+  article {
+    padding: 25px 18px;
+    border-radius: 16px;
+    background: #eee;
+    white-space: pre-line;
+  }
+  article h3 {
+    margin: 0 0 20px;
+  }
+  .join {
+    text-align: center;
+  }
+  .join p {
+    margin-bottom: 30px;
+  }
+  .join span {
+    color: #999;
+  }
+  @media (max-width: 900px) {
+    .team-cards {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  @media (max-width: 600px) {
+    .identity-row,
+    .team-cards {
+      grid-template-columns: 1fr;
+    }
+    .identity strong {
+      font-size: 2rem;
+    }
+  }
+</style>

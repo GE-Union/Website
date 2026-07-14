@@ -18,6 +18,13 @@ export const localAssets = {
   dashboard: "/assets/icons/dashboard.svg",
   geLogoSmall: "/assets/logos/ge-logo-small.svg",
   envelope: "/assets/icons/envelope-letter.svg",
+  dtuLogo: "/assets/about/dtu-logo.svg",
+  pfLogo: "/assets/about/pf.png",
+  idaLogo: "/assets/about/ida.png",
+  specialisationAdvanced: "/assets/about/specialisation-advanced.svg",
+  specialisationCyber: "/assets/about/specialisation-cyber.svg",
+  specialisationLiving: "/assets/about/specialisation-living.svg",
+  specialisationEnergy: "/assets/about/specialisation-energy.svg",
   /** Site favicon (legacy 270 KB .ico, kept for fidelity — revisit). */
   favicon: "/assets/favicon.ico",
 } as const;

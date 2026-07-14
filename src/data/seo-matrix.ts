@@ -58,11 +58,9 @@ export const seoMatrix: Record<Route, RouteSeo> = {
     robots: { index: true, follow: true },
   },
   "/about-dtu": {
-    // Legacy title/description duplicate /about-ge's — flagged in
-    // docs/content-review.md; preserved verbatim until the owners decide.
-    title: "About General Engineering",
+    title: "About DTU",
     description:
-      "Find anything you want to know about General Engineering: Structure, Specialisations, Life, etc.",
+      "Learn more about DTU, its student organisations PF and S-Huset, and the Danish Society of Engineers, IDA.",
     robots: { index: true, follow: true },
   },
   "/course-bank": {
