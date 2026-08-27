@@ -1,5 +1,5 @@
 ---
-// Temporary route shell; the FullCalendar page arrives in prompt 08.
+import EventCalendar from "../components/calendar/EventCalendar.astro";
 import PageHero from "../components/layout/PageHero.astro";
 import { getPageSeo } from "../data/seo-matrix";
 import BaseLayout from "../layouts/BaseLayout.astro";
@@ -11,4 +11,5 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     title="Calendar"
     subtitle="Find events, parties and meetings - both on and off campus."
   />
+  <EventCalendar />
 </BaseLayout>

@@ -1,0 +1,363 @@
+---
+import { eventCalendarConfig } from "../../data/calendar";
+
+const apiKey = import.meta.env.PUBLIC_GOOGLE_CALENDAR_API_KEY?.trim() ?? "";
+---
+
+<section
+  class="event-calendar"
+  aria-label="GE Union events"
+  data-event-calendar
+  data-api-key={apiKey}
+  data-calendar-id={eventCalendarConfig.googleCalendarId}
+  data-cutoff-hour={eventCalendarConfig.lateNightCutoffHour}
+  data-locale={eventCalendarConfig.locale}
+  data-calendar-state="loading"
+>
+  <p class="visually-hidden" aria-live="polite" data-calendar-live>
+    Loading calendar events…
+  </p>
+
+  <div class="calendar-notice" data-calendar-notice>
+    <p data-calendar-notice-text>Loading calendar events…</p>
+    <button type="button" data-calendar-retry hidden>Retry</button>
+  </div>
+
+  <div class="calendar-grid" data-calendar-grid aria-busy="true"></div>
+
+  <noscript>
+    <p class="calendar-noscript">
+      JavaScript is required to load calendar events.
+    </p>
+  </noscript>
+
+  <dialog
+    class="event-dialog"
+    data-event-dialog
+    aria-labelledby="event-dialog-title"
+  >
+    <div class="event-dialog-card">
+      <button
+        type="button"
+        class="event-dialog-close"
+        data-event-dialog-close
+        aria-label="Close event details"
+      >
+        <svg aria-hidden="true" viewBox="0 0 16 16">
+          <path d="M3 3l10 10M13 3 3 13"></path>
+        </svg>
+      </button>
+
+      <h2 id="event-dialog-title" data-event-title>Event details</h2>
+
+      <dl class="event-meta">
+        <div>
+          <dt>Date</dt>
+          <dd data-event-date></dd>
+        </div>
+        <div data-event-time-row>
+          <dt>Time</dt>
+          <dd data-event-time></dd>
+        </div>
+        <div data-event-location-row>
+          <dt>Place</dt>
+          <dd data-event-location></dd>
+        </div>
+      </dl>
+
+      <p class="event-description" data-event-description></p>
+    </div>
+  </dialog>
+</section>
+
+<script>
+  import { initEventCalendars } from "../../scripts/event-calendar";
+
+  initEventCalendars();
+</script>
+
+<style>
+  .event-calendar {
+    width: auto;
+    min-width: 0;
+    margin: 80px calc(3 * var(--gap1));
+  }
+
+  .calendar-notice,
+  .calendar-noscript {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    min-height: 44px;
+    padding: 9px 14px;
+    margin: 0 0 18px;
+    border: 1px solid var(--back-grey-1);
+    border-radius: var(--rad2);
+    background: var(--back-grey-2);
+    color: var(--front-2);
+    font-size: 0.9rem;
+    text-align: center;
+  }
+
+  .calendar-notice[hidden] {
+    display: none;
+  }
+
+  .calendar-notice button {
+    flex: 0 0 auto;
+    padding: 5px 14px;
+    border: 0;
+    border-radius: 7px;
+    background: var(--action-red);
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  .calendar-grid {
+    min-width: 0;
+  }
+
+  .calendar-grid :global(.fc-daygrid-day-number) {
+    color: inherit;
+    text-decoration: none;
+    user-select: none;
+  }
+
+  .calendar-grid :global(.fc-button-primary) {
+    border-color: var(--back-red-1) !important;
+    background: var(--back-red-1) !important;
+    color: white !important;
+    box-shadow: none !important;
+  }
+
+  .calendar-grid :global(.fc-button-primary:hover),
+  .calendar-grid :global(.fc-button-primary:focus-visible) {
+    border-color: var(--action-red) !important;
+    background: var(--action-red) !important;
+  }
+
+  .calendar-grid :global(.fc-button-primary:disabled) {
+    opacity: 0.65;
+  }
+
+  .calendar-grid :global(.fc-event) {
+    border-color: var(--back-red-1) !important;
+    background: var(--back-red-1) !important;
+    color: white !important;
+    cursor: pointer;
+  }
+
+  .calendar-grid :global(.fc-event-title) {
+    padding: 0 4px;
+    overflow: hidden;
+    font-weight: 400;
+    text-overflow: ellipsis;
+  }
+
+  .calendar-grid :global(.fc-scrollgrid td) {
+    border: 1px solid var(--back-grey-1);
+  }
+
+  .calendar-grid :global(.fc-scrollgrid),
+  .calendar-grid :global(.fc-col-header-cell),
+  .calendar-grid :global(.fc-scrollgrid th) {
+    border: 0 !important;
+  }
+
+  .calendar-grid :global(.fc-day-today) {
+    border-radius: 0 !important;
+    background: rgb(237 104 115 / 0.17) !important;
+    box-shadow: 0 0 80px rgb(237 104 115 / 0.1);
+  }
+
+  .calendar-grid :global(.fc-day-today .fc-daygrid-day-number) {
+    font-weight: 600;
+  }
+
+  .calendar-grid :global(.fc-daygrid-day-frame) {
+    min-height: 110px;
+  }
+
+  .calendar-grid :global(.fc-daygrid-day-top) {
+    margin-bottom: -7px;
+  }
+
+  .calendar-grid :global(.fc-daygrid-day-events) {
+    margin-bottom: 2px !important;
+  }
+
+  .event-dialog {
+    width: min(620px, calc(100vw - 40px));
+    max-width: 620px;
+    max-height: min(760px, calc(100dvh - 40px));
+    padding: 0;
+    border: 0;
+    border-radius: var(--rad1);
+    background: var(--background);
+    color: var(--front-1);
+    box-shadow: 0 24px 70px #0004;
+  }
+
+  .event-dialog::backdrop {
+    background: #1d1d1d61;
+    backdrop-filter: blur(4px);
+  }
+
+  .event-dialog-card {
+    position: relative;
+    padding: 42px;
+    overflow: auto;
+  }
+
+  .event-dialog-card::before {
+    position: absolute;
+    content: "";
+    width: 9px;
+    inset: 42px auto 42px 0;
+    border-radius: 0 8px 8px 0;
+    background: var(--back-red-1);
+  }
+
+  .event-dialog h2 {
+    padding-right: 40px;
+    margin: 0 0 28px;
+    font-size: 1.7rem;
+    line-height: 1.15;
+    overflow-wrap: anywhere;
+  }
+
+  .event-dialog-close {
+    position: absolute;
+    top: 22px;
+    right: 22px;
+    display: grid;
+    place-items: center;
+    width: 38px;
+    height: 38px;
+    padding: 9px;
+    border: 0;
+    border-radius: 50%;
+    background: var(--back-grey-2);
+    color: var(--front-1);
+    cursor: pointer;
+  }
+
+  .event-dialog-close:hover {
+    background: var(--back-grey-1);
+  }
+
+  .event-dialog-close svg {
+    fill: none;
+    stroke: currentColor;
+    stroke-linecap: round;
+    stroke-width: 1.6;
+  }
+
+  .event-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 0;
+  }
+
+  .event-meta > div {
+    display: grid;
+    grid-template-columns: 74px minmax(0, 1fr);
+    gap: 12px;
+  }
+
+  .event-meta > div[hidden] {
+    display: none;
+  }
+
+  .event-meta dt {
+    color: var(--front-2);
+    font-weight: 600;
+  }
+
+  .event-meta dd {
+    margin: 0;
+    overflow-wrap: anywhere;
+  }
+
+  .event-description {
+    padding-top: 24px;
+    margin-top: 26px;
+    border-top: 1px solid var(--back-grey-1);
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+  }
+
+  .event-description:empty {
+    display: none;
+  }
+
+  @media (max-width: 767px) {
+    .event-calendar {
+      margin: 70px 0;
+    }
+
+    .calendar-notice,
+    .calendar-noscript {
+      margin-right: calc(2 * var(--gap1));
+      margin-left: calc(2 * var(--gap1));
+    }
+
+    .calendar-grid :global(.fc-header-toolbar) {
+      margin-right: calc(2 * var(--gap1));
+      margin-left: calc(2 * var(--gap1));
+    }
+
+    .calendar-grid :global(.fc-view-harness) {
+      overflow-x: auto;
+      overflow-y: hidden;
+      overscroll-behavior-x: contain;
+      scrollbar-width: thin;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .calendar-grid :global(.fc-scrollgrid) {
+      min-width: 650px;
+      font-size: 0.7em;
+    }
+
+    .calendar-grid :global(.fc-daygrid-day-frame) {
+      min-height: 75px;
+    }
+
+    .calendar-grid :global(.fc-button) {
+      padding: 0 5px !important;
+    }
+
+    .calendar-grid :global(.fc-button .fc-icon) {
+      font-size: 20px !important;
+    }
+
+    .calendar-grid :global(.fc-toolbar-title) {
+      padding-left: 10px;
+      font-size: 18px !important;
+      text-align: center;
+    }
+  }
+
+  @media (max-width: 479px) {
+    .event-dialog-card {
+      padding: 34px 28px;
+    }
+
+    .event-dialog-card::before {
+      inset-block: 34px;
+    }
+
+    .event-dialog h2 {
+      font-size: 1.45rem;
+    }
+
+    .event-meta > div {
+      grid-template-columns: 62px minmax(0, 1fr);
+      gap: 8px;
+    }
+  }
+</style>
