@@ -35,6 +35,13 @@ const socialBlocks = [
     href: "https://www.facebook.com/people/GE-Union/61573069635006/?_rdr",
   },
 ] as const;
+
+const reelColumns = [
+  { position: "lower", reels: homeReels.slice(0, 1) },
+  { position: "level", reels: homeReels.slice(1, 3) },
+  { position: "raised", reels: homeReels.slice(3, 5) },
+  { position: "level", reels: homeReels.slice(5, 6) },
+] as const;
 ---
 
 <BaseLayout seo={getPageSeo("/")}>
@@ -121,14 +128,18 @@ const socialBlocks = [
   <section class="social-panel">
     <section class="reels">
       {
-        homeReels.map((reel) => (
-          <img
-            src={reel.src}
-            alt={reel.alt}
-            width="540"
-            height="960"
-            loading="lazy"
-          />
+        reelColumns.map((column) => (
+          <div class:list={["reel-column", column.position]}>
+            {column.reels.map((reel) => (
+              <img
+                src={reel.src}
+                alt={reel.alt}
+                width="540"
+                height="960"
+                loading="lazy"
+              />
+            ))}
+          </div>
         ))
       }
     </section>
@@ -190,6 +201,8 @@ const socialBlocks = [
   .home-stage {
     --hero-height: 57vh;
     --feature-height: clamp(440px, 62vh, 550px);
+    position: relative;
+    height: clamp(650px, calc(100vh - 2 * var(--gap1)), 950px);
     margin: var(--gap1) var(--gap1) 84px;
   }
   .home-hero {
@@ -214,18 +227,21 @@ const socialBlocks = [
     font-size: 1.3rem;
   }
   .feature-grid {
-    position: relative;
+    position: absolute;
     z-index: 2;
+    bottom: calc(-1 * var(--gap2));
+    left: 50%;
     display: grid;
-    grid-template-columns: 60% 40%;
+    grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
     grid-template-rows: repeat(2, minmax(0, 1fr));
     gap: var(--gap2);
     width: min(84%, 1120px);
     height: var(--feature-height);
-    margin: calc(100px - 32vh) auto 0;
+    margin: 0;
     padding: var(--gap2);
     border-radius: 16px;
     background: #fff;
+    translate: -50% 0;
   }
   .feature {
     position: relative;
@@ -369,14 +385,32 @@ const socialBlocks = [
     z-index: 0;
     top: -196px;
     right: calc(22% - 650px);
+    display: flex;
+    gap: var(--reel-gap);
     width: calc(4 * var(--reel-width) + 3 * var(--reel-gap));
     height: 900px;
     rotate: 36deg;
     transform-origin: top center;
     pointer-events: none;
   }
+  .reel-column {
+    display: flex;
+    flex: 0 0 var(--reel-width);
+    flex-direction: column;
+    gap: var(--reel-gap);
+    width: var(--reel-width);
+  }
+  .reel-column.lower {
+    margin-top: calc(var(--reel-height) + var(--reel-gap));
+  }
+  .reel-column.level {
+    margin-top: calc((var(--reel-height) + var(--reel-gap)) / 2);
+  }
+  .reel-column.raised {
+    margin-top: calc(-0.5 * (var(--reel-height) + var(--reel-gap)));
+  }
   .reels img {
-    position: absolute;
+    flex: 0 0 var(--reel-height);
     width: var(--reel-width);
     height: var(--reel-height);
     border-radius: 18px;
@@ -384,30 +418,6 @@ const socialBlocks = [
     opacity: 0.85;
     filter: sepia(25%);
     user-select: none;
-  }
-  .reels img:nth-child(1) {
-    top: calc(var(--reel-height) + var(--reel-gap));
-    left: 0;
-  }
-  .reels img:nth-child(2) {
-    top: calc((var(--reel-height) + var(--reel-gap)) / 2);
-    left: calc(var(--reel-width) + var(--reel-gap));
-  }
-  .reels img:nth-child(3) {
-    top: calc(1.5 * (var(--reel-height) + var(--reel-gap)));
-    left: calc(var(--reel-width) + var(--reel-gap));
-  }
-  .reels img:nth-child(4) {
-    top: calc(-0.5 * (var(--reel-height) + var(--reel-gap)));
-    left: calc(2 * (var(--reel-width) + var(--reel-gap)));
-  }
-  .reels img:nth-child(5) {
-    top: calc(0.5 * (var(--reel-height) + var(--reel-gap)));
-    left: calc(2 * (var(--reel-width) + var(--reel-gap)));
-  }
-  .reels img:nth-child(6) {
-    top: calc(0.5 * (var(--reel-height) + var(--reel-gap)));
-    left: calc(3 * (var(--reel-width) + var(--reel-gap)));
   }
   .social-content {
     position: relative;
@@ -434,6 +444,7 @@ const socialBlocks = [
   }
   .social-block :global(.cta-link) {
     min-width: 215px;
+    outline: calc(var(--reel-gap) / 1.2) solid var(--back-grey-1);
   }
   .social-block a:not(.cta-link) {
     color: inherit;
@@ -474,6 +485,7 @@ const socialBlocks = [
   }
   .letter-mask img {
     width: 70%;
+    height: auto;
     margin: 58px auto 0;
     opacity: 0.08;
     transition:
@@ -494,6 +506,7 @@ const socialBlocks = [
     .home-stage {
       --hero-height: 44vh;
       --feature-height: clamp(410px, 48vh, 480px);
+      height: clamp(340px, calc(80vh - 2 * var(--gap1)), 770px);
       margin-bottom: 78px;
     }
     .home-hero {
@@ -502,9 +515,6 @@ const socialBlocks = [
     }
     .hero-copy h1 {
       font-size: 4.84rem;
-    }
-    .feature-grid {
-      margin-top: -158px;
     }
     .feature h2 {
       font-size: 2.25rem;
@@ -547,12 +557,12 @@ const socialBlocks = [
     .home-stage {
       --hero-height: 500px;
       --feature-height: 560px;
+      height: 800px;
     }
     .feature-grid {
       grid-template-columns: 1fr;
       grid-template-rows: repeat(3, minmax(0, 1fr));
       width: 84%;
-      margin-top: -330px;
     }
     .calendar-card {
       grid-row: auto;
@@ -624,7 +634,6 @@ const socialBlocks = [
     .feature-grid {
       grid-template-rows: 180px 130px 147px;
       width: 90%;
-      margin-top: -225px;
       padding: 7px;
       border-radius: 13px;
     }

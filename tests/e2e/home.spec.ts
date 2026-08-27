@@ -31,7 +31,26 @@ test.describe("home page", () => {
 
     await expect(page.locator(".reels")).toHaveCSS("position", "absolute");
     await expect(page.locator(".reels img")).toHaveCount(6);
-    await expect(page.locator(".letter-mask img")).toBeAttached();
+    const columns = page.locator(".reel-column");
+    await expect(columns).toHaveCount(4);
+    expect(
+      await columns.evaluateAll((items) =>
+        items.map((item) => item.querySelectorAll("img").length),
+      ),
+    ).toEqual([1, 2, 2, 1]);
+    expect(
+      await columns.evaluateAll((items) =>
+        items.map((item) => getComputedStyle(item).marginTop),
+      ),
+    ).toEqual(["258px", "129px", "-129px", "129px"]);
+
+    const letter = page.locator(".letter-mask img");
+    await expect(letter).toBeAttached();
+    const letterBox = await letter.boundingBox();
+    expect(letterBox).not.toBeNull();
+    expect(letterBox!.height).toBeCloseTo(letterBox!.width, 0);
+    await page.locator(".email-link").hover();
+    await expect(letter).toHaveCSS("translate", "0px -52px");
 
     const feature = page.locator(".feature").first();
     const arrow = feature.locator(".feature-arrow svg");
@@ -43,6 +62,23 @@ test.describe("home page", () => {
     await expect
       .poll(async () => (await arrow.boundingBox())?.width ?? 0)
       .toBeGreaterThanOrEqual(28);
+  });
+  test("feature cards retain their outer and viewport gaps", async ({
+    page,
+  }) => {
+    await page.setViewportSize({ width: 1200, height: 900 });
+    const grid = (await page.locator(".feature-grid").boundingBox())!;
+    const calendar = (await page.locator(".calendar-card").boundingBox())!;
+    const course = (await page.locator(".course-card").boundingBox())!;
+    const dashboard = (await page.locator(".dashboard-card").boundingBox())!;
+
+    expect(grid.x + grid.width - (course.x + course.width)).toBeCloseTo(10, 0);
+    expect(grid.x + grid.width - (dashboard.x + dashboard.width)).toBeCloseTo(
+      10,
+      0,
+    );
+    expect(900 - (calendar.y + calendar.height)).toBeCloseTo(14, 0);
+    expect(900 - (dashboard.y + dashboard.height)).toBeCloseTo(14, 0);
   });
   test("carousel loops and pauses on focus", async ({ page }) => {
     const carousel = page.locator("[data-carousel]");
