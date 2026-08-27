@@ -1,6 +1,5 @@
 ---
 import TeamCarousel from "../components/about/TeamCarousel.astro";
-import ContentSection from "../components/content/ContentSection.astro";
 import PageHero from "../components/layout/PageHero.astro";
 import CtaLink from "../components/ui/CtaLink.astro";
 import { localAssets } from "../data/local-assets";
@@ -33,14 +32,18 @@ const teams = [
     title="about GE Union"
     subtitle="Who are we and why are we here?"
   />
-  <ContentSection>
+  <section class="identity-section">
     <div class="identity-row">
-      <section class="identity icon-background">
+      <div class="identity-summary">
+        <p>GEU is a student-led community hub</p>
+        <strong>by GE students<br />for GE students</strong>
+      </div>
+      <section class="identity-card icon-background">
         <h2>who we are</h2>
         <p>GEU is a student-led community hub</p>
         <strong>by GE students<br />for GE students</strong>
       </section>
-      <section>
+      <section class="goal">
         <h2>Our Goal</h2><p>
           Our goal is to turn GE into one close, supportive community. We want
           to create connections across all three years, helping you meet people
@@ -51,7 +54,7 @@ const teams = [
         </p>
       </section>
     </div>
-  </ContentSection>
+  </section>
   <img class="divider" src={localAssets.geLogoSmall} alt="" />
   <section class="teams-section">
     <h2>Our Teams</h2>
@@ -70,7 +73,7 @@ const teams = [
     <TeamCarousel />
   </section>
   <img class="divider" src={localAssets.geLogoSmall} alt="" />
-  <ContentSection>
+  <section class="join-section">
     <section class="join">
       <h2>Want to Join?</h2>
       <p>
@@ -89,36 +92,77 @@ const teams = [
         arrow>Submit your application</CtaLink
       >
     </section>
-  </ContentSection>
+  </section>
 </BaseLayout>
 
 <style>
   .identity-row {
-    display: grid;
-    grid-template-columns: 1fr 1.4fr;
+    display: flex;
     align-items: center;
-    gap: 45px;
+    justify-content: center;
+    gap: min(3vw, 60px);
+    width: 94vw;
+    margin: 70px auto 20px;
   }
-  .identity {
-    padding: 28px 34px;
-    border-radius: 16px;
+  .identity-card {
+    flex: 0 0 500px;
+    width: 500px;
+    min-height: 265px;
+    padding: 18px 36px 24px;
+    border-radius: var(--rad1);
     color: white;
-    box-shadow: 7px 9px 20px #0002;
+    box-shadow:
+      -1px -2px 3px #00000026 inset,
+      1px 2px 3px #ffffff33 inset,
+      0 5px 27px #0000002b;
+    transform: rotate(-0.5deg);
   }
-  .identity h2 {
+  .identity-card h2 {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 8px;
     font-family: Tanker, Rubik, sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    letter-spacing: 0.03em;
     text-transform: uppercase;
   }
-  .identity p {
+  .identity-card h2::before {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #f7f7f7;
+    box-shadow:
+      -0.75px -1.5px 1.5px #00000026,
+      0.75px 1.5px 1.5px #ffffff40;
+    content: "";
+  }
+  .identity-card p,
+  .identity-summary p {
     font-weight: 700;
   }
-  .identity strong {
+  .identity-card strong,
+  .identity-summary strong {
     display: block;
     font-family: Tanker, Rubik, sans-serif;
-    font-size: 2.5rem;
-    line-height: 1.1;
+    line-height: 1.05;
     text-align: center;
     text-transform: uppercase;
+  }
+  .identity-card strong {
+    margin-top: 4px;
+    font-size: 3.6rem;
+  }
+  .identity-summary {
+    display: none;
+    text-align: center;
+  }
+  .identity-summary strong {
+    font-size: 3.95rem;
+  }
+  .goal {
+    max-width: 687px;
   }
   .divider {
     width: 24px;
@@ -149,24 +193,63 @@ const teams = [
   .join {
     text-align: center;
   }
+  .join-section {
+    max-width: 800px;
+    margin: 0 auto 20px;
+  }
   .join p {
     margin-bottom: 30px;
   }
   .join span {
     color: #999;
   }
-  @media (max-width: 900px) {
+  @media (max-width: 991px) {
+    .identity-row {
+      flex-direction: column;
+      gap: min(3vw, 60px);
+      margin-left: 3%;
+      margin-right: 3%;
+    }
+    .identity-card {
+      display: none;
+    }
+    .identity-summary {
+      display: block;
+    }
+    .goal {
+      margin: 0 10px;
+      text-align: center;
+    }
+    .join-section {
+      max-width: none;
+      margin-left: 40px;
+      margin-right: 40px;
+    }
     .team-cards {
       grid-template-columns: 1fr 1fr;
     }
   }
   @media (max-width: 600px) {
-    .identity-row,
     .team-cards {
       grid-template-columns: 1fr;
     }
-    .identity strong {
-      font-size: 2rem;
+    .identity-summary strong {
+      font-size: 3.15rem;
+    }
+  }
+  @media (max-width: 479px) {
+    .identity-row {
+      margin-top: 60px;
+    }
+    .identity-summary p {
+      font-size: 16px;
+    }
+    .identity-summary strong {
+      font-size: 2.8rem;
+    }
+    .join-section {
+      margin-left: 20px;
+      margin-right: 20px;
     }
   }
 </style>

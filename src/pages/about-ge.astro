@@ -1,7 +1,6 @@
 ---
 import PageHero from "../components/layout/PageHero.astro";
 import ContentSection from "../components/content/ContentSection.astro";
-import { dtuEctsChart } from "../data/external-assets";
 import { localAssets } from "../data/local-assets";
 import { getPageSeo } from "../data/seo-matrix";
 import BaseLayout from "../layouts/BaseLayout.astro";
@@ -55,21 +54,25 @@ const specialisations = [
       innovative engineer ready to shape the future.
     </p>
 
-    <h2>Curriculum</h2>
-    <h3>Polytechnical Foundations <span>The Core Stuff</span></h3>
-    <p>
-      The polytechnical foundation is basically all the main general subjects
-      every GE student will have to take, which include Chemistry,
-      Bioengineering, Physics, Programming, Statistics, and Mathematics. Some
-      are more of a pain than others, but the main point is to bring all
-      students to a general standard across all these base subjects.
-    </p>
-    <img
-      class="curriculum"
-      src={dtuEctsChart}
-      alt="ECTS credit distribution across the General Engineering curriculum"
-      loading="lazy"
-    />
+    <div class="curriculum-foundations">
+      <div>
+        <h2>Curriculum</h2>
+        <h3>Polytechnical Foundations <span>The Core Stuff</span></h3>
+        <p>
+          The polytechnical foundation is basically all the main general
+          subjects every GE student will have to take, which include Chemistry,
+          Bioengineering, Physics, Programming, Statistics, and Mathematics.
+          Some are more of a pain than others, but the main point is to bring
+          all students to a general standard across all these base subjects.
+        </p>
+      </div>
+      <img
+        class="curriculum"
+        src="/assets/about/ge-ects-distribution.svg"
+        alt="ECTS credit distribution across the General Engineering curriculum"
+        loading="lazy"
+      />
+    </div>
 
     <h3>Specialisations <span>The Branches</span></h3>
     <p>
@@ -141,8 +144,20 @@ const specialisations = [
   }
   .curriculum {
     display: block;
-    width: min(100%, 650px);
-    margin: 30px auto;
+    width: 356px;
+    max-width: 100%;
+    height: auto;
+    margin-left: auto;
+  }
+  .curriculum-foundations {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 356px;
+    align-items: end;
+    gap: 35px;
+    margin-top: 70px;
+  }
+  .curriculum-foundations h2 {
+    margin-top: 0;
   }
   .cards {
     display: grid;
@@ -169,6 +184,16 @@ const specialisations = [
   article p {
     position: relative;
   }
+  @media (max-width: 991px) {
+    .curriculum-foundations {
+      grid-template-columns: 1fr;
+    }
+    .curriculum {
+      width: 50%;
+      min-width: 400px;
+      margin: 20px auto 0;
+    }
+  }
   @media (max-width: 600px) {
     .cards {
       grid-template-columns: 1fr;
@@ -176,9 +201,23 @@ const specialisations = [
     .icon-row {
       gap: 30px;
     }
+    .curriculum {
+      min-width: 350px;
+    }
+  }
+  @media (max-width: 479px) {
+    .icon-row {
+      margin-bottom: -18px;
+    }
+    .intro {
+      text-align: left;
+    }
     h3 span {
-      display: block;
-      margin: 5px 0 0;
+      display: none;
+    }
+    .curriculum {
+      width: 70%;
+      min-width: 0;
     }
   }
 </style>

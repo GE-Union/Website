@@ -14,7 +14,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     subtitle="Learn more about Europe's best technical university"
   />
   <ContentSection>
-    <MediaTextSplit>
+    <MediaTextSplit variant="dtu">
       <img
         slot="media"
         src={localAssets.dtuLogo}
@@ -34,9 +34,9 @@ import BaseLayout from "../layouts/BaseLayout.astro";
       </p>
     </MediaTextSplit>
 
-    <section class="block">
+    <section class="block pf-block">
       <h2>What the hell is PF?</h2>
-      <MediaTextSplit reverse>
+      <MediaTextSplit reverse variant="pf">
         <img
           slot="media"
           src={localAssets.pfLogo}
@@ -66,9 +66,9 @@ import BaseLayout from "../layouts/BaseLayout.astro";
       </p>
     </section>
 
-    <section class="block">
+    <section class="block ida-block">
       <h2>What the hell is IDA?</h2>
-      <MediaTextSplit reverse>
+      <MediaTextSplit reverse variant="ida">
         <img slot="media" src={localAssets.idaLogo} alt="IDA logo" />
         <p>
           Simply put, IDA is a gift from god for DTU students; they're a trade
@@ -104,6 +104,19 @@ import BaseLayout from "../layouts/BaseLayout.astro";
   @media (max-width: 767px) {
     .block {
       margin-top: 65px;
+    }
+  }
+  @media (max-width: 600px) {
+    :global(.content-section) {
+      margin-left: 30px;
+      margin-right: 30px;
+    }
+    .pf-block {
+      position: relative;
+    }
+    .pf-block > h2 {
+      position: relative;
+      z-index: 1;
     }
   }
 </style>
