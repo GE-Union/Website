@@ -2,7 +2,7 @@ import type {
   CourseBankCatalog,
   CourseBankCourse,
   CourseBankFile,
-} from "../../src/scripts/course-bank-utils";
+} from "../../src/scripts/course-bank/catalog";
 
 export const courseBankRevision = "1".repeat(40);
 

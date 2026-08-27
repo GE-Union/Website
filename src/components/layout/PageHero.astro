@@ -14,9 +14,11 @@ interface Props {
   /** Plain-text subtitle; use the "subtitle" slot instead for inline markup. */
   subtitle?: string;
   theme?: "default" | "minecraft";
+  titleId?: string;
+  subtitleId?: string;
 }
 
-const { title, subtitle, theme = "default" } = Astro.props;
+const { title, subtitle, theme = "default", titleId, subtitleId } = Astro.props;
 const hasSubtitle = subtitle !== undefined || Astro.slots.has("subtitle");
 ---
 
@@ -30,10 +32,12 @@ const hasSubtitle = subtitle !== undefined || Astro.slots.has("subtitle");
 >
   <SiteHeader theme={theme} />
   <div class="hero-content">
-    <h1>{title}</h1>
+    <h1 id={titleId}>{title}</h1>
     {
       hasSubtitle && (
-        <p class="hero-subtitle">{subtitle ?? <slot name="subtitle" />}</p>
+        <p class="hero-subtitle" id={subtitleId}>
+          {subtitle ?? <slot name="subtitle" />}
+        </p>
       )
     }
   </div>

@@ -1,19 +1,21 @@
 import { describe, expect, it, vi } from "vitest";
 import {
-  buildCourseFileUrl,
   COURSE_BANK_CACHE_KEY,
   COURSE_BANK_CACHE_TTL_MS,
   fetchCourseBankCatalog,
-  getCourseFileType,
-  isSafePath,
-  isSafePathSegment,
   loadCourseBankCatalog,
-  parseCourseBankCatalog,
   readCourseBankCache,
   writeCourseBankCache,
-  type CourseBankCatalog,
   type StorageLike,
-} from "../../src/scripts/course-bank-utils";
+} from "../../src/scripts/course-bank/cache";
+import {
+  buildCourseFileUrl,
+  getCourseFileColor,
+  isSafePath,
+  isSafePathSegment,
+  parseCourseBankCatalog,
+  type CourseBankCatalog,
+} from "../../src/scripts/course-bank/catalog";
 import {
   courseBankCatalogFixture as catalog,
   courseBankRevision,
@@ -59,19 +61,31 @@ describe("course-bank v2 catalog", () => {
     );
   });
 
-  it("rejects malformed revisions, traversal, unsafe URLs, and mismatched file paths", () => {
+  it("rejects malformed revisions, traversal, unsafe hosts, and mismatched file paths", () => {
     expect(
       parseCourseBankCatalog({ ...catalog, sourceRevision: "main" }),
     ).toBeNull();
     expect(
       parseCourseBankCatalog({
         ...catalog,
-        repository: { rawBase: "http://example.com" },
+        repository: {
+          rawBase: "https://raw.githubusercontent.com.example.test/repository",
+        },
       }),
     ).toBeNull();
     const invalid = structuredClone(catalog);
     invalid.categories[0].courses[0].files[0].path = "../private.pdf";
     expect(parseCourseBankCatalog(invalid)).toBeNull();
+
+    const duplicateCode = structuredClone(catalog);
+    duplicateCode.categories[0].courses[1].code =
+      duplicateCode.categories[0].courses[0].code;
+    expect(parseCourseBankCatalog(duplicateCode)).toBeNull();
+
+    const mismatchedFilename = structuredClone(catalog);
+    mismatchedFilename.categories[0].courses[0].files[0].filename =
+      "Different.pdf";
+    expect(parseCourseBankCatalog(mismatchedFilename)).toBeNull();
   });
 
   it("encodes each segment and pins files to the validated revision", () => {
@@ -86,7 +100,7 @@ describe("course-bank v2 catalog", () => {
     );
     expect(() =>
       buildCourseFileUrl("https://example.com", courseBankRevision, "../x"),
-    ).toThrow("Unsafe course-bank path");
+    ).toThrow("Unsafe course-bank URL");
   });
 
   it("accepts safe Unicode paths and rejects hidden or traversing segments", () => {
@@ -96,19 +110,10 @@ describe("course-bank v2 catalog", () => {
     }
   });
 
-  it("keeps file display types and a stable fallback", () => {
-    expect(getCourseFileType("pdf")).toEqual({
-      color: "#D32F2F",
-      mime: "application/pdf",
-    });
-    expect(getCourseFileType("IPYNB")).toEqual({
-      color: "#F37C2F",
-      mime: "application/json",
-    });
-    expect(getCourseFileType("py")).toEqual({
-      color: "#1e73be",
-      mime: "application/octet-stream",
-    });
+  it("keeps file display colors and a stable fallback", () => {
+    expect(getCourseFileColor("pdf")).toBe("#D32F2F");
+    expect(getCourseFileColor("IPYNB")).toBe("#F37C2F");
+    expect(getCourseFileColor("py")).toBe("#1e73be");
   });
 
   it("uses normal browser caching for the remote manifest", async () => {
@@ -229,5 +234,9 @@ describe("course-bank cache", () => {
       fetchImpl: fetchImpl as unknown as typeof fetch,
     });
     expect(fetchImpl).toHaveBeenCalledOnce();
+    expect(fetchImpl).toHaveBeenCalledWith(
+      "https://example.com/catalog.v2.json",
+      expect.objectContaining({ cache: "reload" }),
+    );
   });
 });

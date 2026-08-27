@@ -2,7 +2,8 @@ import { expect, test, type Page } from "@playwright/test";
 import {
   COURSE_BANK_CACHE_KEY,
   COURSE_BANK_CACHE_TTL_MS,
-} from "../../src/scripts/course-bank-utils";
+} from "../../src/scripts/course-bank/cache";
+import { parseCourseBankCatalog } from "../../src/scripts/course-bank/catalog";
 import {
   courseBankCatalogFixture as structure,
   courseBankRevision,
@@ -35,12 +36,18 @@ async function openFirstCourse(page: Page) {
 test("generates the complete catalog and mocked note inventory safely", async ({
   page,
 }) => {
-  await mockStructure(page);
+  const customized = structuredClone(structure);
+  customized.site.title = "Student course library";
+  customized.site.tagline = "Generated from the published catalog";
+  await mockStructure(page, customized);
   await page.goto("/course-bank");
   await waitForReady(page);
 
   await expect(page.getByRole("heading", { level: 1 })).toHaveText(
-    "Course bank",
+    "Student course library",
+  );
+  await expect(page.locator("#course-bank-tagline")).toHaveText(
+    "Generated from the published catalog",
   );
   await expect(page.getByRole("tab")).toHaveCount(5);
   await expect(page.locator("details.course")).toHaveCount(50);
@@ -56,6 +63,25 @@ test("generates the complete catalog and mocked note inventory safely", async ({
   ).toBeVisible();
   await expect(page.locator("img[onerror]")).toHaveCount(0);
   expect(await page.evaluate(() => "injected" in window)).toBe(false);
+});
+
+test("keeps the loading shell invisible while the catalog is pending", async ({
+  page,
+}) => {
+  let releaseRequest = (): void => undefined;
+  const pending = new Promise<void>((resolve) => {
+    releaseRequest = resolve;
+  });
+  await page.route(structureUrl, async (route) => {
+    await pending;
+    await route.fulfill({ json: structure, status: 200 });
+  });
+
+  await page.goto("/course-bank");
+  await expect(page.locator("[data-course-bank-notice]")).toBeHidden();
+  await expect(page.getByText("Loading course catalog…")).toHaveCount(0);
+  releaseRequest();
+  await waitForReady(page);
 });
 
 test("tabs expose selected state and support desktop and mobile keyboard navigation", async ({
@@ -329,6 +355,9 @@ test("[live] the CourseBank catalog endpoint remains usable", async ({
   );
   expect(response.ok()).toBe(true);
   const data = await response.json();
-  expect(data.schemaVersion).toBe(2);
-  expect(data.categories).toEqual(expect.any(Array));
+  const catalog = parseCourseBankCatalog(data);
+  expect(catalog?.categories).toHaveLength(5);
+  expect(catalog?.categories.flatMap(({ courses }) => courses)).toHaveLength(
+    50,
+  );
 });

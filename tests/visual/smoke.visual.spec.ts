@@ -1,5 +1,5 @@
 import { expect, test, type Page } from "@playwright/test";
-import { COURSE_BANK_CACHE_KEY } from "../../src/scripts/course-bank-utils";
+import { COURSE_BANK_CACHE_KEY } from "../../src/scripts/course-bank/cache";
 import {
   courseBankIconFixture,
   courseBankCatalogFixture,

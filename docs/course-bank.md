@@ -32,7 +32,7 @@ another upload is committed while a visitor has the page open.
 
 ## Browser data flow
 
-1. course-bank.ts requests the v2 catalog from GitHub Raw with normal browser
+1. `src/scripts/course-bank/index.ts` requests the v2 catalog from GitHub Raw with normal browser
    HTTP caching enabled and a 10-second timeout.
 2. The loader checks geu:course-bank:catalog:v2. A validated entry younger
    than 90 minutes is used immediately.
@@ -42,9 +42,23 @@ another upload is committed while a visitor has the page open.
 5. An expired valid cache is retained as a stale fallback when GitHub cannot be
    reached. Retry explicitly requests the network.
 
-The manifest parser enforces schema version 2, HTTPS URLs, a full commit SHA,
-safe path segments, bounded collection sizes, file/course path agreement and
-unique category/course paths.
+The manifest parser enforces schema version 2, the exact GitHub Raw host, a
+full commit SHA, safe path segments, bounded collection sizes, exact
+file/course path agreement and unique IDs, codes and paths.
+
+## Client module boundaries
+
+| Module | Responsibility |
+| --- | --- |
+| `catalog.ts` | Public types, validation, pinned URL construction and file colors |
+| `cache.ts` | Local cache, request timeout, HTTP cache policy and stale fallback |
+| `view.ts` | Safe DOM rendering, tabs and course disclosures |
+| `file-actions.ts` | PDF opening and notebook downloads |
+| `index.ts` | Page lifecycle, status, retry and error orchestration |
+
+`CourseBank.astro` is deliberately only the empty accessible mount point. Its
+styles live in `src/styles/course-bank.css` because the catalog markup is
+created after Astro's scoped-style processing.
 
 ## Interaction behavior
 
@@ -67,6 +81,15 @@ src/data/course-bank.ts was removed. Neither manifest, the icon nor any course
 resource may be emitted into dist; check-dist-assets.mjs enforces that boundary.
 The page therefore grows with a small generic renderer rather than with every
 future course and file.
+
+## Making changes
+
+- Uploads, course metadata and external action links belong in the CourseBank
+  repository. Its `CONTRIBUTING.md` describes the no-build upload workflow.
+- Catalog contract changes start in its compiler and tests, then move to
+  `catalog.ts` and the website tests.
+- Display changes stay in `view.ts` and `course-bank.css`.
+- Loading, caching or retry changes stay in `cache.ts` and `index.ts`.
 
 ## Verification
 

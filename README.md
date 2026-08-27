@@ -22,6 +22,9 @@ npm ci        # exact install from package-lock.json (prefer this over npm insta
 npm run dev   # dev server at http://localhost:4321, reloads on save
 ```
 
+Read [CONTRIBUTING.md](CONTRIBUTING.md) before your first change. It maps
+common tasks to the right folders and gives a small pull-request checklist.
+
 The event calendar also needs a public Google Calendar browser key. Copy
 `.env.example` to `.env`, add `PUBLIC_GOOGLE_CALENDAR_API_KEY`, and follow the
 restriction and deployment checklist in
@@ -102,6 +105,10 @@ the matching URL. `src/pages/about-geu.astro` → `https://geunion.dk/about-geu`
 The calendar's data flow and operating guide live in
 [CALENDAR.md](CALENDAR.md). Start there before changing its Google
 Cloud configuration or timing behavior.
+
+Course files and course metadata do not live in this repository. See
+[docs/course-bank.md](docs/course-bank.md) before changing the catalog client,
+and use the CourseBank repository for uploads or course-list changes.
 
 An `.astro` file has two parts: a `---`-fenced code block at the top
 (TypeScript, runs at build time) and an HTML template below it. A `<style>` tag
