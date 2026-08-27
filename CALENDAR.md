@@ -65,7 +65,9 @@ will produce the page's network-error state.
 
 ## Behavior
 
-- Event titles and descriptions are rendered as text, never as HTML.
+- Event titles are always text. Descriptions preserve common rich-text HTML
+  such as paragraphs, links, emphasis, headings, and lists; executable,
+  embedded-media, form, and unsafe-link markup is discarded.
 - Events ending the following morning before 05:00 stay on their starting day
   in the month grid while the dialog keeps the real end time.
 - Google all-day end dates are treated as exclusive.
@@ -89,4 +91,4 @@ must never be imported by the shared layout or another page.
 
 Intentional differences from the legacy calendar are the contained mobile
 scrolling, semantic dialog and close control, explicit service states, safe
-plain-text descriptions, and removal of the unused TimeGrid module.
+description sanitization, and removal of the unused TimeGrid module.
