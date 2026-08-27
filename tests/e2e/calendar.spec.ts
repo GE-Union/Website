@@ -109,6 +109,14 @@ test("opens untrusted event content safely and restores keyboard focus", async (
   await page.keyboard.press("Escape");
   await expect(dialog).not.toBeVisible();
   await expect(event).toBeFocused();
+  await expect
+    .poll(() =>
+      event.evaluate((element) => ({
+        boxShadow: window.getComputedStyle(element).boxShadow,
+        overlay: window.getComputedStyle(element, "::after").content,
+      })),
+    )
+    .toEqual({ boxShadow: "none", overlay: "none" });
 
   await event.press("Enter");
   await page.keyboard.press("Enter");

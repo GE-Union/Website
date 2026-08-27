@@ -157,6 +157,15 @@ const apiKey = import.meta.env.PUBLIC_GOOGLE_CALENDAR_API_KEY?.trim() ?? "";
     cursor: pointer;
   }
 
+  .calendar-grid :global(.fc-event:focus) {
+    box-shadow: none;
+  }
+
+  .calendar-grid :global(.fc-event:focus::before),
+  .calendar-grid :global(.fc-event:focus::after) {
+    content: none;
+  }
+
   .calendar-grid :global(.fc-event-title) {
     padding: 0 4px;
     overflow: hidden;
