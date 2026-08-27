@@ -1,17 +1,31 @@
 /*
  * Global stylesheet, imported once by BaseLayout.
  *
- * Font sources are the exact legacy URLs (docs/external-assets.md):
- * Rubik for body text, Tanker for the display h1. The minecraft theme adds
- * its own fonts in MinecraftLayout.
+ * The two production font files are declared directly below, avoiding remote
+ * stylesheet round trips. The minecraft theme adds its own fonts.
  */
-
-@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300..900&display=swap");
-@import url("https://api.fontshare.com/v2/css?f[]=tanker@400&display=swap");
 
 @import "./reset.css";
 @import "./tokens.css";
 @import "./utilities.css";
+
+@font-face {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 300 900;
+  font-display: swap;
+  src: url("https://fonts.gstatic.com/s/rubik/v31/iJWKBXyIfDnIV7nBrXyw023e.woff2")
+    format("woff2");
+}
+
+@font-face {
+  font-family: Tanker;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("https://cdn.fontshare.com/wf/ATKS7EHYU4PKFTXRA4UFAHPY7XS75QMY/OYTCFLQCR7FVKK7FIO7TCJPY4YG22I3S/GKSURDSYOFIC3Y6F5SMWSENDSAB2YMKC.woff2")
+    format("woff2");
+}
 
 /* Legacy root typography: 20px Rubik, 1.4, --front-1; 18px below 768px. */
 :root {

@@ -11,8 +11,6 @@ export const localAssets = {
   geuLogoPixel: "/assets/logos/geu-logo-pixel.svg",
   /** Footer icon, rendered inverted (legacy GEU_Icon_1). */
   geuIcon: "/assets/logos/geu-icon.svg",
-  /** CTA arrow glyph (legacy Arrow_…). */
-  arrow: "/assets/icons/arrow.svg",
   calendar: "/assets/icons/calendar.svg",
   vault: "/assets/icons/vault.svg",
   dashboard: "/assets/icons/dashboard.svg",
@@ -25,6 +23,6 @@ export const localAssets = {
   specialisationCyber: "/assets/about/specialisation-cyber.svg",
   specialisationLiving: "/assets/about/specialisation-living.svg",
   specialisationEnergy: "/assets/about/specialisation-energy.svg",
-  /** Site favicon (legacy 270 KB .ico, kept for fidelity — revisit). */
-  favicon: "/assets/favicon.ico",
+  /** Reuse the compact vector brand mark instead of the legacy 270 KB icon. */
+  favicon: "/assets/logos/geu-icon.svg",
 } as const;

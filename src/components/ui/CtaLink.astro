@@ -12,9 +12,11 @@ interface Props {
   arrow?: boolean;
   /** Set for external links that should open in a new tab. */
   newTab?: boolean;
+  /** More descriptive accessible name when the visible copy is intentionally terse. */
+  label?: string;
 }
 
-const { href, arrow = false, newTab = false } = Astro.props;
+const { href, arrow = false, newTab = false, label } = Astro.props;
 ---
 
 <a
@@ -22,6 +24,7 @@ const { href, arrow = false, newTab = false } = Astro.props;
   href={href}
   target={newTab ? "_blank" : undefined}
   rel={newTab ? "noopener noreferrer" : undefined}
+  aria-label={label}
 >
   <slot />
   {arrow && <ArrowIcon />}
@@ -35,7 +38,7 @@ const { href, arrow = false, newTab = false } = Astro.props;
     gap: 6px;
     height: fit-content;
     padding: 10px 20px;
-    background-color: var(--front-red-1);
+    background-color: var(--action-red);
     border-radius: 12px;
     color: #fff;
     font-size: 20px;

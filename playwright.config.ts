@@ -25,7 +25,7 @@ export default defineConfig({
   snapshotPathTemplate:
     "tests/visual/snapshots/{testFilePath}/{arg}-{projectName}{ext}",
   webServer: {
-    command: "npm run build && npm run preview -- --port 4321",
+    command: "npm run build && node scripts/serve-dist.mjs --port 4321",
     url: "http://localhost:4321",
     reuseExistingServer: !process.env.CI,
     timeout: 120_000,

@@ -66,7 +66,7 @@ test.describe("About menu keyboard behavior", () => {
     // Links are tabbable while open.
     await page.keyboard.press("Tab");
     await expect(
-      page.getByRole("link", { name: "General Engineering" }),
+      menu.getByRole("link", { name: "General Engineering", exact: true }),
     ).toBeFocused();
 
     await page.keyboard.press("Escape");
@@ -138,7 +138,10 @@ test.describe("mobile drawer", () => {
   test("drawer links navigate", async ({ page }) => {
     await page.goto("/");
     await page.getByRole("button", { name: "Open navigation menu" }).click();
-    await page.getByRole("link", { name: "Dashboard" }).click();
+    await page
+      .getByRole("dialog")
+      .getByRole("link", { name: "Dashboard", exact: true })
+      .click();
     await expect(page).toHaveURL("/introduction");
   });
 });

@@ -9,7 +9,7 @@ interface Props {
   as?: "section" | "div";
 }
 
-const { as: Tag = "section" } = Astro.props;
+const { as: Tag = "section" }: Props = Astro.props;
 ---
 
 <Tag class="content-section">
