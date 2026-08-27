@@ -1,4 +1,17 @@
-import { expect, test } from "@playwright/test";
+import { expect, test, type Page } from "@playwright/test";
+
+async function waitForEntrance(page: Page) {
+  await page.locator(".home-stage").evaluate(async (stage) => {
+    await Promise.all(
+      stage
+        .getAnimations({ subtree: true })
+        .filter(
+          (animation) => animation.effect?.getTiming().iterations !== Infinity,
+        )
+        .map((animation) => animation.finished),
+    );
+  });
+}
 
 test.describe("home page", () => {
   test.beforeEach(async ({ page }) => {
@@ -72,6 +85,7 @@ test.describe("home page", () => {
     page,
   }) => {
     await page.setViewportSize({ width: 1200, height: 900 });
+    await waitForEntrance(page);
     const grid = (await page.locator(".feature-grid").boundingBox())!;
     const calendar = (await page.locator(".calendar-card").boundingBox())!;
     const course = (await page.locator(".course-card").boundingBox())!;
@@ -94,6 +108,7 @@ test.describe("home page", () => {
     ]) {
       await page.setViewportSize(viewport);
       await page.goto("/");
+      await waitForEntrance(page);
 
       const centers = await page.evaluate(() => {
         const header = document

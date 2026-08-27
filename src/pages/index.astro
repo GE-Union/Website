@@ -199,6 +199,7 @@ const reelColumns = [
 
 <style>
   .home-stage {
+    --entrance-ease: cubic-bezier(0.22, 1, 0.36, 1);
     --hero-height: 57vh;
     --feature-height: clamp(440px, 62vh, 550px);
     --stage-height: clamp(650px, calc(100vh - 2 * var(--gap1)), 950px);
@@ -211,6 +212,11 @@ const reelColumns = [
     min-height: 300px;
     max-height: 686px;
     border-radius: var(--rad1);
+    animation: home-hero-reveal 720ms var(--entrance-ease) 40ms both;
+    will-change: clip-path;
+  }
+  .home-hero :global(.site-header) {
+    animation: home-fade-in 340ms ease-out 560ms both;
   }
   .hero-copy {
     position: absolute;
@@ -232,10 +238,12 @@ const reelColumns = [
   .hero-copy h1 {
     font-size: clamp(5.25rem, 16vh, 7.5rem);
     margin-block: 0 -0.1em;
+    animation: home-copy-in 360ms var(--entrance-ease) 390ms both;
   }
   .hero-copy p {
     margin-inline: 35px;
     font-size: 1.3rem;
+    animation: home-copy-in 340ms var(--entrance-ease) 480ms both;
   }
   .feature-grid {
     position: absolute;
@@ -253,6 +261,8 @@ const reelColumns = [
     border-radius: 16px;
     background: #fff;
     translate: -50% 0;
+    animation: home-grid-in 520ms var(--entrance-ease) 470ms both;
+    will-change: transform;
   }
   .feature {
     position: relative;
@@ -262,6 +272,17 @@ const reelColumns = [
     background: var(--back-grey-1);
     color: var(--front-1);
     text-decoration: none;
+    animation: home-feature-in 360ms var(--entrance-ease) both;
+    will-change: transform, opacity;
+  }
+  .calendar-card {
+    animation-delay: 690ms;
+  }
+  .course-card {
+    animation-delay: 790ms;
+  }
+  .dashboard-card {
+    animation-delay: 890ms;
   }
   .feature h2 {
     position: relative;
@@ -516,6 +537,61 @@ const reelColumns = [
     opacity: 0.15;
   }
 
+  :global(body > main),
+  :global(body > footer) {
+    animation: home-fade-in 400ms ease-out 1060ms both;
+  }
+
+  @keyframes home-hero-reveal {
+    0% {
+      clip-path: inset(0 50% 100% 50% round var(--rad1));
+    }
+    30% {
+      clip-path: inset(0 0 88% 0 round var(--rad1));
+    }
+    100% {
+      clip-path: inset(0 0 0 0 round var(--rad1));
+    }
+  }
+
+  @keyframes home-grid-in {
+    from {
+      transform: translateY(64px);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes home-copy-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes home-feature-in {
+    from {
+      opacity: 0;
+      transform: scale(0.94);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  @keyframes home-fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
   @media (max-width: 991px) {
     .home-stage {
       --hero-height: 44vh;
@@ -720,6 +796,31 @@ const reelColumns = [
     .feature-arrow,
     .letter-mask img {
       transition: none;
+    }
+    .home-hero,
+    .home-hero :global(.site-header),
+    .hero-copy h1,
+    .hero-copy p,
+    .feature-grid,
+    .feature,
+    :global(body > main),
+    :global(body > footer) {
+      animation: none;
+    }
+    .home-hero {
+      clip-path: none;
+    }
+    .feature-grid,
+    .hero-copy h1,
+    .hero-copy p,
+    .feature {
+      transform: none;
+      opacity: 1;
+    }
+    .home-hero :global(.site-header),
+    :global(body > main),
+    :global(body > footer) {
+      opacity: 1;
     }
   }
 </style>
