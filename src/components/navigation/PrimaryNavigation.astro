@@ -22,6 +22,7 @@ const { theme = "default" } = Astro.props;
 const currentPath = Astro.url.pathname.replace(/\/$/, "") || "/";
 
 const isCurrent = (href: string) => (href === currentPath ? "page" : undefined);
+const isAboutCurrent = aboutMenuLinks.some((link) => link.href === currentPath);
 ---
 
 <nav
@@ -48,6 +49,7 @@ const isCurrent = (href: string) => (href === currentPath ? "page" : undefined);
     }
     <li class="about-menu" data-about-menu>
       <button
+        class:list={{ "current-section": isAboutCurrent }}
         type="button"
         aria-expanded="false"
         aria-controls="about-menu-list"
@@ -115,6 +117,12 @@ const isCurrent = (href: string) => (href === currentPath ? "page" : undefined);
   }
 
   .nav-list a:hover {
+    color: #ffffffe8;
+  }
+
+  .nav-list > li > a[aria-current="page"],
+  .about-menu > button.current-section,
+  .about-menu > button.current-section:hover {
     color: #ffffffe8;
   }
 

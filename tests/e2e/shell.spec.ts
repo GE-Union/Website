@@ -18,6 +18,23 @@ test.describe("primary navigation", () => {
     await expect(page).toHaveURL("/");
   });
 
+  test("highlights the current page and About section", async ({ page }) => {
+    await page.goto("/calendar");
+    await expect(
+      page.getByRole("navigation", { name: "Main" }).getByRole("link", {
+        name: "Calendar",
+      }),
+    ).toHaveAttribute("aria-current", "page");
+
+    await page.goto("/about-ge");
+    await expect(page.getByRole("button", { name: "About" })).toHaveClass(
+      /current-section/,
+    );
+    await expect(
+      page.locator('#about-menu-list a[href="/about-ge"]'),
+    ).toHaveAttribute("aria-current", "page");
+  });
+
   test("About menu links reach all three about pages", async ({ page }) => {
     for (const [label, url] of [
       ["General Engineering", "/about-ge"],
@@ -144,6 +161,16 @@ test.describe("mobile drawer", () => {
       .click();
     await expect(page).toHaveURL("/introduction");
   });
+
+  test("drawer identifies its current page", async ({ page }) => {
+    await page.goto("/introduction");
+    await page.getByRole("button", { name: "Open navigation menu" }).click();
+    await expect(
+      page
+        .getByRole("dialog")
+        .getByRole("link", { name: "Dashboard", exact: true }),
+    ).toHaveAttribute("aria-current", "page");
+  });
 });
 
 test.describe("footer", () => {
@@ -154,6 +181,9 @@ test.describe("footer", () => {
     const footer = page.locator("footer");
 
     await expect(footer.locator('a[href="/"]')).toBeVisible();
+    const logo = footer.locator(".footer-logo img");
+    await expect(logo).toHaveAttribute("src", "/assets/logos/geu-icon.svg");
+    await expect(logo).toHaveCSS("filter", "invert(1)");
     for (const [name, href] of [
       ["Instagram", "https://www.instagram.com/ge.union/"],
       [
@@ -170,6 +200,14 @@ test.describe("footer", () => {
     }
 
     await expect(page.locator('a[href*="webstudio.is"]')).toHaveCount(0);
+  });
+
+  test("uses the supplied browser icon", async ({ page }) => {
+    await page.goto("/");
+    await expect(page.locator('link[rel="icon"]')).toHaveAttribute(
+      "href",
+      "/assets/favicon.png",
+    );
   });
 
   test("new-tab links carry rel=noopener noreferrer", async ({ page }) => {

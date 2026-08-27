@@ -23,6 +23,6 @@ export const localAssets = {
   specialisationCyber: "/assets/about/specialisation-cyber.svg",
   specialisationLiving: "/assets/about/specialisation-living.svg",
   specialisationEnergy: "/assets/about/specialisation-energy.svg",
-  /** Reuse the compact vector brand mark instead of the legacy 270 KB icon. */
-  favicon: "/assets/logos/geu-icon.svg",
+  /** Browser icon supplied by GE Union. */
+  favicon: "/assets/favicon.png",
 } as const;
