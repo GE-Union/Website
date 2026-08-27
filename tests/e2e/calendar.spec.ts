@@ -19,9 +19,12 @@ async function mockCalendar(
   );
 }
 
-async function openCalendar(page: Page) {
+async function openCalendar(
+  page: Page,
+  fixture: unknown = calendarEventsFixture,
+) {
   await useCalendarClock(page);
-  await mockCalendar(page);
+  await mockCalendar(page, fixture);
   await page.goto("/calendar");
   await page
     .locator('[data-calendar-state="ready"]')
@@ -111,6 +114,91 @@ test("opens untrusted event content safely and restores keyboard focus", async (
   await page.keyboard.press("Enter");
   await expect(dialog).not.toBeVisible();
   await expect(event).toBeFocused();
+});
+
+test("locks background scrolling while event details are open", async ({
+  page,
+}) => {
+  await page.setViewportSize({ width: 1024, height: 600 });
+  await openCalendar(page);
+  const event = page.locator(".fc-event").filter({ hasText: "Study day" });
+  await event.scrollIntoViewIfNeeded();
+  const scrollBeforeOpen = await page.evaluate(() => window.scrollY);
+
+  await event.click();
+  const dialog = page.getByRole("dialog", { name: "Study day" });
+  const content = page.locator(".event-dialog-content");
+  await expect(dialog).toBeVisible();
+  await expect
+    .poll(() =>
+      content.evaluate(
+        (element) => element.scrollHeight <= element.clientHeight,
+      ),
+    )
+    .toBe(true);
+  await expect
+    .poll(() => page.evaluate(() => document.body.style.position))
+    .toBe("fixed");
+  expect(await page.evaluate(() => document.body.style.top)).toBe(
+    `-${scrollBeforeOpen}px`,
+  );
+  const lockedScrollPosition = await page.evaluate(() => window.scrollY);
+
+  await page.mouse.wheel(0, 900);
+  await page.waitForTimeout(100);
+  expect(await page.evaluate(() => window.scrollY)).toBe(lockedScrollPosition);
+
+  await page.keyboard.press("Escape");
+  await expect(dialog).not.toBeVisible();
+  expect(await page.evaluate(() => window.scrollY)).toBe(scrollBeforeOpen);
+  expect(await page.evaluate(() => document.body.style.position)).toBe("");
+});
+
+test("keeps long event details scrollable without moving the page", async ({
+  page,
+}) => {
+  await page.setViewportSize({ width: 390, height: 600 });
+  const longDescription = Array.from(
+    { length: 40 },
+    (_, index) => `<p>Event detail line ${index + 1}</p>`,
+  ).join("");
+  const fixture = {
+    ...calendarEventsFixture,
+    items: calendarEventsFixture.items.map((event) =>
+      event.id === "safety"
+        ? { ...event, description: longDescription }
+        : event,
+    ),
+  };
+  await openCalendar(page, fixture);
+  const event = page
+    .locator(".fc-event")
+    .filter({ hasText: unsafeCalendarTitle });
+  await event.scrollIntoViewIfNeeded();
+  const scrollBeforeOpen = await page.evaluate(() => window.scrollY);
+
+  await event.click();
+  const content = page.locator(".event-dialog-content");
+  await expect
+    .poll(() =>
+      content.evaluate(
+        (element) => element.scrollHeight > element.clientHeight,
+      ),
+    )
+    .toBe(true);
+  await content.hover();
+  await page.mouse.wheel(0, 500);
+  await expect
+    .poll(() => content.evaluate((element) => element.scrollTop))
+    .toBeGreaterThan(0);
+  expect(await page.evaluate(() => document.body.style.top)).toBe(
+    `-${scrollBeforeOpen}px`,
+  );
+  expect(await page.evaluate(() => window.scrollY)).toBe(0);
+
+  await page.keyboard.press("Escape");
+  await expect(page.getByRole("dialog")).not.toBeVisible();
+  expect(await page.evaluate(() => window.scrollY)).toBe(scrollBeforeOpen);
 });
 
 test("formats all-day and post-midnight event details", async ({ page }) => {

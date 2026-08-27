@@ -196,6 +196,60 @@ function setDescription(
   if (rule) rule.hidden = hidden;
 }
 
+function lockPageScroll(): () => void {
+  const rootStyle = document.documentElement.style;
+  const bodyStyle = document.body.style;
+  const scrollX = window.scrollX;
+  const scrollY = window.scrollY;
+  const scrollbarWidth = Math.max(
+    0,
+    window.innerWidth - document.documentElement.clientWidth,
+  );
+  const previous = {
+    rootOverflow: rootStyle.overflow,
+    rootScrollBehavior: rootStyle.scrollBehavior,
+    bodyPosition: bodyStyle.position,
+    bodyTop: bodyStyle.top,
+    bodyLeft: bodyStyle.left,
+    bodyWidth: bodyStyle.width,
+    bodyOverflow: bodyStyle.overflow,
+    bodyPaddingRight: bodyStyle.paddingRight,
+  };
+
+  rootStyle.overflow = "hidden";
+  bodyStyle.position = "fixed";
+  bodyStyle.top = `-${scrollY}px`;
+  bodyStyle.left = `-${scrollX}px`;
+  bodyStyle.width = "100%";
+  bodyStyle.overflow = "hidden";
+  if (scrollbarWidth > 0) {
+    const paddingRight = Number.parseFloat(
+      window.getComputedStyle(document.body).paddingRight,
+    );
+    bodyStyle.paddingRight = `${
+      (Number.isFinite(paddingRight) ? paddingRight : 0) + scrollbarWidth
+    }px`;
+  }
+
+  let locked = true;
+  return () => {
+    if (!locked) return;
+    locked = false;
+
+    rootStyle.overflow = previous.rootOverflow;
+    bodyStyle.position = previous.bodyPosition;
+    bodyStyle.top = previous.bodyTop;
+    bodyStyle.left = previous.bodyLeft;
+    bodyStyle.width = previous.bodyWidth;
+    bodyStyle.overflow = previous.bodyOverflow;
+    bodyStyle.paddingRight = previous.bodyPaddingRight;
+
+    rootStyle.scrollBehavior = "auto";
+    window.scrollTo(scrollX, scrollY);
+    rootStyle.scrollBehavior = previous.rootScrollBehavior;
+  };
+}
+
 function makeCalendarControlsAccessible(grid: HTMLElement): void {
   grid.querySelectorAll<HTMLElement>(".fc-icon[role=img]").forEach((icon) => {
     icon.removeAttribute("role");
@@ -230,6 +284,7 @@ function makeDialogController(root: HTMLElement) {
   let trigger: HTMLElement | null = null;
   let fallbackBackground: HTMLElement[] = [];
   let closeTimer: number | null = null;
+  let unlockPageScroll: (() => void) | null = null;
   const supportsModal = typeof dialog.showModal === "function";
 
   const restoreBackground = (): void => {
@@ -308,7 +363,9 @@ function makeDialogController(root: HTMLElement) {
   dialog.addEventListener("close", () => {
     delete dialog.dataset.closing;
     restoreBackground();
-    if (trigger?.isConnected) trigger.focus();
+    unlockPageScroll?.();
+    unlockPageScroll = null;
+    if (trigger?.isConnected) trigger.focus({ preventScroll: true });
   });
   dialog.addEventListener("keydown", keepFallbackFocusInside);
 
@@ -350,8 +407,16 @@ function makeDialogController(root: HTMLElement) {
       setDescription(description, descriptionRule, eventDescription);
       trigger = eventElement;
 
-      if (supportsModal) dialog.showModal();
-      else openFallback();
+      unlockPageScroll?.();
+      unlockPageScroll = lockPageScroll();
+      try {
+        if (supportsModal) dialog.showModal();
+        else openFallback();
+      } catch (error) {
+        unlockPageScroll();
+        unlockPageScroll = null;
+        throw error;
+      }
       closeButton.focus();
     },
   };
