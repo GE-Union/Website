@@ -3,7 +3,7 @@ export const googleCalendarApiPattern =
 
 export const unsafeCalendarTitle = "Safety <img onerror=window.injected=true>";
 export const unsafeCalendarDescription =
-  "<img src=x onerror=window.injected=true>\nSecond line";
+  '<p>Welcome to <strong onclick="window.injected=true">GE Union</strong>.</p><p><a href="https://example.com" target="_blank">Event details</a> <a href="javascript:window.injected=true">Unsafe link</a></p><img src=x onerror=window.injected=true>';
 
 export const calendarEventsFixture = {
   kind: "calendar#events",

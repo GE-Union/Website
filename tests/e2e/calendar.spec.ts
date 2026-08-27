@@ -3,7 +3,6 @@ import {
   calendarEventsFixture,
   emptyCalendarFixture,
   googleCalendarApiPattern,
-  unsafeCalendarDescription,
   unsafeCalendarTitle,
 } from "../fixtures/calendar";
 
@@ -79,16 +78,28 @@ test("opens untrusted event content safely and restores keyboard focus", async (
     page.getByRole("button", { name: "Close event details" }),
   ).toBeFocused();
   await expect(page.locator("[data-event-date]")).toHaveText(
-    "Thursday · 27th August",
+    "Thursday  ·  27th August",
   );
   await expect(page.locator("[data-event-time]")).toHaveText("09:00 - 11:30");
   await expect(page.locator("[data-event-location]")).toHaveText(
     "DTU Building 101",
   );
-  await expect(page.locator("[data-event-description]")).toHaveText(
-    unsafeCalendarDescription,
+  const description = page.locator("[data-event-description]");
+  await expect(description.locator("strong")).toHaveText("GE Union");
+  await expect(
+    description.getByRole("link", { name: "Event details" }),
+  ).toHaveAttribute("href", "https://example.com");
+  await expect(
+    description.getByRole("link", { name: "Event details" }),
+  ).toHaveAttribute("rel", "noopener noreferrer");
+  await expect(description.getByText("Unsafe link")).not.toHaveAttribute(
+    "href",
   );
-  await expect(dialog.locator("img")).toHaveCount(0);
+  await expect(description.locator("strong")).not.toHaveAttribute("onclick");
+  await expect(description.locator("img, script, style")).toHaveCount(0);
+  await expect(dialog.locator("dt, dd")).toHaveCount(0);
+  await expect(dialog.locator(".event-dialog-dot")).toHaveCount(4);
+  await expect(dialog.locator(".event-dialog-logo")).toBeVisible();
   expect(await page.evaluate(() => "injected" in window)).toBe(false);
   await expect(page).toHaveURL("/calendar");
 
@@ -97,7 +108,7 @@ test("opens untrusted event content safely and restores keyboard focus", async (
   await expect(event).toBeFocused();
 
   await event.press("Enter");
-  await page.getByRole("button", { name: "Close event details" }).click();
+  await page.keyboard.press("Enter");
   await expect(dialog).not.toBeVisible();
   await expect(event).toBeFocused();
 });
@@ -107,14 +118,14 @@ test("formats all-day and post-midnight event details", async ({ page }) => {
 
   await page.locator(".fc-event").filter({ hasText: "Study day" }).click();
   await expect(page.locator("[data-event-date]")).toHaveText(
-    "Friday · 28th August",
+    "Friday  ·  28th August",
   );
   await expect(page.locator("[data-event-time-row]")).toBeHidden();
   await page.keyboard.press("Escape");
 
   await page.locator(".fc-event").filter({ hasText: "Late party" }).click();
   await expect(page.locator("[data-event-date]")).toHaveText(
-    "Saturday · 29th August",
+    "Saturday  ·  29th August",
   );
   await expect(page.locator("[data-event-time]")).toHaveText(
     "22:00 - 02:00 🌙",
@@ -146,7 +157,8 @@ test("shows loading and empty states", async ({ page }) => {
     "data-calendar-state",
     "empty",
   );
-  await expect(page.locator("[data-calendar-notice-text]")).toHaveText(
+  await expect(page.locator("[data-calendar-notice]")).toBeHidden();
+  await expect(page.locator("[data-calendar-live]")).toHaveText(
     "No events are scheduled in this period.",
   );
 });

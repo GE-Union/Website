@@ -12,6 +12,61 @@ import {
 type CalendarState = "loading" | "ready" | "empty" | "error" | "missing-key";
 
 const ORIGINAL_END_PROPERTY = "geuOriginalEnd";
+const DESCRIPTION_TAGS = new Set([
+  "a",
+  "b",
+  "blockquote",
+  "br",
+  "code",
+  "del",
+  "div",
+  "em",
+  "h1",
+  "h2",
+  "h3",
+  "h4",
+  "h5",
+  "h6",
+  "hr",
+  "i",
+  "li",
+  "mark",
+  "ol",
+  "p",
+  "pre",
+  "q",
+  "s",
+  "small",
+  "span",
+  "strong",
+  "sub",
+  "sup",
+  "time",
+  "u",
+  "ul",
+]);
+const DROPPED_DESCRIPTION_TAGS = new Set([
+  "audio",
+  "base",
+  "button",
+  "canvas",
+  "embed",
+  "form",
+  "iframe",
+  "img",
+  "input",
+  "link",
+  "math",
+  "meta",
+  "noscript",
+  "object",
+  "picture",
+  "script",
+  "style",
+  "svg",
+  "template",
+  "video",
+]);
 
 function getEventDate(value: unknown): Date | null {
   if (
@@ -74,6 +129,73 @@ function setOptionalField(
   row.hidden = value.length === 0;
 }
 
+function isAllowedDescriptionLink(href: string): boolean {
+  try {
+    const url = new URL(href, window.location.href);
+    return ["http:", "https:", "mailto:", "tel:"].includes(url.protocol);
+  } catch {
+    return false;
+  }
+}
+
+function copyDescriptionNode(source: Node, destination: Node): void {
+  if (source.nodeType === Node.TEXT_NODE) {
+    destination.appendChild(document.createTextNode(source.textContent ?? ""));
+    return;
+  }
+  if (!(source instanceof Element)) return;
+
+  const tagName = source.tagName.toLowerCase();
+  if (DROPPED_DESCRIPTION_TAGS.has(tagName)) return;
+  if (!DESCRIPTION_TAGS.has(tagName)) {
+    [...source.childNodes].forEach((child) =>
+      copyDescriptionNode(child, destination),
+    );
+    return;
+  }
+
+  const element = document.createElement(tagName);
+  const title = source.getAttribute("title");
+  if (title) element.title = title;
+
+  if (element instanceof HTMLAnchorElement) {
+    const href = source.getAttribute("href");
+    if (href && isAllowedDescriptionLink(href)) element.href = href;
+    if (source.getAttribute("target") === "_blank") {
+      element.target = "_blank";
+      element.rel = "noopener noreferrer";
+    }
+  }
+
+  destination.appendChild(element);
+  [...source.childNodes].forEach((child) =>
+    copyDescriptionNode(child, element),
+  );
+}
+
+function renderDescription(value: string): DocumentFragment {
+  const source = new DOMParser().parseFromString(value, "text/html");
+  const fragment = document.createDocumentFragment();
+  [...source.body.childNodes].forEach((child) =>
+    copyDescriptionNode(child, fragment),
+  );
+  return fragment;
+}
+
+function setDescription(
+  description: HTMLElement,
+  rule: HTMLElement | null,
+  value: string,
+): void {
+  const safeContent = renderDescription(value);
+  const hasContent = safeContent.hasChildNodes();
+  description.replaceChildren(safeContent);
+
+  const hidden = value.length === 0 || !hasContent;
+  description.hidden = hidden;
+  if (rule) rule.hidden = hidden;
+}
+
 function makeCalendarControlsAccessible(grid: HTMLElement): void {
   grid.querySelectorAll<HTMLElement>(".fc-icon[role=img]").forEach((icon) => {
     icon.removeAttribute("role");
@@ -97,6 +219,9 @@ function makeDialogController(root: HTMLElement) {
   const description = root.querySelector<HTMLElement>(
     "[data-event-description]",
   );
+  const descriptionRule = root.querySelector<HTMLElement>(
+    "[data-event-description-rule]",
+  );
 
   if (!dialog || !closeButton || !title || !date || !description) {
     return null;
@@ -104,6 +229,7 @@ function makeDialogController(root: HTMLElement) {
 
   let trigger: HTMLElement | null = null;
   let fallbackBackground: HTMLElement[] = [];
+  let closeTimer: number | null = null;
   const supportsModal = typeof dialog.showModal === "function";
 
   const restoreBackground = (): void => {
@@ -111,13 +237,26 @@ function makeDialogController(root: HTMLElement) {
     fallbackBackground = [];
   };
 
-  const close = (): void => {
+  const finishClose = (): void => {
+    if (closeTimer !== null) window.clearTimeout(closeTimer);
+    closeTimer = null;
     if (!dialog.open) return;
     if (typeof dialog.close === "function") dialog.close();
     else {
       dialog.removeAttribute("open");
       dialog.dispatchEvent(new Event("close"));
     }
+  };
+
+  const close = (): void => {
+    if (!dialog.open || dialog.dataset.closing === "true") return;
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      finishClose();
+      return;
+    }
+
+    dialog.dataset.closing = "true";
+    closeTimer = window.setTimeout(finishClose, 150);
   };
 
   const openFallback = (): void => {
@@ -159,10 +298,15 @@ function makeDialogController(root: HTMLElement) {
   };
 
   closeButton.addEventListener("click", close);
+  dialog.addEventListener("cancel", (event) => {
+    event.preventDefault();
+    close();
+  });
   dialog.addEventListener("click", (event) => {
     if (event.target === dialog) close();
   });
   dialog.addEventListener("close", () => {
+    delete dialog.dataset.closing;
     restoreBackground();
     if (trigger?.isConnected) trigger.focus();
   });
@@ -203,7 +347,7 @@ function makeDialogController(root: HTMLElement) {
       date.textContent = formatted.date;
       setOptionalField(timeRow, time, formatted.time);
       setOptionalField(locationRow, location, eventLocation);
-      description.textContent = eventDescription;
+      setDescription(description, descriptionRule, eventDescription);
       trigger = eventElement;
 
       if (supportsModal) dialog.showModal();

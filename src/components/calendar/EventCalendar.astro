@@ -35,37 +35,45 @@ const apiKey = import.meta.env.PUBLIC_GOOGLE_CALENDAR_API_KEY?.trim() ?? "";
     class="event-dialog"
     data-event-dialog
     aria-labelledby="event-dialog-title"
+    tabindex="-1"
   >
     <div class="event-dialog-card">
-      <button
-        type="button"
-        class="event-dialog-close"
-        data-event-dialog-close
-        aria-label="Close event details"
-      >
-        <svg aria-hidden="true" viewBox="0 0 16 16">
-          <path d="M3 3l10 10M13 3 3 13"></path>
-        </svg>
+      <button type="button" class="visually-hidden" data-event-dialog-close>
+        Close event details
       </button>
 
-      <h2 id="event-dialog-title" data-event-title>Event details</h2>
+      <div class="event-dialog-content">
+        <div class="event-dialog-row event-dialog-title-row">
+          <span class="event-dialog-dot event-dialog-title-dot"></span>
+          <h3 id="event-dialog-title" data-event-title>Event details</h3>
+        </div>
 
-      <dl class="event-meta">
-        <div>
-          <dt>Date</dt>
-          <dd data-event-date></dd>
+        <div class="event-dialog-row">
+          <span class="event-dialog-dot"></span>
+          <p data-event-date></p>
         </div>
-        <div data-event-time-row>
-          <dt>Time</dt>
-          <dd data-event-time></dd>
-        </div>
-        <div data-event-location-row>
-          <dt>Place</dt>
-          <dd data-event-location></dd>
-        </div>
-      </dl>
 
-      <p class="event-description" data-event-description></p>
+        <div class="event-dialog-row" data-event-time-row>
+          <span class="event-dialog-dot"></span>
+          <p data-event-time></p>
+        </div>
+
+        <div class="event-dialog-row" data-event-location-row>
+          <span class="event-dialog-dot"></span>
+          <p data-event-location></p>
+        </div>
+
+        <hr class="event-dialog-rule" data-event-description-rule />
+        <div class="event-description" data-event-description></div>
+      </div>
+
+      <img
+        class="event-dialog-logo"
+        src="/assets/logos/ge-logo-big.svg"
+        alt=""
+        width="492"
+        height="684"
+      />
     </div>
   </dialog>
 </section>
@@ -189,109 +197,163 @@ const apiKey = import.meta.env.PUBLIC_GOOGLE_CALENDAR_API_KEY?.trim() ?? "";
   }
 
   .event-dialog {
-    width: min(620px, calc(100vw - 40px));
-    max-width: 620px;
-    max-height: min(760px, calc(100dvh - 40px));
-    padding: 0;
+    position: fixed;
+    inset: 0;
+    width: 100vw;
+    max-width: none;
+    height: 100dvh;
+    max-height: none;
+    padding: 0 0 6vh;
+    margin: 0;
     border: 0;
-    border-radius: var(--rad1);
-    background: var(--background);
+    background: transparent;
     color: var(--front-1);
-    box-shadow: 0 24px 70px #0004;
+    overflow: hidden;
+  }
+
+  .event-dialog[open] {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   .event-dialog::backdrop {
-    background: #1d1d1d61;
-    backdrop-filter: blur(4px);
+    background: #00000061;
+    backdrop-filter: blur(10px);
+    animation: event-dialog-backdrop-in 0.1s ease-out;
+  }
+
+  .event-dialog[data-closing="true"]::backdrop {
+    animation: event-dialog-backdrop-out 0.1s ease-out forwards;
   }
 
   .event-dialog-card {
     position: relative;
-    padding: 42px;
-    overflow: auto;
-  }
-
-  .event-dialog-card::before {
-    position: absolute;
-    content: "";
-    width: 9px;
-    inset: 42px auto 42px 0;
-    border-radius: 0 8px 8px 0;
-    background: var(--back-red-1);
-  }
-
-  .event-dialog h2 {
-    padding-right: 40px;
-    margin: 0 0 28px;
-    font-size: 1.7rem;
-    line-height: 1.15;
-    overflow-wrap: anywhere;
-  }
-
-  .event-dialog-close {
-    position: absolute;
-    top: 22px;
-    right: 22px;
-    display: grid;
-    place-items: center;
-    width: 38px;
-    height: 38px;
-    padding: 9px;
-    border: 0;
-    border-radius: 50%;
-    background: var(--back-grey-2);
-    color: var(--front-1);
-    cursor: pointer;
-  }
-
-  .event-dialog-close:hover {
-    background: var(--back-grey-1);
-  }
-
-  .event-dialog-close svg {
-    fill: none;
-    stroke: currentColor;
-    stroke-linecap: round;
-    stroke-width: 1.6;
-  }
-
-  .event-meta {
     display: flex;
-    flex-direction: column;
-    gap: 12px;
-    margin: 0;
+    justify-content: space-between;
+    padding: var(--gap2);
+    border-radius: var(--rad1);
+    background: var(--background);
+    box-shadow: 0 2px 61px #0003;
+    overflow: clip;
+    animation: event-dialog-card-in 0.15s ease;
   }
 
-  .event-meta > div {
-    display: grid;
-    grid-template-columns: 74px minmax(0, 1fr);
-    gap: 12px;
+  .event-dialog[data-closing="true"] .event-dialog-card {
+    animation: event-dialog-card-out 0.15s ease forwards;
   }
 
-  .event-meta > div[hidden] {
-    display: none;
+  .event-dialog-content {
+    z-index: 1;
+    flex: 1 1 auto;
+    width: clamp(600px, 60vw, 900px);
+    max-height: 70vh;
+    margin: 25px 30px;
+    overflow-y: auto;
   }
 
-  .event-meta dt {
-    color: var(--front-2);
-    font-weight: 600;
+  .event-dialog-row {
+    display: flex;
+    height: min-content;
   }
 
-  .event-meta dd {
-    margin: 0;
-    overflow-wrap: anywhere;
+  .event-dialog-title-row {
+    margin-bottom: 4px;
   }
 
-  .event-description {
-    padding-top: 24px;
-    margin-top: 26px;
-    border-top: 1px solid var(--back-grey-1);
+  .event-dialog h3 {
+    margin: 0 0 0 0.5em;
+    font-size: 1.4em;
     white-space: pre-wrap;
     overflow-wrap: anywhere;
   }
 
-  .event-description:empty {
+  .event-dialog-dot {
+    flex: 0 0 auto;
+    align-self: center;
+    height: 0.5em;
+    margin-left: 0.15em;
+    border-radius: 10px;
+    aspect-ratio: 1;
+    background: var(--back-red-1);
+  }
+
+  .event-dialog-title-dot {
+    height: 0.8em;
+    margin-left: 0;
+    border-radius: 5px;
+  }
+
+  .event-dialog-row p {
+    margin-left: 0.8em;
+    color: var(--front-3);
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+  }
+
+  .event-dialog-row[hidden] {
     display: none;
+  }
+
+  .event-dialog-rule {
+    width: 90%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid var(--front-3);
+    border-left: 0;
+    color: gray;
+    opacity: 0.4;
+  }
+
+  .event-description {
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+  }
+
+  .event-dialog-rule[hidden],
+  .event-description[hidden] {
+    display: none;
+  }
+
+  .event-dialog-logo {
+    position: absolute;
+    top: -92px;
+    right: 12px;
+    width: 340px;
+    height: 450px;
+    margin-left: auto;
+    opacity: 0.03;
+    filter: invert(100%);
+    transform: rotate(-11deg);
+    user-select: none;
+    pointer-events: none;
+  }
+
+  @keyframes event-dialog-backdrop-in {
+    from {
+      opacity: 0;
+    }
+  }
+
+  @keyframes event-dialog-backdrop-out {
+    to {
+      opacity: 0;
+    }
+  }
+
+  @keyframes event-dialog-card-in {
+    from {
+      transform: scale(0.9);
+    }
+  }
+
+  @keyframes event-dialog-card-out {
+    to {
+      transform: scale(0.9);
+    }
   }
 
   @media (max-width: 767px) {
@@ -342,22 +404,32 @@ const apiKey = import.meta.env.PUBLIC_GOOGLE_CALENDAR_API_KEY?.trim() ?? "";
     }
   }
 
+  @media (max-width: 991px) {
+    .event-dialog-content {
+      width: 80vw;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .event-dialog-content {
+      width: 78vw;
+    }
+  }
+
   @media (max-width: 479px) {
+    .event-dialog-content {
+      margin: 15px;
+    }
+
+    .event-dialog-logo {
+      right: -101px;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .event-dialog::backdrop,
     .event-dialog-card {
-      padding: 34px 28px;
-    }
-
-    .event-dialog-card::before {
-      inset-block: 34px;
-    }
-
-    .event-dialog h2 {
-      font-size: 1.45rem;
-    }
-
-    .event-meta > div {
-      grid-template-columns: 62px minmax(0, 1fr);
-      gap: 8px;
+      animation: none;
     }
   }
 </style>

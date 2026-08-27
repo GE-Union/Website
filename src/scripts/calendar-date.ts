@@ -137,7 +137,7 @@ function formatDay(date: Date, locale: string, withWeekday: boolean): string {
   const weekday = new Intl.DateTimeFormat(locale, { weekday: "long" }).format(
     date,
   );
-  return `${weekday} · ${day} ${month}`;
+  return `${weekday}  ·  ${day} ${month}`;
 }
 
 function formatTime(date: Date, locale: string): string {

@@ -64,7 +64,7 @@ describe("calendar date formatting", () => {
         end: localDate(2026, 8, 29),
         allDay: true,
       }),
-    ).toEqual({ date: "Friday · 28th August", time: "" });
+    ).toEqual({ date: "Friday  ·  28th August", time: "" });
   });
 
   test("formats an all-day event without an explicit end", () => {
@@ -73,7 +73,7 @@ describe("calendar date formatting", () => {
         start: localDate(2026, 8, 28),
         allDay: true,
       }),
-    ).toEqual({ date: "Friday · 28th August", time: "" });
+    ).toEqual({ date: "Friday  ·  28th August", time: "" });
   });
 
   test("treats a multi-day all-day end as exclusive", () => {
@@ -114,7 +114,7 @@ describe("calendar date formatting", () => {
         allDay: false,
       }),
     ).toEqual({
-      date: "Friday · 28th August",
+      date: "Friday  ·  28th August",
       time: "16:00 - 20:30",
     });
   });
@@ -126,7 +126,7 @@ describe("calendar date formatting", () => {
         end: localDate(2026, 8, 28, 16),
         allDay: false,
       }),
-    ).toEqual({ date: "Friday · 28th August", time: "16:00" });
+    ).toEqual({ date: "Friday  ·  28th August", time: "16:00" });
   });
 
   test("formats an event without an end time", () => {
@@ -135,7 +135,7 @@ describe("calendar date formatting", () => {
         start: localDate(2026, 8, 28, 16),
         allDay: false,
       }),
-    ).toEqual({ date: "Friday · 28th August", time: "16:00" });
+    ).toEqual({ date: "Friday  ·  28th August", time: "16:00" });
   });
 
   test("does not infer all-day from a midnight timed event", () => {
@@ -144,7 +144,7 @@ describe("calendar date formatting", () => {
         start: localDate(2026, 8, 28),
         allDay: false,
       }),
-    ).toEqual({ date: "Friday · 28th August", time: "00:00" });
+    ).toEqual({ date: "Friday  ·  28th August", time: "00:00" });
   });
 
   test("treats a malformed end as unavailable", () => {
@@ -154,7 +154,7 @@ describe("calendar date formatting", () => {
         end: localDate(2026, 8, 28, 15),
         allDay: false,
       }),
-    ).toEqual({ date: "Friday · 28th August", time: "16:00" });
+    ).toEqual({ date: "Friday  ·  28th August", time: "16:00" });
   });
 
   test("keeps an event ending before 05:00 on its starting day", () => {
@@ -165,7 +165,7 @@ describe("calendar date formatting", () => {
         allDay: false,
       }),
     ).toEqual({
-      date: "Friday · 28th August",
+      date: "Friday  ·  28th August",
       time: "22:00 - 02:00 🌙",
     });
   });
