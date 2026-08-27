@@ -22,6 +22,12 @@ npm ci        # exact install from package-lock.json (prefer this over npm insta
 npm run dev   # dev server at http://localhost:4321, reloads on save
 ```
 
+The event calendar also needs a public Google Calendar browser key. Copy
+`.env.example` to `.env`, add `PUBLIC_GOOGLE_CALENDAR_API_KEY`, and follow the
+restriction and deployment checklist in
+[CALENDAR.md](CALENDAR.md). Without a key, the page remains usable
+but shows a configuration notice instead of events.
+
 To run browser tests once, you also need the test browser:
 
 ```sh
@@ -82,6 +88,10 @@ the matching URL. `src/pages/about-geu.astro` → `https://geunion.dk/about-geu`
   `tests/visual/snapshots/`.
 - `docs/` — the migration audit, content review log, asset mapping, and the
   prompt pack driving the rebuild.
+
+The calendar's data flow and operating guide live in
+[CALENDAR.md](CALENDAR.md). Start there before changing its Google
+Cloud configuration or timing behavior.
 
 An `.astro` file has two parts: a `---`-fenced code block at the top
 (TypeScript, runs at build time) and an HTML template below it. A `<style>` tag
