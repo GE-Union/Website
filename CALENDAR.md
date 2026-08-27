@@ -70,6 +70,9 @@ will produce the page's network-error state.
   embedded-media, form, and unsafe-link markup is discarded.
 - Events ending the following morning before 05:00 stay on their starting day
   in the month grid while the dialog keeps the real end time.
+- Dates and times always use `Europe/Copenhagen`, regardless of the visitor's
+  device timezone. FullCalendar's named-timezone UTC coercion provides this
+  without shipping a separate timezone library.
 - Google all-day end dates are treated as exclusive.
 - Missing time, location, and description fields are omitted from the dialog.
 - Loading, empty, missing-key, and network-error states are visible and

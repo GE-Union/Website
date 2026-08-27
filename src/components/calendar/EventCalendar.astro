@@ -12,6 +12,7 @@ const apiKey = import.meta.env.PUBLIC_GOOGLE_CALENDAR_API_KEY?.trim() ?? "";
   data-calendar-id={eventCalendarConfig.googleCalendarId}
   data-cutoff-hour={eventCalendarConfig.lateNightCutoffHour}
   data-locale={eventCalendarConfig.locale}
+  data-time-zone={eventCalendarConfig.timeZone}
   data-calendar-state="loading"
 >
   <p class="visually-hidden" aria-live="polite" data-calendar-live>

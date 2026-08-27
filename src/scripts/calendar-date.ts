@@ -18,10 +18,39 @@ export interface NormalizedEventEnd {
 export type CalendarDateInput = Date | string | number;
 
 const MILLISECONDS_PER_DAY = 24 * 60 * 60 * 1000;
+const ISO_DATE_TIME_PATTERN =
+  /^(\d{4})-(\d{2})-(\d{2})T(\d{2}):(\d{2})(?::(\d{2})(?:\.(\d+))?)?(?:Z|[+-]\d{2}:?\d{2})?$/;
+
+// FullCalendar v6 represents named-timezone wall times in UTC-backed Dates.
+// Keeping that contract here prevents event times from changing with the
+// visitor's device timezone without adding a timezone library to the bundle.
+function utcCalendarDate(
+  year: number,
+  month: number,
+  day: number,
+  hour = 0,
+  minute = 0,
+  second = 0,
+  millisecond = 0,
+): Date | null {
+  const parsed = new Date(0);
+  parsed.setUTCFullYear(year, month - 1, day);
+  parsed.setUTCHours(hour, minute, second, millisecond);
+
+  return parsed.getUTCFullYear() === year &&
+    parsed.getUTCMonth() === month - 1 &&
+    parsed.getUTCDate() === day &&
+    parsed.getUTCHours() === hour &&
+    parsed.getUTCMinutes() === minute &&
+    parsed.getUTCSeconds() === second &&
+    parsed.getUTCMilliseconds() === millisecond
+    ? parsed
+    : null;
+}
 
 function calendarDayNumber(date: Date): number {
   return (
-    Date.UTC(date.getFullYear(), date.getMonth(), date.getDate()) /
+    Date.UTC(date.getUTCFullYear(), date.getUTCMonth(), date.getUTCDate()) /
     MILLISECONDS_PER_DAY
   );
 }
@@ -36,16 +65,16 @@ function isSameCalendarDay(left: Date, right: Date): boolean {
 
 function isMidnight(date: Date): boolean {
   return (
-    date.getHours() === 0 &&
-    date.getMinutes() === 0 &&
-    date.getSeconds() === 0 &&
-    date.getMilliseconds() === 0
+    date.getUTCHours() === 0 &&
+    date.getUTCMinutes() === 0 &&
+    date.getUTCSeconds() === 0 &&
+    date.getUTCMilliseconds() === 0
   );
 }
 
 function previousCalendarDay(date: Date): Date {
   const previous = new Date(date);
-  previous.setDate(previous.getDate() - 1);
+  previous.setUTCDate(previous.getUTCDate() - 1);
   return previous;
 }
 
@@ -63,17 +92,24 @@ export function parseCalendarDate(
 
   if (isDateOnlyInput(value)) {
     const [year, month, day] = value.split("-").map(Number);
-    const parsed = new Date(0);
-    parsed.setHours(0, 0, 0, 0);
-    parsed.setFullYear(year, month - 1, day);
-    if (
-      parsed.getFullYear() !== year ||
-      parsed.getMonth() !== month - 1 ||
-      parsed.getDate() !== day
-    ) {
-      return null;
-    }
-    return parsed;
+    return utcCalendarDate(year, month, day);
+  }
+
+  if (typeof value === "string") {
+    const match = ISO_DATE_TIME_PATTERN.exec(value);
+    if (!match) return null;
+
+    const [, year, month, day, hour, minute, second = "0", fraction = ""] =
+      match;
+    return utcCalendarDate(
+      Number(year),
+      Number(month),
+      Number(day),
+      Number(hour),
+      Number(minute),
+      Number(second),
+      Number(fraction.padEnd(3, "0").slice(0, 3)),
+    );
   }
 
   const parsed = new Date(value);
@@ -103,7 +139,7 @@ export function isLateNightContinuation(
   return (
     end.getTime() > start.getTime() &&
     calendarDayDifference(start, end) === 1 &&
-    end.getHours() < cutoffHour
+    end.getUTCHours() < cutoffHour
   );
 }
 
@@ -124,19 +160,24 @@ export function normalizeEventEnd(
   }
 
   const displayEnd = new Date(start);
-  displayEnd.setHours(23, 59, 59, 999);
+  displayEnd.setUTCHours(23, 59, 59, 999);
   return { actualEnd, displayEnd, shortened: true };
 }
 
 function formatDay(date: Date, locale: string, withWeekday: boolean): string {
-  const day = `${date.getDate()}${getOrdinalSuffix(date.getDate())}`;
-  const month = new Intl.DateTimeFormat(locale, { month: "long" }).format(date);
+  const dateNumber = date.getUTCDate();
+  const day = `${dateNumber}${getOrdinalSuffix(dateNumber)}`;
+  const month = new Intl.DateTimeFormat(locale, {
+    month: "long",
+    timeZone: "UTC",
+  }).format(date);
 
   if (!withWeekday) return `${day} ${month}`;
 
-  const weekday = new Intl.DateTimeFormat(locale, { weekday: "long" }).format(
-    date,
-  );
+  const weekday = new Intl.DateTimeFormat(locale, {
+    weekday: "long",
+    timeZone: "UTC",
+  }).format(date);
   return `${weekday}  ·  ${day} ${month}`;
 }
 
@@ -144,6 +185,7 @@ function formatTime(date: Date, locale: string): string {
   return new Intl.DateTimeFormat(locale, {
     hour: "2-digit",
     minute: "2-digit",
+    timeZone: "UTC",
   }).format(date);
 }
 

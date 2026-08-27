@@ -434,6 +434,7 @@ export function initEventCalendar(root: HTMLElement): void {
   const apiKey = root.dataset.apiKey?.trim() ?? "";
   const calendarId = root.dataset.calendarId?.trim() ?? "";
   const locale = root.dataset.locale || "en-GB";
+  const timeZone = root.dataset.timeZone || "Europe/Copenhagen";
   const cutoffHour = Number(root.dataset.cutoffHour) || 5;
   if (!grid || !retry || !calendarId) return;
 
@@ -453,6 +454,7 @@ export function initEventCalendar(root: HTMLElement): void {
     dayMaxEvents: 3,
     firstDay: 1,
     contentHeight: "auto",
+    timeZone,
     googleCalendarApiKey: apiKey || undefined,
     events: apiKey ? { googleCalendarId: calendarId } : [],
     eventContent(info) {

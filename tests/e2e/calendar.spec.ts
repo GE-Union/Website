@@ -6,6 +6,8 @@ import {
   unsafeCalendarTitle,
 } from "../fixtures/calendar";
 
+test.use({ timezoneId: "America/New_York" });
+
 async function useCalendarClock(page: Page) {
   await page.clock.setFixedTime(new Date("2026-08-27T12:00:00+02:00"));
 }
@@ -63,6 +65,7 @@ test("renders the configured month and title-only events", async ({ page }) => {
   ).toHaveText(unsafeCalendarTitle);
   expect(requestUrl).toContain("key=playwright-public-test-key");
   expect(requestUrl).toContain("singleEvents=true");
+  expect(requestUrl).toContain("timeZone=Europe%2FCopenhagen");
 });
 
 test("opens untrusted event content safely and restores keyboard focus", async ({
