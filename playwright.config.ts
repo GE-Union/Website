@@ -1,5 +1,8 @@
 import { defineConfig, devices } from "@playwright/test";
 
+const testPort = process.env.PLAYWRIGHT_PORT || "4322";
+const testBaseUrl = `http://localhost:${testPort}`;
+
 // Three browser-test suites over the built static site:
 //   e2e    — behavior (tests/e2e)
 //   a11y   — axe-core scans (tests/a11y)
@@ -12,7 +15,7 @@ export default defineConfig({
   retries: process.env.CI ? 2 : 0,
   reporter: process.env.CI ? [["github"], ["list"]] : "list",
   use: {
-    baseURL: "http://localhost:4321",
+    baseURL: testBaseUrl,
     trace: "on-first-retry",
   },
   expect: {
@@ -25,13 +28,13 @@ export default defineConfig({
   snapshotPathTemplate:
     "tests/visual/snapshots/{testFilePath}/{arg}-{projectName}{ext}",
   webServer: {
-    command: "npm run build && node scripts/serve-dist.mjs --port 4321",
+    command: `npm run build && node scripts/serve-dist.mjs --port ${testPort}`,
     env: {
       PUBLIC_GOOGLE_CALENDAR_API_KEY:
         process.env.PUBLIC_GOOGLE_CALENDAR_API_KEY ||
         "playwright-public-test-key",
     },
-    url: "http://localhost:4321",
+    url: testBaseUrl,
     reuseExistingServer: !process.env.CI,
     timeout: 120_000,
   },
