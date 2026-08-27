@@ -13,6 +13,37 @@ test.describe("home page", () => {
     ).toHaveAttribute("href", "/course-bank");
     await expect(page.locator('.feature[href="/introduction"]')).toBeVisible();
   });
+  test("calendar card shows exactly one responsive visual", async ({
+    page,
+  }) => {
+    const calendar = page.locator(".calendar-card");
+
+    await page.setViewportSize({ width: 1200, height: 900 });
+    await expect(calendar.locator("[data-mini-calendar]")).toBeVisible();
+    await expect(calendar.locator(".calendar-icon")).toBeHidden();
+
+    await page.setViewportSize({ width: 768, height: 1024 });
+    await expect(calendar.locator("[data-mini-calendar]")).toBeHidden();
+    await expect(calendar.locator(".calendar-icon")).toBeVisible();
+  });
+  test("home decorations stay out of layout flow", async ({ page }) => {
+    await page.setViewportSize({ width: 1200, height: 900 });
+
+    await expect(page.locator(".reels")).toHaveCSS("position", "absolute");
+    await expect(page.locator(".reels img")).toHaveCount(6);
+    await expect(page.locator(".letter-mask img")).toBeAttached();
+
+    const feature = page.locator(".feature").first();
+    const arrow = feature.locator(".feature-arrow svg");
+    await feature.hover();
+    await expect(arrow).toHaveCSS(
+      "color",
+      await feature.evaluate((element) => getComputedStyle(element).color),
+    );
+    await expect
+      .poll(async () => (await arrow.boundingBox())?.width ?? 0)
+      .toBeGreaterThanOrEqual(28);
+  });
   test("carousel loops and pauses on focus", async ({ page }) => {
     const carousel = page.locator("[data-carousel]");
     await expect(carousel).toHaveAttribute("data-autoplay", "playing");

@@ -2,6 +2,7 @@
 import HomeCarousel from "../components/home/HomeCarousel.astro";
 import MiniCalendar from "../components/home/MiniCalendar.astro";
 import SiteHeader from "../components/layout/SiteHeader.astro";
+import ArrowIcon from "../components/ui/ArrowIcon.astro";
 import CtaLink from "../components/ui/CtaLink.astro";
 import { applicationUrl, homeReels } from "../data/home";
 import { localAssets } from "../data/local-assets";
@@ -37,63 +38,60 @@ const socialBlocks = [
 ---
 
 <BaseLayout seo={getPageSeo("/")}>
-  <header slot="hero" class="home-hero icon-background home-top">
-    <SiteHeader />
-    <div class="hero-copy">
-      <h1>GE Union</h1><p>
-        Your <strong>community hub</strong> at General Engineering!
-      </p>
-    </div>
-  </header>
-  <section class="feature-grid">
-    <a class="feature calendar-card" href="/calendar">
-      <h2>
-        Calendar <img src={localAssets.arrow} alt="" width="25" height="24" />
-      </h2>
-      <div class="calendar-body">
-        <p>
-          See all upcoming events, periods, and deadlines all in one place.<br
-          /><br /><span>Everything relevant for GE Students.</span>
-        </p><MiniCalendar /><img
+  <div slot="hero" class="home-stage">
+    <header class="home-hero icon-background home-top">
+      <SiteHeader />
+      <div class="hero-copy">
+        <h1>GE Union</h1><p>
+          Your <strong>community hub</strong> at General Engineering!
+        </p>
+      </div>
+    </header>
+    <section class="feature-grid" aria-label="Student resources">
+      <a class="feature calendar-card" href="/calendar">
+        <h2>
+          Calendar <span class="feature-arrow"><ArrowIcon /></span>
+        </h2>
+        <div class="calendar-body">
+          <p>
+            See all upcoming events, periods, and deadlines all in one place.<br
+            /><br /><span>Everything relevant for GE Students.</span>
+          </p><MiniCalendar /><img
+            class="feature-icon calendar-icon"
+            src={localAssets.calendar}
+            alt=""
+            width="650"
+            height="570"
+          />
+        </div>
+      </a>
+      <a class="feature course-card" href="/course-bank"
+        ><h2>
+          Course Bank <span class="feature-arrow"><ArrowIcon /></span>
+        </h2><p>See notes made by older students for your course!</p><img
           class="feature-icon"
-          src={localAssets.calendar}
+          src={localAssets.vault}
           alt=""
           width="650"
           height="570"
-        />
-      </div>
-    </a>
-    <a class="feature course-card" href="/course-bank"
-      ><h2>
-        Course Bank <img
-          src={localAssets.arrow}
+        /></a
+      >
+      <a class="feature dashboard-card" href="/introduction"
+        ><h2>
+          Dashboard <span class="feature-arrow"><ArrowIcon /></span>
+        </h2><p>
+          All the relevant tools you will needs as a student studying General
+          Engineering
+        </p><img
+          class="feature-icon"
+          src={localAssets.dashboard}
           alt=""
-          width="25"
-          height="24"
-        />
-      </h2><p>See notes made by older students for your course!</p><img
-        class="feature-icon"
-        src={localAssets.vault}
-        alt=""
-        width="650"
-        height="570"
-      /></a
-    >
-    <a class="feature dashboard-card" href="/introduction"
-      ><h2>
-        Dashboard <img src={localAssets.arrow} alt="" width="25" height="24" />
-      </h2><p>
-        All the relevant tools you will needs as a student studying General
-        Engineering
-      </p><img
-        class="feature-icon"
-        src={localAssets.dashboard}
-        alt=""
-        width="650"
-        height="570"
-      /></a
-    >
-  </section>
+          width="650"
+          height="570"
+        /></a
+      >
+    </section>
+  </div>
   <section class="centered who-we-are">
     <img src={localAssets.geLogoSmall} alt="" width="498" height="618" /><h2>
       Who We Are
@@ -156,15 +154,25 @@ const socialBlocks = [
         <div>
           <h2>Contact us</h2><p class="desktop-contact">
             You can reach us with any questions at <a
+              class="email-link"
               href="mailto:geunion.dtu@gmail.com"
-              ><strong>geunion.dtu@gmail.com</strong></a
+              ><span class="letter-mask" aria-hidden="true">
+                <img
+                  src={localAssets.envelope}
+                  alt=""
+                  width="512"
+                  height="512"
+                />
+              </span><strong>geunion.dtu@gmail.com</strong></a
             >
           </p><p class="mobile-contact">
             Send us an email with any questions or suggestions you have, or drop
             us a message on Instagram.
           </p>
-        </div><CtaLink href="mailto:geunion.dtu@gmail.com" arrow
-          >Send Email</CtaLink
+        </div><span class="mobile-email-cta"
+          ><CtaLink href="mailto:geunion.dtu@gmail.com" arrow
+            >Send Email</CtaLink
+          ></span
         >
       </article>
     </div>
@@ -179,39 +187,51 @@ const socialBlocks = [
 </script>
 
 <style>
+  .home-stage {
+    --hero-height: 57vh;
+    --feature-height: clamp(440px, 62vh, 550px);
+    margin: var(--gap1) var(--gap1) 84px;
+  }
   .home-hero {
-    height: 700px;
-    margin: var(--gap1);
+    height: var(--hero-height);
+    min-height: 300px;
+    max-height: 686px;
     border-radius: var(--rad1);
   }
   .hero-copy {
     display: grid;
     place-items: center;
-    padding-top: 55px;
+    padding-top: 32px;
     color: #fff;
     text-align: center;
   }
+  .hero-copy h1 {
+    font-size: 7.5rem;
+    margin-block: -0.2em -0.1em;
+  }
   .hero-copy p {
-    font-size: 1.25rem;
+    margin-inline: 35px;
+    font-size: 1.3rem;
   }
   .feature-grid {
     position: relative;
     z-index: 2;
     display: grid;
-    grid-template-columns: 1.55fr 1fr;
-    grid-template-rows: 255px 255px;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: repeat(2, minmax(0, 1fr));
     gap: var(--gap2);
-    width: min(1110px, calc(100% - 170px));
-    margin: -290px auto 75px;
-    padding: 8px;
+    width: min(84%, 1120px);
+    height: var(--feature-height);
+    margin: calc(100px - 32vh) auto 0;
+    padding: var(--gap2);
     border-radius: 16px;
     background: #fff;
   }
   .feature {
     position: relative;
     overflow: hidden;
-    padding: 18px 26px;
-    border-radius: 8px;
+    padding: 20px;
+    border-radius: var(--rad2);
     background: var(--back-grey-1);
     color: var(--front-1);
     text-decoration: none;
@@ -222,51 +242,79 @@ const socialBlocks = [
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 4px;
+    gap: 0;
     margin: 0;
     font-family: Tanker, Rubik, sans-serif;
-    font-size: 2.15rem;
+    font-size: 2.6rem;
+    font-weight: 500;
     text-transform: uppercase;
   }
-  .feature h2 img {
+  .feature-arrow {
+    display: inline-grid;
     width: 0;
-    opacity: 0.65;
-    transition: width 0.2s;
+    height: 30px;
+    overflow: hidden;
+    place-items: center;
+    opacity: 0.72;
+    transition:
+      width 0.4s ease,
+      padding-left 0.4s ease;
   }
-  .feature:hover h2 img,
-  .feature:focus-visible h2 img {
-    width: 25px;
+  .feature-arrow :global(.arrow-icon) {
+    width: 30px;
+    height: 30px;
+  }
+  .feature:hover .feature-arrow,
+  .feature:focus-visible .feature-arrow {
+    width: 38px;
+    padding-left: 3px;
   }
   .feature p {
     position: relative;
     z-index: 2;
     align-self: center;
+    color: var(--front-2);
     text-align: center;
-    line-height: 1.15;
+    line-height: 1.3;
   }
   .feature-icon {
     position: absolute;
-    right: -8%;
-    bottom: -29%;
-    width: 64%;
+    right: -39px;
+    bottom: 0;
+    width: 260px;
     height: auto;
-    opacity: 0.15;
+    opacity: 0.07;
+    filter: blur(2px);
+    pointer-events: none;
+    user-select: none;
+  }
+  .calendar-icon {
+    display: none;
   }
   .calendar-card {
     grid-row: 1 / 3;
   }
   .calendar-body {
     display: grid;
-    grid-template-columns: 34% 66%;
+    grid-template-columns: minmax(145px, 30%) minmax(360px, 1fr);
     align-items: center;
-    height: calc(100% - 48px);
+    height: calc(100% - 52px);
   }
   .calendar-body p {
-    padding-right: 18px;
+    width: 100%;
+    max-width: 180px;
+    padding-right: 10px;
     text-align: left;
   }
   .calendar-body span {
     color: var(--front-2);
+  }
+  .calendar-body :global(.mini-calendar) {
+    width: calc(100% + 20px);
+    min-width: 360px;
+    margin: 20px 0 0 20px;
+    background: rgb(255 255 255 / 0.17);
+    box-shadow: 0 0 60px rgb(0 0 0 / 0.15);
   }
   .course-card,
   .dashboard-card {
@@ -304,50 +352,85 @@ const socialBlocks = [
   }
   .social-panel {
     position: relative;
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(600px, 2.1fr);
+    display: flex;
+    flex-direction: column;
     min-height: 880px;
     margin: var(--gap1);
+    padding: 60px 80px 40px 70px;
     overflow: hidden;
     border-radius: var(--rad1);
     background: var(--back-grey-1);
   }
   .reels {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-    padding: 12px;
-    overflow: hidden;
-    opacity: 0.93;
+    --reel-height: 250px;
+    --reel-width: 150px;
+    --reel-gap: 8px;
+    position: absolute;
+    z-index: 0;
+    top: -196px;
+    right: calc(22% - 650px);
+    width: calc(4 * var(--reel-width) + 3 * var(--reel-gap));
+    height: 900px;
+    rotate: 36deg;
+    transform-origin: top center;
+    pointer-events: none;
   }
   .reels img {
-    width: 100%;
-    height: 260px;
+    position: absolute;
+    width: var(--reel-width);
+    height: var(--reel-height);
+    border-radius: 18px;
     object-fit: cover;
-    border-radius: 12px;
+    opacity: 0.85;
+    filter: sepia(25%);
+    user-select: none;
   }
-  .reels img:nth-child(odd) {
-    translate: 0 -65px;
+  .reels img:nth-child(1) {
+    top: calc(var(--reel-height) + var(--reel-gap));
+    left: 0;
+  }
+  .reels img:nth-child(2) {
+    top: calc((var(--reel-height) + var(--reel-gap)) / 2);
+    left: calc(var(--reel-width) + var(--reel-gap));
+  }
+  .reels img:nth-child(3) {
+    top: calc(1.5 * (var(--reel-height) + var(--reel-gap)));
+    left: calc(var(--reel-width) + var(--reel-gap));
+  }
+  .reels img:nth-child(4) {
+    top: calc(-0.5 * (var(--reel-height) + var(--reel-gap)));
+    left: calc(2 * (var(--reel-width) + var(--reel-gap)));
+  }
+  .reels img:nth-child(5) {
+    top: calc(0.5 * (var(--reel-height) + var(--reel-gap)));
+    left: calc(2 * (var(--reel-width) + var(--reel-gap)));
+  }
+  .reels img:nth-child(6) {
+    top: calc(0.5 * (var(--reel-height) + var(--reel-gap)));
+    left: calc(3 * (var(--reel-width) + var(--reel-gap)));
   }
   .social-content {
+    position: relative;
+    z-index: 1;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    gap: 52px;
-    padding: 65px 9%;
-    background: var(--back-grey-1);
+    gap: 60px;
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
   }
   .social-block {
     display: grid;
-    grid-template-columns: 1fr auto;
+    grid-template-columns: minmax(300px, 1fr) auto;
     align-items: center;
-    gap: 30px;
+    gap: 100px;
   }
   .social-block h2 {
-    margin-bottom: 14px;
+    margin-bottom: 16px;
   }
   .social-block p {
-    max-width: 680px;
+    width: 100%;
+    max-width: 900px;
   }
   .social-block :global(.cta-link) {
     min-width: 215px;
@@ -356,88 +439,146 @@ const socialBlocks = [
     color: inherit;
     text-decoration: none;
   }
-  .mobile-contact {
+  .mobile-contact,
+  .mobile-email-cta {
     display: none;
   }
+  .email-link {
+    position: relative;
+    display: inline-block;
+  }
+  .email-link strong {
+    position: relative;
+    z-index: 3;
+  }
+  .letter-mask {
+    position: absolute;
+    z-index: 1;
+    top: -100px;
+    left: 50%;
+    width: 240px;
+    height: 120px;
+    overflow: hidden;
+    translate: -50% 0;
+    pointer-events: none;
+  }
+  .letter-mask::after {
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 8px;
+    background: linear-gradient(0deg, var(--back-grey-1), transparent);
+    content: "";
+  }
+  .letter-mask img {
+    width: 70%;
+    margin: 58px auto 0;
+    opacity: 0.08;
+    transition:
+      translate 0.4s ease,
+      rotate 0.4s ease,
+      scale 0.4s ease,
+      opacity 0.4s ease;
+  }
+  .email-link:hover .letter-mask img,
+  .email-link:focus-visible .letter-mask img {
+    translate: 0 -52px;
+    rotate: 6deg;
+    scale: 1.2;
+    opacity: 0.15;
+  }
+
   @media (max-width: 991px) {
+    .home-stage {
+      --hero-height: 44vh;
+      --feature-height: clamp(410px, 48vh, 480px);
+      margin-bottom: 78px;
+    }
     .home-hero {
-      height: 560px;
+      min-height: 340px;
+      max-height: none;
+    }
+    .hero-copy h1 {
+      font-size: 4.84rem;
     }
     .feature-grid {
-      width: min(900px, calc(100% - 100px));
-      margin-top: -215px;
+      margin-top: -158px;
+    }
+    .feature h2 {
+      font-size: 2.25rem;
     }
     .calendar-body {
-      display: block;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
     .calendar-body :global(.mini-calendar) {
       display: none;
     }
     .calendar-body p {
-      padding: 55px 9% 0;
+      width: 95%;
+      max-width: 251px;
+      padding: 0;
       text-align: center;
     }
+    .calendar-icon {
+      display: block;
+      right: 64px;
+      bottom: 57px;
+    }
     .social-panel {
-      grid-template-columns: 1fr;
+      padding-right: 70px;
+      padding-left: 55px;
     }
     .reels {
-      display: none;
+      right: -409px;
+    }
+    .social-content {
+      gap: 50px;
+    }
+    .social-block {
+      gap: 50px;
     }
   }
+
   @media (max-width: 767px) {
-    .home-hero {
-      height: 430px;
-    }
-    .hero-copy {
-      padding-top: 30px;
+    .home-stage {
+      --hero-height: 500px;
+      --feature-height: 560px;
     }
     .feature-grid {
       grid-template-columns: 1fr;
-      grid-template-rows: repeat(3, 200px);
-      width: calc(100% - 32px);
-      margin-top: -155px;
+      grid-template-rows: repeat(3, minmax(0, 1fr));
+      width: 84%;
+      margin-top: -330px;
     }
     .calendar-card {
       grid-row: auto;
     }
     .calendar-body {
-      display: block;
       height: auto;
-    }
-    .calendar-body :global(.mini-calendar) {
-      display: none;
-    }
-    .calendar-body p {
-      padding: 18px 12%;
-      text-align: center;
     }
     .calendar-body p span {
       display: none;
     }
-    .feature-icon {
-      right: -9%;
-      bottom: -70%;
-      width: 65%;
+    .feature-icon,
+    .calendar-icon {
+      right: -39px;
+      bottom: 0;
     }
-    .course-card,
-    .dashboard-card {
-      grid-template-rows: auto 1fr;
+    .reels img {
+      opacity: 0.2;
     }
     .centered {
       width: calc(100% - 55px);
     }
-    .who-we-are {
-      margin-top: 35px;
-    }
-    .who-we-are > img {
-      margin-bottom: 60px;
-    }
     .join {
       margin-bottom: 105px;
     }
-    .social-content {
-      gap: 58px;
-      padding: 65px 28px;
+    .social-panel {
+      padding: 60px 34px 40px;
     }
     .social-block {
       grid-template-columns: 1fr;
@@ -453,46 +594,104 @@ const socialBlocks = [
     .desktop-contact {
       display: none;
     }
-    .mobile-contact {
+    .mobile-contact,
+    .mobile-email-cta {
       display: block;
     }
   }
+
   @media (max-width: 479px) {
+    .home-stage {
+      --hero-height: 450px;
+      --feature-height: 485px;
+      height: 710px;
+      margin: var(--gap1) var(--gap1) 0;
+    }
     .home-hero {
-      height: 400px;
+      min-height: 0;
     }
     .hero-copy {
-      padding: 10px 22px 0;
+      padding: 3px 20px 0;
     }
     .hero-copy h1 {
-      font-size: 3.45rem;
+      font-size: 3.05rem;
+      margin: 0;
     }
     .hero-copy p {
-      font-size: 1rem;
+      margin: 4px 0 0;
+      font-size: 1.1rem;
     }
     .feature-grid {
-      grid-template-rows: repeat(3, 185px);
-      margin-top: -146px;
+      grid-template-rows: 180px 130px 147px;
+      width: 90%;
+      margin-top: -225px;
+      padding: 7px;
+      border-radius: 13px;
     }
     .feature {
-      padding: 14px;
+      padding: 10px;
     }
     .feature h2 {
-      font-size: 1.9rem;
+      font-size: 2rem;
     }
-    .feature p {
-      font-size: 0.86rem;
+    .feature-arrow {
+      width: 30px;
+      height: 25px;
+      padding-left: 3px;
+      opacity: 0.72;
     }
-    .feature h2 img {
-      width: 21px;
-      opacity: 0.65;
+    .feature-arrow :global(.arrow-icon) {
+      width: 25px;
+      height: 25px;
+    }
+    .feature p,
+    .calendar-body p {
+      width: 90%;
+      max-width: 400px;
+      margin: 0 auto;
+      font-size: 0.78rem;
+      line-height: 1.25;
+    }
+    .calendar-body p {
+      padding-top: 18px;
+    }
+    .feature-icon,
+    .calendar-icon {
+      right: -101px;
+      width: 260px;
+    }
+    .who-we-are > img {
+      margin-top: 60px;
+      margin-bottom: 60px;
+    }
+    .who-we-are {
+      padding-top: 25px;
+      padding-bottom: 20px;
+      margin-bottom: 100px;
     }
     .who-we-are p,
     .join p {
-      font-size: 0.87rem;
+      font-size: 0.88rem;
     }
     .social-panel {
       min-height: 0;
+      padding: 30px 15px;
+    }
+    .social-content {
+      gap: 60px;
+    }
+    .reels {
+      opacity: 0.15;
+    }
+    .social-block {
+      gap: 20px;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .feature-arrow,
+    .letter-mask img {
+      transition: none;
     }
   }
 </style>

@@ -4,7 +4,7 @@
  * "Learn more" button: red pill, white text, gentle hover scale, and an
  * optional arrow glyph. It is an anchor because CTAs navigate.
  */
-import { localAssets } from "../../data/local-assets";
+import ArrowIcon from "./ArrowIcon.astro";
 
 interface Props {
   href: string;
@@ -24,12 +24,13 @@ const { href, arrow = false, newTab = false } = Astro.props;
   rel={newTab ? "noopener noreferrer" : undefined}
 >
   <slot />
-  {arrow && <img src={localAssets.arrow} alt="" width="25" height="24" />}
+  {arrow && <ArrowIcon />}
 </a>
 
 <style>
   .cta-link {
     display: inline-flex;
+    align-items: center;
     justify-content: center;
     gap: 6px;
     height: fit-content;
@@ -40,16 +41,29 @@ const { href, arrow = false, newTab = false } = Astro.props;
     font-size: 20px;
     font-weight: 500;
     text-decoration: none;
-    transition: scale 0.2s ease;
+    transition:
+      scale 0.2s ease,
+      box-shadow 0.2s ease;
   }
 
   .cta-link:hover {
     scale: 1.03;
+    box-shadow: 0 5px 16px rgb(242 68 74 / 0.2);
+  }
+
+  .cta-link:active {
+    scale: 0.99;
   }
 
   @media (max-width: 767px) {
     .cta-link {
       font-size: 18px;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .cta-link {
+      transition: none;
     }
   }
 </style>
