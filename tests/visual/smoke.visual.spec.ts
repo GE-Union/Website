@@ -1,4 +1,9 @@
 import { expect, test, type Page } from "@playwright/test";
+import { COURSE_BANK_CACHE_KEY } from "../../src/scripts/course-bank-utils";
+import {
+  courseBankIconFixture,
+  courseBankStructureFixture,
+} from "../fixtures/course-bank";
 
 // Playwright-managed snapshots of the shared shell (hero + footer) at the
 // four audited viewports. These guard the shell against regressions
@@ -24,6 +29,30 @@ async function preparePage(page: Page, path: string) {
   );
 }
 
+async function prepareCourseBank(page: Page) {
+  await page.route("**/GE-Union/CourseBank/main/structure.json", (route) =>
+    route.fulfill({ status: 200, json: courseBankStructureFixture }),
+  );
+  await page.route("**/GE-Union/CourseBank/main/res/file-icon.svg", (route) =>
+    route.fulfill({
+      status: 200,
+      contentType: "image/svg+xml",
+      body: courseBankIconFixture,
+    }),
+  );
+  await page.addInitScript(
+    (key) => localStorage.removeItem(key),
+    COURSE_BANK_CACHE_KEY,
+  );
+  await preparePage(page, "/course-bank");
+  await page
+    .locator('[data-course-bank-state="ready"]')
+    .waitFor({ state: "attached" });
+  await page.waitForFunction(() =>
+    [...document.images].every((image) => image.complete),
+  );
+}
+
 for (const vp of viewports) {
   test(`shell snapshot at ${vp.name}`, async ({ page }) => {
     await page.setViewportSize({ width: vp.width, height: vp.height });
@@ -41,6 +70,16 @@ for (const vp of viewports.filter(({ name }) =>
     await page.setViewportSize({ width: vp.width, height: vp.height });
     await preparePage(page, "/");
     await expect(page).toHaveScreenshot(`home-${vp.name}.png`, {
+      fullPage: true,
+    });
+  });
+}
+
+for (const vp of viewports) {
+  test(`course bank composition at ${vp.name}`, async ({ page }) => {
+    await page.setViewportSize({ width: vp.width, height: vp.height });
+    await prepareCourseBank(page);
+    await expect(page).toHaveScreenshot(`course-bank-${vp.name}.png`, {
       fullPage: true,
     });
   });

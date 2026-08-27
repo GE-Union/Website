@@ -220,12 +220,14 @@ function openPdf(root: HTMLElement, link: HTMLAnchorElement): Window | null {
   const popup = window.open("about:blank", "_blank");
   if (!popup) return null;
 
-  popup.opener = null;
   void (async () => {
     try {
       const blob = await fetchFileBlob(link.href, "PDF");
       const objectUrl = URL.createObjectURL(blob);
       popup.location.replace(objectUrl);
+      // Keep the empty placeholder in the opener's browsing context group so
+      // it can resolve the blob URL, then sever access before PDF content loads.
+      popup.opener = null;
       window.setTimeout(
         () => URL.revokeObjectURL(objectUrl),
         PDF_BLOB_LIFETIME_MS,

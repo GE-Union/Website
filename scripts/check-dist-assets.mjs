@@ -65,10 +65,16 @@ const remoteOnlyBasenames = new Set([
     "reel6.png",
   ],
   "ge-ects-fordeling.png",
+  "structure.json",
+  "file-icon.svg",
 ]);
+const courseDocumentExtension = /\.(?:pdf|ipynb|docx?|xlsx?|pptx?|zip)$/i;
 for (const f of distFiles) {
   if (remoteOnlyBasenames.has(basename(f))) {
     errors.push(`remote-only asset has a local copy in dist: ${f}`);
+  }
+  if (courseDocumentExtension.test(f)) {
+    errors.push(`course document has a local copy in dist: ${f}`);
   }
 }
 

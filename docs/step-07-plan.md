@@ -9,21 +9,21 @@ security, reliability, and accessibility defects.
 
 ## Feature commits
 
-1. **Course catalog and data layer**
+1. **Course catalog and data layer — complete**
    - Extract the five categories and all legacy courses into typed data.
    - Add safe filename parsing, extension metadata, URL construction,
      structure validation, and folder lookup helpers.
    - Enable a versioned 90-minute local cache with corrupt-cache recovery,
      stale fallback, timeout support, and explicit bypass.
    - Cover the pure data behavior with unit tests.
-2. **Course-bank interface and runtime**
+2. **Course-bank interface and runtime — complete**
    - Render category introductions, courses, descriptions, note holders, and
      calls to action in Astro.
    - Add accessible tabs and semantic course disclosures.
    - Fetch the remote structure once, render file rows without `innerHTML`,
      and implement PDF/notebook/other-file behavior.
    - Reproduce the legacy desktop and mobile layout.
-3. **Integration coverage and documentation**
+3. **Integration coverage and documentation — complete**
    - Add mocked E2E behavior tests, course-bank accessibility coverage, and
      deterministic visual snapshots.
    - Strengthen the build guard against copied course documents.
