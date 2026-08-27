@@ -42,7 +42,12 @@ test.describe("home page", () => {
       await columns.evaluateAll((items) =>
         items.map((item) => getComputedStyle(item).marginTop),
       ),
-    ).toEqual(["258px", "129px", "-129px", "129px"]);
+    ).toEqual(["129px", "0px", "-258px", "0px"]);
+
+    const socialButton = page.locator(".social-block .cta-link").first();
+    await expect(socialButton).toHaveCSS("outline-style", "solid");
+    await expect(socialButton).toHaveCSS("outline-width", "8px");
+    await expect(socialButton).toHaveCSS("outline-color", "rgb(233, 233, 233)");
 
     const letter = page.locator(".letter-mask img");
     await expect(letter).toBeAttached();
@@ -79,6 +84,38 @@ test.describe("home page", () => {
     );
     expect(900 - (calendar.y + calendar.height)).toBeCloseTo(14, 0);
     expect(900 - (dashboard.y + dashboard.height)).toBeCloseTo(14, 0);
+  });
+  test("hero title is centered between navigation and feature cards", async ({
+    page,
+  }) => {
+    for (const viewport of [
+      { width: 1200, height: 900 },
+      { width: 390, height: 844 },
+    ]) {
+      await page.setViewportSize(viewport);
+      await page.goto("/");
+
+      const centers = await page.evaluate(() => {
+        const header = document
+          .querySelector(".site-header")!
+          .getBoundingClientRect();
+        const grid = document
+          .querySelector(".feature-grid")!
+          .getBoundingClientRect();
+        const title = document
+          .querySelector(".hero-copy h1")!
+          .getBoundingClientRect();
+        const subtitle = document
+          .querySelector(".hero-copy p")!
+          .getBoundingClientRect();
+        return {
+          available: (header.bottom + grid.top) / 2,
+          copy: (title.top + subtitle.bottom) / 2,
+        };
+      });
+
+      expect(centers.copy).toBeCloseTo(centers.available, 0);
+    }
   });
   test("carousel loops and pauses on focus", async ({ page }) => {
     const carousel = page.locator("[data-carousel]");
