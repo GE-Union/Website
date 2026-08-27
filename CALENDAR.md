@@ -46,6 +46,11 @@ Do not reuse this key for server-side services or unrelated APIs.
 
 ## Deployment checklist
 
+**Publishing rule:** every production or preview build must receive
+`PUBLIC_GOOGLE_CALENDAR_API_KEY` from the hosting provider's persistent
+environment configuration. A developer's ignored `.env` file is not uploaded
+with the site.
+
 1. Add `PUBLIC_GOOGLE_CALENDAR_API_KEY` to the hosting provider's build
    environment.
 2. Add the production and preview hostnames to the key's HTTP-referrer list.

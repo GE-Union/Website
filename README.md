@@ -28,6 +28,16 @@ restriction and deployment checklist in
 [CALENDAR.md](CALENDAR.md). Without a key, the page remains usable
 but shows a configuration notice instead of events.
 
+## Publishing
+
+`PUBLIC_GOOGLE_CALENDAR_API_KEY` is required for every production build. Store
+it as a persistent environment variable in the hosting provider—not only in a
+local `.env` file—so rebuilds and preview deployments keep the calendar
+enabled. After publishing, visit `/calendar` and confirm that events load.
+
+The complete key restrictions and release checklist are in
+[CALENDAR.md](CALENDAR.md#deployment-checklist).
+
 To run browser tests once, you also need the test browser:
 
 ```sh
