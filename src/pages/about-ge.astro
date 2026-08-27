@@ -1,6 +1,7 @@
 ---
 import PageHero from "../components/layout/PageHero.astro";
 import ContentSection from "../components/content/ContentSection.astro";
+import { dtuEctsChart } from "../data/external-assets";
 import { localAssets } from "../data/local-assets";
 import { getPageSeo } from "../data/seo-matrix";
 import BaseLayout from "../layouts/BaseLayout.astro";
@@ -68,7 +69,7 @@ const specialisations = [
       </div>
       <img
         class="curriculum"
-        src="/assets/about/ge-ects-distribution.svg"
+        src={dtuEctsChart}
         alt="ECTS credit distribution across the General Engineering curriculum"
         loading="lazy"
       />

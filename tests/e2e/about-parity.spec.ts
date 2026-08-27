@@ -13,7 +13,7 @@ test("GE Union identity switches between its card and compact treatment", async 
   await expect(page.locator(".identity-summary")).toBeVisible();
 });
 
-test("About GE serves the curriculum diagram locally and places it responsively", async ({
+test("About GE uses DTU's curriculum diagram and places it responsively", async ({
   page,
 }) => {
   await page.setViewportSize({ width: 1200, height: 900 });
@@ -21,7 +21,7 @@ test("About GE serves the curriculum diagram locally and places it responsively"
   const diagram = page.locator(".curriculum");
   await expect(diagram).toHaveAttribute(
     "src",
-    "/assets/about/ge-ects-distribution.svg",
+    "https://student.dtu.dk/-/media/subsites/studieordninger/general-engineering/ge-ects-fordeling.png",
   );
 
   const desktopDiagram = await diagram.boundingBox();
