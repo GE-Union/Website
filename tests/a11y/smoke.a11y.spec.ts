@@ -53,6 +53,16 @@ test("Course Bank alternate tab has no axe violations", async ({ page }) => {
     .locator('[data-course-bank-state="ready"]')
     .waitFor({ state: "attached" });
   await page.getByRole("tab", { name: "Advanced Systems" }).click();
+  const course = page.locator("#course-panel-advanced details.course").first();
+  await course.locator("summary").click();
+  await expect(course).toHaveAttribute("open", "");
+  await expect
+    .poll(() =>
+      course.evaluate(
+        (element) => element.getAnimations({ subtree: true }).length,
+      ),
+    )
+    .toBe(0);
   expect((await scan(page).analyze()).violations).toEqual([]);
 });
 

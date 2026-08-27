@@ -18,8 +18,8 @@ site build.
 
 ## Browser data flow
 
-1. The static page shows category tabs, open course disclosures, descriptions,
-   and loading placeholders without waiting for GitHub.
+1. The static page shows category tabs, initially collapsed course disclosures,
+   descriptions, and loading placeholders without waiting for GitHub.
 2. `src/scripts/course-bank.ts` asks the data loader for the structure once.
 3. The loader checks `geu:course-bank:structure:v1`. A validated entry younger
    than 90 minutes is used immediately; otherwise GitHub is requested with a
@@ -31,6 +31,12 @@ site build.
 
 The cache is fully enabled. The legacy `if (false)` branch and zero-multiplied
 TTL were temporary test code and are not carried forward.
+
+Course disclosures use native `details` and `summary` elements. JavaScript
+animates a dedicated content wrapper with eased height, fade, and chevron
+transitions in both directions, leaving the summary outside the clipping area.
+The native behavior remains available without JavaScript, while reduced-motion
+users get an immediate state change.
 
 ## Failure behavior
 

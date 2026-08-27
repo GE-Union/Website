@@ -16,7 +16,28 @@ const viewports = [
   { name: "mobile", width: 390, height: 844 },
 ] as const;
 
-async function preparePage(page: Page, path: string) {
+async function waitForRenderedImages(page: Page) {
+  await page.evaluate(async () => {
+    const images = [...document.images].filter(
+      (image) => !image.closest("details:not([open])"),
+    );
+    images.forEach((image) => {
+      image.loading = "eager";
+    });
+    await Promise.all(
+      images.map(
+        (image) =>
+          image.complete ||
+          new Promise<void>((resolve) => {
+            image.addEventListener("load", () => resolve(), { once: true });
+            image.addEventListener("error", () => resolve(), { once: true });
+          }),
+      ),
+    );
+  });
+}
+
+async function preparePage(page: Page, path: string, waitForImages = true) {
   await page.emulateMedia({ reducedMotion: "reduce" });
   await page.goto(path);
   await page.addStyleTag({
@@ -24,9 +45,11 @@ async function preparePage(page: Page, path: string) {
       "*, *::before, *::after { animation: none !important; transition: none !important; caret-color: transparent !important; }",
   });
   await page.evaluate(() => document.fonts.ready);
-  await page.waitForFunction(() =>
-    [...document.images].every((image) => image.complete),
-  );
+  if (waitForImages) {
+    await page.waitForFunction(() =>
+      [...document.images].every((image) => image.complete),
+    );
+  }
 }
 
 async function prepareCourseBank(page: Page) {
@@ -44,13 +67,11 @@ async function prepareCourseBank(page: Page) {
     (key) => localStorage.removeItem(key),
     COURSE_BANK_CACHE_KEY,
   );
-  await preparePage(page, "/course-bank");
+  await preparePage(page, "/course-bank", false);
   await page
     .locator('[data-course-bank-state="ready"]')
     .waitFor({ state: "attached" });
-  await page.waitForFunction(() =>
-    [...document.images].every((image) => image.complete),
-  );
+  await waitForRenderedImages(page);
 }
 
 for (const vp of viewports) {

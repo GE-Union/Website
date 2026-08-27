@@ -20,6 +20,15 @@ async function waitForReady(page: Page) {
     .waitFor({ state: "attached" });
 }
 
+async function openFirstCourse(page: Page) {
+  const course = page.locator("details.course").first();
+  if ((await course.getAttribute("open")) === null) {
+    await course.locator("summary").click();
+    await expect(course).toHaveAttribute("open", "");
+  }
+  return course;
+}
+
 test("renders the complete static catalog and mocked note inventory safely", async ({
   page,
 }) => {
@@ -34,10 +43,11 @@ test("renders the complete static catalog and mocked note inventory safely", asy
   await expect(page.locator("details.course")).toHaveCount(49);
   await expect(page.getByText("No description").first()).toBeAttached();
 
+  await openFirstCourse(page);
   await expect(
     page.getByRole("link", { name: /Lecture notes by Ada Lovelace/ }),
   ).toBeVisible();
-  await expect(page.getByText("No notes found").first()).toBeVisible();
+  await expect(page.getByText("No notes found").first()).toBeAttached();
   await expect(page.getByText("Should not render.pdf")).toHaveCount(0);
   await expect(
     page.getByText("Safety <img onerror=window.injected=true>.txt"),
@@ -82,7 +92,7 @@ test("tabs expose selected state and support desktop and mobile keyboard navigat
   expect(overflow).toBeLessThanOrEqual(1);
 });
 
-test("course disclosures are initially open and remain natively collapsible", async ({
+test("course disclosures start collapsed and animate open and closed", async ({
   page,
 }) => {
   await mockStructure(page);
@@ -90,11 +100,42 @@ test("course disclosures are initially open and remain natively collapsible", as
   await waitForReady(page);
 
   const course = page.locator("details.course").first();
-  await expect(course).toHaveAttribute("open", "");
-  await course.locator("summary").click();
+  const reveal = course.locator(".course-reveal");
+  const body = course.locator(".course-body");
+  const collapsedHeight = (await course.boundingBox())?.height;
+  await expect(page.locator("details.course[open]")).toHaveCount(0);
   await expect(course).not.toHaveAttribute("open", "");
+  await expect(course).toHaveAttribute("data-course-expanded", "false");
+  await expect(body).not.toBeVisible();
+
   await course.locator("summary").click();
   await expect(course).toHaveAttribute("open", "");
+  await expect(course).toHaveAttribute("data-course-expanded", "true");
+  expect(
+    await reveal.evaluate((element) =>
+      element.getAnimations().some(({ playState }) => playState === "running"),
+    ),
+  ).toBe(true);
+  expect(
+    await course.evaluate((element) => element.getAnimations().length),
+  ).toBe(0);
+  await expect(body).toBeVisible();
+
+  await expect
+    .poll(() => reveal.evaluate((element) => element.getAnimations().length))
+    .toBe(0);
+  await course.locator("summary").click();
+  await expect(course).toHaveAttribute("data-course-expanded", "false");
+  await expect(course).not.toHaveAttribute("open", "");
+  await expect(body).not.toBeVisible();
+  expect((await course.boundingBox())?.height).toBe(collapsedHeight);
+
+  await page.emulateMedia({ reducedMotion: "reduce" });
+  await course.locator("summary").click();
+  await expect(course).toHaveAttribute("open", "");
+  expect(
+    await reveal.evaluate((element) => element.getAnimations().length),
+  ).toBe(0);
 });
 
 test("a fresh 90-minute cache renders without a network request", async ({
@@ -117,6 +158,7 @@ test("a fresh 90-minute cache renders without a network request", async ({
 
   await page.goto("/course-bank");
   await waitForReady(page);
+  await openFirstCourse(page);
   await expect(
     page.getByRole("link", { name: /Lecture notes by Ada Lovelace/ }),
   ).toBeVisible();
@@ -153,6 +195,7 @@ test("expired cached data is a stale fallback and Retry bypasses it", async ({
   await expect(page.locator("[data-course-bank-notice-text]")).toContainText(
     "Showing saved course notes",
   );
+  await openFirstCourse(page);
   await expect(
     page.getByRole("link", { name: /Lecture notes by Ada Lovelace/ }),
   ).toBeVisible();
@@ -179,10 +222,11 @@ test("an initial failure exposes a retry that requests fresh data", async ({
   await expect(page.locator("[data-course-bank-notice-text]")).toHaveText(
     "Unable to load course notes.",
   );
-  await expect(page.getByText("Unable to load notes.").first()).toBeVisible();
+  await expect(page.getByText("Unable to load notes.").first()).toBeAttached();
 
   await page.getByRole("button", { name: "Retry" }).click();
   await waitForReady(page);
+  await openFirstCourse(page);
   await expect(
     page.getByRole("link", { name: /Lecture notes by Ada Lovelace/ }),
   ).toBeVisible();
@@ -202,6 +246,7 @@ test("notebooks download with their repository filename", async ({ page }) => {
   );
   await page.goto("/course-bank");
   await waitForReady(page);
+  await openFirstCourse(page);
 
   const downloadPromise = page.waitForEvent("download");
   await page.getByRole("link", { name: /Exercises by Grace Hopper/ }).click();
@@ -227,6 +272,7 @@ test("PDF links keep a safe raw fallback and open an isolated blob tab", async (
   );
   await page.goto("/course-bank");
   await waitForReady(page);
+  await openFirstCourse(page);
 
   const link = page.getByRole("link", {
     name: /Lecture notes by Ada Lovelace/,

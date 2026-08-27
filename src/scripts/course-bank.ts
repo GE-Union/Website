@@ -11,6 +11,13 @@ import {
 
 const PDF_BLOB_LIFETIME_MS = 60_000;
 const DOWNLOAD_BLOB_LIFETIME_MS = 10_000;
+const DISCLOSURE_ANIMATION_MS = 280;
+const DISCLOSURE_EASING = "cubic-bezier(0.22, 1, 0.36, 1)";
+
+interface DisclosureState {
+  animation?: Animation;
+  targetOpen: boolean;
+}
 
 function initTabs(tabList: HTMLElement): void {
   const root = tabList.closest<HTMLElement>("[data-course-bank]");
@@ -70,6 +77,71 @@ function initTabs(tabList: HTMLElement): void {
 
   updateOrientation();
   narrow.addEventListener("change", updateOrientation);
+}
+
+function initDisclosures(root: HTMLElement): void {
+  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+
+  root
+    .querySelectorAll<HTMLDetailsElement>("details.course")
+    .forEach((details) => {
+      const summary = details.querySelector<HTMLElement>("summary");
+      const reveal = details.querySelector<HTMLElement>(".course-reveal");
+      if (!summary || !reveal) return;
+
+      const state: DisclosureState = { targetOpen: details.open };
+      details.dataset.courseExpanded = String(details.open);
+
+      summary.addEventListener("click", (event) => {
+        event.preventDefault();
+        const targetOpen = !state.targetOpen;
+        state.targetOpen = targetOpen;
+
+        if (reduceMotion.matches) {
+          state.animation?.cancel();
+          state.animation = undefined;
+          details.open = targetOpen;
+          details.dataset.courseExpanded = String(targetOpen);
+          reveal.style.removeProperty("height");
+          reveal.style.removeProperty("overflow");
+          return;
+        }
+
+        const startHeight = details.open
+          ? reveal.getBoundingClientRect().height
+          : 0;
+        state.animation?.cancel();
+        reveal.style.height = `${startHeight}px`;
+        reveal.style.overflow = "hidden";
+
+        if (targetOpen && !details.open) {
+          details.open = true;
+          // Let the newly revealed body start from its closed visual state.
+          void details.offsetHeight;
+        }
+        details.dataset.courseExpanded = String(targetOpen);
+
+        const endHeight = targetOpen ? reveal.scrollHeight : 0;
+        const animation = reveal.animate(
+          {
+            height: [`${startHeight}px`, `${endHeight}px`],
+          },
+          {
+            duration: DISCLOSURE_ANIMATION_MS,
+            easing: DISCLOSURE_EASING,
+          },
+        );
+        state.animation = animation;
+
+        animation.addEventListener("finish", () => {
+          if (state.animation !== animation) return;
+          details.open = targetOpen;
+          reveal.style.removeProperty("height");
+          reveal.style.removeProperty("overflow");
+          state.animation = undefined;
+        });
+      });
+    });
 }
 
 function getStorage(): StorageLike | undefined {
@@ -349,6 +421,7 @@ function initCourseBank(root: HTMLElement): void {
 
   const tabs = root.querySelector<HTMLElement>("[data-course-tabs]");
   if (tabs) initTabs(tabs);
+  initDisclosures(root);
   initFileActions(root);
 
   root

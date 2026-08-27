@@ -76,7 +76,7 @@ const splitEmphasis = (text: string, emphasis: string) => {
                 {"separated" in course && course.separated && (
                   <hr class="course-separator" />
                 )}
-                <details class="course" open>
+                <details class="course">
                   <summary>
                     <span class="course-title">
                       <span class="course-name">{course.name}</span>
@@ -86,16 +86,18 @@ const splitEmphasis = (text: string, emphasis: string) => {
                       <path d="m4 6 4 4 4-4" />
                     </svg>
                   </summary>
-                  <div class="course-body">
-                    <p>{course.description}</p>
-                    <p class="notes-heading">Notes</p>
-                    <div
-                      class="file-list"
-                      data-course-files
-                      data-folder={course.folder}
-                      aria-busy="true"
-                    >
-                      <p class="file-state">Loading…</p>
+                  <div class="course-reveal">
+                    <div class="course-body">
+                      <p>{course.description}</p>
+                      <p class="notes-heading">Notes</p>
+                      <div
+                        class="file-list"
+                        data-course-files
+                        data-folder={course.folder}
+                        aria-busy="true"
+                      >
+                        <p class="file-state">Loading…</p>
+                      </div>
                     </div>
                   </div>
                 </details>
@@ -256,11 +258,16 @@ const splitEmphasis = (text: string, emphasis: string) => {
     stroke: currentColor;
     stroke-linecap: round;
     stroke-linejoin: round;
-    transition: transform 150ms ease;
+    transition: transform 280ms cubic-bezier(0.22, 1, 0.36, 1);
   }
 
-  .course[open] summary svg {
+  .course[open] summary svg,
+  .course[data-course-expanded="true"] summary svg {
     transform: rotate(180deg);
+  }
+
+  .course[data-course-expanded="false"] summary svg {
+    transform: rotate(0);
   }
 
   .course-title {
@@ -280,8 +287,24 @@ const splitEmphasis = (text: string, emphasis: string) => {
 
   .course-body {
     padding: 0 var(--gap1) 1rem;
+    opacity: 0;
     font-size: 0.875rem;
     line-height: 1.25rem;
+    transform: translateY(-6px);
+    transition:
+      opacity 180ms ease,
+      transform 280ms cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  .course[open] > .course-reveal > .course-body,
+  .course[data-course-expanded="true"] > .course-reveal > .course-body {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .course[data-course-expanded="false"] > .course-reveal > .course-body {
+    opacity: 0;
+    transform: translateY(-6px);
   }
 
   .notes-heading {
@@ -506,6 +529,7 @@ const splitEmphasis = (text: string, emphasis: string) => {
   @media (prefers-reduced-motion: reduce) {
     [role="tab"],
     .course summary svg,
+    .course-body,
     .course-bank :global(.course-file-row) {
       transition: none;
     }
