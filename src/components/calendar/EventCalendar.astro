@@ -24,7 +24,9 @@ const apiKey = import.meta.env.PUBLIC_GOOGLE_CALENDAR_API_KEY?.trim() ?? "";
     <button type="button" data-calendar-retry hidden>Retry</button>
   </div>
 
-  <div class="calendar-grid" data-calendar-grid aria-busy="true"></div>
+  <div class="calendar-scroll-region" data-calendar-scroll-region>
+    <div class="calendar-grid" data-calendar-grid aria-busy="true"></div>
+  </div>
 
   <noscript>
     <p class="calendar-noscript">
@@ -51,17 +53,26 @@ const apiKey = import.meta.env.PUBLIC_GOOGLE_CALENDAR_API_KEY?.trim() ?? "";
 
         <div class="event-dialog-row">
           <span class="event-dialog-dot"></span>
-          <p data-event-date></p>
+          <p>
+            <span class="visually-hidden">Date: </span>
+            <span data-event-date></span>
+          </p>
         </div>
 
         <div class="event-dialog-row" data-event-time-row>
           <span class="event-dialog-dot"></span>
-          <p data-event-time></p>
+          <p>
+            <span class="visually-hidden">Time: </span>
+            <span data-event-time></span>
+          </p>
         </div>
 
         <div class="event-dialog-row" data-event-location-row>
           <span class="event-dialog-dot"></span>
-          <p data-event-location></p>
+          <p>
+            <span class="visually-hidden">Location: </span>
+            <span data-event-location></span>
+          </p>
         </div>
 
         <hr class="event-dialog-rule" data-event-description-rule />
@@ -124,6 +135,7 @@ const apiKey = import.meta.env.PUBLIC_GOOGLE_CALENDAR_API_KEY?.trim() ?? "";
     cursor: pointer;
   }
 
+  .calendar-scroll-region,
   .calendar-grid {
     min-width: 0;
   }
@@ -324,6 +336,26 @@ const apiKey = import.meta.env.PUBLIC_GOOGLE_CALENDAR_API_KEY?.trim() ?? "";
     overflow-wrap: anywhere;
   }
 
+  .event-description :global(h1),
+  .event-description :global(h2),
+  .event-description :global(h3),
+  .event-description :global(h4),
+  .event-description :global(h5),
+  .event-description :global(h6) {
+    margin: 0 0 0.5em;
+    color: inherit;
+    font-family: inherit;
+    font-size: 1.15em;
+    line-height: inherit;
+  }
+
+  .event-description :global(pre),
+  .event-description :global(code) {
+    max-width: 100%;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+  }
+
   .event-dialog-rule[hidden],
   .event-description[hidden] {
     display: none;
@@ -385,7 +417,7 @@ const apiKey = import.meta.env.PUBLIC_GOOGLE_CALENDAR_API_KEY?.trim() ?? "";
       margin-left: calc(2 * var(--gap1));
     }
 
-    .calendar-grid :global(.fc-view-harness) {
+    .calendar-scroll-region {
       overflow-x: auto;
       overflow-y: hidden;
       overscroll-behavior-x: contain;

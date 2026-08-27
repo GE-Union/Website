@@ -90,6 +90,15 @@ test("opens untrusted event content safely and restores keyboard focus", async (
   await expect(page.locator("[data-event-location]")).toHaveText(
     "DTU Building 101",
   );
+  await expect(dialog.locator(".event-dialog-row").nth(1)).toContainText(
+    "Date: Thursday · 27th August",
+  );
+  await expect(dialog.locator("[data-event-time-row]")).toContainText(
+    "Time: 09:00 - 11:30",
+  );
+  await expect(dialog.locator("[data-event-location-row]")).toContainText(
+    "Location: DTU Building 101",
+  );
   const description = page.locator("[data-event-description]");
   await expect(description.locator("strong")).toHaveText("GE Union");
   await expect(
@@ -202,10 +211,14 @@ test("keeps long event details scrollable without moving the page", async ({
   page,
 }) => {
   await page.setViewportSize({ width: 390, height: 600 });
-  const longDescription = Array.from(
-    { length: 40 },
-    (_, index) => `<p>Event detail line ${index + 1}</p>`,
-  ).join("");
+  const longDescription = [
+    "<h1>Detailed programme</h1>",
+    `<pre><code>${"A".repeat(240)}</code></pre>`,
+    ...Array.from(
+      { length: 40 },
+      (_, index) => `<p>Event detail line ${index + 1}</p>`,
+    ),
+  ].join("");
   const fixture = {
     ...calendarEventsFixture,
     items: calendarEventsFixture.items.map((event) =>
@@ -230,6 +243,14 @@ test("keeps long event details scrollable without moving the page", async ({
       ),
     )
     .toBe(true);
+  await expect(content.getByRole("heading", { level: 1 })).toHaveText(
+    "Detailed programme",
+  );
+  await expect
+    .poll(() =>
+      content.evaluate((element) => element.scrollWidth - element.clientWidth),
+    )
+    .toBeLessThanOrEqual(1);
   await content.hover();
   await page.mouse.wheel(0, 500);
   await expect
@@ -357,9 +378,18 @@ test("contains mobile overflow inside the month grid", async ({ page }) => {
     () => document.documentElement.scrollWidth - window.innerWidth,
   );
   const gridOverflow = await page
-    .locator(".fc-view-harness")
+    .locator("[data-calendar-scroll-region]")
     .evaluate((element) => element.scrollWidth - element.clientWidth);
   expect(overflow).toBeLessThanOrEqual(1);
   expect(gridOverflow).toBeGreaterThan(0);
+  const monthGrid = page.getByRole("region", {
+    name: "Calendar month grid. Scroll horizontally to see all weekdays.",
+  });
+  await expect(monthGrid).toHaveAttribute("tabindex", "0");
+  await monthGrid.focus();
+  await page.keyboard.press("ArrowRight");
+  await expect
+    .poll(() => monthGrid.evaluate((element) => element.scrollLeft))
+    .toBeGreaterThan(0);
   await expect(page.locator(".fc-header-toolbar")).toBeVisible();
 });

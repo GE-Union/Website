@@ -64,11 +64,30 @@ function transformEvent(event: EventInput, cutoffHour: number): EventInput {
   };
 }
 
-function makeCalendarControlsAccessible(grid: HTMLElement): void {
+function enhanceCalendarAccessibility(grid: HTMLElement): void {
   grid.querySelectorAll<HTMLElement>(".fc-icon[role=img]").forEach((icon) => {
     icon.removeAttribute("role");
     icon.setAttribute("aria-hidden", "true");
   });
+
+  const scrollRegion = grid.closest<HTMLElement>(
+    "[data-calendar-scroll-region]",
+  );
+  if (!scrollRegion) return;
+
+  const isScrollable = window.matchMedia("(max-width: 767px)").matches;
+  if (isScrollable) {
+    scrollRegion.tabIndex = 0;
+    scrollRegion.setAttribute("role", "region");
+    scrollRegion.setAttribute(
+      "aria-label",
+      "Calendar month grid. Scroll horizontally to see all weekdays.",
+    );
+  } else {
+    scrollRegion.removeAttribute("tabindex");
+    scrollRegion.removeAttribute("role");
+    scrollRegion.removeAttribute("aria-label");
+  }
 }
 
 export function initEventCalendar(root: HTMLElement): void {
@@ -147,7 +166,10 @@ export function initEventCalendar(root: HTMLElement): void {
       });
     },
     datesSet() {
-      makeCalendarControlsAccessible(grid);
+      enhanceCalendarAccessibility(grid);
+    },
+    windowResize() {
+      enhanceCalendarAccessibility(grid);
     },
     eventSourceSuccess(events) {
       eventCount = events.length;
@@ -182,7 +204,7 @@ export function initEventCalendar(root: HTMLElement): void {
   });
 
   calendar.render();
-  makeCalendarControlsAccessible(grid);
+  enhanceCalendarAccessibility(grid);
   if (!apiKey) {
     setState(
       root,

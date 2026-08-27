@@ -80,8 +80,8 @@ will produce the page's network-error state.
 - Loading, empty, missing-key, and network-error states are visible and
   announced to assistive technology.
 - Retry requests the current calendar period again.
-- On mobile, the month grid scrolls inside its own viewport rather than
-  widening the document.
+- On mobile, the month grid scrolls inside its own keyboard-accessible viewport
+  rather than widening the document.
 
 ## Testing and bundle policy
 
