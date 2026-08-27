@@ -18,7 +18,7 @@ const apiKey = import.meta.env.PUBLIC_GOOGLE_CALENDAR_API_KEY?.trim() ?? "";
     Loading calendar events…
   </p>
 
-  <div class="calendar-notice" data-calendar-notice>
+  <div class="calendar-notice" data-calendar-notice hidden>
     <p data-calendar-notice-text>Loading calendar events…</p>
     <button type="button" data-calendar-retry hidden>Retry</button>
   </div>

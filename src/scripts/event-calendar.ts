@@ -97,7 +97,7 @@ function setState(
   grid.setAttribute("aria-busy", String(state === "loading"));
   noticeText.textContent = message;
   live.textContent = message;
-  notice.hidden = state === "ready" || state === "empty";
+  notice.hidden = state !== "error" && state !== "missing-key";
   retry.hidden = state !== "error";
 }
 

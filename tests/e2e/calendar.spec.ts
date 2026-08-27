@@ -151,6 +151,7 @@ test("shows loading and empty states", async ({ page }) => {
     "aria-busy",
     "true",
   );
+  await expect(page.locator("[data-calendar-notice]")).toBeHidden();
 
   releaseRequest?.();
   await expect(page.locator("[data-event-calendar]")).toHaveAttribute(
