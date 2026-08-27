@@ -2,7 +2,7 @@ import { expect, test, type Page } from "@playwright/test";
 import { COURSE_BANK_CACHE_KEY } from "../../src/scripts/course-bank-utils";
 import {
   courseBankIconFixture,
-  courseBankStructureFixture,
+  courseBankCatalogFixture,
 } from "../fixtures/course-bank";
 import {
   emptyCalendarFixture,
@@ -57,10 +57,10 @@ async function preparePage(page: Page, path: string, waitForImages = true) {
 }
 
 async function prepareCourseBank(page: Page) {
-  await page.route("**/GE-Union/CourseBank/main/structure.json", (route) =>
-    route.fulfill({ status: 200, json: courseBankStructureFixture }),
+  await page.route("**/GE-Union/CourseBank/main/catalog.v2.json", (route) =>
+    route.fulfill({ status: 200, json: courseBankCatalogFixture }),
   );
-  await page.route("**/GE-Union/CourseBank/main/res/file-icon.svg", (route) =>
+  await page.route("**/GE-Union/CourseBank/*/res/file-icon.svg", (route) =>
     route.fulfill({
       status: 200,
       contentType: "image/svg+xml",

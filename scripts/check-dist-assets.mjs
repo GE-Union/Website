@@ -66,6 +66,7 @@ const remoteOnlyBasenames = new Set([
   ],
   "ge-ects-fordeling.png",
   "structure.json",
+  "catalog.v2.json",
   "file-icon.svg",
 ]);
 const courseDocumentExtension = /\.(?:pdf|ipynb|docx?|xlsx?|pptx?|zip)$/i;

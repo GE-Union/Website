@@ -2,7 +2,6 @@ import { describe, expect, it } from "vitest";
 import {
   allRemoteImages,
   carouselImages,
-  courseBankFileIcon,
   dataEndpoints,
   reelPreviews,
 } from "../../src/data/external-assets";
@@ -11,11 +10,7 @@ import {
 // URLs. These tests keep the registry well-formed so page code and the
 // check:assets script can rely on it.
 describe("external asset registry", () => {
-  const allUrls = [
-    ...allRemoteImages,
-    courseBankFileIcon,
-    ...Object.values(dataEndpoints),
-  ];
+  const allUrls = [...allRemoteImages, ...Object.values(dataEndpoints)];
 
   it("uses https for every remote URL", () => {
     for (const url of allUrls) {
@@ -41,14 +36,8 @@ describe("external asset registry", () => {
   });
 
   it("keeps the Course Bank runtime resources on the remote repository", () => {
-    expect(dataEndpoints.courseBankStructure).toBe(
-      "https://raw.githubusercontent.com/GE-Union/CourseBank/main/structure.json",
-    );
-    expect(dataEndpoints.courseBankRawBase).toBe(
-      "https://raw.githubusercontent.com/GE-Union/CourseBank/main/",
-    );
-    expect(courseBankFileIcon).toBe(
-      "https://raw.githubusercontent.com/GE-Union/CourseBank/main/res/file-icon.svg",
+    expect(dataEndpoints.courseBankCatalog).toBe(
+      "https://raw.githubusercontent.com/GE-Union/CourseBank/main/catalog.v2.json",
     );
   });
 });

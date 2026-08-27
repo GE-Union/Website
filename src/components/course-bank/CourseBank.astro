@@ -1,18 +1,3 @@
----
-import ArrowIcon from "../ui/ArrowIcon.astro";
-import { courseBankLinks, courseCategories } from "../../data/course-bank";
-
-const splitEmphasis = (text: string, emphasis: string) => {
-  const index = text.indexOf(emphasis);
-  if (index < 0) return { before: "", emphasis: "", after: text };
-  return {
-    before: text.slice(0, index),
-    emphasis,
-    after: text.slice(index + emphasis.length),
-  };
-};
----
-
 <section
   class="course-bank"
   aria-label="Course Bank catalog"
@@ -23,115 +8,13 @@ const splitEmphasis = (text: string, emphasis: string) => {
     Loading course notes…
   </p>
 
-  <div
-    class="tab-list"
-    role="tablist"
-    aria-label="Course categories"
-    aria-orientation="horizontal"
-    data-course-tabs
-  >
-    {
-      courseCategories.map((category, index) => (
-        <button
-          type="button"
-          id={`course-tab-${category.id}`}
-          role="tab"
-          aria-controls={`course-panel-${category.id}`}
-          aria-selected={index === 0 ? "true" : "false"}
-          tabindex={index === 0 ? 0 : -1}
-        >
-          <span class="full-tab-label">{category.label}</span>
-          <span class="short-tab-label">{category.shortLabel}</span>
-        </button>
-      ))
-    }
-  </div>
-
   <div class="load-notice" data-course-bank-notice hidden>
     <p data-course-bank-notice-text></p>
     <button type="button" data-course-bank-retry>Retry</button>
   </div>
 
-  {
-    courseCategories.map((category, categoryIndex) => {
-      const intro = splitEmphasis(category.description, category.emphasis);
-      return (
-        <section
-          class="tab-panel"
-          id={`course-panel-${category.id}`}
-          role="tabpanel"
-          aria-labelledby={`course-tab-${category.id}`}
-          tabindex="0"
-          hidden={categoryIndex !== 0}
-        >
-          <p class="category-intro">
-            {intro.before}
-            {intro.emphasis && <strong>{intro.emphasis}</strong>}
-            {intro.after}
-          </p>
-
-          <div class="course-list">
-            {category.courses.map((course) => (
-              <>
-                {"separated" in course && course.separated && (
-                  <hr class="course-separator" />
-                )}
-                <details class="course">
-                  <summary>
-                    <span class="course-title">
-                      <span class="course-name">{course.name}</span>
-                      <span class="course-code">{course.code}</span>
-                    </span>
-                    <svg aria-hidden="true" viewBox="0 0 16 16">
-                      <path d="m4 6 4 4 4-4" />
-                    </svg>
-                  </summary>
-                  <div class="course-reveal">
-                    <div class="course-body">
-                      <p>{course.description}</p>
-                      <p class="notes-heading">Notes</p>
-                      <div
-                        class="file-list"
-                        data-course-files
-                        data-folder={course.folder}
-                        aria-busy="true"
-                      >
-                        <p class="file-state">Loading…</p>
-                      </div>
-                    </div>
-                  </div>
-                </details>
-              </>
-            ))}
-          </div>
-        </section>
-      );
-    })
-  }
-
-  <div class="course-actions">
-    <div class="action-card">
-      <h2>See more on</h2>
-      <a
-        class="action-link studocu"
-        href={courseBankLinks.studocu}
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Studocu <ArrowIcon />
-      </a>
-    </div>
-    <div class="action-card">
-      <h2>Upload notes</h2>
-      <a
-        class="action-link upload"
-        href={courseBankLinks.upload}
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Here <ArrowIcon />
-      </a>
-    </div>
+  <div class="course-bank-content" data-course-bank-content>
+    <p class="file-state">Loading course catalog…</p>
   </div>
 </section>
 
@@ -141,12 +24,19 @@ const splitEmphasis = (text: string, emphasis: string) => {
   initCourseBanks();
 </script>
 
-<style>
+<style is:global>
   .course-bank {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 50px var(--gap1) 0;
+  }
+
+  .course-bank-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
   }
 
   .tab-list {
@@ -324,7 +214,7 @@ const splitEmphasis = (text: string, emphasis: string) => {
     color: var(--front-3);
   }
 
-  .course-bank :global(.course-file-row) {
+  .course-bank .course-file-row {
     display: flex;
     flex: 1 0 300px;
     align-items: center;
@@ -336,11 +226,11 @@ const splitEmphasis = (text: string, emphasis: string) => {
     transition: transform 100ms ease;
   }
 
-  .course-bank :global(.course-file-row:hover) {
+  .course-bank .course-file-row:hover {
     transform: translateX(5px);
   }
 
-  .course-bank :global(.course-file-link) {
+  .course-bank .course-file-link {
     display: flex;
     align-items: center;
     width: 100%;
@@ -349,7 +239,7 @@ const splitEmphasis = (text: string, emphasis: string) => {
     text-decoration: none;
   }
 
-  .course-bank :global(.course-file-icon) {
+  .course-bank .course-file-icon {
     position: relative;
     flex: 0 0 auto;
     width: 36px;
@@ -357,13 +247,13 @@ const splitEmphasis = (text: string, emphasis: string) => {
     margin-right: 10px;
   }
 
-  .course-bank :global(.course-file-icon img) {
+  .course-bank .course-file-icon img {
     width: 100%;
     height: 100%;
     object-fit: contain;
   }
 
-  .course-bank :global(.course-file-badge) {
+  .course-bank .course-file-badge {
     position: absolute;
     top: 14px;
     left: 1px;
@@ -376,30 +266,30 @@ const splitEmphasis = (text: string, emphasis: string) => {
     pointer-events: none;
   }
 
-  .course-bank :global(.course-file-details) {
+  .course-bank .course-file-details {
     display: flex;
     flex-direction: column;
     width: calc(100% - 58px);
   }
 
-  .course-bank :global(.course-file-name),
-  .course-bank :global(.course-file-author) {
+  .course-bank .course-file-name,
+  .course-bank .course-file-author {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
   }
 
-  .course-bank :global(.course-file-name) {
+  .course-bank .course-file-name {
     color: var(--front-1);
     font-size: 1em;
     font-weight: 500;
   }
 
-  .course-bank :global(.course-file-row:hover .course-file-name) {
+  .course-bank .course-file-row:hover .course-file-name {
     color: var(--action-red);
   }
 
-  .course-bank :global(.course-file-author) {
+  .course-bank .course-file-author {
     color: var(--front-3);
     font-size: 0.8em;
   }
@@ -462,6 +352,12 @@ const splitEmphasis = (text: string, emphasis: string) => {
 
   .action-link.upload {
     width: 125px;
+  }
+
+  .course-bank .arrow-icon {
+    flex: 0 0 auto;
+    width: 1.075em;
+    height: 1.075em;
   }
 
   @media (max-width: 767px) {
@@ -530,11 +426,11 @@ const splitEmphasis = (text: string, emphasis: string) => {
     [role="tab"],
     .course summary svg,
     .course-body,
-    .course-bank :global(.course-file-row) {
+    .course-bank .course-file-row {
       transition: none;
     }
 
-    .course-bank :global(.course-file-row:hover) {
+    .course-bank .course-file-row:hover {
       transform: none;
     }
   }

@@ -15,6 +15,12 @@ const budgets = {
   totalCssGzipBytes: 24 * KIB,
   pageOverrides: new Map([
     [
+      "course-bank/index.html",
+      {
+        htmlBytes: 16 * KIB,
+      },
+    ],
+    [
       "calendar/index.html",
       {
         pageJavaScriptGzipBytes: 72 * KIB,
@@ -185,6 +191,7 @@ for (const htmlFile of distFiles.filter((file) => extname(file) === ".html")) {
   const externalBlocks = await Promise.all([...reachable].map(moduleGzipBytes));
   pageResults.push({
     file: htmlFile,
+    htmlBytes: Buffer.byteLength(html),
     pageJavaScriptGzipBytes:
       inlineGzipBytes + externalBlocks.reduce((total, size) => total + size, 0),
     largestJavaScriptGzipBytes: Math.max(0, ...inlineBlocks, ...externalBlocks),
@@ -197,6 +204,13 @@ assertBudget("Total CSS (gzip)", totalCssGzipBytes, budgets.totalCssGzipBytes);
 for (const result of pageResults) {
   const relativePath = relative(DIST_DIR, result.file);
   const override = budgets.pageOverrides.get(relativePath);
+  if (override?.htmlBytes) {
+    assertBudget(
+      `${pageLabel(result.file)} HTML`,
+      result.htmlBytes,
+      override.htmlBytes,
+    );
+  }
   assertBudget(
     `${pageLabel(result.file)} JavaScript (gzip)`,
     result.pageJavaScriptGzipBytes,

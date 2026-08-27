@@ -39,10 +39,6 @@ export const reelPreviews = [
 export const dtuEctsChart =
   "https://student.dtu.dk/-/media/subsites/studieordninger/general-engineering/ge-ects-fordeling.png";
 
-/** File glyph used by the runtime-rendered Course Bank rows. */
-export const courseBankFileIcon =
-  "https://raw.githubusercontent.com/GE-Union/CourseBank/main/res/file-icon.svg";
-
 /**
  * Remote data endpoints fetched by page scripts.
  * Note: introductionQna returned 404 at audit time (docs/migration-audit.md);
@@ -53,10 +49,8 @@ export const dataEndpoints = {
     "https://raw.githubusercontent.com/GE-Union/WebsiteContent/main/AboutGE/QnA.json",
   introductionQna:
     "https://raw.githubusercontent.com/GE-Union/WebsiteContent/main/Introduction/QnA.json",
-  courseBankStructure:
-    "https://raw.githubusercontent.com/GE-Union/CourseBank/main/structure.json",
-  courseBankRawBase:
-    "https://raw.githubusercontent.com/GE-Union/CourseBank/main/",
+  courseBankCatalog:
+    "https://raw.githubusercontent.com/GE-Union/CourseBank/main/catalog.v2.json",
 } as const;
 
 /** Every remote image URL, for the check:assets script and tests. */

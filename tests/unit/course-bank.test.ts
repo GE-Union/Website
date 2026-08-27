@@ -1,45 +1,38 @@
 import { describe, expect, it, vi } from "vitest";
-import { courseCategories } from "../../src/data/course-bank";
 import {
   buildCourseFileUrl,
   COURSE_BANK_CACHE_KEY,
   COURSE_BANK_CACHE_TTL_MS,
+  fetchCourseBankCatalog,
   getCourseFileType,
-  getFolderFiles,
-  isSafeFolderPath,
+  isSafePath,
   isSafePathSegment,
-  loadCourseBankStructure,
-  parseCourseBankStructure,
-  parseCourseFile,
+  loadCourseBankCatalog,
+  parseCourseBankCatalog,
   readCourseBankCache,
   writeCourseBankCache,
+  type CourseBankCatalog,
   type StorageLike,
 } from "../../src/scripts/course-bank-utils";
+import {
+  courseBankCatalogFixture as catalog,
+  courseBankRevision,
+} from "../fixtures/course-bank";
 
 class MemoryStorage implements StorageLike {
   values = new Map<string, string>();
   removed: string[] = [];
-
   getItem(key: string): string | null {
     return this.values.get(key) ?? null;
   }
-
   setItem(key: string, value: string): void {
     this.values.set(key, value);
   }
-
   removeItem(key: string): void {
     this.removed.push(key);
     this.values.delete(key);
   }
 }
-
-const structure = {
-  "polytechnical-foundations": {
-    maths1a: ["Notes-a-Ada_Lovelace.pdf"],
-    empty: [],
-  },
-};
 
 const response = (body: unknown, status = 200): Response =>
   new Response(JSON.stringify(body), {
@@ -47,97 +40,63 @@ const response = (body: unknown, status = 200): Response =>
     headers: { "content-type": "application/json" },
   });
 
-describe("course-bank catalog", () => {
-  it("preserves the five legacy categories and all 49 course mappings", () => {
-    expect(courseCategories.map(({ id }) => id)).toEqual([
+describe("course-bank v2 catalog", () => {
+  it("validates the complete manifest and its generated UI inventory", () => {
+    const parsed = parseCourseBankCatalog(catalog);
+    expect(parsed).toEqual(catalog);
+    expect(parsed?.categories.map(({ id }) => id)).toEqual([
       "foundations",
       "advanced",
       "cyber",
       "living",
       "future",
     ]);
-    expect(courseCategories.map(({ courses }) => courses.length)).toEqual([
-      9, 11, 6, 12, 11,
+    expect(parsed?.categories.map(({ courses }) => courses.length)).toEqual([
+      9, 12, 6, 12, 11,
     ]);
+    expect(parsed?.categories.flatMap(({ courses }) => courses)).toHaveLength(
+      50,
+    );
+  });
 
-    const courses = courseCategories.flatMap(({ courses }) => courses);
-    expect(courses).toHaveLength(49);
-    expect(new Set(courses.map(({ folder }) => folder)).size).toBe(49);
+  it("rejects malformed revisions, traversal, unsafe URLs, and mismatched file paths", () => {
     expect(
-      courses.every(
-        ({ name, code, description }) => name && code && description,
-      ),
-    ).toBe(true);
+      parseCourseBankCatalog({ ...catalog, sourceRevision: "main" }),
+    ).toBeNull();
+    expect(
+      parseCourseBankCatalog({
+        ...catalog,
+        repository: { rawBase: "http://example.com" },
+      }),
+    ).toBeNull();
+    const invalid = structuredClone(catalog);
+    invalid.categories[0].courses[0].files[0].path = "../private.pdf";
+    expect(parseCourseBankCatalog(invalid)).toBeNull();
   });
 
-  it("keeps the source anomalies explicit rather than silently correcting them", () => {
-    expect(courseCategories[1].label).toBe("Advanced Systems");
-    expect(courseCategories[1].description).toContain("Advanced Materials");
-    expect(courseCategories[2].courses[2].code).toBe("26020");
-    expect(courseCategories[0].courses.at(-1)).toMatchObject({
-      name: "Mathematics 2",
-      folder: "rest-of-obligatory-courses/maths2",
-      separated: true,
-    });
-  });
-});
-
-describe("course-bank file helpers", () => {
-  it("parses the legacy author convention and underscore display conversion", () => {
-    expect(parseCourseFile("Lecture_notes-a-Ada_Lovelace.pdf")).toEqual({
-      displayName: "Lecture notes",
-      author: "Ada Lovelace",
-      extension: "PDF",
-    });
-    expect(parseCourseFile("Past_Exams.pdf")).toEqual({
-      displayName: "Past Exams.pdf",
-      author: "Unknown",
-      extension: "PDF",
-    });
-    expect(parseCourseFile("Øvelser-a-Søren_Å.pdf")).toEqual({
-      displayName: "Øvelser",
-      author: "Søren Å",
-      extension: "PDF",
-    });
-  });
-
-  it("preserves the legacy first author segment when separators repeat", () => {
-    expect(parseCourseFile("Notes-a-First-a-Second.pdf").author).toBe("First");
-  });
-
-  it("rejects traversal and path separators while accepting safe filenames", () => {
-    for (const unsafe of [
-      "",
-      ".",
-      "..",
-      "../secret.pdf",
-      "a/b.pdf",
-      "a\\b.pdf",
-      "bad\0.pdf",
-    ]) {
-      expect(isSafePathSegment(unsafe), unsafe).toBe(false);
-    }
-    expect(isSafePathSegment("Exam #1 + løsning.pdf")).toBe(true);
-    expect(isSafeFolderPath("polytechnical-foundations/maths1a")).toBe(true);
-    expect(isSafeFolderPath("polytechnical-foundations/../secret")).toBe(false);
-  });
-
-  it("encodes every repository path segment", () => {
+  it("encodes each segment and pins files to the validated revision", () => {
     expect(
       buildCourseFileUrl(
-        "https://raw.githubusercontent.com/GE-Union/CourseBank/main/",
-        "polytechnical-foundations/maths1a",
-        "Exam #1 + løsning.pdf",
+        "https://raw.githubusercontent.com/GE-Union/CourseBank",
+        courseBankRevision,
+        "polytechnical-foundations/maths1a/Exam #1 + løsning.pdf",
       ),
     ).toBe(
-      "https://raw.githubusercontent.com/GE-Union/CourseBank/main/polytechnical-foundations/maths1a/Exam%20%231%20%2B%20l%C3%B8sning.pdf",
+      `https://raw.githubusercontent.com/GE-Union/CourseBank/${courseBankRevision}/polytechnical-foundations/maths1a/Exam%20%231%20%2B%20l%C3%B8sning.pdf`,
     );
     expect(() =>
-      buildCourseFileUrl("https://example.com/", "../outside", "notes.pdf"),
+      buildCourseFileUrl("https://example.com", courseBankRevision, "../x"),
     ).toThrow("Unsafe course-bank path");
   });
 
-  it("keeps the legacy extension colors and a stable fallback", () => {
+  it("accepts safe Unicode paths and rejects hidden or traversing segments", () => {
+    expect(isSafePath("living-systems/Notes Søren.pdf")).toBe(true);
+    for (const unsafe of ["", ".", "..", ".hidden", "../x", "a\\b", "a\0b"]) {
+      expect(isSafePathSegment(unsafe), unsafe).toBe(false);
+    }
+  });
+
+  it("keeps file display types and a stable fallback", () => {
     expect(getCourseFileType("pdf")).toEqual({
       color: "#D32F2F",
       mime: "application/pdf",
@@ -152,32 +111,30 @@ describe("course-bank file helpers", () => {
     });
   });
 
-  it("validates the remote structure and distinguishes missing from empty folders", () => {
-    const parsed = parseCourseBankStructure(structure);
-    expect(parsed).not.toBeNull();
-    expect(
-      getFolderFiles(parsed!, "polytechnical-foundations/maths1a"),
-    ).toEqual(["Notes-a-Ada_Lovelace.pdf"]);
-    expect(getFolderFiles(parsed!, "polytechnical-foundations/empty")).toEqual(
-      [],
+  it("uses normal browser caching for the remote manifest", async () => {
+    const fetchImpl = vi.fn(async () => response(catalog));
+    await expect(
+      fetchCourseBankCatalog(
+        "https://example.com/catalog.v2.json",
+        fetchImpl as unknown as typeof fetch,
+      ),
+    ).resolves.toEqual(catalog);
+    expect(fetchImpl).toHaveBeenCalledWith(
+      "https://example.com/catalog.v2.json",
+      expect.objectContaining({ cache: "default" }),
     );
-    expect(
-      getFolderFiles(parsed!, "polytechnical-foundations/missing"),
-    ).toBeNull();
-    expect(parseCourseBankStructure({ root: ["../secret.pdf"] })).toBeNull();
-    expect(parseCourseBankStructure({ root: "not-an-array" })).toBeNull();
   });
 });
 
 describe("course-bank cache", () => {
-  it("uses the versioned key and a real 90-minute TTL", () => {
-    expect(COURSE_BANK_CACHE_KEY).toBe("geu:course-bank:structure:v1");
+  it("uses a schema-versioned key and a 90-minute TTL", () => {
+    expect(COURSE_BANK_CACHE_KEY).toBe("geu:course-bank:catalog:v2");
     expect(COURSE_BANK_CACHE_TTL_MS).toBe(5_400_000);
   });
 
-  it("classifies entries just below and at the expiry boundary", () => {
+  it("classifies entries immediately below and at expiry", () => {
     const storage = new MemoryStorage();
-    writeCourseBankCache(storage, structure, 1_000);
+    writeCourseBankCache(storage, catalog, 1_000);
     expect(
       readCourseBankCache(storage, 1_000 + COURSE_BANK_CACHE_TTL_MS - 1).state,
     ).toBe("fresh");
@@ -186,12 +143,12 @@ describe("course-bank cache", () => {
     ).toBe("stale");
   });
 
-  it("removes corrupt, malformed, and future-dated entries", () => {
+  it("removes corrupt, invalid, and future-dated entries", () => {
     const storage = new MemoryStorage();
     for (const value of [
       "not json",
-      JSON.stringify({ timestamp: 10, data: { root: "bad" } }),
-      JSON.stringify({ timestamp: 101, data: structure }),
+      JSON.stringify({ timestamp: 10, data: { schemaVersion: 1 } }),
+      JSON.stringify({ timestamp: 101, data: catalog }),
     ]) {
       storage.values.set(COURSE_BANK_CACHE_KEY, value);
       expect(readCourseBankCache(storage, 100).state).toBe("missing");
@@ -199,8 +156,55 @@ describe("course-bank cache", () => {
     expect(storage.removed).toHaveLength(3);
   });
 
-  it("treats unavailable storage as a non-fatal cache miss", () => {
-    const throwingStorage: StorageLike = {
+  it("returns a fresh cache without requesting the network", async () => {
+    const storage = new MemoryStorage();
+    writeCourseBankCache(storage, catalog, 100);
+    const fetchImpl = vi.fn() as unknown as typeof fetch;
+    await expect(
+      loadCourseBankCatalog({
+        url: "https://example.com/catalog.v2.json",
+        storage,
+        now: 101,
+        fetchImpl,
+      }),
+    ).resolves.toMatchObject({ source: "cache", data: catalog });
+    expect(fetchImpl).not.toHaveBeenCalled();
+  });
+
+  it("refreshes expired data and falls back to it on a later failure", async () => {
+    const storage = new MemoryStorage();
+    writeCourseBankCache(storage, catalog, 100);
+    const updated: CourseBankCatalog = {
+      ...catalog,
+      site: { ...catalog.site, tagline: "Updated" },
+    };
+    const now = 100 + COURSE_BANK_CACHE_TTL_MS;
+    await expect(
+      loadCourseBankCatalog({
+        url: "https://example.com/catalog.v2.json",
+        storage,
+        now,
+        fetchImpl: vi.fn(async () =>
+          response(updated),
+        ) as unknown as typeof fetch,
+      }),
+    ).resolves.toEqual({ source: "network", data: updated });
+
+    const loaded = await loadCourseBankCatalog({
+      url: "https://example.com/catalog.v2.json",
+      storage,
+      now: now + COURSE_BANK_CACHE_TTL_MS,
+      fetchImpl: vi.fn(async () =>
+        response({}, 500),
+      ) as unknown as typeof fetch,
+    });
+    expect(loaded.source).toBe("stale");
+    expect(loaded.data.site.tagline).toBe("Updated");
+    expect(loaded.warning?.message).toContain("500");
+  });
+
+  it("bypasses fresh cache on explicit retry and tolerates blocked storage", async () => {
+    const blocked: StorageLike = {
       getItem: () => {
         throw new Error("blocked");
       },
@@ -211,86 +215,19 @@ describe("course-bank cache", () => {
         throw new Error("blocked");
       },
     };
-    expect(readCourseBankCache(throwingStorage)).toEqual({ state: "missing" });
-    expect(() =>
-      writeCourseBankCache(throwingStorage, structure),
-    ).not.toThrow();
-  });
+    expect(readCourseBankCache(blocked)).toEqual({ state: "missing" });
+    expect(() => writeCourseBankCache(blocked, catalog)).not.toThrow();
 
-  it("returns a fresh cache without requesting the network", async () => {
     const storage = new MemoryStorage();
-    writeCourseBankCache(storage, structure, 100);
-    const fetchImpl = vi.fn() as unknown as typeof fetch;
-
-    await expect(
-      loadCourseBankStructure({
-        url: "https://example.com/structure.json",
-        storage,
-        now: 101,
-        fetchImpl,
-      }),
-    ).resolves.toMatchObject({ source: "cache", data: structure });
-    expect(fetchImpl).not.toHaveBeenCalled();
-  });
-
-  it("refreshes an expired entry and writes the new timestamp", async () => {
-    const storage = new MemoryStorage();
-    writeCourseBankCache(storage, structure, 100);
-    const updated = { root: { course: ["New_notes.pdf"] } };
-    const fetchImpl = vi.fn(async () =>
-      response(updated),
-    ) as unknown as typeof fetch;
-    const now = 100 + COURSE_BANK_CACHE_TTL_MS;
-
-    await expect(
-      loadCourseBankStructure({
-        url: "https://example.com/structure.json",
-        storage,
-        now,
-        fetchImpl,
-      }),
-    ).resolves.toEqual({ source: "network", data: updated });
-    expect(JSON.parse(storage.getItem(COURSE_BANK_CACHE_KEY)!)).toEqual({
-      timestamp: now,
-      data: updated,
-    });
-  });
-
-  it("falls back to validated stale data when refresh fails", async () => {
-    const storage = new MemoryStorage();
-    writeCourseBankCache(storage, structure, 100);
-    const fetchImpl = vi.fn(async () =>
-      response({}, 500),
-    ) as unknown as typeof fetch;
-
-    const loaded = await loadCourseBankStructure({
-      url: "https://example.com/structure.json",
+    writeCourseBankCache(storage, catalog, 100);
+    const fetchImpl = vi.fn(async () => response(catalog));
+    await loadCourseBankCatalog({
+      url: "https://example.com/catalog.v2.json",
       storage,
-      now: 100 + COURSE_BANK_CACHE_TTL_MS,
-      fetchImpl,
+      now: 101,
+      forceRefresh: true,
+      fetchImpl: fetchImpl as unknown as typeof fetch,
     });
-    expect(loaded.source).toBe("stale");
-    expect(loaded.data).toEqual(structure);
-    expect(loaded.warning?.message).toContain("500");
-  });
-
-  it("bypasses a fresh cache when retry forces a refresh", async () => {
-    const storage = new MemoryStorage();
-    writeCourseBankCache(storage, structure, 100);
-    const updated = { root: { course: ["Retry.pdf"] } };
-    const fetchImpl = vi.fn(async () =>
-      response(updated),
-    ) as unknown as typeof fetch;
-
-    await expect(
-      loadCourseBankStructure({
-        url: "https://example.com/structure.json",
-        storage,
-        now: 101,
-        forceRefresh: true,
-        fetchImpl,
-      }),
-    ).resolves.toEqual({ source: "network", data: updated });
     expect(fetchImpl).toHaveBeenCalledOnce();
   });
 });

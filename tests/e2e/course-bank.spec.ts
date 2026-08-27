@@ -3,10 +3,13 @@ import {
   COURSE_BANK_CACHE_KEY,
   COURSE_BANK_CACHE_TTL_MS,
 } from "../../src/scripts/course-bank-utils";
-import { courseBankStructureFixture as structure } from "../fixtures/course-bank";
+import {
+  courseBankCatalogFixture as structure,
+  courseBankRevision,
+} from "../fixtures/course-bank";
 
-const structureUrl = "**/GE-Union/CourseBank/main/structure.json";
-const rawBase = "https://raw.githubusercontent.com/GE-Union/CourseBank/main/";
+const structureUrl = "**/GE-Union/CourseBank/main/catalog.v2.json";
+const rawBase = `https://raw.githubusercontent.com/GE-Union/CourseBank/${courseBankRevision}/`;
 
 async function mockStructure(page: Page, data: unknown = structure) {
   await page.route(structureUrl, (route) =>
@@ -29,7 +32,7 @@ async function openFirstCourse(page: Page) {
   return course;
 }
 
-test("renders the complete static catalog and mocked note inventory safely", async ({
+test("generates the complete catalog and mocked note inventory safely", async ({
   page,
 }) => {
   await mockStructure(page);
@@ -40,17 +43,16 @@ test("renders the complete static catalog and mocked note inventory safely", asy
     "Course bank",
   );
   await expect(page.getByRole("tab")).toHaveCount(5);
-  await expect(page.locator("details.course")).toHaveCount(49);
-  await expect(page.getByText("No description").first()).toBeAttached();
+  await expect(page.locator("details.course")).toHaveCount(50);
+  await expect(page.getByText("Design-Build 4")).toBeAttached();
 
   await openFirstCourse(page);
   await expect(
     page.getByRole("link", { name: /Lecture notes by Ada Lovelace/ }),
   ).toBeVisible();
   await expect(page.getByText("No notes found").first()).toBeAttached();
-  await expect(page.getByText("Should not render.pdf")).toHaveCount(0);
   await expect(
-    page.getByText("Safety <img onerror=window.injected=true>.txt"),
+    page.getByText("Safety <img onerror=window.injected=true>"),
   ).toBeVisible();
   await expect(page.locator("img[onerror]")).toHaveCount(0);
   expect(await page.evaluate(() => "injected" in window)).toBe(false);
@@ -222,8 +224,6 @@ test("an initial failure exposes a retry that requests fresh data", async ({
   await expect(page.locator("[data-course-bank-notice-text]")).toHaveText(
     "Unable to load course notes.",
   );
-  await expect(page.getByText("Unable to load notes.").first()).toBeAttached();
-
   await page.getByRole("button", { name: "Retry" }).click();
   await waitForReady(page);
   await openFirstCourse(page);
@@ -236,7 +236,7 @@ test("an initial failure exposes a retry that requests fresh data", async ({
 test("notebooks download with their repository filename", async ({ page }) => {
   await mockStructure(page);
   await page.route(
-    /raw\.githubusercontent\.com\/GE-Union\/CourseBank\/main\/.*\.ipynb$/,
+    /raw\.githubusercontent\.com\/GE-Union\/CourseBank\/[a-f\d]{40}\/.*\.ipynb$/,
     (route) =>
       route.fulfill({
         status: 200,
@@ -260,7 +260,7 @@ test("PDF links keep a safe raw fallback and open an isolated blob tab", async (
   await mockStructure(page);
   let pdfRequests = 0;
   await page.route(
-    /raw\.githubusercontent\.com\/GE-Union\/CourseBank\/main\/.*\.pdf$/,
+    /raw\.githubusercontent\.com\/GE-Union\/CourseBank\/[a-f\d]{40}\/.*\.pdf$/,
     (route) => {
       pdfRequests += 1;
       return route.fulfill({
@@ -313,7 +313,7 @@ test("preserves the external Course Bank calls to action", async ({ page }) => {
   }
 });
 
-test("[live] the CourseBank structure endpoint remains usable", async ({
+test("[live] the CourseBank catalog endpoint remains usable", async ({
   request,
 }) => {
   test.skip(
@@ -321,10 +321,14 @@ test("[live] the CourseBank structure endpoint remains usable", async ({
     "Set COURSE_BANK_LIVE=1 to run the non-blocking live check.",
   );
   test.setTimeout(15_000);
-  const response = await request.get(`${rawBase}structure.json`, {
-    timeout: 10_000,
-  });
+  const response = await request.get(
+    "https://raw.githubusercontent.com/GE-Union/CourseBank/main/catalog.v2.json",
+    {
+      timeout: 10_000,
+    },
+  );
   expect(response.ok()).toBe(true);
   const data = await response.json();
-  expect(data["polytechnical-foundations"].maths1a).toEqual(expect.any(Array));
+  expect(data.schemaVersion).toBe(2);
+  expect(data.categories).toEqual(expect.any(Array));
 });

@@ -1,6 +1,6 @@
 import AxeBuilder from "@axe-core/playwright";
 import { expect, test, type Page } from "@playwright/test";
-import { courseBankStructureFixture } from "../fixtures/course-bank";
+import { courseBankCatalogFixture } from "../fixtures/course-bank";
 import {
   calendarEventsFixture,
   googleCalendarApiPattern,
@@ -33,9 +33,9 @@ for (const route of routes) {
   test(`shell on ${route} has no axe violations`, async ({ page }) => {
     if (route === "/course-bank") {
       await page.route(
-        "**/GE-Union/CourseBank/main/structure.json",
+        "**/GE-Union/CourseBank/main/catalog.v2.json",
         (request) =>
-          request.fulfill({ status: 200, json: courseBankStructureFixture }),
+          request.fulfill({ status: 200, json: courseBankCatalogFixture }),
       );
     }
     if (route === "/calendar") {
@@ -94,14 +94,14 @@ test("calendar error and retry state has no axe violations", async ({
 });
 
 test("Course Bank alternate tab has no axe violations", async ({ page }) => {
-  await page.route("**/GE-Union/CourseBank/main/structure.json", (route) =>
-    route.fulfill({ status: 200, json: courseBankStructureFixture }),
+  await page.route("**/GE-Union/CourseBank/main/catalog.v2.json", (route) =>
+    route.fulfill({ status: 200, json: courseBankCatalogFixture }),
   );
   await page.goto("/course-bank");
   await page
     .locator('[data-course-bank-state="ready"]')
     .waitFor({ state: "attached" });
-  await page.getByRole("tab", { name: "Advanced Systems" }).click();
+  await page.getByRole("tab", { name: "Advanced Materials" }).click();
   const course = page.locator("#course-panel-advanced details.course").first();
   await course.locator("summary").click();
   await expect(course).toHaveAttribute("open", "");
@@ -118,7 +118,7 @@ test("Course Bank alternate tab has no axe violations", async ({ page }) => {
 test("Course Bank error and retry state has no axe violations", async ({
   page,
 }) => {
-  await page.route("**/GE-Union/CourseBank/main/structure.json", (route) =>
+  await page.route("**/GE-Union/CourseBank/main/catalog.v2.json", (route) =>
     route.fulfill({ status: 500, body: "failed" }),
   );
   await page.goto("/course-bank");
