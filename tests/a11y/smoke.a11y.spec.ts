@@ -1,6 +1,11 @@
 import AxeBuilder from "@axe-core/playwright";
 import { expect, test, type Page } from "@playwright/test";
 import { courseBankStructureFixture } from "../fixtures/course-bank";
+import {
+  calendarEventsFixture,
+  googleCalendarApiPattern,
+  unsafeCalendarTitle,
+} from "../fixtures/calendar";
 
 // Axe scans of the shared shell on every route, plus the two overlay
 // states (About menu open, mobile drawer open). Page-body content is
@@ -33,16 +38,60 @@ for (const route of routes) {
           request.fulfill({ status: 200, json: courseBankStructureFixture }),
       );
     }
+    if (route === "/calendar") {
+      await page.clock.setFixedTime(new Date("2026-08-27T12:00:00+02:00"));
+      await page.route(googleCalendarApiPattern, (request) =>
+        request.fulfill({ status: 200, json: calendarEventsFixture }),
+      );
+    }
     await page.goto(route);
     if (route === "/course-bank") {
       await page
         .locator('[data-course-bank-state="ready"]')
         .waitFor({ state: "attached" });
     }
+    if (route === "/calendar") {
+      await page
+        .locator('[data-calendar-state="ready"]')
+        .waitFor({ state: "attached" });
+    }
     const results = await scan(page).analyze();
     expect(results.violations).toEqual([]);
   });
 }
+
+test("open calendar event dialog has no axe violations", async ({ page }) => {
+  await page.clock.setFixedTime(new Date("2026-08-27T12:00:00+02:00"));
+  await page.route(googleCalendarApiPattern, (route) =>
+    route.fulfill({ status: 200, json: calendarEventsFixture }),
+  );
+  await page.goto("/calendar");
+  await page
+    .locator('[data-calendar-state="ready"]')
+    .waitFor({ state: "attached" });
+  await page
+    .locator(".fc-event")
+    .filter({ hasText: unsafeCalendarTitle })
+    .click();
+  await expect(
+    page.getByRole("dialog", { name: unsafeCalendarTitle }),
+  ).toBeVisible();
+  expect((await scan(page).analyze()).violations).toEqual([]);
+});
+
+test("calendar error and retry state has no axe violations", async ({
+  page,
+}) => {
+  await page.clock.setFixedTime(new Date("2026-08-27T12:00:00+02:00"));
+  await page.route(googleCalendarApiPattern, (route) =>
+    route.fulfill({ status: 500, body: "failed" }),
+  );
+  await page.goto("/calendar");
+  await page
+    .locator('[data-calendar-state="error"]')
+    .waitFor({ state: "attached" });
+  expect((await scan(page).analyze()).violations).toEqual([]);
+});
 
 test("Course Bank alternate tab has no axe violations", async ({ page }) => {
   await page.route("**/GE-Union/CourseBank/main/structure.json", (route) =>

@@ -4,6 +4,10 @@ import {
   courseBankIconFixture,
   courseBankStructureFixture,
 } from "../fixtures/course-bank";
+import {
+  emptyCalendarFixture,
+  googleCalendarApiPattern,
+} from "../fixtures/calendar";
 
 // Playwright-managed snapshots of the shared shell (hero + footer) at the
 // four audited viewports. These guard the shell against regressions
@@ -74,11 +78,32 @@ async function prepareCourseBank(page: Page) {
   await waitForRenderedImages(page);
 }
 
+async function prepareCalendar(page: Page) {
+  await page.clock.setFixedTime(new Date("2026-07-13T12:00:00+02:00"));
+  await page.route(googleCalendarApiPattern, (route) =>
+    route.fulfill({ status: 200, json: emptyCalendarFixture }),
+  );
+  await preparePage(page, "/calendar");
+  await page
+    .locator('[data-calendar-state="empty"]')
+    .waitFor({ state: "attached" });
+}
+
 for (const vp of viewports) {
   test(`shell snapshot at ${vp.name}`, async ({ page }) => {
     await page.setViewportSize({ width: vp.width, height: vp.height });
     await preparePage(page, "/about-geu");
     await expect(page).toHaveScreenshot(`shell-${vp.name}.png`, {
+      fullPage: true,
+    });
+  });
+}
+
+for (const vp of viewports) {
+  test(`calendar composition at ${vp.name}`, async ({ page }) => {
+    await page.setViewportSize({ width: vp.width, height: vp.height });
+    await prepareCalendar(page);
+    await expect(page).toHaveScreenshot(`calendar-${vp.name}.png`, {
       fullPage: true,
     });
   });

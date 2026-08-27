@@ -26,6 +26,11 @@ export default defineConfig({
     "tests/visual/snapshots/{testFilePath}/{arg}-{projectName}{ext}",
   webServer: {
     command: "npm run build && node scripts/serve-dist.mjs --port 4321",
+    env: {
+      PUBLIC_GOOGLE_CALENDAR_API_KEY:
+        process.env.PUBLIC_GOOGLE_CALENDAR_API_KEY ||
+        "playwright-public-test-key",
+    },
     url: "http://localhost:4321",
     reuseExistingServer: !process.env.CI,
     timeout: 120_000,
