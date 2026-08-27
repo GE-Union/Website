@@ -51,7 +51,9 @@ Do not reuse this key for server-side services or unrelated APIs.
 **Publishing rule:** every production or preview build must receive
 `PUBLIC_GOOGLE_CALENDAR_API_KEY` from the hosting provider's persistent
 environment configuration. A developer's ignored `.env` file is not uploaded
-with the site.
+with the site. `npm run build` checks the generated calendar page and fails
+before publishing if the key was omitted. `npm run dev` continues to read the
+same variable from the local `.env` file.
 
 1. Add `PUBLIC_GOOGLE_CALENDAR_API_KEY` to the hosting provider's build
    environment.

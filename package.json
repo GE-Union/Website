@@ -9,7 +9,7 @@
   },
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build",
+    "build": "astro build && npm run check:calendar-config",
     "preview": "astro preview",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
@@ -21,6 +21,7 @@
     "test:e2e": "playwright test --project=e2e",
     "test:a11y": "playwright test --project=a11y",
     "test:visual": "playwright test --project=visual",
+    "check:calendar-config": "node scripts/check-calendar-config.mjs",
     "check:links": "node scripts/check-links.mjs",
     "check:assets": "node scripts/check-external-assets.mjs",
     "check:bundle": "node scripts/check-bundle-budget.mjs",
