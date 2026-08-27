@@ -39,6 +39,10 @@ export const reelPreviews = [
 export const dtuEctsChart =
   "https://student.dtu.dk/-/media/subsites/studieordninger/general-engineering/ge-ects-fordeling.png";
 
+/** File glyph used by the runtime-rendered Course Bank rows. */
+export const courseBankFileIcon =
+  "https://raw.githubusercontent.com/GE-Union/CourseBank/main/res/file-icon.svg";
+
 /**
  * Remote data endpoints fetched by page scripts.
  * Note: introductionQna returned 404 at audit time (docs/migration-audit.md);
