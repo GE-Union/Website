@@ -36,6 +36,34 @@ const headerLogo =
     <SeoHead {...seo} />
     <GoogleAnalytics />
     <slot name="head" />
+    <script is:inline>
+      const transitionKey = "geu-page-transition";
+
+      try {
+        const storedTransition = sessionStorage.getItem(transitionKey);
+        const navigationEntry = performance.getEntriesByType("navigation")[0];
+        const historyNavigation = navigationEntry?.type === "back_forward";
+        let transitionMode = historyNavigation ? "quick" : null;
+
+        if (storedTransition) {
+          sessionStorage.removeItem(transitionKey);
+          const transition = JSON.parse(storedTransition);
+          const isRecent = Date.now() - transition.createdAt < 5000;
+          if (
+            isRecent &&
+            (transition.mode === "hero" || transition.mode === "quick")
+          ) {
+            transitionMode = transition.mode;
+          }
+        }
+
+        if (transitionMode) {
+          document.documentElement.dataset.pageTransition = `${transitionMode}-enter`;
+        }
+      } catch {
+        // Storage can be unavailable in strict privacy modes.
+      }
+    </script>
   </head>
   <body class:list={[{ "theme-minecraft": theme === "minecraft" }]}>
     <slot name="hero" />
@@ -43,6 +71,11 @@ const headerLogo =
       <slot />
     </main>
     <SiteFooter />
+    <script>
+      import { initPageTransitions } from "../scripts/page-transitions";
+
+      initPageTransitions();
+    </script>
   </body>
 </html>
 

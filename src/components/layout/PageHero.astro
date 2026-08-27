@@ -32,10 +32,10 @@ const hasSubtitle = subtitle !== undefined || Astro.slots.has("subtitle");
 >
   <SiteHeader theme={theme} />
   <div class="hero-content">
-    <h1 id={titleId}>{title}</h1>
+    <h1 id={titleId} data-transition-title>{title}</h1>
     {
       hasSubtitle && (
-        <p class="hero-subtitle" id={subtitleId}>
+        <p class="hero-subtitle" id={subtitleId} data-transition-subtitle>
           {subtitle ?? <slot name="subtitle" />}
         </p>
       )
