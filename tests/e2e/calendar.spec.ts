@@ -162,6 +162,39 @@ test("locks background scrolling while event details are open", async ({
   expect(await page.evaluate(() => document.body.style.position)).toBe("");
 });
 
+test("smoothly shrinks, fades, and blurs the event popup", async ({ page }) => {
+  await page.emulateMedia({ reducedMotion: "no-preference" });
+  await openCalendar(page);
+  await page.locator(".fc-event").filter({ hasText: "Study day" }).click();
+  const dialog = page.getByRole("dialog", { name: "Study day" });
+  const card = dialog.locator(".event-dialog-card");
+
+  await page.keyboard.press("Escape");
+  await expect(dialog).toHaveAttribute("data-closing", "true");
+  await expect
+    .poll(() =>
+      card.evaluate((element) => getComputedStyle(element).animationName),
+    )
+    .toBe("event-dialog-card-out");
+
+  const closingFrames = await card.evaluate((element) => {
+    const animation = element.getAnimations()[0];
+    if (!(animation?.effect instanceof KeyframeEffect)) return [];
+
+    return animation.effect.getKeyframes().map((frame) => ({
+      filter: frame.filter ?? "none",
+      opacity: frame.opacity ?? "1",
+      transform: frame.transform ?? "none",
+    }));
+  });
+  expect(closingFrames.at(-1)).toEqual({
+    filter: "blur(12px)",
+    opacity: "0",
+    transform: "scale(0.9)",
+  });
+  await expect(dialog).not.toBeVisible();
+});
+
 test("keeps long event details scrollable without moving the page", async ({
   page,
 }) => {

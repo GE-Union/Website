@@ -250,7 +250,7 @@ const apiKey = import.meta.env.PUBLIC_GOOGLE_CALENDAR_API_KEY?.trim() ?? "";
   }
 
   .event-dialog[data-closing="true"] .event-dialog-card {
-    animation: event-dialog-card-out 0.15s ease forwards;
+    animation: event-dialog-card-out 0.15s ease-in forwards;
   }
 
   .event-dialog-content {
@@ -362,6 +362,8 @@ const apiKey = import.meta.env.PUBLIC_GOOGLE_CALENDAR_API_KEY?.trim() ?? "";
 
   @keyframes event-dialog-card-out {
     to {
+      filter: blur(12px);
+      opacity: 0;
       transform: scale(0.9);
     }
   }

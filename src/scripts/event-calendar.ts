@@ -12,6 +12,7 @@ import {
 type CalendarState = "loading" | "ready" | "empty" | "error" | "missing-key";
 
 const ORIGINAL_END_PROPERTY = "geuOriginalEnd";
+const DIALOG_CLOSE_FALLBACK_MS = 300;
 const DESCRIPTION_TAGS = new Set([
   "a",
   "b",
@@ -311,7 +312,7 @@ function makeDialogController(root: HTMLElement) {
     }
 
     dialog.dataset.closing = "true";
-    closeTimer = window.setTimeout(finishClose, 150);
+    closeTimer = window.setTimeout(finishClose, DIALOG_CLOSE_FALLBACK_MS);
   };
 
   const openFallback = (): void => {
@@ -359,6 +360,9 @@ function makeDialogController(root: HTMLElement) {
   });
   dialog.addEventListener("click", (event) => {
     if (event.target === dialog) close();
+  });
+  dialog.addEventListener("animationend", (event) => {
+    if (event.animationName === "event-dialog-card-out") finishClose();
   });
   dialog.addEventListener("close", () => {
     delete dialog.dataset.closing;
