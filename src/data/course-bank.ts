@@ -9,6 +9,8 @@ export interface CourseDefinition {
 export interface CourseCategory {
   id: string;
   label: string;
+  shortLabel: string;
+  emphasis: string;
   description: string;
   courses: readonly CourseDefinition[];
 }
@@ -19,6 +21,8 @@ export const courseCategories = [
   {
     id: "foundations",
     label: "Polytechnical Foundations",
+    shortLabel: "Foundations",
+    emphasis: "Polytechnical Foundations",
     description:
       "The Polytechnical Foundations are a set of courses all at DTU are required to take. They cover a wide variety of stuffs and suck sometimes. They are still cool in general tho.",
     courses: [
@@ -91,6 +95,8 @@ export const courseCategories = [
   {
     id: "advanced",
     label: "Advanced Systems",
+    shortLabel: "Advanced",
+    emphasis: "Advanced Materials",
     description:
       "The Advanced Materials specialization is about creating sustainable and functional materials for the future. From nanotechnology and modeling to acoustics, physics, and manufacturing, it opens doors across cutting-edge engineering fields.",
     courses: [
@@ -139,6 +145,8 @@ export const courseCategories = [
   {
     id: "cyber",
     label: "Cyber Systems",
+    shortLabel: "Cyber",
+    emphasis: "Cyber Systems",
     description:
       "The Cyber Systems specialization is about computers and integrated systems. It is objectively the best specialization for the best people.",
     courses: [
@@ -170,6 +178,8 @@ export const courseCategories = [
   {
     id: "living",
     label: "Living Systems",
+    shortLabel: "Living",
+    emphasis: "Living Systems",
     description:
       "The Living Systems specialization covers everything from food and aquatic engineering to healthcare, medicine, and chemicals. It’s a gateway to Denmark’s world-leading biotech and pharma scene, with strong links to companies like Novo Nordisk.",
     courses: [
@@ -215,6 +225,8 @@ export const courseCategories = [
   {
     id: "future",
     label: "Future Energy",
+    shortLabel: "Future",
+    emphasis: "Future Energy",
     description:
       "The Future Energy specialization focuses on the green transition, from wind and solar power to electrolysis, applied chemistry, and sustainable entrepreneurship. It opens doors to careers in Denmark’s energy sector, with leading companies like Vestas driving innovation worldwide.",
     courses: [

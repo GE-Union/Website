@@ -1,5 +1,5 @@
 ---
-// Temporary route shell; page sections arrive in prompt 07.
+import CourseBank from "../components/course-bank/CourseBank.astro";
 import PageHero from "../components/layout/PageHero.astro";
 import { getPageSeo } from "../data/seo-matrix";
 import BaseLayout from "../layouts/BaseLayout.astro";
@@ -11,4 +11,5 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     title="Course bank"
     subtitle="Find your relevant courses and notes - from students for students!"
   />
+  <CourseBank />
 </BaseLayout>
