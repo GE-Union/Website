@@ -10,8 +10,10 @@ Calendar updates the site without a new deployment.
 - `src/components/calendar/EventCalendar.astro` owns the semantic HTML and
   page-scoped styles.
 - `src/scripts/calendar-date.ts` contains pure date and time rules.
-- `src/scripts/event-calendar.ts` connects FullCalendar, Google Calendar, page
-  states, and the event dialog.
+- `src/scripts/calendar-description.ts` contains the remote-HTML allowlist.
+- `src/scripts/calendar-dialog.ts` owns popup content and behavior.
+- `src/scripts/event-calendar.ts` connects FullCalendar, Google Calendar, and
+  page states.
 - `tests/fixtures/calendar.ts` is the deterministic Google API response used by
   browser tests.
 
