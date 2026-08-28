@@ -30,3 +30,6 @@ Thumbs.db
 
 # Reference fixtures, scripts, and tests are intentionally tracked because
 # they are migration source material and CI inputs.
+
+# Local Netlify folder
+.netlify
