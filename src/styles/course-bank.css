@@ -5,6 +5,10 @@
   margin: 50px var(--gap1) 0;
 }
 
+.course-bank[data-course-bank-state="loading"] {
+  min-height: max(420px, calc(100vh - 250px));
+}
+
 .course-bank .course-bank-content {
   display: flex;
   flex-direction: column;
