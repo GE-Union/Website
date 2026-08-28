@@ -91,7 +91,7 @@ function initTabs(root: HTMLElement, tabList: HTMLElement): () => void {
   const panels = [...root.querySelectorAll<HTMLElement>("[role=tabpanel]")];
   if (!tabs.length || tabs.length !== panels.length) return () => undefined;
 
-  const narrow = window.matchMedia("(max-width: 479px)");
+  const narrow = window.matchMedia("(max-width: 519px)");
   const updateOrientation = (): void => {
     tabList.setAttribute(
       "aria-orientation",

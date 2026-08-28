@@ -120,6 +120,39 @@ test("tabs expose selected state and support desktop and mobile keyboard navigat
   expect(overflow).toBeLessThanOrEqual(1);
 });
 
+test("category tabs stay on one line across responsive breakpoints", async ({
+  page,
+}) => {
+  await mockStructure(page);
+  await page.goto("/course-bank");
+  await waitForReady(page);
+
+  for (const [width, orientation] of [
+    [992, "horizontal"],
+    [991, "horizontal"],
+    [520, "horizontal"],
+    [519, "vertical"],
+  ] as const) {
+    await page.setViewportSize({ width, height: 900 });
+    await expect(page.getByRole("tablist")).toHaveAttribute(
+      "aria-orientation",
+      orientation,
+    );
+
+    const lineCounts = await page
+      .locator(".tab-list span:visible")
+      .evaluateAll((labels) =>
+        labels.map((label) => {
+          const range = document.createRange();
+          range.selectNodeContents(label);
+          return range.getClientRects().length;
+        }),
+      );
+
+    expect(lineCounts).toEqual([1, 1, 1, 1, 1]);
+  }
+});
+
 test("course disclosures start collapsed and animate open and closed", async ({
   page,
 }) => {
