@@ -2,7 +2,7 @@
  * Draggable header logo with a spring return, reimplemented once from the
  * legacy inline IIFE (which was duplicated into all 8 pages and broken:
  * it mixed three spellings of its pointer-id variable, so pointer capture
- * threw a ReferenceError — see docs/migration-audit.md, finding 5).
+ * threw a ReferenceError).
  *
  * Behavior contract:
  * - Position changes only via transform: no layout shift.

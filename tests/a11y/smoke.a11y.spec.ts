@@ -7,15 +7,8 @@ import {
   unsafeCalendarTitle,
 } from "../fixtures/calendar";
 
-// Axe scans of the shared shell on every route, plus the two overlay
-// states (About menu open, mobile drawer open). Page-body content is
-// scanned again as pages are reconstructed.
-//
-// color-contrast is excluded: the legacy palette must be preserved during
-// the fidelity migration (docs/CLAUDE.md), and its translucent nav text on
-// the red panels measures below WCAG thresholds. Recorded as a known
-// deviation in docs/design-system.md; the owner decision belongs to the
-// accessibility phase (prompt 10).
+// The preserved translucent navigation palette does not pass axe's automated
+// contrast threshold, so contrast remains a documented manual review item.
 const scan = (page: Page) =>
   new AxeBuilder({ page }).disableRules(["color-contrast"]);
 const routes = [

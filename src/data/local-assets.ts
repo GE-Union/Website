@@ -1,7 +1,6 @@
 /**
  * Local image paths used by the shared shell. The files are byte-identical
- * copies of the legacy export assets; the old → new path mapping lives in
- * docs/external-assets.md.
+ * copies of the legacy export assets.
  */
 
 export const localAssets = {

@@ -11,7 +11,7 @@ import { toCanonicalUrl } from "../../src/data/site";
 
 /**
  * Parses the production build in dist/ and fails on the SEO defects the
- * legacy export shipped with (docs/prompts/04-seo-system.md):
+ * legacy export shipped with:
  * `https://url` placeholders, missing canonical/title/description on
  * indexable pages, conflicting robots directives, missing absolute
  * og:image, and noindex pages leaking into the sitemap.

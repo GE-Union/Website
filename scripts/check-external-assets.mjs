@@ -19,9 +19,8 @@ import { fileURLToPath } from "node:url";
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const DATA_FILE = join(ROOT, "src", "data", "external-assets.ts");
 
-// Endpoints that are known-broken on the legacy site and documented in
-// docs/migration-audit.md. They are kept in the registry for fidelity but a
-// failure here is reported as a warning, not an error.
+// This endpoint was already broken on the legacy site. It remains registered
+// for fidelity, but a failure is reported as a warning rather than an error.
 const KNOWN_BROKEN = new Set([
   "https://raw.githubusercontent.com/GE-Union/WebsiteContent/main/Introduction/QnA.json",
 ]);

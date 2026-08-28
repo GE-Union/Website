@@ -1,13 +1,6 @@
 /**
- * Per-route SEO matrix — the only place indexing decisions are made
- * (CLAUDE.md). Pages read their head metadata via `getPageSeo`, the
- * sitemap filter in astro.config.mjs reads `isInSitemap`, and
- * docs/seo-matrix.md documents every row for the content owners.
- *
- * Titles and descriptions preserve the legacy values recorded in
- * docs/migration-audit.md. `/` and `/about-geu` had no description on
- * the legacy site, so those two are newly authored from existing page
- * copy (flagged in docs/content-review.md).
+ * Per-route SEO matrix—the only place indexing decisions are made. Pages read
+ * metadata via `getPageSeo`, while astro.config.mjs uses `isInSitemap`.
  */
 
 import type { SeoProps } from "../components/seo/SeoHead.astro";
@@ -65,10 +58,8 @@ export const seoMatrix: Record<Route, RouteSeo> = {
   },
   "/course-bank": {
     title: "Course Bank",
-    // The double space before "courses" is verbatim from the legacy site
-    // (content rule: preserve wording, flag in docs/content-review.md).
     description:
-      "Get notes, past papers, and details for all General Engineering  courses. Hand picked by students!",
+      "Get notes, past papers, and details for all General Engineering courses. Hand picked by students!",
     robots: { index: true, follow: true },
   },
   "/calendar": {
@@ -78,8 +69,7 @@ export const seoMatrix: Record<Route, RouteSeo> = {
     robots: { index: true, follow: true },
   },
   "/introduction": {
-    // Body is only "Coming soon"; stays noindex until real content ships
-    // (CLAUDE.md SEO rule). Legacy had no description; none invented.
+    // The placeholder stays noindex until real dashboard content ships.
     title: "Dashboard",
     robots: { index: false, follow: true },
   },

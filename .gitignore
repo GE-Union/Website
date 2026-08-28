@@ -13,7 +13,7 @@ tests/visual/output/
 # Lighthouse reports
 reports/lighthouse/
 
-# Local documentation and agent configuration
+# Local migration notes and agent configuration
 /docs/
 .claude/
 

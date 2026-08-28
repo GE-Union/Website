@@ -41,7 +41,7 @@ The frozen `reference/legacy-export/` directory is for comparison only. Never ed
 ## Special systems
 
 - Calendar behavior and setup: [CALENDAR.md](CALENDAR.md)
-- Course Bank architecture and tests: [docs/course-bank.md](docs/course-bank.md)
+- Course Bank architecture and tests: [COURSE_BANK.md](COURSE_BANK.md)
 
 Course uploads, names, descriptions, and folder mappings belong in the separate CourseBank repository. This website only validates and renders its generated manifest.
 

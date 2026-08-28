@@ -2,10 +2,8 @@
  * Disclosure behavior for the About navigation menu.
  *
  * The legacy site rendered these links inside a hover-only Radix tooltip
- * that existed only after hydration, leaving three routes unreachable
- * without JavaScript (docs/migration-audit.md, finding 11). Here the links
- * are real anchors that are always in the DOM; this script only toggles
- * their visibility:
+ * that existed only after hydration. Here the links are real anchors that are
+ * always in the DOM; this script only toggles their visibility:
  * - click / Enter / Space on the trigger button toggles the menu,
  * - hovering the group opens it (parity with the zero-delay tooltip),
  * - Escape closes it and returns focus to the trigger,

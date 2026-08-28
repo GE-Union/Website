@@ -2,19 +2,20 @@
 
 ## Source of truth
 
-The CourseBank GitHub repository owns the complete feature:
+The [CourseBank repository](https://github.com/GE-Union/CourseBank) owns the
+complete catalog:
 
-- catalog.source.json contains categories, courses, descriptions, folder
+- `catalog.source.json` contains categories, courses, descriptions, folder
   mappings, site links and UI labels.
 - Course folders contain the uploaded resources.
-- .github/scripts/build_catalog.py validates both sources and publishes
-  catalog.v2.json.
-- structure.json is generated from the same validated inputs for legacy
+- `.github/scripts/build_catalog.py` validates both sources and publishes
+  `catalog.v2.json`.
+- `structure.json` is generated from the same validated inputs for legacy
   clients only.
 
 The website contains no course/category inventory. Its static HTML is a small
 loading, status and retry shell; tabs, disclosures, files and calls to action
-are created from catalog.v2.json in the browser. A new valid course or upload
+are created from `catalog.v2.json` in the browser. A new valid course or upload
 therefore appears without rebuilding this repository.
 
 ## Publishing guarantees
@@ -26,19 +27,19 @@ files and resources in undeclared folders fail the workflow, leaving the
 previous valid catalog live.
 
 Each manifest includes the exact Git commit that was validated. The browser
-constructs resource and icon URLs from repository.rawBase, sourceRevision and
-the file path. This makes a loaded catalog internally consistent even when
+constructs resource and icon URLs from `repository.rawBase`, `sourceRevision`
+and the file path. This makes a loaded catalog internally consistent even when
 another upload is committed while a visitor has the page open.
 
 ## Browser data flow
 
-1. `src/scripts/course-bank/index.ts` requests the v2 catalog from GitHub Raw with normal browser
-   HTTP caching enabled and a 10-second timeout.
-2. The loader checks geu:course-bank:catalog:v2. A validated entry younger
+1. `src/scripts/course-bank/index.ts` requests the v2 catalog from GitHub Raw
+   with normal browser HTTP caching enabled and a 10-second timeout.
+2. The loader checks `geu:course-bank:catalog:v2`. A validated entry younger
    than 90 minutes is used immediately.
 3. A network response is validated before it is rendered or cached.
-4. Rendering uses DOM node creation and textContent; repository strings are
-   never assigned through innerHTML.
+4. Rendering uses DOM node creation and `textContent`; repository strings are
+   never assigned through `innerHTML`.
 5. An expired valid cache is retained as a stale fallback when GitHub cannot be
    reached. Retry explicitly requests the network.
 
@@ -48,13 +49,13 @@ file/course path agreement and unique IDs, codes and paths.
 
 ## Client module boundaries
 
-| Module | Responsibility |
-| --- | --- |
-| `catalog.ts` | Public types, validation, pinned URL construction and file colors |
-| `cache.ts` | Local cache, request timeout, HTTP cache policy and stale fallback |
-| `view.ts` | Safe DOM rendering, tabs and course disclosures |
-| `file-actions.ts` | PDF opening and notebook downloads |
-| `index.ts` | Page lifecycle, status, retry and error orchestration |
+| Module            | Responsibility                                                     |
+| ----------------- | ------------------------------------------------------------------ |
+| `catalog.ts`      | Public types, validation, pinned URL construction and file colors  |
+| `cache.ts`        | Local cache, request timeout, HTTP cache policy and stale fallback |
+| `view.ts`         | Safe DOM rendering, tabs and course disclosures                    |
+| `file-actions.ts` | PDF opening and notebook downloads                                 |
+| `index.ts`        | Page lifecycle, status, retry and error orchestration              |
 
 `CourseBank.astro` is deliberately only the empty accessible mount point. Its
 styles live in `src/styles/course-bank.css` because the catalog markup is
@@ -75,12 +76,11 @@ isolated blob tab with the raw URL as fallback, notebooks download under their
 repository filename, and other formats link directly to the commit-pinned raw
 resource.
 
-## Package boundary
+## Website boundary
 
-src/data/course-bank.ts was removed. Neither manifest, the icon nor any course
-resource may be emitted into dist; check-dist-assets.mjs enforces that boundary.
-The page therefore grows with a small generic renderer rather than with every
-future course and file.
+Neither the manifest, file icon nor any course resource may be emitted into
+`dist`; `scripts/check-dist-assets.mjs` enforces that boundary. The page uses a
+small generic renderer rather than growing with every future course and file.
 
 ## Making changes
 
@@ -102,4 +102,6 @@ future course and file.
 
 Run the optional live manifest probe with:
 
-    COURSE_BANK_LIVE=1 npm run test:e2e -- --grep '\[live\]'
+```sh
+COURSE_BANK_LIVE=1 npm run test:e2e -- --grep '\[live\]'
+```

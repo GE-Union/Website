@@ -62,6 +62,7 @@ npx playwright install chromium
 | `npm run test:e2e`         | Playwright behavior tests against the built site (`tests/e2e/`)                        |
 | `npm run test:a11y`        | Automated accessibility scans with axe (`tests/a11y/`)                                 |
 | `npm run test:visual`      | Screenshot-comparison tests (`tests/visual/`)                                          |
+| `npm run check:all`        | Deterministic checks plus end-to-end and accessibility tests                           |
 | `npm run check:links`      | Every internal link in `dist/` resolves to a real file                                 |
 | `npm run check:assets`     | Every registered remote URL still responds (needs network)                             |
 | `npm run check:dist`       | No legacy-export leakage or remote-asset copies in `dist/`                             |
@@ -99,15 +100,13 @@ the matching URL. `src/pages/about-geu.astro` → `https://geunion.dk/about-geu`
   `tests/visual/reference/` folder holds screenshots of the live site used for
   manual parity review; Playwright's own baselines live in
   `tests/visual/snapshots/`.
-- `docs/` — the migration audit, content review log, asset mapping, and the
-  prompt pack driving the rebuild.
 
 The calendar's data flow and operating guide live in
 [CALENDAR.md](CALENDAR.md). Start there before changing its Google
 Cloud configuration or timing behavior.
 
 Course files and course metadata do not live in this repository. See
-[docs/course-bank.md](docs/course-bank.md) before changing the catalog client,
+[COURSE_BANK.md](COURSE_BANK.md) before changing the catalog client,
 and use the CourseBank repository for uploads or course-list changes.
 
 An `.astro` file has two parts: a `---`-fenced code block at the top
@@ -138,23 +137,8 @@ the current site:
   or downloaded copy. Do not commit copies of them.
 - `npm run check:assets` verifies the remote URLs still respond;
   `npm run check:dist` fails the build guard if a copy sneaks into `dist/`.
-- Local assets (logo, favicon, a few images) live in `public/assets/` and are
-  mapped in [docs/external-assets.md](docs/external-assets.md).
-
-## Working with Claude Code
-
-This repo is set up for [Claude Code](https://claude.com/claude-code). The
-project instructions live in [docs/CLAUDE.md](docs/CLAUDE.md) — Claude reads
-them automatically and they define the rules above in detail.
-
-- Start Claude Code from the repository root so it picks up the instructions.
-- The rebuild is driven by the phased prompt pack in
-  [docs/prompts/](docs/prompts/); run the prompts in order and review the diff
-  after each one.
-- Ask Claude to run `npm run check` (and the browser suites) before you accept
-  a change — the instructions require it, but it never hurts to ask.
-- Good prompts are specific: name the route, the component, or the doc you
-  want changed, and say what "done" looks like.
+- Local assets (logos, icons, and a few images) live in `public/assets/`; their
+  paths are declared in [src/data/local-assets.ts](src/data/local-assets.ts).
 
 ## Quality gates
 

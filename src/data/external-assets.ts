@@ -1,13 +1,9 @@
 /**
  * Single source of truth for every remote URL the site uses at runtime.
  *
- * Policy (see docs/CLAUDE.md):
- * - Remote raster assets stay at their exact current URLs during the
- *   fidelity migration. Render them with plain <img> tags — no optimizer,
- *   proxy, downloader, or committed copies.
- * - `npm run check:assets` verifies every URL here still responds.
- *
- * The URL inventory comes from docs/migration-audit.md (2026-07-13).
+ * Remote raster assets stay at their current URLs and render through plain
+ * <img> tags—never through an optimizer, proxy, or committed copy.
+ * Run `npm run check:assets` to verify that every URL still responds.
  */
 
 /** Remote raster images shown in the home/about carousels. */
@@ -41,8 +37,8 @@ export const dtuEctsChart =
 
 /**
  * Remote data endpoints fetched by page scripts.
- * Note: introductionQna returned 404 at audit time (docs/migration-audit.md);
- * the loader that used it was already dead on the legacy site.
+ * Note: introductionQna returned 404 during the migration audit; the loader
+ * that used it was already dead on the legacy site.
  */
 export const dataEndpoints = {
   aboutGeQna:

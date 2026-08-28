@@ -6,8 +6,7 @@
  * 2. Every *local* asset referenced by built HTML (img/script/link/source)
  *    must exist in dist/.
  * 3. Remote raster assets must stay remote: dist/ must not contain committed
- *    copies of the GitHub course files, carousel images, or reel previews
- *    (docs/CLAUDE.md asset rules).
+ *    copies of the GitHub course files, carousel images, or reel previews.
  *
  * Usage: node scripts/check-dist-assets.mjs   (requires `npm run build`)
  */

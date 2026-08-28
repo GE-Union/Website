@@ -3,9 +3,7 @@
  * Shared document shell for every page: head metadata (via SeoHead),
  * global styles, hero slot, main content, and footer.
  *
- * Analytics deviation from the legacy site (prompt 04): GA4 is no longer
- * loaded unconditionally — GoogleAnalytics renders nothing until the team
- * opts in via siteConfig.analytics (src/data/site.ts).
+ * GoogleAnalytics renders nothing until the team opts in through siteConfig.
  */
 import GoogleAnalytics from "../components/seo/GoogleAnalytics.astro";
 import SeoHead from "../components/seo/SeoHead.astro";

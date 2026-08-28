@@ -14,9 +14,8 @@ import {
 } from "../../src/data/site";
 import { allRemoteImages } from "../../src/data/external-assets";
 
-// The SEO matrix is the only place indexing is decided (CLAUDE.md).
-// These tests keep it internally consistent; tests/seo/ then checks the
-// built HTML against it.
+// These tests keep the SEO matrix internally consistent; tests/seo then
+// checks the built HTML against it.
 describe("seo matrix", () => {
   it("covers all 8 legacy routes exactly", () => {
     expect([...routes].sort()).toEqual(

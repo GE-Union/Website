@@ -41,8 +41,7 @@ export const siteConfig = {
   /**
    * Google Analytics: the legacy GA4 measurement ID is preserved here,
    * but analytics is OFF by default. Set `enabled: true` only after the
-   * team has confirmed its privacy/consent approach (see
-   * docs/seo-matrix.md, "Analytics opt-in").
+   * team has confirmed its privacy and consent approach.
    */
   analytics: {
     measurementId: "G-T1BFLB9XDL",
