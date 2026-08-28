@@ -1,0 +1,27 @@
+---
+interface Props {
+  text: string;
+  id?: string;
+}
+
+const { text, id } = Astro.props;
+const parts = text.split(/(\s+)/u).filter(Boolean);
+---
+
+<h1 id={id} data-transition-title aria-label={text}>
+  {
+    parts.map((part) =>
+      /^\s+$/u.test(part) ? (
+        part
+      ) : (
+        <span class="transition-title-word" aria-hidden="true">
+          {Array.from(part).map((character) => (
+            <span class="transition-title-character" data-transition-character>
+              {character}
+            </span>
+          ))}
+        </span>
+      ),
+    )
+  }
+</h1>

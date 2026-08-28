@@ -1,0 +1,136 @@
+.transition-ring-clip {
+  position: fixed;
+  z-index: 2147483645;
+  top: var(--ring-top, 0);
+  left: var(--ring-left, 0);
+  width: var(--ring-width, 0);
+  height: var(--ring-height, 0);
+  overflow: hidden;
+  border-radius: var(--ring-radius, 0);
+  pointer-events: none;
+}
+
+.transition-ring {
+  position: absolute;
+  top: calc(var(--ring-y, 0px) - var(--ring-top, 0px));
+  left: calc(var(--ring-x, 0px) - var(--ring-left, 0px));
+  box-sizing: border-box;
+  width: 40px;
+  height: 40px;
+  border: 48px solid rgb(255 255 255 / 0.32);
+  border-radius: 50%;
+  opacity: 0;
+  filter: blur(24px);
+  box-shadow: 0 0 64px 36px rgb(255 255 255 / 0.14);
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  will-change: width, height, opacity;
+}
+
+html[data-transition-ring="active"] .transition-ring {
+  animation: transition-ring-expand 320ms cubic-bezier(0.1, 0.72, 0.2, 1)
+    var(--ring-delay, 0ms) both;
+}
+
+.transition-text-overlay {
+  position: fixed;
+  z-index: 2147483646;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.transition-overlay-character {
+  position: absolute;
+  white-space: pre;
+  transform-origin: center;
+  will-change: transform, opacity;
+}
+
+.transition-title-word {
+  white-space: nowrap;
+}
+
+.transition-title-character {
+  position: relative;
+  display: inline-block;
+  transform-origin: center;
+  will-change: transform, opacity;
+}
+
+html[data-page-transition="hero-enter"] [data-transition-title] {
+  animation: transition-hero-fallback 210ms cubic-bezier(0.22, 1, 0.36, 1) 35ms
+    both;
+}
+
+html[data-page-transition="hero-enter"] [data-transition-subtitle] {
+  animation: transition-fade-in 180ms ease-out 200ms both;
+}
+
+html[data-page-transition="hero-enter"] body > main,
+html[data-page-transition="hero-enter"] body > footer {
+  animation: transition-fade-in 160ms cubic-bezier(0.22, 1, 0.36, 1) 12ms both;
+}
+
+html[data-page-transition="hero-enter"] [data-transition-extra] {
+  animation: transition-fade-in 210ms ease-out 105ms both;
+}
+
+html[data-page-transition="quick-enter"] body {
+  animation: transition-fade-in 85ms ease-out both;
+}
+
+html[data-page-transition$="exit"] body {
+  pointer-events: none;
+}
+
+@keyframes transition-ring-expand {
+  0% {
+    width: 40px;
+    height: 40px;
+    opacity: 0.22;
+  }
+  38% {
+    width: 110vmax;
+    height: 110vmax;
+    opacity: 0.48;
+  }
+  72% {
+    width: 205vmax;
+    height: 205vmax;
+    opacity: 0.22;
+  }
+  100% {
+    width: 280vmax;
+    height: 280vmax;
+    opacity: 0;
+  }
+}
+
+@keyframes transition-hero-fallback {
+  from {
+    opacity: 0;
+    transform: translateY(3px) scale(0.9);
+  }
+}
+
+@keyframes transition-fade-in {
+  from {
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .transition-ring-clip,
+  .transition-ring {
+    display: none;
+    animation: none;
+  }
+
+  html[data-page-transition] body,
+  html[data-page-transition] [data-transition-title],
+  html[data-page-transition] [data-transition-subtitle] {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+}

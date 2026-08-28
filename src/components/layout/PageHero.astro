@@ -8,6 +8,7 @@
  * phase and uses SiteHeader directly.
  */
 import SiteHeader from "./SiteHeader.astro";
+import TransitionTitle from "./TransitionTitle.astro";
 
 interface Props {
   title: string;
@@ -23,6 +24,7 @@ const hasSubtitle = subtitle !== undefined || Astro.slots.has("subtitle");
 ---
 
 <header
+  data-transition-panel="inner"
   class:list={[
     "page-hero",
     "icon-background",
@@ -32,7 +34,7 @@ const hasSubtitle = subtitle !== undefined || Astro.slots.has("subtitle");
 >
   <SiteHeader theme={theme} />
   <div class="hero-content">
-    <h1 id={titleId} data-transition-title>{title}</h1>
+    <TransitionTitle text={title} id={titleId} />
     {
       hasSubtitle && (
         <p class="hero-subtitle" id={subtitleId} data-transition-subtitle>
@@ -96,7 +98,7 @@ const hasSubtitle = subtitle !== undefined || Astro.slots.has("subtitle");
       padding: 10px 0;
     }
 
-    .hero-content h1 {
+    .hero-content :global(h1[data-transition-title]) {
       margin-left: 20px;
       margin-right: 20px;
     }

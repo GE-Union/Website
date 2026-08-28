@@ -1,138 +1,171 @@
 const STORAGE_KEY = "geu-page-transition";
 const TOP_THRESHOLD = 0.2;
-const HERO_EXIT_DURATION_MS = 125;
-const HERO_EXIT_STAGGER_MS = 45;
-const QUICK_EXIT_DURATION_MS = 70;
+const RING_DURATION = 320;
 
-type TransitionMode = "hero" | "quick";
+const timing = {
+  exit: 105,
+  exitStagger: 16,
+  enter: 185,
+  enterStagger: 16,
+  enterStaggerLimit: 128,
+  enterDelay: 35,
+  subtitle: 180,
+  subtitleLead: 45,
+  panel: 280,
+  extraIn: 210,
+  extraOut: 115,
+  quickOut: 70,
+} as const;
+
+type Mode = "hero" | "quick";
+type HeroKind = "home" | "inner";
 
 interface Point {
   x: number;
   y: number;
 }
 
-interface PreparedHero {
-  title: HTMLElement;
-  subtitle: HTMLElement | null;
-  titleCharacters: HTMLElement[];
-  allCharacters: HTMLElement[];
+interface RingState extends Point {
+  startedAt: number;
+  heroHeight: number;
+  hero: HeroKind;
 }
 
-function isInternalPageLink(
-  event: MouseEvent,
-  anchor: HTMLAnchorElement,
-): URL | null {
+interface Hero {
+  title: HTMLElement;
+  subtitle: HTMLElement | null;
+  panel: HTMLElement;
+  extras: HTMLElement[];
+  kind: HeroKind;
+}
+
+const select = <T extends Element>(selector: string): T | null =>
+  document.querySelector<T>(selector);
+
+function getHero(): Hero | null {
+  const title = select<HTMLElement>("[data-transition-title]");
+  const panel = title?.closest<HTMLElement>("[data-transition-panel]");
+  if (!title || !panel) return null;
+
+  return {
+    title,
+    panel,
+    subtitle: select("[data-transition-subtitle]"),
+    extras: Array.from(
+      document.querySelectorAll<HTMLElement>("[data-transition-extra]"),
+    ),
+    kind: panel.dataset.transitionPanel === "home" ? "home" : "inner",
+  };
+}
+
+function titleCharacters(hero: Hero): HTMLElement[] {
+  return Array.from(
+    hero.title.querySelectorAll<HTMLElement>("[data-transition-character]"),
+  );
+}
+
+function graphemes(text: string): string[] {
+  if (!("Segmenter" in Intl)) return Array.from(text);
+  const segmenter = new Intl.Segmenter(undefined, { granularity: "grapheme" });
+  return Array.from(segmenter.segment(text), ({ segment }) => segment);
+}
+
+/** Copies only the subtitle glyphs. The real title always animates in place. */
+function copySubtitle(hero: Hero): {
+  overlay: HTMLElement | null;
+  characters: HTMLElement[];
+} {
+  if (!hero.subtitle) return { overlay: null, characters: [] };
+
+  const panelBounds = hero.panel.getBoundingClientRect();
+  const overlay = document.createElement("div");
+  overlay.className = "transition-text-overlay";
+  overlay.setAttribute("aria-hidden", "true");
+  Object.assign(overlay.style, {
+    left: `${panelBounds.left}px`,
+    top: `${panelBounds.top}px`,
+    width: `${panelBounds.width}px`,
+    height: `${panelBounds.height}px`,
+    borderRadius: getComputedStyle(hero.panel).borderRadius,
+  });
+
+  const characters: HTMLElement[] = [];
+  const walker = document.createTreeWalker(hero.subtitle, NodeFilter.SHOW_TEXT);
+  while (walker.nextNode()) {
+    const text = walker.currentNode as Text;
+    const style = getComputedStyle(text.parentElement ?? hero.subtitle);
+    let offset = 0;
+
+    for (const value of graphemes(text.data)) {
+      const start = offset;
+      offset += value.length;
+      if (/^\s+$/u.test(value)) continue;
+
+      const range = document.createRange();
+      range.setStart(text, start);
+      range.setEnd(text, offset);
+      const bounds = range.getBoundingClientRect();
+      const character = document.createElement("span");
+      character.className = "transition-overlay-character";
+      character.textContent = value;
+      Object.assign(character.style, {
+        left: `${bounds.left - panelBounds.left}px`,
+        top: `${bounds.top - panelBounds.top}px`,
+        color: style.color,
+        fontFamily: style.fontFamily,
+        fontSize: style.fontSize,
+        fontStyle: style.fontStyle,
+        fontWeight: style.fontWeight,
+        lineHeight: style.lineHeight,
+        letterSpacing: style.letterSpacing,
+      });
+      overlay.append(character);
+      characters.push(character);
+    }
+  }
+
+  document.body.append(overlay);
+  return { overlay, characters };
+}
+
+function internalLink(event: MouseEvent): HTMLAnchorElement | null {
   if (
     event.defaultPrevented ||
     event.button !== 0 ||
     event.metaKey ||
     event.ctrlKey ||
     event.shiftKey ||
-    event.altKey ||
+    event.altKey
+  ) {
+    return null;
+  }
+
+  const anchor =
+    event.target instanceof Element
+      ? event.target.closest<HTMLAnchorElement>("a[href]")
+      : null;
+  if (
+    !anchor ||
     anchor.hasAttribute("download") ||
     (anchor.target && anchor.target !== "_self")
   ) {
     return null;
   }
 
-  const url = new URL(anchor.href, window.location.href);
-  const sameDocument =
-    url.pathname === window.location.pathname &&
-    url.search === window.location.search;
-
-  if (
-    url.origin !== window.location.origin ||
-    !["http:", "https:"].includes(url.protocol) ||
-    sameDocument
-  ) {
-    return null;
-  }
-
-  return url;
+  const url = new URL(anchor.href, location.href);
+  const samePage =
+    url.pathname === location.pathname && url.search === location.search;
+  return url.origin === location.origin &&
+    ["http:", "https:"].includes(url.protocol) &&
+    !samePage
+    ? anchor
+    : null;
 }
 
-function splitGraphemes(value: string): string[] {
-  if ("Segmenter" in Intl) {
-    const segmenter = new Intl.Segmenter(undefined, {
-      granularity: "grapheme",
-    });
-    return Array.from(segmenter.segment(value), ({ segment }) => segment);
-  }
-
-  return Array.from(value);
-}
-
-function splitElement(element: HTMLElement): HTMLElement[] {
-  if (
-    element.dataset.transitionTextReady === "true" &&
-    element.querySelector(".transition-text-visual")
-  ) {
-    return Array.from(
-      element.querySelectorAll<HTMLElement>(".transition-char"),
-    );
-  }
-
-  const visual = document.createElement("span");
-  visual.className = "transition-text-visual";
-
-  while (element.firstChild) visual.append(element.firstChild);
-  element.append(visual);
-
-  const walker = document.createTreeWalker(visual, NodeFilter.SHOW_TEXT);
-  const textNodes: Text[] = [];
-  while (walker.nextNode()) textNodes.push(walker.currentNode as Text);
-
-  for (const textNode of textNodes) {
-    const fragment = document.createDocumentFragment();
-    const parts = textNode.data.split(/(\s+)/u).filter(Boolean);
-
-    for (const part of parts) {
-      if (/^\s+$/u.test(part)) {
-        fragment.append(document.createTextNode(part));
-        continue;
-      }
-
-      const word = document.createElement("span");
-      word.className = "transition-word";
-      for (const grapheme of splitGraphemes(part)) {
-        const character = document.createElement("span");
-        character.className = "transition-char";
-        character.textContent = grapheme;
-        word.append(character);
-      }
-      fragment.append(word);
-    }
-
-    textNode.replaceWith(fragment);
-  }
-
-  element.dataset.transitionTextReady = "true";
-  return Array.from(element.querySelectorAll<HTMLElement>(".transition-char"));
-}
-
-function prepareHero(): PreparedHero | null {
-  const title = document.querySelector<HTMLElement>("[data-transition-title]");
-  if (!title) return null;
-
-  const subtitle = document.querySelector<HTMLElement>(
-    "[data-transition-subtitle]",
-  );
-  const titleCharacters = splitElement(title);
-  const subtitleCharacters = subtitle ? splitElement(subtitle) : [];
-
-  return {
-    title,
-    subtitle,
-    titleCharacters,
-    allCharacters: [...titleCharacters, ...subtitleCharacters],
-  };
-}
-
-function clickPoint(event: MouseEvent, anchor: HTMLAnchorElement): Point {
-  if (event.detail !== 0 && (event.clientX !== 0 || event.clientY !== 0)) {
+function eventPoint(event: MouseEvent, anchor: HTMLElement): Point {
+  if (event.detail && (event.clientX || event.clientY)) {
     return { x: event.clientX, y: event.clientY };
   }
-
   const bounds = anchor.getBoundingClientRect();
   return {
     x: bounds.left + bounds.width / 2,
@@ -140,12 +173,12 @@ function clickPoint(event: MouseEvent, anchor: HTMLAnchorElement): Point {
   };
 }
 
-function isNearTop(): boolean {
-  const viewportHeight = window.visualViewport?.height ?? window.innerHeight;
-  return window.scrollY <= viewportHeight * TOP_THRESHOLD;
+function nearTop(): boolean {
+  const height = window.visualViewport?.height ?? innerHeight;
+  return scrollY <= height * TOP_THRESHOLD;
 }
 
-function deterministicRandom(index: number, origin: Point): number {
+function random(index: number, origin: Point): number {
   const value = Math.sin(
     (index + 1) * 12.9898 + origin.x * 0.018 + origin.y * 0.033,
   );
@@ -153,21 +186,79 @@ function deterministicRandom(index: number, origin: Point): number {
   return scaled - Math.floor(scaled);
 }
 
-function waitForAnimations(
-  animations: Animation[],
-  timeoutMs: number,
-): Promise<void> {
-  const finished = Promise.allSettled(
-    animations.map((animation) => animation.finished),
-  ).then(() => undefined);
-  const timeout = new Promise<void>((resolve) => {
-    window.setTimeout(resolve, timeoutMs);
-  });
-  return Promise.race([finished, timeout]);
+function animate(
+  element: Element,
+  keyframes: Keyframe[],
+  options: KeyframeAnimationOptions,
+  paused = false,
+): Animation {
+  const animation = element.animate(keyframes, options);
+  if (paused) {
+    animation.pause();
+    animation.currentTime = 0;
+  }
+  return animation;
 }
 
-function animateHeroExit(hero: PreparedHero, origin: Point): Animation[] {
-  const measurements = hero.allCharacters.map((character) => {
+async function waitFor(
+  animations: Animation[],
+  timeout: number,
+): Promise<void> {
+  await Promise.race([
+    Promise.allSettled(animations.map(({ finished }) => finished)),
+    new Promise((resolve) => setTimeout(resolve, timeout)),
+  ]);
+}
+
+async function playAfterPaint(animations: Animation[]): Promise<void> {
+  await new Promise<void>((resolve) => {
+    const fallback = setTimeout(resolve, 50);
+    requestAnimationFrame(() =>
+      requestAnimationFrame(() => {
+        clearTimeout(fallback);
+        resolve();
+      }),
+    );
+  });
+  animations.forEach((animation) => animation.play());
+}
+
+function content(): HTMLElement[] {
+  return Array.from(
+    document.querySelectorAll<HTMLElement>("body > main, body > footer"),
+  );
+}
+
+function fade(
+  elements: HTMLElement[],
+  entering: boolean,
+  duration: number,
+  delay: number,
+  easing = entering ? "cubic-bezier(0.22, 1, 0.36, 1)" : "ease-in",
+): Animation[] {
+  return elements.map((element) => {
+    if (entering) element.style.animation = "none";
+    return animate(
+      element,
+      [{ opacity: entering ? 0 : 1 }, { opacity: entering ? 1 : 0 }],
+      {
+        duration,
+        delay,
+        easing,
+        fill: "both",
+      },
+      entering,
+    );
+  });
+}
+
+function heroExit(
+  hero: Hero,
+  origin: Point,
+): { animations: Animation[]; overlay: HTMLElement | null } {
+  const subtitle = copySubtitle(hero);
+  const characters = [...titleCharacters(hero), ...subtitle.characters];
+  const measurements = characters.map((character) => {
     const bounds = character.getBoundingClientRect();
     const x = bounds.left + bounds.width / 2;
     const y = bounds.top + bounds.height / 2;
@@ -177,230 +268,324 @@ function animateHeroExit(hero: PreparedHero, origin: Point): Animation[] {
       angle: Math.atan2(y - origin.y, x - origin.x),
     };
   });
-  const distances = measurements.map(({ distance }) => distance);
-  const minimumDistance = Math.min(...distances);
-  const maximumDistance = Math.max(...distances);
-  const distanceRange = Math.max(maximumDistance - minimumDistance, 1);
+  const minimum = Math.min(...measurements.map(({ distance }) => distance));
+  const spread =
+    Math.max(...measurements.map(({ distance }) => distance)) - minimum || 1;
 
-  return measurements.map(({ character, distance, angle }, index) => {
-    const distanceRatio = (distance - minimumDistance) / distanceRange;
-    const random = deterministicRandom(index, origin);
-    const angleWithJitter = angle + (random - 0.5) * 0.28;
-    const travel = 42 + (1 - distanceRatio) * 14 + random * 7;
-    const x = Math.cos(angleWithJitter) * travel;
-    const y = Math.sin(angleWithJitter) * travel;
-    const rotation = (random - 0.5) * 12;
-    const delay = Math.round(distanceRatio * HERO_EXIT_STAGGER_MS);
-    const animation = character.animate(
-      [
-        { opacity: 1, transform: "translate(0, 0) rotate(0) scale(1)" },
+  const animations = measurements.map(
+    ({ character, distance, angle }, index) => {
+      const ratio = (distance - minimum) / spread;
+      const variation = random(index, origin);
+      const direction = angle + (variation - 0.5) * 0.28;
+      const travel = 118 + (1 - ratio) * 32 + variation * 24;
+      const x = Math.cos(direction) * travel;
+      const y = Math.sin(direction) * travel;
+      const rotation = (variation - 0.5) * 12;
+      return animate(
+        character,
+        [
+          { opacity: 1, transform: "translate(0) rotate(0) scale(1)" },
+          {
+            offset: 0.58,
+            opacity: 1,
+            transform: `translate(${x * 0.68}px, ${y * 0.68}px) rotate(${rotation * 0.5}deg) scale(.99)`,
+          },
+          {
+            offset: 0.86,
+            opacity: 1,
+            transform: `translate(${x * 0.92}px, ${y * 0.92}px) rotate(${rotation * 0.86}deg) scale(.97)`,
+          },
+          {
+            opacity: 0,
+            transform: `translate(${x}px, ${y}px) rotate(${rotation}deg) scale(.95)`,
+          },
+        ],
         {
-          opacity: 0,
-          transform: `translate(${x.toFixed(2)}px, ${y.toFixed(2)}px) rotate(${rotation.toFixed(2)}deg) scale(0.96)`,
+          duration: timing.exit,
+          delay: Math.round(ratio * timing.exitStagger),
+          easing: "cubic-bezier(0.12, 0.75, 0.2, 1)",
+          fill: "forwards",
         },
-      ],
-      {
-        duration: HERO_EXIT_DURATION_MS,
-        delay,
-        easing: "cubic-bezier(0.2, 0.8, 0.4, 1)",
-        fill: "forwards",
-      },
-    );
-    animation.id = "geu-hero-character-exit";
-    return animation;
-  });
+      );
+    },
+  );
+  return { animations, overlay: subtitle.overlay };
 }
 
-function animateHeroEntry(hero: PreparedHero): Animation[] {
+function heroEntry(hero: Hero): Animation[] {
   hero.title.style.animation = "none";
-  hero.title.style.opacity = "1";
-  if (hero.subtitle) {
-    hero.subtitle.style.animation = "none";
-    hero.subtitle.style.opacity = "1";
-  }
+  if (hero.subtitle) hero.subtitle.style.animation = "none";
 
-  const animations = hero.titleCharacters.map((character, index) => {
-    const animation = character.animate(
+  const characters = titleCharacters(hero);
+  const lastDelay = Math.min(
+    Math.max(characters.length - 1, 0) * timing.enterStagger,
+    timing.enterStaggerLimit,
+  );
+  const animations = characters.map((character, index) =>
+    animate(
+      character,
       [
-        { opacity: 0, transform: "translateY(3px) scale(0.88)" },
+        { opacity: 0, transform: "translateY(5px) scale(.82)" },
+        {
+          offset: 0.78,
+          opacity: 1,
+          transform: "translateY(0) scale(1.025)",
+        },
         { opacity: 1, transform: "translateY(0) scale(1)" },
       ],
       {
-        duration: 125,
-        delay: Math.min(index * 6, 54),
+        duration: timing.enter,
+        delay:
+          timing.enterDelay +
+          Math.min(index * timing.enterStagger, timing.enterStaggerLimit),
         easing: "cubic-bezier(0.22, 1, 0.36, 1)",
         fill: "both",
       },
-    );
-    animation.id = "geu-hero-character-enter";
-    return animation;
-  });
+      true,
+    ),
+  );
 
   if (hero.subtitle) {
-    const animation = hero.subtitle.animate([{ opacity: 0 }, { opacity: 1 }], {
-      duration: 120,
-      delay: 25,
-      easing: "ease-out",
-      fill: "both",
-    });
-    animation.id = "geu-hero-subtitle-enter";
-    animations.push(animation);
+    animations.push(
+      animate(
+        hero.subtitle,
+        [{ opacity: 0 }, { opacity: 1 }],
+        {
+          duration: timing.subtitle,
+          delay:
+            timing.enterDelay + lastDelay + timing.enter - timing.subtitleLead,
+          easing: "ease-out",
+          fill: "both",
+        },
+        true,
+      ),
+    );
   }
-
   return animations;
 }
 
-function animateQuickExit(): Animation {
-  const originY = window.scrollY + window.innerHeight / 2;
-  const animation = document.body.animate(
-    [
-      { opacity: 1, transform: "scale(1)" },
-      { opacity: 0, transform: "scale(0.992)" },
-    ],
-    {
-      duration: QUICK_EXIT_DURATION_MS,
-      easing: "ease-in",
-      fill: "forwards",
-    },
-  );
-  document.body.style.transformOrigin = `50% ${originY}px`;
-  animation.id = "geu-page-quick-exit";
-  return animation;
+function panelEntry(root: HTMLElement, hero: Hero): Animation[] {
+  const source = root.dataset.transitionSource as HeroKind | undefined;
+  const height = Number(root.dataset.transitionHeight);
+  if (!source || source === hero.kind || !Number.isFinite(height)) return [];
+
+  hero.panel.style.removeProperty("height");
+  hero.panel.style.removeProperty("min-height");
+  const target = hero.panel.getBoundingClientRect().height;
+  hero.panel.style.minHeight = "0";
+  hero.panel.style.height = `${height}px`;
+  if (Math.abs(height - target) < 1) return [];
+
+  return [
+    animate(
+      hero.panel,
+      [{ height: `${height}px` }, { height: `${target}px` }],
+      {
+        duration: timing.panel,
+        easing: "cubic-bezier(0.22, 1, 0.36, 1)",
+        fill: "both",
+      },
+      true,
+    ),
+  ];
 }
 
-function storeTransition(mode: TransitionMode): void {
+function setRingClip(root: HTMLElement, hero: Hero): void {
+  const bounds = hero.panel.getBoundingClientRect();
+  const values = {
+    "--ring-left": `${bounds.left}px`,
+    "--ring-top": `${bounds.top}px`,
+    "--ring-width": `${bounds.width}px`,
+    "--ring-height": `${bounds.height}px`,
+    "--ring-radius": getComputedStyle(hero.panel).borderRadius,
+  };
+  for (const [property, value] of Object.entries(values)) {
+    root.style.setProperty(property, value);
+  }
+}
+
+function startRing(root: HTMLElement, hero: Hero, ring: RingState): void {
+  root.style.setProperty("--ring-x", `${ring.x}px`);
+  root.style.setProperty("--ring-y", `${ring.y}px`);
+  root.style.setProperty("--ring-delay", "0ms");
+  setRingClip(root, hero);
+  root.dataset.transitionRing = "active";
+}
+
+function save(mode: Mode, ring?: RingState): void {
   try {
-    window.sessionStorage.setItem(
+    sessionStorage.setItem(
       STORAGE_KEY,
-      JSON.stringify({ mode, createdAt: Date.now() }),
+      JSON.stringify({ mode, createdAt: Date.now(), ring }),
     );
   } catch {
-    // The outgoing animation still works in strict privacy modes.
+    // Navigation still works when storage is unavailable.
   }
 }
 
 export function initPageTransitions(): () => void {
   const root = document.documentElement;
-  const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
-  let hero: PreparedHero | null = null;
-  let navigationLocked = false;
-  let activeAnimations: Animation[] = [];
+  const reducedMotion = matchMedia("(prefers-reduced-motion: reduce)");
+  let hero: Hero | null = null;
+  let overlay: HTMLElement | null = null;
+  let animations: Animation[] = [];
+  let locked = false;
   let settleTimer: number | undefined;
+  let ringTimer: number | undefined;
 
-  const clearElementOverrides = () => {
+  const clearRing = () => {
+    delete root.dataset.transitionRing;
+    ringTimer = undefined;
+  };
+
+  const scheduleRingCleanup = () => {
+    if (root.dataset.transitionRing !== "active") return;
+    if (ringTimer) clearTimeout(ringTimer);
+    const currentTime = Number(
+      select<HTMLElement>(".transition-ring")?.getAnimations()[0]
+        ?.currentTime ?? 0,
+    );
+    ringTimer = window.setTimeout(
+      clearRing,
+      Math.max(0, RING_DURATION - currentTime) + 30,
+    );
+  };
+
+  const clearOverrides = () => {
     if (hero) {
-      hero.title.style.removeProperty("animation");
-      hero.title.style.removeProperty("opacity");
-      hero.subtitle?.style.removeProperty("animation");
+      for (const element of [hero.title, hero.subtitle, ...hero.extras]) {
+        element?.style.removeProperty("animation");
+      }
       hero.subtitle?.style.removeProperty("opacity");
+      hero.panel.style.removeProperty("height");
+      hero.panel.style.removeProperty("min-height");
     }
-    document.body.style.removeProperty("transform-origin");
+    content().forEach((element) => element.style.removeProperty("animation"));
+    overlay?.remove();
+    overlay = null;
   };
 
-  const settle = (mode?: TransitionMode) => {
-    for (const animation of activeAnimations) animation.cancel();
-    activeAnimations = [];
-    if (settleTimer !== undefined) window.clearTimeout(settleTimer);
+  const settle = () => {
+    animations.forEach((animation) => animation.cancel());
+    animations = [];
+    if (settleTimer) clearTimeout(settleTimer);
     settleTimer = undefined;
-    clearElementOverrides();
+    clearOverrides();
     root.dataset.pageTransition = "complete";
-    root.removeAttribute("data-transition-origin-x");
-    root.removeAttribute("data-transition-origin-y");
-    if (mode) root.dataset.lastPageTransition = mode;
+    delete root.dataset.transitionSource;
+    delete root.dataset.transitionHeight;
   };
 
-  const runIncomingTransition = async () => {
+  scheduleRingCleanup();
+
+  const enter = async () => {
     const state = root.dataset.pageTransition;
     if (state !== "hero-enter" && state !== "quick-enter") return;
-    const mode: TransitionMode = state === "hero-enter" ? "hero" : "quick";
+    if (reducedMotion.matches) return settle();
 
-    if (reducedMotion.matches) {
-      settle(mode);
+    if (state === "quick-enter") {
+      settleTimer = window.setTimeout(settle, 105);
       return;
     }
 
-    if (mode === "hero") {
-      hero = prepareHero();
-    }
-
-    if (mode === "hero" && hero) {
-      activeAnimations = animateHeroEntry(hero);
-      await waitForAnimations(activeAnimations, 200);
-      settle(mode);
-      return;
-    }
-
-    settleTimer = window.setTimeout(() => settle("quick"), 105);
+    hero = getHero();
+    if (!hero) return settle();
+    const contentDelay =
+      root.dataset.transitionSource === "home" && hero.kind === "inner"
+        ? 190
+        : 24;
+    animations = [
+      ...heroEntry(hero),
+      ...panelEntry(root, hero),
+      ...fade(hero.extras, true, timing.extraIn, 105),
+      ...fade(content(), true, 180, contentDelay),
+    ];
+    const entryAnimations = animations;
+    await playAfterPaint(entryAnimations);
+    await waitFor(entryAnimations, 530);
+    if (animations === entryAnimations) settle();
   };
 
-  void runIncomingTransition();
+  void enter();
 
-  const onClick = async (event: MouseEvent) => {
-    const target = event.target;
-    if (!(target instanceof Element)) return;
-
-    const anchor = target.closest<HTMLAnchorElement>("a[href]");
-    if (!anchor) return;
-
-    const url = isInternalPageLink(event, anchor);
-    if (!url || reducedMotion.matches || navigationLocked) return;
+  const leave = async (event: MouseEvent) => {
+    const anchor = internalLink(event);
+    if (!anchor || reducedMotion.matches || locked) return;
 
     event.preventDefault();
-    navigationLocked = true;
-
-    const outgoingHero = prepareHero();
-    const destinationIsInner = url.pathname !== "/";
-    const mode: TransitionMode =
-      outgoingHero && destinationIsInner && isNearTop() ? "hero" : "quick";
-    storeTransition(mode);
+    locked = true;
+    hero = getHero();
+    const mode: Mode = hero && nearTop() ? "hero" : "quick";
     root.dataset.pageTransition = `${mode}-exit`;
-    root.dataset.lastPageTransition = mode;
+    animations.forEach((animation) => animation.cancel());
+    animations = [];
+    clearOverrides();
 
-    if (mode === "hero" && outgoingHero) {
-      hero = outgoingHero;
-      const origin = clickPoint(event, anchor);
-      root.dataset.transitionOriginX = String(Math.round(origin.x));
-      root.dataset.transitionOriginY = String(Math.round(origin.y));
-      activeAnimations = animateHeroExit(outgoingHero, origin);
-      await waitForAnimations(
-        activeAnimations,
-        HERO_EXIT_DURATION_MS + HERO_EXIT_STAGGER_MS + 20,
-      );
+    if (mode === "quick" || !hero) {
+      save("quick");
+      animations = [
+        animate(document.body, [{ opacity: 1 }, { opacity: 0 }], {
+          duration: timing.quickOut,
+          easing: "ease-in",
+          fill: "forwards",
+        }),
+      ];
+      await waitFor(animations, timing.quickOut + 15);
     } else {
-      activeAnimations = [animateQuickExit()];
-      await waitForAnimations(activeAnimations, QUICK_EXIT_DURATION_MS + 15);
+      const origin = eventPoint(event, anchor);
+      const panelBounds = hero.panel.getBoundingClientRect();
+      const ring: RingState = {
+        ...origin,
+        startedAt: Date.now(),
+        heroHeight: panelBounds.height,
+        hero: hero.kind,
+      };
+      startRing(root, hero, ring);
+      scheduleRingCleanup();
+      save("hero", ring);
+
+      const exit = heroExit(hero, origin);
+      overlay = exit.overlay;
+      if (hero.subtitle) hero.subtitle.style.opacity = "0";
+      animations = [
+        ...exit.animations,
+        ...fade(hero.extras, false, timing.extraOut, 0),
+        ...fade(content(), false, 130, 0, "ease-in-out"),
+      ];
+      await waitFor(animations, timing.exit + timing.exitStagger + 10);
     }
 
-    window.location.assign(url.href);
+    location.assign(anchor.href);
   };
 
-  const onPageShow = (event: PageTransitionEvent) => {
+  const restore = (event: PageTransitionEvent) => {
     if (!event.persisted) return;
-
-    navigationLocked = false;
+    locked = false;
     settle();
     if (reducedMotion.matches) return;
 
     root.dataset.pageTransition = "quick-enter";
-    root.dataset.lastPageTransition = "quick";
-    const animation = document.body.animate(
-      [
-        { opacity: 0, transform: "scale(0.992)" },
-        { opacity: 1, transform: "scale(1)" },
-      ],
-      { duration: 85, easing: "ease-out", fill: "both" },
-    );
-    animation.id = "geu-page-history-enter";
-    activeAnimations = [animation];
-    void waitForAnimations(activeAnimations, 100).then(() => settle("quick"));
+    const restoreAnimations = [
+      animate(document.body, [{ opacity: 0 }, { opacity: 1 }], {
+        duration: 85,
+        easing: "ease-out",
+        fill: "both",
+      }),
+    ];
+    animations = restoreAnimations;
+    void waitFor(restoreAnimations, 100).then(() => {
+      if (animations === restoreAnimations) settle();
+    });
   };
 
-  document.addEventListener("click", onClick);
-  window.addEventListener("pageshow", onPageShow);
+  document.addEventListener("click", leave);
+  addEventListener("pageshow", restore);
 
   return () => {
-    document.removeEventListener("click", onClick);
-    window.removeEventListener("pageshow", onPageShow);
+    document.removeEventListener("click", leave);
+    removeEventListener("pageshow", restore);
+    if (ringTimer) clearTimeout(ringTimer);
+    clearRing();
     settle();
   };
 }

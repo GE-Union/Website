@@ -8,6 +8,7 @@
 @import "./reset.css";
 @import "./tokens.css";
 @import "./utilities.css";
+@import "./page-transitions.css";
 
 @font-face {
   font-family: Rubik;
@@ -46,65 +47,6 @@ body {
   min-height: 100vh;
   overflow-x: hidden;
   background-color: var(--background);
-}
-
-/*
- * Page transitions stay local to the hero at the top of interior pages.
- * Character wrappers are installed progressively by page-transitions.ts.
- */
-.transition-text-visual,
-.transition-word,
-.transition-char {
-  display: inline;
-}
-
-html[data-page-transition="hero-enter"] .transition-word,
-html[data-page-transition="hero-enter"] .transition-char,
-html[data-page-transition="hero-exit"] .transition-word,
-html[data-page-transition="hero-exit"] .transition-char {
-  display: inline-block;
-}
-
-html[data-page-transition="hero-enter"] .transition-char,
-html[data-page-transition="hero-exit"] .transition-char {
-  will-change: transform, opacity;
-}
-
-html[data-page-transition="hero-enter"] [data-transition-title] {
-  animation: transition-hero-fallback 175ms cubic-bezier(0.22, 1, 0.36, 1) both;
-}
-
-html[data-page-transition="hero-enter"] [data-transition-subtitle] {
-  animation: transition-subtitle-fallback 145ms ease-out 25ms both;
-}
-
-html[data-page-transition="quick-enter"] body {
-  animation: transition-page-quick-in 85ms ease-out both;
-}
-
-html[data-page-transition="hero-exit"] body,
-html[data-page-transition="quick-exit"] body {
-  pointer-events: none;
-}
-
-@keyframes transition-hero-fallback {
-  from {
-    opacity: 0;
-    transform: translateY(3px) scale(0.9);
-  }
-}
-
-@keyframes transition-subtitle-fallback {
-  from {
-    opacity: 0;
-  }
-}
-
-@keyframes transition-page-quick-in {
-  from {
-    opacity: 0;
-    transform: scale(0.992);
-  }
 }
 
 /* Base type scale from the shared legacy embed block (all 8 pages). */
@@ -193,14 +135,6 @@ p {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  html[data-page-transition] body,
-  html[data-page-transition] [data-transition-title],
-  html[data-page-transition] [data-transition-subtitle] {
-    animation: none;
-    opacity: 1;
-    transform: none;
-  }
-
   .icon-background::before {
     animation: none;
   }

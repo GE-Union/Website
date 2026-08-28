@@ -25,6 +25,40 @@ function element<K extends keyof HTMLElementTagNameMap>(
   return node;
 }
 
+function setTransitionTitle(title: HTMLElement, text: string): void {
+  const currentLabel = title.getAttribute("aria-label") ?? title.textContent;
+  if (
+    currentLabel?.trim() === text &&
+    title.querySelector("[data-transition-character]")
+  ) {
+    return;
+  }
+
+  const fragment = document.createDocumentFragment();
+  for (const part of text.split(/(\s+)/u).filter(Boolean)) {
+    if (/^\s+$/u.test(part)) {
+      fragment.append(document.createTextNode(part));
+      continue;
+    }
+
+    const word = element("span", "transition-title-word");
+    word.setAttribute("aria-hidden", "true");
+    for (const character of Array.from(part)) {
+      const characterElement = element(
+        "span",
+        "transition-title-character",
+        character,
+      );
+      characterElement.setAttribute("data-transition-character", "");
+      word.append(characterElement);
+    }
+    fragment.append(word);
+  }
+
+  title.setAttribute("aria-label", text);
+  title.replaceChildren(fragment);
+}
+
 function svgIcon(pathData: string, className?: string): SVGSVGElement {
   const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
   svg.setAttribute("viewBox", className ? "0 0 25 24" : "0 0 16 16");
@@ -313,7 +347,7 @@ export function renderCourseBank(
 
   const title = document.getElementById("course-bank-title");
   const tagline = document.getElementById("course-bank-tagline");
-  if (title) title.textContent = catalog.site.title;
+  if (title) setTransitionTitle(title, catalog.site.title);
   if (tagline) tagline.textContent = catalog.site.tagline;
 
   const iconUrl = rawUrl(catalog, catalog.assets.fileIcon);

@@ -37,28 +37,41 @@ const headerLogo =
     <GoogleAnalytics />
     <slot name="head" />
     <script is:inline>
-      const transitionKey = "geu-page-transition";
-
       try {
-        const storedTransition = sessionStorage.getItem(transitionKey);
-        const navigationEntry = performance.getEntriesByType("navigation")[0];
-        const historyNavigation = navigationEntry?.type === "back_forward";
-        let transitionMode = historyNavigation ? "quick" : null;
+        const key = "geu-page-transition";
+        const stored = sessionStorage.getItem(key);
+        const navigation = performance.getEntriesByType("navigation")[0];
+        let transition = stored ? JSON.parse(stored) : null;
+        if (stored) sessionStorage.removeItem(key);
+        if (Date.now() - transition?.createdAt >= 5000) transition = null;
 
-        if (storedTransition) {
-          sessionStorage.removeItem(transitionKey);
-          const transition = JSON.parse(storedTransition);
-          const isRecent = Date.now() - transition.createdAt < 5000;
+        const mode =
+          navigation?.type === "back_forward" ? "quick" : transition?.mode;
+        if (mode === "hero" || mode === "quick") {
+          const root = document.documentElement;
+          root.dataset.pageTransition = `${mode}-enter`;
+
+          const ring = mode === "hero" ? transition?.ring : null;
           if (
-            isRecent &&
-            (transition.mode === "hero" || transition.mode === "quick")
+            Number.isFinite(ring?.heroHeight) &&
+            (ring.hero === "home" || ring.hero === "inner")
           ) {
-            transitionMode = transition.mode;
+            root.dataset.transitionSource = ring.hero;
+            root.dataset.transitionHeight = ring.heroHeight;
           }
-        }
 
-        if (transitionMode) {
-          document.documentElement.dataset.pageTransition = `${transitionMode}-enter`;
+          const elapsed = Date.now() - ring?.startedAt;
+          if (
+            Number.isFinite(ring?.x) &&
+            Number.isFinite(ring?.y) &&
+            elapsed >= 0 &&
+            elapsed < 320
+          ) {
+            root.dataset.transitionRing = "active";
+            root.style.setProperty("--ring-x", `${ring.x}px`);
+            root.style.setProperty("--ring-y", `${ring.y}px`);
+            root.style.setProperty("--ring-delay", `${-elapsed}ms`);
+          }
         }
       } catch {
         // Storage can be unavailable in strict privacy modes.
@@ -66,7 +79,38 @@ const headerLogo =
     </script>
   </head>
   <body class:list={[{ "theme-minecraft": theme === "minecraft" }]}>
+    <div class="transition-ring-clip" aria-hidden="true">
+      <div class="transition-ring" data-transition-ring></div>
+    </div>
     <slot name="hero" />
+    <script is:inline>
+      const root = document.documentElement;
+      const panel = document.querySelector("[data-transition-panel]");
+      if (panel) {
+        const height = Number(root.dataset.transitionHeight);
+        if (
+          root.dataset.pageTransition === "hero-enter" &&
+          Number.isFinite(height)
+        ) {
+          panel.style.minHeight = "0";
+          panel.style.height = `${height}px`;
+        }
+
+        if (root.dataset.transitionRing === "active") {
+          const bounds = panel.getBoundingClientRect();
+          const values = {
+            "--ring-left": `${bounds.left}px`,
+            "--ring-top": `${bounds.top}px`,
+            "--ring-width": `${bounds.width}px`,
+            "--ring-height": `${bounds.height}px`,
+            "--ring-radius": getComputedStyle(panel).borderRadius,
+          };
+          for (const [property, value] of Object.entries(values)) {
+            root.style.setProperty(property, value);
+          }
+        }
+      }
+    </script>
     <main>
       <slot />
     </main>
