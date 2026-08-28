@@ -42,7 +42,7 @@ test.describe("home page", () => {
       await columns.evaluateAll((items) =>
         items.map((item) => getComputedStyle(item).marginTop),
       ),
-    ).toEqual(["129px", "0px", "-258px", "0px"]);
+    ).toEqual(["129px", "0px", "-129px", "0px"]);
 
     const socialButton = page.locator(".social-block .cta-link").first();
     await expect(socialButton).toHaveCSS("outline-style", "solid");

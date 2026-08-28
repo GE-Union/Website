@@ -9,10 +9,7 @@ import {
   googleCalendarApiPattern,
 } from "../fixtures/calendar";
 
-// Playwright-managed snapshots of the shared shell (hero + footer) at the
-// four audited viewports. These guard the shell against regressions
-// between prompts; manual parity review against the live-site captures in
-// tests/visual/reference/ happens per page phase (docs/visual-parity.md).
+// Playwright snapshots guard the site at the four reference viewports.
 const viewports = [
   { name: "desktop", width: 1440, height: 1200 },
   { name: "laptop", width: 1024, height: 900 },
