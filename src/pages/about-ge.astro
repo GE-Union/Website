@@ -9,25 +9,62 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 const specialisations = [
   {
     title: "Advanced Materials",
+    slug: "advanced",
     icon: localAssets.specialisationAdvanced,
     text: "Focus on developing new sustainable and functional materials for manufacturing, nanotechnology, acoustics, and physics. This track prepares you to innovate in creating materials that will shape industries and future technologies.",
   },
   {
     title: "Cyber Systems",
+    slug: "cyber",
     icon: localAssets.specialisationCyber,
     text: "Dive into computers, artificial intelligence, data analytics, modelling, software and hardware development. This specialisation equips you to work with cutting-edge technologies in computing and digital systems.",
   },
   {
     title: "Living Systems",
+    slug: "living",
     icon: localAssets.specialisationLiving,
     text: "Explore engineering related to all living things including aquatic systems, medicine, healthcare, and food production. This specialisation connects biology, chemistry, and technology to create sustainable solutions that improve health and protect the environment.",
   },
   {
     title: "Future Energy",
+    slug: "energy",
     icon: localAssets.specialisationEnergy,
     text: "Work on creating a sustainable world by developing renewable energy technologies such as wind and solar power, electrolysis, applied chemistry, and entrepreneurship. This specialisation focuses on the energy solutions of tomorrow.",
   },
 ];
+
+const floatingRails = [
+  [
+    "left",
+    [
+      ["living", 12, 29, 3.2, 29, -7, 1],
+      ["advanced", 66, 40, 0.7, 37, -24, -1],
+      ["cyber", 34, 33, 1.8, 32, -15, 1],
+      ["energy", 76, 26, 4.2, 43, -35, -1],
+      ["advanced", 19, 45, 2.6, 39, -31, 1],
+      ["living", 57, 35, 1.1, 31, -12, -1],
+      ["energy", 40, 30, 0.4, 35, -3, 1],
+      ["cyber", 83, 38, 3.6, 41, -20, -1],
+    ],
+  ],
+  [
+    "right",
+    [
+      ["cyber", 14, 42, 1.2, 36, -18, -1],
+      ["energy", 61, 31, 3.8, 28, -10, 1],
+      ["living", 34, 27, 0.5, 40, -26, -1],
+      ["advanced", 79, 36, 2.3, 33, -5, 1],
+      ["energy", 23, 39, 1.6, 38, -34, -1],
+      ["cyber", 70, 28, 4.4, 30, -14, 1],
+      ["advanced", 46, 34, 0.8, 35, -22, -1],
+      ["living", 87, 44, 2.9, 42, -38, 1],
+    ],
+  ],
+] as const;
+
+const iconBySlug = Object.fromEntries(
+  specialisations.map((item) => [item.slug, item.icon]),
+);
 ---
 
 <BaseLayout seo={getPageSeo("/about-ge")}>
@@ -39,72 +76,103 @@ const specialisations = [
   <div class="icon-row" aria-hidden="true">
     {specialisations.map((item) => <img src={item.icon} alt="" />)}
   </div>
-  <ContentSection>
-    <div class="intro">
-      <p class="lead">The Bachelor of Science in General Engineering at DTU</p>
-      <p>But we like to call it <strong>GE</strong>.</p>
-    </div>
-    <p>
-      It's a three-year international programme that gives you a strong
-      foundation in mathematics, physics, chemistry, and biotechnology. It
-      teaches you to collaborate across disciplines and apply engineering skills
-      to real-world challenges. Through practical design-build projects, you
-      will develop problem-solving abilities and learn how to work effectively
-      in diverse teams. Studying in an international environment with courses
-      taught in English, you’ll gain the broad competences needed to become an
-      innovative engineer ready to shape the future.
-    </p>
-
-    <div class="curriculum-foundations">
-      <div>
-        <h2>Curriculum</h2>
-        <h3>Polytechnical Foundations <span>The Core Stuff</span></h3>
-        <p>
-          The polytechnical foundation is basically all the main general
-          subjects every GE student will have to take, which include Chemistry,
-          Bioengineering, Physics, Programming, Statistics, and Mathematics.
-          Some are more of a pain than others, but the main point is to bring
-          all students to a general standard across all these base subjects.
+  <div class="about-ge-content">
+    {
+      floatingRails.map(([side, icons]) => (
+        <div
+          class:list={["floating-rail", `floating-rail--${side}`]}
+          aria-hidden="true"
+        >
+          {icons.map(([slug, x, size, blur, duration, delay, direction]) => (
+            <span
+              class:list={["floater", `specialisation--${slug}`]}
+              style={`--x: ${x}%; --size: ${size}px; --blur: ${blur}px; --duration: ${duration}s; --delay: ${delay}s; --direction: ${direction}; --icon: url("${iconBySlug[slug]}")`}
+            />
+          ))}
+        </div>
+      ))
+    }
+    <ContentSection>
+      <div class="intro">
+        <p class="lead">
+          The Bachelor of Science in General Engineering at DTU
         </p>
+        <p>But we like to call it <strong>GE</strong>.</p>
       </div>
-      <img
-        class="curriculum"
-        src={dtuEctsChart}
-        alt="ECTS credit distribution across the General Engineering curriculum"
-        loading="lazy"
-      />
-    </div>
+      <p>
+        It's a three-year international programme that gives you a strong
+        foundation in mathematics, physics, chemistry, and biotechnology. It
+        teaches you to collaborate across disciplines and apply engineering
+        skills to real-world challenges. Through practical design-build
+        projects, you will develop problem-solving abilities and learn how to
+        work effectively in diverse teams. Studying in an international
+        environment with courses taught in English, you’ll gain the broad
+        competences needed to become an innovative engineer ready to shape the
+        future.
+      </p>
 
-    <h3>Specialisations <span>The Branches</span></h3>
-    <p>
-      After completing the core courses in General Engineering, you can choose
-      to specialise in one of four areas. Each specialisation builds on your
-      broad engineering foundation and prepares you for specific industries and
-      career paths:
-    </p>
-    <div class="cards">
-      {
-        specialisations.map((item) => (
-          <article>
-            <img src={item.icon} alt="" />
-            <h3>{item.title}</h3>
-            <p>{item.text}</p>
-          </article>
-        ))
-      }
-    </div>
+      <div class="curriculum-foundations">
+        <div>
+          <h2>Curriculum</h2>
+          <h3>Polytechnical Foundations <span>The Core Stuff</span></h3>
+          <p>
+            The polytechnical foundation is basically all the main general
+            subjects every GE student will have to take, which include
+            Chemistry, Bioengineering, Physics, Programming, Statistics, and
+            Mathematics. Some are more of a pain than others, but the main point
+            is to bring all students to a general standard across all these base
+            subjects.
+          </p>
+        </div>
+        <img
+          class="curriculum"
+          src={dtuEctsChart}
+          alt="ECTS credit distribution across the General Engineering curriculum"
+          loading="lazy"
+        />
+      </div>
 
-    <h2>DTU Course Analyzer</h2>
-    <p>
-      If you wish to learn more about different courses and what previous
-      students thought of them, you can check out <a
-        href="https://dtucourseanalyzer.pythonanywhere.com/"
-        >DTU Course Analyzer</a
-      >. It is a student made website that gives a lot of info about courses
-      like pass rate, average grades but most importantly student opinions on
-      lecturers :D (very important)
-    </p>
-  </ContentSection>
+      <h3>Specialisations <span>The Branches</span></h3>
+      <p>
+        After completing the core courses in General Engineering, you can choose
+        to specialise in one of four areas. Each specialisation builds on your
+        broad engineering foundation and prepares you for specific industries
+        and career paths:
+      </p>
+      <div class="cards">
+        {
+          specialisations.map((item) => (
+            <article
+              class:list={[
+                "specialisation-card",
+                `specialisation--${item.slug}`,
+              ]}
+              style={`--icon: url("${item.icon}")`}
+            >
+              <h3>{item.title}</h3>
+              <p>{item.text}</p>
+            </article>
+          ))
+        }
+      </div>
+
+      <h2>DTU Course Analyzer</h2>
+      <p>
+        If you wish to learn more about different courses and what previous
+        students thought of them, you can check out <a
+          href="https://dtucourseanalyzer.pythonanywhere.com/"
+          >DTU Course Analyzer</a
+        >. It is a student made website that gives a lot of info about courses
+        like pass rate, average grades but most importantly student opinions on
+        lecturers :D (very important)
+      </p>
+    </ContentSection>
+  </div>
+  <script>
+    import { initAboutGeFloaters } from "../scripts/about-ge-floaters";
+
+    initAboutGeFloaters();
+  </script>
 </BaseLayout>
 
 <style>
@@ -164,24 +232,157 @@ const specialisations = [
     gap: 16px;
     margin-top: 22px;
   }
-  article {
+  .specialisation-card {
     position: relative;
     min-height: 230px;
     padding: 22px;
     overflow: hidden;
     border-radius: 16px;
     background: #eee;
+    transition:
+      background-color 240ms ease,
+      box-shadow 240ms ease;
   }
-  article img {
+  .specialisation-card::before {
+    content: "";
     position: absolute;
     right: 8px;
     top: 12px;
-    width: 120px;
+    width: 78px;
+    aspect-ratio: 1;
+    color: var(--front-1);
+    background-color: currentColor;
+    -webkit-mask: var(--icon) center / contain no-repeat;
+    mask: var(--icon) center / contain no-repeat;
     opacity: 0.1;
+    transition:
+      color 240ms ease,
+      opacity 240ms ease,
+      transform 240ms ease;
   }
-  article h3,
-  article p {
+  .specialisation-card h3,
+  .specialisation-card p {
     position: relative;
+  }
+  .specialisation-card h3 {
+    color: var(--front-1);
+    transition: color 240ms ease;
+  }
+  .specialisation--living {
+    --accent: var(--specialisation-living);
+    --ink: var(--specialisation-living-ink);
+  }
+  .specialisation--advanced {
+    --accent: var(--specialisation-advanced);
+    --ink: var(--specialisation-advanced-ink);
+  }
+  .specialisation--cyber {
+    --accent: var(--specialisation-cyber);
+    --ink: var(--specialisation-cyber-ink);
+  }
+  .specialisation--energy {
+    --accent: var(--specialisation-energy);
+    --ink: var(--specialisation-energy-ink);
+  }
+  .specialisation-card:hover {
+    background-color: color-mix(in srgb, var(--accent) 11%, white);
+    box-shadow: inset 0 3px 0 var(--accent);
+  }
+  .specialisation-card:hover h3 {
+    color: var(--ink);
+  }
+  .specialisation-card:hover::before {
+    color: var(--accent);
+    opacity: 0.9;
+    transform: scale(1.08) rotate(2deg);
+  }
+
+  :global(.page-hero),
+  :global(.site-footer) {
+    position: relative;
+    z-index: 1;
+  }
+  .floating-rail {
+    display: none;
+    position: fixed;
+    z-index: 0;
+    inset-block: var(--gap1);
+    width: calc((100vw - 800px) / 2 - var(--gap1));
+    overflow: hidden;
+    pointer-events: none;
+    mask-image: linear-gradient(transparent, black 7% 93%, transparent);
+  }
+  .floating-rail--left {
+    left: var(--gap1);
+  }
+  .floating-rail--right {
+    right: var(--gap1);
+  }
+  .floater {
+    position: absolute;
+    top: 100%;
+    left: clamp(40px, var(--x), calc(100% - var(--size) - 40px));
+    width: var(--size);
+    aspect-ratio: 1;
+    color: var(--front-1);
+    opacity: 0.13;
+    animation: float-up var(--duration) linear var(--delay) infinite;
+    transition:
+      color 220ms ease,
+      opacity 220ms ease;
+  }
+  .floater::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: currentColor;
+    filter: blur(var(--active-blur, var(--blur)));
+    -webkit-mask: var(--icon) center / contain no-repeat;
+    mask: var(--icon) center / contain no-repeat;
+    transition:
+      filter 220ms ease,
+      transform 220ms ease;
+    transform: scale(var(--active-scale, 1));
+  }
+  .about-ge-content:has(.specialisation-card:hover) .floater {
+    opacity: 0.09;
+  }
+  .about-ge-content:has(.specialisation-card.specialisation--living:hover)
+    .floater.specialisation--living,
+  .about-ge-content:has(.specialisation-card.specialisation--advanced:hover)
+    .floater.specialisation--advanced,
+  .about-ge-content:has(.specialisation-card.specialisation--cyber:hover)
+    .floater.specialisation--cyber,
+  .about-ge-content:has(.specialisation-card.specialisation--energy:hover)
+    .floater.specialisation--energy {
+    --active-scale: 1.2;
+    --active-blur: 0px;
+    color: var(--accent);
+    opacity: 0.82;
+  }
+
+  @keyframes float-up {
+    0% {
+      transform: translate3d(0, 12vh, 0) rotate(0deg);
+    }
+    33% {
+      transform: translate3d(calc(var(--direction) * 18px), -32vh, 0)
+        rotate(calc(var(--direction) * 24deg));
+    }
+    67% {
+      transform: translate3d(calc(var(--direction) * -18px), -83vh, 0)
+        rotate(calc(var(--direction) * -16deg));
+    }
+    100% {
+      transform: translate3d(calc(var(--direction) * 5px), -132vh, 0)
+        rotate(calc(var(--direction) * 42deg));
+    }
+  }
+  @media (min-width: 1100px) {
+    .floating-rail {
+      display: block;
+    }
   }
   @media (max-width: 991px) {
     .curriculum-foundations {
@@ -217,6 +418,16 @@ const specialisations = [
     .curriculum {
       width: 70%;
       min-width: 0;
+    }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .floating-rail {
+      display: none;
+    }
+    .specialisation-card,
+    .specialisation-card h3,
+    .specialisation-card::before {
+      transition: none;
     }
   }
 </style>

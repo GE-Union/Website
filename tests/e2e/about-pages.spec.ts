@@ -24,6 +24,101 @@ test("About GE preserves its visible external destinations and omits dead Q&A", 
   await expect(page.locator("#qna-container")).toHaveCount(0);
 });
 
+test("About GE specialisation cards activate their ambient icons", async ({
+  page,
+}) => {
+  await page.setViewportSize({ width: 1440, height: 1000 });
+  await page.goto("/about-ge");
+
+  const rail = page.locator(".floating-rail").first();
+  const card = page.locator(".specialisation-card.specialisation--cyber");
+  const floater = page.locator(".floater.specialisation--cyber").first();
+
+  await expect(rail).toBeVisible();
+  await expect(page.locator(".floater")).toHaveCount(16);
+  await card.hover();
+  await expect(card.locator("h3")).toHaveCSS("color", "rgb(113, 84, 0)");
+  await expect
+    .poll(() =>
+      floater.evaluate(
+        (element) => getComputedStyle(element, "::before").backgroundColor,
+      ),
+    )
+    .toBe("rgb(255, 208, 66)");
+  await expect
+    .poll(() =>
+      floater.evaluate(
+        (element) => getComputedStyle(element, "::before").filter,
+      ),
+    )
+    .toBe("blur(0px)");
+
+  await page.emulateMedia({ reducedMotion: "reduce" });
+  await expect(rail).toBeHidden();
+});
+
+test("About GE floaters remain inside their rails and respond to scrolling by size", async ({
+  page,
+}) => {
+  await page.setViewportSize({ width: 1100, height: 900 });
+  await page.goto("/about-ge");
+
+  const clearances = await page.locator(".floater").evaluateAll((floaters) =>
+    floaters.map((floater) => {
+      const bounds = floater.getBoundingClientRect();
+      const railBounds = floater.parentElement!.getBoundingClientRect();
+      return {
+        left: bounds.left - railBounds.left,
+        right: railBounds.right - bounds.right,
+      };
+    }),
+  );
+
+  expect(clearances.every(({ left, right }) => left >= 0 && right >= 0)).toBe(
+    true,
+  );
+
+  const smallFloater = page.locator('.floater[style*="--size: 26px"]').first();
+  const largeFloater = page.locator('.floater[style*="--size: 45px"]').first();
+
+  const scrollTo = (top: number) =>
+    page.evaluate((scrollTop) => window.scrollTo(0, scrollTop), top);
+  const readTranslation = (floater: typeof smallFloater) =>
+    floater.evaluate((element) => {
+      const [x, y] = getComputedStyle(element).translate.split(" ");
+      return { x: Number.parseFloat(x), y: Number.parseFloat(y) };
+    });
+
+  await scrollTo(300);
+  await expect
+    .poll(async () => Math.abs((await readTranslation(largeFloater)).y))
+    .toBeGreaterThan(0);
+  const smallTranslationAt300 = await readTranslation(smallFloater);
+  const largeTranslationAt300 = await readTranslation(largeFloater);
+
+  await scrollTo(600);
+  await expect
+    .poll(async () => Math.abs((await readTranslation(largeFloater)).y))
+    .toBeGreaterThan(Math.abs(largeTranslationAt300.y));
+  const largeTranslationAt600 = await readTranslation(largeFloater);
+
+  await scrollTo(300);
+  await expect
+    .poll(async () => (await readTranslation(largeFloater)).y)
+    .toBeCloseTo(largeTranslationAt300.y, 1);
+  const largeTranslationAfterReturn = await readTranslation(largeFloater);
+
+  expect(Math.abs(smallTranslationAt300.y)).toBeGreaterThan(0);
+  expect(Math.abs(largeTranslationAt300.y)).toBeGreaterThan(
+    Math.abs(smallTranslationAt300.y),
+  );
+  expect(largeTranslationAt300.x).toBeCloseTo(0, 5);
+  expect(Math.abs(largeTranslationAt600.y)).toBeGreaterThan(
+    Math.abs(largeTranslationAt300.y),
+  );
+  expect(largeTranslationAfterReturn.y).toBeCloseTo(largeTranslationAt300.y, 1);
+});
+
 test("About DTU preserves organisation destinations", async ({ page }) => {
   await page.goto("/about-dtu");
   for (const href of [

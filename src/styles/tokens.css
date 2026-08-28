@@ -26,6 +26,18 @@
   --front-3: rgb(136 136 136);
   --front-muted-accessible: rgb(112 112 112);
   --background: rgb(255 255 255);
+
+  /* General Engineering specialisations */
+  --specialisation-living: rgb(132 31 145);
+  --specialisation-advanced: rgb(255 107 47);
+  --specialisation-cyber: rgb(255 208 66);
+  --specialisation-energy: rgb(31 205 124);
+
+  /* Dark companions for text and other details rendered on pale surfaces. */
+  --specialisation-living-ink: rgb(112 22 124);
+  --specialisation-advanced-ink: rgb(153 52 7);
+  --specialisation-cyber-ink: rgb(113 84 0);
+  --specialisation-energy-ink: rgb(5 112 66);
 }
 
 @media (max-width: 479px) {
