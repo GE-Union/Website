@@ -4,6 +4,8 @@ import TransitionTitle from "../layout/TransitionTitle.astro";
 import ArrowIcon from "../ui/ArrowIcon.astro";
 import { localAssets } from "../../data/local-assets";
 import MiniCalendar from "./MiniCalendar.astro";
+
+const icon = (name: string) => `${localAssets.homeIcons}#${name}`;
 ---
 
 <div class="home-stage">
@@ -35,13 +37,13 @@ import MiniCalendar from "./MiniCalendar.astro";
           /><br /><span>Everything relevant for GE Students.</span>
         </p>
         <MiniCalendar />
-        <img
+        <svg
           class="feature-icon calendar-icon"
-          src={localAssets.calendar}
-          alt=""
-          width="650"
-          height="570"
-        />
+          aria-hidden="true"
+          viewBox="0 0 650 570"
+        >
+          <use href={icon("calendar")}></use>
+        </svg>
       </div>
     </a>
 
@@ -50,13 +52,9 @@ import MiniCalendar from "./MiniCalendar.astro";
         Course Bank <span class="feature-arrow"><ArrowIcon /></span>
       </h2>
       <p>See notes made by older students for your course!</p>
-      <img
-        class="feature-icon"
-        src={localAssets.vault}
-        alt=""
-        width="650"
-        height="570"
-      />
+      <svg class="feature-icon" aria-hidden="true" viewBox="0 0 650 570">
+        <use href={icon("vault")}></use>
+      </svg>
     </a>
 
     <a class="feature dashboard-card" href="/introduction">
@@ -67,13 +65,9 @@ import MiniCalendar from "./MiniCalendar.astro";
         All the relevant tools you will need as a student studying General
         Engineering
       </p>
-      <img
-        class="feature-icon"
-        src={localAssets.dashboard}
-        alt=""
-        width="650"
-        height="570"
-      />
+      <svg class="feature-icon" aria-hidden="true" viewBox="0 0 650 570">
+        <use href={icon("dashboard")}></use>
+      </svg>
     </a>
   </section>
 </div>
@@ -172,9 +166,7 @@ import MiniCalendar from "./MiniCalendar.astro";
     overflow: hidden;
     place-items: center;
     opacity: 0.72;
-    transition:
-      width 0.4s ease,
-      padding-left 0.4s ease;
+    transition: 0.4s ease;
   }
 
   .feature-arrow :global(.arrow-icon) {
@@ -400,12 +392,6 @@ import MiniCalendar from "./MiniCalendar.astro";
     .calendar-icon {
       right: -101px;
       width: 260px;
-    }
-  }
-
-  @media (prefers-reduced-motion: reduce) {
-    .feature-arrow {
-      transition: none;
     }
   }
 </style>

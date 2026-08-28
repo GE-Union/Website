@@ -4,31 +4,28 @@
 
 html:not([data-page-transition]) .home-hero {
   animation: home-hero-reveal 720ms var(--entrance-ease) 40ms both;
-  will-change: clip-path;
 }
 
 html:not([data-page-transition]) .home-hero .site-header {
   position: relative;
   z-index: 2;
-  animation: home-fade-in 340ms ease-out 560ms both;
+  animation: fade-in 340ms ease-out 560ms both;
 }
 
 html:not([data-page-transition]) .hero-copy [data-transition-title] {
-  animation: home-fade-in 360ms var(--entrance-ease) 390ms both;
+  animation: fade-in 360ms var(--entrance-ease) 390ms both;
 }
 
 html:not([data-page-transition]) .hero-copy p {
-  animation: home-fade-in 340ms var(--entrance-ease) 480ms both;
+  animation: fade-in 340ms var(--entrance-ease) 480ms both;
 }
 
 html:not([data-page-transition]) .feature-grid {
   animation: home-grid-in 520ms var(--entrance-ease) 470ms both;
-  will-change: transform;
 }
 
 html:not([data-page-transition]) .feature {
   animation: home-feature-in 360ms var(--entrance-ease) both;
-  will-change: transform, opacity;
 }
 
 html:not([data-page-transition]) .calendar-card {
@@ -45,7 +42,7 @@ html:not([data-page-transition]) .dashboard-card {
 
 html:not([data-page-transition]) body > main,
 html:not([data-page-transition]) body > footer {
-  animation: home-fade-in 400ms ease-out 1060ms both;
+  animation: fade-in 400ms ease-out 1060ms both;
 }
 
 @keyframes home-hero-reveal {
@@ -66,46 +63,9 @@ html:not([data-page-transition]) body > footer {
   }
 }
 
-@keyframes home-fade-in {
-  from {
-    opacity: 0;
-  }
-}
-
 @keyframes home-feature-in {
   from {
     opacity: 0;
     transform: scale(0.94);
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .home-hero,
-  .home-hero .site-header,
-  .hero-copy [data-transition-title],
-  .hero-copy p,
-  .feature-grid,
-  .feature,
-  body > main,
-  body > footer {
-    animation: none;
-  }
-
-  .home-hero {
-    clip-path: none;
-  }
-
-  .feature-grid,
-  .hero-copy [data-transition-title],
-  .hero-copy p,
-  .feature {
-    transform: none;
-    opacity: 1;
-  }
-
-  .home-hero .site-header,
-  body > main,
-  body > footer {
-    opacity: 1;
   }
 }

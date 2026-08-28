@@ -98,7 +98,7 @@ p {
   height: 200%;
   top: -50%;
   left: -50%;
-  background-image: url("/assets/icons/icon-background.svg");
+  background-image: url("../assets/icons/icon-background.svg");
   background-size: 200px 115.4734411085px;
   background-repeat: repeat;
   animation: scroll-bg 20s linear infinite;
@@ -125,18 +125,17 @@ p {
 }
 
 @keyframes scroll-bg {
-  0% {
-    background-position: 0 0;
-  }
-
-  100% {
+  to {
     background-position: -200px 115.4734411085px;
   }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .icon-background::before {
-    animation: none;
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
   }
 }
 

@@ -1,27 +1,19 @@
-/**
- * Local image paths used by the shared shell. The files are byte-identical
- * copies of the legacy export assets.
- */
+import dtuLogo from "../assets/about/dtu-logo.svg";
+import idaLogo from "../assets/about/ida.webp";
+import pfLogo from "../assets/about/pf.webp";
+import specialisations from "../assets/about/specialisations.svg";
+import favicon from "../assets/favicon.png";
+import homeIcons from "../assets/icons/home.svg";
+import siteIcons from "../assets/icons/site.svg";
+import geLogoBig from "../assets/logos/ge-logo-big.svg";
 
 export const localAssets = {
-  /** Header logo, all pages except /minecraft (legacy GE_Logo_-_Big). */
-  geLogoBig: "/assets/logos/ge-logo-big.svg",
-  /** Pixel-art header logo for /minecraft (legacy geu-logo-pixel). */
-  geuLogoPixel: "/assets/logos/geu-logo-pixel.svg",
-  /** Footer icon, rendered inverted (legacy GEU_Icon_1). */
-  geuIcon: "/assets/logos/geu-icon.svg",
-  calendar: "/assets/icons/calendar.svg",
-  vault: "/assets/icons/vault.svg",
-  dashboard: "/assets/icons/dashboard.svg",
-  geLogoSmall: "/assets/logos/ge-logo-small.svg",
-  envelope: "/assets/icons/envelope-letter.svg",
-  dtuLogo: "/assets/about/dtu-logo.svg",
-  pfLogo: "/assets/about/pf.png",
-  idaLogo: "/assets/about/ida.png",
-  specialisationAdvanced: "/assets/about/specialisation-advanced.svg",
-  specialisationCyber: "/assets/about/specialisation-cyber.svg",
-  specialisationLiving: "/assets/about/specialisation-living.svg",
-  specialisationEnergy: "/assets/about/specialisation-energy.svg",
-  /** Browser icon supplied by GE Union. */
-  favicon: "/assets/favicon.png",
+  geLogoBig: geLogoBig.src,
+  siteIcons: siteIcons.src,
+  homeIcons: homeIcons.src,
+  dtuLogo: dtuLogo.src,
+  pfLogo: pfLogo.src,
+  idaLogo: idaLogo.src,
+  specialisations: specialisations.src,
+  favicon: favicon.src,
 } as const;

@@ -1,8 +1,8 @@
 ---
 import TeamCarousel from "../components/about/TeamCarousel.astro";
 import JoinCallout from "../components/content/JoinCallout.astro";
+import SectionDivider from "../components/content/SectionDivider.astro";
 import PageHero from "../components/layout/PageHero.astro";
-import { localAssets } from "../data/local-assets";
 import { getPageSeo } from "../data/seo-matrix";
 import BaseLayout from "../layouts/BaseLayout.astro";
 
@@ -55,7 +55,7 @@ const teams = [
       </section>
     </div>
   </section>
-  <img class="divider" src={localAssets.geLogoSmall} alt="" />
+  <SectionDivider />
   <section class="teams-section">
     <h2>Our Teams</h2>
     <div class="team-cards">
@@ -70,7 +70,7 @@ const teams = [
     </div>
     <TeamCarousel />
   </section>
-  <img class="divider" src={localAssets.geLogoSmall} alt="" />
+  <SectionDivider />
   <section class="join-section">
     <JoinCallout heading="Want to Join?" />
   </section>
@@ -144,14 +144,6 @@ const teams = [
   }
   .goal {
     max-width: 687px;
-  }
-  .divider {
-    width: 24px;
-    height: 32px;
-    margin: 50px auto;
-    opacity: 0.3;
-    object-fit: cover;
-    object-position: left;
   }
   .teams-section {
     text-align: center;

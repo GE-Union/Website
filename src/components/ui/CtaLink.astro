@@ -44,9 +44,7 @@ const { href, arrow = false, newTab = false, label } = Astro.props;
     font-size: 20px;
     font-weight: 700;
     text-decoration: none;
-    transition:
-      scale 0.2s ease,
-      box-shadow 0.2s ease;
+    transition: 0.2s ease;
   }
 
   .cta-link:hover {
@@ -61,12 +59,6 @@ const { href, arrow = false, newTab = false, label } = Astro.props;
   @media (max-width: 767px) {
     .cta-link {
       font-size: 19px;
-    }
-  }
-
-  @media (prefers-reduced-motion: reduce) {
-    .cta-link {
-      transition: none;
     }
   }
 </style>

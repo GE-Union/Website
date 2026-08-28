@@ -4,6 +4,7 @@ import HomeHero from "../components/home/HomeHero.astro";
 import HomeIntroduction from "../components/home/HomeIntroduction.astro";
 import HomeJoin from "../components/home/HomeJoin.astro";
 import HomeSocialPanel from "../components/home/HomeSocialPanel.astro";
+import SectionDivider from "../components/content/SectionDivider.astro";
 import { getPageSeo } from "../data/seo-matrix";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import "../styles/home-entry.css";
@@ -11,6 +12,7 @@ import "../styles/home-entry.css";
 
 <BaseLayout seo={getPageSeo("/")}>
   <HomeHero slot="hero" />
+  <SectionDivider />
   <HomeIntroduction />
   <HomeCarousel />
   <HomeJoin />

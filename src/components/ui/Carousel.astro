@@ -192,10 +192,7 @@ const { items, label, previousLabel, nextLabel } = Astro.props;
     color: var(--front-1);
     cursor: pointer;
     transform: translateY(-50%);
-    transition:
-      background-color 160ms ease,
-      box-shadow 160ms ease,
-      transform 160ms ease;
+    transition: 160ms ease;
     backdrop-filter: blur(5px);
   }
 
@@ -261,15 +258,6 @@ const { items, label, previousLabel, nextLabel } = Astro.props;
       --slide-width: 225px;
       --slide-height: 150px;
       --slide-gap: 8px;
-    }
-  }
-
-  @media (prefers-reduced-motion: reduce) {
-    .track,
-    .slide,
-    figcaption,
-    .control {
-      transition-duration: 0.01ms;
     }
   }
 </style>

@@ -36,9 +36,7 @@
   font-weight: 500;
   line-height: 1.15;
   cursor: pointer;
-  transition:
-    background-color 150ms ease,
-    box-shadow 150ms ease;
+  transition: 150ms ease;
 }
 
 .course-bank [role="tab"]:hover {
@@ -406,13 +404,6 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .course-bank [role="tab"],
-  .course-bank .course summary svg,
-  .course-bank .course-body,
-  .course-bank .course-file-row {
-    transition: none;
-  }
-
   .course-bank .course-file-row:hover {
     transform: none;
   }

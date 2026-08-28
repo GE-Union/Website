@@ -1,5 +1,6 @@
 ---
 import { eventCalendarConfig } from "../../data/calendar";
+import { localAssets } from "../../data/local-assets";
 
 const apiKey = import.meta.env.PUBLIC_GOOGLE_CALENDAR_API_KEY?.trim() ?? "";
 ---
@@ -79,13 +80,9 @@ const apiKey = import.meta.env.PUBLIC_GOOGLE_CALENDAR_API_KEY?.trim() ?? "";
         <div class="event-description" data-event-description></div>
       </div>
 
-      <img
-        class="event-dialog-logo"
-        src="/assets/logos/ge-logo-big.svg"
-        alt=""
-        width="492"
-        height="684"
-      />
+      <svg class="event-dialog-logo" aria-hidden="true" viewBox="0 0 492 684">
+        <use href={`${localAssets.siteIcons}#ge-logo`}></use>
+      </svg>
     </div>
   </dialog>
 </section>
@@ -470,13 +467,6 @@ const apiKey = import.meta.env.PUBLIC_GOOGLE_CALENDAR_API_KEY?.trim() ?? "";
 
     .event-dialog-logo {
       right: -101px;
-    }
-  }
-
-  @media (prefers-reduced-motion: reduce) {
-    .event-dialog::backdrop,
-    .event-dialog-card {
-      animation: none;
     }
   }
 </style>

@@ -10,25 +10,21 @@ const specialisations = [
   {
     title: "Advanced Materials",
     slug: "advanced",
-    icon: localAssets.specialisationAdvanced,
     text: "Focus on developing new sustainable and functional materials for manufacturing, nanotechnology, acoustics, and physics. This track prepares you to innovate in creating materials that will shape industries and future technologies.",
   },
   {
     title: "Cyber Systems",
     slug: "cyber",
-    icon: localAssets.specialisationCyber,
     text: "Dive into computers, artificial intelligence, data analytics, modelling, software and hardware development. This specialisation equips you to work with cutting-edge technologies in computing and digital systems.",
   },
   {
     title: "Living Systems",
     slug: "living",
-    icon: localAssets.specialisationLiving,
     text: "Explore engineering related to all living things including aquatic systems, medicine, healthcare, and food production. This specialisation connects biology, chemistry, and technology to create sustainable solutions that improve health and protect the environment.",
   },
   {
     title: "Future Energy",
     slug: "energy",
-    icon: localAssets.specialisationEnergy,
     text: "Work on creating a sustainable world by developing renewable energy technologies such as wind and solar power, electrolysis, applied chemistry, and entrepreneurship. This specialisation focuses on the energy solutions of tomorrow.",
   },
 ];
@@ -62,9 +58,7 @@ const floatingRails = [
   ],
 ] as const;
 
-const iconBySlug = Object.fromEntries(
-  specialisations.map((item) => [item.slug, item.icon]),
-);
+const icon = (slug: string) => `${localAssets.specialisations}#${slug}`;
 ---
 
 <BaseLayout seo={getPageSeo("/about-ge")}>
@@ -74,7 +68,13 @@ const iconBySlug = Object.fromEntries(
     subtitle="Information about the Studyline and Future Opportunities"
   />
   <div class="icon-row" aria-hidden="true">
-    {specialisations.map((item) => <img src={item.icon} alt="" />)}
+    {
+      specialisations.map((item) => (
+        <svg viewBox="0 0 4167 4167">
+          <use href={icon(item.slug)} />
+        </svg>
+      ))
+    }
   </div>
   <div class="about-ge-content">
     {
@@ -86,8 +86,12 @@ const iconBySlug = Object.fromEntries(
           {icons.map(([slug, x, size, blur, duration, delay, direction]) => (
             <span
               class:list={["floater", `specialisation--${slug}`]}
-              style={`--x: ${x}%; --size: ${size}px; --blur: ${blur}px; --duration: ${duration}s; --delay: ${delay}s; --direction: ${direction}; --icon: url("${iconBySlug[slug]}")`}
-            />
+              style={`--x: ${x}%; --size: ${size}px; --blur: ${blur}px; --duration: ${duration}s; --delay: ${delay}s; --direction: ${direction}`}
+            >
+              <svg viewBox="0 0 4167 4167">
+                <use href={icon(slug)} />
+              </svg>
+            </span>
           ))}
         </div>
       ))
@@ -147,8 +151,10 @@ const iconBySlug = Object.fromEntries(
                 "specialisation-card",
                 `specialisation--${item.slug}`,
               ]}
-              style={`--icon: url("${item.icon}")`}
             >
+              <svg class="card-icon" aria-hidden="true" viewBox="0 0 4167 4167">
+                <use href={icon(item.slug)} />
+              </svg>
               <h3>{item.title}</h3>
               <p>{item.text}</p>
             </article>
@@ -182,7 +188,7 @@ const iconBySlug = Object.fromEntries(
     gap: 55px;
     margin: 55px 0 -45px;
   }
-  .icon-row img {
+  .icon-row svg {
     width: 28px;
     height: 28px;
     opacity: 0.3;
@@ -243,17 +249,14 @@ const iconBySlug = Object.fromEntries(
       background-color 240ms ease,
       box-shadow 240ms ease;
   }
-  .specialisation-card::before {
-    content: "";
+  .card-icon {
     position: absolute;
     right: 8px;
     top: 12px;
     width: 78px;
     aspect-ratio: 1;
     color: var(--front-1);
-    background-color: currentColor;
-    -webkit-mask: var(--icon) center / contain no-repeat;
-    mask: var(--icon) center / contain no-repeat;
+    fill: currentColor;
     opacity: 0.1;
     transition:
       color 240ms ease,
@@ -291,7 +294,7 @@ const iconBySlug = Object.fromEntries(
   .specialisation-card:hover h3 {
     color: var(--ink);
   }
-  .specialisation-card:hover::before {
+  .specialisation-card:hover .card-icon {
     color: var(--accent);
     opacity: 0.9;
     transform: scale(1.08) rotate(2deg);
@@ -331,15 +334,12 @@ const iconBySlug = Object.fromEntries(
       color 220ms ease,
       opacity 220ms ease;
   }
-  .floater::before {
-    content: "";
+  .floater svg {
     display: block;
     width: 100%;
     height: 100%;
-    background-color: currentColor;
+    fill: currentColor;
     filter: blur(var(--active-blur, var(--blur)));
-    -webkit-mask: var(--icon) center / contain no-repeat;
-    mask: var(--icon) center / contain no-repeat;
     transition:
       filter 220ms ease,
       transform 220ms ease;
@@ -423,11 +423,6 @@ const iconBySlug = Object.fromEntries(
   @media (prefers-reduced-motion: reduce) {
     .floating-rail {
       display: none;
-    }
-    .specialisation-card,
-    .specialisation-card h3,
-    .specialisation-card::before {
-      transition: none;
     }
   }
 </style>

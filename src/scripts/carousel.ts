@@ -39,7 +39,6 @@ export function initCarousel(root: HTMLElement): void {
   let drag: DragState | undefined;
   let hovered = false;
   let focusWithin = false;
-  let resizeFrame = 0;
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
 
   const makeClone = (source: HTMLElement): HTMLElement => {
@@ -251,11 +250,7 @@ export function initCarousel(root: HTMLElement): void {
       normaliseBoundary();
   });
 
-  const resize = (): void => {
-    window.cancelAnimationFrame(resizeFrame);
-    resizeFrame = window.requestAnimationFrame(() => render(false));
-  };
-  const resizeObserver = new ResizeObserver(resize);
+  const resizeObserver = new ResizeObserver(() => render(false));
   resizeObserver.observe(viewport);
 
   reduceMotion.addEventListener("change", () => {
@@ -265,5 +260,6 @@ export function initCarousel(root: HTMLElement): void {
   document.addEventListener("visibilitychange", start);
 
   render(false);
-  start();
+  if (document.readyState === "complete") start();
+  else window.addEventListener("load", start, { once: true });
 }

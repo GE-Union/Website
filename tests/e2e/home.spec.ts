@@ -29,6 +29,16 @@ test.describe("home page", () => {
   test("home decorations stay out of layout flow", async ({ page }) => {
     await page.setViewportSize({ width: 1200, height: 900 });
 
+    const divider = page.locator("main > .section-divider");
+    await expect(divider).toHaveCount(1);
+    await expect(divider).toHaveCSS("width", "24px");
+    await expect(divider).toHaveCSS("height", "32px");
+    expect(
+      await divider.evaluate(
+        (element) => element.nextElementSibling?.className,
+      ),
+    ).toBe("home-introduction");
+
     await expect(page.locator(".reels")).toHaveCSS("position", "absolute");
     await expect(page.locator(".reels img")).toHaveCount(6);
     const columns = page.locator(".reel-column");
@@ -49,7 +59,7 @@ test.describe("home page", () => {
     await expect(socialButton).toHaveCSS("outline-width", "8px");
     await expect(socialButton).toHaveCSS("outline-color", "rgb(233, 233, 233)");
 
-    const letter = page.locator(".letter-mask img");
+    const letter = page.locator(".letter-mask svg");
     await expect(letter).toBeAttached();
     const letterBox = await letter.boundingBox();
     expect(letterBox).not.toBeNull();
@@ -288,4 +298,26 @@ test.describe("home page", () => {
       page.locator('a[href="mailto:geunion.dtu@gmail.com"]'),
     ).toHaveCount(2);
   });
+});
+
+test("reel entrance waits for its images", async ({ page }) => {
+  let releaseImages!: () => void;
+  const imagesBlocked = new Promise<void>((resolve) => {
+    releaseImages = resolve;
+  });
+  await page.route("**/reel-previews/**", async (route) => {
+    await imagesBlocked;
+    await route.fulfill({
+      contentType: "image/svg+xml",
+      body: '<svg xmlns="http://www.w3.org/2000/svg" width="1" height="1"/>',
+    });
+  });
+
+  await page.goto("/", { waitUntil: "domcontentloaded" });
+  const reels = page.locator("[data-reels]");
+  await reels.scrollIntoViewIfNeeded();
+  await expect(reels).not.toHaveClass(/is-visible/);
+
+  releaseImages();
+  await expect(reels).toHaveClass(/is-visible/);
 });

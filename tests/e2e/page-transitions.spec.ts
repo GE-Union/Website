@@ -24,22 +24,6 @@ test.describe("page transitions", () => {
         title.querySelectorAll<HTMLElement>("[data-transition-character]"),
         (character) => character.getBoundingClientRect(),
       );
-      const subtitleBounds: DOMRect[] = [];
-      const subtitle = document.querySelector("[data-transition-subtitle]")!;
-      const walker = document.createTreeWalker(subtitle, NodeFilter.SHOW_TEXT);
-      while (walker.nextNode()) {
-        const text = walker.currentNode as Text;
-        let offset = 0;
-        for (const value of Array.from(text.data)) {
-          const start = offset;
-          offset += value.length;
-          if (/^\s+$/u.test(value)) continue;
-          const range = document.createRange();
-          range.setStart(text, start);
-          range.setEnd(text, offset);
-          subtitleBounds.push(range.getBoundingClientRect());
-        }
-      }
       const target = document.elementFromPoint(x, y);
       target?.dispatchEvent(
         new MouseEvent("click", {
@@ -56,13 +40,9 @@ test.describe("page transitions", () => {
           "[data-transition-title] [data-transition-character]",
         ),
       );
-      const subtitleCopies = Array.from(
-        document.querySelectorAll<HTMLElement>(".transition-overlay-character"),
-      );
-      const characters = [...titleCharacters, ...subtitleCopies];
       const root = document.documentElement;
       const origin = { x, y };
-      const characterTiming = characters
+      const characterTiming = titleCharacters
         .map((character) => {
           const bounds = character.getBoundingClientRect();
           const animation = character.getAnimations()[0];
@@ -98,15 +78,10 @@ test.describe("page transitions", () => {
             ? { x: after.left - before.left, y: after.top - before.top }
             : { x: 0, y: 0 };
         }),
-        subtitleCopyDeltas: subtitleCopies.map((character, index) => {
-          const before = subtitleBounds[index];
-          const after = character.getBoundingClientRect();
-          return {
-            x: after.left - before.left,
-            y: after.top - before.top,
-          };
-        }),
         characterTiming,
+        subtitleAnimations: document
+          .querySelector("[data-transition-subtitle]")
+          ?.getAnimations().length,
         ring: {
           active: root.dataset.transitionRing,
           duration: Number(ringAnimation?.effect?.getTiming().duration),
@@ -133,16 +108,9 @@ test.describe("page transitions", () => {
     expect(
       Math.max(...exitMotion.titleCharacterDeltas.map(({ y }) => Math.abs(y))),
     ).toBeLessThanOrEqual(0.25);
-    expect(
-      Math.max(
-        ...exitMotion.subtitleCopyDeltas.flatMap(({ x, y }) => [
-          Math.abs(x),
-          Math.abs(y),
-        ]),
-      ),
-    ).toBeLessThanOrEqual(0.25);
+    expect(exitMotion.subtitleAnimations).toBe(1);
     const timing = exitMotion.characterTiming;
-    expect(timing.length).toBeGreaterThan(20);
+    expect(timing.length).toBeGreaterThan(10);
     const byDistance = timing.sort((a, b) => a!.distance - b!.distance);
     expect(byDistance[0]!.delay).toBeLessThan(
       byDistance[byDistance.length - 1]!.delay,
@@ -283,7 +251,6 @@ test.describe("page transitions", () => {
       "data-page-transition",
       "complete",
     );
-    await expect(page.locator(".transition-text-overlay")).toHaveCount(0);
     await expect(page.locator("[data-transition-title]")).toHaveCSS(
       "opacity",
       "1",
@@ -492,14 +459,14 @@ test.describe("page transitions", () => {
 
     expect(entrance.transitionState).toBeUndefined();
     expect(entrance.hero).toContain("home-hero-reveal");
-    expect(entrance.title).toContain("home-fade-in");
+    expect(entrance.title).toContain("fade-in");
     expect(entrance.grid).toContain("home-grid-in");
     expect(
       entrance.features.every((animations) =>
         animations.includes("home-feature-in"),
       ),
     ).toBe(true);
-    expect(entrance.main).toContain("home-fade-in");
+    expect(entrance.main).toContain("fade-in");
   });
 
   test("keeps data-page footers below the viewport while content initializes", async ({

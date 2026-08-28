@@ -9,10 +9,10 @@ const ASTRO_DIR = fileURLToPath(new URL("../dist/_astro/", import.meta.url));
 const KIB = 1024;
 
 const budgets = {
-  totalDistBytes: 576 * KIB,
-  defaultPageJavaScriptGzipBytes: 24 * KIB,
-  defaultLargestJavaScriptGzipBytes: 12 * KIB,
-  totalCssGzipBytes: 24 * KIB,
+  totalDistBytes: 520 * KIB,
+  defaultPageJavaScriptGzipBytes: 12 * KIB,
+  defaultLargestJavaScriptGzipBytes: 8 * KIB,
+  totalCssGzipBytes: 14 * KIB,
   pageOverrides: new Map([
     [
       "course-bank/index.html",
@@ -23,8 +23,8 @@ const budgets = {
     [
       "calendar/index.html",
       {
-        pageJavaScriptGzipBytes: 72 * KIB,
-        largestJavaScriptGzipBytes: 68 * KIB,
+        pageJavaScriptGzipBytes: 68 * KIB,
+        largestJavaScriptGzipBytes: 64 * KIB,
       },
     ],
   ]),

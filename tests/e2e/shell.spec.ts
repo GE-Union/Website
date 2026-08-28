@@ -189,9 +189,15 @@ test.describe("footer", () => {
     const footer = page.locator("footer");
 
     await expect(footer.locator('a[href="/"]')).toBeVisible();
-    const logo = footer.locator(".footer-logo img");
-    await expect(logo).toHaveAttribute("src", "/assets/logos/geu-icon.svg");
-    await expect(logo).toHaveCSS("filter", "invert(1)");
+    const logo = footer.locator(".footer-logo svg");
+    await expect(logo.locator("use")).toHaveAttribute(
+      "href",
+      /\/_astro\/site\..+\.svg#geu/,
+    );
+    await expect(logo).toHaveCSS("fill", "rgb(255, 255, 255)");
+    const socialIcon = footer.locator(".social-links svg").first();
+    await expect(socialIcon).toHaveCSS("fill", "rgb(0, 0, 0)");
+    await expect(socialIcon).toHaveCSS("opacity", "0.6");
     for (const [name, href] of [
       ["Instagram", "https://www.instagram.com/ge.union/"],
       [
@@ -214,7 +220,7 @@ test.describe("footer", () => {
     await page.goto("/");
     await expect(page.locator('link[rel="icon"]')).toHaveAttribute(
       "href",
-      "/assets/favicon.png",
+      /\/_astro\/favicon\..+\.png/,
     );
   });
 

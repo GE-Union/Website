@@ -1,22 +1,19 @@
 const STORAGE_KEY = "geu-page-transition";
 const TOP_THRESHOLD = 0.2;
 const RING_DURATION = 320;
-
-const timing = {
-  exit: 105,
-  exitStagger: 16,
-  enter: 185,
-  enterStagger: 16,
-  enterStaggerLimit: 128,
-  enterDelay: 35,
-  subtitle: 180,
-  subtitleLead: 45,
-  panel: 280,
-  contentIn: 260,
-  extraIn: 210,
-  extraOut: 115,
-  quickOut: 70,
-} as const;
+const EXIT_DURATION = 105;
+const EXIT_STAGGER = 16;
+const ENTER_DURATION = 185;
+const ENTER_STAGGER = 16;
+const ENTER_STAGGER_LIMIT = 128;
+const ENTER_DELAY = 35;
+const SUBTITLE_DURATION = 180;
+const SUBTITLE_LEAD = 45;
+const PANEL_DURATION = 280;
+const CONTENT_DURATION = 260;
+const EXTRA_IN_DURATION = 210;
+const EXTRA_OUT_DURATION = 115;
+const QUICK_OUT_DURATION = 70;
 
 type Mode = "hero" | "quick";
 type HeroKind = "home" | "inner";
@@ -63,70 +60,6 @@ function titleCharacters(hero: Hero): HTMLElement[] {
   return Array.from(
     hero.title.querySelectorAll<HTMLElement>("[data-transition-character]"),
   );
-}
-
-function graphemes(text: string): string[] {
-  if (!("Segmenter" in Intl)) return Array.from(text);
-  const segmenter = new Intl.Segmenter(undefined, { granularity: "grapheme" });
-  return Array.from(segmenter.segment(text), ({ segment }) => segment);
-}
-
-/** Copies only the subtitle glyphs. The real title always animates in place. */
-function copySubtitle(hero: Hero): {
-  overlay: HTMLElement | null;
-  characters: HTMLElement[];
-} {
-  if (!hero.subtitle) return { overlay: null, characters: [] };
-
-  const panelBounds = hero.panel.getBoundingClientRect();
-  const overlay = document.createElement("div");
-  overlay.className = "transition-text-overlay";
-  overlay.setAttribute("aria-hidden", "true");
-  Object.assign(overlay.style, {
-    left: `${panelBounds.left}px`,
-    top: `${panelBounds.top}px`,
-    width: `${panelBounds.width}px`,
-    height: `${panelBounds.height}px`,
-    borderRadius: getComputedStyle(hero.panel).borderRadius,
-  });
-
-  const characters: HTMLElement[] = [];
-  const walker = document.createTreeWalker(hero.subtitle, NodeFilter.SHOW_TEXT);
-  while (walker.nextNode()) {
-    const text = walker.currentNode as Text;
-    const style = getComputedStyle(text.parentElement ?? hero.subtitle);
-    let offset = 0;
-
-    for (const value of graphemes(text.data)) {
-      const start = offset;
-      offset += value.length;
-      if (/^\s+$/u.test(value)) continue;
-
-      const range = document.createRange();
-      range.setStart(text, start);
-      range.setEnd(text, offset);
-      const bounds = range.getBoundingClientRect();
-      const character = document.createElement("span");
-      character.className = "transition-overlay-character";
-      character.textContent = value;
-      Object.assign(character.style, {
-        left: `${bounds.left - panelBounds.left}px`,
-        top: `${bounds.top - panelBounds.top}px`,
-        color: style.color,
-        fontFamily: style.fontFamily,
-        fontSize: style.fontSize,
-        fontStyle: style.fontStyle,
-        fontWeight: style.fontWeight,
-        lineHeight: style.lineHeight,
-        letterSpacing: style.letterSpacing,
-      });
-      overlay.append(character);
-      characters.push(character);
-    }
-  }
-
-  document.body.append(overlay);
-  return { overlay, characters };
 }
 
 function internalLink(event: MouseEvent): HTMLAnchorElement | null {
@@ -253,12 +186,8 @@ function fade(
   });
 }
 
-function heroExit(
-  hero: Hero,
-  origin: Point,
-): { animations: Animation[]; overlay: HTMLElement | null } {
-  const subtitle = copySubtitle(hero);
-  const characters = [...titleCharacters(hero), ...subtitle.characters];
+function heroExit(hero: Hero, origin: Point): Animation[] {
+  const characters = titleCharacters(hero);
   const measurements = characters.map((character) => {
     const bounds = character.getBoundingClientRect();
     const x = bounds.left + bounds.width / 2;
@@ -302,15 +231,24 @@ function heroExit(
           },
         ],
         {
-          duration: timing.exit,
-          delay: Math.round(ratio * timing.exitStagger),
+          duration: EXIT_DURATION,
+          delay: Math.round(ratio * EXIT_STAGGER),
           easing: "cubic-bezier(0.12, 0.75, 0.2, 1)",
           fill: "forwards",
         },
       );
     },
   );
-  return { animations, overlay: subtitle.overlay };
+  if (hero.subtitle) {
+    animations.push(
+      animate(hero.subtitle, [{ opacity: 1 }, { opacity: 0 }], {
+        duration: EXIT_DURATION,
+        easing: "ease-in",
+        fill: "forwards",
+      }),
+    );
+  }
+  return animations;
 }
 
 function heroEntry(hero: Hero): Animation[] {
@@ -319,8 +257,8 @@ function heroEntry(hero: Hero): Animation[] {
 
   const characters = titleCharacters(hero);
   const lastDelay = Math.min(
-    Math.max(characters.length - 1, 0) * timing.enterStagger,
-    timing.enterStaggerLimit,
+    Math.max(characters.length - 1, 0) * ENTER_STAGGER,
+    ENTER_STAGGER_LIMIT,
   );
   const animations = characters.map((character, index) =>
     animate(
@@ -335,10 +273,9 @@ function heroEntry(hero: Hero): Animation[] {
         { opacity: 1, transform: "translateY(0) scale(1)" },
       ],
       {
-        duration: timing.enter,
+        duration: ENTER_DURATION,
         delay:
-          timing.enterDelay +
-          Math.min(index * timing.enterStagger, timing.enterStaggerLimit),
+          ENTER_DELAY + Math.min(index * ENTER_STAGGER, ENTER_STAGGER_LIMIT),
         easing: "cubic-bezier(0.22, 1, 0.36, 1)",
         fill: "both",
       },
@@ -352,9 +289,8 @@ function heroEntry(hero: Hero): Animation[] {
         hero.subtitle,
         [{ opacity: 0 }, { opacity: 1 }],
         {
-          duration: timing.subtitle,
-          delay:
-            timing.enterDelay + lastDelay + timing.enter - timing.subtitleLead,
+          duration: SUBTITLE_DURATION,
+          delay: ENTER_DELAY + lastDelay + ENTER_DURATION - SUBTITLE_LEAD,
           easing: "ease-out",
           fill: "both",
         },
@@ -382,7 +318,7 @@ function panelEntry(root: HTMLElement, hero: Hero): Animation[] {
       hero.panel,
       [{ height: `${height}px` }, { height: `${target}px` }],
       {
-        duration: timing.panel,
+        duration: PANEL_DURATION,
         easing: "cubic-bezier(0.22, 1, 0.36, 1)",
         fill: "both",
       },
@@ -428,7 +364,6 @@ export function initPageTransitions(): () => void {
   const root = document.documentElement;
   const reducedMotion = matchMedia("(prefers-reduced-motion: reduce)");
   let hero: Hero | null = null;
-  let overlay: HTMLElement | null = null;
   let animations: Animation[] = [];
   let locked = false;
   let settleTimer: number | undefined;
@@ -462,8 +397,6 @@ export function initPageTransitions(): () => void {
       hero.panel.style.removeProperty("min-height");
     }
     content().forEach((element) => element.style.removeProperty("animation"));
-    overlay?.remove();
-    overlay = null;
   };
 
   const settle = () => {
@@ -498,8 +431,8 @@ export function initPageTransitions(): () => void {
     animations = [
       ...heroEntry(hero),
       ...panelEntry(root, hero),
-      ...fade(hero.extras, true, timing.extraIn, 105),
-      ...fade(content(), true, timing.contentIn, contentDelay),
+      ...fade(hero.extras, true, EXTRA_IN_DURATION, 105),
+      ...fade(content(), true, CONTENT_DURATION, contentDelay),
     ];
     const entryAnimations = animations;
     await playAfterPaint(entryAnimations);
@@ -526,12 +459,12 @@ export function initPageTransitions(): () => void {
       save("quick");
       animations = [
         animate(document.body, [{ opacity: 1 }, { opacity: 0 }], {
-          duration: timing.quickOut,
+          duration: QUICK_OUT_DURATION,
           easing: "ease-in",
           fill: "forwards",
         }),
       ];
-      await waitFor(animations, timing.quickOut + 15);
+      await waitFor(animations, QUICK_OUT_DURATION + 15);
     } else {
       const origin = eventPoint(event, anchor);
       const panelBounds = hero.panel.getBoundingClientRect();
@@ -545,15 +478,12 @@ export function initPageTransitions(): () => void {
       scheduleRingCleanup();
       save("hero", ring);
 
-      const exit = heroExit(hero, origin);
-      overlay = exit.overlay;
-      if (hero.subtitle) hero.subtitle.style.opacity = "0";
       animations = [
-        ...exit.animations,
-        ...fade(hero.extras, false, timing.extraOut, 0),
+        ...heroExit(hero, origin),
+        ...fade(hero.extras, false, EXTRA_OUT_DURATION, 0),
         ...fade(content(), false, 130, 0, "ease-in-out"),
       ];
-      await waitFor(animations, timing.exit + timing.exitStagger + 10);
+      await waitFor(animations, EXIT_DURATION + EXIT_STAGGER + 10);
     }
 
     location.assign(anchor.href);

@@ -19,8 +19,6 @@ interface Props {
 }
 
 const { seo, theme = "default" } = Astro.props;
-const headerLogo =
-  theme === "minecraft" ? localAssets.geuLogoPixel : localAssets.geLogoBig;
 ---
 
 <!doctype html>
@@ -30,7 +28,7 @@ const headerLogo =
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://cdn.fontshare.com" crossorigin />
-    <link rel="preload" as="image" href={headerLogo} />
+    <link rel="preload" as="image" href={localAssets.siteIcons} />
     <SeoHead {...seo} />
     <GoogleAnalytics />
     <slot name="head" />

@@ -32,25 +32,17 @@ test("About GE specialisation cards activate their ambient icons", async ({
 
   const rail = page.locator(".floating-rail").first();
   const card = page.locator(".specialisation-card.specialisation--cyber");
-  const floater = page.locator(".floater.specialisation--cyber").first();
+  const floater = page.locator(".floater.specialisation--cyber svg").first();
 
   await expect(rail).toBeVisible();
   await expect(page.locator(".floater")).toHaveCount(16);
   await card.hover();
   await expect(card.locator("h3")).toHaveCSS("color", "rgb(113, 84, 0)");
   await expect
-    .poll(() =>
-      floater.evaluate(
-        (element) => getComputedStyle(element, "::before").backgroundColor,
-      ),
-    )
+    .poll(() => floater.evaluate((element) => getComputedStyle(element).fill))
     .toBe("rgb(255, 208, 66)");
   await expect
-    .poll(() =>
-      floater.evaluate(
-        (element) => getComputedStyle(element, "::before").filter,
-      ),
-    )
+    .poll(() => floater.evaluate((element) => getComputedStyle(element).filter))
     .toBe("blur(0px)");
 
   await page.emulateMedia({ reducedMotion: "reduce" });

@@ -1,10 +1,8 @@
 ---
-/**
- * The footer's social icon strip. Destinations and per-link new-tab
- * behavior come from src/data/social-links.ts (all four are legacy
- * destinations; the Webstudio badge is intentionally gone).
- */
 import { socialLinks } from "../../data/social-links";
+import { localAssets } from "../../data/local-assets";
+
+const sprite = localAssets.siteIcons;
 ---
 
 <ul class="social-links" role="list">
@@ -13,16 +11,13 @@ import { socialLinks } from "../../data/social-links";
       <li>
         <a
           href={link.href}
+          aria-label={link.name}
           target={link.newTab ? "_blank" : undefined}
           rel={link.newTab ? "noopener noreferrer" : undefined}
         >
-          <img
-            src={link.icon}
-            alt={link.name}
-            width="417"
-            height="417"
-            loading="lazy"
-          />
+          <svg aria-hidden="true" viewBox="0 0 417 417">
+            <use href={`${sprite}#${link.icon}`} />
+          </svg>
         </a>
       </li>
     ))
@@ -50,17 +45,18 @@ import { socialLinks } from "../../data/social-links";
   .social-links a {
     display: block;
     height: 100%;
+    color: black;
   }
 
-  .social-links img {
+  .social-links svg {
     height: 100%;
     width: 100%;
-    object-fit: contain;
+    fill: currentColor;
     opacity: 0.6;
   }
 
-  .social-links a:hover img {
-    filter: invert(100%);
+  .social-links a:hover svg {
+    color: white;
     opacity: 0.95;
   }
 

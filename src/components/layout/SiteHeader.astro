@@ -13,8 +13,8 @@ interface Props {
 }
 
 const { theme = "default" } = Astro.props;
-const logo =
-  theme === "minecraft" ? localAssets.geuLogoPixel : localAssets.geLogoBig;
+const isMinecraft = theme === "minecraft";
+const logo = `${localAssets.siteIcons}#${isMinecraft ? "pixel-logo" : "ge-logo"}`;
 ---
 
 <div class="site-header">
@@ -23,13 +23,13 @@ const logo =
     id="menu-icon"
     class:list={["logo-link", { minecraft: theme === "minecraft" }]}
   >
-    <img
-      src={logo}
-      alt="GE Union — home"
-      width="492"
-      height="684"
-      loading="eager"
-    />
+    <svg
+      aria-label="GE Union — home"
+      role="img"
+      viewBox={isMinecraft ? "0 0 50 70" : "0 0 492 684"}
+    >
+      <use href={logo}></use>
+    </svg>
   </a>
   <PrimaryNavigation theme={theme} />
   <MobileMenu />
@@ -65,14 +65,14 @@ const logo =
     cursor: grabbing;
   }
 
-  .logo-link img {
+  .logo-link svg {
     width: 58px;
     height: 100%;
     margin-left: 5px;
     -webkit-user-drag: none;
   }
 
-  .logo-link.minecraft img {
+  .logo-link.minecraft svg {
     width: 24px;
     height: 34px;
     margin-left: 15px;
@@ -90,7 +90,7 @@ const logo =
       align-self: center;
     }
 
-    .logo-link img {
+    .logo-link svg {
       width: 50px;
     }
   }

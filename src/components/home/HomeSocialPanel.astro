@@ -50,7 +50,9 @@ const emailHref = `mailto:${contactEmail}`;
             href={emailHref}
           >
             <span class="letter-mask" aria-hidden="true">
-              <img src={localAssets.envelope} alt="" width="512" height="512" />
+              <svg aria-hidden="true" viewBox="0 0 512 512">
+                <use href={`${localAssets.homeIcons}#envelope`}></use>
+              </svg>
             </span>
             <strong>{contactEmail}</strong>
           </a>
@@ -240,20 +242,16 @@ const emailHref = `mailto:${contactEmail}`;
     content: "";
   }
 
-  .letter-mask img {
+  .letter-mask svg {
     width: 70%;
     height: auto;
     margin: 58px auto 0;
     opacity: 0.08;
-    transition:
-      translate 0.4s ease,
-      rotate 0.4s ease,
-      scale 0.4s ease,
-      opacity 0.4s ease;
+    transition: 0.4s ease;
   }
 
-  .email-link:hover .letter-mask img,
-  .email-link:focus-visible .letter-mask img {
+  .email-link:hover .letter-mask svg,
+  .email-link:focus-visible .letter-mask svg {
     translate: 0 -52px;
     rotate: 6deg;
     scale: 1.2;
@@ -328,12 +326,6 @@ const emailHref = `mailto:${contactEmail}`;
 
     .social-block {
       gap: 20px;
-    }
-  }
-
-  @media (prefers-reduced-motion: reduce) {
-    .letter-mask img {
-      transition: none;
     }
   }
 </style>

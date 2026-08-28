@@ -1,23 +1,14 @@
 ---
-/**
- * The rounded red footer panel on every page: inverted GEU icon linking
- * Home on the left, social strip on the right. All legacy destinations
- * kept; the "Built with Webstudio" badge is intentionally removed.
- */
-import { localAssets } from "../../data/local-assets";
 import SocialLinks from "./SocialLinks.astro";
+import { localAssets } from "../../data/local-assets";
 ---
 
 <footer class="site-footer icon-background">
   <div class="footer-inner">
-    <a href="/" class="footer-logo">
-      <img
-        src={localAssets.geuIcon}
-        alt="GE Union — home"
-        width="256"
-        height="238"
-        loading="lazy"
-      />
+    <a href="/" class="footer-logo" aria-label="GE Union — home">
+      <svg aria-hidden="true" viewBox="0 0 256 238">
+        <use href={`${localAssets.siteIcons}#geu`}></use>
+      </svg>
     </a>
     <SocialLinks />
   </div>
@@ -56,11 +47,11 @@ import SocialLinks from "./SocialLinks.astro";
     scale: 1.05;
   }
 
-  .footer-logo img {
+  .footer-logo svg {
     height: 100%;
     width: auto;
     aspect-ratio: 1.1;
-    filter: invert(100%);
+    fill: white;
   }
 
   @media (max-width: 991px) {
