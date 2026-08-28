@@ -1,0 +1,65 @@
+---
+import CtaLink from "../ui/CtaLink.astro";
+import { localAssets } from "../../data/local-assets";
+---
+
+<section class="home-introduction">
+  <img src={localAssets.geLogoSmall} alt="" width="498" height="618" />
+  <h2>Who We Are</h2>
+  <p>
+    GE Union is the student organization for General Engineering at DTU.<br />We
+    bring students together through social events, academic support, and career
+    opportunities.
+  </p>
+  <CtaLink href="/about-geu" arrow>Meet GE Union</CtaLink>
+</section>
+
+<style>
+  .home-introduction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: min(900px, calc(100% - 40px));
+    margin-inline: auto;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  h2 {
+    margin-bottom: 22px;
+  }
+
+  p {
+    margin-bottom: 24px;
+  }
+
+  img {
+    width: 22px;
+    height: 28px;
+    margin-bottom: 55px;
+    opacity: 0.4;
+  }
+
+  @media (max-width: 767px) {
+    .home-introduction {
+      width: calc(100% - 55px);
+    }
+  }
+
+  @media (max-width: 479px) {
+    .home-introduction {
+      padding-top: 25px;
+      padding-bottom: 20px;
+      margin-bottom: 100px;
+    }
+
+    img {
+      margin-top: 60px;
+      margin-bottom: 60px;
+    }
+
+    p {
+      font-size: 0.88rem;
+    }
+  }
+</style>

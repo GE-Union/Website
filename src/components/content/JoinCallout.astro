@@ -1,0 +1,54 @@
+---
+import CtaLink from "../ui/CtaLink.astro";
+import { applicationUrl } from "../../data/home";
+
+interface Props {
+  heading?: string;
+  compact?: boolean;
+}
+
+const { heading = "Want to join?", compact = false }: Props = Astro.props;
+---
+
+<section class:list={["join-callout", { compact }]}>
+  <h2>{heading}</h2>
+  <p>
+    GEU is always looking for new people to join our team <span
+      >(especially first years)</span
+    >, so if you like what we do and want to help, or maybe want to use this as
+    a safe space to gain experience, don't hesitate to send in an application!
+    Whether you are interested in IT, event planning, marketing, social media,
+    or contact with industry, we have a team that you will fit right into <span
+      >(all while making sure to have lots of fun)</span
+    >. So what are you waiting for??
+  </p>
+  <CtaLink href={applicationUrl} arrow>Submit your application</CtaLink>
+</section>
+
+<style>
+  .join-callout {
+    text-align: center;
+  }
+
+  p {
+    margin-bottom: 30px;
+  }
+
+  .compact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .compact h2 {
+    margin-bottom: 22px;
+  }
+
+  .compact p {
+    margin-bottom: 24px;
+  }
+
+  span {
+    color: var(--front-muted-accessible);
+  }
+</style>

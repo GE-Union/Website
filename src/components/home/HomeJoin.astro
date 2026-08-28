@@ -1,0 +1,27 @@
+---
+import JoinCallout from "../content/JoinCallout.astro";
+---
+
+<div class="home-join">
+  <JoinCallout compact />
+</div>
+
+<style>
+  .home-join {
+    width: min(900px, calc(100% - 40px));
+    margin: 0 auto 150px;
+  }
+
+  @media (max-width: 767px) {
+    .home-join {
+      width: calc(100% - 55px);
+      margin-bottom: 105px;
+    }
+  }
+
+  @media (max-width: 479px) {
+    .home-join :global(p) {
+      font-size: 0.88rem;
+    }
+  }
+</style>

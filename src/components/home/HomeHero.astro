@@ -1,0 +1,411 @@
+---
+import SiteHeader from "../layout/SiteHeader.astro";
+import TransitionTitle from "../layout/TransitionTitle.astro";
+import ArrowIcon from "../ui/ArrowIcon.astro";
+import { localAssets } from "../../data/local-assets";
+import MiniCalendar from "./MiniCalendar.astro";
+---
+
+<div class="home-stage">
+  <header
+    class="home-hero icon-background home-top"
+    data-transition-panel="home"
+  >
+    <SiteHeader />
+    <div class="hero-copy">
+      <TransitionTitle text="GE Union" />
+      <p data-transition-subtitle>
+        Your <strong>community hub</strong> at General Engineering!
+      </p>
+    </div>
+  </header>
+
+  <section
+    class="feature-grid"
+    aria-label="Student resources"
+    data-transition-extra
+  >
+    <a class="feature calendar-card" href="/calendar">
+      <h2>
+        Calendar <span class="feature-arrow"><ArrowIcon /></span>
+      </h2>
+      <div class="calendar-body">
+        <p>
+          See all upcoming events, periods, and deadlines all in one place.<br
+          /><br /><span>Everything relevant for GE Students.</span>
+        </p>
+        <MiniCalendar />
+        <img
+          class="feature-icon calendar-icon"
+          src={localAssets.calendar}
+          alt=""
+          width="650"
+          height="570"
+        />
+      </div>
+    </a>
+
+    <a class="feature course-card" href="/course-bank">
+      <h2>
+        Course Bank <span class="feature-arrow"><ArrowIcon /></span>
+      </h2>
+      <p>See notes made by older students for your course!</p>
+      <img
+        class="feature-icon"
+        src={localAssets.vault}
+        alt=""
+        width="650"
+        height="570"
+      />
+    </a>
+
+    <a class="feature dashboard-card" href="/introduction">
+      <h2>
+        Dashboard <span class="feature-arrow"><ArrowIcon /></span>
+      </h2>
+      <p>
+        All the relevant tools you will need as a student studying General
+        Engineering
+      </p>
+      <img
+        class="feature-icon"
+        src={localAssets.dashboard}
+        alt=""
+        width="650"
+        height="570"
+      />
+    </a>
+  </section>
+</div>
+
+<style>
+  .home-stage {
+    --hero-height: 57vh;
+    --feature-height: clamp(440px, 62vh, 550px);
+    --stage-height: clamp(650px, calc(100vh - 2 * var(--gap1)), 950px);
+    position: relative;
+    height: var(--stage-height);
+    margin: var(--gap1) var(--gap1) 84px;
+  }
+
+  .home-hero {
+    height: var(--hero-height);
+    min-height: 300px;
+    max-height: 686px;
+    border-radius: var(--rad1);
+  }
+
+  .hero-copy {
+    position: absolute;
+    z-index: 1;
+    top: 70px;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: calc(
+      var(--stage-height) + var(--gap2) - var(--feature-height) - 70px
+    );
+    padding-inline: 32px;
+    color: #fff;
+    text-align: center;
+  }
+
+  .hero-copy :global(h1[data-transition-title]) {
+    font-size: clamp(5.25rem, 16vh, 7.5rem);
+    margin-block: 0 -0.1em;
+  }
+
+  .hero-copy p {
+    margin-inline: 35px;
+    font-size: 1.3rem;
+  }
+
+  .feature-grid {
+    position: absolute;
+    z-index: 2;
+    bottom: calc(-1 * var(--gap2));
+    left: 50%;
+    display: grid;
+    grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+    gap: var(--gap2);
+    width: min(84%, 1120px);
+    height: var(--feature-height);
+    margin: 0;
+    padding: var(--gap2);
+    border-radius: 16px;
+    background: #fff;
+    translate: -50% 0;
+  }
+
+  .feature {
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+    border-radius: var(--rad2);
+    background: var(--back-grey-1);
+    color: var(--front-1);
+    text-decoration: none;
+  }
+
+  .feature h2 {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    margin: 0;
+    font-family: Tanker, Rubik, sans-serif;
+    font-size: 2.6rem;
+    font-weight: 500;
+  }
+
+  .feature-arrow {
+    display: inline-grid;
+    width: 0;
+    height: 30px;
+    padding-left: 0;
+    overflow: hidden;
+    place-items: center;
+    opacity: 0.72;
+    transition:
+      width 0.4s ease,
+      padding-left 0.4s ease;
+  }
+
+  .feature-arrow :global(.arrow-icon) {
+    width: 30px;
+    height: 30px;
+  }
+
+  .feature:hover .feature-arrow,
+  .feature:focus-visible .feature-arrow {
+    width: 38px;
+    padding-left: 3px;
+  }
+
+  .feature p {
+    position: relative;
+    z-index: 2;
+    align-self: center;
+    color: var(--front-2);
+    text-align: center;
+    line-height: 1.3;
+  }
+
+  .feature-icon {
+    position: absolute;
+    right: -20px;
+    bottom: -40px;
+    width: 260px;
+    height: auto;
+    opacity: 0.07;
+    filter: blur(2px);
+    pointer-events: none;
+    user-select: none;
+  }
+
+  .calendar-icon {
+    display: none;
+  }
+
+  .calendar-card {
+    grid-row: 1 / 3;
+  }
+
+  .calendar-body {
+    display: grid;
+    grid-template-columns: minmax(145px, 30%) minmax(360px, 1fr);
+    align-items: center;
+    height: calc(100% - 52px);
+  }
+
+  .calendar-body p {
+    width: 100%;
+    max-width: 180px;
+    padding-right: 10px;
+    text-align: left;
+  }
+
+  .calendar-body span {
+    color: var(--front-2);
+  }
+
+  .calendar-body :global(.mini-calendar) {
+    width: calc(100% + 20px);
+    min-width: 360px;
+    margin: 20px 0 0 20px;
+    background: rgb(255 255 255 / 0.17);
+    box-shadow: 0 0 60px rgb(0 0 0 / 0.15);
+  }
+
+  .course-card,
+  .dashboard-card {
+    display: grid;
+    grid-template-rows: auto 1fr;
+  }
+
+  @media (max-width: 991px) {
+    .home-stage {
+      --hero-height: 44vh;
+      --feature-height: clamp(410px, 48vh, 480px);
+      --stage-height: clamp(340px, calc(80vh - 2 * var(--gap1)), 770px);
+      margin-bottom: 78px;
+    }
+
+    .home-hero {
+      min-height: 340px;
+      max-height: none;
+    }
+
+    .hero-copy :global(h1[data-transition-title]) {
+      font-size: 4.84rem;
+    }
+
+    .feature h2 {
+      font-size: 2.25rem;
+    }
+
+    .calendar-body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .calendar-body :global(.mini-calendar) {
+      display: none;
+    }
+
+    .calendar-body p {
+      width: 95%;
+      max-width: 251px;
+      padding: 0;
+      text-align: center;
+    }
+
+    .calendar-icon {
+      display: block;
+      right: 64px;
+      bottom: 57px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .home-stage {
+      --hero-height: 500px;
+      --feature-height: 560px;
+      --stage-height: 800px;
+    }
+
+    .feature-grid {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(3, minmax(0, 1fr));
+      width: 84%;
+    }
+
+    .calendar-card {
+      grid-row: auto;
+    }
+
+    .calendar-body {
+      height: auto;
+    }
+
+    .calendar-body p span {
+      display: none;
+    }
+
+    .feature-icon,
+    .calendar-icon {
+      right: -39px;
+      bottom: 0;
+    }
+  }
+
+  @media (max-width: 479px) {
+    .home-stage {
+      --hero-height: 450px;
+      --feature-height: 485px;
+      --stage-height: 710px;
+      margin: var(--gap1) var(--gap1) 0;
+    }
+
+    .home-hero {
+      min-height: 0;
+    }
+
+    .hero-copy {
+      top: 60px;
+      gap: 4px;
+      height: calc(
+        var(--stage-height) + var(--gap2) - var(--feature-height) - 60px
+      );
+      padding: 0 20px;
+    }
+
+    .hero-copy :global(h1[data-transition-title]) {
+      font-size: 3.05rem;
+      margin: 0;
+    }
+
+    .hero-copy p {
+      margin: 0;
+      font-size: 1.1rem;
+    }
+
+    .feature-grid {
+      grid-template-rows: 180px 130px 147px;
+      width: 90%;
+      padding: 7px;
+      border-radius: 13px;
+    }
+
+    .feature {
+      padding: 10px;
+    }
+
+    .feature h2 {
+      font-size: 2rem;
+    }
+
+    .feature-arrow {
+      width: 30px;
+      height: 25px;
+      padding-left: 3px;
+    }
+
+    .feature-arrow :global(.arrow-icon) {
+      width: 25px;
+      height: 25px;
+    }
+
+    .feature p,
+    .calendar-body p {
+      width: 90%;
+      max-width: 400px;
+      margin: 0 auto;
+      font-size: 0.78rem;
+      line-height: 1.25;
+    }
+
+    .calendar-body p {
+      padding-top: 18px;
+    }
+
+    .feature-icon,
+    .calendar-icon {
+      right: -101px;
+      width: 260px;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .feature-arrow {
+      transition: none;
+    }
+  }
+</style>

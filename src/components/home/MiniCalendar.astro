@@ -7,6 +7,14 @@
   <div class="grid" data-calendar-grid></div>
 </section>
 
+<script>
+  import { initMiniCalendar } from "../../scripts/mini-calendar";
+
+  document
+    .querySelectorAll<HTMLElement>("[data-mini-calendar]")
+    .forEach((calendar) => initMiniCalendar(calendar));
+</script>
+
 <style>
   .mini-calendar {
     width: 100%;

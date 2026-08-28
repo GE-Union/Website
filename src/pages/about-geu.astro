@@ -1,7 +1,7 @@
 ---
 import TeamCarousel from "../components/about/TeamCarousel.astro";
+import JoinCallout from "../components/content/JoinCallout.astro";
 import PageHero from "../components/layout/PageHero.astro";
-import CtaLink from "../components/ui/CtaLink.astro";
 import { localAssets } from "../data/local-assets";
 import { getPageSeo } from "../data/seo-matrix";
 import BaseLayout from "../layouts/BaseLayout.astro";
@@ -62,10 +62,8 @@ const teams = [
       {
         teams.map((team) => (
           <article>
-            <>
-              <h3>{team.title}</h3>
-              <p>{team.text}</p>
-            </>
+            <h3>{team.title}</h3>
+            <p>{team.text}</p>
           </article>
         ))
       }
@@ -74,24 +72,7 @@ const teams = [
   </section>
   <img class="divider" src={localAssets.geLogoSmall} alt="" />
   <section class="join-section">
-    <section class="join">
-      <h2>Want to Join?</h2>
-      <p>
-        GEU is always looking for new people to join our team <span
-          >(especially first years)</span
-        >, so if you like what we do and want to help, or maybe want to use this
-        as a safe space to gain experience, don't hesitate to send in an
-        application! Whether you are interested in IT, event planning,
-        marketing, social media, or contact with industry, we have a team that
-        you will fit right into <span
-          >(all while making sure to have lots of fun)</span
-        >. So what are you waiting for??
-      </p>
-      <CtaLink
-        href="https://docs.google.com/forms/d/e/1FAIpQLScu14PgRWRO-iJ6uEs9s8lNS5QsuPb0HNvI8OY9KIkB9he5VQ/viewform?usp=header"
-        arrow>Submit your application</CtaLink
-      >
-    </section>
+    <JoinCallout heading="Want to Join?" />
   </section>
 </BaseLayout>
 
@@ -190,18 +171,9 @@ const teams = [
   article h3 {
     margin: 0 0 20px;
   }
-  .join {
-    text-align: center;
-  }
   .join-section {
     max-width: 800px;
     margin: 0 auto 20px;
-  }
-  .join p {
-    margin-bottom: 30px;
-  }
-  .join span {
-    color: var(--front-muted-accessible);
   }
   @media (max-width: 991px) {
     .identity-row {
