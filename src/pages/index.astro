@@ -2,12 +2,14 @@
 import HomeCarousel from "../components/home/HomeCarousel.astro";
 import MiniCalendar from "../components/home/MiniCalendar.astro";
 import SiteHeader from "../components/layout/SiteHeader.astro";
+import TransitionTitle from "../components/layout/TransitionTitle.astro";
 import ArrowIcon from "../components/ui/ArrowIcon.astro";
 import CtaLink from "../components/ui/CtaLink.astro";
 import { applicationUrl, homeReels } from "../data/home";
 import { localAssets } from "../data/local-assets";
 import { getPageSeo } from "../data/seo-matrix";
 import BaseLayout from "../layouts/BaseLayout.astro";
+import "../styles/home-entry.css";
 
 const socialBlocks = [
   {
@@ -46,15 +48,22 @@ const reelColumns = [
 
 <BaseLayout seo={getPageSeo("/")}>
   <div slot="hero" class="home-stage">
-    <header class="home-hero icon-background home-top">
+    <header
+      class="home-hero icon-background home-top"
+      data-transition-panel="home"
+    >
       <SiteHeader />
       <div class="hero-copy">
-        <h1>GE Union</h1><p>
+        <TransitionTitle text="GE Union" /><p data-transition-subtitle>
           Your <strong>community hub</strong> at General Engineering!
         </p>
       </div>
     </header>
-    <section class="feature-grid" aria-label="Student resources">
+    <section
+      class="feature-grid"
+      aria-label="Student resources"
+      data-transition-extra
+    >
       <a class="feature calendar-card" href="/calendar">
         <h2>
           Calendar <span class="feature-arrow"><ArrowIcon /></span>
@@ -229,7 +238,7 @@ const reelColumns = [
     color: #fff;
     text-align: center;
   }
-  .hero-copy h1 {
+  .hero-copy :global(h1[data-transition-title]) {
     font-size: clamp(5.25rem, 16vh, 7.5rem);
     margin-block: 0 -0.1em;
   }
@@ -527,7 +536,7 @@ const reelColumns = [
       min-height: 340px;
       max-height: none;
     }
-    .hero-copy h1 {
+    .hero-copy :global(h1[data-transition-title]) {
       font-size: 4.84rem;
     }
     .feature h2 {
@@ -642,7 +651,7 @@ const reelColumns = [
       );
       padding: 0 20px;
     }
-    .hero-copy h1 {
+    .hero-copy :global(h1[data-transition-title]) {
       font-size: 3.05rem;
       margin: 0;
     }
