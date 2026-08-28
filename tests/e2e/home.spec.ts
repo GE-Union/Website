@@ -18,13 +18,37 @@ test.describe("home page", () => {
   }) => {
     const calendar = page.locator(".calendar-card");
 
-    await page.setViewportSize({ width: 1200, height: 900 });
+    await page.setViewportSize({ width: 992, height: 900 });
     await expect(calendar.locator("[data-mini-calendar]")).toBeVisible();
     await expect(calendar.locator(".calendar-icon")).toBeHidden();
 
-    await page.setViewportSize({ width: 768, height: 1024 });
+    await page.setViewportSize({ width: 991, height: 900 });
     await expect(calendar.locator("[data-mini-calendar]")).toBeHidden();
     await expect(calendar.locator(".calendar-icon")).toBeVisible();
+  });
+  test("stacked feature cards keep equal heights and aligned copy", async ({
+    page,
+  }) => {
+    for (const width of [767, 480, 479, 320]) {
+      await page.setViewportSize({ width, height: 844 });
+      const geometry = await page.locator(".feature").evaluateAll((cards) =>
+        cards.map((card) => {
+          const bounds = card.getBoundingClientRect();
+          const copy = card.querySelector("p")!.getBoundingClientRect();
+          return {
+            height: bounds.height,
+            copyCenter: copy.top + copy.height / 2 - bounds.top,
+          };
+        }),
+      );
+
+      for (const property of ["height", "copyCenter"] as const) {
+        const values = geometry.map((card) => card[property]);
+        expect(Math.max(...values) - Math.min(...values)).toBeLessThanOrEqual(
+          1,
+        );
+      }
+    }
   });
   test("home decorations stay out of layout flow", async ({ page }) => {
     await page.setViewportSize({ width: 1200, height: 900 });
@@ -70,12 +94,19 @@ test.describe("home page", () => {
     await expect(letter).toHaveCSS("translate", "0px -52px");
 
     const feature = page.locator(".feature").first();
+    const heading = feature.locator("h2");
     const arrow = feature.locator(".feature-arrow svg");
     await feature.hover();
-    await expect(arrow).toHaveCSS(
-      "color",
-      await feature.evaluate((element) => getComputedStyle(element).color),
+    const headingColor = await heading.evaluate(
+      (element) => getComputedStyle(element).color,
     );
+    for (const element of [
+      arrow,
+      feature.locator(".month"),
+      feature.locator(".calendar-weekday").first(),
+    ]) {
+      await expect(element).toHaveCSS("color", headingColor);
+    }
     await expect
       .poll(async () => (await arrow.boundingBox())?.width ?? 0)
       .toBeGreaterThanOrEqual(28);
