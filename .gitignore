@@ -13,6 +13,10 @@ tests/visual/output/
 # Lighthouse reports
 reports/lighthouse/
 
+# Local documentation and agent configuration
+/docs/
+.claude/
+
 # Environment files (the Google Calendar key is public, but keep the habit)
 .env
 .env.*
@@ -24,7 +28,5 @@ Thumbs.db
 .idea/
 .vscode/
 
-# Note: reference/ (immutable legacy export), docs/, scripts/, and tests/ are
-# intentionally tracked — they are the migration's source of truth and CI inputs.
-/docs
-.DS_Store
+# Reference fixtures, scripts, and tests are intentionally tracked because
+# they are migration source material and CI inputs.
