@@ -253,6 +253,12 @@ test.describe("page transitions", () => {
         },
         contentAnimations: document.querySelector("main")!.getAnimations()
           .length,
+        contentDuration: Number(
+          document
+            .querySelector("main")!
+            .getAnimations()[0]
+            ?.effect?.getTiming().duration,
+        ),
         contentBounds: document
           .querySelector("main")!
           .getBoundingClientRect()
@@ -262,6 +268,7 @@ test.describe("page transitions", () => {
     expect(entry.titleAnimations).toBeGreaterThan(1);
     expect(entry.subtitleAnimations).toBe(1);
     expect(entry.contentAnimations).toBe(1);
+    expect(entry.contentDuration).toBe(260);
     expect(entry.titleTiming.every(({ duration }) => duration === 185)).toBe(
       true,
     );

@@ -12,6 +12,7 @@ const timing = {
   subtitle: 180,
   subtitleLead: 45,
   panel: 280,
+  contentIn: 260,
   extraIn: 210,
   extraOut: 115,
   quickOut: 70,
@@ -498,7 +499,7 @@ export function initPageTransitions(): () => void {
       ...heroEntry(hero),
       ...panelEntry(root, hero),
       ...fade(hero.extras, true, timing.extraIn, 105),
-      ...fade(content(), true, 180, contentDelay),
+      ...fade(content(), true, timing.contentIn, contentDelay),
     ];
     const entryAnimations = animations;
     await playAfterPaint(entryAnimations);
