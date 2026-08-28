@@ -313,8 +313,13 @@ const blurFor = (size: number) => Math.max(0.4, (48 - size) * 0.14);
     inset-block: var(--gap1);
     width: calc((100vw - 800px) / 2 - var(--gap1));
     overflow: hidden;
+    opacity: 0;
     pointer-events: none;
     mask-image: linear-gradient(transparent, black 7% 93%, transparent);
+    transition: opacity 1s ease;
+  }
+  .about-ge-content.floaters-ready .floating-rail {
+    opacity: 1;
   }
   .floating-rail--left {
     left: var(--gap1);

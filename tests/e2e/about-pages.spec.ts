@@ -79,6 +79,28 @@ test("About GE specialisation cards activate their ambient icons", async ({
   await expect(rail).toBeHidden();
 });
 
+test("About GE floaters wait for their sprite and fade in", async ({
+  page,
+}) => {
+  await page.setViewportSize({ width: 1440, height: 1000 });
+
+  let releaseSprite!: () => void;
+  const spriteBlocked = new Promise<void>((resolve) => {
+    releaseSprite = resolve;
+  });
+  await page.route("**/specialisations.*.svg", async (route) => {
+    await spriteBlocked;
+    await route.continue();
+  });
+
+  await page.goto("/about-ge", { waitUntil: "domcontentloaded" });
+  const rail = page.locator(".floating-rail").first();
+  await expect(rail).toHaveCSS("opacity", "0");
+
+  releaseSprite();
+  await expect(rail).toHaveCSS("opacity", "1", { timeout: 3000 });
+});
+
 test("About GE floaters remain inside their rails and respond to scrolling by size", async ({
   page,
 }) => {

@@ -1,6 +1,21 @@
 export function initAboutGeFloaters() {
   if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
 
+  const root = document.querySelector<HTMLElement>(".about-ge-content");
+  const sprite = document
+    .querySelector<SVGUseElement>(".floater use")
+    ?.getAttribute("href")
+    ?.split("#")[0];
+  if (!root || !sprite) return;
+
+  void fetch(sprite)
+    .then(async (response) => {
+      if (!response.ok) return;
+      await response.arrayBuffer();
+      requestAnimationFrame(() => root.classList.add("floaters-ready"));
+    })
+    .catch(() => {});
+
   const wideLayout = window.matchMedia("(min-width: 1100px)");
   const floaters = Array.from(
     document.querySelectorAll<HTMLElement>(".floater"),
