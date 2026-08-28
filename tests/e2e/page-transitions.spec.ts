@@ -407,6 +407,10 @@ test.describe("page transitions", () => {
         panelHeights: (panelAnimation.effect as KeyframeEffect)
           .getKeyframes()
           .map(({ height }) => Number.parseFloat(String(height))),
+        gridAnimations: document.querySelector(".feature-grid")!.getAnimations()
+          .length,
+        gridOpacity: getComputedStyle(document.querySelector(".feature-grid")!)
+          .opacity,
         extraAnimations: document
           .querySelector("[data-transition-extra]")!
           .getAnimations().length,
@@ -414,16 +418,21 @@ test.describe("page transitions", () => {
     });
     expect(entry.panelHeights[0]).toBe(sourceHeight);
     expect(entry.panelHeights[1]).toBeGreaterThan(sourceHeight);
+    expect(entry.gridAnimations).toBe(0);
+    expect(entry.gridOpacity).toBe("1");
     expect(entry.extraAnimations).toBe(1);
 
     await expect(page.locator("html")).toHaveAttribute(
       "data-page-transition",
       "complete",
     );
-    await expect(page.locator("[data-transition-extra]")).toHaveCSS(
-      "opacity",
-      "1",
-    );
+    expect(
+      await page
+        .locator("[data-transition-extra]")
+        .evaluateAll((extras) =>
+          extras.map((extra) => getComputedStyle(extra).opacity),
+        ),
+    ).toEqual(["1", "1", "1"]);
   });
 
   test("keeps the full Home entrance for reloads and external entries", async ({

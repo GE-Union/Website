@@ -22,12 +22,8 @@ const icon = (name: string) => `${localAssets.homeIcons}#${name}`;
     </div>
   </header>
 
-  <section
-    class="feature-grid"
-    aria-label="Student resources"
-    data-transition-extra
-  >
-    <a class="feature calendar-card" href="/calendar">
+  <section class="feature-grid" aria-label="Student resources">
+    <a class="feature calendar-card" href="/calendar" data-transition-extra>
       <h2>
         Calendar <span class="feature-arrow"><ArrowIcon /></span>
       </h2>
@@ -47,7 +43,7 @@ const icon = (name: string) => `${localAssets.homeIcons}#${name}`;
       </div>
     </a>
 
-    <a class="feature course-card" href="/course-bank">
+    <a class="feature course-card" href="/course-bank" data-transition-extra>
       <h2>
         Course Bank <span class="feature-arrow"><ArrowIcon /></span>
       </h2>
@@ -57,7 +53,11 @@ const icon = (name: string) => `${localAssets.homeIcons}#${name}`;
       </svg>
     </a>
 
-    <a class="feature dashboard-card" href="/introduction">
+    <a
+      class="feature dashboard-card"
+      href="/introduction"
+      data-transition-extra
+    >
       <h2>
         Dashboard <span class="feature-arrow"><ArrowIcon /></span>
       </h2>
