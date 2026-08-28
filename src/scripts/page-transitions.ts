@@ -483,7 +483,12 @@ export function initPageTransitions(): () => void {
         ...fade(hero.extras, false, EXTRA_OUT_DURATION, 0),
         ...fade(content(), false, 130, 0, "ease-in-out"),
       ];
-      await waitFor(animations, EXIT_DURATION + EXIT_STAGGER + 10);
+      await waitFor(
+        animations,
+        hero.kind === "home"
+          ? PANEL_DURATION + 10
+          : EXIT_DURATION + EXIT_STAGGER + 10,
+      );
     }
 
     location.assign(anchor.href);

@@ -61,6 +61,14 @@ html[data-page-transition="hero-enter"] [data-transition-extra] {
   animation: fade-in 210ms ease-out 105ms both;
 }
 
+html[data-page-transition="hero-enter"] .feature-grid {
+  animation: home-surface-in 280ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+html[data-page-transition="hero-exit"] .feature-grid {
+  animation: home-surface-out 280ms ease-in both;
+}
+
 html[data-page-transition="quick-enter"] body {
   animation: fade-in 85ms ease-out both;
 }
@@ -91,6 +99,18 @@ html[data-page-transition$="exit"] body {
   from {
     opacity: 0;
     transform: translateY(3px) scale(0.9);
+  }
+}
+
+@keyframes home-surface-in {
+  from {
+    transform: translateY(100vh);
+  }
+}
+
+@keyframes home-surface-out {
+  to {
+    transform: translateY(100vh);
   }
 }
 

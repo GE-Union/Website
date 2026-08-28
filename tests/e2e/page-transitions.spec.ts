@@ -356,9 +356,15 @@ test.describe("page transitions", () => {
         extraAnimations: document
           .querySelector("[data-transition-extra]")!
           .getAnimations().length,
+        gridAnimations: document
+          .querySelector(".feature-grid")!
+          .getAnimations()
+          .map((animation) => (animation as CSSAnimation).animationName),
       };
     });
-    expect(exit).toEqual({ state: "hero-exit", extraAnimations: 1 });
+    expect(exit.state).toBe("hero-exit");
+    expect(exit.extraAnimations).toBe(1);
+    expect(exit.gridAnimations).toContain("home-surface-out");
 
     await navigation;
     await page.waitForFunction(
@@ -407,8 +413,10 @@ test.describe("page transitions", () => {
         panelHeights: (panelAnimation.effect as KeyframeEffect)
           .getKeyframes()
           .map(({ height }) => Number.parseFloat(String(height))),
-        gridAnimations: document.querySelector(".feature-grid")!.getAnimations()
-          .length,
+        gridAnimations: document
+          .querySelector(".feature-grid")!
+          .getAnimations()
+          .map((animation) => (animation as CSSAnimation).animationName),
         gridOpacity: getComputedStyle(document.querySelector(".feature-grid")!)
           .opacity,
         extraAnimations: document
@@ -418,7 +426,7 @@ test.describe("page transitions", () => {
     });
     expect(entry.panelHeights[0]).toBe(sourceHeight);
     expect(entry.panelHeights[1]).toBeGreaterThan(sourceHeight);
-    expect(entry.gridAnimations).toBe(0);
+    expect(entry.gridAnimations).toContain("home-surface-in");
     expect(entry.gridOpacity).toBe("1");
     expect(entry.extraAnimations).toBe(1);
 
