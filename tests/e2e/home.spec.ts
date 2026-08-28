@@ -129,6 +129,7 @@ test.describe("home page", () => {
   });
   test("carousel loops and pauses on focus", async ({ page }) => {
     const carousel = page.locator("[data-carousel]");
+    await expect(carousel.locator("[data-carousel-clone]")).toHaveCount(12);
     await expect(carousel).toHaveAttribute("data-autoplay", "playing");
     await carousel.focus();
     await expect(carousel).toHaveAttribute("data-autoplay", "paused");
@@ -137,6 +138,31 @@ test.describe("home page", () => {
       "Image 6 of 6",
     );
     await expect(carousel).toHaveAttribute("data-autoplay", "paused");
+  });
+  test("carousel controls sit near the viewport edges", async ({ page }) => {
+    const cases = [
+      { viewport: 1200, margin: 24 },
+      { viewport: 390, margin: 16 },
+    ];
+
+    for (const item of cases) {
+      await page.setViewportSize({ width: item.viewport, height: 844 });
+      await page.goto("/");
+      const previous = await page
+        .getByRole("button", { name: "Previous image" })
+        .boundingBox();
+      const next = await page
+        .getByRole("button", { name: "Next image" })
+        .boundingBox();
+
+      expect(previous).not.toBeNull();
+      expect(next).not.toBeNull();
+      expect(previous!.x).toBeCloseTo(item.margin, 0);
+      expect(item.viewport - (next!.x + next!.width)).toBeCloseTo(
+        item.margin,
+        0,
+      );
+    }
   });
   test("carousel keeps legacy image geometry and a raised selection", async ({
     page,

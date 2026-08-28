@@ -204,6 +204,19 @@ const reelColumns = [
   document
     .querySelectorAll<HTMLElement>("[data-mini-calendar]")
     .forEach((calendar) => initMiniCalendar(calendar));
+
+  const reels = document.querySelector(".reels");
+  if (reels && !matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (!entry?.isIntersecting) return;
+        reels.classList.add("is-visible");
+        observer.disconnect();
+      },
+      { threshold: 0.15 },
+    );
+    observer.observe(reels);
+  }
 </script>
 
 <style>
@@ -283,7 +296,6 @@ const reelColumns = [
     font-family: Tanker, Rubik, sans-serif;
     font-size: 2.6rem;
     font-weight: 500;
-    text-transform: uppercase;
   }
   .feature-arrow {
     display: inline-grid;
@@ -315,8 +327,8 @@ const reelColumns = [
   }
   .feature-icon {
     position: absolute;
-    right: -39px;
-    bottom: 0;
+    right: -20px;
+    bottom: -40px;
     width: 260px;
     height: auto;
     opacity: 0.07;
@@ -404,7 +416,7 @@ const reelColumns = [
     position: absolute;
     z-index: 0;
     top: -65px;
-    right: calc(22% - 500px);
+    right: calc(22% - 600px);
     display: flex;
     gap: var(--reel-gap);
     width: calc(4 * var(--reel-width) + 3 * var(--reel-gap));
@@ -427,7 +439,29 @@ const reelColumns = [
     margin-top: 0;
   }
   .reel-column.raised {
-    margin-top: calc(-1 * (var(--reel-height) + var(--reel-gap)));
+    margin-top: calc(-1 * (var(--reel-height) + var(--reel-gap)) / 2);
+  }
+  @media (scripting: enabled) and (prefers-reduced-motion: no-preference) {
+    .reel-column {
+      translate: 0 -100vh;
+    }
+    .reels.is-visible .reel-column {
+      animation: reel-column-in 700ms cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    }
+    .reels.is-visible .reel-column:nth-child(2) {
+      animation-delay: 100ms;
+    }
+    .reels.is-visible .reel-column:nth-child(3) {
+      animation-delay: 200ms;
+    }
+    .reels.is-visible .reel-column:nth-child(4) {
+      animation-delay: 300ms;
+    }
+  }
+  @keyframes reel-column-in {
+    to {
+      translate: 0 0;
+    }
   }
   .reels img {
     flex: 0 0 var(--reel-height);

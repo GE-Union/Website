@@ -33,7 +33,7 @@ export function initCarousel(root: HTMLElement): void {
   root.dataset.ready = "true";
 
   let logicalIndex = 0;
-  let physicalIndex = originals.length > 1 ? 1 : 0;
+  let physicalIndex = originals.length > 1 ? originals.length : 0;
   let translate = 0;
   let timer: number | undefined;
   let drag: DragState | undefined;
@@ -55,8 +55,8 @@ export function initCarousel(root: HTMLElement): void {
   };
 
   if (originals.length > 1) {
-    track.prepend(makeClone(originals.at(-1)!));
-    track.append(makeClone(originals[0]));
+    track.prepend(...originals.map(makeClone));
+    track.append(...originals.map(makeClone));
   } else {
     previous.hidden = true;
     next.hidden = true;
@@ -118,16 +118,22 @@ export function initCarousel(root: HTMLElement): void {
     const cycleWidth = step * originals.length;
     const visibleTranslate = currentTranslate();
 
-    if (physicalIndex === 0) {
-      physicalIndex = originals.length;
+    if (physicalIndex < originals.length) {
+      physicalIndex += originals.length;
       setTransition(false);
+      root.dataset.normalising = "true";
       updateActiveSlide();
       setTranslate(visibleTranslate - cycleWidth);
-    } else if (physicalIndex === originals.length + 1) {
-      physicalIndex = 1;
+      void track.offsetWidth;
+      delete root.dataset.normalising;
+    } else if (physicalIndex >= originals.length * 2) {
+      physicalIndex -= originals.length;
       setTransition(false);
+      root.dataset.normalising = "true";
       updateActiveSlide();
       setTranslate(visibleTranslate + cycleWidth);
+      void track.offsetWidth;
+      delete root.dataset.normalising;
     }
   };
 

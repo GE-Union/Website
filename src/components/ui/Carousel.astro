@@ -137,6 +137,11 @@ const { items, label, previousLabel, nextLabel } = Astro.props;
     transform: translateY(-5px);
   }
 
+  .carousel[data-normalising="true"] .slide,
+  .carousel[data-normalising="true"] figcaption {
+    transition: none;
+  }
+
   .slide img {
     display: block;
     width: var(--slide-width);
@@ -221,11 +226,11 @@ const { items, label, previousLabel, nextLabel } = Astro.props;
   }
 
   .previous {
-    left: max(10px, calc(50% - var(--slide-width) / 2 - 56px));
+    left: calc(24px + env(safe-area-inset-left, 0px));
   }
 
   .next {
-    right: max(10px, calc(50% - var(--slide-width) / 2 - 56px));
+    right: calc(24px + env(safe-area-inset-right, 0px));
   }
 
   @media (max-width: 767px) {
@@ -243,11 +248,11 @@ const { items, label, previousLabel, nextLabel } = Astro.props;
     }
 
     .previous {
-      left: max(8px, calc(50% - var(--slide-width) / 2 - 48px));
+      left: calc(16px + env(safe-area-inset-left, 0px));
     }
 
     .next {
-      right: max(8px, calc(50% - var(--slide-width) / 2 - 48px));
+      right: calc(16px + env(safe-area-inset-right, 0px));
     }
   }
 
