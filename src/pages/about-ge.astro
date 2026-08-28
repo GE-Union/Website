@@ -33,32 +33,33 @@ const floatingRails = [
   [
     "left",
     [
-      ["living", 12, 29, 3.2, 29, -7, 1],
-      ["advanced", 66, 40, 0.7, 37, -24, -1],
-      ["cyber", 34, 33, 1.8, 32, -15, 1],
-      ["energy", 76, 26, 4.2, 43, -35, -1],
-      ["advanced", 19, 45, 2.6, 39, -31, 1],
-      ["living", 57, 35, 1.1, 31, -12, -1],
-      ["energy", 40, 30, 0.4, 35, -3, 1],
-      ["cyber", 83, 38, 3.6, 41, -20, -1],
+      ["living", 12, 29, 29, -7, 1],
+      ["advanced", 66, 40, 37, -24, -1],
+      ["cyber", 34, 33, 32, -15, 1],
+      ["energy", 76, 26, 43, -35, -1],
+      ["advanced", 19, 45, 39, -31, 1],
+      ["living", 57, 35, 31, -12, -1],
+      ["energy", 40, 30, 35, -3, 1],
+      ["cyber", 83, 38, 41, -20, -1],
     ],
   ],
   [
     "right",
     [
-      ["cyber", 14, 42, 1.2, 36, -18, -1],
-      ["energy", 61, 31, 3.8, 28, -10, 1],
-      ["living", 34, 27, 0.5, 40, -26, -1],
-      ["advanced", 79, 36, 2.3, 33, -5, 1],
-      ["energy", 23, 39, 1.6, 38, -34, -1],
-      ["cyber", 70, 28, 4.4, 30, -14, 1],
-      ["advanced", 46, 34, 0.8, 35, -22, -1],
-      ["living", 87, 44, 2.9, 42, -38, 1],
+      ["cyber", 14, 42, 36, -18, -1],
+      ["energy", 61, 31, 28, -10, 1],
+      ["living", 34, 27, 40, -26, -1],
+      ["advanced", 79, 36, 33, -5, 1],
+      ["energy", 23, 39, 38, -34, -1],
+      ["cyber", 70, 28, 30, -14, 1],
+      ["advanced", 46, 34, 35, -22, -1],
+      ["living", 87, 44, 42, -38, 1],
     ],
   ],
 ] as const;
 
 const icon = (slug: string) => `${localAssets.specialisations}#${slug}`;
+const blurFor = (size: number) => Math.max(0.4, (48 - size) * 0.14);
 ---
 
 <BaseLayout seo={getPageSeo("/about-ge")}>
@@ -83,10 +84,10 @@ const icon = (slug: string) => `${localAssets.specialisations}#${slug}`;
           class:list={["floating-rail", `floating-rail--${side}`]}
           aria-hidden="true"
         >
-          {icons.map(([slug, x, size, blur, duration, delay, direction]) => (
+          {icons.map(([slug, x, size, duration, delay, direction]) => (
             <span
               class:list={["floater", `specialisation--${slug}`]}
-              style={`--x: ${x}%; --size: ${size}px; --blur: ${blur}px; --duration: ${duration}s; --delay: ${delay}s; --direction: ${direction}`}
+              style={`--x: ${x}%; --size: ${size}px; --blur: ${blurFor(size)}px; --duration: ${duration}s; --delay: ${delay}s; --direction: ${direction}`}
             >
               <svg viewBox="0 0 4167 4167">
                 <use href={icon(slug)} />

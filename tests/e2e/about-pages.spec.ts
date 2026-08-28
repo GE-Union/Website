@@ -36,6 +36,36 @@ test("About GE specialisation cards activate their ambient icons", async ({
 
   await expect(rail).toBeVisible();
   await expect(page.locator(".floater")).toHaveCount(16);
+
+  const livingSprite = await page
+    .locator(".specialisation--living use")
+    .first()
+    .getAttribute("href");
+  const livingLineCap = await page.evaluate(async (href) => {
+    const source = await fetch(href!.split("#")[0]).then((response) =>
+      response.text(),
+    );
+    return new DOMParser()
+      .parseFromString(source, "image/svg+xml")
+      .querySelector("#living")
+      ?.getAttribute("stroke-linecap");
+  }, livingSprite);
+  expect(livingLineCap).toBe("round");
+
+  const blurBySize = await page.locator(".floater").evaluateAll((floaters) =>
+    floaters
+      .map((floater) => ({
+        size: floater.getBoundingClientRect().width,
+        blur: Number.parseFloat(
+          getComputedStyle(floater.querySelector("svg")!).filter.match(
+            /blur\((.+)px\)/,
+          )?.[1] ?? "0",
+        ),
+      }))
+      .sort((left, right) => left.size - right.size),
+  );
+  expect(blurBySize.at(-1)!.blur).toBeLessThan(blurBySize[0].blur);
+
   await card.hover();
   await expect(card.locator("h3")).toHaveCSS("color", "rgb(113, 84, 0)");
   await expect

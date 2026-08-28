@@ -370,6 +370,15 @@ test("shows a missing-key state without requesting Google", async ({
   expect(apiRequests).toBe(0);
 });
 
+test("caps and centers the calendar on wide screens", async ({ page }) => {
+  await page.setViewportSize({ width: 2200, height: 1000 });
+  await openCalendar(page);
+
+  const bounds = (await page.locator("[data-event-calendar]").boundingBox())!;
+  expect(bounds.width).toBeCloseTo(1300, 0);
+  expect(bounds.x).toBeCloseTo((2200 - bounds.width) / 2, 0);
+});
+
 test("contains mobile overflow inside the month grid", async ({ page }) => {
   await page.setViewportSize({ width: 390, height: 844 });
   await openCalendar(page);
@@ -382,6 +391,22 @@ test("contains mobile overflow inside the month grid", async ({ page }) => {
     .evaluate((element) => element.scrollWidth - element.clientWidth);
   expect(overflow).toBeLessThanOrEqual(1);
   expect(gridOverflow).toBeGreaterThan(0);
+
+  const scrollGutters = await page
+    .locator("[data-calendar-scroll-region]")
+    .evaluate((element) => {
+      const grid = element.querySelector<HTMLElement>(".fc-scrollgrid")!;
+      const regionBounds = element.getBoundingClientRect();
+      element.scrollLeft = 0;
+      const left = grid.getBoundingClientRect().left - regionBounds.left;
+      element.scrollLeft = element.scrollWidth;
+      const right = regionBounds.right - grid.getBoundingClientRect().right;
+      element.scrollLeft = 0;
+      return { left, right };
+    });
+  expect(scrollGutters.left).toBeGreaterThan(0);
+  expect(scrollGutters.right).toBeCloseTo(scrollGutters.left, 0);
+
   const monthGrid = page.getByRole("region", {
     name: "Calendar month grid. Scroll horizontally to see all weekdays.",
   });

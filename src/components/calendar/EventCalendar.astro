@@ -95,10 +95,11 @@ const apiKey = import.meta.env.PUBLIC_GOOGLE_CALENDAR_API_KEY?.trim() ?? "";
 
 <style>
   .event-calendar {
-    width: auto;
+    width: calc(100% - calc(6 * var(--gap1)));
+    max-width: max(130vh, 750px);
     min-width: 0;
     min-height: 650px;
-    margin: 80px calc(3 * var(--gap1));
+    margin: 80px auto;
   }
 
   .calendar-notice,
@@ -186,6 +187,7 @@ const apiKey = import.meta.env.PUBLIC_GOOGLE_CALENDAR_API_KEY?.trim() ?? "";
 
   .calendar-grid :global(.fc-scrollgrid td) {
     border: 1px solid var(--back-grey-1);
+    border-radius: var(--rad2);
   }
 
   .calendar-grid :global(.fc-scrollgrid),
@@ -401,6 +403,7 @@ const apiKey = import.meta.env.PUBLIC_GOOGLE_CALENDAR_API_KEY?.trim() ?? "";
 
   @media (max-width: 767px) {
     .event-calendar {
+      width: 100%;
       min-height: 520px;
       margin: 70px 0;
     }
@@ -411,12 +414,9 @@ const apiKey = import.meta.env.PUBLIC_GOOGLE_CALENDAR_API_KEY?.trim() ?? "";
       margin-left: calc(2 * var(--gap1));
     }
 
-    .calendar-grid :global(.fc-header-toolbar) {
-      margin-right: calc(2 * var(--gap1));
-      margin-left: calc(2 * var(--gap1));
-    }
-
     .calendar-scroll-region {
+      padding-right: calc(2 * var(--gap1));
+      padding-left: calc(2 * var(--gap1));
       overflow-x: auto;
       overflow-y: hidden;
       overscroll-behavior-x: contain;
@@ -427,6 +427,11 @@ const apiKey = import.meta.env.PUBLIC_GOOGLE_CALENDAR_API_KEY?.trim() ?? "";
     .calendar-grid :global(.fc-scrollgrid) {
       min-width: 650px;
       font-size: 0.7em;
+    }
+
+    .calendar-grid :global(.fc-view-harness) {
+      min-width: calc(650px + calc(2 * var(--gap1)));
+      padding-right: calc(2 * var(--gap1));
     }
 
     .calendar-grid :global(.fc-daygrid-day-frame) {
