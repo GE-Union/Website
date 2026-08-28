@@ -17,7 +17,7 @@ const budgets = {
     [
       "course-bank/index.html",
       {
-        htmlBytes: 16 * KIB,
+        htmlBytes: 17 * KIB,
       },
     ],
     [

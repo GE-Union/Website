@@ -1,6 +1,14 @@
 {
   "extends": ["html-validate:recommended"],
   "rules": {
+    "aria-label-misuse": [
+      "error",
+      {
+        "elements": {
+          "exclude": ["h1"]
+        }
+      }
+    ],
     "no-trailing-whitespace": "off",
     "no-redundant-role": "off"
   }

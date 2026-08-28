@@ -4,11 +4,15 @@ interface Props {
   id?: string;
 }
 
-const { text, id } = Astro.props;
+const { text, id }: Props = Astro.props;
 const parts = text.split(/(\s+)/u).filter(Boolean);
+const labelId = "page-title-label";
 ---
 
-<h1 id={id} data-transition-title aria-label={text}>
+<span id={labelId} class="visually-hidden" data-transition-title-label>
+  {text}
+</span>
+<h1 id={id} data-transition-title aria-labelledby={labelId}>
   {
     parts.map((part) =>
       /^\s+$/u.test(part) ? (

@@ -26,7 +26,10 @@ function element<K extends keyof HTMLElementTagNameMap>(
 }
 
 function setTransitionTitle(title: HTMLElement, text: string): void {
-  const currentLabel = title.getAttribute("aria-label") ?? title.textContent;
+  const labelId = title.getAttribute("aria-labelledby");
+  const label = labelId ? document.getElementById(labelId) : null;
+  const currentLabel =
+    label?.textContent ?? title.getAttribute("aria-label") ?? title.textContent;
   if (
     currentLabel?.trim() === text &&
     title.querySelector("[data-transition-character]")
@@ -55,7 +58,8 @@ function setTransitionTitle(title: HTMLElement, text: string): void {
     fragment.append(word);
   }
 
-  title.setAttribute("aria-label", text);
+  if (label) label.textContent = text;
+  title.removeAttribute("aria-label");
   title.replaceChildren(fragment);
 }
 

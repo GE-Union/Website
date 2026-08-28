@@ -214,16 +214,19 @@ test.describe("page transitions", () => {
     });
 
     await page.goto("/calendar", { waitUntil: "commit" });
-    await page.waitForFunction(
-      () =>
-        document
-          .querySelector("[data-transition-title]")
-          ?.getAnimations({ subtree: true })
-          .some(({ playState }) => playState === "running") &&
+    await page.waitForFunction(() => {
+      const titleAnimations = document
+        .querySelector("[data-transition-title]")
+        ?.getAnimations({ subtree: true });
+      return (
+        titleAnimations &&
+        titleAnimations.length > 1 &&
+        titleAnimations.some(({ playState }) => playState === "running") &&
         document.querySelector("[data-transition-subtitle]")?.getAnimations()
           .length &&
-        document.querySelector("main")?.getAnimations().length,
-    );
+        document.querySelector("main")?.getAnimations().length
+      );
+    });
 
     const entry = await page.evaluate(() => {
       const titleAnimations = document
