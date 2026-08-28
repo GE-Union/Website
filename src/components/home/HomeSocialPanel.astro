@@ -77,6 +77,7 @@ const emailHref = `mailto:${contactEmail}`;
 
 <style>
   .social-panel {
+    --reel-gap: 8px;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -91,7 +92,6 @@ const emailHref = `mailto:${contactEmail}`;
   .reels {
     --reel-height: 250px;
     --reel-width: 150px;
-    --reel-gap: 8px;
     position: absolute;
     z-index: 0;
     top: -65px;
@@ -195,8 +195,12 @@ const emailHref = `mailto:${contactEmail}`;
     position: relative;
     z-index: 2;
     min-width: 215px;
-    outline: 8px solid var(--back-grey-1);
+    outline: calc(var(--reel-gap) * 0.75) solid var(--back-grey-1);
     outline-offset: 0;
+  }
+
+  .social-block :global(.cta-link:hover) {
+    box-shadow: none;
   }
 
   .social-block a:not(.cta-link) {
@@ -318,10 +322,6 @@ const emailHref = `mailto:${contactEmail}`;
 
     .social-content {
       gap: 60px;
-    }
-
-    .reels {
-      opacity: 0.15;
     }
 
     .social-block {

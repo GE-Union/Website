@@ -56,8 +56,10 @@ test.describe("home page", () => {
 
     const socialButton = page.locator(".social-block .cta-link").first();
     await expect(socialButton).toHaveCSS("outline-style", "solid");
-    await expect(socialButton).toHaveCSS("outline-width", "8px");
+    await expect(socialButton).toHaveCSS("outline-width", "6px");
     await expect(socialButton).toHaveCSS("outline-color", "rgb(233, 233, 233)");
+    await socialButton.hover();
+    await expect(socialButton).toHaveCSS("box-shadow", "none");
 
     const letter = page.locator(".letter-mask svg");
     await expect(letter).toBeAttached();
