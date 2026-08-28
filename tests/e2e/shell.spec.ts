@@ -43,6 +43,14 @@ test.describe("primary navigation", () => {
     ] as const) {
       await page.goto("/");
       const trigger = page.getByRole("button", { name: "About" });
+      await trigger.evaluate(async (button) => {
+        await Promise.allSettled(
+          button
+            .closest(".site-header")!
+            .getAnimations()
+            .map(({ finished }) => finished),
+        );
+      });
       await trigger.click();
       await expect(trigger).toHaveAttribute("aria-expanded", "true");
       await page.getByRole("link", { name: label, exact: true }).click();

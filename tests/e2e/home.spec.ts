@@ -72,6 +72,11 @@ test.describe("home page", () => {
     page,
   }) => {
     await page.setViewportSize({ width: 1200, height: 900 });
+    await page.locator(".feature-grid").evaluate(async (grid) => {
+      await Promise.allSettled(
+        grid.getAnimations({ subtree: true }).map(({ finished }) => finished),
+      );
+    });
     const grid = (await page.locator(".feature-grid").boundingBox())!;
     const calendar = (await page.locator(".calendar-card").boundingBox())!;
     const course = (await page.locator(".course-card").boundingBox())!;
@@ -94,6 +99,11 @@ test.describe("home page", () => {
     ]) {
       await page.setViewportSize(viewport);
       await page.goto("/");
+      await page.locator(".feature-grid").evaluate(async (grid) => {
+        await Promise.allSettled(
+          grid.getAnimations().map((animation) => animation.finished),
+        );
+      });
 
       const centers = await page.evaluate(() => {
         const header = document
