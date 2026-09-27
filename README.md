@@ -33,6 +33,25 @@ but shows a configuration notice instead of events.
 
 ## Publishing
 
+Production is the Netlify project **geunion**, serving `https://geunion.dk`
+from `GE-Union/Website` branch `main`. Netlify runs `npm run build` and
+publishes `dist`; the Node version is pinned in `.nvmrc`.
+
+The repository's production push webhook calls the Netlify build hook
+**GitHub main production deploy**, which always builds `main`. A push to
+another branch may rebuild production, but does not publish that branch.
+Successful builds publish automatically; failed builds leave the previous
+deployment live. Keep build hook URLs private. The separate
+**geu-website-preview** project is not the production site.
+
+The homepage's Billetfix checkout is a third-party iframe. Our accessibility
+checks cover its frame label, but exclude the vendor-controlled document,
+which currently has missing form labels and image alternatives.
+
+After pushing a release, confirm its commit in the production project's
+Deploys page and check `https://geunion.dk`. If configuring the CLI on a new
+machine, link it to project ID `5350e182-6b15-4eb2-b5d7-e3ccafdeb16b`.
+
 `PUBLIC_GOOGLE_CALENDAR_API_KEY` is required for every production build. Store
 it as a persistent environment variable in the hosting provider—not only in a
 local `.env` file—so rebuilds and preview deployments keep the calendar

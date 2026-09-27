@@ -10,7 +10,11 @@ import {
 // The preserved translucent navigation palette does not pass axe's automated
 // contrast threshold, so contrast remains a documented manual review item.
 const scan = (page: Page) =>
-  new AxeBuilder({ page }).disableRules(["color-contrast"]);
+  new AxeBuilder({ page })
+    // Billetfix owns the cross-origin checkout markup. Keep testing the host
+    // iframe's accessible name, but leave the vendor's document out of scope.
+    .exclude([".ticketbutler-iframe iframe", "body"])
+    .disableRules(["color-contrast"]);
 const routes = [
   "/",
   "/course-bank",
