@@ -12,27 +12,6 @@ import "../styles/home-entry.css";
 
 <BaseLayout seo={getPageSeo("/")}>
   <HomeHero slot="hero" />
-  <h2 class="party-heading">International Party 🎟️</h2>
-  <div
-    class="ticketbutler-iframe"
-    data-type="EVENT"
-    data-domain="billetfix.dk"
-    data-slug="international-party"
-  >
-  </div>
-  <script is:inline src="https://cdn.ticketbutler.io/event-embedder/index.js"
-  ></script>
-  <script>
-    // Ticketbutler creates its frames when the document reaches "complete".
-    function labelTicketFrames() {
-      const tickets = document.querySelector(".ticketbutler-iframe iframe");
-      tickets?.setAttribute("title", "International Party tickets");
-      const checkout = document.querySelector("iframe.ticketbutler-modal");
-      checkout?.setAttribute("title", "Ticket checkout");
-    }
-    document.addEventListener("readystatechange", labelTicketFrames);
-    labelTicketFrames();
-  </script>
   <SectionDivider />
   <HomeIntroduction />
   <HomeCarousel />
